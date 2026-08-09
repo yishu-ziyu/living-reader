@@ -1,0 +1,46 @@
+.block {
+  border-block-start: 1px solid currentColor;
+  padding-block-start: 0.75rem;
+}
+
+.block summary {
+  min-block-size: 2.75rem;
+  cursor: pointer;
+  font-weight: 650;
+}
+
+.content {
+  display: grid;
+  gap: 1rem;
+  padding-block: 0.75rem 0.25rem;
+}
+
+.content h3,
+.content p {
+  margin: 0;
+}
+
+.content ol,
+.content ul {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0.5rem 0 0;
+  padding-inline-start: 1.25rem;
+}
+
+.content li + li {
+  padding-block-start: 0.5rem;
+  border-block-start: 1px solid color-mix(in srgb, currentColor 35%, transparent);
+}
+
+.content blockquote {
+  margin: 0.5rem 0 0;
+  padding-inline-start: 0.75rem;
+  border-inline-start: 0.2rem solid currentColor;
+  line-height: 1.55;
+}
+
+.content small {
+  display: block;
+  margin-block-start: 0.25rem;
+}

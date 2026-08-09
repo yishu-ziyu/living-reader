@@ -80,3 +80,14 @@ export {
   createWoolTownBaseline,
   woolTownEnv,
 } from "./fixtures/wool-town";
+
+export {
+  buildCommittedWorldPresentation,
+  type CommittedWorldEvent,
+  type CommittedWorldPresentation,
+  type CommittedWorldPresentationInput,
+  type CommittedWorldRelationBinding,
+  type CommittedWorldRole,
+  type CommittedWorldSession,
+  type CommittedWorldSourceBinding,
+} from "./presentation";
