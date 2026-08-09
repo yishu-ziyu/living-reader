@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#edf1f5" />
+    <link rel="icon" href="data:," />
+    <title>T017 Draft 0.5 · 活页批注</title>
+    <link rel="stylesheet" href="./draft-05.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#readingPage">跳到正文</a>
+
+    <header class="app-bar">
+      <div class="brand-lockup">
+        <span class="brand-seal" aria-hidden="true">读</span>
+        <div>
+          <strong>The Living Reader</strong>
+          <span>《国富论》第一卷 · 分工与市场范围</span>
+        </div>
+      </div>
+      <div class="app-actions">
+        <span>Draft 0.5 · Prototype only</span>
+        <button type="button" data-jump="source36">返回当前原文</button>
+      </div>
+    </header>
+
+    <main class="reading-stage" id="readingPage">
+      <article class="folio" aria-label="《国富论》交互阅读页">
+        <header class="folio-heading">
+          <span>BOOK I · CHAPTER I–III</span>
+          <h1>The Wealth of Nations</h1>
+          <span>可运行的原文 · 01</span>
+        </header>
+
+        <section class="passage" id="source36" aria-labelledby="source36Title">
+          <div class="page-number" aria-label="页码 36">36</div>
+          <div class="passage-copy">
+            <p class="chapter-kicker">Of the division of labour</p>
+            <h2 id="source36Title">The greatest improvement in the productive powers of labour</h2>
+            <p class="source-text">
+              <span class="drop-cap">T</span>he greatest improvement in the productive powers of labour, and the greater part of the skill, dexterity, and judgment with which it is any where directed, or applied, seem to have been the effects of the division of labour.
+            </p>
+            <p class="source-text secondary">
+              The advantage is owing to the increase of dexterity in every particular workman, to the saving of time commonly lost in passing from one species of work to another, and to the invention of machines which facilitate and abridge labour.
+            </p>
+          </div>
+          <aside class="margin-note" aria-label="绑定到第 36 页的读者想法">
+            <span>我的想法 · PDF 36</span>
+            <p>分工让人更熟练，也减少了切换工作时的损耗。</p>
+            <button type="button" data-note-action>继续说</button>
+          </aside>
+        </section>
+
+        <section class="relation-margin" id="relation" aria-labelledby="relationTitle">
+          <div class="relation-origin" aria-hidden="true"><span></span><span></span></div>
+          <div class="relation-copy">
+            <span>等待你的判断</span>
+            <h2 id="relationTitle">专业化受到市场范围的约束</h2>
+            <p>这不是系统结论。它连接你在 PDF 36 和 PDF 45 留下的两条观察。</p>
+          </div>
+          <button class="relation-confirm" type="button" aria-expanded="false" aria-controls="worldPlate">
+            确认关系
+          </button>
+        </section>
+
+        <section class="world-plate" id="worldPlate" aria-labelledby="worldTitle" hidden>
+          <header class="plate-heading">
+            <div>
+              <span>由已确认关系生成 · Model extension</span>
+              <h2 id="worldTitle">市场范围约束下的小工坊</h2>
+            </div>
+            <div class="plate-actions">
+              <span class="world-status" aria-live="polite">规则已编译，等待行动</span>
+              <button type="button" data-world-close>收起世界</button>
+            </div>
+          </header>
+
+          <div class="engraving-scene" data-world-state="ready">
+            <div class="scene-horizon" aria-hidden="true"></div>
+            <ol class="role-line" aria-label="工坊角色与生产链">
+              <li class="role" data-role="shepherd">
+                <span class="role-index">01</span>
+                <img src="../living-reader-v2/assets/art/characters/shepherd.png" alt="牧羊人抱着羊，手持牧杖" />
+                <div class="role-caption"><strong>牧羊人</strong><span>原毛 42</span><span data-metric="orders">订单 12</span></div>
+              </li>
+              <li class="role" data-role="spinner">
+                <span class="role-index">02</span>
+                <img src="../living-reader-v2/assets/art/characters/spinner.png" alt="纺纱工拿着纱锭" />
+                <div class="role-caption"><strong>纺纱工</strong><span>纱线 56</span><span data-metric="orders">订单 18</span></div>
+              </li>
+              <li class="role" data-role="weaver">
+                <span class="role-index">03</span>
+                <img src="../living-reader-v2/assets/art/characters/weaver.png" alt="织工拿着布匹" />
+                <div class="role-caption"><strong>织工</strong><span>粗呢 38</span><span data-metric="orders">订单 9</span></div>
+              </li>
+              <li class="role" data-role="merchant">
+                <span class="role-index">04</span>
+                <img src="../living-reader-v2/assets/art/characters/merchant.png" alt="商人拿着账本和布匹" />
+                <div class="role-caption"><strong>商人</strong><span>库存 24</span><span data-metric="orders">订单 7</span></div>
+              </li>
+            </ol>
+
+            <div class="exchange-line" aria-label="生产链方向">
+              <span>原毛</span><i></i><span>纱线</span><i></i><span>粗呢</span><i></i><span>市场</span>
+            </div>
+          </div>
+
+          <footer class="plate-foot">
+            <div class="model-note">
+              <span>当前假设</span>
+              <p>实时选择“扩大市场”“加深专业化”或“收缩市场”，并可随时 Stop 视觉回放、Replay 最近一次行动；这是可撤回的模型扩展，不是 Smith 原话。</p>
+            </div>
+          </footer>
+        </section>
+
+        <section class="passage passage-market" id="source45" aria-labelledby="source45Title">
+          <div class="page-number" aria-label="页码 45">45</div>
+          <div class="passage-copy">
+            <p class="chapter-kicker">That the division of labour is limited by the extent of the market</p>
+            <h2 id="source45Title">The power of exchanging gives occasion to the division of labour</h2>
+            <p class="source-text">
+              <span class="drop-cap">A</span>s it is the power of exchanging that gives occasion to the division of labour, so the extent of this division must always be limited by the extent of that power, or, in other words, by the extent of the market.
+            </p>
+            <p class="source-text secondary">
+              When the market is very small, no person can have any encouragement to dedicate himself entirely to one employment, for want of the power to exchange all that surplus part of the produce of his own labour.
+            </p>
+          </div>
+          <aside class="margin-note margin-note-blue" aria-label="绑定到第 45 页的读者想法">
+            <span>我的想法 · PDF 45</span>
+            <p>市场太小时，单一职业可能卖不出足够的剩余产出。</p>
+            <button type="button" data-note-action>继续说</button>
+          </aside>
+        </section>
+
+        <footer class="folio-footer">
+          <span>SourceBlock · smith.b1.c1.division</span>
+          <span>Reading trace 01</span>
+          <span>SourceBlock · smith.b1.c3.market_extent</span>
+        </footer>
+      </article>
+
+      <button class="orb-trigger" type="button" aria-expanded="false" aria-controls="agentFocus">
+        <span data-thinking-orb-mini></span>
+        <span><small>实时陪读</small><strong>和当前原文聊聊</strong></span>
+      </button>
+    </main>
+
+    <section class="agent-focus" id="agentFocus" aria-hidden="true">
+      <button class="agent-scrim" type="button" aria-label="关闭陪读" data-agent-close></button>
+      <div class="agent-surface" role="dialog" aria-modal="true" aria-label="陪读对话">
+
+        <div class="orb-stage" data-orb-state="resting">
+          <div class="voice-orb-card">
+            <div data-thinking-orb-main role="button" tabindex="0" aria-label="关闭陪读"></div>
+            <div class="orb-state-copy" aria-live="polite">
+              <strong data-orb-label>准备好了</strong>
+              <p data-orb-detail>开始后，我会围绕 PDF 36 的当前原文听你说。</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <script src="../living-reader-v2/agent-os.js"></script>
+    <script src="./draft-05-orbs.bundle.js"></script>
+    <script src="./draft-05.js"></script>
+  </body>
+</html>

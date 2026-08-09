@@ -19,9 +19,13 @@ product/.next-playwright/
 
 # Local agent and browser artifacts
 .playwright-mcp/
+.playwright-cli/
+.mirasim/
 .living-reader-*/
+.codegraph/
 
 # Rebuildable prototype caches and capture scratch files
 .godot/
 .video-tmp/
 .video-art-tmp/
+prototypes/t017-reading-keyframes/*.svg

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f2eee4" />
+    <title>T017 · 阅读界面品味关键帧</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-variant="A">
+    <!-- PROTOTYPE ONLY: three structural answers to one design question. Do not ship. -->
+    <div class="prototype-notice" role="note">
+      <strong>T017 · PROTOTYPE ONLY</strong>
+      <span>同内容、同状态；桌面与移动端一起比较</span>
+    </div>
+
+    <main class="prototype-stage">
+      <section class="variant variant-a" data-variant-panel="A" aria-label="方案 A，安静常驻轨道">
+        <aside class="quiet-rail" aria-label="阅读陪伴轨道">
+          <div class="rail-lockup">
+            <span class="rail-mark" aria-hidden="true">读</span>
+            <div><strong>鲜活阅读器</strong><small>当前阅读 · 分工</small></div>
+          </div>
+          <nav class="rail-progress" aria-label="阅读进度">
+            <button class="progress-item is-current" type="button" data-scroll-to="division-a">
+              <span>1</span><div><strong>阅读原文</strong><small>PDF 36 · 分工</small></div>
+            </button>
+            <button class="progress-item has-task" type="button" data-scroll-to="relation-a">
+              <span>2</span><div><strong>确认关系</strong><small>1 条等待判断</small></div>
+            </button>
+            <button class="progress-item" type="button" data-scroll-to="market-a">
+              <span>3</span><div><strong>世界展开</strong><small>确认后可继续</small></div>
+            </button>
+          </nav>
+          <div class="rail-next">
+            <p>现在只需要做一件事</p>
+            <strong>判断这两个想法是否互相约束</strong>
+            <button type="button" data-scroll-to="relation-a">前往判断 <span>→</span></button>
+          </div>
+          <button class="rail-stop" type="button">先停一下</button>
+        </aside>
+
+        <div class="reading-shell">
+          <header class="reading-toolbar">
+            <div><span class="eyebrow">THE WEALTH OF NATIONS</span><strong>第一卷 · 分工与市场范围</strong></div>
+            <div class="toolbar-actions"><button type="button">目录</button><button type="button">阅读设置</button></div>
+          </header>
+          <article class="reading-page">
+            <section class="source-block" id="division-a">
+              <SourceHeader data-page="36" data-chapter="BOOK I · CH. I"></SourceHeader>
+              <p class="source-title">Of the division of labour</p>
+              <p class="source-quote"><span class="dropcap">T</span>HE greatest improvement in the productive powers of labour, and the greater part of the skill, dexterity, and judgment with which it is any where directed, or applied, seem to have been the effects of the division of labour.</p>
+              <p class="plain-note">我的想法 · 分工让工人更熟练，但我还不知道什么时候会失效。</p>
+              <Composer label="围绕这一段说点什么…"></Composer>
+            </section>
+
+            <RelationPanel data-id="relation-a"></RelationPanel>
+
+            <section class="source-block" id="market-a">
+              <SourceHeader data-page="45" data-chapter="BOOK I · CH. III"></SourceHeader>
+              <p class="source-title source-title-small">That the division of labour is limited by the extent of the market</p>
+              <p class="source-quote"><span class="dropcap">A</span>S it is the power of exchanging that gives occasion to the division of labour, so the extent of this division must always be limited by the extent of that power, or, in other words, by the extent of the market.</p>
+              <p class="plain-note">我的想法 · 市场范围限制了分工的精细程度。</p>
+            </section>
+          </article>
+        </div>
+        <button class="mobile-agent-trigger" type="button" aria-expanded="false" aria-controls="mobileAgentSheetA">
+          <span>1 条待判断</span><strong>陪读</strong>
+        </button>
+        <div class="mobile-sheet-scrim" data-mobile-sheet-close hidden></div>
+        <aside class="mobile-agent-sheet" id="mobileAgentSheetA" aria-label="移动端陪读底部层" aria-hidden="true">
+          <div class="sheet-handle" aria-hidden="true"></div>
+          <header><div><span>当前一步</span><strong>确认两段原文的关系</strong></div><button type="button" data-mobile-sheet-close>关闭</button></header>
+          <p>专业化是否受到市场范围的约束？</p>
+          <button class="sheet-primary" type="button" data-mobile-sheet-jump>回到原文旁判断</button>
+          <small>关闭后仍回到原来的阅读位置</small>
+        </aside>
+      </section>
+
+      <section class="variant variant-b" data-variant-panel="B" aria-label="方案 B，可折叠书签态" hidden>
+        <div class="focus-shell">
+          <header class="focus-toolbar">
+            <button type="button" aria-label="返回书架">‹ <span>书架</span></button>
+            <div><span>《国富论》</span><strong>第一卷 · 第一章与第三章</strong></div>
+            <button type="button">Aa</button>
+          </header>
+          <article class="focus-page">
+            <section class="focus-source" id="division-b">
+              <SourceHeader data-page="36" data-chapter="BOOK I · CH. I"></SourceHeader>
+              <p class="source-title">Of the division of labour</p>
+              <p class="source-quote"><span class="dropcap">T</span>HE greatest improvement in the productive powers of labour, and the greater part of the skill, dexterity, and judgment with which it is any where directed, or applied, seem to have been the effects of the division of labour.</p>
+              <p class="margin-idea"><span>我的想法</span>分工让工人更熟练，但我还不知道什么时候会失效。</p>
+              <Composer label="提问、记录想法或说出一个行动…"></Composer>
+            </section>
+
+            <RelationPanel data-id="relation-b"></RelationPanel>
+
+            <section class="focus-source" id="market-b">
+              <SourceHeader data-page="45" data-chapter="BOOK I · CH. III"></SourceHeader>
+              <p class="source-title source-title-small">That the division of labour is limited by the extent of the market</p>
+              <p class="source-quote"><span class="dropcap">A</span>S it is the power of exchanging that gives occasion to the division of labour, so the extent of this division must always be limited by the extent of that power, or, in other words, by the extent of the market.</p>
+              <p class="margin-idea"><span>我的想法</span>市场范围限制了分工的精细程度。</p>
+            </section>
+          </article>
+        </div>
+        <button class="agent-bookmark" type="button" aria-expanded="false" aria-controls="agentDrawer">
+          <span class="bookmark-glyph" aria-hidden="true">读</span>
+          <span class="bookmark-count">1</span>
+          <span class="bookmark-label">陪读</span>
+        </button>
+        <div class="drawer-scrim" data-drawer-close hidden></div>
+        <aside class="agent-drawer" id="agentDrawer" aria-label="陪读抽屉" aria-hidden="true">
+          <header><div><span>当前一步</span><strong>确认两段原文的关系</strong></div><button type="button" data-drawer-close aria-label="关闭陪读抽屉">×</button></header>
+          <div class="drawer-source"><span>正在读</span><strong>PDF 36 · 分工</strong><small>你的阅读位置没有改变</small></div>
+          <div class="drawer-task"><span class="task-dot"></span><div><strong>1 条关系等待判断</strong><p>专业化是否受到市场范围的约束？</p></div></div>
+          <button class="drawer-primary" type="button" data-drawer-jump>在原文旁判断</button>
+          <details><summary>本次阅读状态</summary><p>2 条想法 · 世界尚未展开 · 语音未启动</p></details>
+          <button class="drawer-stop" type="button">先停一下</button>
+        </aside>
+      </section>
+
+      <section class="variant variant-c" data-variant-panel="C" aria-label="已归档方案 C，上下文内联" hidden>
+        <header class="inline-toolbar">
+          <div><span class="inline-brand">鲜活阅读器</span><span class="inline-path">《国富论》 / 第一卷</span></div>
+          <div class="inline-actions"><span>阅读进度 2 / 3</span><button type="button" data-inline-toggle>召回陪读 <b>1</b></button></div>
+        </header>
+        <article class="inline-page">
+          <section class="inline-source" id="division-c">
+            <SourceHeader data-page="36" data-chapter="BOOK I · CH. I"></SourceHeader>
+            <p class="source-title">Of the division of labour</p>
+            <p class="source-quote"><span class="dropcap">T</span>HE greatest improvement in the productive powers of labour, and the greater part of the skill, dexterity, and judgment with which it is any where directed, or applied, seem to have been the effects of the division of labour.</p>
+            <p class="inline-idea"><span>你留下的想法</span>分工让工人更熟练，但我还不知道什么时候会失效。</p>
+            <Composer label="围绕这段原文继续说…"></Composer>
+          </section>
+
+          <section class="inline-companion" data-inline-companion hidden>
+            <div class="companion-avatar" aria-hidden="true">✦</div>
+            <div><span>陪读回应 · 基于当前原文</span><p>你已经抓住了“熟练”这一面。下一段可能正好回答它为什么不能无限延伸。</p><details><summary>查看依据</summary><p>来源：PDF 36 的分工段；这句话是陪读推断，不是 Smith 原话。</p></details></div>
+          </section>
+
+          <RelationPanel data-id="relation-c"></RelationPanel>
+
+          <section class="inline-source" id="market-c">
+            <SourceHeader data-page="45" data-chapter="BOOK I · CH. III"></SourceHeader>
+            <p class="source-title source-title-small">That the division of labour is limited by the extent of the market</p>
+            <p class="source-quote"><span class="dropcap">A</span>S it is the power of exchanging that gives occasion to the division of labour, so the extent of this division must always be limited by the extent of that power, or, in other words, by the extent of the market.</p>
+            <p class="inline-idea"><span>你留下的想法</span>市场范围限制了分工的精细程度。</p>
+          </section>
+        </article>
+      </section>
+    </main>
+
+    <nav class="prototype-switcher" aria-label="原型方案切换">
+      <button type="button" data-cycle="-1" aria-label="上一方案">←</button>
+      <div><span>正在比较</span><strong data-variant-name>A · 安静常驻轨道</strong></div>
+      <div class="variant-dots" role="group" aria-label="选择方案">
+        <button type="button" data-variant="A" aria-pressed="true">A</button>
+        <button type="button" data-variant="B" aria-pressed="false">B</button>
+      </div>
+      <button type="button" data-cycle="1" aria-label="下一方案">→</button>
+    </nav>
+
+    <template id="sourceHeaderTemplate">
+      <header class="source-header"><span class="source-page"></span><span class="source-chapter"></span><button type="button" class="source-evidence">查看依据</button></header>
+    </template>
+    <template id="composerTemplate">
+      <div class="composer-block">
+        <form class="single-composer"><label><span class="sr-only">表达入口</span><input type="text" /></label><button type="submit" class="composer-submit">提交</button><button class="composer-mic" type="button" aria-label="使用语音">语音</button></form>
+        <div class="intent-confirm" aria-live="polite" hidden>
+          <div><span>我理解你是在表达</span><strong data-intent-preview></strong></div>
+          <div class="intent-options" role="group" aria-label="选择表达类型">
+            <button type="button" data-intent="问题">问题</button><button type="button" data-intent="观察" aria-pressed="true">观察</button><button type="button" data-intent="假设">假设</button><button type="button" data-intent="类比">类比</button>
+          </div>
+          <button class="intent-cancel" type="button">撤回</button>
+        </div>
+      </div>
+    </template>
+    <template id="relationTemplate">
+      <section class="relation-panel">
+        <div class="relation-kicker"><span>一条关系等待你的判断</span><small>世界尚未展开</small></div>
+        <p class="relation-human">专业化受到市场范围的约束。</p>
+        <p class="relation-explain">你的两个想法可能接在一起：更细的分工需要足够多人交换产出。</p>
+        <details><summary>查看依据</summary><div class="evidence-grid"><span>来自原文</span><p>PDF 36 · 分工提高熟练与判断</p><span>来自原文</span><p>PDF 45 · 分工受市场范围限制</p><span>关系类型</span><p>推断 · 等待你的确认</p></div></details>
+        <div class="relation-actions"><button class="primary" type="button" data-relation-accept>是，接通它们</button><button type="button" data-relation-adjust>调整说法</button><button type="button" data-relation-hold>暂不处理</button></div>
+      </section>
+      <section class="world-reveal" aria-live="polite" hidden>
+        <div class="world-reveal-inner">
+          <div class="causal-path" aria-label="世界的生成依据"><span>原文 36</span><i>你的观察</i><span>约束关系</span><i>你的观察</i><span>原文 45</span></div>
+          <div class="world-preview">
+            <div><span>思想实验准备就绪</span><h3>一间受市场范围约束的小工坊</h3><p>先预览规则，再决定是否进入。世界由刚刚确认的关系生成，不是固定演示。</p></div>
+            <dl><div><dt>可观察</dt><dd>熟练、等待、库存与现金压力</dd></div><div><dt>你可以</dt><dd>扩大市场或继续细化分工</dd></div><div><dt>可恢复</dt><dd>随时收起并回到当前原文</dd></div></dl>
+            <button type="button" data-world-enter>预览运行规则</button>
+          </div>
+        </div>
+      </section>
+    </template>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
