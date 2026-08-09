@@ -404,7 +404,7 @@ reconciliation_required
 - `reconciliation_required` 时除 `watch`、`effect.cancel` 和特权 `reconciliation.resolve` 外拒绝写命令。
 - 同一 experience 同时最多一个会生成 Relation/WorldPatch 的活动外部 Effect。Voice presentation 可以并行，但不能改变主状态。
 - source focus、proposal、review、graph revision 和 world action 都带所属 experience 与 basis version，不能跨体验复用。
-- accepted market action 是带 inverse operations 的 reviewed WorldPatch；重跑必须显式引用同一 graph/work-plan revision 与新的 market patch。
+- accepted market action 是带 inverse operations 的 allowlisted WorldPatch。对低风险、可逆的 MVP 动作，读者当前明确的行动句，或唯一命中有效 PendingIntent 的承接句，本身就是该次 action 的 review/commit 意图；不得再增加审批/预览 UI。重跑仍必须显式引用同一 graph/work-plan revision 与新的 market patch。
 - `world.run` 与 `world.action` 通过纯 WorldKernel 一次决定并一次提交，不把“计算中”误建模为外部世界已经发生。
 
 ### 6.1 领域 invariant
@@ -413,7 +413,7 @@ reconciliation_required
 - Relation 必须有 typed edge、双方 source IDs、evidence refs 和 basis version；未知自由文本 edge 不能 commit。
 - GraphCommitted 只能引用已 review=accept 且仍基于当前 source/graph revision 的 Relation/WorldPatch。
 - WorldPatch 只能包含 allowlisted operations，并必须带 inverse operations、evidence refs 和 basis version。
-- LLM 只能产生候选 Relation/WorldPatch/answer；只有读者明确 review/commit 后，结构化对象才能进入 WorldKernel。
+- LLM 只能产生候选 Relation/WorldPatch/answer。LLM 主动提出的 Relation/机制 WorldPatch 只有读者明确 review/commit 后才能进入 WorldKernel；由读者明确行动 turn 编译出的低风险 allowlisted runtime action，可把该 turn 作为同轮授权，不要求二次确认。歧义、低置信、stale 或不可逆动作仍不得进入 WorldKernel。
 - 相同初始状态、confirmed Command、seed 和 ruleset version 必须产生相同 WorldEvent 序列。
 - 每个库存、现金、劳动、订单、运输和瓶颈变化都必须对应一个 ledger entry；不得负库存、超额履约、无限劳动或无来源现金。
 - 市场扩展必须显式包含运输成本和延迟；专业化只能改变 ruleset 声明的参数。

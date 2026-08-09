@@ -21,8 +21,9 @@ Shared invariants:
 - A `MechanismGraph`/relation is a proposal until user review/commit. Only committed, allowlisted commands can reach the world; `EventStore` is the sole fact source and `ReaderWorldUseCase.dispatch` is the only write path.
 - LLM output is schema-validated candidate data. It cannot directly write `WorldState`, `EventStore`, graph facts, cash, inventory, orders, or character facts. Every numeric outcome is deterministic and replayable from the same graph revision, seed, ruleset, and action sequence.
 - A `CharacterObservation` explains a local state and causal event; it is not free-form NPC fiction. The world stays hidden until the evidence/relationship/Kernel/replay `PlayabilityGate` passes, and results return to PDF 36 ↔ PDF 45.
-- Voice is caller-first: only final, source-bound input may create a `ReaderIdea`; Stop, permission denied, unsupported input, ASR uncertainty, retry, and unknown branches remain visible. Silence or partial input does not write domain state.
+- Voice is caller-first: only final, source-bound input may enter the shared Agent turn or create a `ReaderIdea`; semantic routing decides whether the final is discussion, an idea, or an action, so voice finals must not be blindly saved as ideas. Stop, permission denied, unsupported input, ASR uncertainty, retry, and unknown branches remain visible. Silence or partial input does not write domain state.
 - `productive_detour` is a valid reading path and may become a `BookThought` experiment/inference. `obvious_off_topic_noise` gets at most one concrete soft-return; if the reader declines, invitation stops and is not repeated.
+- The three Agent OS identities are authority lenses inside one semantic turn, not three model agents. Final text and voice share one `AgentTurnDecision`; a code-maintained, session-only `PendingIntent` may carry one unique action across a few related turns and is invalidated by source/world basis changes, Stop, a competing topic, or successful execution. Clear low-risk MVP actions run without an approval or preview UI; ambiguous, hypothetical, low-confidence, or stale input leaves the world unchanged.
 
 ## Book and Source
 
@@ -105,7 +106,7 @@ _Avoid_: Source claim, quotation, evidence
 ## Participants
 
 **ReadingAgent**:
-The user-visible Agent OS expressed through three coordinated identities: a **阅读陪伴者** that answers from the active source and proposes revisable `BookThought`s; an **原文守护者** that checks evidence while allowing productive detours and offering one gentle soft-return for true noise; and a **世界机制导演** that selects/compiles reviewed mechanisms and arranges local role observations. It does not author the reader's `ReaderIdea`, bypass review, or decide economic consequences; deterministic `WorldKernel` does that.
+The user-visible Agent OS expressed through three coordinated authority lenses inside one semantic turn: a **阅读陪伴者** that answers from the active source and proposes revisable `BookThought`s; an **原文守护者** that checks evidence while allowing productive detours and offering one gentle soft-return for true noise; and a **世界机制导演** that selects/compiles reviewed mechanisms and arranges local role observations. It does not author the reader's `ReaderIdea`, multiply the turn into three model agents, bypass relation review, or decide economic consequences; deterministic `WorldKernel` does that.
 _Avoid_: 过窄的命令解析器, substitute reader, economic engine, free-form NPC narrator
 
 **EconomicActor**:

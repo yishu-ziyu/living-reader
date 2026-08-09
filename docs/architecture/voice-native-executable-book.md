@@ -14,7 +14,7 @@
 3. Agent 提议把两张便签接成一条关系，并把“分工提高能力”与“市场太小时难以继续细分”说清楚。读者可以改写、拒绝或确认这条关系；Agent 没有替她提交事实。
 4. 关系确认、证据齐全后，读者说：“已经可以玩了。”页面此时才征求主动语音并邀请试玩；她也可以拒绝麦克风，继续用文字完成同一条路径。
 5. 两段原文之间长出一块小世界：针厂、工序、订单和运输路线都来自已确认的阅读关系。读者调整分工或市场范围，随时可以停下、重试或换一个办法。
-6. 试玩结果再折回这两段原文：便签、读者的初始预测、世界发生过的结果和触发它们的关系并列出现。每个结果都能回答“哪一段文字、哪一个确认动作、哪一次世界事件”把它带到这里。
+6. 试玩结果再折回这两段原文：便签、读者的初始预测、世界发生过的结果和触发它们的关系并列出现。每个结果都能回答“哪一段文字、哪一次读者行动、哪一次世界事件”把它带到这里。
 
 下面的接口、事实源和信任边界，都是为了让这条具体路径在断线、拒绝、重试和回放时仍然成立；它们不是产品入口本身。
 
@@ -415,13 +415,13 @@ type EffectIntent = {
 };
 ```
 
-LLM 可以提议这四类结构化对象，但没有任何 LLM 返回值本身具有 commit 权限。`Relation` 没有 evidence refs 或 basis version 时不能进入 committed graph；`WorldPatch` 没有逆操作时不能过 gate。
+LLM 可以提议这四类结构化对象，但没有任何 LLM 返回值本身具有 commit 权限。`Relation` 没有 evidence refs 或 basis version 时不能进入 committed graph；`WorldPatch` 没有逆操作时不能过 gate。对已经 playable 的世界，读者明确提出的低风险 allowlisted action 可由 Harness 在同一 turn 编译并直接提交，该读者 turn 本身就是授权，不再展示审批或预览；假设、歧义、低置信或 stale 输入保持零修改。
 
 ### 6.3 信任边界矩阵
 
 | 来源/模块 | 信任假设 | 可进入的层 | 必须阻断 |
 |---|---|---|---|
-| 用户文字/语音 | 真实表达，但可能含歧义、注入和越权要求 | `PrepareReading` 候选 | 直接写图、直接改金额、绕过确认 |
+| 用户文字/语音 | 真实表达，但可能含歧义、注入和越权要求 | `PrepareReading` 候选；playable world 中清晰、低风险、allowlisted 的 action 可由 Harness 编译为同轮命令 | 直接写图、直接改金额、绕过关系审阅或歧义/stale/action allowlist 守卫 |
 | PDF.js/HTML/EPUB | 内容可能含脚本、提示注入、错误 OCR | 清洗后的 `SourceBlock` | 脚本执行、外链抓取、未经引用的事实 |
 | LLM proposer | 非确定、可出错、不可授予执行权 | `ReaderIdea` / `Relation` / `WorldPatch` proposal | 直接提交 event、调用 adapter、发通知 |
 | Omni/WebRTC/fallback | 外部服务可能断线或返回错误身份 | normalized observation | 未验证模型/schema、静默切 provider |

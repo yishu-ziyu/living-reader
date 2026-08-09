@@ -71,8 +71,8 @@
 |---|---|---|
 | 在 PDF 45 留下“市场太小会卖不掉”并确认关系 | `ReaderIdea` + `MechanismGraph.commit`；关系、evidence、Kernel/replay 条件通过 `PlayabilityGate` | Inline World 只在 Gate 通过后出现；同一阅读界面显示 PDF 45 上/下片、初始 `WorldState`、graph revision 和 `MODEL EXTENSION`。Gate 前世界入口/主动语音保持隐藏。 |
 | 对世界说“让织工再专业化” | `executable_action=deepen_specialization`；baseline `reachable_orders < minimum_orders_for_next_depth + outputs_pending` | `CharacterObservation(action=refuse)` 写明“卖不完/无法换回所需品”；订单、库存、现金和专业化深度不被偷偷改写，拒绝原因可回到 PDF 45。 |
-| 用已授权麦克风说“扩大市场”，或改用文字提交同一句 | final input 通过 source/world/expected revision 与 allowlist 检查；先进入动作预览 | 可见解析后的 `expand_market`、目标 world、前置条件、可逆性和 Stop/Retry；ASR 不确定时停在 `needs_review`，不执行。 |
-| 确认动作并等待角色反应 | `WorldKernel.decide/evolve` 只应用市场变量；事件按 merchant → shepherd/spinner → weaver 因果顺序追加 | 订单簿/可触达订单/运输路径先变化；随后每个角色显示 local predicate、event ID、动作/台词。订单足够时织工从 `refuse` 变为 `accept`/`weave`，不足时诚实保持拒绝；没有 LLM 直接写数。 |
+| 用已授权麦克风说“修条路，把货卖到隔壁城去”，或改用文字提交同一句 | final input 归一为同一个 Agent turn；通过 source/world/expected revision 与 allowlist 检查后直接映射 `expand_market`，同一幂等键只 dispatch 一次 | 伙伴只说一句自然短话；页面没有审批卡、动作预览、影响清单、技术参数或“是否执行”。随后订单簿/可触达订单/运输路径变化，角色按 merchant → shepherd/spinner → weaver 反应；ASR 不确定时零修改并自然澄清。 |
+| 在重置 baseline 中先说“要是能修条路通到隔壁城就好了”，再说“那就修” | 第一轮是讨论，只建立当前 source/world basis 下的唯一 PendingIntent；第二轮命中后转为一次 `expand_market` | 第一轮世界完全不动，第二轮不用复述完整命令；孤立“那就修”、换原文、world revision 改变或 Stop 后再说均不得猜测执行。 |
 | 点击收起、回到原文，再重新打开世界 | `EvidenceSnapshotProduced`；collapse/reopen 使用同一 graph/world revision 与事件账 | 先回到 PDF 45 同一段并保留 PDF 36 回指、ReaderIdea、BookThought、关系和事件；刷新/重开后恢复同一持久化结果，若原型只能重置必须明确标为“重新开始”，不能静默换状态。 |
 
 #### 路径 C：跑题温和回引 + 拒绝不重复
@@ -104,7 +104,7 @@
 | 13 | 接受或确认这条关系 | 第二条 Idea 已存在，关系被用户确认 | 页面明确变成“已经可以玩了”；此前不能出现的世界入口现在才可用 | [ ] |
 | 14 | 点击“展开世界 / 已经可以玩了” | B 变体、关系确认且 `PlayabilityGate` 已通过 | 第 45 页目标段落后的 PDF 被分开：上片保持原段落，下片向下移动，中间出现可变高度的世界块；Gate 未通过前没有动作或主动语音入口；不是跳转到新页面或盖一层 iframe | [ ] |
 | 15 | 先说“让织工再专业化” | 世界已展开，baseline predicate 不满足 | 织工出现带 event ID / local predicate 的拒绝观察；订单、库存、现金、专业化深度不被模型直接改写 | [ ] |
-| 16 | 再说“扩大市场”并确认动作 | final voice/text；`expand_market` allowlist 与 expected world revision 匹配 | 先看到动作解析、前置条件和可逆性；执行后市场可触达订单/交换路径/订单簿变化，事件账可追溯；不把一句 Agent 解释当作结果 | [ ] |
+| 16 | 再说“修条路，把货卖到隔壁城去” | final voice/text 进入同一个 Agent turn；`expand_market` allowlist 与 expected world revision 匹配；一次 dispatch | 伙伴一句自然承接后世界直接变化；没有审批卡、动作预览、影响清单或二次点击；市场可触达订单/交换路径/订单簿变化，事件账可追溯；不把一句 Agent 解释当作结果 | [ ] |
 | 17 | 等待角色反应并展开详情 | Kernel 以 merchant → shepherd/spinner → weaver 顺序演进 | 四职业的 local state、动作/台词、事件 ID 和因果顺序可见；条件足够时织工接受/织造，否则诚实保持拒绝；世界块高度变化时 PDF 下片同步移动 | [ ] |
 | 18 | 点击世界中的“收起 / 回到原文” | 已发生拒绝与市场动作 | 世界折回；视线回到 PDF 45 同一段、同一行附近；第二张 Idea、BookThought、关系和事件账仍在原锚点，页面没有空白洞或残留遮罩 | [ ] |
 | 19 | 刷新/关闭后重新打开，再回到 PDF 45 并重新打开世界 | collapse/reopen/persistence 路径 | 恢复同一 graph/world revision、Idea、关系和事件结果；若原型选择重置，必须明确写“重新开始”，不能静默换一套数据 | [ ] |
