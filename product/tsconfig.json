@@ -16,6 +16,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
+    "types": [
+      "node"
+    ],
     "incremental": true,
     "plugins": [
       {
@@ -41,6 +44,7 @@
     ".next-playwright/dev/types/**/*.ts"
   ],
   "exclude": [
+    "agent-runtime",
     "node_modules"
   ]
 }

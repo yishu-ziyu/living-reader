@@ -2,26 +2,40 @@
   "name": "product",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@10.26.2",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
+    "agent:dev": "bun --watch agent-runtime/index.ts",
+    "agent:start": "bun agent-runtime/index.ts",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "next typegen && tsc --noEmit",
+    "typecheck:agent": "tsc -p agent-runtime/tsconfig.json",
     "test:e2e": "playwright test",
     "test:e2e:smoke": "playwright test tests/e2e/home-smoke.spec.ts",
     "test:unit": "vitest run",
-    "check:quick": "pnpm lint && pnpm typecheck && pnpm test:unit && pnpm build",
+    "test:agent": "bun test agent-runtime/*.test.ts",
+    "check:quick": "pnpm lint && pnpm typecheck && pnpm typecheck:agent && pnpm test:unit && pnpm test:agent && pnpm build",
     "check:full": "pnpm check:quick && pnpm test:e2e"
   },
   "dependencies": {
+    "@oh-my-pi/omptype": "17.2.12",
+    "@oh-my-pi/pi-agent-core": "17.2.12",
+    "@oh-my-pi/pi-ai": "17.2.12",
+    "@oh-my-pi/pi-catalog": "17.2.12",
     "next": "16.3.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
+    "thinking-orbs": "0.2.0",
     "xstate": "5.32.5"
   },
   "devDependencies": {
     "@playwright/test": "^1.62.1",
+    "@types/bun": "1.3.14",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
