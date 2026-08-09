@@ -1,0 +1,33 @@
+{
+  "name": "product",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test:e2e": "playwright test",
+    "test:e2e:smoke": "playwright test tests/e2e/home-smoke.spec.ts",
+    "test:unit": "vitest run",
+    "check:quick": "pnpm lint && pnpm typecheck && pnpm test:unit && pnpm build",
+    "check:full": "pnpm check:quick && pnpm test:e2e"
+  },
+  "dependencies": {
+    "next": "16.3.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "xstate": "5.32.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.0",
+    "typescript": "^5",
+    "vitest": "3.2.6"
+  }
+}

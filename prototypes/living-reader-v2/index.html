@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1514">
+  <title>The Living Reader v2 · 阅读关系实验室</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-variant="B">
+  <header class="topbar">
+    <div class="brand-lockup">
+      <span class="brand-mark" aria-hidden="true">L//R</span>
+      <div>
+        <p class="brand-eyebrow">THE LIVING READER · PROTOTYPE V2</p>
+        <p class="brand-title">边读边说，思想关系接通后世界生长</p>
+      </div>
+    </div>
+    <div class="book-meta" aria-label="当前书目">
+      <span>AN INQUIRY INTO THE NATURE AND CAUSES</span>
+      <strong>WEALTH OF NATIONS · BOOK I</strong>
+    </div>
+    <div class="topbar-actions">
+      <span class="pdf-chip" id="pdfStatus" role="status" aria-live="polite">PDF · 正在读取</span>
+      <nav class="variant-tabs" aria-label="布局选择">
+        <span class="variant-label">LAYOUT</span>
+        <button type="button" data-variant="A" aria-label="A 旁注覆盖布局">A</button>
+        <button type="button" data-variant="B" aria-label="B 阅读器内分段布局">B</button>
+        <button type="button" data-variant="C" aria-label="C 展开式书页布局">C</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="app-shell">
+    <aside class="control-rail" aria-label="阅读控制台">
+      <div class="rail-intro">
+        <span class="section-index">01 / READER</span>
+        <h1>让原文先<br><em>说出关系。</em></h1>
+        <p>选择段落，留下自己的 Idea。Agent OS 会分开守护原文、回应问题，并在确认关系后导演可重放的世界。</p>
+      </div>
+
+      <section class="anchor-panel" aria-labelledby="anchorTitle">
+        <div class="panel-heading">
+          <span class="panel-kicker">SOURCE ANCHOR</span>
+          <span class="panel-count" id="anchorCount">00 / 02</span>
+        </div>
+        <h2 id="anchorTitle">今天从哪一段开始？</h2>
+        <div class="anchor-picker">
+          <button class="anchor-choice is-current" type="button" data-source-target="division" data-source-id="smith.b1.c1.division">
+            <span class="anchor-choice__page" data-page-label="division">P. 36</span>
+            <span class="anchor-choice__body"><strong>分工</strong><small>熟练与少切换</small></span>
+            <span class="anchor-choice__state" aria-hidden="true">↗</span>
+          </button>
+          <button class="anchor-choice" type="button" data-source-target="market" data-source-id="smith.b1.c3.market_extent">
+            <span class="anchor-choice__page" data-page-label="market">P. 45</span>
+            <span class="anchor-choice__body"><strong>市场范围</strong><small>谁来买走这道工序</small></span>
+            <span class="anchor-choice__state" aria-hidden="true">↗</span>
+          </button>
+        </div>
+        <p class="anchor-footnote"><span class="dot dot--oxide"></span> 页码是显示定位；关系会绑定到语义锚点。</p>
+      </section>
+
+      <section class="voice-console" aria-labelledby="voiceTitle">
+        <div class="panel-heading">
+          <span class="panel-kicker">VOICE INPUT</span>
+          <span class="voice-led" id="voiceStateLed">IDLE</span>
+        </div>
+        <h2 id="voiceTitle">把这一段说给自己听</h2>
+        <p class="voice-explainer">真实麦克风只在你点击后打开。没有权限或浏览器不支持时，文字和 Replay voice 仍然等价。</p>
+        <button class="voice-button" id="voiceButton" type="button">
+          <span class="voice-button__icon" aria-hidden="true">◉</span>
+          <span class="voice-button__label">使用麦克风说这一轮</span>
+          <span class="voice-button__hint">MIC</span>
+        </button>
+        <button class="replay-button" id="replayVoiceButton" type="button">
+          <span aria-hidden="true">↻</span>
+          <span>Replay voice</span>
+          <kbd>R</kbd>
+        </button>
+        <div class="voice-status" id="voiceStatus" role="status" aria-live="polite">等待你的第一句话。</div>
+        <div class="transcript-live" id="transcriptLive" aria-live="polite">临时转写会显示在这里；尚未提交前不会进入关系图。</div>
+      </section>
+
+      <section class="text-fallback" aria-labelledby="textTitle">
+        <div class="panel-heading">
+          <span class="panel-kicker">TEXT FALLBACK</span>
+          <span class="panel-count">等价入口</span>
+        </div>
+        <h2 id="textTitle">也可以直接写下来</h2>
+        <textarea id="textIdeaInput" rows="3" placeholder="问原文、说想法、下动作……"></textarea>
+        <button class="text-submit" id="saveTextIdea" type="button">提交给 Agent OS <span aria-hidden="true">↗</span></button>
+      </section>
+
+      <section class="agent-os-panel" aria-labelledby="agentOsTitle">
+        <div class="panel-heading">
+          <span class="panel-kicker">AGENT OS · MVP FIXTURE</span>
+          <span class="agent-os-led" id="agentOsLed">IDLE</span>
+        </div>
+        <h2 id="agentOsTitle">同一入口，三种判断</h2>
+        <p class="agent-os-explainer">确定性路由只提出候选；原文证据和世界数值仍由既定边界守护。</p>
+        <div class="agent-os-response" id="agentOsResponse" role="status" aria-live="polite">
+          <span class="agent-os-empty">问一句、提出动作，或告诉我你想先停一下。</span>
+        </div>
+        <div class="agent-os-thoughts" id="agentOsThoughts" aria-live="polite"></div>
+        <div class="agent-os-controls">
+          <button type="button" class="agent-os-control" id="agentOsSpeak" disabled>播报</button>
+          <button type="button" class="agent-os-control" id="agentOsMute">静音</button>
+          <button type="button" class="agent-os-control" id="agentOsStopOutput">停止</button>
+          <button type="button" class="agent-os-control" id="agentOsContinue" hidden>继续入口</button>
+        </div>
+        <div class="agent-os-soft-return" id="agentOsSoftReturn" hidden>
+          <button type="button" class="agent-os-next" data-soft-return-continue>看织工的选择 →</button>
+          <button type="button" class="agent-os-decline" data-soft-return-decline>先停一下</button>
+        </div>
+      </section>
+
+      <section class="session-ledger" aria-label="本次阅读会话">
+        <div class="panel-heading"><span class="panel-kicker">SESSION LEDGER</span><span class="panel-count" id="sessionClock">00:00</span></div>
+        <div class="ledger-line"><span>IDEAS</span><strong id="ledgerIdeas">0 / 2</strong></div>
+        <div class="ledger-line"><span>RELATION</span><strong id="ledgerRelation">待接通</strong></div>
+        <div class="ledger-line"><span>WORLD</span><strong id="ledgerWorld">未生长</strong></div>
+      </section>
+    </aside>
+
+    <section class="reader-workspace" aria-label="PDF 阅读与世界区域">
+      <div class="workspace-head">
+        <div>
+          <span class="workspace-kicker">READING SURFACE / <span id="activeLayoutLabel">B · SEGMENTED COMPOSITOR</span></span>
+          <h2>Book I · 分工、交换与市场范围</h2>
+        </div>
+        <div class="workspace-state">
+          <span class="state-orb" id="workspaceOrb" aria-hidden="true"></span>
+          <span id="workspaceState">请选择一个 PDF 段落</span>
+        </div>
+      </div>
+
+      <div class="connection-banner" id="connectionBanner" role="status" aria-live="polite">
+        <span class="connection-banner__signal" aria-hidden="true">01</span>
+        <span id="connectionText">先在分工段落或市场范围段落留下一个 Idea。它会留在原文旁边。</span>
+        <span class="connection-banner__rule" aria-hidden="true"></span>
+      </div>
+
+      <div class="reader-surface" id="readerSurface">
+        <section class="variant-surface variant-surface--a" data-variant-surface="A" hidden aria-label="A 旁注覆盖布局">
+          <div class="surface-caption"><span>A / MARGIN OVERLAY</span><span>完整页面 + 旁注关系</span></div>
+          <div class="page-composition page-composition--a">
+            <article class="pdf-page-card pdf-page-card--a">
+              <div class="page-topline"><span>THE WEALTH OF NATIONS</span><span>BOOK I · CH. I</span></div>
+              <div class="pdf-canvas-shell" data-page-shell="a10">
+                <canvas id="aPage10" data-pdf-page="36" aria-label="PDF 第 36 页，分工段落"></canvas>
+                <span class="pdf-anchor pdf-anchor--division" data-anchor-target="division" role="button" tabindex="0"><i aria-hidden="true"></i><span data-anchor-label="division">第 36 页 · 分工 Idea</span></span>
+              </div>
+              <div class="page-bottomline"><span>PRIMARY TEXT · PDF RENDER</span><span data-folio-label="division">36</span></div>
+            </article>
+            <aside class="margin-notes margin-notes--a" aria-label="A 布局页边 Idea">
+              <span class="margin-notes__label">MARGIN / YOUR READING</span>
+              <div class="margin-note margin-note--division" data-idea-note="division"><span>01</span><strong>等待你的分工 Idea</strong><small data-note-page="division">它会贴在第 36 页旁边</small></div>
+              <div class="margin-note margin-note--market" data-idea-note="market"><span>02</span><strong>市场范围</strong><small data-note-page="market">它会贴在第 45 页旁边</small></div>
+              <div class="margin-relation" id="marginRelationA">— 尚未接通 —</div>
+            </aside>
+          </div>
+          <article class="pdf-page-card pdf-page-card--a pdf-page-card--secondary">
+            <div class="page-topline"><span>THE WEALTH OF NATIONS</span><span>BOOK I · CH. III</span></div>
+            <div class="pdf-canvas-shell" data-page-shell="a12">
+              <canvas id="aPage12" data-pdf-page="45" aria-label="PDF 第 45 页，市场范围段落"></canvas>
+              <span class="pdf-anchor pdf-anchor--market" data-anchor-target="market" role="button" tabindex="0"><i aria-hidden="true"></i><span data-anchor-label="market">第 45 页 · 市场范围 Idea</span></span>
+            </div>
+            <div class="page-bottomline"><span>PRIMARY TEXT · PDF RENDER</span><span data-folio-label="market">45</span></div>
+          </article>
+          <div class="world-slot world-slot--a" id="worldSlotA"><p class="world-waiting">两条 Idea 接通后，世界会在页边展开。</p></div>
+        </section>
+
+        <section class="variant-surface variant-surface--b" data-variant-surface="B" hidden aria-label="B 阅读器内分段布局">
+          <div class="surface-caption"><span>B / SEGMENTED PAGE COMPOSITOR</span><span>PDF 上段 · HTML 世界块 · PDF 下段</span></div>
+          <article class="segmented-page" aria-label="被世界块分开的第 45 页 PDF">
+            <div class="page-topline"><span>THE WEALTH OF NATIONS</span><span>BOOK I · CH. III</span></div>
+            <div class="pdf-segment pdf-segment--top" data-page-shell="b45top">
+              <canvas id="bPage45Top" data-pdf-page="45" aria-label="PDF 第 45 页上段"></canvas>
+              <span class="pdf-anchor pdf-anchor--market" data-anchor-target="market" role="button" tabindex="0"><i aria-hidden="true"></i><span data-anchor-label="market">第 45 页 · 市场范围段落</span></span>
+            </div>
+            <div class="world-slot world-slot--b" id="worldSlotB"><p class="world-waiting">关系经读者确认且 Playability Gate 通过后，世界块才会插入这里。</p></div>
+            <div class="pdf-segment pdf-segment--bottom" data-page-shell="b45bottom">
+              <canvas id="bPage45Bottom" data-pdf-page="45" aria-label="PDF 第 45 页下段"></canvas>
+              <span class="pdf-anchor pdf-anchor--market pdf-anchor--lower" data-anchor-target="market" role="button" tabindex="0"><i aria-hidden="true"></i><span>原文锚点仍在这里</span></span>
+            </div>
+            <div class="pdf-text-layer-composite" id="bPage45Text" aria-label="PDF 第 45 页可选择文字层；世界间隙下方文字与原文同步"></div>
+            <div class="page-bottomline"><span>THE PAGE REMAINS THE SOURCE</span><span data-folio-label="market">45</span></div>
+          </article>
+          <article class="pdf-page-card pdf-page-card--b-secondary">
+            <div class="page-topline"><span>THE WEALTH OF NATIONS</span><span>BOOK I · CH. I</span></div>
+            <div class="pdf-canvas-shell" data-page-shell="b36">
+              <canvas id="bPage36" data-pdf-page="36" aria-label="PDF 第 36 页，分工段落"></canvas>
+              <span class="pdf-anchor pdf-anchor--division" data-anchor-target="division" role="button" tabindex="0"><i aria-hidden="true"></i><span data-anchor-label="division">第 36 页 · 分工段落</span></span>
+            </div>
+            <div class="page-bottomline"><span>PRIMARY TEXT · PDF RENDER</span><span data-folio-label="division">36</span></div>
+          </article>
+        </section>
+
+        <section class="variant-surface variant-surface--c" data-variant-surface="C" hidden aria-label="C 展开式书页布局">
+          <div class="surface-caption"><span>C / FOLD-OUT SPREAD</span><span>两页原文同时在场，世界从书脊展开</span></div>
+          <div class="book-spread">
+            <article class="spread-page spread-page--left">
+              <div class="spread-page__folio"><span>BOOK I · CH. I</span><strong data-folio-label="division">36</strong></div>
+              <div class="pdf-canvas-shell" data-page-shell="c10">
+                <canvas id="cPage10" data-pdf-page="36" aria-label="PDF 第 36 页"></canvas>
+                <span class="pdf-anchor pdf-anchor--division" data-anchor-target="division" role="button" tabindex="0"><i aria-hidden="true"></i><span>分工 Idea</span></span>
+              </div>
+              <div class="spread-page__footer">PRIMARY TEXT / DIVISION</div>
+            </article>
+            <div class="spread-gutter" aria-hidden="true"><span>W · N</span><i></i><span>1776</span></div>
+            <article class="spread-page spread-page--right">
+              <div class="spread-page__folio"><span>BOOK I · CH. III</span><strong data-folio-label="market">45</strong></div>
+              <div class="pdf-canvas-shell" data-page-shell="c12">
+                <canvas id="cPage12" data-pdf-page="45" aria-label="PDF 第 45 页"></canvas>
+                <span class="pdf-anchor pdf-anchor--market" data-anchor-target="market" role="button" tabindex="0"><i aria-hidden="true"></i><span data-anchor-label="market">第 45 页 · 市场范围 Idea</span></span>
+              </div>
+              <div class="spread-page__footer">PRIMARY TEXT / MARKET EXTENT</div>
+            </article>
+          </div>
+          <div class="world-slot world-slot--c" id="worldSlotC"><p class="world-waiting">确认关系后，世界会从两页书脊之间展开。</p></div>
+        </section>
+      </div>
+
+      <section class="idea-dock" aria-labelledby="ideaDockTitle">
+        <div class="idea-dock__head">
+          <div><span class="panel-kicker">ANCHORED IDEAS</span><h2 id="ideaDockTitle">你的两句话</h2></div>
+          <span class="idea-progress" id="ideaProgress">0 / 2</span>
+        </div>
+        <div class="idea-list" id="ideaList"><p class="empty-ideas">还没有 Idea。先选择一个段落，再按语音或 Replay voice。</p></div>
+        <div class="relation-card" id="relationCard" hidden>
+          <div class="relation-card__icon" aria-hidden="true">↗</div>
+          <div class="relation-card__body">
+            <span class="panel-kicker">AGENT PROPOSAL · EDITABLE</span>
+            <strong>专业化 <b>constrained_by</b> 市场范围</strong>
+            <p>你把“熟练度提高”和“市场太小时难以继续细分”放进了同一条关系。<span class="relation-card__evidence">typed edge · constrains · smith.b1.c1.division ↔ smith.b1.c3.market_extent · status needs_review</span>请确认它，再让世界生长。</p>
+          </div>
+          <button class="relation-confirm" id="confirmRelation" type="button">确认这条关系 <span aria-hidden="true">↗</span></button>
+        </div>
+        <div class="playability-gate" id="playabilityGate" hidden>
+          <div><span class="gate-kicker">PLAYABILITY GATE</span><strong id="gateTitle">关系已接通</strong><p id="gateCopy">当你说“已经可以玩了”，页面才邀请世界开始运行。</p></div>
+          <button class="gate-button" id="readyButton" type="button">已经可以玩了 <span aria-hidden="true">→</span></button>
+        </div>
+      </section>
+
+      <section class="outcome-panel" id="outcomePanel" hidden aria-labelledby="outcomeTitle">
+        <div class="outcome-panel__head">
+          <div><span class="panel-kicker">EVIDENCE RETURN</span><h2 id="outcomeTitle">世界折回两段原文</h2></div>
+          <button class="return-button" id="returnToReading" type="button">回到两段原文 <span aria-hidden="true">↗</span></button>
+          <button class="return-button" id="reopenWorld" type="button" hidden>继续世界 <span aria-hidden="true">↗</span></button>
+        </div>
+        <div class="outcome-grid">
+          <div class="outcome-source"><span>ANCHOR / PDF 36</span><strong>专业化</strong><p id="outcomeIdeaDivision">—</p></div>
+          <div class="outcome-source"><span>ANCHOR / PDF 45</span><strong>市场范围</strong><p id="outcomeIdeaMarket">—</p></div>
+          <div class="outcome-result"><span>WORLD RESULT</span><strong id="outcomeResult">等待一次运行</strong><p>结果来自已确认关系与世界事件；不是 Agent 的一句解释。</p></div>
+        </div>
+        <div class="outcome-foot"><span>MODEL EXTENSION</span><span id="outcomeEvents">事件账将在第一次运行后出现。</span></div>
+      </section>
+    </section>
+  </main>
+
+  <template id="worldTemplate">
+    <article class="world-block" data-world-block hidden>
+      <header class="world-block__header">
+        <div>
+          <span class="world-kicker">INLINE WORLD BLOCK · MODEL EXTENSION</span>
+          <h3>粗呢外套小镇，从两段文字之间长出来</h3>
+        </div>
+        <span class="world-block__state" data-world-state>等待关系确认</span>
+      </header>
+      <div class="world-bridge">
+        <span data-world-sources>smith.b1.c1.division · smith.b1.c3.market_extent</span>
+        <strong data-world-relation>constrained_by</strong>
+        <span>两条 Idea → 一条可运行关系</span>
+      </div>
+      <div class="world-gate-note" data-world-gate-note>关系确认后，点击“已经可以玩了”才会打开动作。</div>
+      <div class="world-grid">
+        <section class="role-board" aria-label="粗呢外套小镇里的四种角色">
+          <div class="role-board__head"><span>WOOL TOWN / 04</span><span>轮廓 · 工具 · 动作</span></div>
+          <div class="role-grid">
+            <article class="role-card" data-role="shepherd">
+              <div class="role-portrait"><img class="role-art" data-role-art="shepherd" alt="牧羊人艺术资产"><span class="role-silhouette role-silhouette--shepherd" aria-hidden="true"><i></i><b></b><em></em></span><span class="role-tool" aria-hidden="true">⌁</span></div>
+              <strong>shepherd</strong><span>牧羊 / wool</span>
+            </article>
+            <article class="role-card" data-role="spinner">
+              <div class="role-portrait"><img class="role-art" data-role-art="spinner" alt="纺纱工艺术资产"><span class="role-silhouette role-silhouette--spinner" aria-hidden="true"><i></i><b></b><em></em></span><span class="role-tool" aria-hidden="true">◌</span></div>
+              <strong>spinner</strong><span>纺纱 / spindle</span>
+            </article>
+            <article class="role-card" data-role="weaver">
+              <div class="role-portrait"><img class="role-art" data-role-art="weaver" alt="织工艺术资产"><span class="role-silhouette role-silhouette--weaver" aria-hidden="true"><i></i><b></b><em></em></span><span class="role-tool" aria-hidden="true">⟿</span></div>
+              <strong>weaver</strong><span>织呢 / loom</span>
+            </article>
+            <article class="role-card" data-role="merchant">
+              <div class="role-portrait"><img class="role-art" data-role-art="merchant" alt="商人艺术资产"><span class="role-silhouette role-silhouette--merchant" aria-hidden="true"><i></i><b></b><em></em></span><span class="role-tool" aria-hidden="true">▣</span></div>
+              <strong>merchant</strong><span>称量 / ledger</span>
+            </article>
+          </div>
+        </section>
+        <section class="world-lab" aria-label="世界可运行状态">
+          <div class="metric-grid">
+            <div class="metric"><span>OUTPUT</span><strong data-metric="output">12</strong><small>粗呢 / 日</small></div>
+            <div class="metric"><span>STOCK</span><strong data-metric="stock">08</strong><small>存货</small></div>
+            <div class="metric"><span>ORDERS</span><strong data-metric="orders">10</strong><small>市场订单</small></div>
+            <div class="metric"><span>CASH</span><strong data-metric="cash">24</strong><small>账本单位</small></div>
+          </div>
+          <div class="world-action-row" role="group" aria-label="世界动作">
+            <button type="button" data-world-action="specialize" disabled><span>01</span>让织工进一步专业化</button>
+            <button type="button" data-world-action="expand" disabled><span>02</span>扩大市场</button>
+            <button type="button" data-world-action="constrain" disabled><span>03</span>缩小市场范围</button>
+          </div>
+          <div class="world-log" data-world-log aria-live="polite"><span class="world-log__label">EVENT LOG</span><p>等待读者确认关系。</p></div>
+          <div class="role-observations" data-role-observations aria-live="polite"><span class="world-log__label">LOCAL OBSERVATIONS</span><p>角色会在动作事件后按因果顺序出现。</p></div>
+        </section>
+      </div>
+      <footer class="world-block__footer"><span>MODEL EXTENSION · 可重跑</span><span data-world-footer>先确认关系，世界才会接受动作。</span></footer>
+    </article>
+  </template>
+
+  <script src="./agent-os.js"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+{
+  "bookId": "wealth-of-nations",
+  "title": "An Inquiry into the Nature and Causes of the Wealth of Nations",
+  "author": "Adam Smith",
+  "edition": {
+    "editionId": "oll-cannan-vol1-1904",
+    "revision": "oll-epub-2016-05-25",
+    "language": "en",
+    "label": "Cannan ed. Vol. 1 (OLL EPUB)",
+    "sourceUri": "https://oll-resources.s3.us-east-2.amazonaws.com/oll3/store/titles/237/smith-an-inquiry-into-the-nature-and-causes-of-the-wealth-of-nations-cannan-ed-vol-1.epub",
+    "contentHash": "604b2378b7273e21433ee6af9b8ef716864617927c0cb9a964e871b2fcd2ba85"
+  },
+  "licenseNote": "Source text public domain per OLL Cannan edition page; EPUB package retrieved from official OLL S3 URI.",
+  "sources": [
+    {
+      "sourceKey": "division",
+      "sourceId": "smith.b1.c1.division",
+      "readingOrder": 1,
+      "title": "Of the division of labour",
+      "chapterLabel": "BOOK I. CH. I.",
+      "fragment": "Smith_0206-01_235",
+      "pdfPage": 36,
+      "printPage": 5,
+      "glossZh": "分工与劳动生产力（释义，非译文）。",
+      "expectedQuote": "THE greatest improvement in the productive powers of labour, and the greater part of the skill, dexterity, and judgment with which it is any where directed, or applied, seem to have been the effects of the division of labour.",
+      "expectedContentHash": "a2c3f2c36b7690cfa42fe7c831b2fdeda000bc359f5e7e7f85a926d030ec21a1",
+      "fragmentPath": "fragments/Smith_0206-01_235.html"
+    },
+    {
+      "sourceKey": "market",
+      "sourceId": "smith.b1.c3.market_extent",
+      "readingOrder": 2,
+      "title": "That the division of labour is limited by the extent of the market",
+      "chapterLabel": "BOOK I. CH. III.",
+      "fragment": "Smith_0206-01_251",
+      "pdfPage": 45,
+      "printPage": 19,
+      "glossZh": "分工受市场范围限制（释义，非译文）。",
+      "expectedQuote": "AS it is the power of exchanging that gives occasion to the division of labour, so the extent of this division must always be limited by the extent of that power, or, in other words, by the extent of the market. When the market is very small, no person can have any encouragement to dedicate himself entirely to one employment, for want of the power to exchange all that surplus part of the produce of his own labour, which is over and above his own consumption, for such parts of the produce of other men’s labour as he has occasion for.",
+      "expectedContentHash": "daa6de3ec09f07b6675ac955e0211c8aa2073035c5367f5e0c6ddee1bdc492dc",
+      "fragmentPath": "fragments/Smith_0206-01_251.html"
+    }
+  ],
+  "footnotes": [
+    {
+      "id": "lf0206-01_footnote_nt114",
+      "path": "footnotes/lf0206-01_footnote_nt114.html",
+      "expectedText": "[Ed. 1 reads ‘improvements’.]"
+    }
+  ]
+}

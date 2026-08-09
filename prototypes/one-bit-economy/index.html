@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>国富机器 // 1BIT Prototype</title>
+    <meta
+      name="description"
+      content="PROTOTYPE ONLY — a one-bit economic simulation visual study."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="prototype-flag">PROTOTYPE // VISUAL STUDY 01</div>
+
+    <main class="machine-shell" aria-label="国富机器视觉样片">
+      <header class="machine-header">
+        <div class="brand-lockup">
+          <div class="brand-mark" aria-hidden="true">W</div>
+          <div>
+            <p class="eyebrow">ADAM SMITH · BOOK I–III</p>
+            <h1>国富机器 <span>THE WEALTH ENGINE</span></h1>
+          </div>
+        </div>
+
+        <div class="system-readout" aria-label="模拟状态">
+          <span>SEED 1776</span>
+          <span id="clockReadout">DAY 01 · 06:00</span>
+          <span class="status-lamp"><i></i><b id="systemStatus">MARKET OPEN</b></span>
+        </div>
+      </header>
+
+      <section class="workspace" id="workspace">
+        <article class="pixel-window world-window" data-window="world">
+          <div class="window-bar drag-handle">
+            <span class="bar-label"><img class="bar-art" src="./assets/market-stall.png" alt="" />MARKET_DISTRICT.01 // LIVE WORLD</span>
+            <div class="window-tools" aria-hidden="true"><i></i><i></i><i></i></div>
+          </div>
+          <div class="world-screen">
+            <canvas id="worldCanvas" width="480" height="270" aria-label="正在运行的市场街区"></canvas>
+            <div class="scanlines" aria-hidden="true"></div>
+            <div class="world-caption">
+              <span id="worldCaption">06:00 / 炉火点燃，第一批面包正在出炉。</span>
+              <b id="worldPhase">BASELINE</b>
+            </div>
+            <div class="focus-reticle" id="focusReticle" aria-hidden="true"></div>
+          </div>
+        </article>
+
+        <article class="pixel-window ordinance-window" data-window="ordinance">
+          <div class="window-bar drag-handle">
+            <span class="bar-label"><img class="bar-art" src="./assets/injunction.png" alt="" />ORDINANCE_COMPILER.EXE</span>
+            <div class="window-tools" aria-hidden="true"><i></i><i></i></div>
+          </div>
+          <div class="ordinance-content">
+            <label for="policyInput">输入一条你认为有益的规则</label>
+            <div class="terminal-input">
+              <span>&gt;</span>
+              <textarea id="policyInput" rows="2" spellcheck="false">面包售价不得超过 2 银币。</textarea>
+              <span class="caret" aria-hidden="true"></span>
+            </div>
+            <div class="compiled-rule" id="compiledRule" aria-live="polite">
+              <div><span>RULE</span><b>WAITING_FOR_INPUT</b></div>
+              <div><span>TARGET</span><b>—</b></div>
+              <div><span>LIMIT</span><b>—</b></div>
+            </div>
+            <div class="action-row">
+              <button class="pixel-button primary" id="runButton">执行法令 <kbd>ENTER</kbd></button>
+              <button class="pixel-button" id="resetButton">重置世界</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="pixel-window ledger-window" data-window="ledger">
+          <div class="window-bar drag-handle">
+            <span class="bar-label"><img class="bar-art" src="./assets/coins.png" alt="" />CAUSAL_LEDGER.LOG</span>
+            <button class="expand-button" id="expandLedger" aria-label="放大因果账本">↗</button>
+          </div>
+          <div class="ledger-summary">
+            <div><img src="./assets/coins.png" alt="" /><span>面包价格</span><strong id="priceMetric">4.0</strong><small>银币</small></div>
+            <div><img src="./assets/bread-dough-served.png" alt="" /><span>今日库存</span><strong id="stockMetric">24</strong><small>条</small></div>
+            <div><img src="./assets/factory-worker.png" alt="" /><span>等待人数</span><strong id="queueMetric">0</strong><small>人</small></div>
+          </div>
+          <ol class="event-log" id="eventLog" aria-live="polite">
+            <li class="event active"><time>06:00</time><span>市场开门。面包师按成本 2.6 银币生产。</span></li>
+            <li class="event ghost"><time>--:--</time><span>等待世界发生下一件事……</span></li>
+          </ol>
+          <div class="resize-corner" aria-hidden="true"></div>
+        </article>
+      </section>
+
+      <footer class="machine-footer">
+        <span>WORLD STATE IS DETERMINISTIC</span>
+        <span>拖动窗口查看 · 点击执行法令运行 8 秒样片</span>
+        <span>NO SVG · RASTER CANVAS</span>
+      </footer>
+    </main>
+
+    <script src="./prototype.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+node_modules/
+.next/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+.vercel/
+
+# product Playwright / Next smoke artifacts
+test-results/
+playwright-report/
+product/test-results/
+product/playwright-report/
+product/.next-playwright/
+*.tsbuildinfo
+
+# Local agent and browser artifacts
+.playwright-mcp/
+.living-reader-*/
+
+# Rebuildable prototype caches and capture scratch files
+.godot/
+.video-tmp/
+.video-art-tmp/

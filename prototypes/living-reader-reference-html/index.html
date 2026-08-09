@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Living Reader · HTML-first reference</title>
+  <meta name="description" content="The Living Reader HTML-first high fidelity throwaway reference prototype.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell" id="appShell">
+    <aside class="agent-rail" aria-label="Agent OS 阅读栏">
+      <div class="rail-brand">
+        <div class="brand-seal" aria-hidden="true">✦</div>
+        <div><strong>The Living Reader</strong><span>鲜活阅读器 · HTML 原型</span></div>
+      </div>
+
+      <section class="rail-section anchor-section" aria-labelledby="anchorsTitle">
+        <div class="rail-section-title"><span id="anchorsTitle">原文锚点</span><small>锚点 / 原文段落</small></div>
+        <button class="anchor-card is-active" type="button" data-source-select="division">
+          <span class="anchor-icon">▤</span><span><strong>PDF 36 · Division of Labour</strong><small>…the greater part of the skill, dexterity, and judgment…</small><em>Smith_0206-01_235</em></span><i class="connector-dot"></i>
+        </button>
+        <button class="anchor-card" type="button" data-source-select="market">
+          <span class="anchor-icon">▤</span><span><strong>PDF 45 · Extent of the Market</strong><small>…the extent of the market limits the division of labour.</small><em>Smith_0206-01_251</em></span><i class="connector-dot"></i>
+        </button>
+      </section>
+
+      <section class="rail-section live-section" aria-labelledby="liveTitle">
+        <div class="rail-section-title live-title"><span id="liveTitle">实时语音</span><small>实时转写</small><i class="sound-mark">⌁⌁</i></div>
+        <div class="voice-panel">
+          <div class="voice-orbit"><button class="voice-button" id="voiceButton" type="button" aria-label="开始语音"><span>♩</span></button><span class="orbit orbit-a"></span><span class="orbit orbit-b"></span></div>
+          <div class="voice-copy"><p id="voiceStatus">可以开始这一轮；不会后台监听。</p><strong id="transcriptLive">尚未有最终转写</strong><small id="voiceTimer">00:00</small></div>
+        </div>
+        <div class="voice-actions"><button class="rail-button primary" id="replayButton" type="button">回放语音 Replay</button><button class="rail-button" id="voiceStopButton" type="button" disabled>停止</button></div>
+        <div class="voice-snapshot"><span>语音开始快照</span><code id="voiceSnapshot">—</code></div>
+      </section>
+
+      <section class="rail-section ideas-section" aria-labelledby="ideasTitle">
+        <div class="rail-section-title"><span id="ideasTitle">已保存 Ideas</span><small>想法 / 绑定原文</small></div>
+        <div id="ideaList" class="idea-list"><p class="rail-empty">Replay 两个锚点，Ideas 会贴回原文。</p></div>
+        <div class="idea-input-wrap"><textarea id="ideaInput" rows="2" placeholder="给当前原文留一句想法…"></textarea><button class="rail-button" id="saveIdeaButton" type="button">保存到当前锚点</button></div>
+      </section>
+
+      <section class="rail-section relation-section" aria-labelledby="relationTitle">
+        <div class="rail-section-title"><span id="relationTitle">确认关系</span><small>关系 Gate</small></div>
+        <div class="relation-proposal" id="relationProposal"><strong>专业化受市场范围限制。</strong><span id="relationState">等待两条 Idea</span><i aria-hidden="true">❧</i></div>
+        <button class="rail-button primary full" id="confirmRelation" type="button" disabled>确认这条关系</button>
+      </section>
+
+      <div class="rail-foot"><span>HTML 原型 / 非生产</span><div class="rail-icons"><span>▢</span><span>⌘</span><span>◌</span><span>⚙</span></div></div>
+    </aside>
+
+    <main class="book-main" aria-label="语义 HTML 原文与世界">
+      <div class="book-toolbar"><span>第一卷 · 第一章 + 第三章</span><span class="toolbar-center">《国富论》· Cannan 第一卷</span><div class="toolbar-actions"><button type="button" class="toolbar-button is-active" data-variant="html">HTML 原文</button><button type="button" class="toolbar-button" id="openEvidenceButton">PDF 证据</button></div></div>
+      <article class="book-page" id="bookPage">
+        <header class="page-masthead"><span class="page-number">36</span><div><span>THE WEALTH OF NATIONS</span><small>BOOK I. CH. I.</small></div><span class="page-edition">OLL EPUB · 来源修订 oll-cannan-v6</span></header>
+
+        <section class="source-block source-block-division" data-source-key="division" data-source-id="oll.smith_0206-01_235" tabindex="-1">
+          <aside class="source-margin-note"><span class="margin-kicker">原始来源</span><strong>Smith_0206-01_235</strong><span>PDF 36 · print p. 19</span><button type="button" data-source-focus="division">设为当前原文</button></aside>
+          <div class="source-text">
+            <h1>Of the division of labour</h1>
+            <p class="source-context">The greatest improvement in the productive powers of labour, and the greater part of the skill, dexterity, and judgment with which it seems to be attended, are the effects of the division of labour.</p>
+            <blockquote class="quote-block"><p>THE greatest improvement in the productive powers of labour, and the greater part of the skill, dexterity, and judgment with which it is any where directed, or applied, seem to have been the effects of the division of labour.<sup><button type="button" class="footnote-trigger" data-footnote="division">1</button></sup></p><footer>逐字引文 · <code>Smith_0206-01_235</code> · Cannan 英文原文</footer></blockquote>
+            <p class="source-context">The effects of the division of labour in the general business of society will be more easily understood by considering in what manner it operates in some particular manufactures.</p>
+            <div class="source-actions"><span>原文可直接选择 · 语音 / Replay 绑定此段</span><button class="page-action" type="button" data-replay-source="division">Replay 这一段</button></div>
+          </div>
+          <span class="source-pin" aria-hidden="true"></span>
+        </section>
+
+        <div class="paper-gap"><span>关系确认后，世界在这两段原文之间展开</span></div>
+
+        <section class="world-slot" id="worldSlot" data-state="closed" aria-busy="false" hidden>
+          <div class="world-loading" id="worldLoading"><div class="loading-orbit"><span></span></div><div><p class="world-kicker">Agent OS · 关系 Gate</p><h2 id="loadingTitle">正在把两条原文接通…</h2><p id="loadingCopy">证据、关系、固定高度舞台依次准备。</p></div><div class="loading-progress"><span id="loadingProgress"></span></div><ol><li data-step="1">读取 PDF 36 / PDF 45 锚点</li><li data-step="2">检查市场范围关系</li><li data-step="3">锁定世界舞台高度</li></ol></div>
+          <div class="world-open" id="worldOpen">
+            <header class="world-header"><div><span class="world-kicker">确定性世界 · 固定舞台</span><h2>粗呢外套小镇</h2><p id="worldAnchorLabel">触发原文：Smith_0206-01_235</p></div><div class="world-controls"><span id="worldPhase">世界运行</span><button type="button" class="page-action" id="collapseWorld">收起，回到原文</button></div></header>
+            <div class="world-metrics"><div><small>产出 / 日</small><strong id="metricOutput">12</strong></div><div><small>粗呢库存</small><strong id="metricStock">8</strong></div><div><small>开放订单</small><strong id="metricOrders">2</strong></div><div><small>现金</small><strong id="metricCash">24</strong></div><div><small>市场</small><strong id="metricMarket">小市场</strong></div></div>
+            <div class="world-actions"><button type="button" class="world-action" data-world-action="specialize">让织工进一步专业化</button><button type="button" class="world-action primary" data-world-action="expand">修路，把货卖到隔壁城</button></div>
+            <div class="world-inner">
+              <div class="world-canvas" aria-label="固定高度经济世界舞台"><img class="scene-plate" src="../living-reader-v2/assets/art/scenes/market-production-keyframe-320x180.png" alt="小镇生产线场景底图"><div class="town-caption">粗呢外套小镇 · 市场路径</div>
+                <div class="role-figure role-shepherd" data-role="shepherd"><img src="../living-reader-v2/assets/art/characters/shepherd.png" alt="牧羊人"><span>1 · 牧羊人</span></div><div class="role-figure role-spinner" data-role="spinner"><img src="../living-reader-v2/assets/art/characters/spinner.png" alt="纺纱工"><span>2 · 纺纱工</span></div><div class="role-figure role-weaver" data-role="weaver"><img src="../living-reader-v2/assets/art/characters/weaver.png" alt="织工"><span>3 · 织工</span></div><div class="role-figure role-merchant" data-role="merchant"><img src="../living-reader-v2/assets/art/characters/merchant.png" alt="商人"><span>4 · 商人</span></div><div class="flow-line"><span>羊毛</span><i></i><span>纱线</span><i></i><span>粗呢</span><i></i><span>订单</span></div>
+              </div>
+              <div class="world-log" id="worldLog" tabindex="0"><div class="log-heading"><span>事件与台词</span><small id="eventCount">0 条</small></div><ol id="eventList"><li class="log-empty">动作发生后，角色局部状态会按因果顺序写入这里。</li></ol></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="source-block source-block-market" data-source-key="market" data-source-id="oll.smith_0206-01_251" tabindex="-1">
+          <aside class="source-margin-note"><span class="margin-kicker">原始来源</span><strong>Smith_0206-01_251</strong><span>PDF 45 · print p. 20</span><button type="button" data-source-focus="market">设为当前原文</button></aside>
+          <div class="source-text"><header class="page-masthead bottom-masthead"><span class="page-number">45</span><div><span>THE WEALTH OF NATIONS</span><small>BOOK I. CH. III.</small></div></header><h2>That the division of labour is limited by the extent of the market</h2><p class="source-context">Division of labour is limited by the extent of the power of exchanging.</p><blockquote class="quote-block"><p>AS it is the power of exchanging that gives occasion to the division of labour, so the extent of this division must always be limited by the extent of that power, or, in other words, by the extent of the market.</p><footer>逐字引文 · <code>Smith_0206-01_251</code> · Cannan 英文原文</footer></blockquote><p class="source-context">When the market is very small, no person can have any encouragement to dedicate himself entirely to one employment.</p><div class="source-actions"><span>脚注 / 页码定位已保留</span><button class="page-action" type="button" data-replay-source="market">Replay 这一段</button></div></div><span class="source-pin" aria-hidden="true"></span>
+        </section>
+      </article>
+    </main>
+  </div>
+
+  <aside class="footnote-popover" id="footnotePopover" hidden><strong>脚注 1</strong><p>这里保留原版页码与脚注入口；不会把 Cannan 的英文改写成伪造的中文译文。</p><button type="button" class="page-action" data-close-footnote>关闭</button></aside>
+  <aside class="evidence-drawer" id="evidenceDrawer" hidden><div class="drawer-backdrop" data-close-evidence></div><div class="drawer-panel"><header><div><span class="world-kicker">PDF 证据</span><h2>页级核对</h2></div><button type="button" class="drawer-close" data-close-evidence>×</button></header><p id="drawerLabel">当前原文 · PDF 36</p><iframe id="evidenceFrame" title="真实 PDF 页级核对"></iframe><small>这是仓库中的真实 PDF；此抽屉明确标注为页级核对，不冒充逐字高亮。</small></div></aside>
+  <div class="causal-lines" id="causalLines" aria-hidden="true"><span data-line="division"></span><span data-line="market"></span></div>
+  <script src="./app.js"></script>
+</body>
+</html>

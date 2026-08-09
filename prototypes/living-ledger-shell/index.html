@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <title>PROTOTYPE ONLY — The Living Ledger</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-state="reader">
+  <!--
+    PROTOTYPE ONLY — DO NOT SHIP.
+    Design question: can the book remain the visual owner while its argument expands into a playable world?
+    Assumptions:
+    1. Desktop review at 1440 x 900 comes first.
+    2. The existing price-cap Godot scene is a visual placeholder, not the final Wealth of Nations mechanic.
+    3. A source block owns the experiment: the world expands from the paragraph and folds back to the same block id.
+    4. The price-cap scene is a MODEL EXTENSION, not a historical claim about Smith's text.
+  -->
+
+  <main class="desk" aria-label="The Living Ledger prototype">
+    <header class="desk-header">
+      <div class="desk-header__edition">
+        <span class="eyebrow">EXECUTABLE BOOK · PROTOTYPE 02</span>
+        <span class="edition-title">An Inquiry into the Nature and Causes of the Wealth of Nations</span>
+      </div>
+      <div class="desk-header__status" aria-live="polite">
+        <span class="status-number">01</span>
+        <span class="status-rule"></span>
+        <span id="statusLabel">阅读问题</span>
+      </div>
+    </header>
+
+    <article class="ledger" id="ledger">
+      <div class="ledger-shadow" aria-hidden="true"></div>
+      <div class="ledger-cover" aria-hidden="true"></div>
+
+      <aside class="ledger-spine" aria-hidden="true">
+        <span class="spine-mark">W · N</span>
+        <span class="spine-year">1776</span>
+        <span class="spine-line"></span>
+        <span class="spine-index">I / II</span>
+      </aside>
+
+      <section class="ledger-paper">
+        <div class="paper-grain" aria-hidden="true"></div>
+        <div class="binding binding--top" aria-hidden="true"></div>
+        <div class="binding binding--bottom" aria-hidden="true"></div>
+
+        <div class="ledger-grid">
+          <section class="reader-panel" aria-labelledby="sourceReaderTitle">
+            <div class="reader-source-page">
+              <div class="reader-kicker">BOOK I · SOURCE GRAPH · PRIMARY TEXT</div>
+              <h1 id="bookTitle">国富论<span>The Wealth<br>of Nations</span></h1>
+              <h2 id="sourceReaderTitle" class="source-reader-title">三段原文，先读出一条关系</h2>
+              <p class="source-reader-intro">每一段都是可激活的阅读节点。顺序点亮它们，右侧的 Experiment Slip 才会长出一组可以运行的关系。</p>
+
+              <div class="source-node-list" aria-label="Smith source blocks">
+                <button class="source-node source-node--division" id="source-node-division" data-source-id="smith.b1.c1.division" data-node-label="专业化" data-node-index="01" type="button" aria-pressed="false">
+                  <span class="source-node__margin" aria-hidden="true">01</span>
+                  <span class="source-node__body">
+                    <span class="source-node__head"><code>smith.b1.c1.division</code><em>CH. I · PRIMARY TEXT</em></span>
+                    <strong>分工把能力写进日常</strong>
+                    <span class="source-node__quote">“The greatest improvements in the productive powers of labour … seem to have been the effects of the division of labour.”</span>
+                    <span class="source-node__gloss">释义：生产力与熟练度的增长，首先来自分工。</span>
+                  </span>
+                  <span class="source-node__state" aria-hidden="true">○</span>
+                </button>
+
+                <button class="source-node source-node--market" id="source-node-market-extent" data-source-id="smith.b1.c3.market_extent" data-node-label="市场范围约束" data-node-index="02" type="button" aria-pressed="false">
+                  <span class="source-node__margin" aria-hidden="true">02</span>
+                  <span class="source-node__body">
+                    <span class="source-node__head"><code>smith.b1.c3.market_extent</code><em>CH. III · PRIMARY TEXT</em></span>
+                    <strong>市场范围会限制分工</strong>
+                    <span class="source-node__quote">“The extent of this division must always be limited by the extent of that power … by the extent of the market.”</span>
+                    <span class="source-node__gloss">释义：交换的范围有多大，分工就能走多远。</span>
+                  </span>
+                  <span class="source-node__state" aria-hidden="true">○</span>
+                </button>
+
+                <button class="source-node source-node--exchange" id="source-node-exchange" data-source-id="smith.b1.c2.exchange" data-node-label="交换规则" data-node-index="03" type="button" aria-pressed="false">
+                  <span class="source-node__margin" aria-hidden="true">03</span>
+                  <span class="source-node__body">
+                    <span class="source-node__head"><code>smith.b1.c2.exchange</code><em>CH. II · SMITH PARAPHRASE</em></span>
+                    <strong>交换让分工继续发生</strong>
+                    <span class="source-node__quote">交换不是旁枝，而是人们依靠自身利益互相取得所需之物的条件。</span>
+                    <span class="source-node__gloss">诚实释义：这一节点把“交换”作为分工得以延伸的规则，而非历史原句。</span>
+                  </span>
+                  <span class="source-node__state" aria-hidden="true">○</span>
+                </button>
+              </div>
+
+              <div class="reader-active-graph" aria-live="polite">
+                <div class="reader-active-graph__head">
+                  <span>ACTIVE NODE IDS</span>
+                  <strong id="activeGraphCount">0 NODES · 0 EDGES</strong>
+                </div>
+                <div id="activeNodeIds" class="reader-active-graph__nodes">尚未激活阅读节点。</div>
+                <div id="activeGraphEdges" class="reader-active-graph__edges">关系线将在第二个节点激活后出现。</div>
+              </div>
+            </div>
+
+            <aside class="experiment-slip" aria-labelledby="slipTitle">
+              <div class="slip-tape" aria-hidden="true"></div>
+              <div class="slip-overline">EXPERIMENT SLIP · ACTIVE SUBGRAPH</div>
+              <div class="slip-graph-count" id="slipGraphCount">0 NODES · 0 EDGES</div>
+              <h2 id="slipTitle">让一组阅读关系长出一个世界</h2>
+              <p class="slip-prompt">先激活至少两个节点。世界会从“专业化”逐步长成“市场范围约束”，再加入交换规则。</p>
+              <div class="slip-seed" id="slipGraphSeed"><span>WORLD SEED</span><strong>等待第一段原文</strong></div>
+              <div class="slip-active-list" id="slipActiveNodes">ACTIVE SOURCE IDS · —</div>
+              <label for="prediction">YOUR PREDICTION / 01</label>
+              <textarea id="prediction" rows="4" placeholder="例如：会。因为低价会让更多人买得起面包。"></textarea>
+              <button class="book-action" id="openWorld" type="button" disabled>
+                <span>运行这组关系</span>
+                <span class="action-arrow" aria-hidden="true">→</span>
+              </button>
+              <p class="slip-hint" id="slipHint">至少激活 2 个节点后可运行。</p>
+              <p class="slip-boundary"><span>MODEL EXTENSION</span> 当前价格上限场景是原文关系之外的临时验证，不是 Smith 做过的实验。</p>
+            </aside>
+          </section>
+
+          <section class="world-panel" aria-label="可运行的经济世界">
+            <aside class="world-source-anchor" aria-label="世界来源锚点">
+              <span class="world-source-anchor__label">ACTIVE SOURCE GRAPH</span>
+              <strong id="worldActiveGraphCount">0 NODES · 0 EDGES</strong>
+              <div id="worldActiveNodeIds" class="world-source-anchor__nodes">—</div>
+              <div id="worldActiveEdges" class="world-source-anchor__edges">—</div>
+              <p class="world-source-anchor__boundary">MODEL EXTENSION · 价格上限占位世界</p>
+            </aside>
+            <div class="plate-caption plate-caption--top">
+              <span>PLATE I</span>
+              <span>THE UNSEEN CONSEQUENCE</span>
+              <span>RUNNING MODEL</span>
+            </div>
+
+            <div class="world-frame">
+              <img
+                class="world-preview"
+                src="../one-bit-scenes-godot/captures/00-title.png"
+                alt="看不见的手：一条法令如何掏空面包架"
+              >
+              <iframe
+                id="worldIframe"
+                title="看不见的手 Godot 互动场景"
+                data-src="../one-bit-scenes-godot/web/index.html"
+                allow="autoplay; fullscreen"
+              ></iframe>
+              <div class="world-glass" id="worldGlass" aria-hidden="true">
+                <span>THE WORLD IS STILL PRESSED BETWEEN THE PAGES</span>
+              </div>
+            </div>
+
+            <div class="plate-caption plate-caption--bottom">
+              <span>价格上限实验 · 可执行模型</span>
+              <span class="plate-scale">320 × 180 / 4×</span>
+            </div>
+
+            <div class="world-marginalia" aria-hidden="true">
+              <div>
+                <span>RUN RECORD</span>
+                <strong>01 / COMPLETE</strong>
+              </div>
+              <p>四个场景不是插图，而是同一组价格、成本、库存和行动状态留下的连续切片。</p>
+              <div class="marginalia-sequence">
+                <i>法令</i><b>→</b><i>亏损</i><b>→</b><i>停炉</i><b>→</b><i>短缺</i>
+              </div>
+            </div>
+
+            <button class="world-action" id="closeWorld" type="button">
+              <span>收回运行账本</span>
+              <span aria-hidden="true">↙</span>
+            </button>
+          </section>
+
+          <section class="evidence-panel" aria-labelledby="evidenceTitle">
+            <div class="evidence-head">
+              <span class="evidence-index">AFTER THE WORLD / 01</span>
+              <h2 id="evidenceTitle">世界并没有回答你。<br>它留下了一本账。</h2>
+            </div>
+
+            <div class="evidence-block-id">
+              <span>SOURCE IDS / ACTIVE GRAPH</span>
+              <code id="evidenceSourceIds">—</code>
+            </div>
+
+            <section class="evidence-graph" aria-label="本次世界的来源关系">
+              <div class="evidence-graph__head"><span>GENERATED FROM</span><strong id="evidenceGraphCount">0 NODES · 0 EDGES</strong></div>
+              <div id="evidenceGraphEdges">尚未生成关系。</div>
+            </section>
+
+            <section class="prediction-slip">
+              <span>你的预测</span>
+              <p id="predictionEcho">尚未留下判断。</p>
+            </section>
+
+            <ol class="causal-ledger">
+              <li><span>法定售价</span><strong>≤ 2.0</strong></li>
+              <li><span>面包成本</span><strong>2.2</strong></li>
+              <li><span>面包师决定</span><strong>停炉</strong></li>
+              <li><span>镇民得到的</span><strong>低价，但没有面包</strong></li>
+            </ol>
+
+            <section class="source-note">
+              <div class="source-note__label">SMITH TEXT · ACTIVE SOURCE GRAPH</div>
+              <blockquote>
+                “It is not from the benevolence of the butcher, the brewer, or the baker that we expect our dinner, but from their regard to their own interest.”
+              </blockquote>
+              <p>我们期待晚餐，不是仰赖屠夫、酿酒师或面包师的仁慈，而是仰赖他们对自身利益的关切。</p>
+            </section>
+
+            <section class="boundary-note">
+              <span>MODEL BOUNDARY</span>
+              <p>Smith 没有做过这个价格上限实验。它是从 active source graph 外推的临时模型扩展，只用来验证“书如何拥有一个可运行世界”。</p>
+            </section>
+
+            <button class="book-action book-action--restart" id="restart" type="button">
+              <span>回到原文继续读</span>
+              <span class="action-arrow" aria-hidden="true">↺</span>
+            </button>
+          </section>
+        </div>
+
+        <nav class="ledger-tabs" aria-label="原型状态">
+          <button class="ledger-tab is-active" data-target="reader" type="button">
+            <span>01</span><em>读</em>
+          </button>
+          <button class="ledger-tab" data-target="world" type="button">
+            <span>02</span><em>行</em>
+          </button>
+          <button class="ledger-tab" data-target="evidence" type="button">
+            <span>03</span><em>证</em>
+          </button>
+        </nav>
+
+        <footer class="folio-footer">
+          <span>THE LIVING LEDGER</span>
+          <span id="folioState">READER'S PREDICTION</span>
+          <span>FOLIO 01</span>
+        </footer>
+      </section>
+    </article>
+
+    <aside class="prototype-chrome" aria-label="Prototype controls">
+      <span>PROTOTYPE ONLY</span>
+      <button type="button" data-target="reader">阅读态</button>
+      <button type="button" data-target="world">世界态</button>
+      <button type="button" data-target="evidence">证据态</button>
+      <span class="chrome-hint">← → 切换</span>
+    </aside>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="The Living Ledger">
+  <rect width="64" height="64" fill="#0d0c0a"/>
+  <path d="M14 8h34v48H14z" fill="#eee3c8" stroke="#a63a28" stroke-width="4"/>
+  <path d="M20 17h22M20 25h22M20 33h14M20 45h22" stroke="#1a1712" stroke-width="4"/>
+  <path d="M14 8v48" stroke="#5d2018" stroke-width="7"/>
+</svg>

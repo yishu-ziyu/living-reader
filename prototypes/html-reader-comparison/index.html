@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PDF vs Semantic HTML · throwaway prototype</title>
+  <meta name="description" content="Throwaway comparison prototype for PDF reading and semantic HTML reading.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="?variant=html" aria-label="HTML reader comparison home">
+      <span class="brand-mark">LR</span>
+      <span><strong>Reader Surface Lab</strong><small>PDF vs semantic HTML</small></span>
+    </a>
+    <div class="prototype-badge">THROWAWAY PROTOTYPE</div>
+    <nav class="variant-nav" aria-label="Reader variant">
+      <a data-variant-link="pdf" href="?variant=pdf">PDF surface</a>
+      <a data-variant-link="html" href="?variant=html">Semantic HTML</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="experimentTitle">
+      <div>
+        <p class="eyebrow">ONE BOOK · TWO SURFACES</p>
+        <h1 id="experimentTitle">What changes when the page becomes readable DOM?</h1>
+        <p class="intro-copy">A small, content-neutral experiment using the same two source anchors. Drag-select the HTML, open a page-level PDF check, and run one deterministic world action without leaving the reading surface.</p>
+      </div>
+      <div class="intro-meta" aria-label="Experiment metadata">
+        <span>Book I · Ch. I + III</span>
+        <span>OLL Cannan vol. 1</span>
+        <span>Revision 0.1</span>
+      </div>
+    </section>
+
+    <div class="reader-grid">
+      <aside class="control-rail" aria-label="Reading controls">
+        <section class="rail-card active-card">
+          <div class="card-kicker">CURRENT SOURCE</div>
+          <strong id="activeSourceLabel">Division of labour</strong>
+          <span id="activeSourceLocator">Smith_0206-01_235 · OLL EPUB</span>
+          <span class="anchor-status" id="anchorStatus"><i></i> anchor ready</span>
+        </section>
+
+        <section class="rail-card voice-card" aria-labelledby="voiceTitle">
+          <div class="rail-heading"><div><div class="card-kicker">ONE INPUT PATH</div><h2 id="voiceTitle">Speak this round</h2></div><span id="voiceLed" class="status-dot" data-state="idle"></span></div>
+          <p id="voiceStatus">Replay is available; real SpeechRecognition never listens in the background.</p>
+          <div class="voice-actions">
+            <button class="button button-primary" id="voiceButton" type="button"><span id="voiceButtonLabel">Start microphone</span></button>
+            <button class="button button-quiet" id="replayButton" type="button">Replay fixture</button>
+          </div>
+          <div class="transcript" id="transcriptBox" aria-live="polite">No final transcript yet.</div>
+          <div class="snapshot-line"><span>speech-start snapshot</span><code id="voiceSnapshot">—</code></div>
+        </section>
+
+        <section class="rail-card ideas-card" aria-labelledby="ideasTitle">
+          <div class="rail-heading"><div><div class="card-kicker">READER IDEAS</div><h2 id="ideasTitle">Two anchors</h2></div><span id="ideaCount" class="count-pill">0 / 2</span></div>
+          <div id="ideaList" class="idea-list"><p class="empty-state">Use Replay on each source, or leave a text idea below.</p></div>
+          <div class="idea-compose">
+            <textarea id="ideaInput" rows="2" placeholder="Add an observation to the active source…"></textarea>
+            <button class="button button-quiet" id="addIdeaButton" type="button">Save to active source</button>
+          </div>
+        </section>
+
+        <section class="rail-card relation-card" id="relationCard" aria-labelledby="relationTitle">
+          <div class="card-kicker">MECHANISM GRAPH</div>
+          <h2 id="relationTitle">Specialization ↔ market extent</h2>
+          <p id="relationCopy">Add both source anchors to propose a typed relation.</p>
+          <div class="relation-meta"><span id="relationStatus">draft</span><span id="relationRevision">graph r1</span></div>
+          <button class="button button-primary" id="confirmRelation" type="button" disabled>Confirm relation</button>
+        </section>
+
+        <section class="rail-card state-card">
+          <details open>
+            <summary>Prototype state surface</summary>
+            <dl class="state-list">
+              <div><dt>active source</dt><dd id="stateSource">—</dd></div>
+              <div><dt>voice snapshot</dt><dd id="stateSnapshot">—</dd></div>
+              <div><dt>ideas</dt><dd id="stateIdeas">0</dd></div>
+              <div><dt>world</dt><dd id="stateWorld">closed · r0</dd></div>
+            </dl>
+          </details>
+        </section>
+      </aside>
+
+      <section class="reader-column" aria-label="Reader surface">
+        <section class="surface-panel pdf-surface" id="pdfSurface" hidden aria-labelledby="pdfSurfaceTitle">
+          <div class="surface-heading">
+            <div><p class="eyebrow">PDF SURFACE</p><h2 id="pdfSurfaceTitle">The original page remains the evidence surface.</h2></div>
+            <span class="surface-chip">LOCAL PDF · PAGE LEVEL</span>
+          </div>
+          <div class="pdf-toolbar">
+            <button class="page-button is-current" type="button" data-pdf-page="36">PDF 36 · division</button>
+            <button class="page-button" type="button" data-pdf-page="45">PDF 45 · market</button>
+            <span class="pdf-toolbar-note">Open the real local PDF in a page-level check.</span>
+          </div>
+          <div class="pdf-frame-wrap"><iframe id="pdfFrame" title="Local Wealth of Nations PDF evidence" src="../../assets/public-domain/wealth-of-nations-cannan-vol1.pdf#page=36"></iframe></div>
+          <div class="evidence-strip"><span class="evidence-icon">↗</span><span><strong>Page-level verification</strong> · This iframe is the actual local PDF. The HTML quote and source locator are shown alongside; no fake text-layer highlight is claimed here.</span><button class="button button-quiet" id="openEvidenceButton" type="button">Open evidence drawer</button></div>
+        </section>
+
+        <section class="surface-panel html-surface" id="htmlSurface" aria-labelledby="htmlSurfaceTitle">
+          <div class="surface-heading">
+            <div><p class="eyebrow">SEMANTIC HTML SURFACE</p><h2 id="htmlSurfaceTitle">A continuous, selectable reading surface.</h2></div>
+            <span class="surface-chip">OLL EPUB · DOM TEXT</span>
+          </div>
+          <div class="html-reading-note"><span>Source notes stay attached to the paragraph.</span><span>Scroll normally · select text · no canvas layer</span></div>
+          <article id="htmlReader" class="html-reader" tabindex="0">
+            <section class="source-block" data-source-key="division" data-source-id="oll.smith_0206-01_235" data-source-locator="Smith_0206-01_235" tabindex="-1">
+              <aside class="source-margin" aria-label="Division source metadata">
+                <span class="source-number">01</span>
+                <span class="source-label">OLL EPUB</span>
+                <strong>Smith_0206-01_235</strong>
+                <span>PDF 36 · print p. 19</span>
+                <button class="source-focus" type="button" data-focus-source="division">Set active</button>
+              </aside>
+              <div class="source-copy">
+                <p class="chapter-kicker">BOOK I · CHAPTER I</p>
+                <h3>Of the division of labour</h3>
+                <p class="lead-context">The great increase in the quantity of work which the same number of people can perform is chiefly owing to the division of labour.</p>
+                <blockquote class="source-quote" data-quote-id="oll.smith_0206-01_235">
+                  <p>THE greatest improvement in the productive powers of labour, and the greater part of the skill, dexterity, and judgment with which it is any where directed, or applied, seem to have been the effects of the division of labour.<sup><button class="footnote-trigger" type="button" data-footnote="division" aria-label="Open division footnote">1</button></sup></p>
+                  <footer>QUOTE · OLL EPUB <code>Smith_0206-01_235</code> · source revision <code>oll-cannan-v6</code></footer>
+                </blockquote>
+                <p>The effects of the division of labour are more easily understood by considering how it operates in particular manufactures.</p>
+                <div class="idea-anchor"><span>Reader anchor</span><button class="button button-quiet" type="button" data-replay-source="division">Replay this source</button><button class="button button-primary" type="button" data-add-source="division">Leave an Idea</button></div>
+              </div>
+            </section>
+
+            <div class="reader-divider" aria-hidden="true"><span>scroll continues · same edition</span></div>
+
+            <section class="source-block" data-source-key="market" data-source-id="oll.smith_0206-01_251" data-source-locator="Smith_0206-01_251" tabindex="-1">
+              <aside class="source-margin" aria-label="Market source metadata">
+                <span class="source-number">02</span>
+                <span class="source-label">OLL EPUB</span>
+                <strong>Smith_0206-01_251</strong>
+                <span>PDF 45 · print p. 20</span>
+                <button class="source-focus" type="button" data-focus-source="market">Set active</button>
+              </aside>
+              <div class="source-copy">
+                <p class="chapter-kicker">BOOK I · CHAPTER III</p>
+                <h3>That the division of labour is limited by the extent of the market</h3>
+                <p class="lead-context">The division of labour is limited by the extent of the power of exchanging.</p>
+                <blockquote class="source-quote" data-quote-id="oll.smith_0206-01_251">
+                  <p>AS it is the power of exchanging that gives occasion to the division of labour, so the extent of this division must always be limited by the extent of that power, or, in other words, by the extent of the market.</p>
+                  <footer>QUOTE · OLL EPUB <code>Smith_0206-01_251</code> · source revision <code>oll-cannan-v6</code></footer>
+                </blockquote>
+                <p>When the market is very small, no person can have any encouragement to dedicate himself entirely to one employment.</p>
+                <div class="idea-anchor"><span>Reader anchor</span><button class="button button-quiet" type="button" data-replay-source="market">Replay this source</button><button class="button button-primary" type="button" data-add-source="market">Leave an Idea</button></div>
+              </div>
+            </section>
+          </article>
+        </section>
+
+        <section class="world-slot" id="worldSlot" data-state="closed" aria-busy="false" aria-live="polite" hidden>
+          <div class="world-loading" id="worldLoading">
+            <div class="loading-line"><span class="loading-pulse"></span><span id="loadingLabel">Compiling relation evidence…</span></div>
+            <div class="loading-progress"><span id="loadingProgress"></span></div>
+            <ol class="loading-steps"><li data-step="1">read two source anchors</li><li data-step="2">check market constraint</li><li data-step="3">reserve world stage</li></ol>
+          </div>
+          <div class="world-stage" id="worldStage">
+            <header class="world-header"><div><p class="eyebrow">DETERMINISTIC WORLD · FIXED STAGE</p><h2>Wool town, two markets</h2><span id="worldAnchorLabel">Triggered from the current source</span></div><div class="world-phase"><span id="worldPhase">WORLD LIVE</span><button class="button button-quiet" id="collapseWorld" type="button">Collapse to source</button></div></header>
+            <div class="metric-row" aria-label="World metrics"><div><span>output / day</span><strong id="metricOutput">12</strong></div><div><span>cloth stock</span><strong id="metricStock">8</strong></div><div><span>open orders</span><strong id="metricOrders">2</strong></div><div><span>cash</span><strong id="metricCash">24</strong></div><div><span>market</span><strong id="metricMarket">small</strong></div></div>
+            <div class="world-actions" role="group" aria-label="Deterministic world actions"><button type="button" class="action-button" data-action="specialize">Let the weaver specialize</button><button type="button" class="action-button" data-action="expand">Expand market to the next town</button></div>
+            <div class="world-content"><div class="roles" id="roleList"><article class="role-card" data-role="merchant"><img src="../living-reader-v2/assets/art/characters/merchant.png" alt="Merchant"><div><strong>merchant</strong><span>waiting for an action</span></div></article><article class="role-card" data-role="shepherd"><img src="../living-reader-v2/assets/art/characters/shepherd.png" alt="Shepherd"><div><strong>shepherd</strong><span>waiting for an action</span></div></article><article class="role-card" data-role="spinner"><img src="../living-reader-v2/assets/art/characters/spinner.png" alt="Spinner"><div><strong>spinner</strong><span>waiting for an action</span></div></article><article class="role-card" data-role="weaver"><img src="../living-reader-v2/assets/art/characters/weaver.png" alt="Weaver"><div><strong>weaver</strong><span>waiting for an action</span></div></article></div><div class="event-feed" id="eventFeed" tabindex="0"><div class="feed-heading"><span>INTERNAL EVENT STREAM</span><span id="eventCount">0 events</span></div><ol id="eventList"><li class="feed-empty">Run an action to append observations inside this fixed stage.</li></ol></div></div>
+          </div>
+        </section>
+      </section>
+    </div>
+  </main>
+
+  <footer class="variant-switch" aria-label="Variant switcher">
+    <span><strong>Compare surfaces</strong><small>Use ← / → or choose a variant</small></span>
+    <div><a data-variant-link="pdf" href="?variant=pdf">PDF surface</a><a data-variant-link="html" href="?variant=html">Semantic HTML</a></div>
+    <span class="keyboard-hint">⌘ / Ctrl + ← →</span>
+  </footer>
+
+  <aside class="footnote-popover" id="footnote-division" hidden aria-label="Footnote 1"><strong>Footnote 1</strong><p>The source marker is retained as a visible reading affordance. This spike keeps the note local to the paragraph rather than moving it to a separate dashboard.</p><button type="button" class="button button-quiet" data-close-popover>Close</button></aside>
+
+  <aside class="evidence-drawer" id="evidenceDrawer" hidden aria-labelledby="evidenceTitle"><div class="drawer-backdrop" data-close-drawer></div><div class="drawer-panel"><div class="drawer-heading"><div><p class="eyebrow">EVIDENCE DRAWER</p><h2 id="evidenceTitle">Page-level PDF check</h2></div><button class="icon-button" type="button" data-close-drawer aria-label="Close evidence drawer">×</button></div><p id="drawerSourceLabel">Current HTML source</p><iframe id="drawerPdfFrame" title="PDF page-level evidence"></iframe><div class="drawer-note">The PDF is real and local. This spike labels the check at page level; it does not pretend to provide a synchronized text-layer highlight.</div></div></aside>
+
+  <script src="./app.js"></script>
+</body>
+</html>

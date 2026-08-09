@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PROTOTYPE — 活版画经济剧场</title>
+  <style>
+    /* PROTOTYPE ONLY — 用来判断“活版画经济剧场”是否值得继续。 */
+    :root {
+      --paper: #efe5ce;
+      --paper-hi: #f8f1df;
+      --ink: #24201b;
+      --muted: #756957;
+      --rule: rgba(63, 52, 39, .24);
+      --oxblood: #8c2f2a;
+      --blue: #34566f;
+      --green: #426a55;
+      --gold: #b08b42;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 18% 12%, rgba(255,255,255,.55), transparent 22%),
+        radial-gradient(circle at 84% 86%, rgba(115,83,42,.09), transparent 28%),
+        repeating-linear-gradient(0deg, rgba(66,48,28,.018) 0 1px, transparent 1px 4px),
+        var(--paper);
+      font-family: ui-serif, "Songti SC", "STSong", "Noto Serif CJK SC", Georgia, serif;
+      overflow: hidden;
+    }
+
+    .app {
+      width: 100vw;
+      height: 100vh;
+      min-width: 1120px;
+      min-height: 700px;
+      padding: 22px 30px 24px;
+      display: grid;
+      grid-template-rows: 50px 122px minmax(0, 1fr) 82px;
+      gap: 14px;
+      position: relative;
+    }
+
+    .app::after {
+      content: "";
+      position: absolute;
+      inset: 9px;
+      border: 1px solid rgba(61,49,34,.28);
+      pointer-events: none;
+      box-shadow: inset 0 0 70px rgba(67,47,23,.07);
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--rule);
+      padding: 0 5px 12px;
+      z-index: 2;
+    }
+
+    .brand { display: flex; align-items: baseline; gap: 13px; }
+    .brand strong { font-size: 21px; letter-spacing: .12em; font-weight: 650; }
+    .brand span { color: var(--muted); font-size: 12px; letter-spacing: .16em; }
+    .meta { display: flex; align-items: center; gap: 18px; font-size: 12px; color: var(--muted); }
+    .live { display: flex; align-items: center; gap: 7px; }
+    .live i { width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 5px rgba(66,106,85,.11); }
+
+    .charter {
+      position: relative;
+      display: grid;
+      grid-template-columns: 108px 1fr 164px;
+      align-items: center;
+      gap: 18px;
+      padding: 18px 22px;
+      background: rgba(250,245,230,.62);
+      border: 1px solid rgba(60,48,32,.28);
+      box-shadow: 0 8px 24px rgba(66,46,22,.07);
+      z-index: 2;
+    }
+
+    .charter::before, .charter::after {
+      content: "";
+      position: absolute;
+      width: 20px; height: 20px;
+      border-color: rgba(77,57,35,.35);
+    }
+    .charter::before { left: 6px; top: 6px; border-left: 1px solid; border-top: 1px solid; }
+    .charter::after { right: 6px; bottom: 6px; border-right: 1px solid; border-bottom: 1px solid; }
+
+    .eyebrow { font-size: 11px; color: var(--muted); letter-spacing: .18em; line-height: 1.8; }
+    .eyebrow b { color: var(--oxblood); font-size: 17px; letter-spacing: .04em; display: block; font-weight: 600; }
+    .sentence { font-size: 20px; line-height: 1.95; letter-spacing: .02em; }
+    .clause {
+      display: inline-block;
+      padding: 0 7px 1px;
+      margin: 0 2px;
+      border-bottom: 2px solid currentColor;
+      font-weight: 700;
+      background: rgba(255,255,255,.32);
+    }
+    .clause.red { color: var(--oxblood); }
+    .clause.blue { color: var(--blue); }
+    .clause.gold { color: #8b6828; }
+    .compiled { justify-self: end; text-align: right; }
+    .compiled .seal-mini { display: inline-grid; place-items: center; width: 40px; height: 40px; border: 1.5px solid var(--oxblood); border-radius: 50%; color: var(--oxblood); font-size: 12px; transform: rotate(-7deg); }
+    .compiled p { margin: 5px 0 0; font-size: 11px; color: var(--muted); }
+
+    .world-wrap {
+      min-height: 0;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 205px;
+      gap: 14px;
+      z-index: 1;
+    }
+
+    .stage {
+      position: relative;
+      min-height: 0;
+      border: 1px solid rgba(58,47,33,.25);
+      overflow: hidden;
+      background:
+        linear-gradient(to bottom, rgba(255,255,255,.28) 0 63%, rgba(104,77,43,.08) 63% 64%, rgba(181,153,111,.13) 64% 100%);
+      box-shadow: inset 0 18px 38px rgba(255,255,255,.22);
+    }
+
+    .stage-label {
+      position: absolute;
+      left: 18px; top: 14px;
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: .18em;
+      z-index: 4;
+    }
+
+    .stage svg { width: 100%; height: 100%; display: block; }
+    .paper-shadow { filter: drop-shadow(0 5px 3px rgba(55,38,19,.15)); }
+    .fine { fill: none; stroke: #332d25; stroke-width: 1.3; }
+    .fine-light { fill: none; stroke: rgba(51,45,37,.43); stroke-width: 1; }
+    .hatch { fill: url(#hatch); stroke: #332d25; stroke-width: 1.2; }
+    .building { fill: #f4ead3; stroke: #332d25; stroke-width: 1.4; }
+    .roof { fill: #2f3536; stroke: #24201b; stroke-width: 1.2; }
+    .window { fill: #c7d0c8; stroke: #332d25; stroke-width: 1; }
+    .red { fill: var(--oxblood); }
+    .blue { fill: var(--blue); }
+    .gold { fill: var(--gold); }
+    .ink { fill: #292620; }
+    .muted-fill { fill: #8e826e; }
+    .caption { font-size: 12px; fill: #342e26; font-family: ui-serif, "Songti SC", serif; }
+    .tiny { font-size: 9px; fill: #6f6454; font-family: ui-serif, "Songti SC", serif; letter-spacing: .07em; }
+    .tag-text { font-size: 10px; font-weight: 700; fill: #f8efd9; font-family: ui-serif, "Songti SC", serif; }
+
+    .queue { animation: breathe 2.8s ease-in-out infinite; transform-origin: center bottom; }
+    .seal-pulse { animation: sealPulse 2.4s ease-in-out infinite; transform-origin: center; }
+    .entrant { animation: knock 2s ease-in-out infinite; transform-origin: bottom center; }
+    @keyframes breathe { 50% { transform: translateY(-2px); } }
+    @keyframes sealPulse { 50% { transform: scale(1.035) rotate(-2deg); } }
+    @keyframes knock { 45%,55% { transform: rotate(-2deg) translateX(-2px); } }
+
+    .outcomes {
+      padding: 18px 16px;
+      border: 1px solid rgba(58,47,33,.25);
+      background: rgba(249,242,224,.54);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .outcomes h3 { margin: 0 0 3px; font-size: 11px; color: var(--muted); font-weight: 500; letter-spacing: .16em; }
+    .stamp {
+      min-height: 75px;
+      display: grid;
+      place-items: center;
+      border: 1px solid currentColor;
+      position: relative;
+      font-size: 24px;
+      letter-spacing: .08em;
+      background: rgba(255,255,255,.19);
+    }
+    .stamp::after { content:""; position:absolute; inset:5px; border:1px solid currentColor; opacity:.28; }
+    .stamp.good { color: var(--green); transform: rotate(-.6deg); }
+    .stamp.warn { color: var(--oxblood); transform: rotate(.7deg); }
+    .stamp.cold { color: var(--blue); transform: rotate(-.4deg); }
+    .outcomes small { margin-top: auto; color: var(--muted); font-size: 11px; line-height: 1.7; }
+
+    footer {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 18px;
+      z-index: 2;
+    }
+    .forks { display: flex; align-items: center; gap: 10px; }
+    .fork-label { font-size: 11px; color: var(--muted); letter-spacing: .12em; margin-right: 4px; }
+    .world-chip {
+      width: 126px; height: 54px;
+      padding: 8px 10px;
+      border: 1px solid rgba(57,45,30,.25);
+      background: rgba(248,240,219,.55);
+      display: grid; grid-template-columns: 29px 1fr; gap: 8px; align-items: center;
+    }
+    .world-chip.active { border-color: var(--oxblood); box-shadow: inset 3px 0 0 var(--oxblood); }
+    .mini-town { height: 28px; border-bottom: 1px solid #433a2e; position: relative; }
+    .mini-town::before, .mini-town::after { content:""; position:absolute; bottom:0; width:9px; background:#6e6252; }
+    .mini-town::before { height:19px; left:3px; box-shadow: 12px 4px 0 #8c2f2a; }
+    .mini-town::after { height:13px; right:2px; }
+    .world-chip b { font-size: 12px; font-weight: 600; display:block; }
+    .world-chip span { font-size: 9px; color: var(--muted); }
+    .run {
+      border: 0;
+      color: #fbf2dd;
+      background: var(--oxblood);
+      font-family: inherit;
+      font-size: 15px;
+      letter-spacing: .08em;
+      padding: 16px 26px;
+      box-shadow: 0 7px 15px rgba(95,34,29,.18);
+    }
+    .run::after { content: "  →"; }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="brand"><strong>可执行的《国富论》</strong><span>THE EXECUTABLE BOOK</span></div>
+      <div class="meta"><span>实验 01 · 面包师行会</span><span class="live"><i></i>世界正在运行</span></div>
+    </header>
+
+    <section class="charter">
+      <div class="eyebrow">你写下的善意<b>小镇法令</b></div>
+      <div class="sentence">只有经过<span class="clause red">资深面包师认证</span>、使用优质面粉的店铺才能<span class="clause blue">获准营业</span>，且不得<span class="clause gold">恶意低价竞争</span>。</div>
+      <div class="compiled"><div class="seal-mini">已编译</div><p>3 条制度约束</p></div>
+    </section>
+
+    <section class="world-wrap">
+      <div class="stage">
+        <div class="stage-label">法令进入世界后的第 4 周</div>
+        <svg viewBox="0 0 1120 500" role="img" aria-label="面包师行会控制认证，新店被准入门槛阻挡，价格上涨的经济小镇">
+          <defs>
+            <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(28)">
+              <rect width="7" height="7" fill="#eee2c8" />
+              <line x1="0" y1="0" x2="0" y2="7" stroke="#5b5143" stroke-opacity=".22" stroke-width="1" />
+            </pattern>
+            <filter id="paperRough">
+              <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="9" result="noise"/>
+              <feColorMatrix in="noise" type="saturate" values="0" result="mono"/>
+              <feBlend in="SourceGraphic" in2="mono" mode="multiply"/>
+            </filter>
+          </defs>
+
+          <!-- semantic connectors -->
+          <path d="M155 0 C155 45 122 62 122 101" stroke="#8c2f2a" stroke-width="1.5" stroke-dasharray="4 5" fill="none" opacity=".72"/>
+          <circle cx="122" cy="101" r="4" class="red" />
+          <path d="M520 0 C520 65 884 45 884 148" stroke="#34566f" stroke-width="1.5" stroke-dasharray="4 5" fill="none" opacity=".72"/>
+          <circle cx="884" cy="148" r="4" class="blue" />
+          <path d="M825 0 C825 58 666 74 666 180" stroke="#9a772f" stroke-width="1.5" stroke-dasharray="4 5" fill="none" opacity=".72"/>
+          <circle cx="666" cy="180" r="4" class="gold" />
+
+          <!-- distant paper town -->
+          <path d="M0 210 C150 170 310 198 455 178 C640 151 800 190 1120 146 L1120 304 L0 304 Z" fill="#d8ccb2" opacity=".48"/>
+          <g opacity=".32" class="fine-light">
+            <path d="M25 215v-60h55v60m25 0v-42h38v42m42 0v-78h70v78m32 0v-49h45v49m500 0v-60h63v60m31 0v-78h68v78m26 0v-45h52v45"/>
+          </g>
+
+          <!-- guild hall -->
+          <g class="paper-shadow">
+            <path d="M36 185 L125 120 L214 185 Z" class="roof"/>
+            <rect x="48" y="185" width="154" height="178" class="building"/>
+            <rect x="63" y="213" width="31" height="113" class="hatch"/>
+            <rect x="156" y="213" width="31" height="113" class="hatch"/>
+            <rect x="106" y="245" width="38" height="118" fill="#585044" stroke="#332d25" stroke-width="1.3"/>
+            <path d="M48 185h154M54 205h142" class="fine"/>
+            <text x="125" y="174" text-anchor="middle" class="caption" font-weight="700">面包师行会</text>
+            <text x="125" y="342" text-anchor="middle" class="tiny">CERTIFICATION GUILD</text>
+          </g>
+
+          <!-- large certification seal -->
+          <g class="seal-pulse paper-shadow">
+            <circle cx="124" cy="238" r="48" fill="#efe3c8" stroke="#8c2f2a" stroke-width="4"/>
+            <circle cx="124" cy="238" r="39" fill="none" stroke="#8c2f2a" stroke-width="1.2" stroke-dasharray="3 3"/>
+            <text x="124" y="234" text-anchor="middle" font-size="14" font-weight="700" fill="#8c2f2a" font-family="Songti SC, serif">行会认证</text>
+            <text x="124" y="253" text-anchor="middle" class="tiny" fill="#8c2f2a">APPROVED</text>
+          </g>
+
+          <!-- bakeries -->
+          <g class="paper-shadow">
+            <g transform="translate(250,0)">
+              <path d="M0 214 L72 166 L144 214 Z" class="roof"/>
+              <rect x="9" y="214" width="126" height="149" class="building"/>
+              <rect x="24" y="244" width="42" height="61" class="window"/>
+              <rect x="83" y="237" width="34" height="126" fill="#5d5142" stroke="#332d25"/>
+              <text x="72" y="204" text-anchor="middle" class="caption">皇冠面包房</text>
+              <circle cx="44" cy="269" r="15" fill="#f0dfb7" stroke="#426a55" stroke-width="2"/>
+              <path d="M36 269l6 6 11-13" fill="none" stroke="#426a55" stroke-width="2"/>
+              <rect x="92" y="318" width="29" height="18" fill="#efe3c8" stroke="#8c2f2a"/>
+              <text x="106" y="331" text-anchor="middle" font-size="11" fill="#8c2f2a">5.2</text>
+            </g>
+            <g transform="translate(406,12)">
+              <path d="M0 202 L68 163 L136 202 Z" class="roof"/>
+              <rect x="8" y="202" width="120" height="149" class="building"/>
+              <rect x="21" y="232" width="40" height="59" class="window"/>
+              <rect x="79" y="227" width="33" height="124" fill="#675b4b" stroke="#332d25"/>
+              <text x="68" y="193" text-anchor="middle" class="caption">麦穗面包房</text>
+              <circle cx="41" cy="257" r="14" fill="#f0dfb7" stroke="#426a55" stroke-width="2"/>
+              <path d="M33 257l6 6 11-13" fill="none" stroke="#426a55" stroke-width="2"/>
+              <rect x="87" y="306" width="28" height="18" fill="#efe3c8" stroke="#8c2f2a"/>
+              <text x="101" y="319" text-anchor="middle" font-size="11" fill="#8c2f2a">5.0</text>
+            </g>
+            <g transform="translate(552,5)">
+              <path d="M0 209 L70 164 L140 209 Z" class="roof"/>
+              <rect x="8" y="209" width="124" height="149" class="building"/>
+              <rect x="22" y="239" width="41" height="61" class="window"/>
+              <rect x="82" y="233" width="34" height="125" fill="#554a3e" stroke="#332d25"/>
+              <text x="70" y="199" text-anchor="middle" class="caption">老钟面包房</text>
+              <circle cx="42" cy="264" r="14" fill="#f0dfb7" stroke="#426a55" stroke-width="2"/>
+              <path d="M34 264l6 6 11-13" fill="none" stroke="#426a55" stroke-width="2"/>
+              <rect x="90" y="313" width="28" height="18" fill="#efe3c8" stroke="#8c2f2a"/>
+              <text x="104" y="326" text-anchor="middle" font-size="11" fill="#8c2f2a">5.4</text>
+            </g>
+          </g>
+
+          <!-- price floor -->
+          <path d="M270 330 C410 319 535 327 685 322" fill="none" stroke="#8c2f2a" stroke-width="3"/>
+          <path d="M270 326v9m415-18v10" stroke="#8c2f2a" stroke-width="2"/>
+          <rect x="429" y="335" width="100" height="23" fill="#8c2f2a"/>
+          <text x="479" y="350" text-anchor="middle" class="tag-text">最低价格线</text>
+
+          <!-- empty storefront and entry gate -->
+          <g class="paper-shadow">
+            <path d="M786 215 L878 160 L970 215 Z" fill="#dad0bb" stroke="#332d25" stroke-width="1.4" stroke-dasharray="5 4"/>
+            <rect x="799" y="215" width="158" height="148" fill="#e6dbc4" stroke="#332d25" stroke-width="1.4" stroke-dasharray="5 4"/>
+            <rect x="827" y="248" width="102" height="88" fill="#d6ccb7" stroke="#665b4b"/>
+            <text x="878" y="202" text-anchor="middle" class="caption" fill="#756957">新面包房</text>
+            <text x="878" y="285" text-anchor="middle" font-size="14" fill="#756957" font-family="Songti SC, serif">等待开业</text>
+          </g>
+          <g transform="translate(802,190)" class="paper-shadow">
+            <rect x="0" y="0" width="151" height="174" fill="none" stroke="#34566f" stroke-width="5"/>
+            <path d="M22 0v174M49 0v174M76 0v174M103 0v174M130 0v174" stroke="#34566f" stroke-width="2.2"/>
+            <rect x="33" y="61" width="85" height="30" fill="#34566f"/>
+            <text x="75" y="81" text-anchor="middle" class="tag-text">未获准入</text>
+          </g>
+
+          <!-- aspiring baker -->
+          <g class="entrant paper-shadow" transform="translate(748,300)">
+            <circle cx="0" cy="0" r="12" class="ink"/>
+            <path d="M-14 13 Q0 6 14 13 L10 58 L-10 58 Z" class="blue" stroke="#292620"/>
+            <path d="M-8 58l-6 34m18-34l8 34M-12 25l-24 15M12 25l18-5" class="fine" stroke-width="4"/>
+            <rect x="-37" y="37" width="26" height="18" class="hatch"/>
+            <text x="0" y="112" text-anchor="middle" class="caption" fill="#34566f">新面包师</text>
+          </g>
+
+          <!-- customer queue -->
+          <g class="queue paper-shadow">
+            <g transform="translate(308,388)"><circle r="10" class="ink"/><path d="M-11 11h22l-3 42h-16z" fill="#83735e" stroke="#292620"/><path d="M-6 52l-4 24m16-24l4 24" class="fine" stroke-width="3"/></g>
+            <g transform="translate(352,397)"><circle r="9" class="ink"/><path d="M-10 10h20l-2 37h-16z" fill="#8c2f2a" opacity=".82"/><path d="M-5 46l-4 22m14-22l4 22" class="fine" stroke-width="3"/></g>
+            <g transform="translate(393,390)"><circle r="10" class="ink"/><path d="M-11 11h22l-3 42h-16z" fill="#456177"/><path d="M-6 52l-4 24m16-24l4 24" class="fine" stroke-width="3"/></g>
+            <g transform="translate(438,399)"><circle r="9" class="ink"/><path d="M-10 10h20l-2 37h-16z" fill="#80745f"/><path d="M-5 46l-4 22m14-22l4 22" class="fine" stroke-width="3"/></g>
+          </g>
+          <path d="M288 460 C350 448 417 450 475 442" class="fine-light" stroke-dasharray="3 4"/>
+          <text x="374" y="478" text-anchor="middle" class="tiny">供应减少，等待时间上升</text>
+
+          <!-- poor customer turns away -->
+          <g class="paper-shadow" transform="translate(682,412)">
+            <circle r="9" class="ink"/><path d="M-9 10h18l-2 36h-14z" fill="#a69a84" stroke="#292620"/><path d="M-4 45l-15 18m23-18l12 14M-7 22l-18-2" class="fine" stroke-width="3"/>
+            <circle cx="-34" cy="-3" r="9" fill="#eee3cc" stroke="#8c2f2a"/><path d="M-38-3h8" stroke="#8c2f2a" stroke-width="2"/>
+            <text x="-7" y="82" text-anchor="middle" class="tiny" fill="#8c2f2a">买不起今天的面包</text>
+          </g>
+
+          <!-- flour sacks -->
+          <g transform="translate(1000,326)" class="paper-shadow">
+            <path d="M0 35q24-22 48 0l-5 64H5z" class="hatch"/><path d="M10 35h28M16 22h16l6 13H10z" class="fine"/><text x="24" y="68" text-anchor="middle" class="caption">优</text>
+            <path d="M50 46q21-19 42 0l-5 53H55z" class="hatch"/><path d="M59 46h24" class="fine"/><text x="71" y="73" text-anchor="middle" class="caption">优</text>
+          </g>
+
+          <!-- ground -->
+          <path d="M0 365 C175 355 338 372 516 361 C700 350 900 371 1120 355" class="fine"/>
+          <path d="M0 475 C215 455 390 480 568 461 C800 437 960 469 1120 450" class="fine-light"/>
+        </svg>
+      </div>
+
+      <aside class="outcomes">
+        <h3>制度造成的结果</h3>
+        <div class="stamp good">质量 ↑</div>
+        <div class="stamp warn">价格 ↑</div>
+        <div class="stamp cold">竞争 ↓</div>
+        <small>你写下的是“保护消费者”。<br/>世界读到的却是：谁有权决定别人能否进入市场？</small>
+      </aside>
+    </section>
+
+    <footer>
+      <div class="forks">
+        <span class="fork-label">对照世界</span>
+        <div class="world-chip active"><div class="mini-town"></div><div><b>行会认证</b><span>当前世界 · 第 4 周</span></div></div>
+        <div class="world-chip"><div class="mini-town"></div><div><b>公开检测</b><span>修改一句，重新运行</span></div></div>
+      </div>
+      <button class="run">修改法令并分叉世界</button>
+    </footer>
+  </main>
+</body>
+</html>
