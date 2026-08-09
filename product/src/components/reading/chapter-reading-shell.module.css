@@ -1,0 +1,475 @@
+.reader {
+  min-width: 0;
+  min-height: 100vh;
+  color: #172435;
+  background: #f4f7f8;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
+    "Songti SC", STSong, serif;
+}
+
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: grid;
+  grid-template-columns: minmax(7rem, 1fr) minmax(12rem, auto) minmax(7rem, 1fr);
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+  min-height: 3.5rem;
+  padding: 0.45rem clamp(0.75rem, 3vw, 2rem);
+  border-bottom: 1px solid #cdd6dd;
+  background: rgba(244, 247, 248, 0.97);
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.toolbarButton,
+.toolbarActions button,
+.resumeBar button,
+.panelHeader button,
+.memoryList button {
+  min-height: 2.75rem;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid #aebdca;
+  border-radius: 0.3rem;
+  color: #163653;
+  background: #f8fafb;
+  font: 600 0.78rem/1.2 Inter, system-ui, sans-serif;
+  cursor: pointer;
+}
+
+.toolbarButton {
+  justify-self: start;
+}
+
+.toolbarActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.45rem;
+  min-width: 0;
+}
+
+.toolbarButton:hover,
+.toolbarButton:focus-visible,
+.toolbarActions button:hover,
+.toolbarActions button:focus-visible,
+.resumeBar button:hover,
+.resumeBar button:focus-visible,
+.panelHeader button:hover,
+.panelHeader button:focus-visible,
+.memoryList button:hover,
+.memoryList button:focus-visible {
+  border-color: #335c7d;
+  outline: 2px solid transparent;
+  color: #f7fafc;
+  background: #234b6a;
+}
+
+.toolbarButton[aria-pressed="true"] {
+  color: #f7fafc;
+  background: #234b6a;
+}
+
+.location {
+  min-width: 0;
+  text-align: center;
+}
+
+.location span,
+.location strong {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.location span {
+  margin-bottom: 0.12rem;
+  color: #617384;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+}
+
+.location strong {
+  font-size: 0.9rem;
+}
+
+.resumeBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 0.55rem 1rem;
+  border-bottom: 1px solid #d5dde3;
+  color: #536778;
+  background: #edf2f5;
+  font: 0.78rem/1.35 Inter, system-ui, sans-serif;
+}
+
+.canvas {
+  min-width: 0;
+  padding: clamp(1.1rem, 5vw, 4rem) clamp(1rem, 6vw, 4rem) 6rem;
+}
+
+.page {
+  width: min(100%, 62rem);
+  margin: 0 auto;
+}
+
+.masthead {
+  padding-bottom: clamp(2.25rem, 7vw, 5.5rem);
+  border-bottom: 1px solid #bcc8d1;
+  text-align: center;
+}
+
+.masthead p,
+.masthead span {
+  margin: 0;
+  color: #617384;
+  font: 0.72rem/1.5 Inter, system-ui, sans-serif;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  margin: 1.2rem auto 0.8rem;
+  color: #152b40;
+  font-size: clamp(2rem, 6vw, 4.35rem);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+.prose {
+  width: min(100%, 52rem);
+  margin: 0 auto;
+}
+
+.sourceBlock {
+  display: grid;
+  grid-template-columns: minmax(7.5rem, 10rem) minmax(0, 1fr);
+  gap: clamp(1.5rem, 5vw, 3.5rem);
+  min-width: 0;
+  padding: clamp(2.75rem, 8vw, 6rem) 0;
+  border-bottom: 1px solid #d4dce2;
+  scroll-margin-top: 5rem;
+}
+
+.sourceIdentity {
+  align-self: start;
+  display: grid;
+  gap: 0.45rem;
+  padding-top: 0.25rem;
+  color: #647789;
+  font: 0.68rem/1.45 Inter, system-ui, sans-serif;
+}
+
+.sourceIdentity span {
+  color: #315c7e;
+  font-weight: 700;
+}
+
+.sourceIdentity code,
+.memoryList code {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  color: #647789;
+  font-size: 0.65rem;
+}
+
+.passage {
+  min-width: 0;
+}
+
+.passage.isComparing {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(1.4rem, 4vw, 3rem);
+}
+
+.passageLabel {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  color: #315c7e;
+  font: 700 0.67rem/1.3 Inter, system-ui, sans-serif;
+  letter-spacing: 0.09em;
+}
+
+.passage p {
+  margin: 0;
+  overflow-wrap: anywhere;
+  color: #172435;
+  font-size: clamp(1.14rem, 2.1vw, 1.42rem);
+  line-height: 1.85;
+}
+
+.original {
+  padding-left: clamp(1rem, 3vw, 2rem);
+  border-left: 1px solid #b6c5d0;
+}
+
+.original p {
+  color: #34485a;
+  font-size: clamp(1rem, 1.75vw, 1.2rem);
+  line-height: 1.72;
+}
+
+.unavailable {
+  color: #6b4d3e !important;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 0.9rem !important;
+  line-height: 1.6 !important;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 29;
+  width: 100%;
+  border: 0;
+  background: rgba(18, 31, 43, 0.34);
+  cursor: default;
+}
+
+.sidePanel {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 30;
+  width: min(28rem, 100%);
+  max-width: 100vw;
+  padding: 1.2rem clamp(1rem, 4vw, 1.6rem) 2rem;
+  overflow-y: auto;
+  border: 0;
+  border-right: 1px solid #bac7d1;
+  color: #172435;
+  background: #f4f7f8;
+}
+
+.panelHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid #cbd5dc;
+}
+
+.panelHeader span {
+  color: #647789;
+  font: 0.68rem/1.4 Inter, system-ui, sans-serif;
+}
+
+.panelHeader h2 {
+  margin: 0.25rem 0 0;
+  font-size: 1.65rem;
+  font-weight: 500;
+}
+
+.toc > section {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #d5dde3;
+}
+
+.toc section > header {
+  display: grid;
+  grid-template-columns: 5rem minmax(0, 1fr);
+  gap: 0.8rem;
+  margin-bottom: 0.7rem;
+}
+
+.toc header span {
+  color: #315c7e;
+  font: 700 0.7rem/1.4 Inter, system-ui, sans-serif;
+  letter-spacing: 0.08em;
+}
+
+.toc header strong {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.toc ol {
+  margin: 0 0 0 5.8rem;
+  padding: 0;
+  list-style: none;
+}
+
+.toc li + li {
+  margin-top: 0.3rem;
+}
+
+.toc a {
+  display: grid;
+  grid-template-columns: 4.3rem minmax(0, 1fr);
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  align-items: center;
+  padding: 0.35rem 0.5rem;
+  color: #263a4c;
+  font-size: 0.88rem;
+  text-decoration: none;
+}
+
+.toc a span {
+  color: #6c7f8f;
+  font: 0.68rem/1.3 Inter, system-ui, sans-serif;
+}
+
+.toc a:hover,
+.toc a:focus-visible,
+.toc a[aria-current="page"] {
+  outline: none;
+  color: #173c5a;
+  background: #e4ebf0;
+}
+
+.memoryList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.memoryList li {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #d5dde3;
+}
+
+.memoryMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.memoryMeta span {
+  padding: 0.2rem 0.45rem;
+  border: 1px solid #b8c6d0;
+  color: #536778;
+  font: 700 0.66rem/1.3 Inter, system-ui, sans-serif;
+}
+
+.memoryMeta span[data-origin="reader_confirmed"] {
+  border-color: #557b99;
+  color: #244f70;
+  background: #e7eef3;
+}
+
+.memoryMeta span[data-origin="agent_observed"] {
+  border-style: dashed;
+}
+
+.memoryList p {
+  margin: 0.8rem 0;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.memoryList code {
+  display: block;
+  margin-bottom: 0.55rem;
+}
+
+.emptyMemory {
+  margin: 1.5rem 0;
+  color: #536778;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.liveStatus {
+  min-height: 1.2rem;
+  color: #315c7e;
+  font: 0.78rem/1.4 Inter, system-ui, sans-serif;
+}
+
+@media (max-width: 720px) {
+  .toolbar {
+    grid-template-columns: auto minmax(0, 1fr);
+    min-height: 4.25rem;
+  }
+
+  .location {
+    text-align: left;
+  }
+
+  .toolbarActions {
+    grid-column: 1 / -1;
+    justify-content: stretch;
+  }
+
+  .toolbarActions button {
+    flex: 1;
+  }
+
+  .resumeBar {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .canvas {
+    padding: 1.25rem 1rem 4rem;
+  }
+
+  .masthead {
+    padding: 1.2rem 0 2.75rem;
+    text-align: left;
+  }
+
+  .masthead h1 {
+    margin-left: 0;
+  }
+
+  .sourceBlock {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    padding: 2.75rem 0;
+  }
+
+  .sourceIdentity {
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: baseline;
+  }
+
+  .passage.isComparing {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.75rem;
+  }
+
+  .original {
+    padding: 1.25rem 0 0;
+    border-top: 1px solid #b6c5d0;
+    border-left: 0;
+  }
+
+  .toc section > header,
+  .toc a {
+    grid-template-columns: 4.2rem minmax(0, 1fr);
+  }
+
+  .toc ol {
+    margin-left: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reader,
+  .reader * {
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (prefers-contrast: more) {
+  .toolbar,
+  .sidePanel {
+    background: #fff;
+  }
+
+  .toolbarButton,
+  .toolbarActions button,
+  .resumeBar button,
+  .panelHeader button,
+  .memoryList button {
+    border-color: #172435;
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "editionId": "oll-cannan-1904",
+  "revision": "oll-epub-2016-05-25",
+  "licenseNote": "The Cannan edition text is public domain. Fixed HTML inputs were extracted byte-for-byte from the official OLL EPUB packages, then deterministically compressed with gzip -9 -n.",
+  "volumes": [
+    {
+      "volume": 1,
+      "volumeId": "oll-cannan-vol1-1904",
+      "resource": "Smith_0206-01.html",
+      "inputPath": "Smith_0206-01.html.gz",
+      "sourcePageUri": "https://oll.libertyfund.org/titles/smith-an-inquiry-into-the-nature-and-causes-of-the-wealth-of-nations-cannan-ed-vol-1",
+      "sourcePackageUri": "https://oll-resources.s3.us-east-2.amazonaws.com/oll3/store/titles/237/smith-an-inquiry-into-the-nature-and-causes-of-the-wealth-of-nations-cannan-ed-vol-1.epub",
+      "sourcePackageHash": "604b2378b7273e21433ee6af9b8ef716864617927c0cb9a964e871b2fcd2ba85",
+      "contentHash": "3a7e69d310b4b77350ad9cde585b0cf491f341272958ff1bb2aac66b75b430fa",
+      "compressedHash": "b3e530273bd87b90d848d4725824c3ab24675721d43f2ef8340f82d6c75cc0a6",
+      "rawParagraphIdCount": 2119,
+      "startsAt": "Book I",
+      "endsAt": "Book IV Chapter III"
+    },
+    {
+      "volume": 2,
+      "volumeId": "oll-cannan-vol2-1904",
+      "resource": "Smith_0206-02.html",
+      "inputPath": "Smith_0206-02.html.gz",
+      "sourcePageUri": "https://oll.libertyfund.org/titles/smith-an-inquiry-into-the-nature-and-causes-of-the-wealth-of-nations-cannan-ed-vol-2",
+      "sourcePackageUri": "https://oll-resources.s3.us-east-2.amazonaws.com/oll3/store/titles/119/smith-an-inquiry-into-the-nature-and-causes-of-the-wealth-of-nations-cannan-ed-vol-2.epub",
+      "sourcePackageHash": "509b064e8f91b37bdcb64d415cef98e8c329aada4a1da326a2825609603af785",
+      "contentHash": "b2a7187ae25cb5f159d76ee71bc08ae1ba2e86bba53f8e71d20ecb423ddf6ff1",
+      "compressedHash": "ab29c15264386c71ec2914eeb689d7bb4bb93245f1b52747dd75e0f2cd2c01d8",
+      "rawParagraphIdCount": 1758,
+      "startsAt": "Book IV Chapter IV",
+      "endsAt": "Book V"
+    }
+  ]
+}

@@ -4,13 +4,13 @@ const port = 3000;
 const baseURL = `http://127.0.0.1:${port}`;
 
 /**
- * Dev server so NEXT_PUBLIC_T003_BRIDGE is available to the client bundle.
+ * Dev server so public test bridge flags are available to the client bundle.
  * NEXT_DIST_DIR isolates Playwright from an already-running product dev server.
  *
  * Production start remains `pnpm build && pnpm start` with the default `.next`.
  */
 const webServerCommand =
-  "NEXT_DIST_DIR=.next-playwright NEXT_PUBLIC_T003_BRIDGE=1 NEXT_PUBLIC_T004_SESSION_BRIDGE=1 pnpm dev --hostname 127.0.0.1 --port 3000";
+  "NEXT_DIST_DIR=.next-playwright NEXT_PUBLIC_T003_BRIDGE=1 NEXT_PUBLIC_T004_SESSION_BRIDGE=1 NEXT_PUBLIC_T009_AGENT_TURN_BRIDGE=1 pnpm dev --hostname 127.0.0.1 --port 3000";
 
 export default defineConfig({
   testDir: "tests/e2e",

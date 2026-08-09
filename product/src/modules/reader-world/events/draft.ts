@@ -6,8 +6,13 @@ import type {
   Producer,
   SecurityContext,
 } from "./envelope";
-import { PROTOCOL_VERSION } from "./names";
-import { nextMessageId, nowRfc3339 } from "./clock";
+import { PROTOCOL_VERSION, schemaVersionForEventName } from "./names";
+import {
+  nextEventMetadata,
+  nextMessageId,
+  nowRfc3339,
+  type HybridLogicalClock,
+} from "./clock";
 import { payloadHash } from "./hash";
 
 export type CreateDraftInput<N extends DomainEventName> = {
@@ -21,6 +26,8 @@ export type CreateDraftInput<N extends DomainEventName> = {
   message_id?: string;
   recorded_at?: string;
   schema_version?: number;
+  hlc?: HybridLogicalClock;
+  device_id?: string;
 };
 
 /**
@@ -31,16 +38,26 @@ export function createDomainEventDraft<N extends DomainEventName>(
   input: CreateDraftInput<N>,
 ): DomainEventDraftBase<N> {
   const hash = payloadHash(input.payload);
+  const recordedAt = input.recorded_at ?? nowRfc3339();
+  const metadata = input.hlc
+    ? {
+        hlc: input.hlc,
+        device_id: input.device_id ?? "local-device",
+      }
+    : nextEventMetadata(recordedAt, input.device_id);
   return {
     protocol_version: PROTOCOL_VERSION,
     message_id: input.message_id ?? nextMessageId(),
     message_type: "domain_event",
     message_name: input.message_name,
-    schema_version: input.schema_version ?? 1,
+    schema_version:
+      input.schema_version ?? schemaVersionForEventName(input.message_name),
     experience_id: input.experience_id,
     correlation_id: input.correlation_id,
     causation_id: input.causation_id ?? null,
-    recorded_at: input.recorded_at ?? nowRfc3339(),
+    recorded_at: recordedAt,
+    hlc: metadata.hlc,
+    device_id: metadata.device_id,
     producer: input.producer,
     security: input.security,
     payload_hash: hash,

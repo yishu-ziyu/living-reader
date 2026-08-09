@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import {
+  deriveInvitationQuestionKey,
   handleAgentTurn,
   type AgentTurnCandidate,
   type AgentTurnInput,
@@ -24,6 +25,7 @@ function input(overrides: Partial<AgentTurnInput> = {}): AgentTurnInput {
     source_snapshot_id: "snapshot-45",
     active_source_ids: ["smith.b1.c3.market_extent"],
     world_basis: basis,
+    invitation_basis: null,
     recent_turns: [],
     pending_intent: null,
     ...overrides,
@@ -52,6 +54,20 @@ const expandMarket: AgentTurnCandidate = {
   companion_line: "好，路往隔壁城铺。",
   proposed_action_id: "expand_market",
   reason_codes: ["clear_allowlisted_action"],
+};
+
+const inviteMarketWorld: AgentTurnCandidate = {
+  mode: "invite_world",
+  intent_class: "source_question",
+  relevance: "directly_anchored",
+  confidence: "high",
+  target_source_ids: ["smith.b1.c3.p1"],
+  evidence_refs: [],
+  companion_line: "这道问题已经有一座小世界可以试试看。",
+  recipe_id: "smith.b1.market-extent.v1",
+  trigger_question: "市场大小为什么会限制分工？",
+  reason: "已审配方能检验当前关系。",
+  reason_codes: ["reviewed_recipe_match"],
 };
 
 describe("T009 AgentTurn", () => {
@@ -649,5 +665,206 @@ describe("T009 AgentTurn", () => {
     );
 
     expect(receivedTurnIds).toEqual(["turn-3", "turn-4", "turn-5", "turn-6"]);
+  });
+
+  it("passes a cloned invitation basis and bounded relationship context to the provider", async () => {
+    const invitationBasis = {
+      experience_id: "exp-reading",
+      graph_revision: 2,
+      relation_id: "relation-market",
+      relation_basis_revision: 1,
+      accepted_relation_ids: ["relation-market"],
+      source_snapshot_id: "snapshot-45",
+    } as const;
+    const relationshipContext = {
+      current_chapter_id: "smith.b1.c3",
+      memories: [
+        {
+          memory_id: "memory-1",
+          kind: "confusion" as const,
+          origin: "agent_observed" as const,
+          text: "读者仍在比较市场范围与分工深度。",
+          source_locator: "smith.b1.c3.market_extent",
+          reader_idea_id: null,
+        },
+      ],
+      active_recipe_ids: ["wealth-of-nations.market-extent.v1"],
+    };
+    let received: unknown;
+
+    await handleAgentTurn(
+      input({
+        invitation_basis: invitationBasis,
+        relationship_context: relationshipContext,
+      }),
+      {
+        provider: {
+          decide: async (request) => {
+            received = request;
+            return {
+              ...expandMarket,
+              mode: "discuss",
+              intent_class: "source_question",
+              proposed_action_id: undefined,
+            };
+          },
+        },
+        dispatch: async () => {
+          throw new Error("discussion must not dispatch");
+        },
+      },
+    );
+
+    expect(received).toMatchObject({
+      invitation_basis: invitationBasis,
+      relationship_context: relationshipContext,
+    });
+    expect(received).not.toBe(invitationBasis);
+  });
+
+  it("returns a source-grounded invitation without dispatching or accepting it", async () => {
+    const invitationBasis = {
+      experience_id: "exp-reading",
+      graph_revision: 2,
+      relation_id: "relation-market",
+      relation_basis_revision: 1,
+      accepted_relation_ids: ["relation-market"],
+      source_snapshot_id: "smith.b1.c3.p1:hash-current",
+    } as const;
+    let dispatchCalls = 0;
+
+    const result = await handleAgentTurn(
+      input({
+        final_text: inviteMarketWorld.trigger_question,
+        source_snapshot_id: invitationBasis.source_snapshot_id,
+        active_source_ids: ["smith.b1.c3.p1"],
+        world_basis: null,
+        invitation_basis: invitationBasis,
+      }),
+      {
+        provider: { decide: async () => inviteMarketWorld },
+        dispatch: async () => {
+          dispatchCalls += 1;
+          throw new Error("an invitation must never dispatch or accept a world");
+        },
+      },
+    );
+
+    expect(result.mode).toBe("invite_world");
+    expect(result.invitation).toEqual({
+      recipe_id: "smith.b1.market-extent.v1",
+      trigger_question: "市场大小为什么会限制分工？",
+      reason: "已审配方能检验当前关系。",
+      question_key: deriveInvitationQuestionKey(
+        "exp-reading",
+        "市场大小为什么会限制分工？",
+      ),
+      basis: invitationBasis,
+    });
+    expect(result.invitation?.basis).not.toBe(invitationBasis);
+    expect(result.invitation?.basis.accepted_relation_ids).not.toBe(
+      invitationBasis.accepted_relation_ids,
+    );
+    expect(result.command).toBeNull();
+    expect(result.zero_world_mutation).toBe(true);
+    expect(dispatchCalls).toBe(0);
+  });
+
+  it("fails closed when an invitation recipe or its source/relation basis is not current", async () => {
+    const validBasis = {
+      experience_id: "exp-reading",
+      graph_revision: 2,
+      relation_id: "relation-market",
+      relation_basis_revision: 1,
+      accepted_relation_ids: ["relation-market"],
+      source_snapshot_id: "smith.b1.c3.p1:hash-current",
+    } as const;
+    const cases: Array<{
+      name: string;
+      turn: AgentTurnInput;
+      candidate?: AgentTurnCandidate;
+    }> = [
+      {
+        name: "recipe missing from reviewed catalog",
+        turn: input({
+          source_snapshot_id: validBasis.source_snapshot_id,
+          active_source_ids: ["smith.b1.c3.p1"],
+          world_basis: null,
+          invitation_basis: validBasis,
+        }),
+        candidate: { ...inviteMarketWorld, recipe_id: "invented-recipe" },
+      },
+      {
+        name: "reviewed recipe belongs to another canonical source",
+        turn: input({
+          source_snapshot_id: validBasis.source_snapshot_id,
+          active_source_ids: ["smith.b1.c3.p1"],
+          world_basis: null,
+          invitation_basis: validBasis,
+        }),
+        candidate: {
+          ...inviteMarketWorld,
+          recipe_id: "smith.b1.division-deepening.v1",
+        },
+      },
+      {
+        name: "basis absent",
+        turn: input({
+          source_snapshot_id: validBasis.source_snapshot_id,
+          active_source_ids: ["smith.b1.c3.p1"],
+          world_basis: null,
+          invitation_basis: null,
+        }),
+      },
+      {
+        name: "graph not committed",
+        turn: input({
+          source_snapshot_id: validBasis.source_snapshot_id,
+          active_source_ids: ["smith.b1.c3.p1"],
+          world_basis: null,
+          invitation_basis: { ...validBasis, graph_revision: 0 },
+        }),
+      },
+      {
+        name: "relation not accepted",
+        turn: input({
+          source_snapshot_id: validBasis.source_snapshot_id,
+          active_source_ids: ["smith.b1.c3.p1"],
+          world_basis: null,
+          invitation_basis: { ...validBasis, accepted_relation_ids: [] },
+        }),
+      },
+      {
+        name: "source snapshot stale",
+        turn: input({
+          source_snapshot_id: validBasis.source_snapshot_id,
+          active_source_ids: ["smith.b1.c3.p1"],
+          world_basis: null,
+          invitation_basis: {
+            ...validBasis,
+            source_snapshot_id: "smith.b1.c3.p1:hash-stale",
+          },
+        }),
+      },
+    ];
+    let dispatchCalls = 0;
+
+    for (const testCase of cases) {
+      const result = await handleAgentTurn(testCase.turn, {
+        provider: { decide: async () => testCase.candidate ?? inviteMarketWorld },
+        dispatch: async () => {
+          dispatchCalls += 1;
+          throw new Error("invalid invitation must not dispatch");
+        },
+      });
+      expect({ name: testCase.name, mode: result.mode, invitation: result.invitation })
+        .toEqual({
+          name: testCase.name,
+          mode: "clarify",
+          invitation: null,
+        });
+      expect(result.zero_world_mutation).toBe(true);
+    }
+    expect(dispatchCalls).toBe(0);
   });
 });

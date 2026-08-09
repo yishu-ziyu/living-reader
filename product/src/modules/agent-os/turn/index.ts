@@ -2,6 +2,10 @@ export {
   deriveWorldActionIdempotencyKey,
   handleAgentTurn,
 } from "./handle";
+export {
+  deriveInvitationQuestionKey,
+  hasInvitedQuestion,
+} from "./invitation";
 export type {
   AgentTurnActionId,
   AgentTurnCandidate,
@@ -14,8 +18,14 @@ export type {
   AgentTurnProviderInput,
   AgentTurnProviderPort,
   AgentTurnVisibleTurn,
+  AgentWorldInvitation,
   InputChannel,
+  InvitationBasis,
   IntentClass,
   PendingIntent,
+  RelationshipContext,
+  RelationshipMemory,
+  RelationshipMemoryKind,
+  RelationshipMemoryOrigin,
   WorldBasis,
 } from "./types";

@@ -90,4 +90,26 @@ export {
   type CommittedWorldRole,
   type CommittedWorldSession,
   type CommittedWorldSourceBinding,
+  compilePresentation,
+  type CompilePresentationInput,
+  type PresentationEntity,
+  type PresentationPlan,
+  type PresentationTimelineStep,
 } from "./presentation";
+
+export {
+  compileReviewedRecipe,
+  getReviewedRecipe,
+  listReviewedRecipes,
+  parseWorldRecipe,
+  recipeFingerprint,
+  type CompileReviewedRecipeInput,
+  type CompileReviewedRecipeResult,
+  type NormalizedRecipeParameters,
+  type RecipeCompileCode,
+  type RecipeParseResult,
+  type RecipeSourceLocator,
+  type RecipeVisualGrammar,
+  type WorldDefinition,
+  type WorldRecipe,
+} from "./recipe";

@@ -12,4 +12,7 @@ export {
   parseOllParagraphFragment,
   parseOllFootnoteFragment,
   validateManifestFileShape,
+  listBookSummaries,
+  loadBookManifest,
+  loadChapterTranslation,
 } from "@/infrastructure/book/oll";

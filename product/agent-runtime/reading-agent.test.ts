@@ -46,6 +46,7 @@ function turn(
       world_revision: 0,
       ruleset_id: "wool-town-rules-v1",
     },
+    invitation_basis: null,
     recent_turns: [],
     pending_intent: null,
     ...overrides,

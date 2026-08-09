@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useReaderThinking } from "./ReaderThinkingProvider";
+import { useVoiceInputPort } from "./VoiceInputProvider";
 
 export function ReaderIdeaComposer({
   sourceId,
@@ -53,13 +54,17 @@ export function ReaderIdeaComposer({
 
 export function MarketReplayFixtureButton() {
   const thinking = useReaderThinking();
+  const voiceInput = useVoiceInputPort();
   return (
     <button
       type="button"
       className="idea-replay"
       data-testid="market-replay-fixture"
       disabled={!thinking.ready || thinking.status.kind === "busy"}
-      onClick={() => thinking.replayMarketFixture()}
+      onClick={async () => {
+        await voiceInput.stopActive("replay");
+        await thinking.replayMarketFixture();
+      }}
       title="演示输入，非语音"
     >
       演示输入（非语音）· 市场段 Replay

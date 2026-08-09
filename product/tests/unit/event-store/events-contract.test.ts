@@ -33,7 +33,10 @@ describe("T003 events contract", () => {
       "reader_world.relation.reviewed.v1",
       "reader_world.graph.committed.v1",
       "reader_world.world.seeded.v1",
+      "reader_world.world.seeded.v2",
       "reader_world.world.event_recorded.v1",
+      "reader_world.memory.noted.v1",
+      "reader_world.memory.retired.v1",
     ]);
     expect(isDomainEventName("reader_world.reading_session.opened.v1")).toBe(
       true,

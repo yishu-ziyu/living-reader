@@ -23,12 +23,15 @@ import type {
 } from "@/modules/reader-world/events/envelope";
 import {
   DOMAIN_EVENT_NAME_SET,
+  LEGACY_PROTOCOL_VERSION,
   PROTOCOL_VERSION,
+  schemaVersionForEventName,
 } from "@/modules/reader-world/events/names";
 import type { DomainEventName } from "@/modules/reader-world/events/names";
 import { exportDebugTrace } from "@/modules/reader-world/events/debug-trace";
 import { validateEventPayload } from "@/modules/reader-world/events/payload-schema";
 import {
+  validateHlcShape,
   validateProducerShape,
   validateRootEnvelopeKeys,
   validateSecurityShape,
@@ -137,12 +140,16 @@ async function validateDraftBrowser(
     };
   }
   const messageName = e.message_name as DomainEventName;
-  if (e.schema_version !== 1) {
+  const expectedSchema = schemaVersionForEventName(messageName);
+  if (e.schema_version !== expectedSchema) {
     return {
       ok: false,
       code: "UNSUPPORTED_SCHEMA_VERSION",
-      message: "only schema_version 1 is supported",
-      details: { schema_version: e.schema_version },
+      message: `message_name requires schema_version ${expectedSchema}`,
+      details: {
+        schema_version: e.schema_version,
+        expected_schema_version: expectedSchema,
+      },
     };
   }
   if (!nonEmptyString(e.experience_id)) {
@@ -171,6 +178,31 @@ async function validateDraftBrowser(
       ok: false,
       code: "INVALID_ENVELOPE",
       message: "recorded_at required",
+    };
+  }
+  const recordedAtMs = Date.parse(e.recorded_at);
+  if (!Number.isSafeInteger(recordedAtMs) || recordedAtMs < 0) {
+    return {
+      ok: false,
+      code: "INVALID_ENVELOPE",
+      message: "recorded_at must be a valid RFC3339 timestamp",
+    };
+  }
+
+  const hlcCheck = validateHlcShape(e.hlc);
+  if (!hlcCheck.ok) {
+    return {
+      ok: false,
+      code: hlcCheck.error.code,
+      message: hlcCheck.error.message,
+      details: hlcCheck.error.details,
+    };
+  }
+  if (!nonEmptyString(e.device_id)) {
+    return {
+      ok: false,
+      code: "INVALID_ENVELOPE",
+      message: "device_id required",
     };
   }
 
@@ -256,6 +288,89 @@ async function validateDraftBrowser(
     value: e as unknown as DomainEventDraft,
     payload_hash: expectedHash,
   };
+}
+
+async function validateStoredBrowser(
+  raw: unknown,
+): Promise<
+  | { ok: true; value: DomainEvent }
+  | {
+      ok: false;
+      code: DraftValidationCode;
+      message: string;
+      details?: Record<string, unknown>;
+    }
+> {
+  if (!raw || typeof raw !== "object" || Array.isArray(raw)) {
+    return { ok: false, code: "INVALID_ENVELOPE", message: "event must be an object" };
+  }
+  const row = raw as Record<string, unknown>;
+  const root = validateRootEnvelopeKeys(row, "stored");
+  if (!root.ok) {
+    return {
+      ok: false,
+      code: root.error.code,
+      message: root.error.message,
+      details: root.error.details,
+    };
+  }
+  if (!Number.isSafeInteger(row.stream_version) || (row.stream_version as number) < 1) {
+    return {
+      ok: false,
+      code: "INVALID_ENVELOPE",
+      message: "stream_version must be a positive safe integer",
+    };
+  }
+  if (
+    !Number.isSafeInteger(row.event_index_in_commit) ||
+    (row.event_index_in_commit as number) < 0
+  ) {
+    return {
+      ok: false,
+      code: "INVALID_ENVELOPE",
+      message: "event_index_in_commit must be a non-negative safe integer",
+    };
+  }
+
+  let candidate: Record<string, unknown> = row;
+  if (row.protocol_version === LEGACY_PROTOCOL_VERSION) {
+    if (!nonEmptyString(row.recorded_at)) {
+      return { ok: false, code: "INVALID_ENVELOPE", message: "recorded_at required" };
+    }
+    const physicalMs = Date.parse(row.recorded_at);
+    const logical =
+      (row.stream_version as number) * 1_000 +
+      (row.event_index_in_commit as number);
+    if (
+      !Number.isSafeInteger(physicalMs) ||
+      physicalMs < 0 ||
+      !Number.isSafeInteger(logical) ||
+      logical < 0
+    ) {
+      return {
+        ok: false,
+        code: "INVALID_ENVELOPE",
+        message: "legacy HLC cannot be represented safely",
+      };
+    }
+    candidate = {
+      ...row,
+      protocol_version: PROTOCOL_VERSION,
+      hlc: { physical_ms: physicalMs, logical },
+      device_id: "legacy-local",
+    };
+  } else if (row.protocol_version !== PROTOCOL_VERSION) {
+    return {
+      ok: false,
+      code: "INVALID_ENVELOPE",
+      message: "protocol_version mismatch",
+      details: { protocol_version: row.protocol_version },
+    };
+  }
+
+  const validated = await validateDraftBrowser(candidate);
+  if (!validated.ok) return validated;
+  return { ok: true, value: validated.value as DomainEvent };
 }
 
 async function requestPayloadHash(
@@ -504,6 +619,8 @@ export class IndexedDbEventStore implements EventStore {
           correlation_id: draft.correlation_id,
           causation_id: draft.causation_id,
           recorded_at: draft.recorded_at,
+          hlc: draft.hlc,
+          device_id: draft.device_id,
           producer: draft.producer,
           security: draft.security,
           payload_hash: hash,
@@ -565,19 +682,31 @@ export class IndexedDbEventStore implements EventStore {
       const byExperience = tx.objectStore(STORE_EVENTS).index(INDEX_BY_EXPERIENCE);
       const rows = (await idbRequest(
         byExperience.getAll(experience_id),
-      )) as DomainEvent[];
+      )) as unknown[];
       await idbTransactionDone(tx);
 
       const after = options?.after_version ?? 0;
-      const filtered = rows
-        .filter((e) => e.stream_version > after)
+      const filteredRows = rows
+        .filter((e) => ((e as { stream_version?: number }).stream_version ?? 0) > after)
         .sort((a, b) => {
-          if (a.stream_version !== b.stream_version) {
-            return a.stream_version - b.stream_version;
+          const left = a as { stream_version: number; event_index_in_commit: number };
+          const right = b as { stream_version: number; event_index_in_commit: number };
+          if (left.stream_version !== right.stream_version) {
+            return left.stream_version - right.stream_version;
           }
-          return a.event_index_in_commit - b.event_index_in_commit;
-        })
-        .map((e) => ({ ...e }));
+          return left.event_index_in_commit - right.event_index_in_commit;
+        });
+
+      const filtered: DomainEvent[] = [];
+      for (const row of filteredRows) {
+        const validated = await validateStoredBrowser(row);
+        if (!validated.ok) {
+          return storeErr(validated.code, validated.message, {
+            details: validated.details,
+          });
+        }
+        filtered.push(structuredClone(validated.value));
+      }
 
       return storeOk(filtered);
     } catch (err) {

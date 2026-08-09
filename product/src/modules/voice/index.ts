@@ -3,8 +3,11 @@ export {
   cloneVoiceSourceSnapshot,
   snapshotVoiceSource,
   voiceSourceSnapshotsEqual,
+  type VoiceActiveStopper,
   type VoiceFinalTurn,
+  type VoiceInputPort,
   type VoiceSourceSnapshot,
+  type VoiceStopReason,
   type VoiceTranscript,
 } from "./contracts";
 export {
@@ -16,10 +19,13 @@ export {
 export {
   buildStepFunSessionUpdate,
   normalizeStepFunServerEvent,
+  parseStepFunSessionLifecycleEvent,
+  parseVoiceBrowserEvent,
   parseVoiceClientCommand,
   parseVoiceSourceSnapshot,
   STEPFUN_REALTIME_URL,
   withEventId,
   type VoiceBrowserEvent,
   type VoiceClientCommand,
+  type VoiceResponseStatus,
 } from "./stepfun-protocol";

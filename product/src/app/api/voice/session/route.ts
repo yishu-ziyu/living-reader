@@ -1,6 +1,7 @@
 import {
   assertSameOrigin,
   startVoiceSession,
+  stopVoiceSession,
   voiceErrorResponse,
 } from "@/modules/voice/server-registry";
 import {
@@ -77,6 +78,10 @@ export async function POST(request: Request) {
     }
 
     const session = await startVoiceSession(sourceSnapshot);
+    if (request.signal.aborted) {
+      stopVoiceSession(session.id);
+      return new Response(null, { status: 499 });
+    }
     return Response.json({ ok: true, session });
   } catch (error) {
     return voiceErrorResponse(error);

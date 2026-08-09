@@ -16,6 +16,10 @@ import {
   CANONICAL_ACTOR_ORDER,
   type ActorId,
 } from "../domain/types";
+import { canonicalize } from "../domain/canonicalize";
+import { compileWorldMetricsToEventMetrics } from "../domain/compile-metrics";
+import { createWoolTownBaseline } from "../fixtures/wool-town/baseline";
+import { compileReviewedRecipe } from "../recipe";
 
 type CompiledMetrics = Readonly<{
   supply: number;
@@ -125,6 +129,15 @@ export type CommittedWorldPresentation = Readonly<{
 }>;
 
 type SequencedEvent = Readonly<{ event: DomainEvent; index: number }>;
+
+type CommittedSeed = Readonly<{
+  sequenced: SequencedEvent;
+  world_id: string;
+  graph_revision: number;
+  seed: number;
+  ruleset_id: string;
+  initial_metrics: CompiledMetrics;
+}>;
 
 type IdeaRecord = Readonly<{
   event: SequencedEvent;
@@ -418,7 +431,13 @@ function readWorldEvents(
   events: readonly SequencedEvent[],
   seed: SequencedEvent,
   world_id: string,
-): { events: CommittedWorldEvent[]; metrics: CompiledMetrics; world_revision: number } | null {
+  initial_metrics: CompiledMetrics,
+): {
+  events: CommittedWorldEvent[];
+  metrics: CompiledMetrics;
+  world_revision: number;
+  stream_version: number;
+} | null {
   const records: CommittedWorldEvent[] = [];
   for (const sequenced of events) {
     const { event } = sequenced;
@@ -449,7 +468,14 @@ function readWorldEvents(
       metrics,
     });
   }
-  if (records.length === 0) return null;
+  if (records.length === 0) {
+    return {
+      events: [],
+      metrics: initial_metrics,
+      world_revision: 0,
+      stream_version: seed.event.stream_version,
+    };
+  }
 
   let expectedRevision = 1;
   let groupStart = 0;
@@ -482,6 +508,64 @@ function readWorldEvents(
     events: records,
     metrics: last.metrics,
     world_revision: last.world_revision,
+    stream_version: last.stream_version,
+  };
+}
+
+function readCommittedSeed(seed: SequencedEvent): CommittedSeed | null {
+  const { event } = seed;
+  if (event.message_name === "reader_world.world.seeded.v1") {
+    if (
+      !nonEmptyString(event.payload.world_id) ||
+      !nonNegativeSafeInteger(event.payload.graph_revision) ||
+      !Number.isSafeInteger(event.payload.seed) ||
+      !nonEmptyString(event.payload.ruleset_id)
+    ) {
+      return null;
+    }
+    const initial = createWoolTownBaseline({
+      experience_id: event.experience_id,
+      world_id: event.payload.world_id,
+      graph_revision: event.payload.graph_revision,
+      seed: event.payload.seed,
+    });
+    if (initial.ruleset_id !== event.payload.ruleset_id) return null;
+    return {
+      sequenced: seed,
+      world_id: event.payload.world_id,
+      graph_revision: event.payload.graph_revision,
+      seed: event.payload.seed,
+      ruleset_id: event.payload.ruleset_id,
+      initial_metrics: compileWorldMetricsToEventMetrics(initial.metrics),
+    };
+  }
+  if (event.message_name !== "reader_world.world.seeded.v2") return null;
+  const compiled = compileReviewedRecipe({
+    recipe_id: event.payload.recipe_id,
+    parameters: event.payload.normalized_parameters,
+    seed: event.payload.seed,
+    experience_id: event.experience_id,
+    world_id: event.payload.world_id,
+    graph_revision: event.payload.graph_revision,
+  });
+  if (
+    !compiled.ok ||
+    compiled.value.recipe_fingerprint !== event.payload.recipe_fingerprint ||
+    compiled.value.definition.initial_state.ruleset_id !== event.payload.ruleset_id ||
+    canonicalize(compiled.value.normalized_parameters) !==
+      canonicalize(event.payload.normalized_parameters)
+  ) {
+    return null;
+  }
+  return {
+    sequenced: seed,
+    world_id: event.payload.world_id,
+    graph_revision: event.payload.graph_revision,
+    seed: event.payload.seed,
+    ruleset_id: event.payload.ruleset_id,
+    initial_metrics: compileWorldMetricsToEventMetrics(
+      compiled.value.definition.initial_state.metrics,
+    ),
   };
 }
 
@@ -503,15 +587,18 @@ export function buildCommittedWorldPresentation(
     ({ event }) => event.message_name === "reader_world.graph.committed.v1",
   );
   const seeds = events.filter(
-    ({ event }) => event.message_name === "reader_world.world.seeded.v1",
+    ({ event }) =>
+      event.message_name === "reader_world.world.seeded.v1" ||
+      event.message_name === "reader_world.world.seeded.v2",
   );
   if (graphCommits.length === 0 || seeds.length !== 1) return null;
 
   const graphCommit = graphCommits[graphCommits.length - 1]!;
   const seed = seeds[0]!;
+  const committedSeed = readCommittedSeed(seed);
   if (
+    !committedSeed ||
     graphCommit.event.message_name !== "reader_world.graph.committed.v1" ||
-    seed.event.message_name !== "reader_world.world.seeded.v1" ||
     graphCommit.index >= seed.index ||
     !nonNegativeSafeInteger(graphCommit.event.payload.graph_revision) ||
     !nonNegativeSafeInteger(graphCommit.event.payload.basis_graph_revision) ||
@@ -521,10 +608,8 @@ export function buildCommittedWorldPresentation(
       graphCommit.event.payload.accepted_relation_ids,
       input.session.context.accepted_relation_ids,
     ) ||
-    seed.event.payload.world_id !== gate.world_id ||
-    seed.event.payload.graph_revision !== gate.graph_revision ||
-    !Number.isSafeInteger(seed.event.payload.seed) ||
-    !nonEmptyString(seed.event.payload.ruleset_id)
+    committedSeed.world_id !== gate.world_id ||
+    committedSeed.graph_revision !== gate.graph_revision
   ) {
     return null;
   }
@@ -536,7 +621,12 @@ export function buildCommittedWorldPresentation(
     sources,
     input.session.context.source_snapshot_ids,
   );
-  const world = readWorldEvents(events, seed, gate.world_id);
+  const world = readWorldEvents(
+    events,
+    committedSeed.sequenced,
+    gate.world_id,
+    committedSeed.initial_metrics,
+  );
   if (!bindings || !world) return null;
 
   const latestRevisionEvents = world.events.filter(
@@ -557,17 +647,15 @@ export function buildCommittedWorldPresentation(
     if (!source) return null;
     outputSources.push(source);
   }
-  const lastEvent = world.events[world.events.length - 1]!;
-
   return {
     basis: {
       experience_id: gate.experience_id,
       world_id: gate.world_id,
       graph_revision: gate.graph_revision,
       world_revision: world.world_revision,
-      ruleset_id: seed.event.payload.ruleset_id,
-      seed: seed.event.payload.seed,
-      stream_version: lastEvent.stream_version,
+      ruleset_id: committedSeed.ruleset_id,
+      seed: committedSeed.seed,
+      stream_version: world.stream_version,
       seeded_stream_version: seed.event.stream_version,
       graph_committed_stream_version: graphCommit.event.stream_version,
     },
@@ -585,8 +673,8 @@ export function buildCommittedWorldPresentation(
     },
     model_extension: {
       label: "MODEL EXTENSION",
-      ruleset_id: seed.event.payload.ruleset_id,
-      seed: seed.event.payload.seed,
+      ruleset_id: committedSeed.ruleset_id,
+      seed: committedSeed.seed,
       graph_revision: gate.graph_revision,
     },
   };

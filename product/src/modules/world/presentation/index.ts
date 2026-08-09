@@ -8,3 +8,11 @@ export {
   type CommittedWorldSession,
   type CommittedWorldSourceBinding,
 } from "./committed-world-presentation";
+
+export { compilePresentation } from "./compile";
+export type {
+  CompilePresentationInput,
+  PresentationEntity,
+  PresentationPlan,
+  PresentationTimelineStep,
+} from "./types";

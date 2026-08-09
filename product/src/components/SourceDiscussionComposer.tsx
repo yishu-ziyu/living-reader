@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { classifyIntent } from "@/modules/agent-os";
 import { useReaderThinking } from "./ReaderThinkingProvider";
+import { useVoiceInputPort } from "./VoiceInputProvider";
 
 export function SourceDiscussionComposer({
   sourceId,
@@ -11,9 +13,40 @@ export function SourceDiscussionComposer({
   label: string;
 }) {
   const thinking = useReaderThinking();
+  const voiceInput = useVoiceInputPort();
   const [question, setQuestion] = useState("");
   const short =
     sourceId.includes("division") ? "division" : "market";
+
+  const submitFinalText = async (text: string) => {
+    const control = classifyIntent(text);
+    if (control.intent === "explicit_stop") {
+      // Calling the facade first synchronously invalidates any in-flight turn;
+      // the microphone still releases before that queued Stop pauses session.
+      const stopTurn = thinking.submitAgentTurn({
+        sourceId,
+        channel: "text",
+        final_text: text,
+        turn_id: crypto.randomUUID(),
+      });
+      await voiceInput.stopActive("user");
+      await stopTurn;
+      return;
+    }
+    if (
+      control.intent === "continue" ||
+      control.intent === "decline_return"
+    ) {
+      await thinking.submitBoundaryInput(sourceId, text);
+      return;
+    }
+    await thinking.submitAgentTurn({
+      sourceId,
+      channel: "text",
+      final_text: text,
+      turn_id: crypto.randomUUID(),
+    });
+  };
 
   return (
     <div
@@ -50,7 +83,7 @@ export function SourceDiscussionComposer({
             const text = question;
             // Clear raw input immediately — never persist off-topic text.
             setQuestion("");
-            await thinking.submitBoundaryInput(sourceId, text);
+            await submitFinalText(text);
           }}
         >
           提问
@@ -59,10 +92,10 @@ export function SourceDiscussionComposer({
           type="button"
           className="idea-secondary"
           data-testid={`discussion-stop-${short}`}
-          disabled={!thinking.ready || thinking.status.kind === "busy"}
+          disabled={!thinking.ready}
           onClick={async () => {
             setQuestion("");
-            await thinking.submitBoundaryInput(sourceId, "停止");
+            await submitFinalText("停止");
           }}
         >
           停止
@@ -74,7 +107,7 @@ export function SourceDiscussionComposer({
           disabled={!thinking.ready || thinking.status.kind === "busy"}
           onClick={async () => {
             setQuestion("");
-            await thinking.submitBoundaryInput(sourceId, "继续");
+            await submitFinalText("继续");
           }}
         >
           继续

@@ -17,9 +17,25 @@ export type VoiceTranscript = Readonly<{
 }>;
 
 export type VoiceFinalTurn = Readonly<{
+  /** Session + provider item identity, stable across SSE replay and AgentTurn retry. */
+  turn_id: string;
   transcript: string;
   sourceSnapshot: VoiceSourceSnapshot;
   input: "voice" | "text";
+  /** Omit when the realtime provider did not supply a reliable confidence. */
+  asr_confidence?: number;
+}>;
+
+export type VoiceStopReason = "user" | "replay" | "source_change";
+
+export type VoiceActiveStopper = (
+  reason: VoiceStopReason,
+) => Promise<void>;
+
+/** Caller-owned seam used to stop voice before another product action runs. */
+export type VoiceInputPort = Readonly<{
+  registerActiveStopper: (stopper: VoiceActiveStopper) => () => void;
+  stopActive: (reason: VoiceStopReason) => Promise<void>;
 }>;
 
 /**

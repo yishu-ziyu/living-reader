@@ -62,6 +62,14 @@ export type WorldSeededPayload = {
   ruleset_id: string;
 };
 
+export type NormalizedRecipeParameter = string | number | boolean;
+
+export type WorldSeededV2Payload = WorldSeededPayload & {
+  recipe_id: string;
+  recipe_fingerprint: string;
+  normalized_parameters: Record<string, NormalizedRecipeParameter>;
+};
+
 export type WorldEventRecordedPayload = {
   world_id: string;
   world_revision: number;
@@ -69,6 +77,27 @@ export type WorldEventRecordedPayload = {
   actor_id?: string | null;
   summary: string;
   metrics?: Record<string, number | string | boolean>;
+};
+
+export type MemoryKind =
+  | "read_position"
+  | "confusion"
+  | "discussion_theme"
+  | "idea_ref";
+
+export type MemoryOrigin = "reader_confirmed" | "agent_observed";
+
+export type MemoryNotedPayload = {
+  memory_id: string;
+  kind: MemoryKind;
+  origin: MemoryOrigin;
+  text: string;
+  source_locator: string | null;
+  reader_idea_id: string | null;
+};
+
+export type MemoryRetiredPayload = {
+  memory_id: string;
 };
 
 export type DomainEventPayloadByName = {
@@ -79,7 +108,10 @@ export type DomainEventPayloadByName = {
   "reader_world.relation.reviewed.v1": RelationReviewedPayload;
   "reader_world.graph.committed.v1": GraphCommittedPayload;
   "reader_world.world.seeded.v1": WorldSeededPayload;
+  "reader_world.world.seeded.v2": WorldSeededV2Payload;
   "reader_world.world.event_recorded.v1": WorldEventRecordedPayload;
+  "reader_world.memory.noted.v1": MemoryNotedPayload;
+  "reader_world.memory.retired.v1": MemoryRetiredPayload;
 };
 
 export type DomainEventPayload = DomainEventPayloadByName[DomainEventName];

@@ -1,5 +1,6 @@
 import type { DomainEventName } from "./names";
 import type { DomainEventPayloadByName } from "./payloads";
+import type { HybridLogicalClock } from "./clock";
 
 export type Producer = {
   module: "reader_world" | "voice_session" | "llm_proposer" | string;
@@ -15,11 +16,11 @@ export type SecurityContext = {
 };
 
 /**
- * DomainEvent envelope (reader-world-protocol/v1).
+ * Canonical DomainEvent envelope (reader-world-protocol/v2).
  * Field names are snake_case per architecture contract.
  */
 export type DomainEventEnvelope<N extends DomainEventName = DomainEventName> = {
-  protocol_version: "reader-world-protocol/v1";
+  protocol_version: "reader-world-protocol/v2";
   message_id: string;
   message_type: "domain_event";
   message_name: N;
@@ -28,12 +29,21 @@ export type DomainEventEnvelope<N extends DomainEventName = DomainEventName> = {
   correlation_id: string;
   causation_id: string | null;
   recorded_at: string;
+  hlc: HybridLogicalClock;
+  device_id: string;
   producer: Producer;
   security: SecurityContext;
   payload_hash: string;
   payload: DomainEventPayloadByName[N];
   stream_version: number;
   event_index_in_commit: number;
+};
+
+/** Persisted v1 shape accepted only by load-time deterministic upcasting. */
+export type LegacyDomainEventEnvelope<
+  N extends DomainEventName = DomainEventName,
+> = Omit<DomainEventEnvelope<N>, "protocol_version" | "hlc" | "device_id"> & {
+  protocol_version: "reader-world-protocol/v1";
 };
 
 /**
@@ -55,3 +65,9 @@ export type DomainEventDraftBase<N extends DomainEventName = DomainEventName> =
 export type DomainEventDraft = {
   [K in DomainEventName]: DomainEventDraftBase<K>;
 }[DomainEventName];
+
+export type StoredDomainEventInput =
+  | DomainEvent
+  | {
+      [K in DomainEventName]: LegacyDomainEventEnvelope<K>;
+    }[DomainEventName];

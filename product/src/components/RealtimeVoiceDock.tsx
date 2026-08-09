@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import type { VoiceFinalTurn, VoiceSourceSnapshot } from "@/modules/voice";
 import { useReaderThinking } from "./ReaderThinkingProvider";
 import { RealtimeVoicePanel } from "./RealtimeVoicePanel";
+import { useVoiceInputPort } from "./VoiceInputProvider";
 
 export function RealtimeVoiceDock({
   sources,
@@ -11,28 +12,59 @@ export function RealtimeVoiceDock({
   sources: readonly VoiceSourceSnapshot[];
 }) {
   const thinking = useReaderThinking();
+  const voiceInput = useVoiceInputPort();
   const [selectedSourceId, setSelectedSourceId] = useState(
     sources[0]?.sourceId ?? "",
   );
   const [saveMessage, setSaveMessage] = useState<string | null>(null);
   const submitChainRef = useRef<Promise<void>>(Promise.resolve());
+  const sourceGenerationRef = useRef(0);
+  const sourceSwitchingRef = useRef(false);
+  const selectedSourceIdRef = useRef(selectedSourceId);
   const selected =
     sources.find((source) => source.sourceId === selectedSourceId) ?? sources[0];
 
   if (!selected) return null;
 
-  const saveFinalTurn = (turn: VoiceFinalTurn) => {
+  const submitFinalTurn = (turn: VoiceFinalTurn) => {
+    const generation = sourceGenerationRef.current;
     submitChainRef.current = submitChainRef.current
       .then(async () => {
-        await thinking.submitIdea(
-          turn.sourceSnapshot.sourceId,
-          turn.transcript,
-        );
-        setSaveMessage("读者转写已按本轮原文锚点保存为 Idea。");
+        if (
+          sourceSwitchingRef.current ||
+          generation !== sourceGenerationRef.current ||
+          selectedSourceIdRef.current !== turn.sourceSnapshot.sourceId
+        ) {
+          setSaveMessage("原文锚点已切换，这一句请在当前段重新说。");
+          return;
+        }
+        await thinking.submitAgentTurn({
+          sourceId: turn.sourceSnapshot.sourceId,
+          channel: "voice",
+          final_text: turn.transcript,
+          turn_id: turn.turn_id,
+          ...(turn.asr_confidence === undefined
+            ? {}
+            : { asr_confidence: turn.asr_confidence }),
+        });
       })
       .catch(() => {
-        setSaveMessage("转写已保留在通话记录中，但保存 Idea 失败，请重试。");
+        setSaveMessage("这句转写暂时没接稳，世界先不动。可以改用下方文字提问。");
       });
+  };
+
+  const stopSemanticTurn = () => {
+    // Fence every queued voice final before the Stop waits behind an in-flight
+    // AgentTurn. ReaderThinking performs the matching semantic generation fence.
+    sourceGenerationRef.current += 1;
+    return thinking
+      .submitAgentTurn({
+        sourceId: selected.sourceId,
+        channel: "voice",
+        final_text: "停止",
+        turn_id: `voice-control:${crypto.randomUUID()}`,
+      })
+      .then(() => undefined);
   };
 
   return (
@@ -44,9 +76,19 @@ export function RealtimeVoiceDock({
             type="button"
             className={source.sourceId === selected.sourceId ? "is-active" : ""}
             aria-pressed={source.sourceId === selected.sourceId}
-            onClick={() => {
-              setSelectedSourceId(source.sourceId);
-              setSaveMessage(null);
+            onClick={async () => {
+              sourceSwitchingRef.current = true;
+              try {
+                await voiceInput.stopActive("source_change");
+              } finally {
+                // Only after the old session is fenced may a new source accept
+                // final turns. Queued old finals carry the old generation.
+                sourceGenerationRef.current += 1;
+                selectedSourceIdRef.current = source.sourceId;
+                setSelectedSourceId(source.sourceId);
+                setSaveMessage(null);
+                sourceSwitchingRef.current = false;
+              }
             }}
           >
             PDF {source.pdfPages.join("/")} ·{` `}
@@ -57,11 +99,12 @@ export function RealtimeVoiceDock({
       <RealtimeVoicePanel
         key={selected.sourceId}
         sourceSnapshot={selected}
-        onFinalTurn={saveFinalTurn}
+        onFinalTurn={submitFinalTurn}
+        onStop={stopSemanticTurn}
         textFallbackId={
           selected.sourceId.includes("division")
-            ? "idea-input-division"
-            : "idea-input-market"
+            ? "discussion-input-division"
+            : "discussion-input-market"
         }
       />
       {saveMessage ? (

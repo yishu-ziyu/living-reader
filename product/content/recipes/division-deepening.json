@@ -1,0 +1,77 @@
+{
+  "recipe_id": "smith.b1.division-deepening.v1",
+  "source_locator": {
+    "book_id": "wealth-of-nations",
+    "book_part": 1,
+    "chapter": 1,
+    "source_id": "smith.b1.c1.p1",
+    "legacy_source_id": "smith.b1.c1.division",
+    "fragment": "Smith_0206-01_235"
+  },
+  "source_quote": "THE greatest improvement in the productive powers of labour, and the greater part of the skill, dexterity, and judgment with which it is any where directed, or applied, seem to have been the effects of the division of labour.",
+  "claim_type": "mechanism",
+  "mechanism": {
+    "mechanism_id": "division-deepening",
+    "title": "分工深化",
+    "summary": "订单足以换回所需品时，织工才愿意继续专门化；市场过小时会明确拒绝。",
+    "ruleset_id": "wool-town-v1",
+    "initial_metrics": {
+      "output": 12,
+      "stock": 8,
+      "reachable_orders": 4,
+      "cash": 24
+    }
+  },
+  "actors": [
+    { "actor_id": "merchant", "label": "商人", "role": "连接工坊与可触达订单" },
+    { "actor_id": "shepherd", "label": "牧羊人", "role": "提供原毛" },
+    { "actor_id": "spinner", "label": "纺纱工", "role": "把原毛变成纱线" },
+    { "actor_id": "weaver", "label": "织工", "role": "判断是否进一步专业化" }
+  ],
+  "stocks": [
+    { "id": "finished_stock", "label": "待售粗呢", "metric_id": "stock" },
+    { "id": "workshop_cash", "label": "工坊现金", "metric_id": "cash" }
+  ],
+  "flows": [
+    { "id": "wool_to_yarn", "label": "原毛进入纺纱", "from": "shepherd", "to": "spinner" },
+    { "id": "yarn_to_cloth", "label": "纱线进入织造", "from": "spinner", "to": "weaver" }
+  ],
+  "actions": [
+    { "action_id": "deepen_specialization", "label": "深化分工", "description": "让织工依据当前可触达订单决定是否专门化。" }
+  ],
+  "predicates": [
+    { "predicate_id": "weaver_orders_support_next_depth", "actor_id": "weaver", "description": "可触达订单达到下一层专业化最低门槛。" }
+  ],
+  "metrics": [
+    { "metric_id": "output", "label": "产出", "unit": "批" },
+    { "metric_id": "stock", "label": "库存", "unit": "批" },
+    { "metric_id": "reachable_orders", "label": "可触达订单", "unit": "单" },
+    { "metric_id": "cash", "label": "现金", "unit": "记账单位" }
+  ],
+  "state_transitions": [
+    { "action_id": "deepen_specialization", "event_kinds": ["character_accept", "character_refusal"], "description": "织工接受或拒绝深化分工，世界修订加一，经济数值仍由 WorldKernel 决定。" }
+  ],
+  "failure_modes": [
+    { "id": "market_too_small", "condition": "可触达订单低于专业化门槛", "visible_result": "织工拒绝深化，并说明卖不完产出或换不回所需品。" }
+  ],
+  "visual_grammar": {
+    "scene_template": "wool-workshop",
+    "entity_order": ["merchant", "shepherd", "spinner", "weaver"],
+    "motion_verbs": {
+      "character_refusal": "hold",
+      "character_accept": "settle",
+      "character_observation": "flow"
+    },
+    "audio_refs": [],
+    "seed_caption": "工坊已经就绪。先看订单是否足以支撑更细的分工。"
+  },
+  "parameters": [
+    { "id": "initial_cash", "label": "初始现金", "min": 0, "max": 100, "default": 24, "integer": true, "target": "metrics.cash" },
+    { "id": "reachable_orders", "label": "可触达订单", "min": 0, "max": 12, "default": 4, "integer": true, "target": "metrics.reachable_orders" }
+  ],
+  "reuse_examples": [
+    "比较小市场与足够市场下织工是否愿意专门化",
+    "解释为什么熟练度收益仍需要交换条件"
+  ],
+  "status": "reviewed"
+}

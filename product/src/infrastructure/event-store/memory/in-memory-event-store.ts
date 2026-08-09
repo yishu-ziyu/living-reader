@@ -13,11 +13,17 @@ import type { DomainEvent } from "@/modules/reader-world/events";
 import {
   payloadHash,
   validateDomainEventDraft,
+  validateStoredDomainEvent,
 } from "@/modules/reader-world/events";
 
 type StreamState = {
-  events: DomainEvent[];
+  events: unknown[];
   version: number;
+};
+
+export type InMemoryEventStoreOptions = {
+  /** Replay/import seam for persisted v1/v2 rows. Rows are validated on load. */
+  initial_events?: readonly unknown[];
 };
 
 type ReceiptKey = string;
@@ -67,6 +73,33 @@ export class InMemoryEventStore implements EventStore {
   private readonly receipts = new Map<ReceiptKey, IdempotencyReceipt>();
   /** Global uniqueness of message_id across all streams (matches IDB unique index). */
   private readonly messageIds = new Set<string>();
+
+  constructor(options?: InMemoryEventStoreOptions) {
+    for (const raw of options?.initial_events ?? []) {
+      if (!raw || typeof raw !== "object" || Array.isArray(raw)) {
+        throw new Error("initial event must be an object");
+      }
+      const row = raw as Record<string, unknown>;
+      if (
+        typeof row.experience_id !== "string" ||
+        !row.experience_id ||
+        !Number.isSafeInteger(row.stream_version) ||
+        (row.stream_version as number) < 1
+      ) {
+        throw new Error("initial event requires experience_id and stream_version");
+      }
+      const existing = this.streams.get(row.experience_id) ?? {
+        events: [],
+        version: 0,
+      };
+      existing.events.push(deepClone(raw));
+      existing.version = Math.max(existing.version, row.stream_version as number);
+      this.streams.set(row.experience_id, existing);
+      if (typeof row.message_id === "string" && row.message_id) {
+        this.messageIds.add(row.message_id);
+      }
+    }
+  }
 
   async append(
     request: AppendEventsRequest,
@@ -191,6 +224,8 @@ export class InMemoryEventStore implements EventStore {
         correlation_id: draft.correlation_id,
         causation_id: draft.causation_id,
         recorded_at: draft.recorded_at,
+        hlc: deepClone(draft.hlc),
+        device_id: draft.device_id,
         producer: deepClone(draft.producer),
         security: deepClone(draft.security),
         payload_hash: hash,
@@ -242,11 +277,27 @@ export class InMemoryEventStore implements EventStore {
       return storeOk([]);
     }
     const after = options?.after_version ?? 0;
-    return storeOk(
-      stream.events
-        .filter((e) => e.stream_version > after)
-        .map((e) => cloneDomainEvent(e)),
-    );
+    const loaded: DomainEvent[] = [];
+    const ordered = [...stream.events].sort((a, b) => {
+      const av = (a as { stream_version?: number }).stream_version ?? 0;
+      const bv = (b as { stream_version?: number }).stream_version ?? 0;
+      if (av !== bv) return av - bv;
+      const ai = (a as { event_index_in_commit?: number }).event_index_in_commit ?? 0;
+      const bi = (b as { event_index_in_commit?: number }).event_index_in_commit ?? 0;
+      return ai - bi;
+    });
+    for (const raw of ordered) {
+      const row = raw as { stream_version?: number };
+      if ((row.stream_version ?? 0) <= after) continue;
+      const validated = validateStoredDomainEvent(raw);
+      if (!validated.ok) {
+        return storeErr(validated.error.code, validated.error.message, {
+          details: validated.error.details,
+        });
+      }
+      loaded.push(cloneDomainEvent(validated.value));
+    }
+    return storeOk(loaded);
   }
 
   async getVersion(experience_id: string): Promise<StoreResult<number>> {

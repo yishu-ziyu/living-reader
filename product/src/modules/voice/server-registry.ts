@@ -5,6 +5,7 @@ import type { VoiceSourceSnapshot } from "./contracts";
 import {
   buildStepFunSessionUpdate,
   normalizeStepFunServerEvent,
+  parseStepFunSessionLifecycleEvent,
   STEPFUN_REALTIME_URL,
   withEventId,
   type VoiceBrowserEvent,
@@ -195,17 +196,18 @@ export async function startVoiceSession(
         fail();
         return;
       }
+      const lifecycle = parseStepFunSessionLifecycleEvent(providerEvent);
+      if (lifecycle?.type === "session.created") created = true;
+      if (lifecycle?.type === "session.updated") updated = true;
       if (
         typeof providerEvent === "object" &&
         providerEvent !== null &&
-        "type" in providerEvent
+        "type" in providerEvent &&
+        providerEvent.type === "error" &&
+        !settled
       ) {
-        if (providerEvent.type === "session.created") created = true;
-        if (providerEvent.type === "session.updated") updated = true;
-        if (providerEvent.type === "error" && !settled) {
-          fail();
-          return;
-        }
+        fail();
+        return;
       }
       finishIfReady();
 

@@ -11,3 +11,8 @@ export {
 } from "./parseFootnoteHtml";
 export { loadWealthOfNationsBook, requireSourceBlocks } from "./loadWealthOfNations";
 export { validateManifestFileShape } from "./manifestShape";
+export {
+  listBookSummaries,
+  loadBookManifest,
+  loadChapterTranslation,
+} from "./manifestLoader";

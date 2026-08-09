@@ -8,6 +8,7 @@
   },
   "scripts": {
     "dev": "next dev --turbopack",
+    "book:build": "node --env-file-if-exists=.env.local --import tsx pipeline/cli.ts",
     "agent:dev": "bun --watch agent-runtime/index.ts",
     "agent:start": "bun agent-runtime/index.ts",
     "build": "next build",
@@ -41,6 +42,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.0",
+    "tsx": "^4.23.11",
     "typescript": "^5",
     "vitest": "3.2.6"
   }

@@ -1,9 +1,15 @@
-import { PROTOCOL_VERSION, isDomainEventName } from "./names";
+import {
+  LEGACY_PROTOCOL_VERSION,
+  PROTOCOL_VERSION,
+  isDomainEventName,
+  schemaVersionForEventName,
+} from "./names";
 import type { DomainEventName } from "./names";
 import type { DomainEvent, DomainEventDraft } from "./envelope";
 import { payloadHash } from "./hash";
 import { validateEventPayload } from "./payload-schema";
 import {
+  validateHlcShape,
   validateProducerShape,
   validateRootEnvelopeKeys,
   validateSecurityShape,
@@ -48,21 +54,26 @@ function nonEmptyString(v: unknown): v is string {
   return typeof v === "string" && v.trim().length > 0;
 }
 
-/**
- * Validate DomainEvent draft or stored event.
- * Exact allowlists on root / producer / security / payload keys → fail-closed.
- * payload_hash is required (no auto-fill).
- */
-export function validateDomainEventDraft(
+type ValidatedEnvelope = {
+  raw: Record<string, unknown>;
+  messageName: DomainEventName;
+  legacy: boolean;
+};
+
+function validateEnvelope(
   raw: unknown,
-): EventResult<DomainEventDraft> {
+  options: { stored: boolean; allowLegacy: boolean },
+): EventResult<ValidatedEnvelope> {
   if (!raw || typeof raw !== "object" || Array.isArray(raw)) {
     return fail("INVALID_ENVELOPE", "event must be an object");
   }
   const e = raw as Record<string, unknown>;
+  const legacy = e.protocol_version === LEGACY_PROTOCOL_VERSION;
 
-  // Exact root envelope allowlist first (blocks raw_audio, etc.)
-  const rootKeys = validateRootEnvelopeKeys(e, "draft");
+  const rootKeys = validateRootEnvelopeKeys(
+    e,
+    options.stored ? "stored" : "draft",
+  );
   if (!rootKeys.ok) {
     return fail(
       rootKeys.error.code,
@@ -71,7 +82,13 @@ export function validateDomainEventDraft(
     );
   }
 
-  if (e.protocol_version !== PROTOCOL_VERSION) {
+  if (legacy && !options.allowLegacy) {
+    return fail(
+      "INVALID_ENVELOPE",
+      "protocol v1 is accepted only when loading stored history",
+    );
+  }
+  if (!legacy && e.protocol_version !== PROTOCOL_VERSION) {
     return fail("INVALID_ENVELOPE", "protocol_version mismatch", {
       protocol_version: e.protocol_version,
     });
@@ -88,12 +105,12 @@ export function validateDomainEventDraft(
     });
   }
   const messageName = e.message_name as DomainEventName;
-
-  if (e.schema_version !== 1) {
+  const expectedSchema = schemaVersionForEventName(messageName);
+  if (e.schema_version !== expectedSchema) {
     return fail(
       "UNSUPPORTED_SCHEMA_VERSION",
-      "only schema_version 1 is supported",
-      { schema_version: e.schema_version },
+      `message_name requires schema_version ${expectedSchema}`,
+      { schema_version: e.schema_version, expected_schema_version: expectedSchema },
     );
   }
   if (!nonEmptyString(e.experience_id)) {
@@ -108,6 +125,20 @@ export function validateDomainEventDraft(
   if (!nonEmptyString(e.recorded_at)) {
     return fail("INVALID_ENVELOPE", "recorded_at required");
   }
+  const recordedAtMs = Date.parse(e.recorded_at);
+  if (!Number.isSafeInteger(recordedAtMs) || recordedAtMs < 0) {
+    return fail("INVALID_ENVELOPE", "recorded_at must be a valid RFC3339 timestamp");
+  }
+
+  if (!legacy) {
+    const hlc = validateHlcShape(e.hlc);
+    if (!hlc.ok) {
+      return fail(hlc.error.code, hlc.error.message, hlc.error.details);
+    }
+    if (!nonEmptyString(e.device_id)) {
+      return fail("INVALID_ENVELOPE", "device_id required");
+    }
+  }
 
   const producerCheck = validateProducerShape(e.producer);
   if (!producerCheck.ok) {
@@ -117,7 +148,6 @@ export function validateDomainEventDraft(
       producerCheck.error.details,
     );
   }
-
   const securityCheck = validateSecurityShape(e.security);
   if (!securityCheck.ok) {
     return fail(
@@ -130,7 +160,6 @@ export function validateDomainEventDraft(
   if (e.payload === null || typeof e.payload !== "object" || Array.isArray(e.payload)) {
     return fail("INVALID_PAYLOAD", "payload must be an object");
   }
-
   const payloadCheck = validateEventPayload(messageName, e.payload);
   if (!payloadCheck.ok) {
     return fail(
@@ -140,18 +169,12 @@ export function validateDomainEventDraft(
     );
   }
 
-  // payload_hash REQUIRED: missing → INVALID_ENVELOPE; present but wrong → PAYLOAD_HASH_MISMATCH
-  if (
-    e.payload_hash === undefined ||
-    e.payload_hash === null ||
-    e.payload_hash === ""
-  ) {
+  if (e.payload_hash === undefined || e.payload_hash === null || e.payload_hash === "") {
     return fail("INVALID_ENVELOPE", "payload_hash required");
   }
   if (!nonEmptyString(e.payload_hash)) {
     return fail("INVALID_ENVELOPE", "payload_hash must be a non-empty string");
   }
-
   const expectedHash = payloadHash(e.payload);
   if (e.payload_hash !== expectedHash) {
     return fail("PAYLOAD_HASH_MISMATCH", "payload_hash does not match payload", {
@@ -160,26 +183,64 @@ export function validateDomainEventDraft(
     });
   }
 
-  return {
-    ok: true,
-    value: e as unknown as DomainEventDraft,
-  };
+  if (options.stored) {
+    if (!Number.isSafeInteger(e.stream_version) || (e.stream_version as number) < 1) {
+      return fail("INVALID_ENVELOPE", "stream_version must be a positive safe integer");
+    }
+    if (
+      !Number.isSafeInteger(e.event_index_in_commit) ||
+      (e.event_index_in_commit as number) < 0
+    ) {
+      return fail(
+        "INVALID_ENVELOPE",
+        "event_index_in_commit must be a non-negative safe integer",
+      );
+    }
+  }
+
+  return { ok: true, value: { raw: e, messageName, legacy } };
+}
+
+/**
+ * Validate DomainEvent draft or stored event.
+ * Exact allowlists on root / producer / security / payload keys → fail-closed.
+ * payload_hash is required (no auto-fill).
+ */
+export function validateDomainEventDraft(
+  raw: unknown,
+): EventResult<DomainEventDraft> {
+  const validated = validateEnvelope(raw, { stored: false, allowLegacy: false });
+  if (!validated.ok) return validated;
+  return { ok: true, value: validated.value.raw as unknown as DomainEventDraft };
 }
 
 export function validateStoredDomainEvent(
   raw: unknown,
 ): EventResult<DomainEvent> {
-  const draft = validateDomainEventDraft(raw);
-  if (!draft.ok) return draft;
-  const e = raw as Record<string, unknown>;
-  if (typeof e.stream_version !== "number" || !Number.isInteger(e.stream_version)) {
-    return fail("INVALID_ENVELOPE", "stream_version must be integer");
+  const validated = validateEnvelope(raw, { stored: true, allowLegacy: true });
+  if (!validated.ok) return validated;
+  const e = validated.value.raw;
+  if (!validated.value.legacy) {
+    return { ok: true, value: e as unknown as DomainEvent };
   }
-  if (
-    typeof e.event_index_in_commit !== "number" ||
-    !Number.isInteger(e.event_index_in_commit)
-  ) {
-    return fail("INVALID_ENVELOPE", "event_index_in_commit must be integer");
+
+  const physicalMs = Date.parse(e.recorded_at as string);
+  const logical =
+    (e.stream_version as number) * 1_000 +
+    (e.event_index_in_commit as number);
+  if (!Number.isSafeInteger(logical) || logical < 0) {
+    return fail("INVALID_ENVELOPE", "legacy HLC cannot be represented safely");
   }
-  return { ok: true, value: e as unknown as DomainEvent };
+  return {
+    ok: true,
+    value: {
+      ...e,
+      protocol_version: PROTOCOL_VERSION,
+      hlc: { physical_ms: physicalMs, logical },
+      device_id: "legacy-local",
+    } as unknown as DomainEvent,
+  };
 }
+
+/** Explicit name for adapter load paths. */
+export const upcastStoredDomainEvent = validateStoredDomainEvent;

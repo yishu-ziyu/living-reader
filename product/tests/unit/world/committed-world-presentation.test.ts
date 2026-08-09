@@ -220,6 +220,34 @@ function playableInput(
 }
 
 describe("T010 committed world presentation", () => {
+  it("projects a seeded world before its first action", () => {
+    const input = playableInput();
+    const seedOnly = {
+      ...input,
+      events: input.events.slice(0, 6),
+    };
+
+    const presentation = buildCommittedWorldPresentation(seedOnly);
+
+    expect(presentation).not.toBeNull();
+    expect(presentation).toMatchObject({
+      basis: {
+        world_revision: 0,
+        stream_version: 6,
+        seeded_stream_version: 6,
+      },
+      metrics: { supply: 12, inventory: 8, demand: 2, cash: 24 },
+      events: [],
+      roles: [
+        { actor_id: "merchant", observation: null },
+        { actor_id: "shepherd", observation: null },
+        { actor_id: "spinner", observation: null },
+        { actor_id: "weaver", observation: null },
+      ],
+    });
+    expect(presentation?.bindings.evidence.event_message_ids).toEqual([]);
+  });
+
   it("projects only a gated, source-bound raw stream into canonical world facts", () => {
     const presentation = buildCommittedWorldPresentation(playableInput());
 

@@ -40,6 +40,7 @@ function input(
       world_revision: 0,
       ruleset_id: "wool-town-rules-v1",
     },
+    invitation_basis: null,
     recent_turns: [
       {
         turn_id: "previous-reader",
@@ -90,7 +91,34 @@ describe("AgentTurn provider seams", () => {
       Response.json({ ok: true, candidate: candidate() }),
     );
     const provider = createAgentTurnClientProvider(clientSnapshot, fetcher);
-    const mutable = input({ channel: "voice" });
+    const mutable = input({
+      channel: "voice",
+      invitation_basis: {
+        experience_id: "exp_test",
+        graph_revision: 2,
+        relation_id: "relation-market",
+        relation_basis_revision: 1,
+        accepted_relation_ids: ["relation-market"],
+        source_snapshot_id: deriveAgentTurnSourceSnapshotId(
+          clientSnapshot.sourceId,
+          clientSnapshot.contentHash,
+        ),
+      },
+      relationship_context: {
+        current_chapter_id: "smith.b1.c3",
+        memories: [
+          {
+            memory_id: "memory-1",
+            kind: "discussion_theme",
+            origin: "agent_observed",
+            text: "读者仍在比较市场范围与分工深度。",
+            source_locator: clientSnapshot.sourceId,
+            reader_idea_id: null,
+          },
+        ],
+        active_recipe_ids: ["wealth-of-nations.market-extent.v1"],
+      },
+    });
 
     await expect(provider.decide(mutable)).resolves.toMatchObject({
       mode: "act",
@@ -100,7 +128,11 @@ describe("AgentTurn provider seams", () => {
     expect(fetcher).toHaveBeenCalledTimes(1);
     const [, init] = fetcher.mock.calls[0] ?? [];
     expect(JSON.parse(String(init?.body))).toEqual({
-      turn: input({ channel: "voice" }),
+      turn: input({
+        channel: "voice",
+        invitation_basis: mutable.invitation_basis,
+        relationship_context: mutable.relationship_context,
+      }),
       sourceSnapshot: clientSnapshot,
     });
 
@@ -200,6 +232,41 @@ describe("AgentTurn provider seams", () => {
     expect(missingContentIdentity.status).toBe(400);
     expect(fetcher).not.toHaveBeenCalled();
 
+    const currentSnapshotId = deriveAgentTurnSourceSnapshotId(
+      block.value.sourceId,
+      block.value.contentHash,
+    );
+    const invitationBasis = {
+      experience_id: "exp_test",
+      graph_revision: 2,
+      relation_id: "relation-market",
+      relation_basis_revision: 1,
+      accepted_relation_ids: ["relation-market"],
+      source_snapshot_id: currentSnapshotId,
+    } as const;
+    const forgedInvitationBasis = await POST(
+      new Request("http://localhost/api/agent-turn", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+          origin: "http://localhost",
+          host: "localhost",
+        },
+        body: JSON.stringify({
+          turn: input({
+            source_snapshot_id: currentSnapshotId,
+            invitation_basis: {
+              ...invitationBasis,
+              source_snapshot_id: "stale-invitation-snapshot",
+            },
+          }),
+          sourceSnapshot: snapshotVoiceSource(block.value),
+        }),
+      }),
+    );
+    expect(forgedInvitationBasis.status).toBe(400);
+    expect(fetcher).not.toHaveBeenCalled();
+
     const verified = await POST(
       new Request("http://localhost/api/agent-turn", {
         method: "POST",
@@ -210,10 +277,22 @@ describe("AgentTurn provider seams", () => {
         },
         body: JSON.stringify({
           turn: input({
-            source_snapshot_id: deriveAgentTurnSourceSnapshotId(
-              block.value.sourceId,
-              block.value.contentHash,
-            ),
+            source_snapshot_id: currentSnapshotId,
+            invitation_basis: invitationBasis,
+            relationship_context: {
+              current_chapter_id: "smith.b1.c3",
+              memories: [
+                {
+                  memory_id: "memory-route",
+                  kind: "discussion_theme",
+                  origin: "agent_observed",
+                  text: "读者仍在比较市场范围与分工深度。",
+                  source_locator: block.value.sourceId,
+                  reader_idea_id: null,
+                },
+              ],
+              active_recipe_ids: ["wealth-of-nations.market-extent.v1"],
+            },
           }),
           sourceSnapshot: snapshotVoiceSource(block.value),
         }),
@@ -228,5 +307,14 @@ describe("AgentTurn provider seams", () => {
     expect(fetcher.mock.calls[0]?.[0]).toBe(
       "http://127.0.0.1:4317/v1/agent-turn",
     );
+    const runtimeInit = fetcher.mock.calls[0]?.[1];
+    expect(JSON.parse(String(runtimeInit?.body))).toMatchObject({
+      turn: {
+        invitation_basis: invitationBasis,
+        relationship_context: {
+          memories: [{ origin: "agent_observed" }],
+        },
+      },
+    });
   });
 });

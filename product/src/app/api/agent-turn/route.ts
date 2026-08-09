@@ -96,6 +96,17 @@ function assertSealedTurnMatchesSource(
     );
   }
   const pending = turn.pending_intent;
+  const invitation = turn.invitation_basis;
+  if (
+    invitation &&
+    invitation.source_snapshot_id !== turn.source_snapshot_id
+  ) {
+    throw new AgentTurnProviderError(
+      "agent_turn_invalid_request",
+      "语义请求与当前原文不一致，世界先不动。",
+      400,
+    );
+  }
   if (!pending) return;
   if (
     !turn.world_basis ||

@@ -1,5 +1,6 @@
 import { classifyIntent } from "@/modules/agent-os/guardian/intent";
-import type { WorldCommand } from "@/modules/world";
+import { getReviewedRecipe, type WorldCommand } from "@/modules/world";
+import { deriveInvitationQuestionKey } from "./invitation";
 import type {
   AgentTurnActionId,
   AgentTurnCandidate,
@@ -8,7 +9,10 @@ import type {
   AgentTurnInput,
   AgentTurnPorts,
   AgentTurnProviderInput,
+  AgentWorldInvitation,
+  InvitationBasis,
   PendingIntent,
+  RelationshipContext,
   WorldBasis,
 } from "./types";
 
@@ -21,6 +25,7 @@ const MODES = new Set<AgentTurnCandidate["mode"]>([
   "clarify",
   "act",
   "stop",
+  "invite_world",
 ]);
 const CONFIDENCES = new Set<AgentTurnCandidate["confidence"]>([
   "high",
@@ -94,6 +99,23 @@ function cloneBasis(basis: WorldBasis): WorldBasis {
   return { ...basis };
 }
 
+function cloneInvitationBasis(basis: InvitationBasis): InvitationBasis {
+  return {
+    ...basis,
+    accepted_relation_ids: [...basis.accepted_relation_ids],
+  };
+}
+
+function cloneRelationshipContext(
+  context: RelationshipContext,
+): RelationshipContext {
+  return {
+    current_chapter_id: context.current_chapter_id,
+    memories: context.memories.map((memory) => ({ ...memory })),
+    active_recipe_ids: [...context.active_recipe_ids],
+  };
+}
+
 function clonePending(pending: PendingIntent): PendingIntent {
   return {
     ...pending,
@@ -133,6 +155,9 @@ function parseCandidate(raw: unknown): AgentTurnCandidate | null {
     "companion_line",
     "proposed_action_id",
     "pending_action_id",
+    "recipe_id",
+    "trigger_question",
+    "reason",
     "reason_codes",
   ]);
   if (Object.keys(value).some((key) => !allowed.has(key))) return null;
@@ -186,6 +211,36 @@ function parseCandidate(raw: unknown): AgentTurnCandidate | null {
   ) {
     return null;
   }
+  const recipe_id =
+    value.recipe_id === undefined || value.recipe_id === null
+      ? undefined
+      : nonEmpty(value.recipe_id) && value.recipe_id.length <= 200
+        ? value.recipe_id.trim()
+        : null;
+  const trigger_question =
+    value.trigger_question === undefined || value.trigger_question === null
+      ? undefined
+      : nonEmpty(value.trigger_question) && value.trigger_question.length <= 400
+        ? value.trigger_question.trim()
+        : null;
+  const reason =
+    value.reason === undefined || value.reason === null
+      ? undefined
+      : nonEmpty(value.reason) && value.reason.length <= 400
+        ? value.reason.trim()
+        : null;
+  if (recipe_id === null || trigger_question === null || reason === null) {
+    return null;
+  }
+  const isInvite = value.mode === "invite_world";
+  if (
+    isInvite !== Boolean(recipe_id && trigger_question && reason) ||
+    (isInvite &&
+      (value.proposed_action_id !== undefined ||
+        value.pending_action_id !== undefined))
+  ) {
+    return null;
+  }
   return {
     mode: value.mode as AgentTurnCandidate["mode"],
     intent_class: value.intent_class as AgentTurnCandidate["intent_class"],
@@ -197,6 +252,9 @@ function parseCandidate(raw: unknown): AgentTurnCandidate | null {
     companion_line: value.companion_line.trim(),
     proposed_action_id: value.proposed_action_id as AgentTurnActionId | undefined,
     pending_action_id: value.pending_action_id as AgentTurnActionId | undefined,
+    ...(recipe_id ? { recipe_id } : {}),
+    ...(trigger_question ? { trigger_question } : {}),
+    ...(reason ? { reason } : {}),
     reason_codes: [...value.reason_codes],
   };
 }
@@ -239,8 +297,14 @@ function providerInput(
     source_snapshot_id: input.source_snapshot_id,
     active_source_ids: [...input.active_source_ids],
     world_basis: isBasis(input.world_basis) ? cloneBasis(input.world_basis) : null,
+    invitation_basis: input.invitation_basis
+      ? cloneInvitationBasis(input.invitation_basis)
+      : null,
     recent_turns: input.recent_turns.slice(-4).map((turn) => ({ ...turn })),
     pending_intent: pending_intent ? clonePending(pending_intent) : null,
+    ...(input.relationship_context
+      ? { relationship_context: cloneRelationshipContext(input.relationship_context) }
+      : {}),
   };
 }
 
@@ -252,16 +316,55 @@ function decision(
   command: WorldCommand | null = null,
   dispatch_receipt: AgentTurnDispatchReceipt | null = null,
   idempotency_key: string | null = null,
+  invitation: AgentWorldInvitation | null = null,
 ): AgentTurnDecision {
   return {
     mode,
     companion_line,
+    invitation,
     pending_intent_next,
     candidate,
     command,
     dispatch_receipt,
     idempotency_key,
     zero_world_mutation: !newWorldMutation(dispatch_receipt),
+  };
+}
+
+function invitationFor(
+  candidate: AgentTurnCandidate,
+  input: AgentTurnInput,
+): AgentWorldInvitation | null {
+  const basis = input.invitation_basis;
+  if (
+    !basis ||
+    basis.graph_revision < 1 ||
+    basis.source_snapshot_id !== input.source_snapshot_id ||
+    !basis.accepted_relation_ids.includes(basis.relation_id) ||
+    !candidate.recipe_id ||
+    !candidate.trigger_question ||
+    !candidate.reason ||
+    candidate.confidence !== "high" ||
+    !candidateMatchesSource(candidate, input)
+  ) {
+    return null;
+  }
+  const recipe = getReviewedRecipe(candidate.recipe_id);
+  if (
+    !recipe ||
+    !input.active_source_ids.includes(recipe.source_locator.source_id)
+  ) {
+    return null;
+  }
+  return {
+    recipe_id: candidate.recipe_id,
+    trigger_question: candidate.trigger_question,
+    reason: candidate.reason,
+    question_key: deriveInvitationQuestionKey(
+      basis.experience_id,
+      candidate.trigger_question,
+    ),
+    basis: cloneInvitationBasis(basis),
   };
 }
 
@@ -388,6 +491,28 @@ export async function handleAgentTurn(
 
   if (candidate.mode === "stop") {
     return decision("stop", "好的，先停在这里。", null, candidate);
+  }
+
+  if (candidate.mode === "invite_world") {
+    const invitation = invitationFor(candidate, input);
+    if (!invitation) {
+      return decision(
+        "clarify",
+        "这座世界还没准备好，先留在原文。",
+        currentPending,
+        candidate,
+      );
+    }
+    return decision(
+      "invite_world",
+      candidate.companion_line,
+      currentPending,
+      candidate,
+      null,
+      null,
+      null,
+      invitation,
+    );
   }
 
   if (candidate.mode !== "act") {

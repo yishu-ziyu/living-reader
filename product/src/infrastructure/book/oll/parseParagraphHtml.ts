@@ -165,8 +165,12 @@ function stripTags(html: string): string {
 
 function decodeBasicEntities(text: string): string {
   return text
-    .replace(/&#x2019;/gi, "\u2019")
-    .replace(/&#8217;/g, "\u2019")
+    .replace(/&#x([0-9a-f]+);/gi, (_, value: string) =>
+      String.fromCodePoint(Number.parseInt(value, 16)),
+    )
+    .replace(/&#([0-9]+);/g, (_, value: string) =>
+      String.fromCodePoint(Number.parseInt(value, 10)),
+    )
     .replace(/&apos;/g, "'")
     .replace(/&quot;/g, '"')
     .replace(/&lt;/g, "<")

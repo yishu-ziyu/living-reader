@@ -1,18 +1,22 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { ThinkingOrb, type OrbState } from "thinking-orbs";
 import {
   acceptReaderTranscriptItem,
   base64ToPcm16,
   cloneVoiceSourceSnapshot,
   downsampleToPcm16,
   pcm16ToBase64,
+  parseVoiceBrowserEvent,
   STEPFUN_PCM_SAMPLE_RATE,
   type VoiceBrowserEvent,
   type VoiceFinalTurn,
   type VoiceSourceSnapshot,
+  type VoiceStopReason,
   type VoiceTranscript,
 } from "@/modules/voice";
+import { useVoiceInputPort } from "./VoiceInputProvider";
 
 type VoiceUiState =
   | "idle"
@@ -25,9 +29,17 @@ type VoiceUiState =
   | "unsupported"
   | "error";
 
+type VoiceActivity =
+  | "resting"
+  | "connecting"
+  | "listening"
+  | "thinking"
+  | "speaking";
+
 type RealtimeVoicePanelProps = {
   sourceSnapshot: VoiceSourceSnapshot;
   onFinalTurn?: (turn: VoiceFinalTurn) => void;
+  onStop?: () => void | Promise<void>;
   textFallbackId?: string;
 };
 
@@ -47,6 +59,37 @@ const STATE_LABELS: Record<VoiceUiState, string> = {
   denied: "麦克风权限被拒绝",
   unsupported: "当前浏览器不支持",
   error: "连接失败",
+};
+
+const ACTIVITY_PRESENTATION: Record<
+  VoiceActivity,
+  { orb: OrbState; label: string; detail: string }
+> = {
+  resting: {
+    orb: "breathing",
+    label: "准备好了",
+    detail: "点击开始后，我会围绕当前原文听你说。",
+  },
+  connecting: {
+    orb: "connecting",
+    label: "正在建立连接",
+    detail: "正在准备麦克风与实时陪读。",
+  },
+  listening: {
+    orb: "listening",
+    label: "正在听你说",
+    detail: "可以直接开口；停顿后我会回应。",
+  },
+  thinking: {
+    orb: "solving",
+    label: "正在理解",
+    detail: "陪读正在结合当前原文组织回应。",
+  },
+  speaking: {
+    orb: "weaving",
+    label: "陪读正在说",
+    detail: "可以随时取消这次回复，继续开口。",
+  },
 };
 
 function appendFinalTranscript(
@@ -69,9 +112,12 @@ async function readApiMessage(response: Response, fallback: string) {
 export function RealtimeVoicePanel({
   sourceSnapshot,
   onFinalTurn,
+  onStop,
   textFallbackId,
 }: RealtimeVoicePanelProps) {
+  const voiceInput = useVoiceInputPort();
   const [state, setState] = useState<VoiceUiState>("idle");
+  const [activity, setActivity] = useState<VoiceActivity>("resting");
   const [message, setMessage] = useState<string | null>(null);
   const [readerProgress, setReaderProgress] = useState("");
   const [companionPartial, setCompanionPartial] = useState("");
@@ -96,6 +142,10 @@ export function RealtimeVoicePanel({
   const finalTurnHandlerRef = useRef(onFinalTurn);
   const processedReaderItemIdsRef = useRef<Set<string>>(new Set());
   const startAttemptRef = useRef(0);
+  const requestAbortRef = useRef<AbortController | null>(null);
+  const coordinatedStopRef = useRef<
+    (reason: VoiceStopReason) => Promise<void>
+  >(async () => {});
 
   useEffect(() => {
     finalTurnHandlerRef.current = onFinalTurn;
@@ -152,6 +202,9 @@ export function RealtimeVoicePanel({
   useEffect(() => {
     return () => {
       startAttemptRef.current += 1;
+      sourceAtStartRef.current = null;
+      requestAbortRef.current?.abort();
+      requestAbortRef.current = null;
       eventSourceRef.current?.close();
       processorRef.current?.disconnect();
       mediaSourceRef.current?.disconnect();
@@ -178,6 +231,7 @@ export function RealtimeVoicePanel({
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(command),
+        signal: requestAbortRef.current?.signal,
       },
     );
     if (!response.ok) {
@@ -187,6 +241,11 @@ export function RealtimeVoicePanel({
 
   const failActiveSession = async (errorMessage: string) => {
     if (stateRef.current === "stopping" || stateRef.current === "stopped") return;
+    startAttemptRef.current += 1;
+    sourceAtStartRef.current = null;
+    requestAbortRef.current?.abort();
+    requestAbortRef.current = null;
+    setActivity("resting");
     transition("error");
     setMessage(errorMessage);
     await Promise.all([cleanupLocalMedia(), stopRemoteSession()]);
@@ -216,17 +275,26 @@ export function RealtimeVoicePanel({
     source.onended = () => playbackSourcesRef.current.delete(source);
   };
 
-  const handleBrowserEvent = (event: VoiceBrowserEvent) => {
+  const handleBrowserEvent = (
+    event: VoiceBrowserEvent,
+    voiceSessionId: string,
+  ) => {
+    if (stateRef.current === "stopping" || stateRef.current === "stopped") {
+      return;
+    }
     switch (event.type) {
       case "reader.speech_started":
+        setActivity("listening");
         setReaderProgress("正在识别你的话…");
         return;
       case "reader.speech_stopped":
+        setActivity("thinking");
         setReaderProgress("正在完成转写…");
         return;
       case "reader.transcript_final": {
+        setActivity("thinking");
         setReaderProgress("");
-        const id = event.itemId ?? crypto.randomUUID();
+        const id = event.itemId;
         if (!acceptReaderTranscriptItem(processedReaderItemIdsRef.current, id)) {
           return;
         }
@@ -241,6 +309,7 @@ export function RealtimeVoicePanel({
         const fixedSource = sourceAtStartRef.current;
         if (fixedSource) {
           finalTurnHandlerRef.current?.({
+            turn_id: `voice:${voiceSessionId}:${id}`,
             transcript: event.text,
             sourceSnapshot: fixedSource,
             input: "voice",
@@ -249,7 +318,8 @@ export function RealtimeVoicePanel({
         return;
       }
       case "companion.transcript_partial": {
-        const itemId = event.itemId ?? "current";
+        setActivity("thinking");
+        const itemId = event.itemId;
         const current = assistantRef.current;
         if (
           !current ||
@@ -264,7 +334,7 @@ export function RealtimeVoicePanel({
         return;
       }
       case "companion.transcript_final": {
-        const itemId = event.itemId ?? "current";
+        const itemId = event.itemId;
         const current = assistantRef.current;
         if (event.mode === "text" && current?.mode === "audio") return;
         assistantRef.current = null;
@@ -280,18 +350,22 @@ export function RealtimeVoicePanel({
         return;
       }
       case "companion.audio_delta":
+        setActivity("speaking");
         playAudioDelta(event.audio);
         return;
       case "companion.response_done":
         if (event.status === "failed") {
           void failActiveSession("阶跃未能生成本轮回复，请重试。");
+        } else {
+          setActivity("listening");
         }
         return;
       case "voice.error":
         void failActiveSession(event.message);
         return;
       case "voice.closed":
-        if (stateRef.current !== "stopping" && stateRef.current !== "error") {
+        if (stateRef.current !== "error") {
+          setActivity("resting");
           transition("stopped");
           setMessage(event.reason);
           void cleanupLocalMedia();
@@ -301,7 +375,11 @@ export function RealtimeVoicePanel({
 
   const start = async () => {
     const startAttempt = (startAttemptRef.current += 1);
+    requestAbortRef.current?.abort();
+    const requestAbort = new AbortController();
+    requestAbortRef.current = requestAbort;
     uploadChainRef.current = Promise.resolve();
+    setActivity("connecting");
     setMessage(null);
     setReaderProgress("");
     setCompanionPartial("");
@@ -314,6 +392,7 @@ export function RealtimeVoicePanel({
       typeof AudioContext === "undefined" ||
       typeof EventSource === "undefined"
     ) {
+      setActivity("resting");
       transition("unsupported");
       setMessage("此浏览器缺少麦克风或实时事件能力，请使用文字输入。");
       return;
@@ -334,11 +413,14 @@ export function RealtimeVoicePanel({
         video: false,
       });
     } catch (error) {
+      if (startAttempt !== startAttemptRef.current) return;
       const name = error instanceof DOMException ? error.name : "";
       if (name === "NotAllowedError" || name === "SecurityError") {
+        setActivity("resting");
         transition("denied");
         setMessage("未获得麦克风权限。你可以修改浏览器权限后重试，或继续打字。");
       } else {
+        setActivity("resting");
         transition("error");
         setMessage("无法打开麦克风，请检查设备后重试。");
       }
@@ -351,15 +433,16 @@ export function RealtimeVoicePanel({
     }
 
     mediaStreamRef.current = stream;
-    const context = new AudioContext();
-    audioContextRef.current = context;
     try {
+      const context = new AudioContext();
+      audioContextRef.current = context;
       await context.resume();
       transition("connecting");
       const response = await fetch("/api/voice/session", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ sourceSnapshot: sourceAtStartRef.current }),
+        signal: requestAbort.signal,
       });
       const body = (await response.json()) as SessionResponse;
       const sessionId = body.session?.id;
@@ -377,17 +460,48 @@ export function RealtimeVoicePanel({
       );
       eventSourceRef.current = events;
       events.addEventListener("voice", (rawEvent) => {
+        if (
+          startAttempt !== startAttemptRef.current ||
+          sessionIdRef.current !== sessionId
+        ) {
+          return;
+        }
         try {
-          handleBrowserEvent(
-            JSON.parse((rawEvent as MessageEvent<string>).data) as VoiceBrowserEvent,
+          const event = parseVoiceBrowserEvent(
+            JSON.parse((rawEvent as MessageEvent<string>).data),
           );
+          if (!event) throw new Error("invalid voice event");
+          handleBrowserEvent(event, sessionId);
         } catch {
           void failActiveSession("收到无法识别的实时语音事件，请重试。");
         }
       });
       events.onerror = () => {
+        if (
+          startAttempt !== startAttemptRef.current ||
+          sessionIdRef.current !== sessionId
+        ) {
+          return;
+        }
         if (stateRef.current === "listening") {
-          void failActiveSession("实时语音事件连接中断，请重试。");
+          if (events.readyState === EventSource.CLOSED) {
+            void failActiveSession("实时语音事件连接已关闭，请重试。");
+          } else {
+            setActivity("connecting");
+            setMessage("实时语音事件暂时中断，正在自动重连…");
+          }
+        }
+      };
+      events.onopen = () => {
+        if (
+          startAttempt !== startAttemptRef.current ||
+          sessionIdRef.current !== sessionId
+        ) {
+          return;
+        }
+        if (stateRef.current === "listening") {
+          setActivity("listening");
+          setMessage(null);
         }
       };
 
@@ -412,31 +526,78 @@ export function RealtimeVoicePanel({
             return failActiveSession(errorMessage);
           });
       };
+      setActivity("listening");
       transition("listening");
     } catch (error) {
+      if (startAttempt !== startAttemptRef.current) return;
       const errorMessage =
         error instanceof Error ? error.message : "无法建立阶跃实时语音连接。";
+      setActivity("resting");
       transition("error");
       setMessage(errorMessage);
       await Promise.all([cleanupLocalMedia(), stopRemoteSession()]);
     }
   };
 
-  const stop = async () => {
+  const stop = async (reason: VoiceStopReason = "user") => {
+    if (
+      stateRef.current === "idle" ||
+      stateRef.current === "stopping" ||
+      stateRef.current === "stopped" ||
+      stateRef.current === "denied" ||
+      stateRef.current === "unsupported" ||
+      stateRef.current === "error"
+    ) {
+      return;
+    }
     startAttemptRef.current += 1;
     transition("stopping");
+    let semanticStop = Promise.resolve();
+    if (reason === "user" && onStop) {
+      try {
+        semanticStop = Promise.resolve(onStop());
+      } catch (error) {
+        semanticStop = Promise.reject(error);
+      }
+    }
     setMessage(null);
-    await uploadChainRef.current;
-    await Promise.all([cleanupLocalMedia(), stopRemoteSession()]);
+    sourceAtStartRef.current = null;
+    requestAbortRef.current?.abort();
+    requestAbortRef.current = null;
+    setActivity("resting");
+    await Promise.allSettled([
+      cleanupLocalMedia(),
+      stopRemoteSession(),
+      uploadChainRef.current,
+      semanticStop,
+    ]);
     transition("stopped");
-    setMessage("通话已停止，麦克风已释放。");
+    setMessage(
+      reason === "replay"
+        ? "已停止活动录音并释放麦克风，正在执行 Replay。"
+        : "通话已停止，麦克风已释放。",
+    );
   };
+
+  useEffect(() => {
+    coordinatedStopRef.current = stop;
+  });
+  useEffect(
+    () =>
+      voiceInput.registerActiveStopper((reason) =>
+        coordinatedStopRef.current(reason),
+      ),
+    [voiceInput],
+  );
 
   const cancelResponse = async () => {
     stopPlayback();
     try {
       await sendCommand({ type: "response.cancel" });
       await sendCommand({ type: "input_audio_buffer.clear" });
+      assistantRef.current = null;
+      setCompanionPartial("");
+      setActivity("listening");
       setMessage("已取消当前回复，仍在聆听。你可以继续说话。");
     } catch (error) {
       await failActiveSession(
@@ -451,12 +612,42 @@ export function RealtimeVoicePanel({
     state === "denied" ||
     state === "unsupported" ||
     state === "error";
+  const activityPresentation = ACTIVITY_PRESENTATION[activity];
+  const orbLabel =
+    state === "denied"
+      ? "语音不可用：麦克风权限被拒绝"
+      : state === "unsupported"
+        ? "语音不可用：浏览器不支持"
+        : state === "error"
+          ? "语音连接失败"
+          : state === "stopped"
+            ? "语音已停止"
+            : `语音${activityPresentation.label}`;
 
   return (
-    <div className="realtime-voice" data-testid="realtime-voice-panel">
-      <p className="rail-empty" data-testid="voice-purpose">
-        点击后才会请求麦克风，用于围绕当前原文与陪读实时交谈；停止后立即释放麦克风。
-      </p>
+    <div
+      className="realtime-voice"
+      data-testid="realtime-voice-panel"
+      data-voice-activity={activity}
+    >
+      <div className="voice-orb-card">
+        <span className="voice-orb-visual" aria-hidden="true" />
+        <ThinkingOrb
+          state={activityPresentation.orb}
+          size={64}
+          theme="dark"
+          paused={activity === "resting"}
+          aria-label={orbLabel}
+          data-testid="voice-orb"
+        />
+        <div className="voice-orb-copy">
+          <span>实时陪读</span>
+          <strong data-testid="voice-activity-label">
+            {activityPresentation.label}
+          </strong>
+          <p>{activityPresentation.detail}</p>
+        </div>
+      </div>
       <p className="rail-empty" data-testid="voice-source-snapshot">
         本轮锚点：{sourceSnapshot.title} · PDF {sourceSnapshot.pdfPages.join("、")}
       </p>
@@ -474,8 +665,8 @@ export function RealtimeVoicePanel({
           <button
             type="button"
             className="idea-submit"
-            onClick={() => void stop()}
-            disabled={state !== "listening" && state !== "connecting"}
+            onClick={() => void stop("user")}
+            disabled={state === "stopping"}
             data-testid="voice-stop"
           >
             停止通话
@@ -495,6 +686,9 @@ export function RealtimeVoicePanel({
       <p className="rail-empty" aria-live="polite" data-testid="voice-state">
         状态：{STATE_LABELS[state]}
         {message ? ` · ${message}` : ""}
+      </p>
+      <p className="rail-empty voice-purpose" data-testid="voice-purpose">
+        只在点击开始后使用麦克风；停止会立即释放设备。
       </p>
       {readerProgress ? (
         <p className="rail-empty" aria-live="polite" data-testid="voice-reader-partial">

@@ -40,9 +40,16 @@ export function ReaderIdeaList() {
         >
           <header>
             <strong>rev {idea.revision}</strong>
-            <small data-testid={`idea-source-${idea.idea_id}`}>
+            <a
+              href={
+                idea.source_ids[0]?.includes("division")
+                  ? "#source-block-division"
+                  : "#source-block-market"
+              }
+              data-testid={`idea-source-${idea.idea_id}`}
+            >
               {idea.source_ids.join(", ")}
-            </small>
+            </a>
           </header>
           <p data-testid={`idea-text-${idea.idea_id}`}>{idea.text}</p>
           <footer>

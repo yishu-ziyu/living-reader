@@ -21,7 +21,10 @@ import {
   inspectCurrentWorld,
   type WorldDispatchDraftFactory,
 } from "@/modules/agent-os/world-dispatch";
-import type { WorldCommand } from "@/modules/world";
+import {
+  compileReviewedRecipe,
+  type WorldCommand,
+} from "@/modules/world";
 
 const EXPERIENCE_ID = "exp_t009_wool";
 const PRINCIPAL_ID = "reader_t009";
@@ -134,6 +137,77 @@ async function appendCanonicalBaseline(store: EventStore): Promise<void> {
     experience_id: EXPERIENCE_ID,
     principal_id: PRINCIPAL_ID,
     idempotency_key: "seed-baseline",
+    expected_version: -1,
+    events: [graph, seed],
+  });
+  if (!result.ok) throw result.error;
+}
+
+async function appendRecipeBaseline(
+  store: EventStore,
+  recipe_id: "smith.b1.division-deepening.v1" | "smith.b1.market-extent.v1",
+  parameters: Record<string, number> = {},
+  overrides: Partial<{
+    recipe_fingerprint: string;
+    normalized_parameters: Record<string, string | number | boolean>;
+  }> = {},
+): Promise<void> {
+  const compiled = compileReviewedRecipe({
+    recipe_id,
+    parameters,
+    seed: 42,
+    experience_id: EXPERIENCE_ID,
+    world_id: WORLD_ID,
+    graph_revision: 1,
+  });
+  if (!compiled.ok) throw new Error(compiled.code);
+  const graph = nodeDraft({
+    message_name: "reader_world.graph.committed.v1",
+    experience_id: EXPERIENCE_ID,
+    correlation_id: "seed-recipe-graph",
+    producer: { module: "reader_world", instance: "test" },
+    security: {
+      principal_id: PRINCIPAL_ID,
+      authority: "reader",
+      integrity: "local",
+    },
+    message_id: "seed-recipe-graph-1",
+    recorded_at: FIXED_TIME,
+    payload: {
+      graph_revision: 1,
+      accepted_relation_ids: ["rel_recipe"],
+      basis_graph_revision: 0,
+    },
+  });
+  const seed = nodeDraft({
+    message_name: "reader_world.world.seeded.v2",
+    experience_id: EXPERIENCE_ID,
+    correlation_id: "seed-recipe-world",
+    producer: { module: "reader_world", instance: "test" },
+    security: {
+      principal_id: PRINCIPAL_ID,
+      authority: "system",
+      integrity: "local",
+    },
+    message_id: "seed-recipe-world-1",
+    recorded_at: FIXED_TIME,
+    payload: {
+      world_id: WORLD_ID,
+      graph_revision: 1,
+      seed: 42,
+      ruleset_id: RULESET_ID,
+      recipe_id,
+      recipe_fingerprint:
+        overrides.recipe_fingerprint ?? compiled.value.recipe_fingerprint,
+      normalized_parameters:
+        overrides.normalized_parameters ??
+        compiled.value.normalized_parameters,
+    },
+  });
+  const result = await store.append({
+    experience_id: EXPERIENCE_ID,
+    principal_id: PRINCIPAL_ID,
+    idempotency_key: "seed-recipe-baseline",
     expected_version: -1,
     events: [graph, seed],
   });
@@ -354,6 +428,104 @@ describe("T009 world EventStore dispatcher", () => {
         metrics: { output: 17, stock: 11, reachable_orders: 4, cash: 28 },
       },
     });
+  });
+
+  it("recompiles a seeded.v2 recipe and exactly replays its committed action", async () => {
+    const { store, append_requests } = createRecordedStore();
+    await appendRecipeBaseline(store, "smith.b1.market-extent.v1", {
+      initial_cash: 50,
+      reachable_orders: 5,
+    });
+    append_requests.length = 0;
+
+    const baseline = await inspectCurrentWorld({
+      store,
+      experience_id: EXPERIENCE_ID,
+    });
+    expect(baseline).toMatchObject({
+      ok: true,
+      last_stream_version: 2,
+      world_state: {
+        world_revision: 0,
+        metrics: { output: 12, stock: 8, reachable_orders: 5, cash: 50 },
+      },
+    });
+
+    const receipt = await dispatch(store, command("expand_market"), "turn-recipe");
+    expect(receipt).toMatchObject({
+      ok: true,
+      committed: true,
+      code: "OK",
+      world_revision: 1,
+      event_count: 4,
+    });
+    const replayed = await inspectCurrentWorld({
+      store,
+      experience_id: EXPERIENCE_ID,
+    });
+    expect(replayed).toMatchObject({
+      ok: true,
+      world_state: {
+        world_revision: 1,
+        metrics: { output: 17, stock: 11, reachable_orders: 7, cash: 54 },
+      },
+    });
+    expect(append_requests).toHaveLength(1);
+  });
+
+  it("enforces the compiled recipe action allowlist", async () => {
+    const { store, append_requests } = createRecordedStore();
+    await appendRecipeBaseline(store, "smith.b1.division-deepening.v1");
+    append_requests.length = 0;
+
+    const receipt = await dispatch(
+      store,
+      command("expand_market"),
+      "turn-recipe-unsupported",
+    );
+
+    expect(receipt).toMatchObject({
+      ok: false,
+      committed: false,
+      code: "ACTION_UNSUPPORTED",
+      event_count: 0,
+    });
+    expect(append_requests).toHaveLength(0);
+  });
+
+  it("fails closed when seeded.v2 fingerprint or normalized parameters drift", async () => {
+    const badFingerprint = createRecordedStore();
+    await appendRecipeBaseline(
+      badFingerprint.store,
+      "smith.b1.market-extent.v1",
+      {},
+      { recipe_fingerprint: "recipe-v1:tampered" },
+    );
+    expect(
+      await inspectCurrentWorld({
+        store: badFingerprint.store,
+        experience_id: EXPERIENCE_ID,
+      }),
+    ).toEqual({ ok: false, code: "INVALID_STATE" });
+
+    const nonCanonicalParameters = createRecordedStore();
+    await appendRecipeBaseline(
+      nonCanonicalParameters.store,
+      "smith.b1.market-extent.v1",
+      {},
+      {
+        normalized_parameters: {
+          initial_cash: 24,
+          reachable_orders: 999,
+        },
+      },
+    );
+    expect(
+      await inspectCurrentWorld({
+        store: nonCanonicalParameters.store,
+        experience_id: EXPERIENCE_ID,
+      }),
+    ).toEqual({ ok: false, code: "INVALID_STATE" });
   });
 
   it("returns the original receipt for a duplicate key and appends nothing", async () => {

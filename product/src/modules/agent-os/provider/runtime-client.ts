@@ -89,6 +89,8 @@ export function createReadingAgentRuntimeProvider({
         parsedTurn.source_snapshot_id !== sourceSnapshotId ||
         parsedTurn.active_source_ids.length !== 1 ||
         parsedTurn.active_source_ids[0] !== source.source_id ||
+        (parsedTurn.invitation_basis &&
+          parsedTurn.invitation_basis.source_snapshot_id !== sourceSnapshotId) ||
         (parsedTurn.pending_intent &&
           (parsedTurn.pending_intent.source_snapshot_id !== sourceSnapshotId ||
             parsedTurn.pending_intent.source_ids.length !== 1 ||

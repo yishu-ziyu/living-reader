@@ -14,6 +14,40 @@ export type WorldBasis = {
   ruleset_id: string;
 };
 
+export type InvitationBasis = {
+  experience_id: string;
+  graph_revision: number;
+  relation_id: string;
+  relation_basis_revision: number;
+  accepted_relation_ids: readonly string[];
+  source_snapshot_id: string;
+};
+
+export type RelationshipMemoryKind =
+  | "read_position"
+  | "confusion"
+  | "discussion_theme"
+  | "idea_ref";
+
+export type RelationshipMemoryOrigin =
+  | "reader_confirmed"
+  | "agent_observed";
+
+export type RelationshipMemory = {
+  memory_id: string;
+  kind: RelationshipMemoryKind;
+  origin: RelationshipMemoryOrigin;
+  text: string;
+  source_locator: string | null;
+  reader_idea_id: string | null;
+};
+
+export type RelationshipContext = {
+  current_chapter_id: string | null;
+  memories: readonly RelationshipMemory[];
+  active_recipe_ids: readonly string[];
+};
+
 export type PendingIntent = {
   action_id: AgentTurnActionId;
   topic_key: "specialization_depth" | "market_access";
@@ -37,10 +71,12 @@ export type AgentTurnInput = {
   source_snapshot_id: string;
   active_source_ids: readonly string[];
   world_basis: WorldBasis | null;
+  invitation_basis: InvitationBasis | null;
   asr_confidence?: number;
   explicit_control?: "none" | "stop" | "refuse";
   recent_turns: readonly AgentTurnVisibleTurn[];
   pending_intent: PendingIntent | null;
+  relationship_context?: RelationshipContext;
 };
 
 export type IntentClass =
@@ -51,7 +87,7 @@ export type IntentClass =
   | "obvious_off_topic_noise";
 
 export type AgentTurnCandidate = {
-  mode: "discuss" | "clarify" | "act" | "stop";
+  mode: "discuss" | "clarify" | "act" | "stop" | "invite_world";
   intent_class?: IntentClass;
   relevance: "directly_anchored" | "mechanism_adjacent" | "personal" | "none" | "unknown";
   confidence: "high" | "medium" | "low" | "unknown";
@@ -62,6 +98,9 @@ export type AgentTurnCandidate = {
   companion_line: string;
   proposed_action_id?: AgentTurnActionId;
   pending_action_id?: AgentTurnActionId;
+  recipe_id?: string;
+  trigger_question?: string;
+  reason?: string;
   reason_codes: readonly string[];
 };
 
@@ -72,8 +111,18 @@ export type AgentTurnProviderInput = {
   source_snapshot_id: string;
   active_source_ids: readonly string[];
   world_basis: WorldBasis | null;
+  invitation_basis: InvitationBasis | null;
   recent_turns: readonly AgentTurnVisibleTurn[];
   pending_intent: PendingIntent | null;
+  relationship_context?: RelationshipContext;
+};
+
+export type AgentWorldInvitation = {
+  recipe_id: string;
+  trigger_question: string;
+  reason: string;
+  question_key: string;
+  basis: InvitationBasis;
 };
 
 export type AgentTurnProviderPort = {
@@ -114,9 +163,10 @@ export type AgentTurnPorts = {
 };
 
 export type AgentTurnDecision = {
-  mode: "discuss" | "clarify" | "act" | "stop";
+  mode: "discuss" | "clarify" | "act" | "stop" | "invite_world";
   candidate: AgentTurnCandidate | null;
   companion_line: string;
+  invitation: AgentWorldInvitation | null;
   pending_intent_next: PendingIntent | null;
   command: WorldCommand | null;
   dispatch_receipt: AgentTurnDispatchReceipt | null;

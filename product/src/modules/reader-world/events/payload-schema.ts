@@ -97,6 +97,15 @@ export const PAYLOAD_ALLOWLIST: Record<DomainEventName, readonly string[]> = {
     "seed",
     "ruleset_id",
   ],
+  "reader_world.world.seeded.v2": [
+    "world_id",
+    "graph_revision",
+    "seed",
+    "ruleset_id",
+    "recipe_id",
+    "recipe_fingerprint",
+    "normalized_parameters",
+  ],
   "reader_world.world.event_recorded.v1": [
     "world_id",
     "world_revision",
@@ -105,6 +114,15 @@ export const PAYLOAD_ALLOWLIST: Record<DomainEventName, readonly string[]> = {
     "actor_id",
     "metrics",
   ],
+  "reader_world.memory.noted.v1": [
+    "memory_id",
+    "kind",
+    "origin",
+    "text",
+    "source_locator",
+    "reader_idea_id",
+  ],
+  "reader_world.memory.retired.v1": ["memory_id"],
 };
 
 function rejectUnknownKeys(
@@ -135,6 +153,16 @@ function requireNumber(
 ): PayloadSchemaResult {
   if (!isNumber(payload[key])) {
     return fail(`payload.${key} must be a finite number`, { key });
+  }
+  return { ok: true };
+}
+
+function requireSafeInteger(
+  payload: Record<string, unknown>,
+  key: string,
+): PayloadSchemaResult {
+  if (!Number.isSafeInteger(payload[key])) {
+    return fail(`payload.${key} must be a safe integer`, { key });
   }
   return { ok: true };
 }
@@ -310,6 +338,104 @@ function validateWorldSeeded(
   );
 }
 
+function validateNormalizedParameters(value: unknown): PayloadSchemaResult {
+  if (!isPlainObject(value)) {
+    return fail("payload.normalized_parameters must be an object");
+  }
+  for (const [key, parameter] of Object.entries(value)) {
+    if (!key.trim()) {
+      return fail("payload.normalized_parameters keys must be non-empty");
+    }
+    const type = typeof parameter;
+    if (
+      type !== "string" &&
+      type !== "boolean" &&
+      !(type === "number" && Number.isFinite(parameter as number))
+    ) {
+      return fail(
+        "payload.normalized_parameters values must be JSON-safe scalars",
+        { key },
+      );
+    }
+  }
+  return { ok: true };
+}
+
+function validateWorldSeededV2(
+  payload: Record<string, unknown>,
+): PayloadSchemaResult {
+  return chain(
+    rejectUnknownKeys(
+      payload,
+      PAYLOAD_ALLOWLIST["reader_world.world.seeded.v2"],
+    ),
+    requireString(payload, "world_id"),
+    requireSafeInteger(payload, "graph_revision"),
+    requireSafeInteger(payload, "seed"),
+    requireString(payload, "ruleset_id"),
+    requireString(payload, "recipe_id"),
+    requireString(payload, "recipe_fingerprint"),
+    validateNormalizedParameters(payload.normalized_parameters),
+  );
+}
+
+const MEMORY_KINDS = new Set([
+  "read_position",
+  "confusion",
+  "discussion_theme",
+  "idea_ref",
+]);
+const MEMORY_ORIGINS = new Set(["reader_confirmed", "agent_observed"]);
+
+function validateMemoryNoted(
+  payload: Record<string, unknown>,
+): PayloadSchemaResult {
+  const base = chain(
+    rejectUnknownKeys(
+      payload,
+      PAYLOAD_ALLOWLIST["reader_world.memory.noted.v1"],
+    ),
+    requireString(payload, "memory_id"),
+    requireString(payload, "kind"),
+    requireString(payload, "origin"),
+    requireString(payload, "text"),
+    requireStringOrNull(payload, "source_locator"),
+    requireStringOrNull(payload, "reader_idea_id"),
+  );
+  if (!base.ok) return base;
+  if (!MEMORY_KINDS.has(payload.kind as string)) {
+    return fail(
+      "payload.kind must be read_position|confusion|discussion_theme|idea_ref",
+    );
+  }
+  if (!MEMORY_ORIGINS.has(payload.origin as string)) {
+    return fail("payload.origin must be reader_confirmed|agent_observed");
+  }
+  const text = payload.text as string;
+  if (!text.trim() || [...text].length > 240) {
+    return fail("payload.text must be non-empty and at most 240 characters");
+  }
+  if (payload.kind === "idea_ref" && !payload.reader_idea_id) {
+    return fail("idea_ref memory requires reader_idea_id");
+  }
+  if (payload.kind === "read_position" && !payload.source_locator) {
+    return fail("read_position memory requires source_locator");
+  }
+  return { ok: true };
+}
+
+function validateMemoryRetired(
+  payload: Record<string, unknown>,
+): PayloadSchemaResult {
+  return chain(
+    rejectUnknownKeys(
+      payload,
+      PAYLOAD_ALLOWLIST["reader_world.memory.retired.v1"],
+    ),
+    requireString(payload, "memory_id"),
+  );
+}
+
 /**
  * Frozen world metrics keys (storage + public debug).
  * Unknown keys (incl. secret aliases / case variants) → INVALID_PAYLOAD.
@@ -425,7 +551,10 @@ const VALIDATORS: Record<
   "reader_world.relation.reviewed.v1": validateRelationReviewed,
   "reader_world.graph.committed.v1": validateGraphCommitted,
   "reader_world.world.seeded.v1": validateWorldSeeded,
+  "reader_world.world.seeded.v2": validateWorldSeededV2,
   "reader_world.world.event_recorded.v1": validateWorldEventRecorded,
+  "reader_world.memory.noted.v1": validateMemoryNoted,
+  "reader_world.memory.retired.v1": validateMemoryRetired,
 };
 
 /** Strict payload schema check for a frozen message_name. */

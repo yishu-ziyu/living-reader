@@ -17,7 +17,10 @@ import {
   ReaderSessionProvider,
   SessionShellBindings,
 } from "./ReaderSessionProvider";
-import { ReaderThinkingProvider } from "./ReaderThinkingProvider";
+import {
+  AgentTurnCompanionLine,
+  ReaderThinkingProvider,
+} from "./ReaderThinkingProvider";
 import {
   ReaderThinkingRailIdeas,
   ReaderThinkingRailRelation,
@@ -31,6 +34,7 @@ import { SoftReturnCard } from "./SoftReturnCard";
 import { WorldSlotFromSession } from "./ReadingShellClient";
 import { T004SessionBridgeHost } from "@/components/bridge-hosts";
 import { RealtimeVoiceDock } from "./RealtimeVoiceDock";
+import { VoiceInputProvider } from "./VoiceInputProvider";
 
 /**
  * Formal Chinese reading shell.
@@ -109,14 +113,21 @@ export async function ReadingShell() {
       market.value.quote,
     ),
   };
+  // One server-built sealed snapshot map is shared by text and final voice.
+  const voiceSourceSnapshots = {
+    [division.value.sourceId]: snapshotVoiceSource(division.value),
+    [market.value.sourceId]: snapshotVoiceSource(market.value),
+  };
 
   return (
     <ReaderSessionProvider>
-      <ReaderThinkingProvider
-        sourceEvidence={evidenceMap.value}
-        discussionSnapshots={discussionSnapshots}
-      >
-        <SessionShellBindings>
+      <VoiceInputProvider>
+        <ReaderThinkingProvider
+          sourceEvidence={evidenceMap.value}
+          discussionSnapshots={discussionSnapshots}
+          voiceSourceSnapshots={voiceSourceSnapshots}
+        >
+          <SessionShellBindings>
           <div className="app-shell" data-testid="reading-shell">
             <aside className="agent-rail" aria-label="Agent OS 阅读栏">
               <div className="rail-brand">
@@ -148,10 +159,7 @@ export async function ReadingShell() {
                   <small>StepFun · Realtime</small>
                 </div>
                 <RealtimeVoiceDock
-                  sources={[
-                    snapshotVoiceSource(division.value),
-                    snapshotVoiceSource(market.value),
-                  ]}
+                  sources={Object.values(voiceSourceSnapshots)}
                 />
               </section>
 
@@ -177,6 +185,7 @@ export async function ReadingShell() {
                   <small>Companion · 瞬时候选</small>
                 </div>
                 <SoftReturnCard />
+                <AgentTurnCompanionLine />
                 <CompanionAnswerCard />
               </section>
 
@@ -273,9 +282,10 @@ export async function ReadingShell() {
               </article>
             </main>
           </div>
-          <T004SessionBridgeHost />
-        </SessionShellBindings>
-      </ReaderThinkingProvider>
+            <T004SessionBridgeHost />
+          </SessionShellBindings>
+        </ReaderThinkingProvider>
+      </VoiceInputProvider>
     </ReaderSessionProvider>
   );
 }
@@ -343,6 +353,7 @@ function SourceSection({
 
   return (
     <section
+      id={testId}
       className="source-block"
       data-testid={testId}
       data-source-key={block.sourceKey}

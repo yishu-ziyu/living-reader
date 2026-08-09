@@ -91,6 +91,9 @@ export function createAgentTurnClientProvider(
         parsedTurn.source_snapshot_id !== sealedSourceSnapshotId ||
         parsedTurn.active_source_ids.length !== 1 ||
         parsedTurn.active_source_ids[0] !== sealedSourceSnapshot.sourceId ||
+        (parsedTurn.invitation_basis &&
+          parsedTurn.invitation_basis.source_snapshot_id !==
+            sealedSourceSnapshotId) ||
         (parsedTurn.pending_intent &&
           (parsedTurn.pending_intent.source_snapshot_id !==
             sealedSourceSnapshotId ||

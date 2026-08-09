@@ -1,5 +1,7 @@
 import { deriveWorldActionIdempotencyKey } from "@/modules/agent-os/turn/handle";
 import { FROZEN_WOOL_TOWN_RULESET } from "@/modules/world/domain/frozen-ruleset";
+import { canonicalize } from "@/modules/world/domain/canonicalize";
+import { compileReviewedRecipe } from "@/modules/world/recipe";
 import { createWoolTownBaseline } from "@/modules/world/fixtures/wool-town/baseline";
 import { decide } from "@/modules/world/kernel/decide";
 import type { DomainEvent, DomainEventDraft } from "@/modules/reader-world/events/envelope";
@@ -30,6 +32,10 @@ import type {
 const MESSAGE_NAMESPACE = "reader_world.world_dispatch.v1";
 const WORLD_EVENT_NAME = "reader_world.world.event_recorded.v1" as const;
 const METRIC_KEYS = ["supply", "inventory", "demand", "cash"] as const;
+const LEGACY_WORLD_ACTION_IDS: readonly WorldCommand["action"][] = [
+  "deepen_specialization",
+  "expand_market",
+];
 type MetricKey = (typeof METRIC_KEYS)[number];
 type RecordedMetrics = Record<MetricKey, number>;
 
@@ -39,6 +45,8 @@ type RawWorldSeed = {
   graph_revision: number;
   seed: number;
   ruleset_id: string;
+  initial_state: WorldState;
+  action_ids: readonly WorldCommand["action"][];
 };
 
 type RawWorldEvent = {
@@ -64,6 +72,7 @@ type RebuiltWorldGroup = {
 type RebuiltWorld = {
   state: WorldState;
   groups: RebuiltWorldGroup[];
+  action_ids: readonly WorldCommand["action"][];
 };
 
 type StreamSnapshot = {
@@ -151,13 +160,12 @@ function readGraphRevision(event: DomainEvent): number | null {
 
 function readWorldSeed(event: DomainEvent): RawWorldSeed | null {
   const payload = event.payload as unknown;
+  const isRecipeSeed =
+    event.message_name === "reader_world.world.seeded.v2";
   if (
-    !validateEventPayload("reader_world.world.seeded.v1", payload).ok ||
-    !isPlainObject(payload)
-  ) {
-    return null;
-  }
-  if (
+    (event.message_name !== "reader_world.world.seeded.v1" && !isRecipeSeed) ||
+    !validateEventPayload(event.message_name, payload).ok ||
+    !isPlainObject(payload) ||
     !isNonEmptyString(payload.world_id) ||
     !isNonNegativeSafeInteger(payload.graph_revision) ||
     !Number.isSafeInteger(payload.seed) ||
@@ -165,12 +173,56 @@ function readWorldSeed(event: DomainEvent): RawWorldSeed | null {
   ) {
     return null;
   }
+
+  if (isRecipeSeed) {
+    if (
+      !isNonEmptyString(payload.recipe_id) ||
+      !isNonEmptyString(payload.recipe_fingerprint) ||
+      !isPlainObject(payload.normalized_parameters)
+    ) {
+      return null;
+    }
+    const compiled = compileReviewedRecipe({
+      recipe_id: payload.recipe_id,
+      parameters: payload.normalized_parameters,
+      seed: payload.seed as number,
+      experience_id: event.experience_id,
+      world_id: payload.world_id,
+      graph_revision: payload.graph_revision,
+    });
+    if (
+      !compiled.ok ||
+      compiled.value.recipe_fingerprint !== payload.recipe_fingerprint ||
+      compiled.value.definition.initial_state.ruleset_id !== payload.ruleset_id ||
+      canonicalize(compiled.value.normalized_parameters) !==
+        canonicalize(payload.normalized_parameters)
+    ) {
+      return null;
+    }
+    return {
+      stream_version: event.stream_version,
+      world_id: payload.world_id,
+      graph_revision: payload.graph_revision,
+      seed: payload.seed as number,
+      ruleset_id: payload.ruleset_id,
+      initial_state: cloneWorldState(compiled.value.definition.initial_state),
+      action_ids: [...compiled.value.definition.action_ids],
+    };
+  }
+
   return {
     stream_version: event.stream_version,
     world_id: payload.world_id,
     graph_revision: payload.graph_revision,
     seed: payload.seed as number,
     ruleset_id: payload.ruleset_id,
+    initial_state: createWoolTownBaseline({
+      experience_id: event.experience_id,
+      world_id: payload.world_id,
+      graph_revision: payload.graph_revision,
+      seed: payload.seed as number,
+    }),
+    action_ids: LEGACY_WORLD_ACTION_IDS,
   };
 }
 
@@ -319,7 +371,8 @@ function rebuildAuthoritativeWorld(
         latestGraph = { graph_revision, stream_version: event.stream_version };
         break;
       }
-      case "reader_world.world.seeded.v1": {
+      case "reader_world.world.seeded.v1":
+      case "reader_world.world.seeded.v2": {
         const parsed = readWorldSeed(event);
         if (!parsed) return fail("INVALID_STATE");
         if (seed) return fail("WORLD_NOT_READY");
@@ -361,12 +414,7 @@ function rebuildAuthoritativeWorld(
     return fail("WORLD_NOT_READY");
   }
 
-  let state = createWoolTownBaseline({
-    experience_id: request.experience_id,
-    world_id: seed.world_id,
-    graph_revision: seed.graph_revision,
-    seed: seed.seed,
-  });
+  let state = cloneWorldState(seed.initial_state);
   const groups: RebuiltWorldGroup[] = [];
   let cursor = 0;
 
@@ -405,6 +453,7 @@ function rebuildAuthoritativeWorld(
 
     const action = inferredAction(group);
     if (!action) return fail("INVALID_STATE");
+    if (!seed.action_ids.includes(action)) return fail("INVALID_STATE");
     const decision = decide(
       state,
       {
@@ -437,7 +486,7 @@ function rebuildAuthoritativeWorld(
     });
   }
 
-  return ok({ state, groups });
+  return ok({ state, groups, action_ids: seed.action_ids });
 }
 
 export function stableWorldDispatchMessageId(input: {
@@ -656,6 +705,10 @@ export async function dispatchWorldAction(
     return group
       ? committedGroupReceipt(group, { duplicate: true })
       : receipt("COMMIT_FAILED");
+  }
+
+  if (!rebuilt.value.action_ids.includes(input.command.action)) {
+    return receipt("ACTION_UNSUPPORTED");
   }
 
   const decision = decide(

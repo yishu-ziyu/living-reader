@@ -1,15 +1,17 @@
 import type { NextConfig } from "next";
 
 /**
- * When either public bridge flag is "1" (playwright webServer), alias
+ * When any public bridge flag is "1" (Playwright webServer), alias
  * bridge-hosts → dev implementation that mounts TestBridges.
  * Production `pnpm build` without flags → prod stubs with zero TestBridge imports.
  *
  * Alias values are project-relative (required by Turbopack).
  */
 const bridgesEnabled =
-  process.env.NEXT_PUBLIC_T003_BRIDGE === "1" ||
-  process.env.NEXT_PUBLIC_T004_SESSION_BRIDGE === "1";
+  process.env.NODE_ENV !== "production" &&
+  (process.env.NEXT_PUBLIC_T003_BRIDGE === "1" ||
+    process.env.NEXT_PUBLIC_T004_SESSION_BRIDGE === "1" ||
+    process.env.NEXT_PUBLIC_T009_AGENT_TURN_BRIDGE === "1");
 
 const bridgeHostsTarget = bridgesEnabled
   ? "./src/components/bridge-hosts.dev.tsx"

@@ -1,12 +1,53 @@
 /**
  * T006 A002: source discussion → BookThought, zero world mutation.
  */
-import { expect, test } from "@playwright/test";
+import { expect, test, type Page } from "@playwright/test";
+
+type AgentTurnRouteRequest = {
+  turn?: {
+    active_source_ids?: unknown;
+    final_text?: unknown;
+  };
+};
+
+async function installAgentTurnMock(page: Page) {
+  await page.route("**/api/agent-turn", async (route) => {
+    const body = route.request().postDataJSON() as AgentTurnRouteRequest;
+    const rawSourceId = Array.isArray(body.turn?.active_source_ids)
+      ? body.turn.active_source_ids[0]
+      : "";
+    const sourceId =
+      typeof rawSourceId === "string" ? rawSourceId : "unknown-source";
+    const market = sourceId === "smith.b1.c3.market_extent";
+    await route.fulfill({
+      contentType: "application/json",
+      body: JSON.stringify({
+        ok: true,
+        candidate: {
+          mode: "discuss",
+          intent_class: "source_question",
+          relevance: "directly_anchored",
+          confidence: "high",
+          target_source_ids: [sourceId],
+          evidence_refs: [],
+          open_question: null,
+          companion_line: market
+            ? "会。市场范围会限制分工能分得多细。"
+            : "会。分工会让同一操作练得更熟。",
+          proposed_action_id: null,
+          pending_action_id: null,
+          reason_codes: ["test_source_question"],
+        },
+      }),
+    });
+  });
+}
 
 test.describe("T006 Source discussion", () => {
   test("A002: ask, reject, save, revise; zero world; evidence bound", async ({
     page,
   }) => {
+    await installAgentTurnMock(page);
     await page.goto("/");
     await expect(page.getByTestId("reading-shell")).toBeVisible();
     await expect(page.getByTestId("world-slot")).toHaveAttribute(
@@ -102,6 +143,7 @@ test.describe("T006 Source discussion", () => {
   test("draft isolation: edit A, reject, ask B, save only B", async ({
     page,
   }) => {
+    await installAgentTurnMock(page);
     await page.goto("/");
     await expect(page.getByTestId("reading-shell")).toBeVisible();
 
@@ -152,5 +194,61 @@ test.describe("T006 Source discussion", () => {
     await expect(
       page.locator("[data-testid^='thought-evidence-']").first(),
     ).toContainText("pdf:45");
+  });
+
+  test("Stop fences an in-flight semantic final before it can update the UI", async ({
+    page,
+  }) => {
+    let requestCount = 0;
+    let releaseResponse: () => void = () => {};
+    let markRequestStarted: () => void = () => {};
+    const responseGate = new Promise<void>((resolve) => {
+      releaseResponse = resolve;
+    });
+    const requestStarted = new Promise<void>((resolve) => {
+      markRequestStarted = resolve;
+    });
+    await page.route("**/api/agent-turn", async (route) => {
+      requestCount += 1;
+      markRequestStarted();
+      await responseGate;
+      await route.fulfill({
+        contentType: "application/json",
+        body: JSON.stringify({
+          ok: true,
+          candidate: {
+            mode: "discuss",
+            intent_class: "source_question",
+            relevance: "directly_anchored",
+            confidence: "high",
+            target_source_ids: ["smith.b1.c1.division"],
+            evidence_refs: [],
+            open_question: null,
+            companion_line: "这句不该在停止后出现。",
+            proposed_action_id: null,
+            pending_action_id: null,
+            reason_codes: ["test_delayed_final"],
+          },
+        }),
+      });
+    });
+
+    await page.goto("/");
+    await page
+      .getByTestId("discussion-input-division")
+      .fill("分工会让人更熟练吗？");
+    await page.getByTestId("discussion-ask-division").click();
+    await requestStarted;
+
+    await page.getByTestId("discussion-stop-division").click();
+    releaseResponse();
+
+    await expect(page.getByTestId("session-state-division")).toHaveAttribute(
+      "data-session-state",
+      "paused",
+    );
+    await expect(page.getByTestId("companion-empty")).toBeVisible();
+    await expect(page.getByTestId("agent-turn-surface")).toHaveCount(0);
+    expect(requestCount).toBe(1);
   });
 });

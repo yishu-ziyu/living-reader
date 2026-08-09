@@ -1,0 +1,80 @@
+{
+  "recipe_id": "smith.b1.market-extent.v1",
+  "source_locator": {
+    "book_id": "wealth-of-nations",
+    "book_part": 1,
+    "chapter": 3,
+    "source_id": "smith.b1.c3.p1",
+    "legacy_source_id": "smith.b1.c3.market_extent",
+    "fragment": "Smith_0206-01_251"
+  },
+  "source_quote": "AS it is the power of exchanging that gives occasion to the division of labour, so the extent of this division must always be limited by the extent of that power, or, in other words, by the extent of the market.",
+  "claim_type": "constraint",
+  "mechanism": {
+    "mechanism_id": "market-extent",
+    "title": "市场范围",
+    "summary": "扩大可触达市场会改变订单、产出、库存与现金，并让每个角色看到同一变化的局部后果。",
+    "ruleset_id": "wool-town-v1",
+    "initial_metrics": {
+      "output": 12,
+      "stock": 8,
+      "reachable_orders": 2,
+      "cash": 24
+    }
+  },
+  "actors": [
+    { "actor_id": "merchant", "label": "商人", "role": "打开交换并连接更远订单" },
+    { "actor_id": "shepherd", "label": "牧羊人", "role": "观察原毛需求" },
+    { "actor_id": "spinner", "label": "纺纱工", "role": "观察纱线流动" },
+    { "actor_id": "weaver", "label": "织工", "role": "观察市场是否支撑专业化" }
+  ],
+  "stocks": [
+    { "id": "finished_stock", "label": "待售粗呢", "metric_id": "stock" },
+    { "id": "workshop_cash", "label": "工坊现金", "metric_id": "cash" }
+  ],
+  "flows": [
+    { "id": "orders_to_workshop", "label": "订单进入工坊", "from": "merchant", "to": "weaver" },
+    { "id": "cloth_to_market", "label": "粗呢进入市场", "from": "weaver", "to": "merchant" }
+  ],
+  "actions": [
+    { "action_id": "expand_market", "label": "扩大市场", "description": "让商人连接更多订单，并由 WorldKernel 计算确定性后果。" }
+  ],
+  "predicates": [
+    { "predicate_id": "merchant_exchange_open", "actor_id": "merchant", "description": "商人确认交换通道已经打开。" },
+    { "predicate_id": "shepherd_wool_flow_visible", "actor_id": "shepherd", "description": "牧羊人看到新增订单带来的原毛需求。" },
+    { "predicate_id": "spinner_yarn_flow_visible", "actor_id": "spinner", "description": "纺纱工看到新增订单带来的纱线需求。" },
+    { "predicate_id": "weaver_market_supports_depth", "actor_id": "weaver", "description": "织工看到市场达到专业化门槛。" }
+  ],
+  "metrics": [
+    { "metric_id": "output", "label": "产出", "unit": "批" },
+    { "metric_id": "stock", "label": "库存", "unit": "批" },
+    { "metric_id": "reachable_orders", "label": "可触达订单", "unit": "单" },
+    { "metric_id": "cash", "label": "现金", "unit": "记账单位" }
+  ],
+  "state_transitions": [
+    { "action_id": "expand_market", "event_kinds": ["character_observation"], "description": "按商人、牧羊人、纺纱工、织工顺序记录局部观察，并提交同一组新指标。" }
+  ],
+  "failure_modes": [
+    { "id": "market_stays_small", "condition": "读者不扩大可触达市场", "visible_result": "订单保持有限，库存、现金和专业化张力停留在初始状态。" }
+  ],
+  "visual_grammar": {
+    "scene_template": "wool-workshop",
+    "entity_order": ["merchant", "shepherd", "spinner", "weaver"],
+    "motion_verbs": {
+      "character_refusal": "hold",
+      "character_accept": "settle",
+      "character_observation": "flow"
+    },
+    "audio_refs": [],
+    "seed_caption": "小市场中的工坊已经就绪。扩大市场后，观察订单怎样穿过每一道工序。"
+  },
+  "parameters": [
+    { "id": "initial_cash", "label": "初始现金", "min": 0, "max": 100, "default": 24, "integer": true, "target": "metrics.cash" },
+    { "id": "reachable_orders", "label": "初始可触达订单", "min": 0, "max": 12, "default": 2, "integer": true, "target": "metrics.reachable_orders" }
+  ],
+  "reuse_examples": [
+    "比较扩大市场前后的订单、库存与现金",
+    "解释市场范围怎样约束进一步分工"
+  ],
+  "status": "reviewed"
+}

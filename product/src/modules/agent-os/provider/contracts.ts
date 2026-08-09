@@ -3,7 +3,10 @@ import type {
   AgentTurnCandidate,
   AgentTurnProviderInput,
   AgentTurnVisibleTurn,
+  InvitationBasis,
   PendingIntent,
+  RelationshipContext,
+  RelationshipMemory,
   WorldBasis,
 } from "@/modules/agent-os/turn";
 
@@ -24,6 +27,7 @@ const MODES = new Set<AgentTurnCandidate["mode"]>([
   "clarify",
   "act",
   "stop",
+  "invite_world",
 ]);
 const INTENT_CLASSES = new Set<NonNullable<AgentTurnCandidate["intent_class"]>>([
   "source_question",
@@ -49,6 +53,16 @@ const TOPIC_KEYS = new Set<PendingIntent["topic_key"]>([
   "specialization_depth",
   "market_access",
 ]);
+const MEMORY_KINDS = new Set<RelationshipMemory["kind"]>([
+  "read_position",
+  "confusion",
+  "discussion_theme",
+  "idea_ref",
+]);
+const MEMORY_ORIGINS = new Set<RelationshipMemory["origin"]>([
+  "reader_confirmed",
+  "agent_observed",
+]);
 
 const PROVIDER_INPUT_KEYS = new Set([
   "turn_id",
@@ -57,9 +71,14 @@ const PROVIDER_INPUT_KEYS = new Set([
   "source_snapshot_id",
   "active_source_ids",
   "world_basis",
+  "invitation_basis",
   "recent_turns",
   "pending_intent",
+  "relationship_context",
 ]);
+const PROVIDER_REQUIRED_INPUT_KEYS = new Set(
+  [...PROVIDER_INPUT_KEYS].filter((key) => key !== "relationship_context"),
+);
 const CANDIDATE_KEYS = new Set([
   "mode",
   "intent_class",
@@ -71,6 +90,9 @@ const CANDIDATE_KEYS = new Set([
   "companion_line",
   "proposed_action_id",
   "pending_action_id",
+  "recipe_id",
+  "trigger_question",
+  "reason",
   "reason_codes",
 ]);
 const PENDING_KEYS = new Set([
@@ -87,6 +109,27 @@ const BASIS_KEYS = new Set([
   "graph_revision",
   "world_revision",
   "ruleset_id",
+]);
+const INVITATION_BASIS_KEYS = new Set([
+  "experience_id",
+  "graph_revision",
+  "relation_id",
+  "relation_basis_revision",
+  "accepted_relation_ids",
+  "source_snapshot_id",
+]);
+const RELATIONSHIP_CONTEXT_KEYS = new Set([
+  "current_chapter_id",
+  "memories",
+  "active_recipe_ids",
+]);
+const RELATIONSHIP_MEMORY_KEYS = new Set([
+  "memory_id",
+  "kind",
+  "origin",
+  "text",
+  "source_locator",
+  "reader_idea_id",
 ]);
 
 export type AgentTurnProviderErrorCode =
@@ -174,6 +217,16 @@ function boundedString(
   return trimmed && trimmed.length <= maxLength ? trimmed : null;
 }
 
+function boundedOriginalString(
+  value: unknown,
+  maxLength: number,
+): string | null {
+  if (typeof value !== "string" || !value.trim() || value.length > maxLength) {
+    return null;
+  }
+  return value;
+}
+
 function optionalString(
   value: unknown,
   maxLength: number,
@@ -218,6 +271,124 @@ function parseBasis(value: unknown): WorldBasis | null {
     graph_revision: value.graph_revision as number,
     world_revision: value.world_revision as number,
     ruleset_id,
+  };
+}
+
+function parseInvitationBasis(value: unknown): InvitationBasis | null {
+  if (
+    !isRecord(value) ||
+    !hasOnlyKeys(value, INVITATION_BASIS_KEYS) ||
+    !hasEveryKey(value, INVITATION_BASIS_KEYS)
+  ) {
+    return null;
+  }
+  const experience_id = boundedString(value.experience_id, 200);
+  const relation_id = boundedString(value.relation_id, 200);
+  const source_snapshot_id = boundedString(
+    value.source_snapshot_id,
+    AGENT_TURN_MAX_SOURCE_SNAPSHOT_ID_LENGTH,
+  );
+  const accepted_relation_ids = parseBoundedStringArray(
+    value.accepted_relation_ids,
+    32,
+    200,
+    false,
+  );
+  if (
+    !experience_id ||
+    !relation_id ||
+    !source_snapshot_id ||
+    !accepted_relation_ids ||
+    !Number.isSafeInteger(value.graph_revision) ||
+    (value.graph_revision as number) < 0 ||
+    !Number.isSafeInteger(value.relation_basis_revision) ||
+    (value.relation_basis_revision as number) < 0
+  ) {
+    return null;
+  }
+  return {
+    experience_id,
+    graph_revision: value.graph_revision as number,
+    relation_id,
+    relation_basis_revision: value.relation_basis_revision as number,
+    accepted_relation_ids,
+    source_snapshot_id,
+  };
+}
+
+function parseNullableBoundedString(
+  value: unknown,
+  maxLength: number,
+): string | null | undefined {
+  if (value === null) return null;
+  return boundedString(value, maxLength) ?? undefined;
+}
+
+function parseRelationshipMemory(value: unknown): RelationshipMemory | null {
+  if (
+    !isRecord(value) ||
+    !hasOnlyKeys(value, RELATIONSHIP_MEMORY_KEYS) ||
+    !hasEveryKey(value, RELATIONSHIP_MEMORY_KEYS)
+  ) {
+    return null;
+  }
+  const memory_id = boundedString(value.memory_id, 200);
+  const text = boundedOriginalString(value.text, 240);
+  const source_locator = parseNullableBoundedString(value.source_locator, 400);
+  const reader_idea_id = parseNullableBoundedString(value.reader_idea_id, 200);
+  if (
+    !memory_id ||
+    !text ||
+    typeof value.kind !== "string" ||
+    !MEMORY_KINDS.has(value.kind as RelationshipMemory["kind"]) ||
+    typeof value.origin !== "string" ||
+    !MEMORY_ORIGINS.has(value.origin as RelationshipMemory["origin"]) ||
+    source_locator === undefined ||
+    reader_idea_id === undefined
+  ) {
+    return null;
+  }
+  return {
+    memory_id,
+    kind: value.kind as RelationshipMemory["kind"],
+    origin: value.origin as RelationshipMemory["origin"],
+    text,
+    source_locator,
+    reader_idea_id,
+  };
+}
+
+function parseRelationshipContext(value: unknown): RelationshipContext | null {
+  if (
+    !isRecord(value) ||
+    !hasOnlyKeys(value, RELATIONSHIP_CONTEXT_KEYS) ||
+    !hasEveryKey(value, RELATIONSHIP_CONTEXT_KEYS)
+  ) {
+    return null;
+  }
+  const current_chapter_id = parseNullableBoundedString(
+    value.current_chapter_id,
+    200,
+  );
+  if (!Array.isArray(value.memories) || value.memories.length > 12) return null;
+  const memories = value.memories.map(parseRelationshipMemory);
+  const active_recipe_ids = parseBoundedStringArray(
+    value.active_recipe_ids,
+    32,
+    200,
+    false,
+  );
+  if (
+    current_chapter_id === undefined ||
+    memories.some((memory) => memory === null) ||
+    !active_recipe_ids
+  ) {
+    return null;
+  }
+  return {
+    current_chapter_id,
+    memories: memories as RelationshipMemory[],
+    active_recipe_ids,
   };
 }
 
@@ -277,7 +448,13 @@ function parsePendingIntent(value: unknown): PendingIntent | null {
 export function parseAgentTurnProviderInput(
   value: unknown,
 ): AgentTurnProviderInput | null {
-  if (!isRecord(value) || !hasOnlyKeys(value, PROVIDER_INPUT_KEYS)) return null;
+  if (
+    !isRecord(value) ||
+    !hasOnlyKeys(value, PROVIDER_INPUT_KEYS) ||
+    !hasEveryKey(value, PROVIDER_REQUIRED_INPUT_KEYS)
+  ) {
+    return null;
+  }
   const turn_id = boundedString(value.turn_id, 128);
   const final_text = boundedString(value.final_text, AGENT_TURN_MAX_FINAL_TEXT_LENGTH);
   const source_snapshot_id = boundedString(
@@ -291,10 +468,18 @@ export function parseAgentTurnProviderInput(
     true,
   );
   const world_basis = value.world_basis === null ? null : parseBasis(value.world_basis);
+  const invitation_basis =
+    value.invitation_basis === null
+      ? null
+      : parseInvitationBasis(value.invitation_basis);
   if (!Array.isArray(value.recent_turns) || value.recent_turns.length > 4) return null;
   const recent_turns = value.recent_turns.map(parseVisibleTurn);
   const pending_intent =
     value.pending_intent === null ? null : parsePendingIntent(value.pending_intent);
+  const relationship_context =
+    value.relationship_context === undefined
+      ? undefined
+      : parseRelationshipContext(value.relationship_context);
   if (
     !turn_id ||
     !final_text ||
@@ -302,8 +487,10 @@ export function parseAgentTurnProviderInput(
     !active_source_ids ||
     (value.channel !== "text" && value.channel !== "voice") ||
     (value.world_basis !== null && !world_basis) ||
+    (value.invitation_basis !== null && !invitation_basis) ||
     recent_turns.some((turn) => turn === null) ||
-    (value.pending_intent !== null && !pending_intent)
+    (value.pending_intent !== null && !pending_intent) ||
+    (value.relationship_context !== undefined && !relationship_context)
   ) {
     return null;
   }
@@ -316,8 +503,10 @@ export function parseAgentTurnProviderInput(
     source_snapshot_id,
     active_source_ids,
     world_basis,
+    invitation_basis,
     recent_turns: turns,
     pending_intent,
+    ...(relationship_context ? { relationship_context } : {}),
   };
 }
 
@@ -352,6 +541,9 @@ export function parseAgentTurnCandidate(value: unknown): AgentTurnCandidate | nu
   );
   const proposed_action_id = parseNullableEnum(value.proposed_action_id, ACTION_IDS);
   const pending_action_id = parseNullableEnum(value.pending_action_id, ACTION_IDS);
+  const recipe_id = optionalString(value.recipe_id, 200);
+  const trigger_question = optionalString(value.trigger_question, 400);
+  const reason = optionalString(value.reason, 400);
   const reason_codes = parseBoundedStringArray(value.reason_codes, 8, 80, true);
   if (
     !mode ||
@@ -364,7 +556,17 @@ export function parseAgentTurnCandidate(value: unknown): AgentTurnCandidate | nu
     !companion_line ||
     proposed_action_id === null ||
     pending_action_id === null ||
+    recipe_id === null ||
+    trigger_question === null ||
+    reason === null ||
     !reason_codes
+  ) {
+    return null;
+  }
+  const isInvite = mode === "invite_world";
+  if (
+    isInvite !== Boolean(recipe_id && trigger_question && reason) ||
+    (isInvite && (proposed_action_id || pending_action_id))
   ) {
     return null;
   }
@@ -379,6 +581,9 @@ export function parseAgentTurnCandidate(value: unknown): AgentTurnCandidate | nu
     companion_line,
     ...(proposed_action_id ? { proposed_action_id } : {}),
     ...(pending_action_id ? { pending_action_id } : {}),
+    ...(recipe_id ? { recipe_id } : {}),
+    ...(trigger_question ? { trigger_question } : {}),
+    ...(reason ? { reason } : {}),
     reason_codes,
   };
 }
