@@ -1,141 +1,152 @@
-# product · 正式产品入口
+# Living Reader 产品运行时
 
-本目录是仓库内**唯一正式应用入口**（Next.js + React + TypeScript）。
+`product/` 是仓库内唯一正式应用入口。
+它包含 Next.js 阅读应用、Bun Agent Runtime、整书数据管线、领域模块和验证套件。
+`prototypes/`、`research/` 与素材目录不参与正式运行时构建。
 
-原型、研究与素材目录**不属于**本应用，也不在本任务中被移动或删除。
+## 用户路径
+
+```text
+/read/wealth-of-nations/smith.b1.c1
+        |
+        +-> 中文逐段阅读，可展开英文原文
+        +-> 记录阅读位置、困惑和讨论主题
+        +-> 与 Agent 围绕当前来源讨论
+        +-> 重复问题触发世界邀请
+        +-> 读者接受后编译受审核配方
+        +-> WorldKernel 推进确定性世界
+        +-> EvidenceBlock 返回对应原文
+```
+
+首页 `/` 从 EventStore 恢复最近阅读章节；没有记录或本地存储不可用时回到第一章。
+目录可在 Books I-V 的 34 章之间跳转。
+桌面端使用阅读栏和 Agent 栏，移动端使用可关闭的侧面板。
 
 ## 技术基线
 
-- Next.js **16.3.0** + React 19 + TypeScript + pnpm
-- Lint：ESLint CLI（`pnpm lint` → `eslint .`），**不用**已弃用的 `next lint`
-- 依赖安全：`pnpm audit --registry=https://registry.npmjs.org --audit-level high` 须 exit 0
+- Next.js 16.3.0、React 19.1、TypeScript 5
+- Bun Agent Runtime，基于 `@oh-my-pi/pi-agent-core` 与 `pi-catalog`
+- XState 5 管理阅读会话状态
+- IndexedDB 保存 EventStore、投影检查点和同步收据
+- DOM/CSS/Web Animations 呈现世界，PNG/WebP 只作为视觉素材
+- Vitest 与 Playwright 验证领域合同和用户可见闭环
 
-## 已实现合同
+## 架构
 
-### T001 基线
-- 中文阅读 shell 首页；闭合世界槽；lint/typecheck/build/e2e/audit
-
-### T002 来源
-- BookArtifact / SourceBlock / OLL adapter（见下方「来源」）
-
-### T003 EventStore + 只读投影
-- `src/modules/reader-world/events/**`：envelope、冻结 8 事件、canonicalize/hash、validate、exportDebugTrace
-- `src/modules/reader-world/event-store/**`：EventStore port（append/load/version/idempotency）
-- `src/infrastructure/event-store/memory/**`：InMemoryEventStore（合同参考）
-- `src/infrastructure/event-store/indexeddb/**`：浏览器 IndexedDB schema v1 持久化
-- `src/modules/reader-world/projections/**`：ReadingGraph / World 纯 fold + rebuild hash
-- 测试：`tests/unit/event-store/**`、`tests/unit/projections/**`、`tests/e2e/event-store.spec.ts`
-- 测试桥：`NEXT_PUBLIC_T003_BRIDGE=1` 时挂 `window.__T003_EVENT_STORE__`；默认生产不暴露
-
-### T004 ReaderSession XState
-- 依赖：`xstate@5.32.5`（core only，无 @xstate/react）
-- `src/modules/session/**`：typed machine、transition receipt、effect port
-- `ReaderSessionProvider` + `data-session-state` / world-slot `data-state`
-- 文档：`docs/reader-session-statechart.md`
-- 测试：`tests/unit/session/**`、`tests/e2e/reader-session.spec.ts`
-- 测试桥：`NEXT_PUBLIC_T004_SESSION_BRIDGE=1` → `window.__T004_SESSION__`
-
-### T005 ReaderIdea + Relation 审阅
-- EventStore-first Idea / RelationProposal；SourceBlock sealed evidence（非手写表）
-- 文档：`docs/reader-thinking-relation-contract.md`
-- 测试：`tests/unit/reader-thinking/**`、`tests/e2e/relation-review.spec.ts`
-
-### T006 原文讨论 + BookThought
-- deterministic Companion fixture + OriginalGuardian（quote 唯一英文子串）
-- ask 瞬时候选零写入；accept → `agent_os.book_thought.proposed.v1`
-- 文档：`docs/source-discussion-book-thought.md`
-- 测试：`tests/unit/agent-os/**`、`tests/unit/reader-thinking/book-thought.test.ts`、`tests/e2e/source-discussion.spec.ts`
-- 演示问：分工段「分工会让人更熟练吗？」；市场段「市场范围如何限制分工？」
-
-### T007 跑题边界与温和回引
-- 纯函数 `IntentDecision` + `BoundarySession`（不进 EventStore、不存 raw 文本）
-- 第一次 off_topic：≤3 句 soft-return + 1 CTA；decline 后不再邀请；stop/continue 走 T004 safe API
-- 文档：`docs/off-topic-boundary.md`
-- 测试：`tests/unit/agent-os/intent-boundary.test.ts`、`tests/e2e/off-topic.spec.ts`
-
-**仍不在范围内（T008+）**
-
-- 真实 LLM/外网、ASR/麦克风、WorldKernel、ActionCandidate
-- 云同步、服务端库、schema v2 migration
-- 删除、移动或重写 `prototypes/`、仓库级 `docs/`、`assets/`、`素材管理/`
-
-## 与原型的关系
-
-| 路径 | 角色 |
-|------|------|
-| `product/` | 正式入口；可提交构建与测试 |
-| `prototypes/living-reader-reference-html/` | 视觉与交互**参考**；保持可单独用静态 server 打开 |
-| 其他 `prototypes/*` | 历史实验；不并入生产逻辑 |
-
-原型里的 fixture 状态机与硬编码世界**不会**复制进 `product/`。
-
-## 启动
-
-在仓库根目录：
-
-```bash
-pnpm --dir product install
-pnpm --dir product dev
+```text
+OLL HTML 源文件
+    |
+    v
+pipeline/ingest.ts -> manifest v2 -> 中文翻译资产
+                                      |
+                                      v
+Next.js App Router -> ChapterReadingShell -> ReaderThinkingProvider
+                                              |
+                         +--------------------+--------------------+
+                         |                                         |
+                         v                                         v
+                 Bun Agent Runtime                       ReaderWorldUseCase
+                 只返回语义候选                         唯一世界写入入口
+                                                                   |
+                                                                   v
+                                               EventStore -> 只读投影
+                                                                   |
+                                                                   v
+                                     RecipeCompiler -> WorldKernel
+                                                                   |
+                                                                   v
+                                      InlineWorldBlock + EvidenceBlock
 ```
 
-打开 <http://127.0.0.1:3000>。
+关键不变量：
 
-旧原型（冻结基线，勿改）：
+1. `sourceId`、OLL locator、英文正文和 `contentHash` 共同确定来源身份。
+2. 中文译文逐段保存来源身份、模型、prompt revision、审核状态和时间。
+3. LLM 只提出候选，不直接写入世界事实。
+4. 世界邀请必须来自已确认关系中的重复问题，读者仍需主动接受。
+5. `RecipeCompiler` 只接受仓库中 `status: reviewed` 的配方和动作 allowlist。
+6. `ReaderWorldUseCase` 是世界创建、呈现、推进和恢复的统一应用层入口。
+7. EventStore 是读者记忆与世界状态的唯一事实源，投影可以重建。
+8. 刷新后从事件恢复同一个世界，不重新随机生成或暗中推进。
+
+## 全书资产
+
+正式样本位于 `public/books/wealth-of-nations/`：
+
+- `manifest.json`：Books I-V、34 章、2,063 个 SourceBlock
+- `translations/zh-CN/*.json`：与每个 SourceBlock 一一对应的中文译文
+- `pipeline/sources/wealth-of-nations/`：固定的 OLL Cannan 两卷 HTML 输入
+- `content/recipes/*.json`：通过 CI parser 校验的世界配方
+
+构建命令：
 
 ```bash
-python3 -m http.server 4178
-# → http://127.0.0.1:4178/prototypes/living-reader-reference-html/
+pnpm book:build ingest
+pnpm book:build translate
+pnpm book:build validate
+pnpm book:build all
 ```
 
-## 验收命令
+`ingest` 从固定 OLL 输入重建 canonical manifest。
+`translate` 只处理缺失、来源哈希变化或 prompt revision 变化的段落。
+已有有效译文会保留其真实模型 provenance，不因切换生成模型而无谓重译。
+当确实需要调用 StepFun 时，命令从 `.env.local` 读取 `STEPFUN_API_KEY`。
+`validate` 会检查 manifest schema、正文哈希以及全部译文与来源的一一对应关系。
+干净的 `all` 重跑不会改写任何资产。
+
+## 本地运行
+
+安装依赖：
 
 ```bash
-# 每次产品改动：快速、稳定的默认门
-pnpm --dir product check:quick
-
-# 共享合同、跨模块、合并和发布门
-pnpm --dir product check:full
-
-# T004 焦点
-pnpm --dir product test:unit -- session
-pnpm --dir product test:unit
-pnpm --dir product lint
-pnpm --dir product typecheck
-pnpm --dir product build
-pnpm --dir product exec playwright test tests/e2e/reader-session.spec.ts tests/e2e/home-smoke.spec.ts
-pnpm --dir product test:e2e
-pnpm --dir product audit --registry=https://registry.npmjs.org --audit-level high
+pnpm install
 ```
 
-## 来源（T002 / A014）
+启动阅读应用：
 
-- 官方 OLL Cannan vol.1 EPUB → 两个 paragraph fragment + 引用脚注 target
-- 领域 `source_id`：`smith.b1.c1.division` / `smith.b1.c3.market_extent`
-- OLL locator：`Smith_0206-01_235` / `Smith_0206-01_251`（不是 domain id）
-- PDF evidence：36 / 45；OLL 版本页（pb）：**5 / 19**
-- Manifest：`public/books/wealth-of-nations/manifest.json`（运行时 shape 校验 → `invalid_manifest`）
-- 脚注：`footnote_ref` 必须解析到唯一 `Footnote`（如 `lf0206-01_footnote_nt114`）
-- 加载失败 fail-closed，不 throw、不伪造引文
+```bash
+pnpm dev
+```
+
+如需真实 Agent 对话，在另一个终端启动：
+
+```bash
+pnpm agent:start
+```
+
+阅读应用默认访问 `http://127.0.0.1:3000`。
+Agent Runtime 默认监听 `http://127.0.0.1:4317`，服务端路由会把浏览器请求转发到该运行时。
+模型和供应商凭据由 OMP/pi-catalog 环境提供，客户端不会接触密钥。
+
+## 验证
+
+```bash
+pnpm check:quick
+pnpm check:full
+```
+
+`check:quick` 依次运行 lint、两个 TypeScript 配置、Vitest、Bun Agent 测试和生产构建。
+`check:full` 在 quick check 之后运行全部 Playwright 路径。
+
+针对当前完整阅读世界闭环，可单独运行：
+
+```bash
+pnpm exec playwright test tests/e2e/chapter-world-loop.spec.ts
+```
 
 ## 目录
 
 ```text
 product/
-  src/
-    app/                 # Next.js App Router
-    components/          # 页面壳（ReadingShell）
-    contracts/           # 跨模块类型与不变量说明
-    infrastructure/book/oll/  # OLL adapter
-    modules/
-      book/domain/       # 纯 TS 领域对象
-      reader-thinking/
-      agent-os/
-      world/
-      evidence/
-  public/books/wealth-of-nations/
-  tests/unit/book/
-  tests/e2e/
+  agent-runtime/                 Bun Agent Runtime
+  content/recipes/               受审核世界配方
+  pipeline/                      整书导入、翻译和验证
+  public/books/                  运行时书籍资产
+  src/app/                       Next.js App Router
+  src/components/reading/        正式阅读界面
+  src/modules/book/              书籍领域模型与读取合同
+  src/modules/reader-world/      事件、记忆、投影和 use case
+  src/modules/world/             配方、kernel、呈现和证据
+  tests/unit/                    领域与应用层回归测试
+  tests/e2e/                     浏览器用户路径
 ```
-
-依赖方向：`app/components` → `modules/*` → `domain`；`infrastructure` → `domain`。  
-禁止 domain 依赖 React/Next/fs。

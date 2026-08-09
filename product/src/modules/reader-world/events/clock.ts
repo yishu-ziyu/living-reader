@@ -29,10 +29,72 @@ let clockSource: ClockSource = defaultClock;
 let deviceIdSource: DeviceIdSource = defaultDeviceId;
 let metadataSource: MetadataSource = defaultMetadata;
 
-let lastPhysicalMs = -1;
-let lastLogical = -1;
+const lastHlcByDevice = new Map<string, HybridLogicalClock>();
 
 const CROCKFORD = "0123456789ABCDEFGHJKMNPQRSTVWXYZ";
+const CANONICAL_ULID_PATTERN = /^[0-7][0-9A-HJKMNP-TV-Z]{25}$/;
+const TEST_NAMESPACE_LENGTH = 8;
+const TEST_SEQUENCE_LENGTH = 8;
+
+export function isCanonicalUlid(value: unknown): value is string {
+  return typeof value === "string" && CANONICAL_ULID_PATTERN.test(value);
+}
+
+const DEVICE_ID_STORAGE_KEY = "living-reader.device-id.v1";
+let fallbackDeviceId: string | null = null;
+const HLC_WATERMARK_STORAGE_PREFIX = "living-reader.hlc-watermark.v1";
+
+function watermarkStorageKey(deviceId: string): string {
+  return `${HLC_WATERMARK_STORAGE_PREFIX}:${deviceId}`;
+}
+
+function isValidHlc(value: unknown): value is HybridLogicalClock {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return false;
+  const candidate = value as Record<string, unknown>;
+  return (
+    Number.isSafeInteger(candidate.physical_ms) &&
+    (candidate.physical_ms as number) >= 0 &&
+    Number.isSafeInteger(candidate.logical) &&
+    (candidate.logical as number) >= 0
+  );
+}
+
+function readPersistedHlc(deviceId: string): HybridLogicalClock | null {
+  try {
+    const raw = globalThis.localStorage?.getItem(watermarkStorageKey(deviceId));
+    if (!raw) return null;
+    const parsed: unknown = JSON.parse(raw);
+    return isValidHlc(parsed) ? parsed : null;
+  } catch {
+    return null;
+  }
+}
+
+function writePersistedHlc(
+  deviceId: string,
+  watermark: HybridLogicalClock,
+): void {
+  try {
+    globalThis.localStorage?.setItem(
+      watermarkStorageKey(deviceId),
+      JSON.stringify(watermark),
+    );
+  } catch {
+    // In-memory monotonicity remains available when browser storage is blocked.
+  }
+}
+
+function laterHlc(
+  left: HybridLogicalClock | undefined,
+  right: HybridLogicalClock | null,
+): HybridLogicalClock | null {
+  if (!left) return right;
+  if (!right) return left;
+  if (left.physical_ms !== right.physical_ms) {
+    return left.physical_ms > right.physical_ms ? left : right;
+  }
+  return left.logical >= right.logical ? left : right;
+}
 
 function encodeTime(time: number): string {
   let value = time;
@@ -42,6 +104,42 @@ function encodeTime(time: number): string {
     value = Math.floor(value / 32);
   }
   return encoded;
+}
+
+function encodeCrockford(value: number, length: number): string {
+  if (!Number.isSafeInteger(value) || value < 0) {
+    throw new Error("Crockford value must be a non-negative safe integer");
+  }
+  let remaining = value;
+  let encoded = "";
+  for (let i = 0; i < length; i += 1) {
+    encoded = CROCKFORD[remaining % 32]! + encoded;
+    remaining = Math.floor(remaining / 32);
+  }
+  if (remaining !== 0) {
+    throw new Error(`Crockford value does not fit ${length} characters`);
+  }
+  return encoded;
+}
+
+function encodeUlidTime(time: number): string {
+  if (!Number.isSafeInteger(time) || time < 0 || time >= 2 ** 48) {
+    throw new Error("ULID timestamp must fit unsigned 48 bits");
+  }
+  return encodeTime(time);
+}
+
+function hashTestNamespace(namespace: string): number {
+  let hash = 0x811c9dc5;
+  for (let i = 0; i < namespace.length; i += 1) {
+    hash ^= namespace.charCodeAt(i);
+    hash = Math.imul(hash, 0x01000193);
+  }
+  return hash >>> 0;
+}
+
+export function createSequentialUlid(time: number, sequence: number): string {
+  return `${encodeUlidTime(time)}${encodeCrockford(sequence, 16)}`;
 }
 
 function randomIndex(): number {
@@ -78,7 +176,21 @@ export function setClockSource(fn: ClockSource | null): void {
 }
 
 export function defaultDeviceId(): string {
-  return "local-device";
+  try {
+    const storage = globalThis.localStorage;
+    if (!storage) {
+      fallbackDeviceId ??= `device_${defaultId()}`;
+      return fallbackDeviceId;
+    }
+    const stored = storage.getItem(DEVICE_ID_STORAGE_KEY)?.trim();
+    if (stored) return stored;
+    const created = `device_${defaultId()}`;
+    storage.setItem(DEVICE_ID_STORAGE_KEY, created);
+    return created;
+  } catch {
+    fallbackDeviceId ??= `device_${defaultId()}`;
+    return fallbackDeviceId;
+  }
 }
 
 export function setDeviceIdSource(fn: DeviceIdSource | null): void {
@@ -90,8 +202,7 @@ export function setMetadataSource(fn: MetadataSource | null): void {
 }
 
 export function resetHybridLogicalClock(): void {
-  lastPhysicalMs = -1;
-  lastLogical = -1;
+  lastHlcByDevice.clear();
 }
 
 export function defaultMetadata(
@@ -103,19 +214,23 @@ export function defaultMetadata(
     throw new Error("recorded_at must be a valid RFC3339 timestamp");
   }
 
-  if (observedPhysicalMs > lastPhysicalMs) {
-    lastPhysicalMs = observedPhysicalMs;
-    lastLogical = 0;
-  } else {
-    lastLogical += 1;
-  }
-  if (!Number.isSafeInteger(lastLogical)) {
+  const previous = laterHlc(
+    lastHlcByDevice.get(deviceId),
+    readPersistedHlc(deviceId),
+  );
+  const hlc =
+    previous && observedPhysicalMs <= previous.physical_ms
+      ? {
+          physical_ms: previous.physical_ms,
+          logical: previous.logical + 1,
+        }
+      : { physical_ms: observedPhysicalMs, logical: 0 };
+  if (!Number.isSafeInteger(hlc.logical)) {
     throw new Error("HLC logical counter exceeded safe integer range");
   }
-  return {
-    hlc: { physical_ms: lastPhysicalMs, logical: lastLogical },
-    device_id: deviceId,
-  };
+  lastHlcByDevice.set(deviceId, hlc);
+  writePersistedHlc(deviceId, hlc);
+  return { hlc, device_id: deviceId };
 }
 
 export function nextMessageId(): string {
@@ -159,7 +274,12 @@ export function installTestSources(options?: {
   let n = 0;
   const prefix = options?.idPrefix ?? "msg_test_";
   const fixed = options?.fixedTime ?? "2026-08-08T12:00:00.000Z";
-  setIdSource(() => `${prefix}${++n}`);
+  const timestamp = encodeUlidTime(Date.parse(fixed));
+  // Preserve idPrefix as a deterministic namespace; canonical ULIDs cannot expose it verbatim.
+  const namespace = encodeCrockford(hashTestNamespace(prefix), TEST_NAMESPACE_LENGTH);
+  setIdSource(
+    () => `${timestamp}${namespace}${encodeCrockford(++n, TEST_SEQUENCE_LENGTH)}`,
+  );
   setClockSource(() => fixed);
   setDeviceIdSource(() => options?.deviceId ?? "local-device");
   setMetadataSource(null);

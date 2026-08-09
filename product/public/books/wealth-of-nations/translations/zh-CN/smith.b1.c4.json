@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "locale": "zh-CN",
+  "chapterId": "smith.b1.c4",
+  "translations": [
+    {
+      "sourceId": "smith.b1.c4.p1",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_259"
+      },
+      "contentHash": "08b92453103331b7942d9f38c52b4d1477f9b2ab9079b7416bf1033c6f0c1662",
+      "text": "一旦劳动分工得到充分确立，一个人自身劳动的产物所能满足的，就只是其需要中很小的一部分。他把自己劳动产物中超过自身消费的剩余部分，换取自己所需要的他人劳动产物，从而满足其需要中大得多的部分。这样，每个人都靠交换生活，或者说在某种程度上都成了商人，而社会本身也就逐渐成为严格意义上的商业社会。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c4.p2",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_260"
+      },
+      "contentHash": "e803b836f4a3f0cd5637abb459a624332eca3f4fd0ca4cd0e2081ad24371bc65",
+      "text": "但是，在劳动分工刚开始形成时，这种交换能力的运用必定经常受到很大的阻碍和困扰。假定一个人拥有的某种商品超过了他自己的需要，而另一个人拥有的却少于自己的需要。因此，前者乐于出让一部分余物，后者也乐于购买。但如果后者碰巧没有前者所需要的东西，他们之间便无法进行交换。肉商店里的肉多于他自己所能消费的数量，而酿酒商和面包师也都愿意购买一部分。但他们除了各自行业的不同产品之外，没有别的东西可供交换，而肉商眼下所需要的面包和啤酒又都已经齐备。在这种情况下，他们之间便无法进行交换。肉商不能成为他们的商人，他们也不能成为肉商的顾客；因此，他们彼此对对方都不那么有用了。为了避免这种处境所带来的不便，自劳动分工最初确立以后，在社会的每一个时期，每个谨慎的人自然都必定力求这样安排自己的事务：除自身行业的特有产品外，还随时备有一定数量的某一种商品，因为他认为，几乎没有人会拒绝用自己行业的产品来换取这种商品。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c4.p3",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_261"
+      },
+      "contentHash": "dda3343ec1c6a973fb24b8508e2de3dbddba68a7ea15737023e4feb73320e224",
+      "text": "很可能，人们曾先后想到并采用许多不同的商品来达到这个目的。据说，在社会的粗陋时代，牲畜是通行的商业媒介；尽管它必定是一种极为不便的媒介，我们却发现，在古代，物品的价值往往按照为换取它们而交付的牲畜头数来计算。荷马说，狄俄墨得斯的铠甲只值九头牛，而格劳科斯的铠甲却值一百头牛。据说，盐是阿比西尼亚通行的商业和交换媒介；印度沿海某些地区使用一种贝壳；纽芬兰使用鳕鱼干；弗吉尼亚使用烟草；我国西印度群岛的一些殖民地使用糖；另一些国家则使用兽皮或熟皮。据人告诉我，直到今天，苏格兰还有一个村庄，工匠拿钉子而不是钱去面包店或麦酒馆，并不罕见。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c4.p4",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_262"
+      },
+      "contentHash": "f603579cc82f0a7bff977b1e0e69bd3a10b5c55c3e37b3026d3807a1bdb14583",
+      "text": "然而，在所有国家，人们似乎最终都由于不可抗拒的理由，决定在这一用途上优先采用金属，而不是其他任何商品。金属不仅可以像任何其他商品一样以极少的损耗保存，因为几乎没有什么东西比它们更不易腐坏；而且还可以毫无损耗地分割成任意数量的部分，并且通过熔化又很容易把这些部分重新合在一起。这是其他同样耐久的商品都不具备的性质，而这种性质比其他任何性质都更使金属适宜充当商业和流通的媒介。例如，一个想买盐而只有牲畜可供交换的人，必定不得不一次购买价值一整头牛或一整只羊的盐。他很少能购买比这更少的盐，因为他用来支付的东西很少能毫无损失地分割；如果他想购买更多的盐，出于同样的理由，也必定不得不购买两倍或三倍的数量，也就是说，价值两三头牛或两三只羊的盐。相反，如果他可供交换的不是羊或牛，而是金属，他便可以很容易地使金属的数量与他眼下所需要的商品的确切数量相称。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c4.p5",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_263"
+      },
+      "contentHash": "648ccc0d1d42f20625cdab52297721fa5659fcc1d7dab7d59f8750744c0526ec",
+      "text": "不同民族曾使用不同的金属来达到这个目的。古代斯巴达人以铁作为通行的商业媒介；古代罗马人以铜作为通行的商业媒介；所有富裕的商业民族则以金银作为通行的商业媒介。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c4.p6",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_264"
+      },
+      "contentHash": "60b0afc6534a89f623faac68976b2021a022b49e48f1aa64a1a6440107ba5c67",
+      "text": "这些金属最初用于这一目的时，似乎采用的是没有任何印记或铸造加工的粗陋金属条。据古代历史学家蒂迈欧斯所述，普林尼告诉我们，直到塞尔维乌斯·图利乌斯时代，罗马人还没有铸币，而是使用没有印记的铜条购买他们所需要的一切。因此，当时这些粗陋的金属条履行着货币的职能。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c4.p7",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_265"
+      },
+      "contentHash": "fba2ac9b2663c056756e33d3b36df384d70c9d173857f678aa66c4be956b4698",
+      "text": "使用这种粗陋形态的金属伴随着两种很大的不便：第一是称量的麻烦，第二是检验成色的麻烦。对于贵金属而言，数量上的微小差异就会造成价值上的巨大差异，因此，即使只是以适当的精确度称量，至少也需要非常精确的砝码和天平。尤其是称量黄金，更是一项需要几分精细的操作。诚然，对于较粗贱的金属，微小的误差不会造成多大后果，无疑也就不需要那么精确。但是，如果一个穷人每次需要买卖价值四分之一便士的货物时，都不得不称量价值四分之一便士的金属，我们就会觉得这麻烦到了极点。检验成色的操作更加困难，也更加烦琐；除非在坩埚中加入适当的溶剂，把一部分金属彻底熔化，否则从检验中得出的任何结论都极不可靠。然而，在铸币制度创立以前，除非人们完成这种烦琐而困难的操作，否则就必定始终有可能遭受最恶劣的欺诈和蒙骗；他们拿自己的货物交换所得的，可能不是一磅纯银或纯铜，而是一种由最粗劣、最廉价的材料掺杂而成，但外表却被做得与那些金属相似的混合物。为防止这种弊端、便利交换，并由此鼓励各种行业和商业，所有在改良方面取得任何显著进步的国家都发现，有必要在本国通常用来购买货物的某些特定金属的一定数量上加盖公共印记。铸币以及被称为造币厂的公共机构便由此产生；这些机构的性质与毛织品和麻织品的验布官及盖印官制度完全相同。它们都同样旨在通过公共印记，确定这些不同商品在运到市场时的数量和统一成色。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c4.p8",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_266"
+      },
+      "contentHash": "ac3bb137fc984d419c55b73b6f4c8a214df9080f02d96dcc003921596642d364",
+      "text": "最早加盖在流通金属上的这类公共印记，在许多情况下似乎是为了确定最难确定、同时也最重要的事项，即金属的成色或纯度；这些印记似乎类似于目前加盖在银器和银条上的标准纯银印记，或有时加盖在金锭上的西班牙印记。这种印记只打在金属块的一面，并不覆盖整个表面，因而只能确定金属的纯度，不能确定其重量。亚伯拉罕称给以弗仑四百舍客勒银子，这是他约定为麦比拉那块田地支付的价款。不过，这些银子据说是商人通用的货币，但收取时仍按重量而不按枚数，正如目前收取金锭和银条一样。据说，古代英格兰撒克逊国王的岁入不是以货币支付，而是以实物支付，也就是说，以各种食物和给养支付。征服者威廉引入了用货币支付的惯例。然而，在此后很长一段时间内，国库收取这种货币时仍按重量而不按枚数。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c4.p9",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_267"
+      },
+      "contentHash": "eed54c7601b5e4f7137db2c5cda10325d0ce147f9f7d34e77d19430d29880e87",
+      "text": "精确称量这些金属既不方便又很困难，这促成了铸币制度的建立。铸币上的印记完全覆盖金属块的正反两面，有时还覆盖边缘，人们认为这种印记不仅能确定金属的纯度，也能确定其重量。因此，这类铸币像现在一样按枚数收取，无须称量。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c4.p10",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_268"
+      },
+      "contentHash": "afe1f0c9a489b5b333656f34aaa54b5e35f50e7d47a34bb98cbbc1b1a7e8fdcf",
+      "text": "这些铸币的名称，最初似乎表示其中所含金属的重量或数量。在最早于罗马铸造货币的塞尔维乌斯·图利乌斯时代，罗马的阿斯或庞多含有一罗马磅的优质铜。它与我们的特鲁瓦磅一样，分为十二盎司，每一份都实际含有一盎司优质铜。爱德华一世时代的英格兰英镑，含有按塔磅制计算的一磅具有已知纯度的白银。塔磅似乎略重于罗马磅，又略轻于特鲁瓦磅。直到亨利八世在位第十八年，特鲁瓦磅才被引入英格兰造币厂。查理曼时代的法国里弗尔，含有按特鲁瓦衡制计算的一磅具有已知纯度的白银。当时，欧洲所有民族都有人前往香槟的特鲁瓦集市，因而这个著名市场使用的度量衡也广为人知，并受人重视。从亚历山大一世时代到罗伯特·布鲁斯时代，苏格兰的货币镑所含白银，在重量和纯度上都与英格兰英镑所含的一磅白银相同。英格兰、法国和苏格兰的便士最初也都实际含有一便士重的白银，即一盎司的二十分之一和一磅的二百四十分之一。先令最初似乎也是一个重量名称。亨利三世时代的一项古老法令说，当小麦每夸特值十二先令时，价值四分之一便士的上等白面包应重十一先令四便士。然而，先令与便士之间或先令与镑之间的比例，似乎不如便士与镑之间的比例那样恒定和统一。在法国第一代王朝统治期间，法国的苏或先令在不同场合似乎曾分别包含五、十二、二十和四十便士。在古代撒克逊人中，先令有一个时期似乎只包含五便士；它在他们中间很可能和在其邻人古代法兰克人中间一样多变。从查理曼时代起，在法国人中间，以及从征服者威廉时代起，在英格兰人中间，镑、先令和便士之间的比例似乎一直与现在相同，尽管每一种货币的价值已有很大不同。因为我相信，在世界每一个国家，君主和主权国家都曾滥用臣民对他们的信任，出于贪婪和不义，逐渐减少其铸币中原来所含金属的实际数量。共和国后期的罗马阿斯被减至原始价值的二十四分之一，其重量不再是一磅，而只有半盎司。英格兰的镑和便士目前所含金属仅约为其原始数量的三分之一；苏格兰的镑和便士约为三十六分之一；法国的镑和便士约为六十六分之一。通过这些做法，实行它们的君主和主权国家表面上能够用比原本所需更少的白银偿付债务、履行契约。但这确实只是表面如此，因为债权人实际上被欺骗，失去了应得款项的一部分。国家中其他所有债务人也获准享有同样的特权，可以用数额相同的新劣币所代表的名义金额，偿还他们以旧币借入的一切。因此，这类做法总是有利于债务人，却给债权人带来毁灭；有时，它们给私人财产状况造成的变动，比一场极大的公共灾难所能引起的变动更大、更普遍。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c4.p11",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_269"
+      },
+      "contentHash": "fabc0222c15584da8f3aefdd94500dc74a02f672f5aa54effa477c5d4e528e04",
+      "text": "正是通过这种方式，货币在所有文明国家都成了普遍的商业媒介；借助货币，各种货物得以买卖，或彼此交换。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c4.p12",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_270"
+      },
+      "contentHash": "25036c25923bef510d4713f90e0a00dc09317a0b5b0980571c04d2151eac4b2d",
+      "text": "现在，我将着手考察人们在用货物交换货币或彼此交换货物时自然遵循的规则。这些规则决定了可以称为货物的相对价值或交换价值的东西。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c4.p13",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_271"
+      },
+      "contentHash": "feb15d2eab78c55b6e01495cac3e22c21c902ebb059e37d2517fc87ca19d9b5c",
+      "text": "应当注意，“价值”一词有两种不同的含义：它有时表示某一特定物品的效用，有时表示占有该物品所带来的购买其他货物的能力。前者可以称为“使用价值”，后者可以称为“交换价值”。使用价值最大的东西，往往很少有交换价值，甚至根本没有交换价值；相反，交换价值最大的东西，往往很少有使用价值，甚至根本没有使用价值。没有什么比水更有用；但水几乎买不到任何东西，也几乎换不到任何东西。相反，钻石几乎没有任何使用价值；但用它往往可以换取大量其他货物。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c4.p14",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_272"
+      },
+      "contentHash": "0b6f9c1df18a30df38a73e327f6004730b71e5acf9a781b0b2a9e2487299c138",
+      "text": "为了探究调节商品交换价值的原则，我将努力说明：",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c4.p15",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_273"
+      },
+      "contentHash": "93379f9f2a3f97ccc2d8034a590ed75266e6bee01de38e5a666fd698212e1a82",
+      "text": "第一，这种交换价值的真实尺度是什么；或者说，一切商品的真实价格由什么构成。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c4.p16",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_274"
+      },
+      "contentHash": "38fa97731a62b33c1b1668e5c1a2d8d9b9fd1cdf70278ed5192f5aa6e729d858",
+      "text": "第二，这种真实价格由哪些不同部分构成或组成。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c4.p17",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_275"
+      },
+      "contentHash": "0510f5b9130b2d4af0157e26aee8124a8a4e4b89333870f7f1fdd1bf5c478f7f",
+      "text": "最后，哪些不同情形有时会使价格的某些部分或全部部分升至其自然或通常水平之上，有时又会使它们降至其自然或通常水平之下；或者说，哪些原因有时会妨碍市场价格，即商品的实际价格，与可以称为其自然价格的价格完全一致。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c4.p18",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_276"
+      },
+      "contentHash": "c7d34a9958ce35437bc78a6858c7617de605b753ee9478e2f9fcd3c36eac30c3",
+      "text": "我将在以下三章中，尽我所能充分而清楚地解释这三个问题。为此，我必须十分恳切地请求读者既有耐心，又集中注意力：需要他的耐心，是为了考察一番细节，其中有些地方或许显得不必要地烦琐；需要他的注意力，是为了理解这样一个问题：即使我已经尽我所能作了最充分的解释，它也许仍会显得有几分晦涩。为了确保自己表达清楚，我总是愿意冒几分烦琐的风险；而且，即使我为表达清楚已竭尽全力，一个本质上极为抽象的问题也仍可能显得留有一些晦涩之处。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    }
+  ]
+}

@@ -48,6 +48,7 @@ function turn(
     },
     invitation_basis: null,
     recent_turns: [],
+    invited_question_keys: [],
     pending_intent: null,
     ...overrides,
   };
@@ -55,12 +56,21 @@ function turn(
 
 type StrictCandidate = Omit<
   AgentTurnCandidate,
-  "intent_class" | "open_question" | "proposed_action_id" | "pending_action_id"
+  | "intent_class"
+  | "open_question"
+  | "proposed_action_id"
+  | "pending_action_id"
+  | "recipe_id"
+  | "trigger_question"
+  | "reason"
 > & {
-  intent_class: NonNullable<AgentTurnCandidate["intent_class"]>;
-  open_question: null;
-  proposed_action_id: NonNullable<AgentTurnCandidate["proposed_action_id"]>;
-  pending_action_id: null;
+  intent_class: NonNullable<AgentTurnCandidate["intent_class"]> | null;
+  open_question: string | null;
+  proposed_action_id: NonNullable<AgentTurnCandidate["proposed_action_id"]> | null;
+  pending_action_id: NonNullable<AgentTurnCandidate["pending_action_id"]> | null;
+  recipe_id: string | null;
+  trigger_question: string | null;
+  reason: string | null;
 };
 
 function candidate(companionLine: string): StrictCandidate {
@@ -76,6 +86,28 @@ function candidate(companionLine: string): StrictCandidate {
     proposed_action_id: "expand_market",
     pending_action_id: null,
     reason_codes: ["clear_action"],
+    recipe_id: null,
+    trigger_question: null,
+    reason: null,
+  };
+}
+
+function invitationCandidate(): StrictCandidate {
+  return {
+    mode: "invite_world",
+    intent_class: "source_question",
+    relevance: "mechanism_adjacent",
+    confidence: "high",
+    target_source_ids: [source.source_id],
+    evidence_refs: [],
+    open_question: null,
+    companion_line: "这一步放进世界里看，会更清楚。",
+    proposed_action_id: null,
+    pending_action_id: null,
+    recipe_id: "smith.b1.market-extent.v1",
+    trigger_question: "市场扩大后，分工会怎样变化？",
+    reason: "这个问题需要对比市场扩大前后的材料流。",
+    reason_codes: ["world_explains_mechanism"],
   };
 }
 
@@ -135,7 +167,7 @@ function runtimeRequest(
 }
 
 describe("T030 ReadingAgentRegistry", () => {
-  test("keeps one Agent workset per experience while source context stays transient", async () => {
+  test("creates a fresh Agent per turn and carries continuity only in sealed input", async () => {
     const contexts: Array<{
       roles: string[];
       texts: string[];
@@ -185,14 +217,81 @@ describe("T030 ReadingAgentRegistry", () => {
       name: "propose_candidate",
     });
     expect(contexts[0]?.texts.join("\n")).toContain(source.quote);
-    expect(contexts[1]?.roles).toContain("toolResult");
-    expect(contexts[1]?.texts.join("\n")).toContain("first");
+    expect(contexts[1]?.roles).not.toContain("toolResult");
+    expect(contexts[1]?.texts.join("\n")).not.toContain("first");
+    expect(contexts[1]?.texts.join("\n")).toContain("先看看市场。");
     expect(contexts[2]?.roles).not.toContain("toolResult");
     expect(contexts[2]?.texts.join("\n")).not.toContain("first");
-    expect(registry.sessionCount).toBe(2);
   });
 
-  test("rejects overlapping turns for one experience instead of interleaving them", async () => {
+  test("isolates concurrent turns that share a client experience id", async () => {
+    let call = 0;
+    const registry = new ReadingAgentRegistry({
+      streamFn: () => candidateStream(candidate(`isolated-${++call}`)),
+      getApiKey: () => "test-key",
+    });
+
+    const [first, second] = await Promise.all([
+      registry.run(runtimeRequest("shared-experience")),
+      registry.run(
+        runtimeRequest("shared-experience", {
+          turn_id: "turn-shared-experience-2",
+          final_text: "另一个读者的同时请求",
+        }),
+      ),
+    ]);
+
+    expect([first.companion_line, second.companion_line].sort()).toEqual([
+      "isolated-1",
+      "isolated-2",
+    ]);
+  });
+
+  test("passes invitation authority and active recipes into the transient turn", async () => {
+    let observedContext = "";
+    const registry = new ReadingAgentRegistry({
+      streamFn: (_model, context) => {
+        observedContext = JSON.stringify(context.messages);
+        return candidateStream(invitationCandidate());
+      },
+      getApiKey: () => "test-key",
+    });
+    const sourceSnapshotId = deriveAgentTurnSourceSnapshotId(
+      source.source_id,
+      source.content_hash,
+    );
+
+    await expect(
+      registry.run(
+        runtimeRequest("exp-invite", {
+          final_text: "市场扩大后分工会怎样？让我操作看看。",
+          world_basis: null,
+          invitation_basis: {
+            experience_id: "exp-invite",
+            graph_revision: 2,
+            relation_id: "relation-1",
+            relation_basis_revision: 2,
+            accepted_relation_ids: ["relation-1"],
+            source_snapshot_id: sourceSnapshotId,
+          },
+          relationship_context: {
+            current_chapter_id: "smith.b1.c3",
+            memories: [],
+            active_recipe_ids: ["smith.b1.market-extent.v1"],
+            invited_question_keys: [],
+          },
+        }),
+      ),
+    ).resolves.toMatchObject({
+      mode: "invite_world",
+      recipe_id: "smith.b1.market-extent.v1",
+      trigger_question: "市场扩大后，分工会怎样变化？",
+    });
+    expect(observedContext).toContain('\\"invitation_available\\":true');
+    expect(observedContext).toContain("smith.b1.market-extent.v1");
+  });
+
+  test("isolates an aborted turn from an overlapping turn with the same experience id", async () => {
     const streamStarted = Promise.withResolvers<void>();
     let activeSignal: AbortSignal | undefined;
     const observedContexts: string[] = [];
@@ -200,7 +299,7 @@ describe("T030 ReadingAgentRegistry", () => {
     const streamFn: StreamFn = (_model, context, options) => {
       calls += 1;
       observedContexts.push(JSON.stringify(context.messages));
-      if (calls > 1) return candidateStream(candidate("recovered"));
+      if (calls > 1) return candidateStream(candidate("isolated-success"));
       activeSignal = options?.signal;
       const stream = createAssistantMessageEventStream();
       queueMicrotask(() => {
@@ -217,24 +316,20 @@ describe("T030 ReadingAgentRegistry", () => {
     const first = registry.run(runtimeRequest("exp-busy"), controller.signal);
     await streamStarted.promise;
 
-    await expect(registry.run(runtimeRequest("exp-busy"))).rejects.toMatchObject({
-      code: "agent_turn_provider_unavailable",
-      status: 409,
-    } satisfies Partial<AgentTurnProviderError>);
+    await expect(
+      registry.run(
+        runtimeRequest("exp-busy", {
+          turn_id: "turn-concurrent",
+          final_text: "另一个读者的同时请求",
+        }),
+      ),
+    ).resolves.toMatchObject({ companion_line: "isolated-success" });
 
     controller.abort("generation superseded");
     await expect(first).rejects.toMatchObject({
       code: "agent_turn_provider_unavailable",
     } satisfies Partial<AgentTurnProviderError>);
     expect(activeSignal?.aborted).toBe(true);
-    await expect(
-      registry.run(
-        runtimeRequest("exp-busy", {
-          turn_id: "turn-retry",
-          final_text: "重试成功",
-        }),
-      ),
-    ).resolves.toMatchObject({ companion_line: "recovered" });
     expect(observedContexts[1]).not.toContain("修条路，把货卖到隔壁城去");
   });
 });
@@ -265,6 +360,9 @@ describe("T030 Bun runtime HTTP handler", () => {
         ...candidate("runtime-ok"),
         open_question: undefined,
         pending_action_id: undefined,
+        recipe_id: undefined,
+        trigger_question: undefined,
+        reason: undefined,
       },
     });
   });

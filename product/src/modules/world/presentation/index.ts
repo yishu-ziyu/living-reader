@@ -13,6 +13,10 @@ export { compilePresentation } from "./compile";
 export type {
   CompilePresentationInput,
   PresentationEntity,
+  PresentationAction,
   PresentationPlan,
+  PresentationFlow,
+  PresentationSource,
+  PresentationStock,
   PresentationTimelineStep,
 } from "./types";

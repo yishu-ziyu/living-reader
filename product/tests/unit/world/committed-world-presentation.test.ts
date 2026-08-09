@@ -25,6 +25,10 @@ const MARKET_SOURCE_ID = "smith.b1.c3.market_extent";
 const RULESET_ID = "wool-town-v1";
 const RECORDED_AT = "2026-08-09T08:00:00.000Z";
 
+function canonicalMessageId(streamVersion: number): string {
+  return `01K25V2J${String(streamVersion).padStart(18, "0")}`;
+}
+
 const DIVISION_EVIDENCE = [
   `source:${DIVISION_SOURCE_ID}`,
   "locator:oll:fragment:Smith_0206-01_235",
@@ -94,7 +98,7 @@ function committedStream(): DomainEvent[] {
     stored(1, 0, {
       ...common,
       message_name: "reader_world.reader_idea.proposed.v1",
-      message_id: "idea-division",
+      message_id: canonicalMessageId(1),
       payload: {
         idea_id: "idea_division",
         idea_kind: "observation",
@@ -108,7 +112,7 @@ function committedStream(): DomainEvent[] {
     stored(2, 0, {
       ...common,
       message_name: "reader_world.reader_idea.proposed.v1",
-      message_id: "idea-market",
+      message_id: canonicalMessageId(2),
       payload: {
         idea_id: "idea_market",
         idea_kind: "observation",
@@ -122,7 +126,7 @@ function committedStream(): DomainEvent[] {
     stored(3, 0, {
       ...common,
       message_name: "reader_world.relation.proposed.v1",
-      message_id: "relation-proposed",
+      message_id: canonicalMessageId(3),
       payload: {
         relation_id: RELATION_ID,
         from_id: "idea_division",
@@ -135,7 +139,7 @@ function committedStream(): DomainEvent[] {
     stored(4, 0, {
       ...common,
       message_name: "reader_world.relation.reviewed.v1",
-      message_id: "relation-accepted",
+      message_id: canonicalMessageId(4),
       payload: {
         relation_id: RELATION_ID,
         decision: "accepted",
@@ -146,7 +150,7 @@ function committedStream(): DomainEvent[] {
     stored(5, 1, {
       ...common,
       message_name: "reader_world.graph.committed.v1",
-      message_id: "graph-committed",
+      message_id: canonicalMessageId(5),
       causation_id: "relation-accepted",
       payload: {
         graph_revision: 1,
@@ -157,7 +161,7 @@ function committedStream(): DomainEvent[] {
     stored(6, 0, {
       ...common,
       message_name: "reader_world.world.seeded.v1",
-      message_id: "world-seeded",
+      message_id: canonicalMessageId(6),
       payload: {
         world_id: WORLD_ID,
         graph_revision: 1,
@@ -174,7 +178,7 @@ function committedStream(): DomainEvent[] {
       stored(7 + index, index, {
         ...common,
         message_name: "reader_world.world.event_recorded.v1",
-        message_id: `world-event-${actor_id}`,
+        message_id: canonicalMessageId(7 + index),
         payload: {
           world_id: WORLD_ID,
           world_revision: 1,
@@ -272,10 +276,10 @@ describe("T010 committed world presentation", () => {
       cash: 28,
     });
     expect(presentation.events.map((event) => event.message_id)).toEqual([
-      "world-event-merchant",
-      "world-event-shepherd",
-      "world-event-spinner",
-      "world-event-weaver",
+      canonicalMessageId(7),
+      canonicalMessageId(8),
+      canonicalMessageId(9),
+      canonicalMessageId(10),
     ]);
     expect(presentation.roles.map((role) => role.actor_id)).toEqual([
       "merchant",
@@ -307,10 +311,10 @@ describe("T010 committed world presentation", () => {
       source_ids: [DIVISION_SOURCE_ID, MARKET_SOURCE_ID],
       evidence_refs: RELATION_EVIDENCE,
       event_message_ids: [
-        "world-event-merchant",
-        "world-event-shepherd",
-        "world-event-spinner",
-        "world-event-weaver",
+        canonicalMessageId(7),
+        canonicalMessageId(8),
+        canonicalMessageId(9),
+        canonicalMessageId(10),
       ],
     });
     expect(presentation.model_extension).toEqual({

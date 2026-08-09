@@ -28,7 +28,7 @@ test.describe("T004 ReaderSession", () => {
   test("initial reading + closed world; guards; happy open; stop/stale", async ({
     page,
   }) => {
-    await page.goto("/");
+    await page.goto("/test-harness");
     await expect(page.getByTestId("reading-shell")).toBeVisible();
     await expect(page.getByTestId("session-root")).toHaveAttribute(
       "data-session-state",
@@ -142,7 +142,7 @@ test.describe("T004 ReaderSession", () => {
   test("F27: playable/open → switch source → reading + closed/hidden + world_id null", async ({
     page,
   }) => {
-    await page.goto("/");
+    await page.goto("/test-harness");
     await waitForSessionBridge(page);
 
     // Split evaluates so bridge React context refreshes after WORLD_OPEN (corr/gen).
@@ -226,7 +226,7 @@ test.describe("T004 ReaderSession", () => {
   test("homepage SourceBlocks and closed world still present", async ({
     page,
   }) => {
-    await page.goto("/");
+    await page.goto("/test-harness");
     await expect(page.getByTestId("reading-shell")).toBeVisible();
     await expect(page.getByTestId("source-block-division")).toBeVisible();
     await expect(page.getByTestId("world-slot")).toHaveAttribute(

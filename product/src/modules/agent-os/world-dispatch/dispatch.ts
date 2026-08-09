@@ -4,6 +4,7 @@ import { canonicalize } from "@/modules/world/domain/canonicalize";
 import { compileReviewedRecipe } from "@/modules/world/recipe";
 import { createWoolTownBaseline } from "@/modules/world/fixtures/wool-town/baseline";
 import { decide } from "@/modules/world/kernel/decide";
+import { nextMessageId } from "@/modules/reader-world/events/clock";
 import type { DomainEvent, DomainEventDraft } from "@/modules/reader-world/events/envelope";
 import { validateEventPayload } from "@/modules/reader-world/events/payload-schema";
 import type {
@@ -29,7 +30,6 @@ import type {
   WorldEventDraftFactoryInput,
 } from "./types";
 
-const MESSAGE_NAMESPACE = "reader_world.world_dispatch.v1";
 const WORLD_EVENT_NAME = "reader_world.world.event_recorded.v1" as const;
 const METRIC_KEYS = ["supply", "inventory", "demand", "cash"] as const;
 const LEGACY_WORLD_ACTION_IDS: readonly WorldCommand["action"][] = [
@@ -489,31 +489,10 @@ function rebuildAuthoritativeWorld(
   return ok({ state, groups, action_ids: seed.action_ids });
 }
 
-export function stableWorldDispatchMessageId(input: {
-  experience_id: string;
-  turn_id: string;
-  command: WorldCommand;
-  index: number;
-}): string {
-  const part = (value: string | number): string => encodeURIComponent(String(value));
-  return [
-    MESSAGE_NAMESPACE,
-    `experience=${part(input.experience_id)}`,
-    `turn=${part(input.turn_id)}`,
-    `action=${part(input.command.action)}`,
-    `world=${part(input.command.world_id)}`,
-    `graph=${part(input.command.graph_revision)}`,
-    `world_revision=${part(input.command.expected_world_revision)}`,
-    `ruleset=${part(input.command.ruleset_id)}`,
-    `index=${part(input.index)}`,
-  ].join(":");
-}
-
 function expectedDraftInput(
   input: DispatchWorldActionInput,
   spec: KernelEventSpec,
   nextState: WorldState,
-  index: number,
 ): WorldEventDraftFactoryInput {
   return {
     message_name: WORLD_EVENT_NAME,
@@ -526,12 +505,7 @@ function expectedDraftInput(
       authority: "system",
       integrity: "local",
     },
-    message_id: stableWorldDispatchMessageId({
-      experience_id: input.command.experience_id,
-      turn_id: input.turn_id,
-      command: input.command,
-      index,
-    }),
+    message_id: nextMessageId(),
     payload: {
       world_id: input.command.world_id,
       world_revision: nextState.world_revision,
@@ -554,7 +528,7 @@ async function createDrafts(
       // The injected factory is trusted; EventStore validates the finished draft once.
       drafts.push(
         await input.draft_factory(
-          expectedDraftInput(input, specs[index]!, nextState, index),
+          expectedDraftInput(input, specs[index]!, nextState),
         ),
       );
     }
@@ -782,6 +756,7 @@ export async function dispatchWorldAction(
   }
   return committedGroupReceipt(group, { duplicate: committed.duplicate });
 }
+
 
 export function createWorldDispatchPort(
   config: WorldDispatchPortConfig,

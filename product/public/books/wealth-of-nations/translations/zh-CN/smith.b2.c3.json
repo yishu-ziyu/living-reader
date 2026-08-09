@@ -1,0 +1,680 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "locale": "zh-CN",
+  "chapterId": "smith.b2.c3",
+  "translations": [
+    {
+      "sourceId": "smith.b2.c3.p1",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_986"
+      },
+      "contentHash": "b6c9e950339a86d9b8f69edae7385d1407e963832be44185155116d505187e31",
+      "text": "有一种劳动能增加其所施加对象的价值；另有一种劳动则没有这种效果。前者由于创造了价值，可以称为生产性劳动；后者则可称为非生产性劳动。因此，制造业工人的劳动通常会在他所加工的材料的价值上，增加相当于他自身生活费用和雇主利润的价值。相反，仆役的劳动并不增加任何东西的价值。制造业工人的工资虽由雇主预付给他，但实际上并未给雇主造成任何费用，因为这些工资的价值通常会连同一笔利润，一并从其劳动对象增加的价值中得到补偿。可是，供养仆役的费用永远无法收回。一个人雇用大批制造业工人，便会致富；供养大批仆役，则会变穷。不过，后一种人的劳动也有其价值，也同前一种人的劳动一样应当获得报酬。但是，制造业工人的劳动固定并实现在某个特定对象或可出售的商品中，至少在劳动结束后还能存在一段时间。它仿佛是储存和积蓄起来的一定数量的劳动，必要时可在别的场合使用。这个对象，或者说同一回事，这个对象的价格，日后必要时可以推动与最初生产它时所用数量相等的劳动。相反，仆役的劳动并不固定或实现在任何特定对象或可出售的商品中。他的服务通常在提供的那一瞬间便消失了，很少留下任何痕迹或价值，使人日后可以凭此取得等量的服务。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p2",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_987"
+      },
+      "contentHash": "0cbde0cb0c203b454440f7b4a5f9e4b80cfbd14a15a84fe6b40e6fb7f2aafc06",
+      "text": "社会中某些最受尊敬阶层的劳动，也像仆役的劳动一样，不生产任何价值，也不固定或实现在任何持久的对象或可出售的商品中；这种对象或商品能在劳动结束后继续存在，并可在日后换取等量的劳动。例如，君主以及在他手下任职的所有司法和军事官员，整个陆军和海军，都是非生产性劳动者。他们是公众的仆人，由其他人的勤劳所创造的年产物的一部分供养。无论他们的服务多么光荣、多么有用或多么必要，都不会生产出任何日后可以换取等量服务的东西。国家的保护、安全和防卫，是他们今年劳动的成果，却不能购买国家来年的保护、安全和防卫。某些最庄重、最重要的职业和某些最轻浮的职业，也必须列入同一类别：教士、律师、医生、各种文人；演员、丑角、乐师、歌剧歌手、歌剧舞蹈演员等等。其中最低微者的劳动也有一定价值，这一价值受制于支配其他一切劳动价值的同样原则；而最高贵、最有用者的劳动，也不生产任何日后能够购买或取得等量劳动的东西。他们所有人的工作，都像演员的台词、演说家的演说或乐师的曲调一样，在产生的那一瞬间便消失了。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p3",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_988"
+      },
+      "contentHash": "505dee785c4070bb96f090d14bd637e4814f56702f0b3046d40ea7645ef6de3c",
+      "text": "生产性劳动者、非生产性劳动者以及完全不劳动的人，全都同样由本国土地和劳动的年产物供养。这种产物无论多么巨大，也绝不可能是无限的，而必定有一定限度。因此，一年之中用于供养非生产性人员的比例较小或较大，留给生产性劳动者的部分便相应较多或较少，下一年的产物也会相应较大或较小；因为，除大地的自然产物外，全部年产物都是生产性劳动的成果。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p4",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_989"
+      },
+      "contentHash": "2f569571dea8496bac57d69b5662960fdaa5635ab364fccd9b45ef69d0f15bf2",
+      "text": "毫无疑问，每个国家土地和劳动的全部年产物，最终都是为了满足其居民的消费，并为他们提供收入；然而，这些产物最初从土地中出产或从生产性劳动者手中制成时，自然会分成两部分。其中一部分，而且往往是最大的一部分，首先用于补偿一笔资本，或者补充已从资本中取出的食物、材料和制成品；另一部分则用于构成收入，或者作为资本利润归这笔资本的所有者，或者作为土地的地租归其他某个人。因此，在土地的产物中，一部分补偿农场主的资本；另一部分支付他的利润和地主的地租，从而既以资本利润的形式构成这笔资本所有者的收入，又以土地地租的形式构成另一个人的收入。同样，在一家大制造厂的产物中，一部分，而且总是最大的一部分，补偿经营者的资本；另一部分支付他的利润，从而构成这笔资本所有者的收入。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p5",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_990"
+      },
+      "contentHash": "f1c3446edbfd9745061a427b258901353eb6f1a04d971dfbc4e583de63a736c6",
+      "text": "任何国家土地和劳动的年产物中用于补偿资本的那一部分，从不直接用于供养生产性劳动者以外的任何人。它只支付生产性劳动的工资。直接用于以利润或地租形式构成收入的那一部分，则既可以供养生产性劳动者，也可以供养非生产性劳动者，并无区别。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p6",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_991"
+      },
+      "contentHash": "26cc8fc80aba1568508c72a0724fc4700a04c4c8b7b692d456db2262bbead147",
+      "text": "一个人无论把自己的资财中的哪一部分用作资本，总是期望它连同利润一起得到补偿。因此，他只用这部分资财供养生产性劳动者；而这部分资财在为他发挥资本的职能之后，便构成这些劳动者的收入。每当他把其中任何一部分用于供养任何种类的非生产性劳动者时，这一部分从那一刻起便从他的资本中抽出，转入他留作即时消费的资财。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p7",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_992"
+      },
+      "contentHash": "2d4677317e396078c6850002a525eff617059d671c0f77fa01f0375d2409f924",
+      "text": "非生产性劳动者和完全不劳动的人，全都由收入供养：第一，或者由年产物中原本用于构成某些特定个人收入的那一部分供养，这种收入或为土地地租，或为资本利润；第二，或者由这样一部分产物供养：它虽原本用于补偿资本并且只供养生产性劳动者，但到了这些劳动者手中以后，其中超过其必要生活费用的任何部分，都可以不加区别地用于供养生产性劳动者或非生产性劳动者。因此，不仅大地主或富商，就连普通工人，如果工资相当可观，也可以供养一个仆役；或者，他有时可以去看戏或木偶戏，从而为供养一类非生产性劳动者贡献自己的一份力量；又或者，他可以缴纳一些税，从而帮助供养另一类人，这类人确实更可敬、更有用，但同样是非生产性的。不过，年产物中原本用于补偿资本的任何部分，在推动了它以其使用方式所能推动的全部生产性劳动，即足额的生产性劳动之后，才会转用于供养非生产性劳动者。工人必须先以完成的工作挣得工资，然后才能以这种方式使用其中任何一部分。而且，这部分通常很小。它只是他的剩余收入，而生产性劳动者很少有很多这种收入。不过，他们通常总会有一些；而在纳税方面，他们人数众多，可以在一定程度上弥补每个人缴纳数额的微小。因此，土地地租和资本利润在各地都是非生产性劳动者赖以维生的主要来源。这两类收入的所有者通常拥有最多的剩余。他们可以不加区别地用这两类收入供养生产性劳动者或非生产性劳动者。不过，他们似乎对后者有所偏爱。一个大领主的开支通常供养的闲人多于勤劳者。富商虽只用资本供养勤劳者，但通过自己的开支，也就是通过运用自己的收入，通常供养的却恰恰是与大领主所供养的同一类人。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p8",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_993"
+      },
+      "contentHash": "294980887b1f8f2f5880069b05bd3bc95c7ed48eac9c1520ed06dce0452dc598",
+      "text": "因此，在每个国家，生产性劳动者与非生产性劳动者之间的比例，在很大程度上取决于年产物中以下两部分之间的比例：一部分从土地中出产或从生产性劳动者手中制成时，便用于补偿资本；另一部分则用于以地租或利润的形式构成收入。这个比例在富国与穷国大不相同。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p9",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_994"
+      },
+      "contentHash": "5090873ed827d50996717aa505fb827c3696d0c8d617cf4e57e5df90e5cbbb68",
+      "text": "因此，目前在欧洲富裕国家，土地出产物中很大一部分，而且往往是最大的一部分，用于补偿富有而独立经营的农场主的资本；其余部分则用于支付他的利润和地主的地租。但是在古代封建政体盛行时，只需土地出产物中很小的一部分，便足以补偿用于耕作的资本。这笔资本通常由几头瘦弱不堪的牲畜组成，它们完全靠未开垦土地的自然产物维持，因而也可以视为这种自然产物的一部分。这些牲畜通常也归地主所有，由他预付给土地占用者。其余全部产物严格说来也归他所有，一部分是他的土地地租，另一部分是这笔微薄资本的利润。土地占用者通常是农奴，他们的人身和财物同样都是他的财产。那些不是农奴的人则是任意租佃的佃户；他们缴纳的地租在名义上往往只比象征性的免役租稍多一些，实际上却相当于土地的全部产物。他们的领主在和平时期随时可以支配他们的劳动，在战争时期则可征用他们服役。他们虽然住得离领主宅邸很远，对领主的依附却同住在宅邸里的侍从一样深。然而，谁能支配由土地全部产物所供养的一切人的劳动和服役，全部土地出产物无疑就属于谁。在欧洲目前的状况下，地主所得的份额很少超过土地全部产物的三分之一，有时还不到四分之一。然而，自古代以来，在全国一切得到改良的地区，土地地租已经增至三倍或四倍；而年产物的这三分之一或四分之一，看来是从前全部产物的三倍或四倍。在改良过程中，地租的绝对数额虽有增加，但其占土地出产物的比例却有所下降。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p10",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_995"
+      },
+      "contentHash": "8a4af9059519e84222361e57b97a0151ab0244bb31038e3f13f54db07c5a6752",
+      "text": "目前，欧洲富裕国家有巨额资本用于商业和制造业。在古代状况下，仅有的少量商业活动和少数简陋粗糙的制造业，只需要很小的资本。不过，这些资本必定产生了很高的利润。当时的利率没有任何地方低于百分之十，而其利润必定足以支付如此高的利息。目前，在欧洲得到改良的地区，利率没有任何地方高于百分之六，而在某些改良程度最高的地区，则低至百分之四、百分之三和百分之二。居民收入中来自资本利润的部分，在富国总是远大于穷国，但这是因为资本大得多；相对于资本而言，利润通常低得多。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p11",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_996"
+      },
+      "contentHash": "61b3c7089a6d9d19b4d7fed53d93fd17809d657427ae22c59751d23907a4e6a4",
+      "text": "因此，年产物中从土地中出产或从生产性劳动者手中制成时便用于补偿资本的那一部分，在富国不仅比在穷国大得多，而且同直接用于以地租或利润形式构成收入的那一部分相比，所占比例也大得多。用于维持生产性劳动的资金，在前者不仅比在后者大得多，而且同那些既可用于供养生产性劳动者、也可用于供养非生产性劳动者，却通常偏向于后者的资金相比，所占比例也大得多。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p12",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_997"
+      },
+      "contentHash": "4f83ea8d0e52854197b237c27f860154524da8d6dc2470edad7ab11d85b64df1",
+      "text": "在每个国家，这些不同资金之间的比例，必然决定居民在勤劳或懒惰方面的总体特性。我们比祖先勤劳，是因为与两三个世纪以前相比，现今用于维持勤劳的资金，相对于很可能用于维持懒惰的资金，所占比例要大得多。我们的祖先懒惰，是因为勤劳得不到充分鼓励。谚语说，与其白干，不如白玩。在商业和制造业城市，下层民众主要靠资本的运用维持生活，因此他们通常勤劳、节制而富裕；英格兰许多城市和荷兰大多数城市便是如此。在那些主要依靠宫廷长期或不时驻跸而维持的城市，下层民众主要靠收入的花费维持生活，因此他们通常懒惰、放荡而贫穷；罗马、凡尔赛、贡比涅和枫丹白露便是如此。除鲁昂和波尔多外，法国各高等法院所在的城市几乎都没有多少商业或产业；下层民众主要靠法院成员和到法院出庭辩护者的开支维持生活，因而通常懒惰而贫穷。鲁昂和波尔多的繁盛商业，看来完全是其地理位置造成的。为供应巴黎这座大城市的消费而从外国或法国沿海各省运来的几乎所有货物，都必然以鲁昂为集散地。同样，波尔多是加龙河及其各条支流沿岸所产葡萄酒的集散地；那里是世界上最富饶的葡萄酒产区之一，所产的酒看来最适合出口，或者最合外国人的口味。这种有利的地理位置能为资本提供大量用途，因而必然会吸引巨额资本；这笔资本的运用，正是这两座城市勤劳兴盛的原因。在法国其他高等法院所在的城市，所用资本看来只略多于供应本城消费所必需的数量；也就是说，只略多于能够在那里使用的最低资本额。巴黎、马德里和维也纳也可以作同样的评价。在这三座城市中，巴黎远比另外两座勤劳；但巴黎本身就是设在巴黎的一切制造业的主要市场，而本城的消费正是其全部商业活动的主要目的。伦敦、里斯本和哥本哈根，或许是欧洲仅有的三座既有宫廷长期驻跸，同时又可视为商业城市的城市，也就是说，它们从事商业，不仅供应本城消费，也供应其他城市和国家的消费。这三座城市的地理位置都极为有利，自然适合成为供应远方消费的很大一部分货物的集散地。在一座大量收入被花费掉的城市，要把资本有利地用于供应本城消费以外的任何目的，可能比在一座下层民众只能靠这种资本的运用维持生活的城市更为困难。靠收入开支供养的大多数人的懒惰，很可能败坏本应由资本运用来维持的那些人的勤劳，使资本用在那里不如用在其他地方有利。合并以前，爱丁堡几乎没有多少商业或产业。苏格兰议会不再在那里开会，它也不再是苏格兰主要贵族和乡绅必须居住的地方之后，便成了一座颇有商业和产业的城市。不过，它仍然是苏格兰各主要法院、关税和消费税委员会等机构的所在地。因此，仍有相当大的一笔收入继续在那里花费。在商业和产业方面，它远不及格拉斯哥；后者的居民主要靠资本的运用维持生活。人们有时观察到，一个大村庄的居民在制造业方面取得相当大的进展以后，会因为一位大领主迁居到附近而变得懒惰和贫穷。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p13",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_998"
+      },
+      "contentHash": "5f1c0a833eec36a43f4143a4394946fc8c8eba8abbe831c6839a0357545f332c",
+      "text": "因此，资本与收入之间的比例，看来在各地都支配着勤劳与懒惰之间的比例。资本占优势的地方，勤劳就盛行；收入占优势的地方，懒惰就盛行。因此，资本每一次增加或减少，自然都会趋向于增加或减少勤劳的实际总量和生产性劳动者的人数，从而增加或减少本国土地和劳动的年产物的交换价值，也就是全体居民的实际财富和收入。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p14",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_999"
+      },
+      "contentHash": "5b89411a2c534598093a9e8b98a4458dfd59d19c83233f976b28487bf647e2cd",
+      "text": "资本因节俭而增加，因奢侈浪费和处置不当而减少。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p15",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1000"
+      },
+      "contentHash": "d736e588ba58035e0deba222528ce6f8a502eb0cca8a43bab22af83264f761a5",
+      "text": "一个人从自己的收入中节省下来的任何部分，都会加到他的资本中；他或者亲自用它来多供养一些生产性劳动者，或者把它借给另一个人，收取利息，也就是分享利润，从而使那个人能够这样做。个人的资本只能靠他从年度收入或年度所得中节省下来的部分增加；同样，一个社会的资本，也就是构成这个社会的所有个人的资本总和，也只能以同样的方式增加。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p16",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1001"
+      },
+      "contentHash": "ad0c766e03ea6336b487160e44e38fa9ab3ed5092589dd50f377cea6edf67abd",
+      "text": "资本增加的直接原因是节俭，而不是勤劳。诚然，勤劳提供了由节俭加以积累的对象。但是，无论勤劳可能取得多少成果，如果节俭不将其节省和积蓄起来，资本就绝不会增加。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p17",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1002"
+      },
+      "contentHash": "3d137dc84afdf670dbb2af950015512b54df0ddff75332736837de284bf29b12",
+      "text": "节俭增加了用于供养生产性劳动者的资金，因而趋向于增加这类劳动者的人数；他们的劳动会增加其所施加对象的价值。因此，节俭趋向于增加本国土地和劳动的年产物的交换价值。它推动了额外数量的勤劳，而这种勤劳又给年产物增加了额外的价值。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p18",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1003"
+      },
+      "contentHash": "0a2f87ea3e8ad8afc610aaeff1688707fe2579f86822d1505a4450bc63b07966",
+      "text": "每年节省下来的部分，同每年花费掉的部分一样，也会照常被消费掉，而且消费的时间也几乎相同；不过，消费它们的是另一批人。富人每年花费的那部分收入，在大多数情况下都由无所事事的宾客和贴身仆役消费掉；他们消费之后，不留下任何东西作为回报。他每年节省的那部分收入，由于为了取得利润而立即被用作资本，也以同样的方式、在几乎相同的时间内被消费掉，不过消费它的是另一批人，即劳动者、制造业工人和工匠；他们把自己每年消费的价值连同利润一起再生产出来。假定他的收入是以货币支付给他的。如果他把收入全部花掉，那么全部收入所能购买的食物、衣服和住所，就会分配给前一批人。他节省其中一部分时，由于这部分为了取得利润而立即由他本人或别人用作资本，能够用它购买的食物、衣服和住所，就必然留给后一批人。消费是相同的，消费者却不同。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p19",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1004"
+      },
+      "contentHash": "d064f46a01baab8386a510b2542d6e79276068a10aef04a8d8359376a10095a2",
+      "text": "一个节俭的人每年节省下来的部分，不仅为当年或次年的更多生产性劳动者提供生活资料，而且像公共济贫工场的创办人一样，可以说还设立了一项永久基金，用来在未来一切时期供养同等数量的生产性劳动者。诚然，这项基金的永久划拨和用途，并不总是受到任何成文法、任何信托权或永久管业契据的保障。不过，它始终受到一个极为强有力的原则保障，那就是每一个在任何时候拥有其中任何份额的人所具有的明确而显然的利益。此后，若将其中任何部分用来供养生产性劳动者以外的任何人，都会使这样违背其正当用途的人遭受明显的损失。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p20",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1005"
+      },
+      "contentHash": "a667b6c5a3300a805f4124e1c70b88979aba0a5bb6391e6ef01d4679c09727bc",
+      "text": "挥霍者正是以这种方式违背这项基金的用途。他不把支出限制在收入以内，因而侵蚀了自己的资本。正如有人把某个宗教慈善基金的收入挪作世俗用途一样，他用祖先凭借节俭仿佛已经奉献给勤劳者生活之用的那些资金，来支付游手好闲者的工资。他减少了用于雇用生产性劳动的资金，因而就其个人所能影响的范围而言，必然减少了这类劳动的数量；这种劳动会给它所施加的对象增加价值，所以，他也就减少了全国土地和劳动的年产物的价值，即居民的真实财富和收入。如果一些人的挥霍没有由另一些人的节俭来补偿，那么每一个挥霍者的行为，都会用勤劳者的面包供养游手好闲者，不仅使自己沦为穷人，而且有使自己的国家陷于贫困的趋势。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p21",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1006"
+      },
+      "contentHash": "097e57b6ee7209cb6e80aa4bef010ac5925fb983f5ff23878f6959c9c8251a28",
+      "text": "即使挥霍者的支出全部用于本国产品，没有任何部分用于外国商品，它对社会生产性资金的影响仍然相同。每年仍会有一定数量的食物和衣服，本应用来供养生产性劳动者，却被用来供养非生产性劳动者。因此，每年仍会使本来可以成为该国土地和劳动年产物价值的数额有所减少。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p22",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1007"
+      },
+      "contentHash": "e3a0f87fc7c24e686e5ba4733b37c34a0b35c64973bb2d0e10c86ba2f5791e98",
+      "text": "诚然，也许有人会说，这种支出既然不是用于外国货物，也不引起任何金银输出，国内所保有的货币数量就会与从前相同。但是，如果以这种方式被非生产性劳动者消费的那部分食物和衣服分配给生产性劳动者，他们就会把自己消费的全部价值连同利润一起再生产出来。在这种情况下，同样数量的货币也同样会留在国内，此外还会再生产出等量的可消费货物。这样，原来只有一份价值，现在就会有两份价值。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p23",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1008"
+      },
+      "contentHash": "0e1afb63cb98ebc0bb103de60b709c0e9cb0717a0c91b6e84498dc164681314f",
+      "text": "此外，在年产物价值不断减少的任何国家，同样数量的货币都不可能长期保留下来。货币的唯一用途是使可消费货物流通。依靠货币，食品、材料和制成品得以买卖，并分配给适当的消费者。因此，任何国家每年能够使用的货币数量，必然取决于该国每年流通的可消费货物的价值。这些货物要么由该国自身土地和劳动的直接产物构成，要么由用这种产物的某一部分购得的东西构成。因此，它们的价值必然随着这种产物价值的减少而减少，而能够用于使它们流通的货币数量也必然随之减少。但是，由于产物逐年减少而每年被排挤出国内流通的货币，不会被容许闲置不用。任何拥有这种货币的人的利益，都要求把它使用起来。但由于它在国内无处可用，尽管有一切法律和禁令，它仍会被送往国外，用来购买在国内可能有某种用途的可消费货物。这样，货币逐年输出，会在一段时间内继续使该国每年的消费超过它本国年产物的价值。在该国繁荣时期从年产物中节省下来并用于购买金银的部分，会在逆境中暂时帮助维持其消费。在这种情况下，金银输出不是国家衰落的原因，而是其结果，甚至还可能在短期内减轻这种衰落造成的困苦。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p24",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1009"
+      },
+      "contentHash": "42d4b511f7ab8fae15655359fd561fc2f83be85e40de548d586981d9ecf387ce",
+      "text": "相反，在每一个国家，货币数量都必然随着年产物价值的增加而自然增加。社会内部每年流通的可消费货物价值增大，就需要更多的货币来使它们流通。因此，增加的产物中必然会有一部分，自然而然地用来在任何可以买到金银的地方购买使其余产物流通所必需的额外金银。在这种情况下，这些金属的增加是社会繁荣的结果，而不是原因。各地购买金银的方式都相同。凡是其劳动或资本用于把金银从矿山运到市场的人，他们的食物、衣服和住所，也就是他们的收入和生活资料，便是在秘鲁和在英格兰为金银支付的价格。有能力支付这个价格的国家，绝不会长期缺少它所需要的这些金属；任何国家也绝不会长期保有它所不需要的数量。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p25",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1010"
+      },
+      "contentHash": "a7d0922bcc3df36c94238aeef9996f29bb3a8d1d331451142ef7283e4d8a66a2",
+      "text": "因此，无论我们设想一个国家的真实财富和收入由什么构成——是像朴素的理性似乎表明的那样，由其土地和劳动的年产物的价值构成，还是像庸俗的偏见所认为的那样，由在国内流通的贵金属数量构成——无论从哪一种观点来看，每一个挥霍者似乎都是社会的公敌，而每一个节俭的人都是社会的恩人。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p26",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1011"
+      },
+      "contentHash": "9162b7dc92d41d69c372df0e5021912f704e77c55222a1a8c4d33950db65289e",
+      "text": "经营不当的后果往往与挥霍的后果相同。农业、矿业、渔业、商业或制造业中每一项不审慎而失败的事业，也同样有减少用于维持生产性劳动的资金的趋势。在每一项这样的事业中，虽然资本只由生产性劳动者消费，但由于雇用他们的方式不审慎，他们不能把自己消费的全部价值再生产出来，因而社会本来可以拥有的生产性资金总会有所减少。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p27",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1012"
+      },
+      "contentHash": "6431db29feeb5048f7c74ebd1525d819dcf44952e92d5e06cc459ca2acb5892f",
+      "text": "诚然，无论个人的挥霍还是经营不当，都很少可能严重影响一个大国的状况；因为一些人的奢侈浪费或轻率行事，总会得到另一些人的节俭和妥善经营的充分补偿，而且绰绰有余。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p28",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1013"
+      },
+      "contentHash": "b74f9cd46d9e06dd581fa5a54ad82d37dc4589e5d49acb9dacba24b1c5a0ebdf",
+      "text": "就奢侈浪费而言，促使人花费的原则，是贪图眼前享受的欲望；这种欲望有时虽然很强烈而且很难抑制，但通常只是暂时而偶发的。促使人储蓄的原则，却是改善自身处境的愿望；这种愿望虽然通常平静而不受激情支配，却从我们出生之时便与我们相伴，直到我们进入坟墓才离开我们。在这两个时刻之间的整个期间，也许几乎没有任何一个瞬间，有人会对自己的处境感到如此十全十美、完全满意，以至于毫无任何改变或改善的愿望。增加财产，是大多数人打算并希望用来改善自身处境的手段。这是最普通、最显而易见的手段；而增加财产最有可能的办法，就是把所得的一部分节省并积累起来，不论是定期每年这样做，还是在某些特殊场合这样做。因此，尽管促使花费的原则在几乎所有人的某些时候占上风，并在某些人的几乎所有时候占上风，但就大多数人的一生取平均而言，节俭的原则似乎不仅占优势，而且占有极大的优势。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p29",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1014"
+      },
+      "contentHash": "44d29b04ad3e03b325191501d4d83decd23d9da15ba731478755a33ffcba1f2a",
+      "text": "就经营不当而言，各地审慎而成功的事业，数量都远远多于不审慎而失败的事业。尽管我们一再抱怨破产频繁，陷入这种不幸的可怜人，在从事商业和其他各种业务的总人数中，也只占很小一部分，也许略多于千分之一。破产也许是一个无辜的人可能遭遇的最大而且最屈辱的灾难。因此，大多数人都足够谨慎，能够避免破产。诚然，有些人没有避免破产；正如有些人没有避开绞刑架一样。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p30",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1015"
+      },
+      "contentHash": "e3183c2c655676327883130c9dce921ed151d2722ad035671919410eae14a8b4",
+      "text": "大国从不会因私人的挥霍和经营不当而陷于贫困，虽然有时会因公共的挥霍和经营不当而陷于贫困。在大多数国家，全部或几乎全部公共收入都用于供养非生产性劳动者。组成庞大而显赫的宫廷、大规模的教会机构、庞大舰队和军队的那些人，就是这类劳动者；他们在和平时期不生产任何东西，在战争时期，即使战争仍在进行，也得不到任何足以补偿供养他们之支出的东西。这样的人自身既不生产任何东西，就全都由其他人的劳动产物供养。因此，如果他们增加到不必要的数量，便可能在某一年消费掉这种产物的极大份额，以至于剩下的产物不足以供养那些本应在次年把它再生产出来的生产性劳动者。因此，次年的产物将少于前一年；如果同样的紊乱继续下去，第三年的产物还将少于第二年。这些非生产性劳动者本来只应由人民剩余收入的一部分供养，却可能消费掉人民全部收入中极大的份额，从而迫使极多的人侵蚀自己的资本，即侵蚀用于维持生产性劳动的资金，以至于个人的一切节俭和妥善经营，都可能无法补偿这种猛烈而强制的侵蚀所造成的产物浪费和减损。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p31",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1016"
+      },
+      "contentHash": "1e7d0bb85b4038e9d85100219553ce526757669beb5e9e8582502327db72bcb9",
+      "text": "然而，经验表明，在大多数情况下，这种节俭和妥善经营不仅足以补偿个人私下的挥霍和经营不当，而且足以补偿政府的公共奢侈浪费。每个人为改善自身处境所作的一贯、持续而不间断的努力，是社会和国家以及私人财富的最初源泉；这种努力往往具有足够强大的力量，能够不顾政府的奢侈浪费和行政管理中最严重的错误，使事物朝着改善方向的自然进程维持下去。它如同动物生命中不为人知的原理一样，不仅不顾疾病，而且不顾医生荒谬的处方，往往还能使身体恢复健康和活力。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p32",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1017"
+      },
+      "contentHash": "3fe2b49d5fde912f9949da49fc7aba3a71f39505875d69ebfc164773e8035a61",
+      "text": "任何国家土地和劳动的年产物，都只能通过增加生产性劳动者的人数，或提高原已受雇劳动者的生产能力，来增加其价值。显然，生产性劳动者的人数要大幅增加，只能是资本或用于维持他们的资金增加的结果。要提高同样数量劳动者的生产能力，也只能是对那些便利并缩短劳动的机器和工具作某种增添和改进，或是对工作作更适当的分工和分配的结果。无论哪一种情况，几乎总是需要增加资本。任何工程的承办人只有依靠增加的资本，才能为工人提供更好的机器，或在他们中间作更适当的工作分配。当要做的工作由许多部分构成时，要使每个人始终从事同一种操作，所需资本远远多于让每个人偶尔从事工作的各个不同部分时所需的资本。因此，当我们比较一个国家在两个不同时期的状况，发现后一时期土地和劳动的年产物明显多于前一时期，土地得到更好的耕作，制造业门类更多也更繁荣，商业也更广泛时，我们就可以确信，在这两个时期之间，该国的资本必然有所增加，而且某些人凭借妥善经营为资本增加的数额，必然多于另一些人因私下经营不当或政府因公共奢侈浪费而从中取走的数额。但是我们将会发现，几乎所有国家在一切还算安定和平的时期都是如此，即使那些未曾享有最审慎、最节俭政府的国家也是如此。诚然，要对此作出正确判断，我们必须比较该国相隔较远的几个时期的状况。进步往往如此缓慢，以至于在相距很近的时期内，不仅感觉不到改善，而且由于某些产业部门或国内某些地区的衰退——这种事情有时会在国家总体极为繁荣时发生——还往往会让人怀疑整个国家的财富和勤劳都在衰退。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p33",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1018"
+      },
+      "contentHash": "157986b635bdc4be45691b5cac312677dbc2980c0a06b237a4258db183ad46e6",
+      "text": "例如，英格兰土地和劳动的年产物，现在肯定远远多于略多于一个世纪以前查理二世复辟时的年产物。我相信，虽然现在很少有人对此表示怀疑，但在这一时期内，几乎没有哪五年不曾出版某本书或某本小册子；其作者还颇具才干，足以在公众中赢得某种权威，并声称要证明国民财富正在迅速衰减，国家人口日益减少，农业受到忽视，制造业日趋衰落，商业遭到毁灭。这些出版物也不全是党派性小册子，即虚假与贪利的卑劣产物。其中许多出自非常坦诚、非常聪明的人之手；他们所写的无非是自己相信的东西，写作也没有其他理由，只因为他们相信这些东西。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p34",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1019"
+      },
+      "contentHash": "1da8094b1d12386d52d4c98a03b4152b298d906e910fdec8718179950a6afec0",
+      "text": "同样，英格兰土地和劳动的年产物，在复辟时期肯定远远多于我们可以推想的大约一百年前伊丽莎白即位时的年产物。我们也完全有理由相信，在伊丽莎白即位时，该国的进步程度远远超过大约一个世纪以前约克家族与兰开斯特家族纷争接近结束时的程度。即使在那时，该国的状况也很可能好于诺曼征服时期；而诺曼征服时期，又好于撒克逊七国时代的混乱时期。甚至在这一早期阶段，它也肯定比尤利乌斯·恺撒入侵时更为进步；在恺撒入侵时，当地居民所处的状态与北美洲的野蛮人几乎相同。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p35",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1020"
+      },
+      "contentHash": "ea3651f83c71abdfa875287f01ded7314d995eb9ffe91918d6e6a8e52af28645",
+      "text": "然而，在上述每一个时期，不仅私人和公共的奢侈浪费很多，代价高昂而无必要的战争很多，年产物也有很大一部分从供养生产性劳动者转而用于供养非生产性劳动者；而且有时在内乱的混乱中，资本还遭到如此彻底的浪费和破坏，以至于人们本可认为，这不仅像事实上的确发生的那样，阻碍了财富的自然积累，而且会使该国在这一时期结束时比开始时更加贫穷。由此看来，在所有这些时期中最幸福、最幸运的时期，即复辟以来的这一时期，究竟发生过多少动乱和灾难啊！如果这些动乱和灾难能够预见，人们原会认为它们不仅会使国家陷于贫困，而且会使国家彻底毁灭。伦敦的火灾和瘟疫，两次对荷战争，革命时期的动乱，爱尔兰战争，1688年、1702年、1742年和1756年的四次耗费巨大的对法战争，以及1715年和1745年的两次叛乱。在四次对法战争期间，国家所负债务超过一亿四千五百万英镑，此外还有这些战争造成的其他一切异常年度支出，因此全部费用不能估计为少于两亿英镑。自革命以来，该国土地和劳动的年产物中如此巨大的份额，曾在不同场合用于供养数量异常庞大的非生产性劳动者。但是，如果这些战争没有使如此巨额的资本被特别引向这一用途，其中大部分自然会用于供养生产性劳动者，而这些人的劳动会把他们消费的全部价值连同利润一起补偿回来。这样，该国土地和劳动的年产物价值每年都会有相当大的增加，而每一年的增加又会使下一年的增加额更大。原会建造更多房屋，改良更多土地，而先前已经改良的土地也会得到更好的耕作；原会创办更多制造业，而先前已经创办的制造业也会得到更大的扩展；至于该国的真实财富和收入到现在原本能够提高到何种程度，也许甚至很难想象。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p36",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1021"
+      },
+      "contentHash": "e2ac31eecb6764c168ca951ccdc9687cf970e67a432a391623d22a9e29f4df31",
+      "text": "但是，尽管政府的挥霍无疑必定延缓了英格兰走向富裕和进步的自然进程，却未能使其停止。英格兰土地和劳动的年产物，目前无疑远远多于王政复辟时期或光荣革命时期。因此，每年用于耕种这些土地和维持这些劳动的资本，也必定大得多。在政府横征暴敛之下，这项资本仍由个人的私人节俭和良好操持，通过他们为改善自身境况而普遍、持续且从不间断的努力，默默而逐渐地积累起来。正是这种努力，在法律保护之下，并因自由而获准以最有利的方式发挥作用，才使英格兰在以往几乎所有时期都保持了走向富足和进步的进程；而且可以希望，在未来所有时期，它仍会如此。然而，英格兰既从未有幸得到一个非常节俭的政府，其居民也从来不以节俭为其特有的美德。因此，君王和大臣竟妄称要监督私人的节用，并通过禁奢法或禁止进口外国奢侈品来限制他们的开支，实属极端无礼和狂妄。他们自己始终而且毫无例外地是社会中最挥霍无度的人。让他们好好管住自己的开支，便可以放心地让私人自行管理其开支。如果他们自己的奢侈浪费不会使国家破产，他们臣民的奢侈浪费就永远不会。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p37",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1022"
+      },
+      "contentHash": "edd4d007071a85070e82bb37ca8e790c6ea3b50d828c365c8d88f34121f93fe5",
+      "text": "正如节俭增加而挥霍减少社会资本一样，那些开支恰好等于收入、既不积累也不侵蚀资本的人的行为，既不增加也不减少社会资本。不过，有些开支方式似乎比其他方式更有助于社会财富的增长。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p38",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1023"
+      },
+      "contentHash": "89129489dc9bbbc74ccc8d27cfcfd95b6eceb842a44cf2ac08353270715fa3e7",
+      "text": "个人的收入，既可以花在立即消费掉的物品上，在这种开支中，某一天的开支既不能减轻另一天的开支，也不能对它起到维持作用；也可以花在较为耐久、因而可以积存的物品上，在这种开支中，他可以随意让每一天的开支减轻次日的开支，或维持并增强次日开支的效果。例如，一个富有的人，既可以把收入花在丰盛奢华的筵席上，花在供养大批贴身仆役和许多狗马之上；也可以满足于节俭的饮食和少量侍从，把收入的大部分用于装饰自己的住宅或乡间别墅，建造实用或装饰性的建筑，购置实用或装饰性的家具，收藏书籍、雕像、绘画；或是用于更无聊的东西，如珠宝、小玩意和各式精巧饰物；或是用于一切事物中最微不足道的事情，像几年前去世的一位大君主的宠臣兼大臣那样，积聚一大批华美服装。假如两个财产相等的人花费各自的收入，一个主要采用前一种方式，另一个主要采用后一种方式，那么，主要把钱花在耐久商品上的那个人，其排场会不断扩大，因为每一天的开支都会对维持和增强次日开支的效果有所贡献；相反，另一个人的排场，到这段时期结束时不会比开始时更大。到这段时期结束时，前者也会是两人中更富有的一个。他会拥有某种货品的积存；这些货品虽未必值其全部成本，却总会有一些价值。后者的开支不会留下任何踪迹或遗痕，十年或二十年挥霍的效果会消灭得一干二净，仿佛从未存在过一样。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p39",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1024"
+      },
+      "contentHash": "759e52d6084fde20ae7bb364fa99c35a07c487460e0e370d38b2ad316f071f99",
+      "text": "正如一种开支方式比另一种更有利于个人的富裕，它也同样更有利于一个国家的富裕。富人的住宅、家具和衣服，不久以后就会对下层和中等阶层的人有用。当他们的上层人士对这些东西感到厌倦时，他们便能将其买下；当这种开支方式在富有者中普遍流行时，全体人民生活上的便利就会这样逐渐改善。在长期富裕的国家里，你常常会看到下层人民拥有完好无损的住宅和家具，但这些住宅绝不是为他们而建，这些家具也绝不是为他们而制。昔日西摩家族的一处宅邸，如今成了巴斯路上的一家旅店。大不列颠国王詹姆斯一世的婚床，是他的王后从丹麦带来的，是一位君主送给另一位君主才相称的礼物；可就在几年前，它却成了邓弗姆林一家啤酒店的装饰。在一些长期停滞不前或已有几分衰败的古城里，有时几乎找不到一所可能是为现有居民建造的房屋。你若走进这些房屋，也常会发现许多虽已过时却十分精美、依然非常适用的家具，而这些家具同样绝不可能是为他们制作的。高贵的宫殿、壮丽的别墅，以及大量收藏的书籍、雕像、绘画和其他珍品，往往不仅是其邻近地区的装饰和荣誉，也是其所属整个国家的装饰和荣誉。凡尔赛是法国的装饰和荣誉，斯托和威尔顿是英格兰的装饰和荣誉。意大利拥有许多这类遗迹，因而至今仍令人怀有某种敬意，尽管创造这些遗迹的财富已经衰落，设计这些遗迹的才华也似乎已经泯灭——也许是因为没有同样的用武之地。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p40",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1025"
+      },
+      "contentHash": "e05de45c4777b41bde836087424d39f84400a90455446dbacd6426014bf2dcf1",
+      "text": "而且，用于耐久商品的开支不仅有利于积累，也有利于节俭。一个人如果一时在这方面花费过度，可以很容易地改正，而不致使自己受到公众的非议。大幅削减仆役人数，把饮食从极度奢侈改为极度节俭，在置办车马之后又将其弃用，这些变化不可能逃过邻人的注意，而且会被认为意味着他承认自己先前处置失当。因此，那些一度不幸在这种开支上挥霍太过的人，很少有勇气在破产和倒闭迫使他们改正以前就自行改正。但是，一个人如果一时在建筑、家具、书籍或绘画上开支过大，人们并不能从他改变做法推断出他曾有不慎。这些东西往往因为先前已有开支，就无须继续开支；当一个人就此止步时，他看来并非因为开支超过自己的财力，而是因为已经满足了自己的爱好。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p41",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1026"
+      },
+      "contentHash": "9b547f132c485ae5393bde48e196886c96a28173e2dc3bbb471e14485ce68e46",
+      "text": "此外，用于耐久商品的开支，通常比用于最为铺张的款待能维持更多人的生活。在一场盛大宴会上，有时会摆上两三个英担的食物，其中也许有一半会被扔进粪堆，而且总有大量食物遭到浪费和糟蹋。但如果这场宴会的开支被用来让泥瓦匠、木匠、家具装潢工和其他工匠开工干活，那么，同等价值的一批食物就会分配给更多的人；他们会以一便士一份、一磅一份的数量购买这些食物，连一盎司也不会损失或扔掉。此外，把钱用于雇用这些工匠，维持的是生产性劳动者；把钱用于盛宴款待，维持的则是非生产性劳动者。因此，前一种用法会增加本国土地和劳动年产物的交换价值，后一种用法则不会。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c3.p42",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1027"
+      },
+      "contentHash": "ac40e95c48512bf2e3a54806f5f7bc09528ac91f5695df296fdfff2068c98d4c",
+      "text": "不过，我不希望人们根据以上所述，把我的意思理解为：一种开支总是比另一种表明更为豁达或慷慨的精神。一个富有的人主要把收入用于款待宾客时，会与朋友和伙伴分享其中的大部分；但当他用收入购买这类耐久商品时，往往把全部收入都花在自己身上，不给任何人任何没有等价回报的东西。因此，后一种开支，尤其是在用于无聊对象——服饰和家具上的小装饰品、珠宝、饰物、小玩意——时，往往不仅显示出轻浮的性情，也显示出卑劣自私的性情。我的意思只是：一种开支总会造成一些有价值商品的积累，更有利于私人节俭，因而也更有利于增加社会资本，并且维持的是生产性劳动者而不是非生产性劳动者，所以它比另一种开支更有助于社会财富的增长。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    }
+  ]
+}

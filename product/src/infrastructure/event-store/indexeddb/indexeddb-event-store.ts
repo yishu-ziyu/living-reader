@@ -17,6 +17,7 @@ import {
   storeOk,
   type StoreResult,
 } from "@/modules/reader-world/event-store/errors";
+import { isCanonicalUlid } from "@/modules/reader-world/events/clock";
 import type {
   DomainEvent,
   DomainEventDraft,
@@ -94,6 +95,7 @@ type DraftValidationResult =
  */
 async function validateDraftBrowser(
   raw: unknown,
+  options: { allowHistoricalMessageId?: boolean } = {},
 ): Promise<DraftValidationResult> {
   if (!raw || typeof raw !== "object" || Array.isArray(raw)) {
     return { ok: false, code: "INVALID_ENVELOPE", message: "event must be an object" };
@@ -127,6 +129,17 @@ async function validateDraftBrowser(
   }
   if (!nonEmptyString(e.message_id)) {
     return { ok: false, code: "INVALID_ENVELOPE", message: "message_id required" };
+  }
+  if (
+    !options.allowHistoricalMessageId &&
+    !isCanonicalUlid(e.message_id)
+  ) {
+    return {
+      ok: false,
+      code: "INVALID_ENVELOPE",
+      message: "message_id must be a canonical ULID",
+      details: { message_id: e.message_id },
+    };
   }
   if (
     !nonEmptyString(e.message_name) ||
@@ -332,8 +345,9 @@ async function validateStoredBrowser(
     };
   }
 
+  const legacy = row.protocol_version === LEGACY_PROTOCOL_VERSION;
   let candidate: Record<string, unknown> = row;
-  if (row.protocol_version === LEGACY_PROTOCOL_VERSION) {
+  if (legacy) {
     if (!nonEmptyString(row.recorded_at)) {
       return { ok: false, code: "INVALID_ENVELOPE", message: "recorded_at required" };
     }
@@ -368,7 +382,9 @@ async function validateStoredBrowser(
     };
   }
 
-  const validated = await validateDraftBrowser(candidate);
+  const validated = await validateDraftBrowser(candidate, {
+    allowHistoricalMessageId: legacy,
+  });
   if (!validated.ok) return validated;
   return { ok: true, value: validated.value as DomainEvent };
 }

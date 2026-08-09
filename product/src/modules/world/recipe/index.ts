@@ -1,5 +1,6 @@
 export {
   getReviewedRecipe,
+  listReviewedRecipeIdsForSource,
   listReviewedRecipes,
 } from "./catalog";
 export { compileReviewedRecipe, recipeFingerprint } from "./compile";

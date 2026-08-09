@@ -13,7 +13,7 @@ export type SourceDiscussionSnapshot = {
   /** Exact English quote of the active SourceBlock (body text only). */
   quote: string;
   fragment: string;
-  pdf_page: number;
+  pdf_page?: number;
   print_page: number;
   edition_id: string;
   edition_revision: string;
@@ -64,7 +64,9 @@ export function discussionSnapshotFromEvidence(
     source_id: evidence.source_id,
     quote,
     fragment: evidence.fragment,
-    pdf_page: evidence.pdf_page,
+    ...(evidence.pdf_page === undefined
+      ? {}
+      : { pdf_page: evidence.pdf_page }),
     print_page: evidence.print_page,
     edition_id: evidence.edition_id,
     edition_revision: evidence.edition_revision,

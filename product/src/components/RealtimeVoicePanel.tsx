@@ -560,6 +560,9 @@ export function RealtimeVoicePanel({
         semanticStop = Promise.reject(error);
       }
     }
+    // Local stop must not wait behind an in-flight semantic turn. The
+    // synchronous generation fence in onStop already prevents late publication.
+    void semanticStop.catch(() => undefined);
     setMessage(null);
     sourceAtStartRef.current = null;
     requestAbortRef.current?.abort();
@@ -569,7 +572,6 @@ export function RealtimeVoicePanel({
       cleanupLocalMedia(),
       stopRemoteSession(),
       uploadChainRef.current,
-      semanticStop,
     ]);
     transition("stopped");
     setMessage(
@@ -649,7 +651,10 @@ export function RealtimeVoicePanel({
         </div>
       </div>
       <p className="rail-empty" data-testid="voice-source-snapshot">
-        本轮锚点：{sourceSnapshot.title} · PDF {sourceSnapshot.pdfPages.join("、")}
+        本轮锚点：{sourceSnapshot.title}
+        {sourceSnapshot.pdfPages.length > 0
+          ? ` · PDF ${sourceSnapshot.pdfPages.join("、")}`
+          : ""}
       </p>
       <div className="voice-actions">
         {canStart ? (

@@ -74,6 +74,7 @@ export function validateBookManifestV2(
   const locators = new Set<string>();
   const chapters = new Map<string, BookChapter>();
   let blockCount = 0;
+  const footnoteRefs: Array<{ sourceId: string; targetId: string }> = [];
   const bookNumbers: number[] = [];
   for (const [bookIndex, bookValue] of raw.books.entries()) {
     if (!isRecord(bookValue) || !Array.isArray(bookValue.chapters)) {
@@ -151,6 +152,11 @@ export function validateBookManifestV2(
         ) {
           return err("quote_hash_drift", `${sourceId} body/hash drift`);
         }
+        for (const node of body) {
+          if (node.type === "footnote_ref") {
+            footnoteRefs.push({ sourceId, targetId: node.targetId });
+          }
+        }
         sourceIds.add(sourceId);
         locators.add(locator);
         blockCount += 1;
@@ -169,6 +175,46 @@ export function validateBookManifestV2(
     bookFourChapterFour.order !== (bookFourChapterThree?.order ?? 0) + 1
   ) {
     return err("invalid_manifest", "Book IV volume boundary is not continuous");
+  }
+
+  if (!Array.isArray(raw.footnotes)) {
+    return err("invalid_manifest", "footnotes must be an array");
+  }
+  const footnoteIds = new Set<string>();
+  const footnoteLocators = new Set<string>();
+  for (const [index, value] of raw.footnotes.entries()) {
+    if (
+      !isRecord(value) ||
+      !isNonEmptyString(value.id) ||
+      !isNonEmptyString(value.marker) ||
+      !isNonEmptyString(value.text) ||
+      (value.backRefId !== undefined && !isNonEmptyString(value.backRefId))
+    ) {
+      return err("invalid_manifest", `footnotes[${index}] is invalid`);
+    }
+    if (
+      !isLocator(value.sourceLocator, volumeResources) ||
+      value.sourceLocator.fragment !== value.id
+    ) {
+      return err("missing_locator", `footnotes[${index}] locator is invalid`);
+    }
+    const locator = locatorKey(value.sourceLocator);
+    if (footnoteIds.has(value.id) || footnoteLocators.has(locator)) {
+      return err("duplicate_locator", `Duplicate footnote target: ${value.id}`, {
+        locator,
+      });
+    }
+    footnoteIds.add(value.id);
+    footnoteLocators.add(locator);
+  }
+  for (const reference of footnoteRefs) {
+    if (!footnoteIds.has(reference.targetId)) {
+      return err(
+        "source_unavailable",
+        `Footnote target not available: ${reference.targetId}`,
+        reference,
+      );
+    }
   }
 
   if (!isRecord(raw.aliases)) {
@@ -311,10 +357,11 @@ function isBody(value: unknown[]): value is BodyNode[] {
     }
     if (node.type === "footnote_ref") {
       return (
-        typeof node.marker === "string" &&
-        typeof node.href === "string" &&
-        typeof node.targetId === "string" &&
-        (node.id === undefined || typeof node.id === "string")
+        isNonEmptyString(node.marker) &&
+        isNonEmptyString(node.href) &&
+        isNonEmptyString(node.targetId) &&
+        node.href === `#${node.targetId}` &&
+        (node.id === undefined || isNonEmptyString(node.id))
       );
     }
     return false;

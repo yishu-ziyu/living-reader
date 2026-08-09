@@ -1,0 +1,600 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "locale": "zh-CN",
+  "chapterId": "smith.b1.c7",
+  "translations": [
+    {
+      "sourceId": "smith.b1.c7.p1",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_343"
+      },
+      "contentHash": "8c7c611e1e24aade2c6c5c2617d148604f064927eca968fb2dfc01bbbb9a2918",
+      "text": "在每个社会或地区，劳动和资本的各种不同用途，都有一个通常或平均的工资率和利润率。正如我以后将要说明的，这一比率自然地一部分受社会总体状况的支配，即社会是富裕还是贫穷，是处于进步、停滞还是衰退状态；另一部分则受每种用途的特殊性质支配。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p2",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_344"
+      },
+      "contentHash": "c35aaefcf6a1c0bc826af94fffcbbc1062dd60919674a3a6f3c1263ad8f00e49",
+      "text": "同样，在每个社会或地区，也有一个通常或平均的地租率；正如我以后将要说明的，这一比率也一部分受土地所在社会或地区的总体状况支配，另一部分受土地天然肥力或经改良后的肥力支配。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p3",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_345"
+      },
+      "contentHash": "19b81d0705358c2da0bd7f3b56d328b1e3d37cb5c2524f9087cda081814bbf99",
+      "text": "这些通常或平均的比率，可称为它们通常盛行的那个时间和地点的工资、利润和地租的自然率。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p4",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_346"
+      },
+      "contentHash": "90c0106d071ec97d6aef4391417880c3f49026c48537a671a0dcf756d85985ab",
+      "text": "当任何商品的价格，恰好足以按照地租、劳动工资和用于生产、加工并将其运到市场的资本利润各自的自然率支付这些费用，不多也不少时，这种商品便是按可称为其自然价格的价格出售。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p5",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_347"
+      },
+      "contentHash": "5e8a2fa63e44161f1f6e9a8b310f1973554d52842730a69c03d1e59b7ad9b945",
+      "text": "这时，商品恰好按其价值出售，也就是按把它运到市场的人实际付出的成本出售；因为在日常用语中，所谓任何商品的原始成本，虽不包括将要转售它的人的利润，但如果他出售商品所得的价格不能使他获得当地通常的利润率，那么他显然会因这笔生意而遭受损失；因为把资本用于别的方面，他本可以获得那份利润。此外，他的利润就是他的收入，是维持其生活的适当基金。在加工货物并将其运到市场期间，他预付给工人工资，也就是他们的生活资料；同样，他也预付给自己本人的生活资料，而这种生活资料通常与他可以合理预期从出售货物中获得的利润相称。因此，除非这些货物给他带来这份利润，否则它们就没有偿还那笔完全可以恰当地称为他为之实际付出的成本。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p6",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_348"
+      },
+      "contentHash": "c5ae98dd46b21b43b7e719018b83740d1922804bcab0ceba5e3ec0a9c4f84919",
+      "text": "因此，能给他留下这份利润的价格，虽不总是商人有时可以出售货物的最低价格，却是他可能在相当长时期内出售货物的最低价格；至少在享有完全自由，或他可以随意转行的地方是如此。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p7",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_349"
+      },
+      "contentHash": "497932ec7ba1c5e27ee336f18393c2223f6f27a6d93615a26d206ff6cef3f04c",
+      "text": "任何商品通常实际出售的价格，称为它的市场价格。市场价格可能高于、低于或恰好等于其自然价格。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p8",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_350"
+      },
+      "contentHash": "40fe5537cefd9788a1d458e897c07a2293b5b872a48373017bbae791d4cfbd31",
+      "text": "每一种特定商品的市场价格，取决于实际运到市场的数量同愿意支付该商品自然价格的人们的需求之间的比例；所谓自然价格，就是为了把商品运到那里而必须支付的地租、劳动和利润的全部价值。这些人可以称为有效需求者，他们的需求可以称为有效需求，因为这种需求足以促使商品被运到市场。它不同于绝对需求。可以说，一个非常贫穷的人在某种意义上也有对一辆六马马车的需求；他也许很想拥有它；但他的需求并不是有效需求，因为这种商品绝不可能为了满足他的需求而被运到市场。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p9",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_351"
+      },
+      "contentHash": "02da4398c3ddff9f88b49e1338aeb31798a84591c9e952c78ce4142450d2a355",
+      "text": "当运到市场的任何商品数量少于有效需求时，所有愿意支付为了把它运到那里而必须支付的地租、工资和利润全部价值的人，都无法得到自己所要的数量。有些人宁可多付些钱，也不愿完全得不到它。竞争会立即在他们之间展开，而市场价格高出自然价格的幅度，将取决于短缺程度的大小，或竞争者的财富和恣意奢侈在多大程度上激发了竞争的热烈程度。在财富和奢侈程度相同的竞争者之间，同样的短缺通常会引起激烈程度不等的竞争，这取决于取得这种商品对他们的重要程度。因此，在城市被封锁期间或发生饥荒时，生活必需品的价格会高得惊人。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p10",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_352"
+      },
+      "contentHash": "705ccb20c86c247b69a5bf5997150e75bae47c3fa44cc2363fc6ec4b7c8b3785",
+      "text": "当运到市场的数量超过有效需求时，全部商品不可能都卖给那些愿意支付为了把它运到那里而必须支付的地租、工资和利润全部价值的人。其中一部分必须卖给只愿意支付较低价格的人，而他们所出的低价必然会压低全部商品的价格。市场价格低于自然价格的幅度，将取决于过剩程度在多大程度上加剧卖方之间的竞争，或卖方立即脱手这种商品对他们的重要程度。输入同样过多的商品时，易腐商品所引起的竞争会远比耐久商品大；例如，输入过多的橙子所引起的竞争，就比输入过多的废铁大得多。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p11",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_353"
+      },
+      "contentHash": "a662aaecaaf427d9eb4dbf2f1dcf62b5013b9b261d2b29e12cfa52a0dc372e94",
+      "text": "当运到市场的数量恰好足以满足有效需求而没有多余时，市场价格自然会恰好等于自然价格，或尽可能接近自然价格。手头的全部商品都能按这个价格售出，却不能按更高价格售出。不同商人之间的竞争迫使他们全都接受这个价格，却不迫使他们接受更低的价格。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p12",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_354"
+      },
+      "contentHash": "d515a239c1e28f38fddf4b1bcb03b0713f692135212e76ab059f37b17a921b7b",
+      "text": "运到市场的每种商品的数量，自然会自行适应有效需求。凡是使用自己的土地、劳动或资本把任何商品运到市场的人，都有利益使其数量绝不超过有效需求；而其他所有人则都有利益使其数量绝不少于这种需求。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p13",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_355"
+      },
+      "contentHash": "85527325943d407b031008d56c6ad253d903c9393e46776ef799c52725858c62",
+      "text": "如果它在任何时候超过有效需求，其价格的某些组成部分就必然低于自然率支付。如果低于自然率的是地租，地主自身的利益会立即促使他们撤出一部分土地；如果是工资或利润，那么在前一种情况下，劳动者自身的利益会促使他们从这种用途中撤出一部分劳动，在后一种情况下，雇主自身的利益会促使他们撤出一部分资本。运到市场的数量很快就会减至恰好足以满足有效需求。其价格的各个不同组成部分都会上升到各自的自然率，整个价格也会上升到自然价格。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p14",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_356"
+      },
+      "contentHash": "576354c50b4d7d579b93924fbd4e4ed1154bf7492e5ca7c0ea51f103965b4284",
+      "text": "相反，如果运到市场的数量在任何时候少于有效需求，其价格的某些组成部分就必然上升到自然率以上。如果上升的是地租，所有其他地主自身的利益自然会促使他们准备更多土地来生产这种商品；如果上升的是工资或利润，所有其他劳动者和商人自身的利益很快就会促使他们投入更多劳动和资本来加工这种商品并将其运到市场。运到那里的数量很快就会足以满足有效需求。其价格的各个不同组成部分很快都会下降到各自的自然率，整个价格也会下降到自然价格。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p15",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_357"
+      },
+      "contentHash": "8c013cdd2a28cddbb276eb22d5ba6ba8e77d00ae6218887593a31b6887eeb894",
+      "text": "因此，自然价格仿佛是一个中心价格，一切商品的价格都不断向它靠拢。各种偶然事件有时可能使这些价格在相当高于自然价格的水平上停留，有时又可能迫使它们甚至降到略低于自然价格的水平。但无论存在什么障碍，使它们无法在这个安定而持久的中心落定，它们始终都趋向于这个中心。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p16",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_358"
+      },
+      "contentHash": "ec23c5e569e5fbbe09b7ef245f3d5feaf886fb5d04cff99170c6ec341856b838",
+      "text": "为了把任何商品运到市场而每年投入的全部生产活动量，便以这种方式自然地适应有效需求。它自然总是力求把恰好足以满足而不超过这种需求的数量运到市场。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p17",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_359"
+      },
+      "contentHash": "e78e4e5344aef969c1f1968a99e09deb6cb56874e92aa9be3bdb8f9abfa43173",
+      "text": "不过，在有些用途中，同量的生产活动在不同年份会生产出数量差别很大的商品；而在另一些用途中，它总是会生产出相同或几乎相同的数量。同样数量的农业劳动者，在不同年份会生产出数量差别很大的谷物、葡萄酒、油、啤酒花等。但同样数量的纺纱工和织工，每年都会生产出相同或几乎相同数量的亚麻布和呢绒。前一种生产活动，只有其平均产量才能在某种程度上适应有效需求；而由于其实际产量往往远高于、又往往远低于平均产量，运到市场的商品数量有时会大大超过、又有时会大大少于有效需求。因此，即使这种需求始终不变，这些商品的市场价格仍会发生大幅波动，有时会大大低于、有时又会大大高于其自然价格。在后一种生产活动中，由于同量劳动的产量总是相同或几乎相同，它便能更精确地适应有效需求。因此，只要这种需求保持不变，商品的市场价格也很可能保持不变，并且完全等于或尽可能接近自然价格。每个人的经验都会告诉他，亚麻布和呢绒的价格所发生的变化，无论频率还是幅度，都不及谷物价格。前一种商品的价格只随需求的变化而变化；后一种商品的价格不仅随需求的变化而变化，还随为满足这种需求而运到市场的数量所发生的幅度更大、次数更多的变化而变化。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p18",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_360"
+      },
+      "contentHash": "041cb290bf998677cda7d2e73968cc67f349f2f8313682285c1503de4dd1b995",
+      "text": "任何商品市场价格的偶发和暂时波动，主要落在其价格中分解为工资和利润的那些部分上。分解为地租的部分受这种波动的影响较小。以货币确定的地租，无论其比率还是其价值，都丝毫不受这种波动的影响。由一定比例或一定数量的天然产物构成的地租，其每年价值无疑会受到这种天然产物市场价格的一切偶发和暂时波动的影响；但其每年比率却很少受这种波动影响。在商定租约条件时，地主和佃农会尽其判断力所能，努力使这一比率所依据的不是产物暂时和偶发的价格，而是其平均和通常的价格。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p19",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_361"
+      },
+      "contentHash": "18147df534e9cf4df4348ddc168201fc9f5bf53fe6ab06c38ff1c61ade401a4b",
+      "text": "这种波动会影响工资或利润的价值和比率，具体取决于市场上商品或劳动是供给过多还是供给不足，也就是已经完成的工作或有待完成的工作是过多还是不足。全国性服丧会抬高黑布的价格（这种时候市场上的黑布几乎总是供给不足），并增加持有大量黑布的商人的利润。它对织工的工资没有影响。市场上供给不足的是商品，而不是劳动；是已经完成的工作，而不是有待完成的工作。它会提高成衣工人的工资。这里市场上供给不足的是劳动。对更多劳动，即更多有待完成的工作的有效需求，超过了所能获得的数量。它会压低彩色丝绸和布匹的价格，从而减少手头持有大量这类商品的商人的利润。它还会降低从事加工这类商品的工人的工资，因为对这类商品的一切需求都会中止六个月，或许中止整整一年。这里市场上商品和劳动都供给过多。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p20",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_362"
+      },
+      "contentHash": "0ea50f7de098819035db7028b0be9ad22d3cc37fe0a2efc0f363b2f9c8ddd016",
+      "text": "不过，尽管每一种特定商品的市场价格都以这种方式不断地——如果可以这样说的话——趋向自然价格，但有时某些偶然事件、有时自然原因、有时某些特定的管理条例，却可能使许多商品的市场价格长期保持在远高于自然价格的水平。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p21",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_363"
+      },
+      "contentHash": "6c488022c9a334ac4b228f4d7c6f78c5d9fffd0487b8588c69354d60b0a7a2b9",
+      "text": "当有效需求增加，使某种特定商品的市场价格偶然大大高于自然价格时，那些投入资本供应这个市场的人，通常都会谨慎地隐瞒这种变化。如果此事广为人知，他们的巨额利润就会诱使许多新竞争者以同样方式投入资本，以致有效需求得到充分满足，市场价格很快就会降至自然价格，甚至可能在一段时间内降到自然价格以下。如果市场离供应者的住所非常遥远，他们有时也许能把秘密连续保守数年，并在这么长时间内享受超额利润而不遇到任何新竞争者。不过，必须承认，这类秘密很少能够长久保守；超额利润的持续时间，也只能略长于秘密得到保守的时间。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p22",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_364"
+      },
+      "contentHash": "55b9441f8884f07b8525a17f9a72dc87854f479694ec1be113a00982c09e7f59",
+      "text": "制造业中的秘密比商业中的秘密更能长久保守。一个染工如果发现一种办法，可以用价格只有通常所用材料一半的材料染出某种特定颜色，那么只要经营得当，他终其一生都可以享受自己这一发现带来的好处，甚至还可将其作为遗产留给后代。他的超额收益来自为他的私人劳动支付的高价。这些收益恰当地说，是这种劳动的高额工资。但由于这种收益会在其资本的每一部分上反复产生，并且其总额因此同资本保持固定比例，所以通常被视为资本的超额利润。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p23",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_365"
+      },
+      "contentHash": "81d9055ba4daebd5e9fc30c4ff4ad85debcd8f33b91e10221073c2d66d65f9d1",
+      "text": "这种市场价格的提高，显然是特定偶然事件的结果，不过其作用有时可能连续持续许多年。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p24",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_366"
+      },
+      "contentHash": "145e8bd9973639168c55c98d4288ad0d2c967f4608bd97f89e24f70af7836876",
+      "text": "有些天然产物要求土壤和地理位置具有如此特殊的条件，以致一个大国中所有适合生产它们的土地，也可能不足以满足有效需求。因此，运到市场的全部数量，或许都能卖给那些愿意支付超过如下金额的人：按自然率支付生产它们的土地的地租，以及加工并将它们运到市场所投入的劳动工资和资本利润所需的金额。这类商品可能连续几个世纪都按这种高价出售；在这种情况下，其价格中分解为土地地租的部分，通常就是高于自然率支付的部分。出产这类独特而名贵产物的土地，其地租与附近同样肥沃、耕作同样良好的其他土地的地租并无固定比例，例如法国一些土壤和地理位置格外优越的葡萄园的地租。相反，把这类商品运到市场所投入的劳动工资和资本利润，却很少偏离当地劳动和资本其他用途的工资和利润所处的自然比例。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p25",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_367"
+      },
+      "contentHash": "9c4440a298cdb226089436239bc4482e078e878d3c1b0ce62f8ea2e176766004",
+      "text": "这种市场价格的提高，显然是自然原因的结果；这些原因可能使有效需求永远得不到充分满足，因而也可能永远持续发挥作用。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p26",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_368"
+      },
+      "contentHash": "45cf51cbbd2f80bf37ce62d2db4786689251322bfde9b05f7424d72c067e6462",
+      "text": "授予个人或贸易公司的垄断权，与商业或制造业中的秘密具有同样的效果。垄断者不断使市场供给不足，绝不充分满足有效需求，从而以远高于自然价格的价格出售商品，并把自己的报酬——无论它由工资还是利润构成——提高到远高于自然率的水平。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p27",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_369"
+      },
+      "contentHash": "a0743f06464ab8fbd4ddc7065c398976e779ea1548651c5397e27563b4e8c051",
+      "text": "垄断价格在任何时候都是能够取得的最高价格。相反，自然价格，即自由竞争下的价格，虽不是在每一时刻，却是在任何相当长时期内能够接受的最低价格。前者在任何时候都是可以从买者那里榨取的最高价格，或人们认为买者会同意支付的最高价格；后者则是卖者通常有能力接受、同时又能继续经营的最低价格。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p28",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_370"
+      },
+      "contentHash": "acd63b456cc6f15c9a54de239703b67906c6303acd1e3e205d68e38ee01f9b28",
+      "text": "行业团体的专有特权、学徒法规，以及所有那些在特定行业中把竞争者人数限制得少于本来可以进入这些行业的人数的法律，也具有同样的趋势，尽管程度较轻。它们是一种扩大了的垄断，往往能够在整个行业类别中连续几个世纪使特定商品的市场价格保持在自然价格以上，并使相关的劳动工资和所用资本的利润都维持在略高于其自然率的水平。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p29",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_371"
+      },
+      "contentHash": "ef3fd90c4e332e392907cd19bc27e71decdc46d50904ac9e72ff2e9b6ce64883",
+      "text": "这种市场价格的提高，可以与导致它们的管理条例持续同样长的时间。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p30",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_372"
+      },
+      "contentHash": "5583bfdf68fc5492bba4f2fa4c065fefbb91da3052852584f9a5d88c6871c3b8",
+      "text": "任何特定商品的市场价格，虽然可以长期高于自然价格，却很少能长期低于自然价格。无论价格的哪个部分低于自然率支付，利益受到影响的人都会立即感受到损失，并立即从这种商品的生产中撤出相应数量的土地、劳动或资本，使运到市场的数量很快减至恰好足以满足有效需求。因此，它的市场价格很快就会上升到自然价格。至少在存在完全自由的地方，情况会是如此。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p31",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_373"
+      },
+      "contentHash": "158961b5c8f0eac6987c4f059dc0c1ef1997ef32d6a0e0f4d1b025e2588769ea",
+      "text": "事实上，同样的学徒法规和其他行业团体法规，在一种制造业繁荣时，能使工人把工资提高到远高于其自然率的水平；而在该行业衰落时，有时又迫使他把工资降到远低于自然率的水平。正如在前一种情况下，这些法规把许多人排除在他的行业之外，在后一种情况下，它们也把他排除在许多行业之外。不过，这类条例在把工人工资压低到自然率以下方面的作用，远不如在把工资提高到自然率以上方面持久。它们在后一方面的作用可以持续许多个世纪，但在前一方面，其持续时间不会超过该行业繁荣时培养出来的一些工人的寿命。他们去世以后，此后接受这种行业训练的人数，自然会适应有效需求。只有像印度斯坦或古埃及那样严厉的管理制度（在那里，每个人都因宗教原则的约束而必须继承父业，而且如果改从其他职业，就被认为犯下了最可怕的亵渎神明之罪），才可能在某个特定行业中连续几代人把劳动工资或资本利润压低到自然率以下。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p32",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_374"
+      },
+      "contentHash": "8a12b72015a5f19bbd6dcf453bfff384fea600867f9b40637bdbe6775821f8ee",
+      "text": "关于商品市场价格偶发或持久偏离自然价格的情况，我认为目前需要说明的仅此而已。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p33",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_375"
+      },
+      "contentHash": "045a53fded113b03d414707adf0efaf2f3437083cbbeba669701b0d851470da1",
+      "text": "自然价格本身会随着其各组成部分——工资、利润和地租——各自自然率的变化而变化；而在每个社会中，这些比率又随社会状况而变化，即随社会的富裕或贫穷、进步、停滞或衰退状态而变化。在以下四章中，我将尽力把这些不同变化的原因解释得尽可能充分而清楚。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p34",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_376"
+      },
+      "contentHash": "0109bf6033be78d19d2166f71c65e93efc41e701d0bee713c1db9374a7aeedbb",
+      "text": "首先，我将努力说明哪些状况自然决定工资率，以及这些状况如何受到社会富裕或贫穷、进步、停滞或衰退状态的影响。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p35",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_377"
+      },
+      "contentHash": "84ea9c14739c759e07814e2225483302ab0792f3208fb21ebb4775ff0c03ea27",
+      "text": "第二，我将努力说明哪些情况自然决定利润率，以及社会状况的类似变化又以何种方式影响这些情况。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p36",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_378"
+      },
+      "contentHash": "6b6df3d1171ca272d84b1239440e44695f12731a706a73b5f38b957f0e834337",
+      "text": "尽管劳动和资本在不同用途上的货币工资和利润差异很大，但在劳动的所有不同用途的货币工资之间，以及资本的所有不同用途的货币利润之间，通常似乎都存在着一定的比例。下文将会表明，这一比例部分取决于不同用途的性质，部分取决于开展这些用途的社会所实行的不同法律和政策。不过，尽管这一比例在许多方面取决于法律和政策，它似乎很少受该社会富裕或贫穷状况的影响，也很少受该社会处于进步、停滞还是衰退状态的影响；在所有这些不同状态下，它都保持不变，或几乎不变。第三，我将努力说明调节这一比例的各种不同情况。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c7.p37",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_379"
+      },
+      "contentHash": "e42d1970f3c9637a52ee1a3438b2ab7280d50b584f3baeac377d13dacbf889ca",
+      "text": "第四，也是最后，我将努力说明哪些情况调节土地的地租，以及哪些情况会提高或降低土地所出产的各种不同物质的真实价格。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    }
+  ]
+}

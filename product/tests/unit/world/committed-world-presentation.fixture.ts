@@ -1,10 +1,17 @@
-import type { CommittedWorldPresentation } from "@/modules/world";
+import type {
+  CommittedWorldPresentation,
+  PresentationPlan,
+} from "@/modules/world";
+
+function canonicalMessageId(streamVersion: number): string {
+  return `01K25V2J${String(streamVersion).padStart(18, "0")}`;
+}
 
 export function committedWorldPresentationFixture(): CommittedWorldPresentation {
   const events = [
     {
       message_name: "reader_world.world.event_recorded.v1" as const,
-      message_id: "world-event-merchant",
+      message_id: canonicalMessageId(7),
       stream_version: 7,
       event_index_in_commit: 0,
       world_revision: 1,
@@ -15,7 +22,7 @@ export function committedWorldPresentationFixture(): CommittedWorldPresentation 
     },
     {
       message_name: "reader_world.world.event_recorded.v1" as const,
-      message_id: "world-event-shepherd",
+      message_id: canonicalMessageId(8),
       stream_version: 8,
       event_index_in_commit: 1,
       world_revision: 1,
@@ -26,7 +33,7 @@ export function committedWorldPresentationFixture(): CommittedWorldPresentation 
     },
     {
       message_name: "reader_world.world.event_recorded.v1" as const,
-      message_id: "world-event-spinner",
+      message_id: canonicalMessageId(9),
       stream_version: 9,
       event_index_in_commit: 2,
       world_revision: 1,
@@ -37,7 +44,7 @@ export function committedWorldPresentationFixture(): CommittedWorldPresentation 
     },
     {
       message_name: "reader_world.world.event_recorded.v1" as const,
-      message_id: "world-event-weaver",
+      message_id: canonicalMessageId(10),
       stream_version: 10,
       event_index_in_commit: 3,
       world_revision: 1,
@@ -134,5 +141,77 @@ export function committedWorldPresentationFixture(): CommittedWorldPresentation 
       seed: 42,
       graph_revision: 1,
     },
+  };
+}
+
+export function presentationPlanFixture(): PresentationPlan {
+  const committed = committedWorldPresentationFixture();
+  return {
+    plan_version: 1,
+    motion_mode: "standard",
+    basis: {
+      recipe_id: "smith.b1.market-extent.v1",
+      recipe_fingerprint: "fixture-fingerprint",
+      world_id: committed.basis.world_id,
+      graph_revision: committed.basis.graph_revision,
+      world_revision: committed.basis.world_revision,
+      ruleset_id: committed.basis.ruleset_id,
+      seed: committed.basis.seed,
+    },
+    scene: {
+      template_id: "wool-town",
+      title: "针厂的边界",
+      summary: "市场范围改变订单、库存与分工。",
+    },
+    entities: committed.roles.map((role, position) => ({
+      actor_id: role.actor_id,
+      label: role.actor_id,
+      role: role.actor_id,
+      position,
+    })),
+    stocks: [
+      { id: "supply", label: "供给", metric_id: "output" },
+      { id: "inventory", label: "库存", metric_id: "stock" },
+      { id: "demand", label: "订单", metric_id: "reachable_orders" },
+      { id: "cash", label: "现金", metric_id: "cash" },
+    ],
+    flows: [
+      { id: "orders", label: "订单流", from: "merchant", to: "weaver" },
+    ],
+    actions: [
+      {
+        action_id: "expand_market",
+        label: "扩大市场",
+        description: "让订单触达更远的市场。",
+      },
+    ],
+    source: {
+      book_id: "wealth-of-nations",
+      source_id: "smith.b1.c3.p1",
+      legacy_source_id: "smith.b1.c3.market_extent",
+      fragment: "Smith_0206-01_426",
+      quote: "The division of labour is limited by the extent of the market.",
+    },
+    metrics: {
+      supply: 17,
+      inventory: 11,
+      demand: 4,
+      cash: 28,
+    },
+    timeline: committed.events.map((event, index) => ({
+      index,
+      actor_id: event.actor_id ?? "merchant",
+      event_kind: "character_observation",
+      motion_verb: "respond",
+      delay_ms: index * 80,
+      duration_ms: 240,
+      caption: event.summary,
+    })),
+    audio_refs: [],
+    captions: committed.events.map((event) => event.summary),
+    dom_summary: [
+      "市场范围改变订单、库存与分工。",
+      "供给 17，库存 11，可触达订单 4，现金 28。",
+    ],
   };
 }

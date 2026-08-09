@@ -1,0 +1,872 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "locale": "zh-CN",
+  "chapterId": "smith.b4.c8",
+  "translations": [
+    {
+      "sourceId": "smith.b4.c8.p1",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_378"
+      },
+      "contentHash": "c5290e77c1c9016fda033973fc4d84781a0cbe56f8c323a74cff17dc81d6607d",
+      "text": "尽管奖励出口和限制进口，是重商主义体系企图使每个国家富裕起来的两大手段，但对于某些特定商品，它似乎采取了相反的方针：限制出口，奖励进口。不过，它声称，其最终目的始终如一，即通过有利的贸易差额使国家富裕起来。它限制制造业原料和生产工具的出口，以便使本国工人取得优势，并使他们能够在所有外国市场上以低于其他国家工人的价格出售产品；它还企图通过以这种方式限制少数价值不高的商品出口，促成其他商品数量大得多、价值也高得多的出口。它奖励制造业原料的进口，以使本国人民能够以较低成本把它们加工成制成品，从而防止数量更大、价值也更高的制成品进口。至少在我国的法令汇编中，我没有看到对生产工具进口给予任何奖励。当制造业发展到一定的宏大规模时，制造生产工具本身就成为许多非常重要的制造业的业务。对这类工具的进口给予任何特别奖励，都会与这些制造业的利益发生太大冲突。因此，这类进口不仅没有得到奖励，反而经常受到禁止。例如，爱德华四世第三年法令禁止进口梳羊毛用的梳具，但从爱尔兰进口，或作为海难货物或战利品运入的除外；伊丽莎白第三十九年法令重申了这项禁令，后来的法律又使其延续并成为永久性禁令。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p2",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_379"
+      },
+      "contentHash": "3f262b3fc947b8e988aa135b7016e9f2c17aa7a7012df13ecfac5c5f3a11f057",
+      "text": "制造业原料的进口，有时因免缴其他货物所须缴纳的关税而得到奖励，有时则因补贴而得到奖励。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p3",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_380"
+      },
+      "contentHash": "099f489cce2661dcec83a11f5780a78d84f872c912a991f9c4f6bc8932701c13",
+      "text": "从若干不同国家进口绵羊毛，从所有国家进口棉花，进口未经加工的亚麻、绝大部分染料、来自爱尔兰或英属殖民地的绝大部分未经鞣制的兽皮、来自英国格陵兰渔业的海豹皮、来自英属殖民地的生铁和条铁，以及其他若干制造业原料，只要在海关适当申报，便可免缴一切关税，从而受到奖励。我国商人和制造商的私人利益，或许像迫使立法机关制定我国其他大部分商业规章一样，迫使它给予了这些免税待遇。不过，这些待遇完全公正合理；而且，如果能在符合国家财政需要的前提下，将其扩大到所有其他制造业原料，公众无疑会从中获益。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p4",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_381"
+      },
+      "contentHash": "e05bed43ad7447528b2e9ac453ab02e5c7c115598da0248e1abc1c14bd73bf74",
+      "text": "然而，我国大制造商的贪欲，在某些情况下已使这些免税待遇远远超出可以正当地视为其生产所用粗质原料的范围。乔治二世第二十四年第46章法令，对外国本色亚麻纱的进口只征收每磅一便士的小额关税，取代了以前对它征收的高得多的关税，即帆布纱每磅六便士，所有法国和荷兰纱每磅一先令，所有普鲁士或莫斯科纱每英担二英镑十三先令四便士。但我国制造商并未长期满足于这次减税。同一国王第二十九年第15章法令，即对每码价格不超过十八便士的英国和爱尔兰亚麻布出口给予补贴的那项法令，甚至取消了进口本色亚麻纱的这项小额关税。然而，在制备亚麻纱所必需的各道工序中，所使用的劳作比后来用亚麻纱制成亚麻布的工序多得多。姑且不说种植亚麻和整理亚麻者的劳作，要使一个织工持续有活可做，至少需要三个或四个纺纱工；而且，制备亚麻布所需劳动总量的五分之四以上，都用于制备亚麻纱。但我国的纺纱工都是穷人，通常是妇女，分散在全国各地，既无援助，也无保护。我国的大制造业主不是靠出售她们的产品，而是靠出售织工制成的成品来赚取利润。正如以尽可能高的价格出售成品符合他们的利益一样，以尽可能低的价格购入原料也符合他们的利益。他们迫使立法机关对自己的亚麻布出口给予补贴，对所有外国亚麻布进口征收高额关税，并完全禁止某些法国亚麻布在国内消费，借此力图以尽可能高的价格出售自己的商品。他们奖励外国亚麻纱进口，使其与本国人民制造的亚麻纱竞争，借此力图以尽可能低的价格购买贫苦纺纱工的产品。他们同样热衷于压低本国织工的工资和贫苦纺纱工的收入；他们力图提高成品价格或降低粗质原料价格，绝不是为了工人的利益。我国重商主义体系主要奖励的，是为富人和权势者的利益而从事的劳作。为穷人和贫困者的利益而从事的劳作，则往往不是受到忽视，就是受到压迫。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p5",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_382"
+      },
+      "contentHash": "b8650a8cde5bc18c5226e57636d575f13e8b6ab7ab8466a6310dee96873bd82d",
+      "text": "亚麻布出口补贴和外国纱线进口免税待遇原来都只准予十五年，后来经过两次不同的延期，将在紧接1786年6月24日之后的议会会期结束时到期。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p6",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_383"
+      },
+      "contentHash": "f36841d579b9d82561bde4d2acf12bbb2cd8d718921a3818dfbf9a299bfc1a6f",
+      "text": "通过补贴给予制造业原料进口的奖励，主要限于从我国美洲种植园进口的原料。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p7",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_384"
+      },
+      "contentHash": "ed1feb9704ac7d416d1ccdad58d04e0b694ad2e124339f62fd4ac0480c9b864d",
+      "text": "这类补贴最早是在本世纪初前后对从美洲进口海军物资给予的补贴。这个名称所包括的，是适合制作桅杆、帆桁和斜桅的木材，以及大麻、焦油、沥青和松节油。不过，对桅杆木每吨一英镑的补贴和对大麻每吨六英镑的补贴，也扩大到从苏格兰进口英格兰的这类物资。这两项补贴一直按原标准不作任何变动，直到分别获准到期为止：大麻补贴于1741年1月1日到期，桅杆木补贴则于紧接1781年6月24日之后的议会会期结束时到期。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p8",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_385"
+      },
+      "contentHash": "fc45f6da8dc7f6c1933ca492c9cc00a1470baa76c5f970c735baf1cd46e31873",
+      "text": "焦油、沥青和松节油的进口补贴，在实施期间经历了数次变动。焦油补贴原为每吨四英镑，沥青补贴也是如此，松节油补贴则为每吨三英镑。后来，每吨四英镑的焦油补贴只限于以特定方法制备的焦油；其他优质、洁净、适合销售的焦油，其补贴降为每吨二英镑四先令。沥青补贴同样降为每吨一英镑，松节油补贴则降为每吨一英镑十先令。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p9",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_386"
+      },
+      "contentHash": "43142b5768ac0b1659f8ef02669f846afb27b0e73ba6cd8756db7645404727a4",
+      "text": "按时间顺序，对任何制造业原料进口给予的第二项补贴，是乔治二世第二十一年第30章法令对从英属种植园进口靛蓝给予的补贴。当种植园靛蓝的价值达到最优质法国靛蓝价格的四分之三时，根据该法令，每磅可获得六便士补贴。这项补贴同大多数其他补贴一样，原本只准予有限期限，后来经过数次延期而继续实行，但被降为每磅四便士。它获准在紧接1781年3月25日之后的议会会期结束时到期。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p10",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_387"
+      },
+      "contentHash": "8923189a38d725901644292be7a7078da1da0537f12a717dc730e14210563742",
+      "text": "这类补贴中的第三项，是乔治三世第四年第26章法令对从英属种植园进口大麻或未经加工的亚麻给予的补贴；该法令颁布的时间，大致是在我们开始时而拉拢、时而与美洲殖民地争吵之际。这项补贴准予二十一年，从1764年6月24日至1785年6月24日。头七年按每吨八英镑的标准给予，第二个七年按六英镑，第三个七年按四英镑。这项补贴没有扩大到苏格兰；当地虽然有时也少量种植品质较差的大麻，但其气候不很适合这种作物。如果对苏格兰亚麻进口英格兰给予这样的补贴，就会对联合王国南部地区的本地出产造成过大的打击。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p11",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_388"
+      },
+      "contentHash": "97727f658d1360dc0d099f1aa7cc119c206dd91c4f589edd8b563d4f026fbc0c",
+      "text": "这类补贴中的第四项，是乔治三世第五年第45章法令对从美洲进口木材给予的补贴。补贴准予九年，从1766年1月1日至1775年1月1日。头三年，每一百二十块优质厚木板按一英镑的标准给予补贴，其他方材每一载量五十立方英尺按十二先令的标准给予补贴。第二个三年，厚木板按十五先令、其他方材按八先令的标准给予补贴；第三个三年，厚木板按十先令、其他方材按五先令的标准给予补贴。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p12",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_389"
+      },
+      "contentHash": "b2e9b0331f5b1ad2d9ee7179f855331840baaecd24ef7ea62018bc3a48321461",
+      "text": "这类补贴中的第五项，是乔治三世第九年第38章法令对从英属种植园进口生丝给予的补贴。补贴准予二十一年，从1770年1月1日至1791年1月1日。头七年，每价值一百英镑按二十五英镑的标准给予；第二个七年按二十英镑；第三个七年按十五英镑。饲养蚕和制备蚕丝需要大量手工劳动，而美洲的劳动又极其昂贵；因此，据我所知，即使如此高额的补贴，也不大可能产生任何显著效果。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p13",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_390"
+      },
+      "contentHash": "e0054e6dee9023029d03f3fdbdaf45549082e5bd9c6fb4c99d51bfa15ea3cdc9",
+      "text": "这类补贴中的第六项，是乔治三世第十一年第50章法令对从英属种植园进口大桶、中桶和小桶用桶板及桶底板给予的补贴。补贴准予九年，从1772年1月1日至1781年1月1日。头三年，每种木料均按一定数量给予六英镑；第二个三年给予四英镑；第三个三年给予二英镑。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p14",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_391"
+      },
+      "contentHash": "25544ee90fd862974b5bb64994a39b1c2dcc70f60f90022eb125d7880b402b05",
+      "text": "这类补贴中的第七项，也是最后一项，是乔治三世第十九年第37章法令对从爱尔兰进口大麻给予的补贴。其准予方式与从美洲进口大麻和未经加工的亚麻的补贴相同，期限为二十一年，从1779年6月24日至1800年6月24日。这一期限也分为三个各为七年的时期；在每个时期内，爱尔兰补贴的标准都与美洲补贴相同。不过，它不像美洲补贴那样适用于未经加工的亚麻进口。否则，就会对大不列颠种植这种作物造成过大的打击。最后这项补贴获准时，英国和爱尔兰立法机关彼此之间的情绪，并不比先前英国和美洲立法机关彼此之间好多少。但愿给予爱尔兰的这项恩惠，是在比给予美洲的所有恩惠更为吉利的兆头下授予的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p15",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_392"
+      },
+      "contentHash": "f5503ea52b8953a8f6e09d05d2bcd327836dddb45378bd73873beea640db1ba9",
+      "text": "我们对这些商品从美洲进口给予补贴，但从任何其他国家进口时，却对它们征收相当高的关税。我国美洲殖民地的利益被视为与母国的利益相同。它们的财富被视为我们的财富。据说，无论汇给它们多少钱，都会通过贸易差额全部回到我们手中；无论我们为它们花费多少钱，都绝不会使我们穷上一个法辛。它们在各方面都属于我们，这种支出是用于改良我们自己的财产，并为我们自己的人民提供有利可图的就业。我认为，为揭露这一制度的愚蠢，目前已没有必要再说什么；致命的经验如今已经把它充分揭露了。假如我国美洲殖民地确实是大不列颠的一部分，这些补贴就可视为生产补贴，因而仍会受到一切适用于这类补贴的非难，但不会受到其他非难。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p16",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_393"
+      },
+      "contentHash": "709db4aae072c0a7608b5de8b3dc76af05f937631e0929d2f34ddfa1b2766f6b",
+      "text": "制造业原料的出口，有时通过绝对禁令加以限制，有时则通过高额关税加以限制。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p17",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_394"
+      },
+      "contentHash": "3f29c7b0ecde7a9024c1eadf0df62895419ee02ceb9555bb8adfad26e908f4a4",
+      "text": "我国毛织品制造商在说服立法机关相信国家繁荣取决于他们这一特定行业的成功和扩展方面，比任何其他类别的从业者都更为成功。他们不仅通过绝对禁止从任何外国进口毛织品，取得了针对消费者的垄断权；而且还通过以类似方式禁止活羊和羊毛出口，取得了针对养羊农户和羊毛生产者的另一种垄断权。许多为确保财政收入而制定的法律，对在那些法律宣布其为犯罪以前一向被认为无罪的行为施以严厉惩罚，人们对此作出了十分正当的抱怨。然而，我敢断言，与我国商人和制造商为维持自身荒谬而压迫性的垄断，叫嚷着迫使立法机关制定的某些法律相比，我国最残酷的财政法也算是温和宽厚的。像德拉古的法律一样，可以说这些法律全都是用血写成的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p18",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_395"
+      },
+      "contentHash": "14a29b237f6c9ca6a6612047094466d2dd3ffd2ffaa0fece961059179712ab9b",
+      "text": "根据伊丽莎白第八年第3章法令，出口绵羊、羔羊或公羊者，初犯须永久没收全部财产，监禁一年，随后在赶集日于一个集镇砍掉左手，并把断手钉在那里；再犯则被判为重罪犯，并相应处死。防止我国绵羊品种在外国繁衍，似乎是这项法律的目的。根据查理二世第十三年和第十四年第18章法令，出口羊毛被定为重罪，出口者须受与重罪犯相同的刑罚和财产没收。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p19",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_396"
+      },
+      "contentHash": "8de173403ec9e3066b7438435700e5d46f71c7e2566d01eb41d5326588804373",
+      "text": "为了维护本国人道精神的名誉，但愿这两项法令都从未执行过。不过，据我所知，前一项法令从未被直接废除，而霍金斯大律师似乎认为它仍然有效。然而，查理二世第十二年第32章第3节法令或许可以被视为已在实质上废除了它；这项法令虽未明文取消先前法令规定的刑罚，却规定了一项新的刑罚，即每出口或企图出口一只羊，罚款二十先令，并没收羊只以及羊只所有人在该船中所占的份额。后一项法令则被威廉三世第七年和第八年第28章第4节明文废除。该条宣布：“鉴于查理二世国王第十三年和第十四年为禁止羊毛出口而制定的法令，除该法令所述其他事项外，规定此种行为应视为重罪；由于这一刑罚过于严厉，对违法者的追诉未能得到有效执行：兹由前述权力制定法律，废除上述法令中将上述违法行为定为重罪的部分，并使之无效。”",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p20",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_397"
+      },
+      "contentHash": "75caab7a450228795df811cbc81014d08b60b53d584416defe19626f07050113",
+      "text": "不过，无论是这项较温和的法令规定的刑罚，还是先前法令规定而未被这项法令废除的刑罚，仍然足够严厉。除没收货物外，出口者每出口或企图出口一磅羊毛，还要被罚三先令，约为羊毛价值的四倍或五倍。任何被判犯有此罪的商人或其他人，都不得向任何代理商或其他人追索属于自己的任何债项或账款。无论他有多少财产，无论他是否有能力缴纳这些高额罚款，法律的用意都是要使他彻底破产。不过，由于广大人民的道德尚未像这项法令的设计者那样败坏，我从未听说有人曾利用这一条款。如果被判犯有此罪的人在判决后三个月内无力缴纳罚款，就要被流放七年；如果他在期满前返回，则须按重罪论处，不得享有神职人员特权。船主明知此项违法行为，须丧失其对船舶和船具的一切权益。船长和船员明知此项违法行为，须没收其全部动产，并监禁三个月。根据后来的一项法令，船长须监禁六个月。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p21",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_398"
+      },
+      "contentHash": "588c4bf5245140d4817c50474a7535177455fb257e8b4c89b35067a025cd0ddb",
+      "text": "为了防止出口，羊毛的全部国内贸易都受到极其繁重而压迫性的限制。羊毛不得装在任何盒、桶、木桶、箱、柜或任何其他包装物中，只能装在皮革包或包装布包内，包外必须以不短于三英寸的大字标明“羊毛”或“毛纱”；否则，羊毛和包装物均予没收，货主或包装者还须按每磅三先令缴纳罚款。在距海岸五英里以内，羊毛不得在日出之前或日落之后装上任何马匹或车辆，也不得经陆路运输；否则，羊毛、马匹和车辆均予没收。羊毛运出或运经的毗邻海岸的百户区，如果羊毛价值低于十英镑，须罚二十英镑；如果价值更高，则须罚其价值的三倍，另加三倍诉讼费用，并须在一年内提起诉讼。执行须针对任意两名居民，由季度治安法庭像处理抢劫案件那样，通过向其他居民摊派，偿还这两人的损失。如果有人与百户区私下和解，接受低于这项罚款的数额，他将被监禁五年；任何其他人都可提起诉讼。这些规章适用于全国。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p22",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_399"
+      },
+      "contentHash": "bc2784973f7cda9937434ddf4db1ea59e2d3f8979798bb03581051df850248e8",
+      "text": "但在肯特和苏塞克斯这两个特定郡，限制甚至更为麻烦。海岸十英里以内的每个羊毛所有者，都必须在剪毛后三日内，以书面形式向最近的海关官员报告其剪下的整片羊毛的数量和存放地点。在搬动其中任何一部分之前，他还必须以同样方式通知这些羊毛的数量和重量、受让人的姓名和住所，以及拟运往的地点。在上述两郡距海十五英里以内，任何人在向国王具结担保其所购羊毛的任何部分均不会由他出售给距海十五英里以内的任何其他人之前，都不得购买任何羊毛。在上述两郡，如果发现任何羊毛正被运往海边，而没有按前述方式申报并提供担保，羊毛即予没收，违法者还须按每磅三先令缴纳罚款。如果有人把未按前述方式申报的羊毛存放在距海十五英里以内，羊毛必须予以查扣和没收；在查扣之后，如果有人主张对其享有权利，他必须向财政署提供担保，保证如果审判败诉，除所有其他刑罚外，还将支付三倍诉讼费用。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p23",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_400"
+      },
+      "contentHash": "2385e8be8b4d964e0ce1333135c26ed6e8fc68450baf339bd9ef2b0629a9c4f3",
+      "text": "当这种限制施加于内地贸易时，我们可以相信，沿海贸易也不可能得到多大自由。凡羊毛所有者将任何羊毛运送或令人运送至海岸的任何港口或地点，以便从那里经海路转运至沿海的任何其他地点或港口，都必须先在拟由其运出的港口办理申报，载明重量、标记和包件数目，而且须在将羊毛运至距该港口五英里以内之前办理；否则，羊毛及马匹、车辆和其他运输工具均予没收，并须遭受和缴纳其他现行禁止羊毛出口的法律所规定的处罚。然而，这项法律（威廉三世第一年，第三十二章）宽容到了这种程度，竟声明：“本法不得妨碍任何人将其羊毛从剪毛地点运回家中，即使该地距海不足五英里，条件是他须在剪毛后十日内并在搬移羊毛之前，亲笔向最近的海关官员证明羊毛的确切张数及其存放地点；而且如不在搬移前三日亲笔向该官员证明自己有意这样做，便不得搬移。”以沿海航运方式运送羊毛，必须提供保证，确保羊毛在出口申报所指定的特定港口卸下；如果其中任何部分在没有官员在场时卸下，则不仅会像其他货物一样遭到没收，还会同时受到通常的附加处罚，即每磅重量罚款三先令。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p24",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_401"
+      },
+      "contentHash": "165f3d2901e5afb88e021e44340d73e6a87862a7f99026957c7451d5f242daa5",
+      "text": "我国的毛织品制造商为了证明他们要求实行这种异乎寻常的限制和规章是正当的，曾自信地断言：英格兰羊毛具有一种特殊品质，胜过任何其他国家的羊毛；其他国家的羊毛若不掺入一些英格兰羊毛，就不能制成任何尚可的毛织品；没有它便不能制造细呢；因此，如果英格兰能够完全阻止这种羊毛出口，就可以为自己垄断几乎全世界的毛织品贸易；这样一来，由于没有竞争者，她便可以随意定价，并在短时间内通过最有利的贸易差额获得令人难以置信的巨额财富。这种学说如同任何相当数量的人自信断言的大多数其他学说一样，过去受到而且现在仍继续受到多得多的人的绝对信奉；这些人几乎包括所有不熟悉毛织品贸易的人，或没有作过专门考察的人。然而，说英格兰羊毛在任何方面都是制造细呢所必需的，这完全是错误的；它根本不适合制造细呢。细呢完全由西班牙羊毛制成。英格兰羊毛甚至不能以掺杂的方式加入西班牙羊毛之中，否则便会在一定程度上破坏并降低呢料的品质。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p25",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_402"
+      },
+      "contentHash": "a43543fe189e3c272f269df084e0a990f7f8d06bab41f45a4e3e54712a4d655a",
+      "text": "本书前文已经说明，这些规章的作用是把英格兰羊毛的价格压低到不仅低于现今自然会有的水平，而且大大低于爱德华三世时代的实际水平。据说，苏格兰羊毛因联合而受到同样规章约束时，其价格下跌了约一半。《羊毛纪事》那位极为严谨而明达的作者约翰·史密斯牧师指出，英格兰最优质羊毛在英格兰的价格，通常低于品质远为低劣的羊毛在阿姆斯特丹市场上的通常售价。把这种商品的价格压低到可以称为其自然和适当价格的水平以下，正是那些规章公开宣称的目的；而且这些规章似乎毫无疑问地产生了人们预期的效果。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p26",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_403"
+      },
+      "contentHash": "3dede9fc3bdf1d2d23ae0c30620bb304aa9de2c6e5a5081a2a5feeb4eaab7054",
+      "text": "也许有人会认为，这种价格下降由于抑制了羊毛生产，必定大大减少了这种商品的年产量；即使没有降到以往的年产量以下，也降到了在当前情势下，若由于市场开放自由而获准上涨到自然和适当价格时可能达到的年产量以下。不过，我倾向于相信，这些规章对年产量的影响即使或许有一点，也不可能很大。生产羊毛并不是牧羊人运用其勤劳和资本的主要目的。他所期望的利润，与其说来自羊毛的价格，不如说来自羊体的价格；而且在许多情况下，后者的平均或通常价格，甚至必定会补偿前者平均或通常价格中的任何不足。本书前文已经指出：“凡是倾向于把羊毛或生皮的价格压低到其自然水平以下的规章，在一个进步并得到耕作的国家，都必定在某种程度上倾向于提高鲜肉的价格。在经过改良和耕作的土地上饲养的大小牲畜，其价格必须足以支付地主有理由期望从经过改良和耕作的土地取得的地租，以及农场主有理由期望取得的利润。如果不足以支付，他们很快就会停止饲养。因此，这一价格中凡不是由羊毛和兽皮支付的部分，都必须由牲畜躯体支付。一方面支付得越少，另一方面就必须支付得越多。只要地主和农场主能得到全部价款，这一价格以何种方式分摊到牲畜的各个部分，对他们并无关系。因此，在一个进步并得到耕作的国家，这类规章不会对他们作为地主和农场主的利益产生多大影响，尽管由于食品价格上涨，却可能影响他们作为消费者的利益。”因此，按照这种推理，在一个进步并得到耕作的国家，羊毛价格的这种降低不大可能使这种商品的年产量有所减少；只有在它提高羊肉价格，从而略微减少对这种特定鲜肉的需求，并因而减少其产量的范围内，才是例外。不过，即使通过这种方式，其影响大概也不是很大。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p27",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_404"
+      },
+      "contentHash": "3523cf6cb697d8ad80d8a93671b2437209ab72660fe1da845836464253d488c4",
+      "text": "但是，尽管它对年产量的影响可能并不是很大，也许有人会认为，它对品质的影响必然很大。可以设想，英格兰羊毛品质的降低，即使没有降到以往的品质以下，也降到了在目前这种改良和耕作状况下自然会达到的品质以下，而且降低的程度必定与价格下降的程度大致成比例。由于羊毛的品质取决于品种、牧场，以及在羊毛生长的整个过程中对羊只的管理和清洁，人们很自然地会设想，对这些情况的重视程度，绝不会超过羊毛价格对这种重视所需劳动和费用可能给予的报酬所决定的程度。然而，实际情况是，羊毛的优良在很大程度上取决于牲畜的健康、生长和体形；改良牲畜躯体所必需的同一种照料，在某些方面也足以改良羊毛。尽管价格下降，据说英格兰羊毛甚至在本世纪期间也得到了显著改良。如果价格较好，这种改良或许会更大；但低廉的价格虽然可能阻碍了这种改良，却肯定没有完全阻止它。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p28",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_405"
+      },
+      "contentHash": "fb2ac3080911de075f7808cab4f006cf915d35a385f61e9fcbc1ea0766f69f41",
+      "text": "因此，这些规章的严厉程度，对羊毛年产量和品质的影响似乎都不如可能预期的那么大（不过我认为，它对后者的影响很可能比对前者大得多）；而羊毛生产者的利益虽然必定在某种程度上受到了损害，但总体看来，所受损害似乎远小于人们所能设想的程度。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p29",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_406"
+      },
+      "contentHash": "ec4f1893c66e09cbc1adcc9cad1868f5d762792e9ca51881dfb1b4cd799f2f6b",
+      "text": "不过，这些考虑并不能证明绝对禁止羊毛出口是正当的。但它们完全可以证明对这种出口征收一项数额可观的税是正当的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p30",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_407"
+      },
+      "contentHash": "31285e8d329f0d6fb842e0cc9e8c8188637bab8a2b5423b0f4b88b19b701f201",
+      "text": "仅仅为了增进某一阶层公民的利益而在任何程度上损害另一阶层公民的利益，显然有悖于君主对其臣民各个阶层所负有的公正和平等待遇义务。但是，这项禁令确实在某种程度上损害了羊毛生产者的利益，而其唯一目的只是增进制造商的利益。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p31",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_408"
+      },
+      "contentHash": "4bbd77794bbab77d3b440140be02f5c59add1c704a9988c2e817571e9b5f2a7e",
+      "text": "每一个不同阶层的公民都有义务为维持君主或国家作出贡献。每出口一托德羊毛征收五先令甚至十先令的税，都会给君主带来一笔数额很大的收入。它对生产者利益的损害会比禁令略小，因为它大概不会把羊毛价格压低那么多。它会给制造商带来充分的优势，因为尽管他购买羊毛的价格可能不像禁令之下那么低，但仍会比任何外国制造商的购买价格至少低五先令或十先令，此外还会节省外国制造商不得不支付的运费和保险费。几乎不可能设计出另一种税，既能给君主带来任何数额可观的收入，同时又给任何人造成如此之少的不便。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p32",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_409"
+      },
+      "contentHash": "777146f850489ebf5a2641752152a9396092723b711457e1c4084dcdd31aa4b7",
+      "text": "尽管有种种处罚为禁令提供保障，它仍不能阻止羊毛出口。众所周知，羊毛仍在大量出口。国内市场价格和国外市场价格之间的巨大差额，对走私构成了如此强烈的诱惑，以致法律无论多么严厉都无法阻止。除走私者外，这种非法出口对任何人都没有好处。征税后合法出口可以给君主带来收入，从而免于征收另一些也许更为沉重和不便的税，因而可能有利于国家的所有不同臣民。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p33",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_410"
+      },
+      "contentHash": "59852bccd9afe02e50e8c8f9efb9433baeccee80543ea44befbdd60a031ad227",
+      "text": "漂洗土或漂洗黏土被认为是整理和洗净毛织品所必需的，其出口所受处罚几乎与羊毛出口相同。甚至烟斗黏土，虽然被承认不同于漂洗黏土，却由于二者相似，也由于漂洗黏土有时可能作为烟斗黏土出口，而受到同样的禁令和处罚。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p34",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_411"
+      },
+      "contentHash": "5c04a9d16e9df1c5074be2a1fb7987fc7735bdd42252d4a586155d965d812a8f",
+      "text": "根据查理二世第十三年和第十四年法令第七章，不仅生皮，而且除制成靴子、鞋或拖鞋形态以外的鞣制皮革，其出口都被禁止；这项法律使我国的靴匠和鞋匠不仅取得了对我国畜牧者的垄断地位，也取得了对我国制革商的垄断地位。根据后来的法令，我国制革商只须按每英担即一百一十二磅重的鞣制皮革缴纳一先令的小额税款，便使自己摆脱了这种垄断。他们还取得了其商品所征消费税三分之二的退税，即使出口时没有经过进一步加工也是如此。各种皮革制品均可免税出口；此外，出口商还有权获得全部消费税的退税。我国畜牧者仍继续受制于旧有的垄断。畜牧者彼此分散，散布在全国各个角落，若想联合起来，以便对同胞施加垄断，或使自己摆脱别人可能强加于他们的垄断，都有很大困难。各类制造商聚集成众多团体，集中在所有大城市里，却很容易做到。甚至牛角也被禁止出口；制角匠和梳匠这两个无足轻重的行业，在这方面也享有针对畜牧者的垄断地位。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p35",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_412"
+      },
+      "contentHash": "6f9a48eebd027f5b5fa7a1501b1c910e205c32d2c1aac9bc418af18ef23b22f4",
+      "text": "对于经过部分加工但尚未完全制成的货物，以禁令或税收限制其出口，并非皮革制造业所独有。只要为了使任何商品适于直接使用和消费而仍有任何工序要做，我国制造商就认为应当由他们自己来做。毛纱和精纺毛纱受到与羊毛相同的出口禁令和处罚。甚至白色呢布出口也须纳税，我国染色商由此在一定程度上取得了针对呢绒商的垄断地位。我国呢绒商本来或许能够抵御这种垄断，但碰巧我国主要呢绒商大多本身也是染色商。表壳、钟壳以及钟表的表盘，均被禁止出口。我国钟表制造商似乎不愿外国人的竞争抬高他们购买这类加工品的价格。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p36",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_413"
+      },
+      "contentHash": "1a0d633822b2df79528dcdff6a7372e3533d4e3858588f3e706833b6fd63c6e2",
+      "text": "根据爱德华三世、亨利八世和爱德华六世的一些旧法令，所有金属均禁止出口。只有铅和锡除外；这大概是因为这两种金属极为丰富，当时王国贸易的一个相当大的部分就是其出口。为了鼓励采矿业，威廉和玛丽第五年法令第十七章，使以不列颠矿石制成的铁、铜和硫砷铁矿金属不受这项禁令约束。后来，根据威廉三世第九年和第十年法令第二十六章，各种铜条，无论外国还是不列颠所产，均获准出口。未经加工的黄铜，以及所谓炮铜、钟铜和什锦废铜，仍然禁止出口。各种黄铜制品均可免税出口。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p37",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_414"
+      },
+      "contentHash": "68769daa1140d7873cf579d670dfcd9b96be20fcc7966781c092fed1d6a6bc7f",
+      "text": "制造材料的出口，在没有完全被禁止的地方，许多情况下也须缴纳数额可观的关税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p38",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_415"
+      },
+      "contentHash": "154e03cbfd053cf1579618d27e76a88fb0a57b31695fffdce5564bd0c5b9662c",
+      "text": "根据乔治一世第八年法令第十五章，凡大不列颠出产或制造、且以往法令曾对其征收任何关税的货物，出口时一律免税。不过，下列货物除外：明矾、铅、铅矿石、锡、鞣制皮革、绿矾、煤、羊毛梳理工具、白色毛织呢布、炉甘石、各种兽皮、胶、家兔毛或绒、野兔毛、各种毛发、马匹和铅黄。如果把马匹除外，这一切不是制造材料，就是未完成的制品（可以视为进一步制造的材料），或是行业工具。这项法令使它们继续承担历来对其征收的一切旧有关税，即旧补助税和百分之一的出口税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p39",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_416"
+      },
+      "contentHash": "769a1140237f5fc7aade705a3140b9d9d60d0edaf127d051cb27c58d4a35341a",
+      "text": "根据同一法令，大量供染色商使用的外国染料免缴一切进口税。然而，这些染料后来又各自在出口时被征收一定的关税，尽管数额并不很大。我国染色商似乎认为，通过免除一切关税来鼓励这些染料进口符合自身利益，同时又认为对其出口稍加阻碍也符合自身利益。然而，想出这一精妙商业妙计的贪欲，极有可能使自身目的落空。它必然教会进口商比原本更加谨慎，不让其进口量超过供应国内市场所必需的数量。国内市场在任何时候都可能供应得更为短缺；这些商品在那里的价格也随时可能略高于出口若像进口一样自由时的价格。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p40",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_417"
+      },
+      "contentHash": "b915453c7991c0ad83feda6b9e9047bec40cb1ee99616cc073a0514864e20ef6",
+      "text": "根据上述法令，塞内加尔胶即阿拉伯胶列在所列举的染料之中，可以免税进口。诚然，它们再出口时须缴纳一项小额从量税，每英担仅为三便士。当时，法国独占了与这些树胶产量最丰富的地区，即塞内加尔附近地区之间的贸易；而不列颠市场不容易通过从产地直接进口这些树胶得到供应。因此，根据乔治二世第二十五年法令，塞内加尔胶获准从欧洲任何地方进口，这与《航海法》的总体规定相反。不过，由于法律无意鼓励这种严重违背英格兰商业政策一般原则的贸易，便对此种进口每英担征税十先令，而且这种税在其出口时不得退还任何部分。始于1755年的胜利战争，使大不列颠取得了法国此前享有的与那些国家之间的同样独占贸易。和约一经缔结，我国制造商就试图利用这种优势，为自己建立一种既针对这种商品生产者、也针对其进口商的垄断。因此，根据乔治三世第五年法令第三十七章，从陛下在非洲的领地出口塞内加尔胶，只准运往大不列颠，并且受到与不列颠在美洲和西印度群岛各殖民地的列举商品完全相同的限制、规章、没收和处罚。诚然，其进口只须缴纳每英担六便士的小额关税，但其再出口却须缴纳每英担一英镑十先令的巨额关税。我国制造商的意图，是让那些国家的全部产量都进口到大不列颠，而且为了使他们自己能够按自己规定的价格购买，除非付出足以阻止这种出口的费用，否则不得将其中任何部分再次出口。然而，他们的贪欲在这件事上同许多其他场合一样，使自身目的落空。这项巨额关税对走私构成了如此强烈的诱惑，以致大量这种商品不仅从大不列颠，而且从非洲被秘密出口，很可能运往欧洲所有制造业国家，尤其是荷兰。因此，根据乔治三世第十四年法令第十章，这项出口税被降至每英担五先令。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p41",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_418"
+      },
+      "contentHash": "57d3986faf0384a8e4f6046abb14b8f4b0cc238d4e9c327eeaf7de43c2345fa9",
+      "text": "在旧补贴税据以征收的税率表中，河狸皮的估价为每张六先令八便士；在1722年以前对其进口征收的各种补贴税和其他税，共计为该估价的五分之一，即每张十六便士；其中除旧补贴税的一半、仅合两便士外，其余在出口时全部退还。对这种如此重要的制造业原料征收的进口税曾被认为过高，因此在1722年，其估价降至二先令六便士，从而使进口税降至六便士，而出口时只退还其中一半。同一次胜利的战争使河狸产量最高的地区归于大不列颠统治之下；又因河狸皮属于列举商品，其从美洲出口遂被限制在大不列颠市场。我国制造商很快便想到可以如何利用这一情势获利，于是在1764年，河狸皮的进口税降至每张一便士，而出口税则提高到每张七便士，且进口税一概不予退还。同一法律又对河狸毛或河狸腹毛征收每磅十八便士的出口税，却未对这种商品的进口税作任何变更；当时若由英国人以英国船只进口，每张所征进口税为四至五便士。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p42",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_419"
+      },
+      "contentHash": "9846b5ee0a9899133abb79c7553e4e7c0656a436909f06570c98aebb0cc2a62e",
+      "text": "煤既可视为制造业原料，也可视为生产工具。因此，对煤的出口征收了重税，目前（1783年）每吨超过五先令，或按纽卡斯尔计量每查尔德伦超过十五先令；这在多数情形下高于这种商品在煤矿坑口的原有价值，甚至高于其在出口装运港的价值。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p43",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_420"
+      },
+      "contentHash": "07ba4dc1034fbf6e4809743245b9a091d8fb57d73b4cc1199e80187bd32b1a44",
+      "text": "然而，严格说来，生产工具的出口通常不是以高额关税限制，而是以绝对禁令加以限制。例如，根据威廉三世第七及第八年法令第二十章第八条，出口编织手套或长袜的织架或机器，不仅须没收已经出口或企图出口的此类织架或机器，还须处以四十英镑罚金，其中一半归国王，另一半归告发或提起诉讼者。同样，根据乔治三世第十四年法令第七十一章，凡棉、麻、毛和丝绸制造业所用器具，一律禁止出口到外国；违者不仅须没收这些器具，还须由以这种方式违法者缴纳二百英镑，并由明知而容许这些器具装上其船只的船长另缴二百英镑。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p44",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_421"
+      },
+      "contentHash": "8c70ecc3fd3bfa81b2ae51e036efb256aeb0a00268a1040fcc74ee103549fb96",
+      "text": "既然对无生命的生产工具出口处以如此重罚，自然很难指望有生命的工具，即工匠，可以任其自由出境。因此，根据乔治一世第五年法令第二十七章，凡经判定引诱大不列颠任何制造业的工匠前往外国从事或传授其技艺者，初犯须处以不超过一百英镑的任何数额罚金，并监禁三个月，且在缴清罚金前继续监禁；再犯则由法院酌情处以任何数额罚金，并监禁十二个月，且在缴清罚金前继续监禁。根据乔治二世第二十三年法令第十三章，对初犯的处罚提高为每引诱一名工匠罚款五百英镑，并监禁十二个月，且在缴清罚金前继续监禁；对再犯则罚款一千英镑，并监禁两年，且在缴清罚金前继续监禁。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p45",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_422"
+      },
+      "contentHash": "ee2f5da5804492ea08809ad3f5c734095c75c548b718bef2b0ca77405398dd0d",
+      "text": "根据上述两项法令中的前一项，如果有证据证明某人一直在引诱任何工匠，或任何工匠已经答应或订约，为上述目的前往外国，法院可酌情责令该工匠提供保证，承诺不出海，并可将其监禁，直至其提供这种保证。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p46",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_423"
+      },
+      "contentHash": "764a41d4e24f534a6b11a29303ff3105133c60caad0a5d334219c19c01243975",
+      "text": "如果任何工匠已经出海，并正在任何外国从事或传授其技艺，经国王陛下驻外的任何大臣或领事，或国王陛下当时的一位国务大臣向其发出警告后，若未在警告发出后六个月内返回本王国，并自此以后一直在本王国内居住生活，那么从此即被宣布无资格接受在本王国内遗赠给他的任何遗产，无资格担任任何人的遗嘱执行人或遗产管理人，也无资格通过继承、遗赠或购买取得本王国内的任何土地。他还须将其全部土地、货物及动产没收归国王，在一切方面均被宣布为外国人，并被排除在国王的保护之外。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p47",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_424"
+      },
+      "contentHash": "0e54c98422e2adf49fc8668dbb6228e75a4523898b04efa6c90affa1b99164bd",
+      "text": "我想，无须指出，这种规章同臣民那种备受夸耀的自由是何等矛盾；我们装作极其珍视这种自由，可在此事上，它却如此明白地被牺牲给我国商人和制造商的无谓利益。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p48",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_425"
+      },
+      "contentHash": "f56db2650c9658916dcda81ce60ddb2064ce208017bfb69b99245d19b32f0f14",
+      "text": "所有这些规章的可嘉动机，是要扩展我国自己的制造业，却不是通过改进本国制造业，而是通过压制所有邻国的制造业，并尽可能终止这些可憎而讨厌的对手所造成的麻烦竞争。我国的制造业主认为，由他们自己垄断全体同胞的才智，是合乎情理的。虽然他们通过在某些行业限制一次可以雇用的学徒人数，并在所有行业强制实行长期学徒制，无不竭力把各自职业的知识限制在尽可能少的人中间；然而，他们却不愿让这少数人中的任何一人出国教导外国人。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p49",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_426"
+      },
+      "contentHash": "374f961f23c8492123744282eeedd2a921c5fa5732c006a549c17b11ba742319",
+      "text": "消费是一切生产的唯一目的和宗旨；只有在促进消费者利益所必需的范围内，才应顾及生产者的利益。这条准则如此完全不言自明，企图证明它反而荒谬。但在重商主义体系中，消费者的利益几乎总是被牺牲给生产者的利益；而且这一体系似乎把生产而非消费视为一切产业和商业的最终目的与对象。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p50",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_427"
+      },
+      "contentHash": "9ea0bce7cc41c67933de2f3ae6257ab94e23a962a1e9d28facdfb57af8a88872",
+      "text": "在对所有能够同我国自产或自制产品竞争的外国商品施加进口限制时，国内消费者的利益显然被牺牲给了生产者的利益。国内消费者被迫支付这种垄断几乎总会造成的价格上涨，完全是为了生产者的利益。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p51",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_428"
+      },
+      "contentHash": "790bf1175efdfd4ec3579b9bb9da38395e8a1d536bc60f98b2158228d9454121",
+      "text": "对生产者的某些产品出口给予奖励金，完全是为了生产者的利益。国内消费者被迫首先缴纳支付奖励金所必需的税款，其次还要承担由于国内市场上商品价格上涨而必然产生的、数额更大的税负。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p52",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_429"
+      },
+      "contentHash": "41939630ff9976165ec2e8294b4cba2517ede10e9058cd615c526e098acbe86a",
+      "text": "由于同葡萄牙签订的那项著名通商条约，消费者受到高额关税的阻碍，不能从一个邻近国家购买我国气候不能生产的商品，却被迫从一个遥远国家购买，尽管公认遥远国家的这种商品质量不如邻近国家的。国内消费者被迫忍受这种不便，以便生产者能够以比原本获准条件更为有利的条件，将其某些产品进口到那个遥远国家。消费者还被迫支付这种强制出口可能在国内市场造成的那些产品本身的任何价格上涨。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p53",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_430"
+      },
+      "contentHash": "c950690998287a09e83ffcbcc7b55011e54930b0f3c611cd078856da8daba19b",
+      "text": "然而，在为管理我国美洲和西印度殖民地而建立的法律体系中，国内消费者的利益被牺牲给生产者利益的程度，比我国其他一切商业规章都更加奢靡无度。建立一个庞大帝国的唯一目的，是培育一个顾客之国，使其不得不从我国各类生产者的店铺购买后者所能供应的一切货物。为了这种垄断可能给予我国生产者的那一点点价格上涨，国内消费者承担了维持和保卫这个帝国的全部费用。为了这一目的，而且仅仅为了这一目的，在最近两次战争中花费了二亿多英镑，并在以往战争中为同一目的所花一切费用之外，又承担了超过一亿七千万英镑的新债。单是这笔债务的利息，不仅超过了人们一度声称殖民地贸易垄断所获得的全部额外利润，而且超过了这一贸易的全部价值，或者说超过了每年平均出口到殖民地的货物总值。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c8.p54",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_431"
+      },
+      "contentHash": "dc33da3d6f93c41a63d27c10384dafe8c648ba5c869d42193bfa412fe60c3987",
+      "text": "要判定谁是整个重商主义体系的设计者，应当并不十分困难；我们可以相信，不是利益受到完全忽视的消费者，而是利益受到如此悉心照顾的生产者；在后一阶级中，我国商人和制造商远远是主要的设计者。在本章提到的重商主义规章中，我国制造商的利益得到了最为特殊的照顾；被牺牲给这种利益的，与其说是消费者的利益，不如说是其他一些生产者群体的利益。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    }
+  ]
+}

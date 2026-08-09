@@ -1,9 +1,12 @@
-import { afterEach, describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import {
   createDomainEventDraft,
   compareEventEnvelopeOrder,
+  defaultDeviceId,
+  defaultMetadata,
   installTestSources,
   LEGACY_PROTOCOL_VERSION,
+  resetHybridLogicalClock,
   PROTOCOL_VERSION,
   validateDomainEventDraft,
   validateStoredDomainEvent,
@@ -36,6 +39,7 @@ function sessionDraft() {
 describe("event envelope v2", () => {
   afterEach(() => {
     installTestSources().reset();
+    vi.unstubAllGlobals();
   });
 
   it("creates a v2 draft with canonical ULID message_id and only hlc/device metadata", () => {
@@ -46,10 +50,52 @@ describe("event envelope v2", () => {
     expect(draft.message_id).toMatch(/^[0-7][0-9A-HJKMNP-TV-Z]{25}$/);
     expect(draft.hlc.physical_ms).toBeTypeOf("number");
     expect(draft.hlc.logical).toBe(0);
-    expect(draft.device_id).toBe("local-device");
+    expect(draft.device_id).toMatch(
+      /^device_[0-7][0-9A-HJKMNP-TV-Z]{25}$/,
+    );
     expect(draft).not.toHaveProperty("event_id");
     expect(draft).not.toHaveProperty("eventId");
     expect(validateDomainEventDraft(draft).ok).toBe(true);
+  });
+
+  it("rejects non-canonical message IDs at both v2 persistence boundaries", () => {
+    const draft = sessionDraft();
+    const invalidMessageIds = [
+      "msg_reload_local_1",
+      "01hzx3k6r9m8n7p5q4s2t1v0wy",
+      "81HZX3K6R9M8N7P5Q4S2T1V0WY",
+    ];
+
+    for (const message_id of invalidMessageIds) {
+      const written = validateDomainEventDraft({ ...draft, message_id });
+      expect(written.ok, message_id).toBe(false);
+      if (!written.ok) expect(written.error.code).toBe("INVALID_ENVELOPE");
+
+      const loaded = validateStoredDomainEvent({
+        ...draft,
+        message_id,
+        stream_version: 1,
+        event_index_in_commit: 0,
+      });
+      expect(loaded.ok, message_id).toBe(false);
+      if (!loaded.ok) expect(loaded.error.code).toBe("INVALID_ENVELOPE");
+    }
+  });
+
+  it("persists one browser device ID across calls", () => {
+    const values = new Map<string, string>();
+    vi.stubGlobal("localStorage", {
+      getItem: (key: string) => values.get(key) ?? null,
+      setItem: (key: string, value: string) => {
+        values.set(key, value);
+      },
+    });
+
+    const first = defaultDeviceId();
+    const second = defaultDeviceId();
+
+    expect(second).toBe(first);
+    expect(values.get("living-reader.device-id.v1")).toBe(first);
   });
 
   it("keeps HLC monotonic when the injected clock does not advance", () => {
@@ -66,6 +112,40 @@ describe("event envelope v2", () => {
     expect(second.hlc).toEqual({ physical_ms: 1_786_278_896_789, logical: 1 });
     expect(first.device_id).toBe("device-test");
     expect(second.device_id).toBe("device-test");
+  });
+
+  it("restores the device HLC watermark after reload and clock rollback", () => {
+    const values = new Map<string, string>();
+    vi.stubGlobal("localStorage", {
+      getItem: (key: string) => values.get(key) ?? null,
+      setItem: (key: string, value: string) => {
+        values.set(key, value);
+      },
+    });
+    const deviceId = "device-reload";
+    const firstPhysicalMs = Date.parse("2026-08-09T12:34:56.789Z");
+
+    resetHybridLogicalClock();
+    const first = defaultMetadata(
+      "2026-08-09T12:34:56.789Z",
+      deviceId,
+    );
+    resetHybridLogicalClock();
+    const afterReload = defaultMetadata(
+      "2026-08-08T12:34:56.789Z",
+      deviceId,
+    );
+
+    expect(first.hlc).toEqual({ physical_ms: firstPhysicalMs, logical: 0 });
+    expect(afterReload.hlc).toEqual({
+      physical_ms: firstPhysicalMs,
+      logical: 1,
+    });
+    expect(
+      JSON.parse(
+        values.get(`living-reader.hlc-watermark.v1:${deviceId}`) ?? "null",
+      ),
+    ).toEqual(afterReload.hlc);
   });
 
   it("orders sync candidates by HLC, device_id, then canonical message_id", () => {

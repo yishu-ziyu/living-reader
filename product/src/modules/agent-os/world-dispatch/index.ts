@@ -2,7 +2,6 @@ export {
   createWorldDispatchPort,
   dispatchWorldAction,
   inspectCurrentWorld,
-  stableWorldDispatchMessageId,
 } from "./dispatch";
 export type {
   CurrentWorldInspection,

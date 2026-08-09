@@ -265,7 +265,7 @@ async function snapshot(page: Page): Promise<AgentSnapshot> {
 }
 
 async function resetPlayableBaseline(page: Page) {
-  await page.goto("/");
+  await page.goto("/test-harness");
   await expect(page.getByTestId("reading-shell")).toBeVisible();
   await waitForAgentBridge(page);
   await bridgeCall(page, "resetBaseline");

@@ -85,6 +85,19 @@ export function parseParagraphInnerHtml(innerHtml: string): BodyNode[] {
         continue;
       }
 
+
+      // OLL inserts print-page metadata inside paragraph text. Page identity is
+      // collected separately by ingest.ts and must not change Smith's quote/hash.
+      if (/^<span\b/i.test(tag) && hasClass(tag, "pb")) {
+        const end = findMatchingClose(s, i, "span");
+        if (end === -1) {
+          i = close + 1;
+          continue;
+        }
+        i = end + "</span>".length;
+        continue;
+      }
+
       // Margin note: <span class="type-margin">...</span>
       if (/^<span\b/i.test(tag) && /type-margin/i.test(tag)) {
         const end = findMatchingClose(s, i, "span");
@@ -157,6 +170,10 @@ function escapeRegExp(s: string): string {
 function attr(tag: string, name: string): string | null {
   const m = tag.match(new RegExp(`\\b${name}\\s*=\\s*"([^"]*)"`, "i"));
   return m ? m[1] : null;
+}
+
+function hasClass(tag: string, className: string): boolean {
+  return (attr(tag, "class") ?? "").split(/\s+/).includes(className);
 }
 
 function stripTags(html: string): string {

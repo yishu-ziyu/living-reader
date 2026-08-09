@@ -38,6 +38,7 @@ const relationshipContext: RelationshipContext = {
     },
   ],
   active_recipe_ids: ["wealth-of-nations.market-extent.v1"],
+  invited_question_keys: [],
 };
 
 function providerInput(
@@ -52,6 +53,7 @@ function providerInput(
     world_basis: null,
     invitation_basis: invitationBasis,
     recent_turns: [],
+    invited_question_keys: [],
     pending_intent: null,
     relationship_context: relationshipContext,
     ...overrides,
@@ -125,10 +127,12 @@ describe("T053 Agent invitation contracts", () => {
   });
 
   it("requires invitation_basis at the HTTP/provider boundary while old context remains optional", () => {
-    const { relationship_context: _context, ...withoutContext } = providerInput();
+    const withoutContext = structuredClone(providerInput());
+    Reflect.deleteProperty(withoutContext, "relationship_context");
     expect(parseAgentTurnProviderInput(withoutContext)).toEqual(withoutContext);
 
-    const { invitation_basis: _basis, ...withoutInvitationBasis } = providerInput();
+    const withoutInvitationBasis = structuredClone(providerInput());
+    Reflect.deleteProperty(withoutInvitationBasis, "invitation_basis");
     expect(parseAgentTurnProviderInput(withoutInvitationBasis)).toBeNull();
     expect(
       parseAgentTurnProviderInput({
@@ -150,15 +154,13 @@ describe("T053 Agent invitation contracts", () => {
       }),
     ).toBeNull();
 
-    const {
-      recipe_id: _recipeId,
-      trigger_question: _triggerQuestion,
-      reason: _reason,
-      ...legacyCandidate
-    } = {
+    const legacyCandidate = {
       ...strictInviteCandidate(),
       mode: "discuss",
     };
+    Reflect.deleteProperty(legacyCandidate, "recipe_id");
+    Reflect.deleteProperty(legacyCandidate, "trigger_question");
+    Reflect.deleteProperty(legacyCandidate, "reason");
     expect(parseAgentTurnCandidate(legacyCandidate)).toMatchObject({
       mode: "discuss",
     });
@@ -180,5 +182,8 @@ describe("T053 Agent invitation contracts", () => {
       .toBe(true);
     expect(hasInvitedQuestion([first], "experience-2", "市场大小为什么会限制分工？"))
       .toBe(false);
+    expect(
+      deriveInvitationQuestionKey("experience-1", "问".repeat(1_000)),
+    ).toHaveLength(36);
   });
 });

@@ -1,0 +1,1896 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "locale": "zh-CN",
+  "chapterId": "smith.b1.c10",
+  "translations": [
+    {
+      "sourceId": "smith.b1.c10.p1",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_461"
+      },
+      "contentHash": "f43ca7f14836b1752a21a719ae829db60ec7f6956975b0a9ed6d0619fdcc6053",
+      "text": "在同一地区，劳动和资本的各种不同用途所具有的全部有利条件和不利条件，必定完全相等，或者不断趋于相等。如果在同一地区，某一种用途显然比其余用途更有利或更不利，那么在前一种情况下，就会有许多人涌入这一用途；在后一种情况下，就会有许多人离开它，以致它的有利条件很快就会回落到其他用途的水平。至少，在一个听任事物遵循其自然进程、享有完全自由的社会里，情况会是如此；在那里，每个人都可以完全自由地选择自己认为适当的职业，也可以随时按自己认为适当的频率更换职业。每个人的利益都会促使他寻求有利的用途，避开不利的用途。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p2",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_462"
+      },
+      "contentHash": "d10724ac0088760690d0b57c8919357c481c2165c36d0b5ee916e0eca5dad266",
+      "text": "诚然，在欧洲各地，货币工资和利润因劳动和资本用途不同而有极大差异。但这种差异，一部分来自这些用途本身的某些情况；这些情况实际上，或至少在人们的想象中，弥补了某些用途中较少的货币收入，并抵消了另一些用途中较多的货币收入；另一部分则来自欧洲的政策，这种政策在任何地方都没有让事物享有完全自由。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p3",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_463"
+      },
+      "contentHash": "709e41d42b0cac51b3d059d8b34fc8accdd707c53a0672378afc199b6603f230",
+      "text": "对这些情况和这种政策分别加以考察，将使本章分为两部分。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p4",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_464"
+      },
+      "contentHash": "df61beef32b2fe7600a6a16dafb8d365a75e8bc7ff41d6c7018044a0c1aeb291",
+      "text": "据我所能观察到的，以下五种情况是主要的，它们弥补了某些用途中较少的货币收入，并抵消了另一些用途中较多的货币收入：第一，职业本身是否令人愉快；第二，学会这些职业是容易且费用低廉，还是困难且花费高昂；第三，其中就业机会是稳定还是不稳定；第四，对从事这些职业的人必须寄予的信任是小还是大；第五，在这些职业中取得成功的可能性是大还是小。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p5",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_465"
+      },
+      "contentHash": "6ddb50b2612fd4735a007499c1913679080b8d7e5ad21d379d325b3583ea8089",
+      "text": "第一，劳动工资随职业的轻松或艰苦、清洁或肮脏、体面或不体面而变化。因此，在大多数地方，按全年计算，成衣裁缝熟练工挣得比织布熟练工少。他的工作要轻松得多。织布熟练工挣得比铁匠熟练工少。他的工作并不总是更轻松，但要清洁得多。铁匠熟练工虽是工匠，十二小时挣得的钱却很少有煤矿工人这个普通劳动者八小时挣得那么多。他的工作没有那么肮脏，危险较小，而且是在日光下和地面上进行的。荣誉构成一切体面职业报酬的很大一部分。就货币收入而言，综合考虑一切因素，这些职业通常所得报酬不足，我稍后将努力说明这一点。耻辱则有相反的作用。屠夫的行业是一种粗野而可憎的营生，但在大多数地方，它比普通行业中的绝大部分更有利可图。所有职业中最令人厌恶的，即公共刽子手这一职业，按所做工作的数量计算，所得报酬比任何普通行业都高。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p6",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_466"
+      },
+      "contentHash": "7e9c523392c78cb59585923ec3ae0123612e0d81a8072801253a3c9d4dca1945",
+      "text": "狩猎和捕鱼是人类社会处于原始状态时最重要的职业，到了社会的进步状态，却成了人们最惬意的消遣；人们出于娱乐而从事过去迫于需要才从事的活动。因此，在社会的进步状态下，把别人作为消遣的活动当作行业来做的人，全都十分贫穷。自忒奥克里托斯时代以来，渔民一直如此。在大不列颠，偷猎者到处都是很贫穷的人。在法律严厉得不容偷猎者存在的国家，持照猎人的境况也好不了多少。人们对这些职业的天然爱好，使从事它们的人多于能靠它们舒适生活的人；他们的劳动产品，就其数量而言，总是以过低的价格进入市场，只能为劳动者提供最菲薄的生活资料。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p7",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_467"
+      },
+      "contentHash": "7176e828d6ded657ee3434b97068658c01950b67e16ad87ba7c125e39e554c26",
+      "text": "职业的令人不快和不体面，对资本利润的影响与对劳动工资的影响相同。客栈或酒馆的店主从来不能在自己家里做主，还要面对每一个醉汉的粗暴行为，他所经营的既不是很愉快的生意，也不是很体面的生意。但几乎没有哪一种普通行业能使少量资本产生如此巨大的利润。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p8",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_468"
+      },
+      "contentHash": "f68f44e91e127eb0c9c68b4de72c9846330f5d2ff457e7b8c3af2a16ee76fbf6",
+      "text": "第二，劳动工资随学会该行业是容易且费用低廉，还是困难且花费高昂而变化。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p9",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_469"
+      },
+      "contentHash": "b136903a7c7c16e588947367223875aeeed4f9ba25ff2215d959a1cace3ac997",
+      "text": "一台昂贵的机器安装起来以后，人们必然期望它在磨损报废以前完成的额外工作，能够补偿投入其中的资本，并至少带来普通利润。一个花费大量劳动和时间培养出来、能够从事那些需要非凡灵巧和技能的职业的人，可以与这样一台昂贵的机器相比。人们必然期望，他学会完成的工作，除了普通劳动通常所得的工资之外，还能补偿他的全部教育费用，并至少带来一笔同等价值资本的普通利润。考虑到人的寿命极不确定，正如必须考虑机器寿命较为确定一样，这种补偿还必须在合理的时间内实现。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p10",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_470"
+      },
+      "contentHash": "f0de6e8d89007add2d0d9002a7edd018c119cc46b0179968416387a08f2045ab",
+      "text": "熟练劳动工资与普通劳动工资之间的差异，就是以这一原则为基础的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p11",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_471"
+      },
+      "contentHash": "023509a2f545f0bf0c72b6a2a8ede921b2d8c328e2e290a3070b8e6181dcbe9d",
+      "text": "欧洲的政策把一切机械工、工匠和制造业工人的劳动视为熟练劳动，而把一切乡村劳动者的劳动视为普通劳动。它似乎认为，前者的劳动比后者的劳动更为精细和讲究。某些情况下或许确实如此，但在大多数情况下却完全相反，我稍后将努力说明这一点。因此，欧洲的法律和习俗为了使任何人具备从事前一种劳动的资格，规定他必须当学徒，尽管各地严格程度不同。至于后一种劳动，则听任人人自由从事。在学徒期内，学徒的全部劳动都归师傅所有。与此同时，在许多情况下，他必须由父母或亲属供养；几乎在一切情况下，他的衣服也必须由他们提供。通常还要给师傅一些钱，请他传授手艺。无力给钱的人就多给时间，或者订约当学徒的年限超过通常年数；由于学徒往往懒惰，这种代价对师傅虽不总是有利，对学徒却总是不利。相反，在乡村劳动中，劳动者一面受雇从事较容易的部分，一面学习本行业较困难的部分；在其就业的各个不同阶段，他都靠自己的劳动维持生活。因此，欧洲机械工、工匠和制造业工人的工资略高于普通劳动者的工资，是合理的。事实也确实如此；在大多数地方，他们较高的收入使他们被视为等级较高的一类人。不过，这种优势通常很小；在亚麻平布、普通呢绒等较常见的制造业中，熟练工每日或每周的收入按平均数计算，在大多数地方仅略高于普通劳动者的日工资。诚然，他们的就业更稳定、更均匀；按全年合计，其收入的优势可能稍大一些。然而，这种优势显然并没有超过足以补偿其较高教育费用的程度。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p12",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_472"
+      },
+      "contentHash": "09696ad02cb00d090d809e39af9451afe0559bab18ac89efe355fd9fe5658984",
+      "text": "学习精巧技艺和自由职业所需的教育，耗时更久，花费也更大。因此，画家和雕刻家、律师和医生所得的货币报酬应当丰厚得多；事实也确实如此。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p13",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_473"
+      },
+      "contentHash": "21a4fd93d843acf22ba2021ce4ea226f5fbcf1b390b9b17d5929742f181ee1f0",
+      "text": "资本利润似乎很少受到学会其所投行业之难易程度的影响。在大城市里，资本通常投入的各种不同方式，实际上似乎几乎同样容易学习，也同样困难。对外贸易或国内贸易的一个部门，不大可能比另一个部门复杂得多。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p14",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_474"
+      },
+      "contentHash": "3e63372b1b4c42881dfd32e94d809738eb206ffc9777cc3d77ffce04fcc5f5ef",
+      "text": "第三，不同职业的劳动工资随就业机会稳定或不稳定而变化。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p15",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_475"
+      },
+      "contentHash": "86b99bfc4f16d88753ac370bb93dc047bc45bb6f5f1c92c5246b4acfc61055ce",
+      "text": "有些行业的就业机会比另一些行业稳定得多。在大多数制造业中，只要熟练工有能力工作，他几乎可以相当有把握地认为一年中每天都有工作可做。石匠或砌砖工则相反，严寒或恶劣天气下都不能工作，而在其他时候是否有工作，取决于顾客不时提出的需求。因此，他常常可能没有任何工作。所以，他受雇时挣得的钱不仅必须维持他闲置时的生活，还必须对这种朝不保夕的处境必然不时引起的焦虑和沮丧时刻给予一些补偿。因此，在大多数制造业工人的估算收入与普通劳动者的日工资几乎相等的地方，石匠和砌砖工的收入通常比这种工资高出一半到一倍。普通劳动者每周挣四至五先令的地方，石匠和砌砖工往往挣七至八先令；前者挣六先令的地方，后者常常挣九至十先令；而在伦敦那样前者挣九至十先令的地方，后者通常挣十五至十八先令。然而，似乎没有哪一种熟练劳动比石匠和砌砖工的劳动更容易学会。据说，在夏季，伦敦的轿夫有时会受雇做砌砖工。因此，这些工人的高工资，与其说是对其技能的报酬，不如说是对其就业不稳定的补偿。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p16",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_476"
+      },
+      "contentHash": "67ef6d1569ccc0eb3caa79b15e2dda04b484625be560375caf3e30b19ecc4b0f",
+      "text": "木匠所从事的行业，似乎比石匠的行业更精细、更需要技巧。不过，在大多数地方——尽管并非处处如此——木匠的日工资略低。木匠的就业虽在很大程度上取决于顾客不时提出的需求，却不像石匠那样完全取决于这种需求；而且，木匠的工作不会因天气而中断。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p17",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_477"
+      },
+      "contentHash": "30d4cbbc46f53e8d7a8f4713d0ccdd2df187f41647b3ef57b29eace7d18264e7",
+      "text": "通常能提供稳定就业的行业，如果碰巧在某个地方不能如此，其工人的工资总会大大高于它与普通劳动工资之间的通常比例。在伦敦，几乎所有工匠熟练工都可能像其他地方的日工一样，被师傅逐日、逐周地叫来工作或遣退。因此，那里等级最低的工匠，即成衣裁缝熟练工，每日挣半克朗，而普通劳动的工资可以按十八便士计算。在小城镇和乡村，成衣裁缝熟练工的工资往往几乎不及普通劳动者；但在伦敦，他们常常连续许多星期没有工作，夏季尤其如此。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p18",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_478"
+      },
+      "contentHash": "163f87524c24ff6b5f95904bb8a7f277138b1753cb76a00bcb004d2c86b7af17",
+      "text": "就业不稳定如果再加上工作艰苦、令人不快和肮脏，有时会使最普通劳动的工资高于技术最精湛的工匠的工资。在纽卡斯尔，按件计酬的煤矿工人通常被认为挣得约为普通劳动工资的两倍；在苏格兰许多地方，则约为三倍。他的高工资完全来自其工作的艰苦、令人不快和肮脏。在大多数情况下，只要他愿意，他的就业可以同样稳定。伦敦的卸煤工所从事的行业，在艰苦、肮脏和令人不快方面几乎与煤矿工人的行业相当；而且，由于运煤船的抵达不可避免地没有规律，他们中大多数人的就业必然很不稳定。因此，如果煤矿工人通常挣得普通劳动工资的两倍和三倍，那么卸煤工有时挣得这种工资的四倍和五倍，就不应显得不合理。几年前对他们的状况进行调查时发现，按他们当时的报酬标准，他们每天可以挣六至十先令。六先令约为伦敦普通劳动工资的四倍；在每一种具体行业中，通常最低的收入始终可以视为绝大多数人的收入。无论这种收入看起来多么高得离谱，如果它超出了足以补偿这一行业所有不利情况的程度，那么在一个没有专属特权的行业中，竞争者很快就会多到足以迅速把这种收入降至较低水平。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p19",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_479"
+      },
+      "contentHash": "d7d3987a4ff335142f4924abc1141df4925e89485a6a163992b8627fbbd1e265",
+      "text": "就业稳定与否，不会影响任何具体行业中的普通资本利润。资本是否经常得到运用，取决于商人，而不取决于行业。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p20",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_480"
+      },
+      "contentHash": "bd8855ce97fe3aa2c18d356ee3e1191000b67af0d66359567584475926227c7e",
+      "text": "第四，劳动工资随必须对工人寄予的信任是小还是大而变化。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p21",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_481"
+      },
+      "contentHash": "b968df9a1b2400c40bb57660362b8294bdb1ef223643fc3b1d130e3ce5eb3001",
+      "text": "各地金匠和珠宝匠的工资都高于许多其他工人，不仅高于技巧与他们相同的工人，也高于技巧远胜于他们的工人，这是因为交托给他们的是贵重材料。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p22",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_482"
+      },
+      "contentHash": "9df1e11d6de67bc9e5c44d3f339a81feacc71ed9fb49202573544ae5a43544f2",
+      "text": "我们把健康托付给医生，把财产，有时甚至把生命和名誉托付给出庭律师和事务律师。这样重大的信任，不能稳妥地寄托于身份十分卑微低下的人。因此，他们的报酬必须足以使他们在社会中取得这种重大信任所要求的地位。培养他们必须投入的漫长时间和巨额费用，与这一情况结合起来，必然进一步提高他们的劳动价格。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p23",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_483"
+      },
+      "contentHash": "33803340c3f532cac09151d04a641c4a613488e77daa74233d8e1a2c2e04704f",
+      "text": "一个人如果在经营中只使用自己的资本，就不存在信任问题；他可能从别人那里获得的信用，不取决于其行业的性质，而取决于别人对其财产、诚信和谨慎的看法。因此，不同商业部门利润率的差异，不可能来自商人所受信任程度的差异。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p24",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_484"
+      },
+      "contentHash": "87f3e08ed2c448f608ab69ccdcc705212ecef02756a2caaf588368db6e2a776d",
+      "text": "第五，不同职业的劳动工资随在其中取得成功的可能性是大还是小而变化。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p25",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_485"
+      },
+      "contentHash": "ad3ba435559bea15d0d1c01add83758f2be9855693cae020f852a9f4ecb08412",
+      "text": "任何一个特定的人最终能否胜任他为之接受教育的职业，其可能性因职业不同而差异很大。在大多数机械行业中，成功几乎是确定的；但在自由职业中则很不确定。让你的儿子给鞋匠当学徒，他学会做一双鞋几乎是毫无疑问的；但送他去学习法律，那么他最终达到足以靠这一行业谋生的熟练程度，至少有二十比一的可能性不能成功。在完全公平的彩票中，中奖者所得应当等于未中奖者所失。在二十人失败而一人成功的职业中，那个成功者应当获得那二十个失败者本应获得的全部收入。一名出庭律师或许到将近四十岁时才开始从其职业中获得一些收入，他所获得的报偿不仅应当补偿自己如此漫长而昂贵的教育，还应补偿另外二十多个很可能永远无法从中获得任何收入的人的教育。无论出庭律师的酬金有时显得多么高得离谱，他们的实际报偿从来达不到这一水平。把某个地方鞋匠或织工等任何普通行业中所有不同工人每年可能获得的收入和每年可能花费的支出计算出来，你会发现前者的总额通常超过后者。但是，把各个律师学院的所有出庭律师和法律学生也照样计算一下，你会发现，即使把前者估得尽可能高，把后者估得尽可能低，他们的年收入相对于年支出仍只占很小的比例。因此，法律这一彩票远非完全公平的彩票；就货币收入而言，法律以及其他许多自由而体面的职业，所得报酬显然不足。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p26",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_486"
+      },
+      "contentHash": "d8c02e861017905e1cb2641edaf0280117cef4b91087fcb5cdf7f60e70315792",
+      "text": "然而，这些职业仍与其他职业保持在同一水平；尽管有这些不利因素，一切最高尚、最宽宏的人仍热切地涌入其中。有两个不同的原因使这些职业受人青睐。第一，人们渴望获得在其中任何一种职业中表现卓越所带来的声誉；第二，每个人或多或少不仅对自己的能力，而且对自己的好运抱有天然的自信。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p27",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_487"
+      },
+      "contentHash": "c1a6b94021d5c400763ed1583d38083d5d1c9ee0107bfd6842f8a5e547aba965",
+      "text": "在一种只有少数人能达到中等水平的职业中出类拔萃，是所谓天才或卓越才能最确凿的标志。伴随这种杰出才能而来的公众赞赏，始终构成其报酬的一部分；赞赏程度越高或越低，这一部分也就越大或越小。在医业中，它构成这种报酬的相当大一部分；在法律职业中，所占部分或许还要大；在诗歌和哲学中，它几乎构成全部报酬。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p28",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_488"
+      },
+      "contentHash": "1e48cd850354b3100e63b8ee4fb8d973c11c5b3dc230bb94c32ce09b51ac28b6",
+      "text": "有些十分悦人而优美的才艺，拥有它们会博得某种赞赏；但为了牟利而施展它们，无论出于理性还是偏见，都被视为一种公开卖身。因此，以这种方式施展这些才艺的人，其货币报酬必须不仅足以补偿获得这些才艺所花费的时间、劳动和费用，还必须补偿以这些才艺谋生所带来的声名损害。演员、歌剧歌手、歌剧舞蹈演员等人的高额报酬，以这两个原则为基础：才艺的稀有和优美，以及以这种方式运用才艺所带来的声名损害。我们鄙视他们本人，却又极其慷慨地酬报他们的才艺，乍看之下似乎荒谬。然而，既然我们做了前一件事，就必然要做后一件事。公众对于这些职业的看法或偏见一旦发生变化，其货币报酬就会迅速减少。会有更多人投身这些职业，竞争很快就会降低其劳动价格。这类才艺虽远非寻常，却绝不像人们想象的那样稀有。许多人极其完美地拥有这些才艺，却不屑如此运用；如果能凭它们体面地获得任何收入，还有更多人能够学会这些才艺。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p29",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_489"
+      },
+      "contentHash": "686fe0cc37e50685a70e08da488d8263404db9f86ab461efb3a24ab3b9856577",
+      "text": "大多数人对自己能力所抱的过高估计，是历代哲学家和道德家都指出过的一种古老弊病。他们对自己好运的荒谬自信，受到的注意则较少。然而，如果可能的话，这种自信甚至更加普遍。任何活着的人，只要健康和精神尚可，都会多少具有一些这种自信。每个人都或多或少高估获利的机会，大多数人都低估损失的机会；健康和精神尚可的人中，几乎没有谁会把损失的机会估得高于其实际程度。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p30",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_490"
+      },
+      "contentHash": "37c029641ec30b7eea1a224c71761e0f41b94307c44da5dcc9cf0ea79a919c00",
+      "text": "获利的机会自然会被高估，这一点可以从彩票普遍畅销中看出。世界上从未见过，将来也绝不会见到一种完全公平的彩票，也就是说，一种全部收益恰好补偿全部损失的彩票；因为经营者若是如此，便无利可图。国家发行的彩票，其彩票实际并不值最初认购者所付的价钱，可是在市场上出售时，通常却有百分之二十、三十、有时甚至百分之四十的溢价。妄想赢得某项大奖，是这种需求的唯一原因。即使最为冷静的人，也几乎不认为花一小笔钱去博取赢得一万或两万英镑的机会是一种愚行；尽管他们知道，即使这笔小钱，也许也比那个机会的价值高出百分之二十或三十。假如一种彩票的奖金最高不超过二十英镑，虽然它在其他方面比普通的国家彩票更接近完全公平的彩票，人们对彩票也不会有同样的需求。为了增加赢得某项大奖的机会，有些人购买好几张彩票，另一些人则购买数目更多的彩票的小额份额。然而，数学中再没有比下述命题更为确定的了：你冒险购买的彩票越多，你成为输家的可能性就越大。若冒险买下这种彩票的全部彩票，你必输无疑；而你的彩票数目越多，就越接近这种必然性。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p31",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_491"
+      },
+      "contentHash": "072c6a0b17cda9aa29bde2c310a055ebd0e7ca78d92fd2b0fd6ca191d18f7f20",
+      "text": "损失的机会常被低估，而且几乎从来不会被估得高于其实际价值，这一点可以从保险商所得利润十分有限看出。要使火灾保险或海险成为一种可以经营的行业，通常的保险费就必须足以补偿通常的损失、支付管理费用，并提供一笔与等量资本用于任何普通行业所能获得的利润相当的利润。所付不超过这一数额的人，显然只支付了风险的真实价值，也就是他可以合理期待获得承保的最低价格。不过，虽然许多人靠经营保险赚了一点钱，却很少有人因此发了大财；单凭这一点，似乎就足以清楚地表明，这一行业通常的盈亏差额，并不比其他许多人借以发财的普通行业更为有利。然而，保险费通常虽不高，许多人却过分轻视风险，不愿支付这笔费用。就全国平均而言，二十所房屋中有十九所，或更确切地说，也许一百所中有九十九所，没有投保火灾险。海上风险使大多数人更加惊恐，因而投保的船只与未投保的船只之比要大得多。不过，在一年四季，甚至在战争时期，仍有许多船只不投任何保险而航行。这样做有时也许并非不谨慎。一个大公司，甚至一个大商人，如果有二十或三十艘船在海上航行，这些船可以说是彼此保险。为全部船只节省下来的保险费，可能绰绰有余地补偿它们在通常的偶然过程中可能遭受的损失。然而，不给船舶投保同不给房屋投保一样，在大多数情况下并非出于这种精细的计算，而仅仅是由于轻率而欠考虑，并且自负地蔑视风险。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p32",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_492"
+      },
+      "contentHash": "fd0cdf93afa0ac949e5a2e9f00dd9ecb6f79e680b2ee131f5d0ecdd6c5d1d983",
+      "text": "在人生的任何时期，对风险的蔑视和对成功的自负希望，都不如青年人选择职业的年龄那么强烈。当时对不幸的恐惧在多么小的程度上能够抵消对好运的希望，这一点从普通民众欣然入伍当兵或出海航行中表现得更加明显，甚至比上流社会的人热切投身所谓自由职业中表现得还要明显。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p33",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_493"
+      },
+      "contentHash": "6b9f3c2d11706296476eba8427991c0f254034c217a8072e45065351553d2be5",
+      "text": "一个普通士兵可能失去什么，是再明显不过的。然而，青年志愿兵全然不顾这种危险，而且从来没有像新战争开始时那样踊跃入伍；尽管他们几乎没有任何升迁机会，却在青春的幻想中设想出一千种实际上永远不会出现的、获得荣誉和声名的机会。这些浪漫的希望构成了他们鲜血的全部代价。他们的军饷低于普通劳动者的工资，而在实际服役期间，他们所受的劳苦却大得多。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p34",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_494"
+      },
+      "contentHash": "2a7ee0aa9cb4c069bda4b1648183a639a9799c3da9bf9472db1b30e47aaa31fa",
+      "text": "航海这场彩票并不像从军那场彩票那样不利。一个体面劳动者或工匠的儿子，往往可以征得父亲同意出海；但如果他入伍当兵，就总是得不到父亲同意。别人认为他从前一种职业中还有一点发迹的机会；至于后一种职业，除他自己之外，没有人认为他有任何发迹的机会。大海军上将不像大将军那样受到公众仰慕，海军中最高的成就所许诺的财富与声望，也不如陆军中同等成就那样辉煌。这种差别贯穿两者所有较低的晋升级别。按照官阶次序，海军舰长与陆军上校同级；但在一般评价中，二者并不处于同等地位。既然这种彩票的大奖较小，小奖就必然较多。因此，普通水手比普通士兵更经常获得一些财富和升迁；而对这些奖项的希望，正是这种职业的主要吸引力。虽然他们的技艺和熟练程度远远超过几乎任何工匠，虽然他们的一生始终处于艰苦和危险之中，但只要他们仍是普通水手，对于所有这些熟练与技艺、所有这些艰苦与危险，他们所得的报偿，几乎无非是施展前者和克服后者的乐趣。他们的工资并不高于那个决定海员工资水平的港口中普通劳动者的工资。由于他们不断从一个港口驶往另一个港口，从大不列颠各个不同港口出航的水手，其月薪比这些不同地方任何其他工人的工资都更为接近同一水平；而出入船只最多的港口，即伦敦港的工资水平，决定其他一切港口的工资水平。在伦敦，大多数不同类别工人的工资约为爱丁堡同类工人工资的两倍。但是，从伦敦港出航的水手，每月所得很少比从利斯港出航的水手多三四先令，而且这种差额往往还没有这么大。在和平时期的商船上，伦敦的工资按每个日历月计算，从一基尼到大约二十七先令。伦敦的普通劳动者按每周九或十先令计算，每个日历月可挣四十至四十五先令。诚然，水手除薪饷外还有伙食供应。然而，这些伙食的价值也许并不总能超过其薪饷与普通劳动者工资之间的差额；即使有时超过，超过的部分对水手也不是纯收益，因为他无法让留在家中的妻子和家人分享这些伙食，却仍须用自己的工资供养他们。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p35",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_495"
+      },
+      "contentHash": "3cc4bdb2b9e99e9a617b8ce58cf565c865ab476bd10ddf0d44d05bd46da417a7",
+      "text": "冒险生活中的危险和死里逃生，非但不会使青年人气馁，反而似乎常使一种职业更受他们青睐。在下层民众中，一位慈爱的母亲往往不敢把儿子送到海港城镇上学，唯恐船只的景象以及水手的谈话和冒险经历会诱使他出海。对于那些我们可以指望凭借勇气和机敏摆脱的危险，遥遥展望并不会令我们不快，也不会提高任何职业的劳动工资。对于勇气和机敏都无济于事的职业，情形则不同。在公认非常有害健康的行业中，劳动工资总是显著地高。有害健康是不愉快的一种，其对劳动工资的影响，应归入这一总类。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p36",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_496"
+      },
+      "contentHash": "98763f63362edba68a2561c8ce4385678681301300b713361f0f5ae0e4f99b73",
+      "text": "在资本的各种不同用途上，通常利润率或多或少随回报的确定或不确定程度而变动。一般说来，国内贸易的回报没有对外贸易那么不确定；对外贸易某些部门的回报也没有另一些部门那么不确定，例如对北美贸易就没有对牙买加贸易那么不确定。通常利润率总会随风险或多或少地上升。然而，它似乎并不与风险成比例地上升，也没有上升到足以完全补偿风险的程度。破产最频繁地发生在风险最大的行业。所有行业中风险最大的走私业，尽管冒险一旦成功也最为有利可图，却是一条必然通向破产的道路。对成功的自负希望在这里似乎也同在其他一切场合一样发挥作用，引诱如此众多的冒险者进入这些危险行业，以致他们的竞争把利润压低到不足以补偿风险的水平。要完全补偿风险，通常回报除资本的通常利润之外，不仅应当弥补所有偶然损失，还应当给冒险者提供一笔性质与保险商利润相同的额外利润。但是，如果通常回报足以做到这一切，这些行业的破产就不会比其他行业更为频繁。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p37",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_497"
+      },
+      "contentHash": "b90ceaa064320187b9ac68714e6cdc76186661b59e53b3d9a71f8611180a15a1",
+      "text": "因此，在使劳动工资发生变动的五种情形中，只有两种影响资本的利润，即业务本身是愉快还是不愉快，以及伴随业务的是风险还是安全。就愉快或不愉快而言，资本绝大多数不同用途之间很少有差别，或者根本没有差别；但不同劳动之间却差别很大；而资本的通常利润虽然随风险上升，却似乎并不总是与风险成比例地上升。由这一切应当得出，在同一社会或邻近地区，资本各种不同用途的平均和通常利润率，应当比各种不同劳动的货币工资更为接近同一水平。事实也确实如此。普通劳动者的收入与业务兴隆的律师或医生的收入之间的差别，显然远远大于任何两个不同行业的通常利润之间的差别。此外，不同行业利润表面上的差别，通常也是一种错觉，产生于我们没有总能把应当视为工资的部分与应当视为利润的部分区别开来。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p38",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_498"
+      },
+      "contentHash": "97b4f003dd65bd04ae1ff3348ae9112bc66848defe6772ffdb860ffc40f08fc5",
+      "text": "“药剂师的利润”已经成为一句俗语，用来表示某种异常高得离谱的东西。然而，这种表面上的巨额利润，往往不过是合理的劳动工资。药剂师的技艺比任何工匠的技艺都精细微妙得多，而人们寄托于他的信任也重要得多。在一切情况下，他都是穷人的医生；在病痛或危险不太严重时，他也是富人的医生。因此，他的报酬应当与其技艺和所受信任相称，而这种报酬通常来自他出售药品的价格。但是，在一个大集镇中，业务最兴隆的药剂师一年所售的全部药品，成本也许不超过三十或四十英镑。因此，即使他以三四百英镑出售这些药品，或者说获得百分之一千的利润，这也往往不过是把他合理的劳动工资，以他唯一能够收取的方式，加在药品价格上。表面利润的大部分，是披着利润外衣的真实工资。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p39",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_499"
+      },
+      "contentHash": "0bc25e0489e40c2c61d04c6120b802475bef09e42e202bc3cdfb4d2c354b96c7",
+      "text": "在一个小海港城镇，一个小杂货商以区区一百英镑的资本，会赚取百分之四十或五十的利润，而同一地方一个颇具规模的批发商以一万英镑的资本，却几乎赚不到百分之八或十。杂货商的生意可能是居民生活便利所必需的，而市场狭小又可能不容许在这种生意中使用更大的资本。然而，这个人不仅必须靠其生意维生，而且还必须过上与这种生意所要求的资质相称的生活。他除了拥有少量资本，还必须能读、能写、能计算，也必须能够对也许五六十种不同货物及其价格、品质和在哪里可以买得最便宜的市场作出尚可的判断。简言之，他必须具备大商人所需的全部知识；阻碍他成为大商人的，唯有缺乏足够的资本。每年三十或四十英镑，不能视为对这样一位才干完备者的劳动过高的报偿。从其资本看似巨大的利润中扣除这一部分后，所剩也许不过略高于资本的通常利润。在这种情况下，表面利润的大部分也是真实工资。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p40",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_500"
+      },
+      "contentHash": "64f64f63676d9fefc6ca7512dca894ca1639018c28fe35483fcae9f4cc646e40",
+      "text": "在首都，零售业与批发业的表面利润之间的差别，远小于小城镇和乡村中的差别。在能够把一万英镑用于杂货业的地方，杂货商的劳动工资对于如此巨额资本的真实利润只增加极其微小的一点。因此，富裕零售商在那里的表面利润，与批发商的利润更为接近同一水平。正因如此，首都零售的货物通常和小城镇及乡村中的一样便宜，而且往往便宜得多。例如，杂货通常便宜得多；面包和鲜肉也往往一样便宜。把杂货运到大城市，并不比运到乡村花费更多；但把谷物和牲畜运到那里却要多花很多钱，因为其中大部分必须从远得多的地方运来。因此，既然两地杂货的原始成本相同，那么加在其上的利润最少之处，售价也最低。面包和鲜肉在大城市的原始成本高于乡村；所以，尽管利润较低，它们在那里却并不总是较便宜，而往往只是同样便宜。对于面包和鲜肉这类物品，降低表面利润的同一原因也会提高原始成本。市场的广大一方面使更大的资本得到运用，从而降低表面利润；另一方面又要求从更远的地方获得供应，从而提高原始成本。在大多数情况下，一方的减少与另一方的增加似乎几乎相互抵消；这也许就是为什么谷物和牲畜的价格在全国各地通常很不相同，而面包和鲜肉的价格在全国大部分地区通常却几乎相同。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p41",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_501"
+      },
+      "contentHash": "8e6eebf52f3465886686c11e96d44225f95d300ba0e186d0ff8977750c0e20b8",
+      "text": "虽然批发业和零售业的资本利润在首都通常都低于小城镇和乡村，但在前者，人们常从微小的起点积累起巨额财富，而在后者却几乎从来不会如此。在小城镇和乡村，由于市场狭小，生意并不总能随着资本增加而扩大。因此，在这种地方，某个人的利润率尽管可能很高，其利润的总和或数额却绝不可能很大，因而他每年的积累也绝不可能很大。相反，在大城市，生意能够随着资本增加而扩大，一个节俭而事业兴旺之人的信用，增长得比他的资本快得多。他的生意按二者的总额相应扩大，其利润的总和或数额与生意的规模成比例，而其每年的积累又与利润数额成比例。不过，即使在大城市，也很少有人通过任何一种正规、稳定而著名的营业部门积累起巨额财富，除非终身勤勉、节俭而用心。诚然，在这种地方，有时有人会通过所谓的投机生意暴富。投机商人并不经营任何一种正规、稳定或著名的营业部门。他今年做谷物商，明年做葡萄酒商，后年又做糖、烟草或茶叶商。每当他预见某种生意可能比通常格外有利可图时，就进入该行业；当他预见其利润可能回落到其他行业的水平时，就退出该行业。因此，他的利润和损失不可能与任何一种稳定而著名的营业部门的利润和损失保持固定比例。一个大胆的冒险者有时可以凭两三次成功的投机获得一笔可观的财富；但也同样可能因两三次失败的投机而丧失一笔财富。这种生意只能在大城市经营。只有在商业和通信最为广泛的地方，才能获得这种生意所必需的情报。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p42",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_502"
+      },
+      "contentHash": "c14ecbc0a3a72338cc5620ac2062296199dd8b8db562bee5aea6ba4a08dab9b1",
+      "text": "上述五种情形，虽然造成劳动工资和资本利润上的显著不均，却不会使资本或劳动各种不同用途在真实或想象的全部利弊上出现任何不均。这些情形的性质使它们在某些用途中补足微薄的货币收益，在另一些用途中则抵消丰厚的货币收益。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p43",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_503"
+      },
+      "contentHash": "a6d36bcb750170f1f35f0199fffb67771c4218fe7044ed8085fa13dfa44aa790",
+      "text": "不过，要使它们的全部利弊达到这种均等，即使在自由最为充分的地方，也需要具备三个条件。第一，这些职业必须在邻近地区广为人知并且久已确立；第二，它们必须处于通常的、或者可以称为自然的状态；第三，它们必须是从业者唯一或主要的职业。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p44",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_504"
+      },
+      "contentHash": "908b6f4849b55d9e7c18f667a99961a14259b57191490e0e7cca27ac22b65870",
+      "text": "第一，这种均等只能出现在那些于邻近地区广为人知并且久已确立的职业中。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p45",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_505"
+      },
+      "contentHash": "e3997b0ceb67b5fee45cbbb46801db30f909e5e597e9c88b598de7971069741c",
+      "text": "在其他一切条件都相同的情况下，新行业的工资通常高于旧行业。一个事业创办者试图建立一种新制造业时，最初必须用较高的工资从其他职业中吸引工人；这种工资既高于他们在本业中能够赚取的工资，也高于他的工作按其性质本来所需支付的工资，而且必须经过相当长的时间，他才能冒险把工资降到普通水平。需求完全源于时尚和爱好的制造业不断变化，很少能延续足够长的时间，以至于可以被视为久已确立的制造业。相反，需求主要源于用途或必需的制造业不太容易变化，同一种式样或织物可以连续几个世纪都有需求。因此，前一类制造业的劳动工资很可能高于后一类。伯明翰主要经营前一类制造品，谢菲尔德主要经营后一类；据说，这两个不同地方的劳动工资，也与其制造业性质上的这种差别相称。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p46",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_506"
+      },
+      "contentHash": "628d691b213f8efa02570f7a2407a452f55188e9ff89a348864ab122bfe924f6",
+      "text": "建立任何一种新制造业、任何一个新的商业部门或任何一种新的农业方法，总是一项投机，事业创办者期望从中获得非同寻常的利润。这些利润有时非常巨大，有时——也许更为常见——完全不是如此；但总的说来，它们与邻近地区其他旧行业的利润并不保持固定比例。如果项目成功，其利润最初通常很高。当这种行业或方法完全确立并广为人知后，竞争就会把利润降低到其他行业的水平。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p47",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_507"
+      },
+      "contentHash": "b1f02748a1c3edcea28e139c7a59e21ccb53535dbcbf0475cb6a5d1efdabbdf5",
+      "text": "第二，劳动和资本各种用途的全部利弊之所以能够相等，只限于这些用途处于通常状态，或可称为自然状态的时候。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p48",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_508"
+      },
+      "contentHash": "c6f2351d556e17d79a0f2df88d2d32fcd3cb8457ec01e0b10f226590c58465f7",
+      "text": "对几乎每一种不同劳动的需求，有时高于通常水平，有时低于通常水平。在前一种情况下，这种职业的有利条件会高于一般水平；在后一种情况下，则会低于一般水平。在割草季节和收获季节，对乡村劳动的需求大于一年中大部分时间，工资也随需求而上涨。战时，当四五万名水手被迫从商船转入国王的海军服役时，商船对水手的需求必然会因水手稀缺而上升；在这种情况下，他们的月工资通常会从一基尼至二十七先令，上涨到四十先令至三英镑。相反，在一种日趋衰落的制造业中，许多工人宁愿不离开自己的老行当，也情愿接受低于按其职业性质本来应得的工资。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p49",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_509"
+      },
+      "contentHash": "fa4e2ecb4ebd39f145ae4cca6b788cfea6758dcd1c8c80864410017fa4fed77a",
+      "text": "资本利润随着所经营商品的价格而变化。当任何商品的价格上涨到通常或平均水平以上时，用于把它运到市场的资本中，至少有一部分的利润会升到其适当水平以上；当商品价格下跌时，这种利润也会降到其适当水平以下。一切商品的价格都或多或少容易发生变动，但有些商品远比另一些商品更容易变动。在一切由人类劳动生产的商品中，每年投入的劳动量必然受每年需求的调节，以使每年的平均产量尽可能等于每年的平均消费量。前面已经说过，在有些行业中，同样数量的劳动总会生产出同样数量或几乎同样数量的商品。例如，在亚麻织物或毛织物制造业中，同样数量的工人每年会加工出几乎同样数量的亚麻布和呢绒。因此，这类商品市场价格的变动，只能由需求的某种偶然变化引起。全国服丧会抬高黑布的价格。不过，由于大多数普通亚麻布和呢绒的需求颇为稳定，其价格也同样颇为稳定。但在另一些行业中，同样数量的劳动并不总能生产出同样数量的商品。例如，同样数量的劳动在不同年份会生产出数量大不相同的谷物、葡萄酒、啤酒花、糖、烟草等等。因此，这类商品的价格不仅随需求的变化而变化，而且随数量上远为剧烈和频繁的变化而变化，所以极不稳定。但某些商人的利润必然随商品价格而波动。投机商人的经营主要集中在这类商品上。他预见到其价格可能上涨时，便设法把它们收购起来；预见到其价格可能下跌时，便设法把它们卖掉。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p50",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_510"
+      },
+      "contentHash": "72cf99c4944a5772b3b6ca973d5a7762fca74d7c23a5bf908c031a690444ed48",
+      "text": "第三，劳动和资本各种用途的全部利弊之所以能够相等，只限于这些用途是从业者唯一或主要职业的情况。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p51",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_511"
+      },
+      "contentHash": "0b139db563114d90030d5ae074c36502943c156252d91b81f37663e3011a1e87",
+      "text": "如果一个人从某一职业中获得生活资料，而这个职业并不占用他大部分时间，那么在闲暇时，他往往愿意以低于按另一职业的性质本来应得的工资从事另一种工作。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p52",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_512"
+      },
+      "contentHash": "8dfa1879f49cf622e634093acc3b02298da3ec4c4b2171c49f102a3f58b69d8d",
+      "text": "苏格兰许多地方至今还有一类人，称为小屋佃户，不过若干年前他们比现在更为常见。他们是地主和农场主的一种外雇仆役。他们通常从主人那里得到的报酬，是一所房子、一小块种植食用蔬菜的园地、足以饲养一头牛的牧草，以及也许一两英亩贫瘠的耕地。主人需要他们劳动时，此外每周还给他们两配克燕麦粉，约值十六便士。在一年中很大一部分时间里，主人很少需要或根本不需要他们的劳动，而耕种他们自己那点小产业，也不足以占满可以由自己支配的时间。据说，当这种小佃户比现在更多时，他们情愿用闲暇时间为任何人工作，只取极少的报酬，所得工资也低于其他劳动者。古代时，他们似乎遍布整个欧洲。在耕作不良、人口更加稀少的国家，地主和农场主若非如此，就无法为自己获得乡村劳动在某些季节所需要的大量额外人手。这类劳动者偶尔从主人那里得到的每日或每周报酬，显然不是他们劳动的全部代价。他们的小块租地构成了其中相当大的一部分。然而，许多搜集古代劳动和食物价格的著述家，似乎把这种每日或每周报酬看作全部报酬，并且乐于把两者都描绘得低得惊人。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p53",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_513"
+      },
+      "contentHash": "7c812e5603ef72cbb8ab79964105a8b2f2f37052e6ad3a4e53a84dba731bc3f6",
+      "text": "这种劳动的产品运到市场时，价格常常低于按其性质本来应有的水平。苏格兰许多地方编织长袜的成本，远低于任何地方用织机织造长袜的成本。这些长袜是仆人和劳动者制作的，而他们的大部分生活资料来自其他职业。每年有一千多双设得兰长袜输入利斯，价格每双五至七便士。据人向我保证，在设得兰群岛的小首府勒威克，普通劳动的通常价格是每天十便士。在同一群岛，他们还编织每双价值一基尼以上的精纺毛线长袜。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p54",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_514"
+      },
+      "contentHash": "b6fa4375c02a7d122ca96eca614c91a161a7bfeb11e80ade0936f180f83a9916",
+      "text": "苏格兰纺亚麻纱的方式与编织长袜大致相同，都是由主要为其他目的而雇用的仆人来做。凡试图完全依靠这两种行当中任何一种谋生的人，都只能获得极为微薄的生活资料。在苏格兰大部分地区，一个女子每周能挣二十便士，就算是优秀的纺纱工了。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p55",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_515"
+      },
+      "contentHash": "cabd8af8c620f04c20bbea3598b6ef9a9e99e99a95e5b3772b1dd7a1a29b6ab0",
+      "text": "在富裕国家，市场通常极为广大，任何一种行业都足以吸纳从业者的全部劳动和资本。靠一种职业生活、同时又从另一种职业获得一点利益的事例，主要见于贫穷国家。然而，在一个非常富裕国家的首都，也可以看到下面这个同类事例。我认为，欧洲没有哪座城市的房租比伦敦更贵，但我也不知道有哪座首都能够如此便宜地租到带家具的房间。伦敦的住宿费不仅远比巴黎便宜；同等质量的住宿也远比爱丁堡便宜；而且看似反常的是，房租昂贵正是住宿便宜的原因。伦敦房租昂贵，不仅源于使一切大首都房租昂贵的那些原因，即劳动昂贵、一切建筑材料昂贵——这些材料通常必须从远处运来——尤其是地租昂贵，因为每个地主都以垄断者的身份行事，常常对城里一英亩贫瘠土地索取的地租，高于乡下一百英亩最肥沃土地所能取得的地租；而且部分源于当地居民特有的风俗习惯，它迫使每个一家之主从底层到顶层租下一整栋房子。在英格兰，住宅指同一屋顶之下包含的全部房屋部分。在法国、苏格兰和欧洲许多其他地方，住宅往往仅指单独的一层。伦敦的商人必须在顾客居住的城区租下一整栋房子。他的店铺设在底层，他和家人睡在阁楼，并设法把中间两层租给房客，用所得租金支付一部分房租。他期望靠自己的生意，而不是靠房客来养家。反之，在巴黎和爱丁堡，出租房间的人通常没有其他生活来源；所以住宿费不仅必须支付房屋租金，还必须负担全家的全部开支。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p56",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_516"
+      },
+      "contentHash": "a591d97af93c0406e1f4c4f714aa59e26f5388733602e64496060b5148d62c50",
+      "text": "以上就是即使在自由最为完备的地方，只要缺少上述三个必要条件中的任何一个，也必然会在劳动和资本各种用途的全部利弊之间造成的不均等。但是，欧洲的政策由于没有让事物处于完全自由的状态，还造成了其他远为重要的不均等。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p57",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_517"
+      },
+      "contentHash": "bfbb6a016d47973785f3588ba1fd806525701a723942d4dfd7dbdfaa9f73a998",
+      "text": "这种政策主要通过以下三种方式造成不均等。第一，把某些行业中的竞争者限制在少于原本愿意进入这些行业的人数；第二，使另一些行业中的竞争超过其自然应有的程度；第三，阻碍劳动和资本在不同行业之间以及不同地方之间自由流通。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p58",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_518"
+      },
+      "contentHash": "b3055983e3777bacc506a76d4fac99be031da29d212bb0c11f6a17524a8a2109",
+      "text": "第一，欧洲的政策把某些行业中的竞争者限制在少于原本可能愿意进入这些行业的人数，从而在劳动和资本各种用途的全部利弊之间造成了一种非常重大的不均等。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p59",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_519"
+      },
+      "contentHash": "c0f1a77fbaab20df9570349860c16399d93d6a5baa88f96813a9ce652e464477",
+      "text": "同业公会的专有特权，是它为此采用的主要手段。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p60",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_520"
+      },
+      "contentHash": "f988fcbef2d737bb79e0d9c89e7540d5d3cc394504f19e4c1e441f9ac39073ef",
+      "text": "某一行业成立公会后享有的专有特权，必然把该行业所在城镇的竞争限制在取得该行业从业资格的人之内。通常，要获得这种资格，必要条件是在本城一位具备适当资格的师傅门下完成学徒期。公会章程有时规定每位师傅可以招收的学徒人数，几乎总会规定每个学徒必须服役的年数。两种规定的目的，都是把竞争者限制在远少于原本可能愿意进入这一行业的人数。限制学徒人数，是直接限制竞争。规定很长的学徒期，则通过增加学习费用，以较为间接但同样有效的方式限制竞争。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p61",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_521"
+      },
+      "contentHash": "66f8aa29bbe648598b21be804ff9ef0968fd0431c1b4f7a731d8d030eed7cd91",
+      "text": "按照公会的一项章程，在谢菲尔德，任何刀匠师傅一次不得有一个以上的学徒。在诺福克和诺里奇，任何织工师傅不得有两个以上的学徒，违者每月向国王缴纳五英镑罚金。在英格兰或英属殖民地的任何地方，任何制帽师傅不得有两个以上的学徒，违者每月缴纳五英镑罚金，其中一半归国王，一半归在任何正式记录法院提起诉讼的人。尽管这两项规定都已由王国的公共法律确认，但显然与制定谢菲尔德章程的是同一种公会精神所授意的。伦敦的丝织工成立公会还不到一年，就制定了一项章程，限制任何师傅一次不得有两个以上的学徒。废除这项章程，需要议会通过一项专门法案。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p62",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_522"
+      },
+      "contentHash": "b9f4c5ce054b32e93c69d4617bc7204c9f89e8804e131c3a80aaa02d8e8c776d",
+      "text": "古代欧洲各地大部分设有公会的行业，似乎通常都把七年规定为学徒期。古代一切这类公会都称为“大学”；事实上，任何公会在拉丁语中的正式名称正是如此。铁匠大学、裁缝大学等等，是我们在古代城镇的旧特许状中经常见到的说法。如今特别称为大学的那些特殊团体初次设立时，为取得文科硕士学位所必须学习的年数，显然仿照了一般行业的学徒期，因为这些行业的公会远为古老。正如一个人必须在一位具备适当资格的师傅门下工作七年，才有资格成为一般行业中的师傅，并亲自招收学徒；同样，他也必须在一位具备适当资格的硕士门下学习七年，才有资格成为自由学艺领域的硕士、教师或博士——这些词在古代含义相同——并招收学生或学徒——这两个词原来的含义也相同——跟随自己学习。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p63",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_523"
+      },
+      "contentHash": "de8e38c3952df694601a1f631d166ebcd4e358a2cd55672b6538729cc12de955",
+      "text": "伊丽莎白五年颁布的法律，通常称为《学徒法》，规定今后任何人若未曾在英格兰当时已有的某一行业、手艺或技艺中做过至少七年学徒，就不得从事该行业、手艺或技艺；于是，此前许多特定公会的章程，在英格兰变成了集镇中一切行业普遍适用的公共法律。因为，尽管该法令的措辞非常宽泛，显然似乎涵盖整个王国，但通过解释，其效力已被限制在集镇之内；人们认为，在乡村，一个人即使没有分别在几种不同行业中各做七年学徒，也可以从事这些行业，因为这对居民的便利是必要的，而且当地人口往往不足以为每个行业分别配备一批专门人手。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p64",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_524"
+      },
+      "contentHash": "d9676b495b8a62d3e2c915ddfc669f0f71d0c7516e1a6924676d91a277fc9426",
+      "text": "此外，通过严格解释该法令的措辞，其效力也被限制在伊丽莎白五年以前已在英格兰确立的行业，从未扩展到此后引进的行业。这一限制导致了若干区别；若将其视为治安管理规则，它们之愚蠢简直无以复加。例如，法院判定，马车制造师傅既不能亲自制作自己的车轮，也不能雇用帮工制作，而必须向车轮制造师傅购买，因为后一行业在伊丽莎白五年以前已经在英格兰存在。但是，车轮制造师傅即使从未向马车制造师傅当过学徒，也可以亲自制造马车或雇用帮工制造；因为马车制造业在制定该法令时尚未在英格兰存在，所以不在该法令范围之内。因此，曼彻斯特、伯明翰和伍尔弗汉普顿的许多制造业不在该法令范围之内，因为它们在伊丽莎白五年以前尚未在英格兰存在。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p65",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_525"
+      },
+      "contentHash": "80aae3c4be7096773356447fd8a3a1840c87cb2377d160332da343d1f30654e8",
+      "text": "在法国，学徒期的长短因城镇和行业而异。在巴黎，许多行业要求五年；但在其中许多行业，一个人要取得作为师傅从业的资格，还必须再做五年帮工。在后面这段时期，他被称为师傅的伙伴，这段时期本身则称为伙伴期。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p66",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_526"
+      },
+      "contentHash": "7b262629ef7197e8cce73d82edf8ab192f65a72d279c66a5826dbd96def4a61c",
+      "text": "苏格兰没有统一规定学徒期限的普遍法律。期限因公会而异。在期限很长的地方，通常可以缴纳少量罚金赎免其中一部分。此外，在大多数城镇，只需缴纳极少的罚金，就足以购买任何公会的从业资格。亚麻布和大麻布织工——这是该国的主要制造业——以及为他们服务的所有其他工匠，如纺车制造者、绕线轮制造者等等，都可在任何设有公会的城镇从事自己的行业，无须缴纳任何罚金。在一切设有公会的城镇，任何人都可以在一周内任何合法营业日自由出售肉类。在苏格兰，即使在某些非常精细的行业中，三年也是常见的学徒期；而且总的说来，据我所知，欧洲没有哪个国家的公会法规如此不具压迫性。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p67",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_527"
+      },
+      "contentHash": "40193b33f1491b9814c5d05767a2401fc3785e900c723cf308c473718099c255",
+      "text": "人人对自己的劳动所拥有的财产权，既是其他一切财产权的原始基础，也是最神圣、最不可侵犯的财产权。穷人的祖产就在他双手的力气和技巧之中；只要不损害邻人，却阻止他以自己认为适当的方式运用这种力气和技巧，就是对这一最神圣财产权的公然侵犯。这显然侵害了工人的正当自由，也侵害了那些可能愿意雇用他的人的正当自由。它既阻止前者从事自己认为适当的工作，也阻止后者雇用自己认为适当的人。至于他是否适合受雇，当然可以交由雇主自行判断，因为这与他们的利益关系如此重大。立法者故作忧虑，唯恐他们雇用不适当的人，显然既多管闲事，又具有压迫性。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p68",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_528"
+      },
+      "contentHash": "84c1fb6860d270d8374a96d06d7cb52c18d35bfc719947c7bf5bfaf08fba8dce",
+      "text": "设立长期学徒制，并不能保证粗劣的制品不会经常公开出售。这种情况发生时，通常是欺诈而不是无能的结果；而再长的学徒期也不能保证杜绝欺诈。要防止这种弊端，需要完全不同的规定。金银器皿上的纯度标记，以及亚麻布和呢绒上的印记，给购买者提供的保障远胜于任何学徒法规。购买者通常会查看这些标记，却从不认为值得查问工人是否做过七年学徒。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p69",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_529"
+      },
+      "contentHash": "619bb5a272a474411550f455b12e60ea2b4d7ded5b80886e2b44dccaf73b5f73",
+      "text": "设立长期学徒制并不能促使青年养成勤劳的习惯。计件工作的帮工很可能勤劳，因为他的每一分勤奋都会给自己带来利益。学徒很可能懒惰，而且几乎总是如此，因为他没有切身利益促使自己不这样做。在较低等的职业中，劳动的甘甜完全在于劳动的报酬。越早能够享受这种甘甜的人，就越可能较早领略劳动的乐趣，并较早养成勤劳的习惯。一个青年如果长期不能从劳动中获得任何利益，自然会产生对劳动的厌恶。由公共慈善机构送去当学徒的少年，契约期限通常比一般年限更长，而他们后来通常都非常懒惰且一无是处。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p70",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_530"
+      },
+      "contentHash": "e35cd9baec903919abb752be48fe1ef555aec0a8de41b4de3767cf8132324d97",
+      "text": "古人完全不知道学徒制。师傅与学徒的相互义务，在每一部现代法典中都占有相当大的篇幅。罗马法对此只字未提。我不知道有哪个希腊词或拉丁词——我想，我甚至可以大胆断言根本没有——能够表达我们现在赋予“学徒”一词的概念，即一个仆役在若干年期限内受契约约束，为师傅的利益从事某一特定行业的工作，条件是师傅须把该行业传授给他。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p71",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_531"
+      },
+      "contentHash": "ca8f794f6cdfb37678635adf8199f74d050ab2c857d54aeda018e690d7ab1ac4",
+      "text": "长期学徒制完全没有必要。那些远比普通手艺高深的技艺，例如制造钟表的技艺，并不包含任何需要长期学习才能掌握的奥秘。诚然，最初发明这些精巧的机器，甚至发明制造它们所用的某些工具，无疑都必定是经过深思熟虑和长期钻研的成果，并且完全可以被视为人类才智最成功的发挥之一。但是，当这两者都已充分发明出来并为人们透彻理解之后，要以最完备的方式向任何一个青年说明如何使用这些工具、如何制造这些机器，所需的课程不大可能超过几个星期；也许几天的课程就已足够。对于普通的机械手艺，几天的课程肯定就已足够。诚然，即使在普通手艺中，手上的熟练技巧也必须经过大量练习和实践才能获得。但是，如果一个青年从一开始就作为雇工干活，按照他所能完成的少量工作领取相应的报酬，同时对自己有时因笨拙和缺乏经验而损坏的材料照价赔偿，他练习起来就会勤奋、专心得多。用这种方式，他所受的训练通常会更为有效，而且总是更省时、更省钱。诚然，师傅会蒙受损失。他将失去如今可以连续七年省下的学徒的全部工资。到头来，学徒本人也许也会蒙受损失。在一种如此容易学会的手艺中，他会遇到更多竞争者；而当他成为一名熟练工人时，他的工资会比现在低得多。同样的竞争加剧既会降低工人的工资，也会降低师傅的利润。各行各业、各种手艺、各种秘技都会蒙受损失。但是公众却会获益，因为这样一来，所有工匠的制品都会以低得多的价格进入市场。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p72",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_532"
+      },
+      "contentHash": "58849265d836f10f5f52949c625773f6551c8111c83c834e564ff0baeeb9f9e9",
+      "text": "所有同业公会以及大部分同业公会法规之所以建立，正是为了通过限制必定会造成降价的自由竞争，来防止价格以及随之而来的工资和利润下降。在古代，欧洲许多地方要成立一个同业公会，除了它所在的自治市的授权以外，并不需要其他权力机关的许可。诚然，在英格兰，还必须取得国王颁发的特许状。但王室保留这项特权，看来与其说是为了保护公共自由免受这种压迫性垄断的侵害，不如说是为了向臣民勒索钱财。向国王缴纳一笔罚金后，通常似乎很容易取得特许状；而当某一类工匠或商人认为可以不凭特许状就以同业公会的形式行事时，这类所谓的非法行会并不总是因此被剥夺权利，而是必须每年向国王缴纳罚金，以获准行使其僭取的特权。对所有同业公会以及它们认为适宜为自身管理而制定的章程进行直接监督的权力，属于它们所在的自治市；而对它们实行的任何管束，通常并非来自国王，而是来自那个更大的法人团体，这些从属的法人团体不过是其中的部分或成员。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p73",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_533"
+      },
+      "contentHash": "a61e5f38210a78b96796c815a57f6a026e805b0b64fdc7b5fb98701e6afab8b3",
+      "text": "自治市的治理完全掌握在商人和工匠手中；而对其中每一特定行业来说，防止市场像他们通常所说的那样，被本行业的产品充斥，显然符合其利益；但这实际上就是使市场始终处于供应不足的状态。每个行业都急于制定适合这一目的的规章，而且只要自己获准这样做，也愿意同意其他每个行业照样行事。诚然，由于这些规章，每个行业都不得不以比本来略高的价格，向城内其他各行业购买自己所需的货物。但作为补偿，他们也能把自己的货物卖得恰好同样贵；因此，正如人们所说，得失相抵；就城内不同行业彼此之间的交易而言，没有哪一行业因这些规章而蒙受损失。但在同乡村的交易中，他们全都获得巨大利益；而正是后一类交易构成了维持每座城市并使其富裕的全部贸易。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p74",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_534"
+      },
+      "contentHash": "171823e36d1dd2248acccd89a2363a83507f59364ee3b8609bbb7b2d498e221c",
+      "text": "每座城市的全部生活资料以及其产业所需的一切原料，都取自乡村。城市主要以两种方式为这些东西付款：第一，把其中一部分原料加工制造后送回乡村；在这种情形下，其价格因加入工人的工资和师傅或直接雇主的利润而提高；第二，把输入城内的其他国家或本国遥远地区的一部分原产品和制成品送往乡村；在这种情形下，这些货物原来的价格也因加入运输工人或水手的工资以及雇用他们的商人的利润而提高。城市从其制造业获得的利益，在于这两个商业部门中第一个部门的收益；城市从其国内贸易和对外贸易获得的利益，则在于第二个部门的收益。工人的工资和各自雇主的利润，构成这两个部门的全部收益。因此，凡是倾向于使这些工资和利润提高到本来水平以上的规章，都倾向于使城市能够用较少量的自身劳动，购买乡村较多量劳动的产品。这些规章使城里的商人和工匠取得了凌驾于乡村地主、农场主和劳动者之上的优势，并破坏了原本会在双方贸易中形成的自然平等。社会劳动的全部年产物，每年都在这两类人之间分配。借助这些规章，城市居民所分得的份额比原本归于他们的更多，而乡村居民所分得的则更少。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p75",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_535"
+      },
+      "contentHash": "b46d0387adfd3e2b38cf603a0d115752f89caf26285ec9fa2817f2a0429d266c",
+      "text": "城市为每年输入其中的食物和原料实际支付的价格，就是每年从城市输出的制成品和其他货物的数量。后者卖得越贵，前者就买得越便宜。城市的产业因而变得更有利，乡村的产业则变得较为不利。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p76",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_536"
+      },
+      "contentHash": "c356edc4a357c9205ae197002054b1a7de6febd7dc960587e0dbd8e37dff4d74",
+      "text": "欧洲各地城市中经营的产业都比乡村中经营的产业更有利；无须进行任何十分精细的计算，只凭一个非常简单而明显的观察，我们就可以确信这一点。在欧洲每个国家，凭借商业和制造业——即严格说来属于城市的产业——从微小本钱起家而积累巨额财富的人，至少有一百个，而凭借严格说来属于乡村的产业——即通过改良和耕种土地来生产原产品——做到这一点的人却只有一个。因此，一种场合中的产业所得报酬必定更高，劳动工资和资本利润显然也必定高于另一种场合。但是，资本和劳动自然会寻求最有利的用途。因此，它们自然会尽可能流向城市，而离开乡村。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p77",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_537"
+      },
+      "contentHash": "d17bc4b1135c3170a0a8a4459c6d26609a17a6296b45f632272bf7969dc6572c",
+      "text": "城市居民聚集在一处，很容易联合起来。因此，城市中经营的最微不足道的行业，也都曾在某个地方组成同业公会；甚至在从未组成同业公会的地方，同业公会精神、对外来者的猜忌、不愿招收学徒或传授本行业秘密的倾向，也通常盛行于这些行业之中，并且常常促使他们通过自愿结社和协议，来阻止他们无法用章程禁止的自由竞争。只雇用少量人手的行业，最容易形成这种联合。也许只需六个梳毛工，就能使一千名纺工和织工有活可干。他们联合起来拒收学徒，不仅可以独占就业机会，而且可以使整个制造业对自己处于某种受奴役的状态，并把其劳动价格提高到远远超过其工作性质所应得的水平。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p78",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_538"
+      },
+      "contentHash": "d37b7ce516ec8815dc113cff1098209b24915afb39d3c4b06896d7cb97ad3304",
+      "text": "乡村居民分散在相距遥远的地方，不容易联合起来。他们不仅从未组成过同业公会，而且同业公会精神也从未在他们中间盛行。农业是乡村的大行业，却从来没有人认为必须经过学徒训练才有资格从事农业。然而，除所谓美术和自由职业之外，也许没有哪一种行业需要如此多样的知识和经验。关于农业，已经用各种语言写成了无数卷著作；这足以使我们确信，即使在最智慧、最博学的民族中，农业也从未被视为很容易理解的事。即使从所有这些著作中，我们也休想搜集到有关农业各种复杂作业的知识，而这种知识甚至普通农场主通常也具备，无论其中某些极其不足取的作者有时装出多么轻蔑的口吻谈论他。相反，几乎没有哪一种普通机械手艺，其全部操作不能在一本只有寥寥数页的小册子中得到尽可能完整而清楚的说明，达到辅以图形的文字所能说明的程度。在法国科学院目前出版的《工艺史》中，其中好几种手艺实际上正是以这种方式得到说明的。此外，农业作业的安排必须随天气的每次变化以及许多其他偶然情况而改变，因而比那些始终相同或几乎相同的作业安排需要多得多的判断力和审慎。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p79",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_539"
+      },
+      "contentHash": "23aaf26d91204c41d675e36da47739bbe90f60698666ead288f8c2455cf1e73e",
+      "text": "不仅农场主的技艺，即农业作业的总体安排，而且乡村劳动的许多较低级分支，也比大多数机械手艺需要多得多的技能和经验。加工铜铁的人，使用的是性质始终相同或几乎相同的工具和材料。但是，赶着一队马或牛耕地的人，所使用的工具在不同场合的健康、力气和性情大不相同。他所加工的材料，其状况也和他所使用的工具一样多变；对二者的驾驭都需要很强的判断力和审慎。普通农夫虽然通常被视为愚笨和无知的典型，却很少缺乏这种判断力和审慎。诚然，他不如住在城市里的机械工人习惯于社会交往。他的声音和言语更粗野，不习惯的人也更难听懂。不过，他的理解力由于习惯于考虑更多种类的事物，通常远胜于后者；后者从早到晚，全部注意力通常都用于完成一两项极其简单的操作。乡村下层民众实际上比城市下层民众优越多少，凡因事务或好奇心而与这两类人都多有交谈的人，都十分清楚。因此，据说在中国和印度斯坦，乡村劳动者的地位和工资都高于大多数工匠和制造业工人。如果不是同业公会法规和同业公会精神从中阻挠，各地的情形大概都会如此。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p80",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_540"
+      },
+      "contentHash": "010aa1f6ce3319d4a4e7ecb8bab94d581bf48d792b80e9d3f44f65d924b220f5",
+      "text": "在欧洲各地，城市产业胜过乡村产业，并不完全是同业公会和同业公会法规造成的。许多其他规章也在维持这种优势。对外国制成品以及外国商人输入的一切货物征收的高额关税，都趋向于同一目的。同业公会法规使城市居民能够提高价格，而无须担心本国同胞的自由竞争会以较低价格击败他们。其他规章同样保护他们免受外国人的竞争。二者造成的涨价，到处最终都由乡村的地主、农场主和劳动者承担，而他们很少反对建立这种垄断。他们通常既无意愿，也无能力结成联合；商人和制造业者的喧嚷和诡辩，很容易使他们相信，社会中一个部分，而且是从属部分的私人利益，就是全体的共同利益。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p81",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_541"
+      },
+      "contentHash": "d5a3378e404d2f318033dc745d1488c7d4986d95fc546df91430d67717912501",
+      "text": "在大不列颠，城市产业胜过乡村产业的程度，过去似乎比现在更大。乡村劳动的工资与制造业劳动工资之间，以及投在农业上的资本利润与投在商业和制造业上的资本利润之间，如今的差距，据说都比上个世纪或本世纪初更小。这种变化可以被视为对城市产业给予特殊鼓励的必然后果，尽管它来得很晚。城市中积累的资本，最终会变得如此巨大，以致再也不能以从前的利润用于城市所特有的那类产业。那种产业与其他任何产业一样，都有其限度；而资本的增加会加剧竞争，从而必然降低利润。城市利润的下降迫使资本流向乡村；资本在那里形成对乡村劳动的新需求，从而必然提高其工资。随后，可以说，资本遍布于全国土地之上，并由于用于农业而有一部分归还给乡村；而它当初在城市中的积累，在很大程度上正是以牺牲乡村为代价的。欧洲各地乡村最大的改良，都是由于原先积累在城市中的资本如此向外溢出而实现的；这一点我将在后文努力说明。同时，我还要证明，虽然有些国家通过这条途径达到了相当富裕的程度，但这条途径本身必然缓慢、没有把握，容易受到无数偶然情况的扰乱和中断，而且在各方面都违反自然和理性的秩序。至于导致这条途径的利益、偏见、法律和习俗，我将在本研究的第三篇和第四篇中尽我所能，予以充分而清楚的说明。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p82",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_542"
+      },
+      "contentHash": "5529ffc4ade55aceeaf6259588e7bf7ed4bd1026480a50ddb1604bf6ed54b092",
+      "text": "同业之人即使只是为了欢聚娱乐，也很少聚在一起而不使谈话最终变成针对公众的密谋，或某种抬高价格的谋划。诚然，不可能用任何既能够执行、又符合自由和正义的法律来阻止这类聚会。但是，尽管法律不能阻止同业之人有时聚集在一起，却不应采取任何措施为这类聚会提供便利，更不应使其成为必要。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p83",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_543"
+      },
+      "contentHash": "afcedfab3a70f0c372aff24877dc0075991cd75020332deafd2f09c7ae978355",
+      "text": "一项强制某一城市同业的所有人在公共登记簿上登记姓名和住所的规章，会为这类聚会提供便利。它把那些原本可能永远互不相识的人联系起来，并让该行业的每个人都知道到哪里可以找到其他每个人。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p84",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_544"
+      },
+      "contentHash": "ac176a3c3862a53aa335c6c341ed6c9cf58356334f545a437702c781b1083214",
+      "text": "一项允许同业之人向自己征税，以便赡养本行业的穷人、病人、寡妇和孤儿的规章，由于赋予他们一项需要共同管理的共同利益，便使这类聚会成为必要。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p85",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_545"
+      },
+      "contentHash": "95c73bec2ef444d3f3fdb12ec1a5811931f0f2ed364082c616e24fbff7b35d20",
+      "text": "组成同业公会不仅使这类聚会成为必要，而且使多数人的决定对全体具有约束力。在自由行业中，除非得到每一个经营者的一致同意，否则无法建立有效的联合；而且，只要有一个经营者不再持相同意见，这种联合就不能继续存在。同业公会的多数成员却能制定附有适当惩罚的章程，从而比任何自愿联合都更有效、更持久地限制竞争。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p86",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_546"
+      },
+      "contentHash": "6e74c1939620fb81d58d36a8f58af749de8a1afe3961645e9930b8b9ac13d505",
+      "text": "声称同业公会是更好地管理行业所必需的，这种借口毫无根据。对工人实行的真正而有效的约束，并非来自他的同业公会，而是来自他的顾客。正是害怕失去顾客的雇用，才遏制他的欺诈并纠正他的疏忽。排他性的同业公会必然削弱这种约束的力量。这时，无论某一特定群体的工人表现好坏，都必须雇用他们。正因为如此，在许多设有同业公会的大城市中，即使某些最必需的行业，也找不到一个勉强合格的工人。如果你想让活儿做得还算过得去，就必须到郊区去做；那里的工人没有排他性特权，只能依靠自己的声誉。然后，你还必须尽可能把制品偷运进城。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p87",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_547"
+      },
+      "contentHash": "7d4e39e3b7a5fc42e16d13a6ab7e365e28d07544e89aca86e5315551e21f360b",
+      "text": "欧洲的政策正是以这种方式，把某些职业中的竞争者人数限制在少于本来愿意进入这些职业的人数，从而在劳动和资本各种不同用途的全部利弊之间，造成了一种极其重大的不平等。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p88",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_548"
+      },
+      "contentHash": "f6f9c9682db18bf2f01ea68c91fa4b4dda32a0a7930249800358871abc7086d5",
+      "text": "第二，欧洲的政策把某些职业中的竞争增加到超过自然状态下会有的程度，从而在劳动和资本各种不同用途的全部利弊之间，造成了另一种性质相反的不平等。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p89",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_549"
+      },
+      "contentHash": "d8335021a14bee4d2c336315ee2cef9ee767254f0d6f061df11a35ac67a8c4f0",
+      "text": "人们认为，为某些职业培养适当数量的年轻人十分重要，因此，有时由公共机构、有时出于私人创办者的虔诚，为此设立了许多生活津贴、奖学金、助学金、助学补助等，吸引到这些行业里的人，远远多于本来能够指望从事这些行业的人。我相信，在所有基督教国家，大部分教士的教育费用都是以这种方式支付的。他们当中完全自费接受教育的极少。因此，那些确实完全自费者所受的漫长、乏味而昂贵的教育，并不总能为他们带来相称的报酬，因为教会里挤满了这样的人：为了获得职位，他们甘愿接受远低于这种教育在其他情况下本可使他们有权得到的报酬；穷人的竞争就这样夺走了富人的报酬。毫无疑问，把助理牧师或私人牧师同任何普通行业的熟练工相比，都会显得有失体面。不过，助理牧师或私人牧师的薪酬，完全可以视为同熟练工的工资具有相同性质。他们三者都是按照各自碰巧同上级订立的契约，凭工作领取报酬。直至十四世纪中叶以后，五马克——所含白银约等于我们现今货币的十英镑——一直是英格兰助理牧师或领薪教区牧师的通常薪酬；我们从几个不同全国宗教会议的法令中，可以看到对此所作的规定。在同一时期，石匠师傅的薪酬被规定为每日四便士，所含白银与我们现今货币的一先令相同；石匠熟练工的薪酬则为每日三便士，等于我们现今货币的九便士。因此，假定这两种劳动者始终有活可做，他们的工资都远高于助理牧师的薪酬。假定石匠师傅一年有三分之一的时间没有工作，他的工资也会与助理牧师的薪酬完全相等。安妮女王在位第十二年法令第十二章规定：“鉴于助理牧师缺乏充分的生活供给与鼓励，若干地方的牧职一直由很不称职的人担任，因此授权主教以亲笔签署并加盖印章的书面文件，为助理牧师指定一笔充分而固定的俸金或津贴，每年不得超过五十英镑，也不得少于二十英镑。”目前，助理牧师每年四十英镑被认为是很优厚的薪酬；尽管有这项议会法令，仍有许多助理牧师职位每年薪酬不足二十英镑。伦敦有些制鞋熟练工每年挣四十英镑，而在这座都城里，几乎没有哪一种勤勉的工人每年挣不到二十英镑。事实上，这后一笔数额并不超过许多乡村教区的普通劳动者经常挣到的钱。每当法律试图规定工人的工资时，其目的总是降低而不是提高工资。然而，法律曾多次试图提高助理牧师的薪酬，并为了教会的尊严，迫使各教区的主任牧师付给他们高于他们自己也许甘愿接受的那点可怜生活费的报酬。但在这两种情形下，法律似乎同样无效：它既从未能把助理牧师的薪酬提高到预定程度，也从未能把劳动者的工资压低到预定程度；因为一方面，助理牧师由于处境贫困且竞争者众多，甘愿接受低于法定津贴的报酬，法律从未能阻止他们这样做；另一方面，由于那些雇用劳动者并期望从中获得利润或乐趣的人相互竞争，劳动者会得到更多报酬，法律也从未能阻止他们这样做。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p90",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_550"
+      },
+      "contentHash": "268cb818ea81d077de4b289eea9aab56f36ba3e8a85f96a1b68b89abfb6b588b",
+      "text": "尽管教会的一些下层成员处境寒微，大圣俸和其他教会显职仍维持着教会的尊荣。人们对这一职业的敬重，也使这些下层成员所获金钱报酬的微薄多少得到了一些补偿。在英格兰以及所有罗马天主教国家，教会这场彩票实际上远比必要的更为有利。苏格兰教会、日内瓦教会以及其他几个新教教会的实例足以使我们相信，在这样一种声望很高而教育又很容易获得的职业中，即使只寄望于远为适中的圣俸，也会吸引数量充足、学识渊博、品行端正而值得尊敬的人担任圣职。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p91",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_551"
+      },
+      "contentHash": "9f6fd43c7368d806fee732d3f53acc047035aff0b694e3d538188f63e9498cec",
+      "text": "在法律和医学这类没有圣俸的职业中，如果也有同样比例的人由公共费用培养，竞争很快就会激烈到大幅压低其金钱报酬的程度。到那时，任何人自费培养儿子从事这两种职业中的任何一种，也许都不再值得。这些职业将完全留给那些由公共慈善基金培养的人；他们人数众多而又生活困窘，通常会被迫满足于极其微薄的报酬，从而使如今备受尊敬的法律和医学职业彻底失去尊严。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p92",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_552"
+      },
+      "contentHash": "173da9966720fbb0ffd8cd01884c4ca9f947b2db215888796c18563b173f850f",
+      "text": "通常所谓文人的那个不得志的群体，其处境与上述假设中律师和医师很可能陷入的处境颇为相似。在欧洲各地，他们大部分原本都为进入教会而受教育，却因各种原因未能担任圣职。因此，他们通常是由公共费用培养的，而且各地人数都如此众多，以致他们的劳动价格通常被压低到极其微薄的报酬。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p93",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_553"
+      },
+      "contentHash": "15dfba5176446ec5c71cf799a87f7e3484bf956f807180aeccdd411b47dd5591",
+      "text": "在印刷术发明以前，文人能够凭自己的才干有所收入的唯一职业，就是担任公立或私人教师，也就是把自己获得的新奇而有用的知识传授给别人；毫无疑问，这仍是一种比为书商写作更体面、更有用，而且一般说来甚至更有利可图的职业，后一种职业是印刷术的发明带来的。要成为一名杰出的科学教师，所需的时间与钻研、天赋、知识和勤奋，至少与成为最杰出的法律或医学从业者所需的一样多。但是，杰出教师的通常报酬与律师或医师的报酬毫不相称；这是因为前一种行业挤满了由公共费用培养、生活贫困的人，而后两种行业中并非由自己承担教育费用的人却极少。不过，公立和私人教师的通常报酬无论显得多么微薄，如果不是那些更为贫困、靠写作糊口的文人因而退出了这一市场，它无疑还会更低。在印刷术发明以前，学者和乞丐这两个词似乎几乎是同义词。当时各大学的不同主管看来常常向本校学者颁发乞讨许可证。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p94",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_554"
+      },
+      "contentHash": "d6fca7504ab19a11fbda485958eb5ff3dec96f15d20fb4a77ebb2f992280a37d",
+      "text": "古时候，在尚未设立任何此类慈善基金来培养穷人从事知识性职业以前，杰出教师的报酬看来要丰厚得多。伊索克拉底在那篇所谓《反智者》中，指责他那个时代的教师自相矛盾。他说：“他们向学生作出最堂皇的许诺，承诺教会他们变得明智、幸福而公正，却为如此重要的服务约定四或五米纳的微薄报酬。”他接着说：“教授智慧的人，自己当然应当明智；但如果有人以这样的价格出售这样划算的东西，他就会被证明愚蠢得再明显不过。”他在这里当然不是要夸大这种报酬，我们可以确信，实际报酬不会低于他所说的数额。四米纳等于十三英镑六先令八便士；五米纳等于十六英镑十三先令四便士。因此，当时通常付给雅典最杰出教师的报酬必定不低于这两个数额中较大的一个。伊索克拉底本人向每名学生索取十米纳，即三十三英镑六先令八便士。据说他在雅典授课时有一百名学生。我理解这是指他同时教授的人数，或者说参加我们所谓一门课程的人数；在那样一座大城市里，对于那样一位名师而言，这个数字并不显得异常，况且他教授的修辞学在当时还是所有学科中最时髦的一门。因此，他每讲授一门课程，必定能收入一千米纳，即3,333英镑6先令8便士。相应地，普鲁塔克在另一处说，一千米纳就是他的“迪达克特隆”，即通常的授课价格。当时许多其他杰出教师看来也积累了巨额财富。高尔吉亚曾将自己的一尊纯金雕像赠给德尔斐神庙。我想，我们不应认为这尊雕像与真人一样大。柏拉图把他的生活方式，以及当时另外两位杰出教师希庇亚斯和普罗泰戈拉的生活方式，都描述为奢华得近乎炫耀。据说柏拉图本人生活也相当奢华。亚里士多德做过亚历山大的老师以后，公认从亚历山大本人及其父亲腓力那里都得到了极其丰厚的酬谢；尽管如此，他仍认为值得回到雅典，重新在自己的学园授课。那个时代的科学教师很可能不如一两个时代以后那样常见；到后来，竞争很可能已使他们的劳动价格和人们对他们本人的仰慕都有所降低。不过，其中最杰出者看来始终享有远高于现代任何同业者的尊崇。雅典人曾派学院派哲学家卡尔内阿德斯和斯多葛派哲学家第欧根尼组成正式使团出使罗马；尽管当时雅典城已经失去了往日的辉煌，却仍是一个独立而重要的共和国。而且卡尔内阿德斯出生于巴比伦；从来没有哪个民族比雅典人更忌讳让外国人担任公职，因此，他们对他的尊重一定非常之高。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p95",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_555"
+      },
+      "contentHash": "5603c4ca8094e9f8628600c8dae38e1fca6fbe0ac755358dca7e5315db00f88c",
+      "text": "总的说来，这种不平等对公众也许利多于弊。它可能会在一定程度上降低公立教师这一职业的地位；但知识教育的低廉无疑是一项好处，远远抵消了这种微不足道的不便。如果开展教育的那些学校和学院，其体制能比目前欧洲大部分地区的体制更为合理，公众还可以从中获得更大的利益。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p96",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_556"
+      },
+      "contentHash": "ba25d9aff866ba5644eb0dcee3522cb76bd1e406efedd2b884f1b0f56a551e7f",
+      "text": "第三，欧洲的政策阻碍劳动和资本在不同职业之间以及不同地方之间自由流动，在某些情况下造成了不同职业全部利弊之间一种极不适宜的不平等。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p97",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_557"
+      },
+      "contentHash": "eace1b630948bbd4433ab7f003f0c583244c64d65caa17aeeebc8d64a6f4d335",
+      "text": "学徒法规即使在同一地方，也会阻碍劳动从一种职业向另一种职业自由流动。行会的专有特权即使对于同一种职业，也会阻碍劳动从一个地方向另一个地方自由流动。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p98",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_558"
+      },
+      "contentHash": "74cf8314696167e4388d6af370b4ced53cf18a566bb3380c7d7abe7fd52afb94",
+      "text": "经常有这样的情形：一种制造业给工人很高的工资，而另一种制造业的工人却不得不满足于仅能维持生计的收入。前一种制造业正在发展，因此不断需要新工人；后一种正在衰退，过剩的工人不断增加。这两种制造业有时可能在同一城镇，有时甚至在同一邻近地区，却不能彼此提供丝毫帮助。在一种情况下，学徒法规可能加以阻碍；在另一种情况下，则有学徒法规和具有专有权的行会同时加以阻碍。然而，在许多不同的制造业中，操作如此相似，如果没有那些荒谬的法律妨碍，工人很容易彼此改换行业。例如，织造平纹亚麻布和织造平纹丝绸的技艺几乎完全相同。织造平纹呢绒的技艺略有不同；但差别微不足道，无论亚麻织工还是丝织工，只需几天就能成为还过得去的呢绒织工。因此，如果这三种主要制造业中的任何一种衰落，工人都可以在其余两种当中状况较为兴旺的一种找到出路；他们的工资在兴旺的制造业中不会涨得过高，在衰落的制造业中也不会跌得过低。诚然，在英格兰，根据一项专门法令，亚麻制造业向所有人开放；但由于这个行业在全国大部分地区并未得到广泛经营，它不能为其他衰落制造业的工人提供普遍的出路。在实行学徒法规的任何地方，这些工人只有两种选择：要么依靠教区救济，要么去做普通劳动者；而由于习惯使然，他们做普通劳动者的能力，远不如从事任何一种与本业稍有相似之处的制造业。因此，他们通常选择依靠教区救济。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p99",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_559"
+      },
+      "contentHash": "a6d2988b23c1d3f9e2074d41254e9d385cd46fb32305f382230759159cb41b59",
+      "text": "凡是阻碍劳动从一种职业向另一种职业自由流动的事物，也会阻碍资本的这种流动；因为能够投入任何营业部门的资本数量，在很大程度上取决于能够投入其中的劳动数量。不过，行会法规对资本从一个地方向另一个地方自由流动的阻碍，小于其对劳动这种流动的阻碍。无论在哪里，富商取得在设有行会的城镇经商的特权，都远比穷工匠取得在那里工作的特权容易。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p100",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_560"
+      },
+      "contentHash": "3fc63fe0a9b5ee49cbae5706007b4f841931d67479d9af967422f66a304c481e",
+      "text": "我相信，行会法规对劳动自由流动的阻碍是欧洲各地共有的。就我所知，济贫法造成的这种阻碍则是英格兰所特有的。它表现在：穷人很难在不属于自己的任何教区取得定居权，甚至很难获准在那里从事自己的行业。行会法规所阻碍的，只是工匠和制造业工人的劳动自由流动。取得定居权的困难，甚至连普通劳动的自由流动也会阻碍。这个弊病或许是英格兰治安管理中最大的一种，因此值得对它的起源、发展和现状略加说明。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p101",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_561"
+      },
+      "contentHash": "94ebe2ade8de2a9d4b64ca5285c0f9e7501fad4971eef22d48816fb7b33f9ef0",
+      "text": "修道院被摧毁后，穷人失去了这些宗教机构的慈善救济；在其他一些救济尝试没有奏效之后，伊丽莎白女王在位第四十三年法令第二章规定，每个教区都必须赡养本教区的穷人；每年应任命济贫监督员，与教区执事共同通过征收教区税，为此筹集足够的款项。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p102",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_562"
+      },
+      "contentHash": "c4a7332c17ac5b21e1e03d998f247c684142e3ce258669bc24a16fc7da848d8f",
+      "text": "这项法令责成每个教区必须赡养本教区的穷人。因此，哪些人应被视为各教区的穷人，就成了一个颇为重要的问题。这个问题的规定经过几次变动，最后由查理二世在位第十三年和第十四年的法令确定下来。该法令规定，任何人在任何教区不受干扰地居住四十日，即可在该教区取得定居权；但在这段时间内，经教区执事或济贫监督员申诉，两名治安法官有权把任何新居民遣送到他最后一个依法取得定居权的教区；除非他租用年租十英镑的房屋，或者能为免除其当时居住教区的负担提供这些法官认为充分的担保。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p103",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_563"
+      },
+      "contentHash": "3a270a6c9898647bcf4dac2973c5408089277a41fdcbe9c7c6a92b8a58db0324",
+      "text": "据说，这项法令颁布后出现了一些欺诈行为：教区官员有时贿赂本教区的穷人，叫他们偷偷前往另一个教区并隐匿四十日，从而在那里取得定居权，以解除他们本来所属教区的负担。因此，詹姆斯二世在位第一年的法令规定，任何人为取得定居权所必需的不受干扰的四十日居住期，只能从他把写有其居住地点和家庭人数的书面通知送交迁入教区的一名教区执事或济贫监督员之时起算。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p104",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_564"
+      },
+      "contentHash": "18f2d359e19aa6f424ca9db146acb0275c4cff61b541d18dfef844d1f8a21a2a",
+      "text": "但教区官员对本教区似乎并不总比对其他教区更加诚实，有时会默许这种侵入，收下通知后却不采取相应的适当措施。因此，既然教区里的每个人都被认为有利害关系，应尽可能防止自己因这种侵入者而负担加重，威廉三世在位第三年的法令又进一步规定，四十日居住期只能从星期日礼拜仪式结束后，书面通知在教堂公开宣读之时起算。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p105",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_565"
+      },
+      "contentHash": "198e667d6209e7f98faca9f336383f9d36d4cbee79046a6bd621023c22b5cbfd",
+      "text": "伯恩博士说：“尽管如此，通过书面通知公布后连续居住四十日而取得的这种定居权，实际上极少有人获得；这些法令的目的，与其说是让人取得定居权，不如说是防止偷偷进入教区的人取得定居权，因为发出通知只不过是迫使教区将其遣走。但是，如果一个人的情形使人无法确定他实际上是否可以被遣走，那么，他发出通知，就会迫使教区在两者之中作出选择：要么让他连续居住四十日，从而准许他无争议地取得定居权；要么把他遣走，以检验这种权利是否成立。”",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p106",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_566"
+      },
+      "contentHash": "5621fe9e04c9a310db0ae0c03982f15021ec50d473afcce957e4c6bd3d678447",
+      "text": "因此，这项法令使穷人几乎不可能再按旧办法通过居住四十日取得新的定居权。但为了不显得完全排除了一个教区的普通百姓在另一个教区安稳定居的可能，它又规定了四种无须送交或公布任何通知即可取得定居权的途径。第一，被课征教区税并缴纳此税；第二，当选教区年度公职并任职一年；第三，在该教区当学徒；第四，在当地受雇服务一年，并在全年始终从事同一项服务。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p107",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_567"
+      },
+      "contentHash": "17a76d8e090f594a017f26cab332c942625c83e0b0510886a6c49f1c00842250",
+      "text": "若非通过全教区的公开行为，任何人都不能依前两种途径中的任何一种取得定居权；而全教区的人非常清楚这样做的后果，不会以对新来者课征教区税或选举他担任教区公职的方式，接纳一个除自己的劳动外别无生计的新来者。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p108",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_568"
+      },
+      "contentHash": "f37caf9cb8769a40696fc99ece4afda8fcb7acde4d2f59e6e1dfc13652e705da",
+      "text": "已婚男子很难通过后两种途径中的任何一种取得定居权。学徒几乎从不结婚；而且法律明文规定，已婚仆役不得凭受雇一年取得任何定居权。引入凭受雇服务取得定居权的规定，其主要结果是在很大程度上淘汰了按年雇用的旧习；这种做法从前在英格兰如此通行，以至即使在今天，如未约定特定期限，法律也推定每名仆役均受雇一年。但是，主人并非总愿意以这种方式雇用仆役，从而让他们取得定居权；仆役也并非总愿意以这种方式受雇，因为每一项最近取得的定居权都会取消此前的一切定居权，所以他们可能因此失去在出生地，也就是父母和亲属居住地的原有定居权。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p109",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_569"
+      },
+      "contentHash": "220bc2ecbe91aa822485f59bea9c9e7ada3a487899a4585c301543d2f91f54de",
+      "text": "显而易见，任何独立谋生的劳动者，无论是普通工人还是手艺人，都不大可能通过当学徒或受雇做工而取得新的定居资格。因此，这样的人把自己的劳作带到一个新的教区时，无论多么健康、多么勤勉，只要他既没有租下一所年租十英镑的住所——对于除靠劳动谋生外一无所有的人来说，这是不可能的——也不能提供由两名治安法官判定足以使该教区免受负担的担保，他就可能因任何教区委员或济贫监督员的一时任性而被遣走。诚然，要求何种担保，完全由他们酌情决定；但他们所要求的，很难少于三十英镑，因为法律已经规定，即使购置一项价值不足三十英镑的自由保有地产，也不能使任何人取得定居资格，理由是这不足以使教区免受负担。然而，几乎没有哪个靠劳动谋生的人能够提供这种担保；而实际要求的担保往往还要高得多。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p110",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_570"
+      },
+      "contentHash": "e96d551ab404dc0441b63e063c3948a46b5d6d7b89c22f310a882c1d447ead13",
+      "text": "为了在一定程度上恢复被上述各项法令几乎完全取消的劳动自由流动，人们想出了定居证明这一办法。威廉三世在位第八年和第九年的法令规定：如果任何人从其最后一个合法定居的教区带来一份证明，由教区委员和济贫监督员签署，并经两名治安法官认可，那么其他任何教区都必须接纳他；不能仅仅因为他可能成为教区的负担而将他遣走，只有当他实际成为负担时才可遣走；而到那时，出具证明的教区必须支付供养他和将他遣返的全部费用。为了给这种持有证明的人迁入居住的教区以最充分的保障，同一法令还进一步规定，除非他租下一所年租十英镑的住所，或者以本人名义担任每年一任的教区公职整整一年，否则无论通过何种方式都不能在那里取得定居资格；因而，既不能通过申报，也不能通过受雇做工、当学徒或缴纳教区税取得这种资格。安妮女王在位第十二年第一项法令第十八章又进一步规定，这种持有证明的人的仆役和学徒，也都不能在他凭该证明居住的教区取得任何定居资格。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p111",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_571"
+      },
+      "contentHash": "4fc14b17209890f3abb828ba61236655082be28b0217c99badff19756d554ecf",
+      "text": "这种办法在多大程度上恢复了被先前各项法令几乎完全取消的劳动自由流动，我们可以从伯恩博士下面这段极有见地的评论中看出。他说：“显而易见，有各种充分理由要求迁来任何地方定居的人携带证明；也就是说，凭证明居住的人，无论通过当学徒、受雇做工、申报还是缴纳教区税，都不能取得定居资格；他们既不能使学徒也不能使仆役在当地取得定居资格；如果他们成为教区的负担，可以确切知道应将他们遣往何处，而且教区将获得遣送费用以及在此期间供养他们的费用；如果他们患病而无法遣走，出具证明的教区就必须供养他们：所有这些，没有证明都办不到。这些理由也相应适用于一般情况下不肯出具证明的教区；因为持有证明的人最后被送回那里，而且境况更加糟糕，其可能性远不止一半。”这段评论的寓意似乎是：任何穷人迁来居住的教区，都应当一律要求他出具证明，而他打算离开的教区，则应当极少出具证明。同一位极有见识的作者在他的《济贫法史》中说：“这种证明制度确有几分苛酷，因为它使一个教区官员有权把一个人仿佛终身囚禁起来；不管他继续留在那个不幸取得所谓定居资格的地方有多么不便，也不管他设想住到别处会得到什么好处。”",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p112",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_572"
+      },
+      "contentHash": "f2f6cef8d163ea32f715c7f3c7149a832c6eb4db9db1158249aea8373ca4d9ad",
+      "text": "尽管一份证明并不附有任何品行良好的证明，只证明这个人属于他实际上确实所属的那个教区，但究竟出具还是拒绝出具，完全由教区官员酌情决定。伯恩博士说，曾有人申请强制执行令，要求教区委员和济贫监督员签署一份证明；但王座法庭以此举极其离奇为由驳回了申请。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p113",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_573"
+      },
+      "contentHash": "e72e0df87a29e26085d4223d16ead74752b2f794f6e4db555d929e4d0e33cfa4",
+      "text": "我们在英格兰经常发现，相距不远的地方劳动价格却极不相同，这很可能是因为定居法阻碍穷人在没有证明的情况下把自己的劳作从一个教区带到另一个教区。诚然，一个健康而勤勉的单身男子，有时可以在没有证明的情况下经默许而居住；但一个有妻室儿女的人若试图这样做，在大多数教区肯定会被遣走；而那个单身男子如果后来结婚，通常也会被遣走。因此，一个教区人手短缺，并不总能由另一个教区人手过剩来补救，而在苏格兰，以及我认为在其他一切不存在定居困难的国家，这种补救却经常发生。在这些国家，大城市附近或其他任何劳动需求异常旺盛的地方，工资有时可能略为上涨，并随着距这些地方越来越远而逐渐下降，直至回落到全国的一般水平；然而，我们从来不会遇到英格兰有时出现的那种相邻地区之间突然而又无法解释的工资差异。在英格兰，一个穷人要跨越教区的人为边界，往往比跨越一道海峡或一列高山还困难；而海峡和高山这种天然边界，在其他国家有时会十分明显地把不同的工资水平分隔开来。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p114",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_574"
+      },
+      "contentHash": "9122013c40b9bfa65e0dead3f9b9da80127bce295035604fa60871d7096d4bf3",
+      "text": "把一个没有犯任何轻罪的人从他选择居住的教区遣走，显然侵犯了自然自由和正义。然而，英格兰的平民尽管如此珍视自己的自由，却像大多数其他国家的平民一样，从来没有正确理解自由究竟在于什么；一个多世纪以来，他们一直听任自己遭受这种压迫而得不到补救。尽管有识之士有时也把定居法作为一种公共祸害加以抱怨，但它从未成为任何普遍民众抗议的对象，不像对一般搜查令那样；一般搜查令无疑是一种弊政，却不大可能造成任何普遍的压迫。我敢说，英格兰年届四十的穷人，几乎没有一个不曾在人生的某个阶段感到自己受到这部设计拙劣的定居法极其残酷的压迫。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p115",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_575"
+      },
+      "contentHash": "8402d51d6994b4de64e508b8b62656d5bfb33e559948781bf98d294d71581952",
+      "text": "在结束这漫长的一章时，我要指出，古时通常会规定工资，起初通过通行全国的一般法律，后来则通过各郡治安法官的专门命令；但这两种做法如今都已完全废弃。伯恩博士说：“根据四百多年的经验，看来现在该放弃一切企图，不再对一种就其本性而言似乎无法加以细密限制的事物实行严格管制；因为，如果从事同一种工作的一切人都领取相等的工资，就不会有竞争，也不会给勤勉或才智留下余地。”",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p116",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_576"
+      },
+      "contentHash": "c4b16370afd734a8083fef4fbe0022dab4a6cd252fec56552b8b54f7e3546d27",
+      "text": "不过，议会的个别法令有时仍试图对特定行业和特定地方的工资加以管制。例如，乔治三世在位第八年的法令以严厉处罚为威慑，禁止伦敦及其周围五英里以内的所有裁缝师傅每天支付超过二先令七便士半的工资，也禁止其工人接受超过这一数额的工资，全国服丧期间除外。每当立法机关试图调节师傅与工人之间的分歧时，它的顾问总是师傅。因此，管制若有利于工人，就总是公正而公平的；但若有利于师傅，有时便并非如此。例如，法律强制若干不同行业的师傅以货币而非货物向工人支付报酬，就是完全公正而公平的。这并未给师傅造成任何真正的困难。它不过是强制他们以货币支付那项价值；他们曾声称用货物支付了这项价值，实际上却并非总是如此。这项法律有利于工人；但乔治三世在位第八年的法令则有利于师傅。当师傅联合起来压低工人的工资时，他们通常私下订立契约或协议，约定若支付超过某一数额的工资，就须承担某种惩罚。如果工人结成性质相反的同类联合，约定若接受低于某一数额的工资，就须承担某种惩罚，法律会极其严厉地惩处他们；而如果法律处事公允，也应以同样方式对待师傅。但乔治三世在位第八年的法令，却以法律强制实行师傅有时企图通过这种联合确立的同一种规定。工人抱怨说，这项规定把最能干、最勤勉的工人与普通工人置于同等地位；这种抱怨看来完全有根据。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p117",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_577"
+      },
+      "contentHash": "3fe8b8ec2931aa928b272e67ec1ca4800da1414e0fd957191e32f86af6904632",
+      "text": "古时，人们也通常试图通过规定食品和其他货物的价格，来管制商人和其他经销者的利润。据我所知，面包定价法是这种古老惯例唯一的残余。在存在排他性同业公会的地方，对生活第一必需品的价格加以管制，也许是适当的。但在不存在这种公会的地方，竞争对价格的调节会远比任何法定定价有效得多。乔治二世在位第三十一年的法令所确立的面包法定定价方法，由于法律上的一个缺陷，无法在苏格兰实行；这种方法的执行有赖于市场书记官这一职位，而苏格兰并无此职。这个缺陷直到乔治三世在位第三年才得到补救。没有法定定价并未造成任何明显的不便，而在少数已经实行法定定价的地方，设立这种制度也没有产生任何明显的好处。不过，在苏格兰大部分城镇，都有一个声称享有排他性特权的面包师行会，尽管这些特权并未得到十分严格的维护。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c10.p118",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_578"
+      },
+      "contentHash": "11c2d1dcf2fa55f3f9da5a96a4492382476d1cd6710d378b5835121f6ed5f246",
+      "text": "如前所述，在劳动和资本的各种不同用途之间，不同工资率和利润率的比例，似乎并不太受社会的富裕或贫困、进步、停滞或衰退状态的影响。公共福利的这种种变动，尽管会影响工资和利润的一般水平，但最终必定会同等地影响一切不同用途中的工资和利润。因此，它们之间的比例必定保持不变，至少在相当长的时期内，不大可能因任何这种变动而改变。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    }
+  ]
+}

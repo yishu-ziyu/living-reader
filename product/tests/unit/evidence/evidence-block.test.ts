@@ -38,11 +38,13 @@ describe("T010 EvidenceBlock", () => {
     );
     expect(html).toContain('data-evidence-field="quote"');
     expect(html).toContain('data-testid="evidence-return-market"');
-    expect(html).toContain('data-testid="evidence-event-world-event-merchant"');
+    expect(html).toContain(
+      `data-testid="evidence-event-${presentation.events[0]!.message_id}"`,
+    );
     expect(html).toContain('data-evidence-field="event"');
     expect(html).toContain('data-event-sequence="0"');
     expect(html).toContain('reader_world.world.event_recorded.v1');
-    expect(html).toContain('world-event-weaver');
+    expect(html).toContain(presentation.events.at(-1)!.message_id);
   });
 
   it("keeps runtime audit fields inside the closed evidence disclosure", () => {

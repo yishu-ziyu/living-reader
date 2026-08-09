@@ -107,6 +107,8 @@ export function compileReviewedRecipe(
     source_quote: recipe.source_quote,
     claim_type: recipe.claim_type,
     mechanism_id: recipe.mechanism.mechanism_id,
+    mechanism_title: recipe.mechanism.title,
+    mechanism_summary: recipe.mechanism.summary,
     ruleset: FROZEN_WOOL_TOWN_RULESET,
     initial_state: {
       experience_id: input.experience_id,
@@ -120,6 +122,9 @@ export function compileReviewedRecipe(
     },
     action_ids: recipe.actions.map((action) => action.action_id),
     actors: recipe.actors,
+    stocks: recipe.stocks,
+    flows: recipe.flows,
+    actions: recipe.actions,
     metrics: recipe.metrics,
     visual_grammar: recipe.visual_grammar,
   };

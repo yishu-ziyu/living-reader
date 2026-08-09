@@ -1,0 +1,392 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "locale": "zh-CN",
+  "chapterId": "smith.b1.c9",
+  "translations": [
+    {
+      "sourceId": "smith.b1.c9.p1",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_437"
+      },
+      "contentHash": "84f5734454a1d4b7a92de47109dcdbf812eac420b35fe849e88b1df446bd69f4",
+      "text": "资本利润的升降，取决于与劳动工资升降相同的原因，即社会财富处于增长还是衰退的状态；但这些原因对二者的影响却大不相同。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c9.p2",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_438"
+      },
+      "contentHash": "56505f736cb83a1cb95409795b47d23b8b2be4ccd7b9002e7df5bdf9f6ecc272",
+      "text": "资本的增加会提高工资，却有降低利润的趋势。许多富商的资本投入同一种行业时，他们之间的相互竞争自然会使该行业的利润降低；而同一社会中经营的各行各业，如果资本都有同样的增加，同样的竞争必然会在所有行业中产生同样的效果。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c9.p3",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_439"
+      },
+      "contentHash": "89171c64c10310131790899801f7ea8fe9863bf3dce2e44b7054cb63c8a57621",
+      "text": "前面已经指出，即使在某个特定地点和特定时期，要确定劳动的平均工资是多少也并不容易。即便在这种情况下，我们通常也只能确定最常见的工资是多少。但对于资本利润，甚至连这一点也很难做到。利润极不稳定，以致经营某一特定行业的人自己也未必总能说出他的年利润平均是多少。影响利润的，不仅有他所经营商品价格的每一次变动，还有他的竞争对手和顾客的运气好坏，以及货物无论经海路还是陆路运输、甚至储存在仓库时都可能遭遇的无数其他意外。因此，利润不仅逐年变动，而且逐日变动，几乎逐时变动。要确定一个大国中经营的各行各业的平均利润是多少，必然困难得多；而要对它从前或遥远年代可能是多少作出稍有精确度的判断，则必定完全不可能。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c9.p4",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_440"
+      },
+      "contentHash": "2fd9fc1b942378119e0c10209062c8e347faed7afcf6768c6f2d6be0fd7dc42d",
+      "text": "不过，虽然无论对于现在还是古代，都可能无法稍为精确地确定资本的平均利润现在是多少或过去是多少，但我们可以从货币利息中对其形成某种概念。可以把以下一点当作准则：凡使用货币能赚得很多的地方，通常也会为使用货币付出很多；凡使用货币只能赚得很少的地方，通常为此付出的也会较少。因此，任何国家通常的市场利率如何变动，我们都可以确信资本的普通利润必定随之变动，利率下降，利润也必定下降；利率上升，利润也必定上升。因此，利息的变动过程可以使我们对利润的变动过程形成某种概念。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c9.p5",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_441"
+      },
+      "contentHash": "429e355e90cbfc8a445481c6e3064ed2e9cc1199407e02e36b65fdc34dc8a8c7",
+      "text": "根据亨利八世在位第37年颁布的法令，凡超过百分之十的利息一律被宣布为非法。看来此前有时收取过更高的利息。爱德华六世在位期间，宗教热忱禁止收取任何利息。然而据说，这一禁令和其他所有同类禁令一样，没有产生任何效果，而且很可能非但没有减少高利贷之害，反而使其加重。亨利八世的法令由伊丽莎白在位第13年法令第8章恢复施行，百分之十一直是法定利率，直到詹姆斯一世在位第21年才被限制为百分之八。王政复辟后不久，利率降至百分之六；到安妮女王在位第12年，又降至百分之五。所有这些不同的成文法规定似乎都制定得十分适当。它们似乎跟随而不是先于市场利率，也就是信用良好者通常借款时支付的利率。自安妮女王时代以来，百分之五似乎一直略高于而不是低于市场利率。在最近的战争以前，政府以百分之三的利率借款；首都以及王国其他许多地方信用良好的人，则以百分之三点五、百分之四和百分之四点五的利率借款。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c9.p6",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_442"
+      },
+      "contentHash": "ad4bf444239b74f5b19abd3bd1c7344204e72ba5a4da5b80d1d0d6ec6ff984ac",
+      "text": "自亨利八世时代以来，这个国家的财富和收入一直在不断增长，而且在增长过程中，其速度似乎不是逐渐减缓，而是逐渐加快。它们似乎不仅一直在增长，而且增长得越来越快。在同一时期，劳动工资一直在增加，而在商业和制造业的大多数不同部门，资本利润一直在下降。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c9.p7",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_443"
+      },
+      "contentHash": "ddd081a142c6dfbf66e5bb574f6db411f0820f9be18ade606be22e03352599d6",
+      "text": "在大城市经营任何一种行业，通常都比在乡村所需的资本更多。投入大城市各行各业的巨额资本以及富有竞争者的众多人数，通常会把那里的利润率压到低于乡村的水平。但是，大城市的劳动工资通常高于乡村。在一个繁荣的城市里，拥有巨额资本可供运用的人往往雇不到他们所需数量的工人，因而彼此竞相出价，以尽可能多雇工人，这就提高了劳动工资，降低了资本利润。在国家的偏远地区，往往没有足够的资本来雇用所有人，因此人们彼此竞相求职，这就降低了劳动工资，提高了资本利润。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c9.p8",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_444"
+      },
+      "contentHash": "f0e1834b4f0698a96f50ec1c8d9c0b45109ecfa62fcaa2cda3d3c2242ff188be",
+      "text": "在苏格兰，法定利率虽然与英格兰相同，市场利率却略高一些。那里信用最好的人借款时，利率很少低于百分之五。甚至爱丁堡的私人银行家也对其本票支付百分之四的利息，而这种本票可以随时要求兑付全部或一部分。伦敦的私人银行家对存放在他们那里的货币不付任何利息。几乎没有哪一种行业在苏格兰经营时不能使用比在英格兰更少的资本。因此，普通利润率必定稍高一些。前面已经指出，苏格兰的劳动工资低于英格兰。这个国家不仅贫穷得多，而且它迈向更好境况的步伐——它显然正在前进——似乎也缓慢迟滞得多。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c9.p9",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_445"
+      },
+      "contentHash": "a85bf4257e7742eab9c2e4d5b0d47a4b7b22c814abc273873a3c4602447ba28b",
+      "text": "在本世纪，法国的法定利率并非一直按照市场利率调整。1720年，利率从二十分之一降至五十分之一，也就是从百分之五降至百分之二。1724年，利率提高到三十分之一，也就是百分之三又三分之一。1725年，利率又提高到二十分之一，也就是百分之五。1766年，在拉韦尔迪先生执政期间，利率降至二十五分之一，也就是百分之四。后来，泰雷神父又把利率提高到原来的百分之五。据推测，多次如此大幅降低利率的目的，是为降低公债利息铺平道路；这一目的有时确曾实现。现今的法国也许不如英格兰富裕；而且，虽然法国的法定利率往往低于英格兰，市场利率一般却更高，因为在那里和在其他国家一样，人们有几种十分安全而简便的方法规避法律。曾在这两个国家经商的英国商人向我保证，法国的商业利润高于英格兰；毫无疑问，正是由于这个缘故，许多英国臣民宁愿把资本运用于一个商业受到鄙视的国家，也不愿运用于一个商业备受尊重的国家。法国的劳动工资低于英格兰。当你从苏格兰来到英格兰时，你可以观察到两国普通民众在衣着和面容上的差异，这足以表明他们处境的差异。当你从法国返回时，这种反差还要大得多。法国虽然无疑比苏格兰富裕，却似乎没有苏格兰前进得那么快。在法国，认为本国正在倒退是一种普遍甚至流行的观点；我认为，即使就法国而言，这种观点也没有根据，但对于苏格兰，任何既看到它现在的样子、又见过它二十年或三十年前样子的人，都绝不可能抱有这种观点。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c9.p10",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_446"
+      },
+      "contentHash": "956ed874f5ed1c08442afe3bb7b7ffe5365efb1a78483275803bd9f60bc4d352",
+      "text": "另一方面，荷兰省按领土面积和人口数量的比例来说，是一个比英格兰更富裕的国家。那里的政府以百分之二的利率借款，信用良好的私人则以百分之三的利率借款。据说，荷兰的劳动工资高于英格兰；而众所周知，荷兰人经商所接受的利润低于欧洲任何其他民族。有人声称荷兰的商业正在衰退，也许其某些特定部门确实如此。但这些迹象似乎足以表明，它并没有普遍衰退。利润减少时，商人很容易抱怨商业衰退；尽管利润减少正是商业繁荣，或者说投入其中的资本多于以往的自然结果。在最近的战争期间，荷兰人夺得了法国的全部运输贸易，目前仍保有其中很大一部分。据说，他们在法国和英国公债中拥有巨额财产，仅后者就约有四千万（不过我怀疑这个数字有相当大的夸张）；他们还把巨额款项借给利率高于本国的那些国家的私人。这些情况无疑证明他们的资本已经过剩，也就是说，其增长已经超过了在本国固有业务中能够以尚可的利润加以运用的数量；但这些情况并不能证明这种业务已经减少。一个私人的资本虽然是通过某一特定行业获得的，却可能增长到超过他能在该行业中运用的数量，而该行业仍可同时继续增长；一个大国的资本也同样如此。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c9.p11",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_447"
+      },
+      "contentHash": "3072320d05877a459d02eff4e1ea478f423b4b6ad3dea5dc52e68dcfb8224fd5",
+      "text": "在我们北美和西印度群岛的殖民地，不仅劳动工资高于英格兰，货币利息以及由此决定的资本利润也高于英格兰。在各个殖民地，法定利率和市场利率都在百分之六至百分之八之间。然而，高劳动工资和高资本利润也许几乎从不同时存在，只有新殖民地的特殊情况下才是例外。新殖民地在一段时期内，相对于其领土面积，资本必定比其他大多数国家更为不足；而相对于其资本规模，人口也必定更为不足。它们的土地多于可用于耕种土地的资本。因此，它们拥有的资本只会用于耕种最肥沃且位置最有利的土地，即海岸附近和通航河流沿岸的土地。而且，这种土地的购买价格往往甚至低于其自然产物的价值。用于购买和改良这种土地的资本，必定产生极其丰厚的利润，因而能够支付极高的利息。资本在如此有利可图的用途上迅速积累，使种植园主增加人手需求的速度超过了他在新拓殖地找到人手的速度。因此，他能找到的人都会得到非常优厚的报酬。随着殖民地发展，资本利润逐渐下降。最肥沃且位置最好的土地全被占用以后，耕种土壤和位置都较差的土地所能取得的利润便会减少，为投入这种用途的资本所能支付的利息也会降低。因此，在本世纪期间，我们大多数殖民地的法定利率和市场利率都已大幅降低。随着财富、改良和人口增长，利息不断下降。劳动工资并不随资本利润一同下降。无论资本利润如何，对劳动的需求都会随资本增加而增加；而在利润下降以后，资本不仅可以继续增加，而且可以比以前增加得快得多。正在增进财富的勤劳国家与勤劳个人的情形相同。利润虽小的巨额资本，通常比利润很大的少量资本增长得更快。俗话说，钱能生钱。一旦有了一点钱，再得到更多的钱往往很容易。最大的困难在于得到最初的那一点。资本增加同产业发展或有用劳动需求增加之间的联系，前面已经作了部分说明，后面论述资本积累时还会作更充分的说明。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c9.p12",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_448"
+      },
+      "contentHash": "5816bc987518733e178d96895374fcb2182af24f32dfdfb942dd8926ab0594b8",
+      "text": "即使在一个财富迅速增长的国家，获得新领土或新的贸易部门，有时也可能提高资本利润，并随之提高货币利息。这种获得使分有全国资本的各类人面对新增的全部业务，而全国资本不足以承担这些业务，因而只能投入利润最高的那些特定部门。此前投入其他行业的一部分资本，必然从中抽出，转投某些利润更高的新行业。因此，在所有这些旧行业中，竞争就会比以前减少。市场上许多不同种类货物的供应会不如以前充足。其价格必然或多或少上涨，使经营这些货物的人获得更高的利润，因而能够承担以更高利率借款。在最近的战争结束后的一段时期内，不仅信用最好的私人，就连伦敦一些最大的公司，也通常以百分之五的利率借款，而此前他们支付的利率一向不超过百分之四和百分之四点五。我们在北美和西印度群岛的扩张带来了领土和贸易的巨额增加，这已足以解释这种现象，无须假定社会的资本总额有所减少。如此巨量的新业务要由原有资本经营，就必然减少投入许多特定部门的资本量；这些部门中的竞争既然减少，利润必定提高。后面我将有机会说明，我为何倾向于认为，即使最近战争的巨额开支也没有使大不列颠的资本总额减少。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c9.p13",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_449"
+      },
+      "contentHash": "07ad24c32c97c65c03f8d6e8718a9dcf1a088e1f864a3bfbc1cc94bb9dc3df95",
+      "text": "然而，社会资本总额，或指定用于维持产业的资金一旦减少，既会降低劳动工资，也会提高资本利润，并因而提高货币利息。由于劳动工资降低，社会中剩余资本的所有者能以比以前更低的费用把货物运到市场；同时，由于用于供应市场的资本少于以前，他们又能以更高的价格出售货物。他们的货物成本更低，所得售价却更高。因此，他们的利润从两头增加，完全有能力支付高额利息。孟加拉以及东印度群岛其他英国殖民地中有人如此突然、如此轻易地获得巨额财富，这足以使我们相信，在那些遭到摧残的国家，劳动工资极低，而资本利润极高。货币利息也相应地很高。在孟加拉，货币经常以百分之四十、百分之五十和百分之六十的利率借给农民，并以随后一季的收成作为还款抵押。正如足以支付这种利息的利润必定会吞噬地主几乎全部的地租一样，这种骇人听闻的高利贷又必定反过来吞噬那些利润的大部分。在罗马共和国覆亡以前，在各行省总督的毁灭性统治下，同类高利贷似乎在各行省十分常见。我们从西塞罗的书信中得知，品德高尚的布鲁图斯曾在塞浦路斯以百分之四十八的利率放款。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c9.p14",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_450"
+      },
+      "contentHash": "94354f4c470c413518fbb32eb3b4a7811dbafaa8d6d34e51aa36627ce37af221",
+      "text": "如果一个国家已经获得其土壤和气候的性质以及它相对于其他国家的位置所容许获得的全部财富，因而不可能再向前发展，同时也没有倒退，那么其劳动工资和资本利润很可能都非常低。如果一个国家的人口相对于其领土所能维持的人数或其资本所能雇用的人数已经饱和，那么求职竞争必然会激烈到把劳动工资降至仅够维持劳动者人数的水平；而这个国家既然已经人口饱和，劳动者人数便绝不可能增加。如果一个国家拥有的资本相对于其必须办理的全部业务已经饱和，那么每个特定部门投入的资本都会达到该行业的性质和规模所能容纳的最大数量。因此，各处的竞争都会达到最激烈的程度，而普通利润也会相应降至可能的最低水平。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c9.p15",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_451"
+      },
+      "contentHash": "aa466134194c0420c5981b029d76bac522160d22ba0f502eeeb6cd9508231dd3",
+      "text": "但也许迄今还没有哪个国家达到过这种富裕程度。中国似乎长期处于停滞状态，而且很可能早已获得了与其法律和制度的性质相适应的全部财富。但这一财富总量，可能远低于在其他法律和制度下其土壤、气候和位置的性质所能容许达到的水平。一个忽视或鄙视对外贸易，而且只准外国船只进入本国一两个港口的国家，不可能经营它在不同法律和制度下所能经营的同等数量的业务。而且，在一个富人或大资本所有者享有充分安全保障，穷人或小资本所有者却几乎没有任何保障，反而随时可能在正义的名义下遭下级官吏劫掠的国家，投入国内所经营的各个不同业务部门的资本量，绝不可能达到这些业务的性质和规模所能容纳的水平。在每一个不同部门，对穷人的压迫必定会确立富人的垄断；富人把全部贸易据为己有，便能赚取极其丰厚的利润。因此，据说中国的普通货币利率是百分之十二，而资本的普通利润必定足以支付这种高额利息。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c9.p16",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_452"
+      },
+      "contentHash": "6ccb8e8235bd43bc0867a5cf9989a95a08e11bdf3558c9a9a1c9b60699e73893",
+      "text": "法律上的缺陷，有时会把利率提高到大大超过一国贫富状况所要求的水平。当法律不强制履行契约时，它就使所有借款人几乎处于同管理较好的国家里的破产者或信用可疑者一样的地位。能否收回款项的不确定性，使贷款人索取通常向破产者收取的同样高利贷利息。在侵占罗马帝国西部各行省的蛮族当中，契约的履行曾有许多个世纪完全取决于缔约双方的诚信。他们国王的法院很少干预此事。古代盛行的高利率，也许有一部分可以由这个原因来解释。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c9.p17",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_453"
+      },
+      "contentHash": "6d7cc50b6aa4f3b36f079093efa4ef06d8e3f6b3a9a110bbe9f5e7ab90c33517",
+      "text": "当法律完全禁止收取利息时，它并不能阻止利息的存在。许多人必定要借款，而任何人都不会放款，除非能为使用其货币而获得适当的报酬；这种报酬不仅要同使用货币所能赚取的收益相称，还要同规避法律的困难和危险相称。孟德斯鸠先生认为，所有伊斯兰国家的高利率，并非源于它们的贫困，而是一部分源于这一点，另一部分源于收回款项的困难。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c9.p18",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_454"
+      },
+      "contentHash": "2bbbce8472fa787e1f96ad02e5adbae5d4fdd7d4aba1c7aee3d213fb60575b96",
+      "text": "最低的普通利润率，必定总要比足以补偿每一种资本运用所难免的偶然损失略高一些。只有这部分余额才是净利润或纯利润。所谓毛利润，往往不仅包括这部分余额，还包括为补偿这类异常损失而保留的部分。借款人所能负担的利息，只与纯利润成比例。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c9.p19",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_455"
+      },
+      "contentHash": "64f7d2f7b21ef2ebdbe30d1b65543d307b425d9bf3744ebcf23db0a49eaed92d",
+      "text": "同样，最低的普通利率也必定要比足以补偿放贷所难免的偶然损失略高一些，即使放贷时已有相当程度的谨慎，也是如此。假如不高一些，那么放贷的动机就只能是慈善或友谊。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c9.p20",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_456"
+      },
+      "contentHash": "80c5a03983628127946dd872e8b048601b50b367310189495a5324f4c0b8d716",
+      "text": "在一个已经获得其全部财富总量的国家里，每一个具体行业都投入了其中所能运用的最大数量的资本，普通纯利润率会很低，因而能够从中支付的通常市场利率也会低到这样一种程度，以致除了最富有的人以外，任何人都不可能靠其金钱的利息生活。所有财产不多或中等的人，都不得不亲自监督自己资本的运用。几乎每个人都必须成为商人，或从事某种商业。荷兰省看来正在接近这种状态。在那里，不做商人是不合时尚的。生活所迫，使几乎人人通常都成为商人，而习惯在任何地方都支配着时尚。正如不穿衣服是可笑的，在某种程度上，不像别人一样从事职业也是可笑的。正如一个从事文职职业的人在军营或要塞中显得局促不自然，甚至有在那里遭人轻视的危险，一个游手好闲的人置身商人之中也是如此。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c9.p21",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_457"
+      },
+      "contentHash": "2e62b72d2de4f9b544bd6d43a84b951089bfc61af28eb94fb2801b38f74dab1e",
+      "text": "最高的普通利润率可能达到这样一种程度：在大多数商品的价格中，它吞掉了本应归于土地地租的全部份额，只留下足以按照任何地方所能支付的最低劳动报酬来支付商品加工和运送到市场所需劳动的部分，也就是劳动者仅够维持生存的费用。工人在工作期间总得以某种方式获得食物；但地主却未必总能获得报酬。东印度公司雇员在孟加拉所经营贸易的利润，或许与这种利润率相差不远。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c9.p22",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_458"
+      },
+      "contentHash": "754500235617527e42a0e660c24f6c574f571cbf82205679c196cf5addb4a1ef",
+      "text": "通常市场利率与普通纯利润率应有的比例，必然随着利润的升降而变化。在大不列颠，利润为利息的两倍，被商人认为是所谓良好、适中、合理的利润；我认为，这些说法不过是指普通而通常的利润。在一个普通纯利润率为百分之八或百分之十的国家里，凡是用借款经营的生意，把利润的一半用于支付利息，或许是合理的。资本由借款人承担风险；可以说，借款人为贷款人给这笔资本投保；而百分之四或百分之五，在大多数行业中，既可以是承担这种保险风险的足够利润，也可以是运用资本所费辛劳的足够报酬。不过，在普通利润率低得多或高得多的国家，利息与纯利润之间的比例未必相同。如果普通利润率低得多，或许无力拿出其中一半支付利息；如果高得多，则可能拿出更多来支付利息。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c9.p23",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_459"
+      },
+      "contentHash": "9061fa44c117c2bb6388e86de0545b1731f88bae8807327b396f774a29bee81c",
+      "text": "在迅速走向富裕的国家，较低的利润率可以在许多商品的价格中抵消较高的劳动工资，使这些国家能够以同它们那些不太繁荣的邻国一样低廉的价格出售商品，而在那些邻国，劳动工资可能较低。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c9.p24",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_460"
+      },
+      "contentHash": "75fc0df84c1d8151cea8e96719371ef50ef767ed33ffc25af09948314f063a7c",
+      "text": "实际上，高利润抬高产品价格的作用，远远大于高工资。例如，在亚麻布制造业中，如果不同工人，即梳麻工、纺纱工、织布工等等的工资都每天提高二便士，那么一匹亚麻布的价格只须提高若干个二便士，其数目等于参与制造的人数乘以他们从事这项工作的天数。在制造过程的所有不同阶段，商品价格中分解为工资的那一部分，只会与这次工资上涨成算术比例上升。但是，如果所有这些工人的不同雇主的利润都提高百分之五，那么在制造过程的所有不同阶段，商品价格中分解为利润的那一部分，就会与这次利润上涨成几何比例上升。梳麻工的雇主在出售亚麻时，会要求在他预付给工人的材料和工资的全部价值之上加收百分之五。纺纱工的雇主会要求在已经提高的亚麻价格和纺纱工的工资之上，都加收百分之五。织布工的雇主也会同样要求在已经提高的亚麻纱价格和织布工的工资之上，都加收百分之五。在抬高商品价格方面，工资上涨所起的作用，与债务累积中的单利相同。利润上涨所起的作用，则像复利一样。我们的商人和制造业主经常抱怨高工资抬高价格的不良影响，以及由此造成他们的商品在国内外销量减少。他们对于高利润的不良影响只字不提。对于他们自己所得利益的有害影响，他们默不作声。他们所抱怨的，只是别人的所得利益所造成的影响。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    }
+  ]
+}

@@ -74,6 +74,7 @@ const PROVIDER_INPUT_KEYS = new Set([
   "invitation_basis",
   "recent_turns",
   "pending_intent",
+  "invited_question_keys",
   "relationship_context",
 ]);
 const PROVIDER_REQUIRED_INPUT_KEYS = new Set(
@@ -122,6 +123,7 @@ const RELATIONSHIP_CONTEXT_KEYS = new Set([
   "current_chapter_id",
   "memories",
   "active_recipe_ids",
+  "invited_question_keys",
 ]);
 const RELATIONSHIP_MEMORY_KEYS = new Set([
   "memory_id",
@@ -378,10 +380,17 @@ function parseRelationshipContext(value: unknown): RelationshipContext | null {
     200,
     false,
   );
+  const invited_question_keys = parseBoundedStringArray(
+    value.invited_question_keys,
+    64,
+    512,
+    false,
+  );
   if (
     current_chapter_id === undefined ||
     memories.some((memory) => memory === null) ||
-    !active_recipe_ids
+    !active_recipe_ids ||
+    !invited_question_keys
   ) {
     return null;
   }
@@ -389,6 +398,7 @@ function parseRelationshipContext(value: unknown): RelationshipContext | null {
     current_chapter_id,
     memories: memories as RelationshipMemory[],
     active_recipe_ids,
+    invited_question_keys,
   };
 }
 
@@ -476,6 +486,12 @@ export function parseAgentTurnProviderInput(
   const recent_turns = value.recent_turns.map(parseVisibleTurn);
   const pending_intent =
     value.pending_intent === null ? null : parsePendingIntent(value.pending_intent);
+  const invited_question_keys = parseBoundedStringArray(
+    value.invited_question_keys,
+    64,
+    512,
+    false,
+  );
   const relationship_context =
     value.relationship_context === undefined
       ? undefined
@@ -490,6 +506,7 @@ export function parseAgentTurnProviderInput(
     (value.invitation_basis !== null && !invitation_basis) ||
     recent_turns.some((turn) => turn === null) ||
     (value.pending_intent !== null && !pending_intent) ||
+    !invited_question_keys ||
     (value.relationship_context !== undefined && !relationship_context)
   ) {
     return null;
@@ -505,6 +522,7 @@ export function parseAgentTurnProviderInput(
     world_basis,
     invitation_basis,
     recent_turns: turns,
+    invited_question_keys,
     pending_intent,
     ...(relationship_context ? { relationship_context } : {}),
   };

@@ -3,7 +3,13 @@
  * Commands must never invent locator/page/hash from local constants tables.
  */
 
-import type { Edition, SourceBlock } from "@/modules/book/domain";
+import type {
+  BookManifestV2,
+  BookSourceBlock,
+  Edition,
+  LegacySourceId,
+  SourceBlock,
+} from "@/modules/book/domain";
 import {
   isKnownSourceId,
   type KnownSourceId,
@@ -18,7 +24,8 @@ export type SourceEvidenceSnapshot = {
   source_id: KnownSourceId;
   /** OLL paragraph fragment id (locator), e.g. Smith_0206-01_235 */
   fragment: string;
-  pdf_page: number;
+  /** Physical PDF mapping exists only for explicitly verified legacy anchors. */
+  pdf_page?: number;
   print_page: number;
   edition_id: string;
   edition_revision: string;
@@ -28,11 +35,11 @@ export type SourceEvidenceSnapshot = {
   evidence_refs: string[];
 };
 
-/** Input fields required before refs are generated (may omit evidence_refs). */
+/** Input fields required before refs are generated (may omit evidence_refs/PDF). */
 export type SourceEvidenceInput = {
   source_id: string;
   fragment: string;
-  pdf_page: number;
+  pdf_page?: number;
   print_page: number;
   edition_id: string;
   edition_revision: string;
@@ -41,20 +48,24 @@ export type SourceEvidenceInput = {
 };
 
 const HASH_RE = /^[a-f0-9]{64}$/i;
-const FRAGMENT_RE = /^Smith_0206-01_\d+$/;
+export const OLL_PARAGRAPH_FRAGMENT_RE =
+  /^Smith_0206-(?:01|02)_[A-Za-z0-9][A-Za-z0-9_.:-]*$/u;
 
 export function buildEvidenceRefsFromFields(
-  s: Omit<SourceEvidenceInput, never>,
+  s: SourceEvidenceInput,
 ): string[] {
-  return [
+  const refs = [
     `source:${s.source_id}`,
     `locator:oll:fragment:${s.fragment}`,
-    `pdf:${s.pdf_page}`,
+  ];
+  if (s.pdf_page !== undefined) refs.push(`pdf:${s.pdf_page}`);
+  refs.push(
     `print:${s.print_page}`,
     `edition:${s.edition_id}`,
     `edition_hash:${s.edition_content_hash.slice(0, 16)}`,
     `content_hash:${s.source_content_hash}`,
-  ];
+  );
+  return refs;
 }
 
 /**
@@ -117,16 +128,19 @@ export function validateAndSealSourceEvidence(
   if (!isKnownSourceId(input.source_id)) {
     return thinkingErr("INVALID_SOURCE", `未知来源: ${input.source_id}`);
   }
-  if (!input.fragment || !FRAGMENT_RE.test(input.fragment)) {
+  if (!input.fragment || !OLL_PARAGRAPH_FRAGMENT_RE.test(input.fragment)) {
     return thinkingErr(
       "SOURCE_EVIDENCE_DRIFT",
       `无效 OLL fragment locator: ${input.fragment || "(empty)"}`,
     );
   }
-  if (!Number.isFinite(input.pdf_page) || input.pdf_page <= 0) {
+  if (
+    input.pdf_page !== undefined &&
+    (!Number.isSafeInteger(input.pdf_page) || input.pdf_page <= 0)
+  ) {
     return thinkingErr("SOURCE_EVIDENCE_DRIFT", "无效 pdf_page");
   }
-  if (!Number.isFinite(input.print_page) || input.print_page <= 0) {
+  if (!Number.isSafeInteger(input.print_page) || input.print_page <= 0) {
     return thinkingErr("SOURCE_EVIDENCE_DRIFT", "无效 print_page");
   }
   if (!input.edition_id?.trim()) {
@@ -154,7 +168,9 @@ export function validateAndSealSourceEvidence(
     value: {
       source_id: input.source_id,
       fragment: input.fragment,
-      pdf_page: input.pdf_page,
+      ...(input.pdf_page === undefined
+        ? {}
+        : { pdf_page: input.pdf_page }),
       print_page: input.print_page,
       edition_id: input.edition_id,
       edition_revision: input.edition_revision,
@@ -163,6 +179,117 @@ export function validateAndSealSourceEvidence(
       evidence_refs,
     },
   };
+}
+
+export type ManifestSourceEvidenceEntry = Readonly<{
+  block: BookSourceBlock;
+  /** Legacy recipe anchors may expose their stable alias at the Agent boundary. */
+  source_id?: string;
+  /** Only pass a page verified against a physical PDF. */
+  pdf_page?: number;
+}>;
+
+/**
+ * Seals one full-book manifest paragraph against the authoritative manifest
+ * entry and the content hash of the volume named by its locator.
+ */
+export function evidenceFromManifestSourceBlock(
+  entry: ManifestSourceEvidenceEntry,
+  manifest: BookManifestV2,
+): ThinkingResult<SourceEvidenceSnapshot> {
+  const sourceId = entry.source_id ?? entry.block.sourceId;
+  if (!isKnownSourceId(sourceId)) {
+    return thinkingErr("INVALID_SOURCE", `未知来源: ${sourceId}`);
+  }
+  const aliasTarget =
+    manifest.aliases[sourceId as LegacySourceId];
+  const canonicalSourceId = aliasTarget ?? sourceId;
+  if (canonicalSourceId !== entry.block.sourceId) {
+    return thinkingErr(
+      "SOURCE_EVIDENCE_DRIFT",
+      `来源别名与段落不匹配: ${sourceId}`,
+    );
+  }
+
+  const authoritative = manifest.books
+    .flatMap((book) => book.chapters)
+    .flatMap((chapter) => chapter.sourceBlocks)
+    .find((block) => block.sourceId === canonicalSourceId);
+  if (
+    !authoritative ||
+    authoritative.contentHash !== entry.block.contentHash ||
+    authoritative.quote !== entry.block.quote ||
+    authoritative.printPage !== entry.block.printPage ||
+    authoritative.sourceLocator.provider !==
+      entry.block.sourceLocator.provider ||
+    authoritative.sourceLocator.volume !==
+      entry.block.sourceLocator.volume ||
+    authoritative.sourceLocator.volumeId !==
+      entry.block.sourceLocator.volumeId ||
+    authoritative.sourceLocator.resource !==
+      entry.block.sourceLocator.resource ||
+    authoritative.sourceLocator.fragment !==
+      entry.block.sourceLocator.fragment
+  ) {
+    return thinkingErr(
+      "SOURCE_EVIDENCE_DRIFT",
+      `Manifest SourceBlock 漂移: ${canonicalSourceId}`,
+    );
+  }
+
+  const volume = manifest.volumes.find(
+    (candidate) =>
+      candidate.volume === authoritative.sourceLocator.volume &&
+      candidate.volumeId === authoritative.sourceLocator.volumeId &&
+      candidate.resource === authoritative.sourceLocator.resource,
+  );
+  if (!volume) {
+    return thinkingErr(
+      "SOURCE_EVIDENCE_DRIFT",
+      `SourceBlock 缺少匹配卷册: ${canonicalSourceId}`,
+    );
+  }
+  if (
+    typeof authoritative.printPage !== "string" ||
+    !/^[1-9]\d*$/u.test(authoritative.printPage)
+  ) {
+    return thinkingErr(
+      "SOURCE_EVIDENCE_DRIFT",
+      `SourceBlock 缺少 print_page 证据: ${canonicalSourceId}`,
+    );
+  }
+
+  return validateAndSealSourceEvidence({
+    source_id: sourceId,
+    fragment: authoritative.sourceLocator.fragment,
+    ...(entry.pdf_page === undefined
+      ? {}
+      : { pdf_page: entry.pdf_page }),
+    print_page: Number(authoritative.printPage),
+    edition_id: manifest.edition.editionId,
+    edition_revision: manifest.edition.revision,
+    edition_content_hash: volume.contentHash,
+    source_content_hash: authoritative.contentHash,
+  });
+}
+
+export function buildManifestSourceEvidenceMap(
+  entries: readonly ManifestSourceEvidenceEntry[],
+  manifest: BookManifestV2,
+): ThinkingResult<SourceEvidenceMap> {
+  const map: SourceEvidenceMap = {};
+  for (const entry of entries) {
+    const sealed = evidenceFromManifestSourceBlock(entry, manifest);
+    if (!sealed.ok) return sealed;
+    if (map[sealed.value.source_id]) {
+      return thinkingErr(
+        "SOURCE_EVIDENCE_DRIFT",
+        `重复来源证据: ${sealed.value.source_id}`,
+      );
+    }
+    map[sealed.value.source_id] = sealed.value;
+  }
+  return { ok: true, value: map };
 }
 
 /** Stable compare key for source+evidence identity (not text). */

@@ -71,8 +71,11 @@ export function EvidenceBlock({
                   key={source.source_id}
                 >
                   <p>
-                    <code>{source.source_id}</code> · PDF {source.pdf_page} · OLL{" "}
-                    <code>{source.fragment}</code>
+                    <code>{source.source_id}</code>
+                    {source.pdf_page === undefined
+                      ? " · "
+                      : ` · PDF ${source.pdf_page} · `}
+                    OLL <code>{source.fragment}</code>
                   </p>
                   <blockquote
                     data-evidence-field={isReturnSource ? "quote" : undefined}

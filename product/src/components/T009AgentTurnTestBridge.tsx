@@ -29,8 +29,11 @@ import {
 } from "@/modules/agent-os/world-dispatch";
 import { deriveWorldActionIdempotencyKey } from "@/modules/agent-os/turn";
 import { payloadHashBrowser } from "@/infrastructure/event-store/indexeddb/browser-hash";
-import type { DomainEventDraft } from "@/modules/reader-world/events";
-import type { WorldState } from "@/modules/world";
+import {
+  nextMessageId,
+  type DomainEventDraft,
+} from "@/modules/reader-world/events";
+import { compileReviewedRecipe, type WorldState } from "@/modules/world";
 
 const MARKET_SOURCE_ID = "smith.b1.c3.market_extent";
 const DIVISION_SOURCE_ID = "smith.b1.c1.division";
@@ -39,6 +42,7 @@ const MARKET_IDEA_ID = "idea_market";
 const RELATION_ID = "rel_specialization_constrained_by_market";
 const PRINCIPAL_ID = "principal_t009_test";
 const RULESET_ID = "wool-town-v1";
+const RECIPE_ID = "smith.b1.market-extent.v1";
 
 type InputChannel = "text" | "voice";
 type BasisMutation =
@@ -134,7 +138,9 @@ function sealedEvidenceRefs(
   const sealed = validateAndSealSourceEvidence({
     source_id: source.source_id,
     fragment: source.fragment,
-    pdf_page: source.pdf_page,
+    ...(source.pdf_page === undefined
+      ? {}
+      : { pdf_page: source.pdf_page }),
     print_page: source.print_page,
     edition_id: source.edition_id,
     edition_revision: source.edition_revision,
@@ -232,6 +238,16 @@ export function T009AgentTurnTestBridge() {
       const ideaBasisRevision = 2;
       const identity = makeIdentity(++sequenceRef.current);
       const worldId = `world_wool_town_g${graphRevision}`;
+      const compiled = compileReviewedRecipe({
+        recipe_id: RECIPE_ID,
+        seed: 42,
+        experience_id: identity.experience_id,
+        world_id: worldId,
+        graph_revision: graphRevision,
+      });
+      if (!compiled.ok) {
+        throw new Error("T009 bridge could not compile its reviewed recipe");
+      }
       const recordedAt = new Date().toISOString();
       const divisionEvidence = sealedEvidenceRefs(
         thinking.sourceEvidence,
@@ -241,7 +257,9 @@ export function T009AgentTurnTestBridge() {
         thinking.sourceEvidence,
         MARKET_SOURCE_ID,
       );
-      const relationEvidence = [...divisionEvidence, ...marketEvidence];
+      const relationEvidence = [
+        ...new Set([...divisionEvidence, ...marketEvidence]),
+      ];
 
       requireAccepted(
         session.send({
@@ -264,12 +282,12 @@ export function T009AgentTurnTestBridge() {
         },
         recorded_at: recordedAt,
       };
-      const divisionIdeaMessageId = `${identity.experience_id}:idea:division`;
-      const marketIdeaMessageId = `${identity.experience_id}:idea:market`;
-      const relationProposalMessageId = `${identity.experience_id}:relation:proposed`;
-      const relationReviewMessageId = `${identity.experience_id}:relation:accepted`;
-      const graphCommitMessageId = `${identity.experience_id}:graph:${graphRevision}`;
-      const seedMessageId = `${identity.experience_id}:seed:${graphRevision}`;
+      const divisionIdeaMessageId = nextMessageId();
+      const marketIdeaMessageId = nextMessageId();
+      const relationProposalMessageId = nextMessageId();
+      const relationReviewMessageId = nextMessageId();
+      const graphCommitMessageId = nextMessageId();
+      const seedMessageId = nextMessageId();
       const drafts = await Promise.all([
         createDomainEventDraftBrowser({
           ...common,
@@ -337,7 +355,7 @@ export function T009AgentTurnTestBridge() {
         }),
         createDomainEventDraftBrowser({
           ...common,
-          message_name: "reader_world.world.seeded.v1",
+          message_name: "reader_world.world.seeded.v2",
           message_id: seedMessageId,
           causation_id: graphCommitMessageId,
           payload: {
@@ -345,6 +363,9 @@ export function T009AgentTurnTestBridge() {
             graph_revision: graphRevision,
             seed: 42,
             ruleset_id: RULESET_ID,
+            recipe_id: RECIPE_ID,
+            recipe_fingerprint: compiled.value.recipe_fingerprint,
+            normalized_parameters: compiled.value.normalized_parameters,
           },
         }),
       ]);
@@ -385,7 +406,7 @@ export function T009AgentTurnTestBridge() {
 
     const appendBasisEvent = async (
       experienceId: string,
-      messageId: string,
+      idempotencyKey: string,
       draft: DomainEventDraft,
     ) => {
       const store = await getBrowserEventStore();
@@ -396,7 +417,7 @@ export function T009AgentTurnTestBridge() {
       const appended = await store.append({
         experience_id: experienceId,
         principal_id: PRINCIPAL_ID,
-        idempotency_key: messageId,
+        idempotency_key: idempotencyKey,
         expected_version: version.value,
         events: [draft],
       });
@@ -510,13 +531,16 @@ export function T009AgentTurnTestBridge() {
         await installBaseline();
       },
       snapshot,
-      submitFinal: async ({ channel, final_text, turn_id }) =>
-        thinking.submitAgentTurn({
+      submitFinal: async ({ channel, final_text, turn_id }) => {
+        const decision = await thinking.submitAgentTurn({
           sourceId: MARKET_SOURCE_ID,
           channel,
           final_text,
           turn_id: turn_id ?? nextTurnId(`bridge-${channel}`),
-        }),
+        });
+        await settleReact();
+        return decision;
+      },
       mutateBasis: async ({ kind }) => {
         switch (kind) {
           case "source": {
@@ -539,10 +563,12 @@ export function T009AgentTurnTestBridge() {
           case "graph": {
             const { experienceId, state } = await currentWorld();
             const graphRevision = state.graph_revision + 1;
-            const messageId = `${experienceId}:graph-mutation:${graphRevision}`;
+            const messageId = nextMessageId();
+            const idempotencyKey =
+              `t009-graph-mutation:${state.graph_revision}->${graphRevision}`;
             await appendBasisEvent(
               experienceId,
-              messageId,
+              idempotencyKey,
               await createDomainEventDraftBrowser({
                 message_name: "reader_world.graph.committed.v1",
                 experience_id: experienceId,
@@ -605,14 +631,27 @@ export function T009AgentTurnTestBridge() {
           }
           case "ruleset": {
             const { experienceId, state } = await currentWorld();
-            const messageId = `${experienceId}:ruleset-mutation:${sequenceRef.current}`;
+            const messageId = nextMessageId();
+            const idempotencyKey =
+              `t009-ruleset-mutation:${state.world_id}:${state.graph_revision}`;
+            const rotatedWorldId = `${state.world_id}-rotated`;
+            const rotated = compileReviewedRecipe({
+              recipe_id: RECIPE_ID,
+              seed: state.seed,
+              experience_id: experienceId,
+              world_id: rotatedWorldId,
+              graph_revision: state.graph_revision,
+            });
+            if (!rotated.ok) {
+              throw new Error("T009 bridge could not compile its ruleset mutation");
+            }
             // A second schema-valid seed with a changed identity makes the
             // authoritative inspector fail closed; no local snapshot is patched.
             await appendBasisEvent(
               experienceId,
-              messageId,
+              idempotencyKey,
               await createDomainEventDraftBrowser({
-                message_name: "reader_world.world.seeded.v1",
+                message_name: "reader_world.world.seeded.v2",
                 experience_id: experienceId,
                 correlation_id: `corr_t009_ruleset_${sequenceRef.current}`,
                 causation_id: null,
@@ -625,10 +664,13 @@ export function T009AgentTurnTestBridge() {
                 message_id: messageId,
                 recorded_at: new Date().toISOString(),
                 payload: {
-                  world_id: `${state.world_id}-rotated`,
+                  world_id: rotatedWorldId,
                   graph_revision: state.graph_revision,
                   seed: state.seed,
                   ruleset_id: "wool-town-v1-rotated",
+                  recipe_id: RECIPE_ID,
+                  recipe_fingerprint: rotated.value.recipe_fingerprint,
+                  normalized_parameters: rotated.value.normalized_parameters,
                 },
               }),
             );

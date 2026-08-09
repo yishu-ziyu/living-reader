@@ -30,7 +30,7 @@ const STEPFUN_MODEL = buildModel<"openai-completions">({
 });
 
 const candidateParameters = schema({
-  mode: "'discuss' | 'clarify' | 'act' | 'stop'",
+  mode: "'discuss' | 'clarify' | 'act' | 'stop' | 'invite_world'",
   intent_class:
     "'source_question' | 'executable_action' | 'productive_detour' | 'emotion_personal' | 'obvious_off_topic_noise' | null",
   relevance:
@@ -42,6 +42,9 @@ const candidateParameters = schema({
   companion_line: "string",
   proposed_action_id: "'deepen_specialization' | 'expand_market' | null",
   pending_action_id: "'deepen_specialization' | 'expand_market' | null",
+  recipe_id: "string | null",
+  trigger_question: "string | null",
+  reason: "string | null",
   reason_codes: "string[]",
 });
 
@@ -116,6 +119,29 @@ class ReadingAgentSession {
             final_text: request.turn.final_text,
           },
           world: request.turn.world_basis,
+          invitation_available: request.turn.invitation_basis !== null,
+          invited_question_keys: [...request.turn.invited_question_keys],
+          relationship: request.turn.relationship_context
+            ? {
+                current_chapter_id:
+                  request.turn.relationship_context.current_chapter_id,
+                active_recipe_ids: [
+                  ...request.turn.relationship_context.active_recipe_ids,
+                ],
+                invited_question_keys: [
+                  ...request.turn.relationship_context.invited_question_keys,
+                ],
+                memories: request.turn.relationship_context.memories.map(
+                  ({ kind, origin, text, source_locator, reader_idea_id }) => ({
+                    kind,
+                    origin,
+                    text,
+                    source_locator,
+                    reader_idea_id,
+                  }),
+                ),
+              }
+            : null,
           recent_turns: request.turn.recent_turns.map(({ role, visible_text }) => ({
             role,
             visible_text,
@@ -147,13 +173,11 @@ class ReadingAgentSession {
           return { block: true, reason: "Only one candidate is allowed per turn" };
         }
         const candidate = parseStrictAgentTurnCandidate(args);
-        if (
-          !candidate ||
-          candidate.target_source_ids.some(
+        const outsideSealedSource =
+          candidate?.target_source_ids.some(
             (sourceId) => sourceId !== activeRun.request.source.source_id,
-          ) ||
-          candidate.evidence_refs.length !== 0
-        ) {
+          ) || candidate?.evidence_refs.length !== 0;
+        if (!candidate || outsideSealedSource) {
           return { block: true, reason: "Candidate is outside the sealed source" };
         }
         activeRun.preparedCandidate = candidate;
@@ -186,7 +210,6 @@ class ReadingAgentSession {
         503,
       );
     }
-    const messagesBefore = [...this.#agent.state.messages];
 
     const activeRun: ActiveRun = {
       request,
@@ -215,7 +238,6 @@ class ReadingAgentSession {
       }
       return activeRun.candidate;
     } catch (error) {
-      this.#agent.replaceMessages(messagesBefore);
       if (error instanceof AgentTurnProviderError) throw error;
       throw new AgentTurnProviderError(
         "agent_turn_provider_unavailable",
@@ -230,28 +252,16 @@ class ReadingAgentSession {
 }
 
 export class ReadingAgentRegistry {
-  readonly #sessions = new Map<string, ReadingAgentSession>();
   readonly #options: ReadingAgentRegistryOptions;
 
   constructor(options: ReadingAgentRegistryOptions = {}) {
     this.#options = options;
   }
 
-  get sessionCount(): number {
-    return this.#sessions.size;
-  }
-
   run(
     request: ReadingAgentRuntimeRequest,
     signal?: AbortSignal,
   ): Promise<AgentTurnCandidate> {
-    const key =
-      request.turn.world_basis?.experience_id ?? request.turn.source_snapshot_id;
-    let session = this.#sessions.get(key);
-    if (!session) {
-      session = new ReadingAgentSession(this.#options);
-      this.#sessions.set(key, session);
-    }
-    return session.run(request, signal);
+    return new ReadingAgentSession(this.#options).run(request, signal);
   }
 }

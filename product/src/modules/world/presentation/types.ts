@@ -13,6 +13,33 @@ export type PresentationEntity = Readonly<{
   position: number;
 }>;
 
+export type PresentationStock = Readonly<{
+  id: string;
+  label: string;
+  metric_id: keyof WorldState["metrics"];
+}>;
+
+export type PresentationFlow = Readonly<{
+  id: string;
+  label: string;
+  from: string;
+  to: string;
+}>;
+
+export type PresentationAction = Readonly<{
+  action_id: string;
+  label: string;
+  description: string;
+}>;
+
+export type PresentationSource = Readonly<{
+  book_id: string;
+  source_id: string;
+  legacy_source_id: string;
+  fragment: string;
+  quote: string;
+}>;
+
 export type PresentationTimelineStep = Readonly<{
   index: number;
   actor_id: ActorId;
@@ -38,8 +65,13 @@ export type PresentationPlan = Readonly<{
   scene: Readonly<{
     template_id: string;
     title: string;
+    summary: string;
   }>;
   entities: readonly PresentationEntity[];
+  stocks: readonly PresentationStock[];
+  flows: readonly PresentationFlow[];
+  actions: readonly PresentationAction[];
+  source: PresentationSource;
   metrics: CompiledWorldEventMetrics;
   timeline: readonly PresentationTimelineStep[];
   audio_refs: readonly string[];

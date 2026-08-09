@@ -104,7 +104,7 @@ test.describe("F21/F25 IndexedDB security allowlists", () => {
   }) => {
     const base = buildSessionDraft();
 
-    await page.goto("/");
+    await page.goto("/test-harness");
     await waitForBridge(page);
     await page.evaluate(async () => {
       const bridge = (window as unknown as { __T003_EVENT_STORE__: AnyBridge })
@@ -182,7 +182,7 @@ test.describe("F21/F25 IndexedDB security allowlists", () => {
   }) => {
     const open = buildSessionDraft();
 
-    await page.goto("/");
+    await page.goto("/test-harness");
     await waitForBridge(page);
     await page.evaluate(async () => {
       const bridge = (window as unknown as { __T003_EVENT_STORE__: AnyBridge })

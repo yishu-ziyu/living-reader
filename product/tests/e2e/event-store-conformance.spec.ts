@@ -7,7 +7,10 @@ import { expect, test, type Page } from "@playwright/test";
 import {
   createDomainEventDraft,
   installTestSources,
+  LEGACY_PROTOCOL_VERSION,
   payloadHash,
+  PROTOCOL_VERSION,
+  setIdSource,
   type DomainEventDraft,
 } from "@/modules/reader-world/events";
 
@@ -27,6 +30,7 @@ type BridgeResult<T> =
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type AnyBridge = any;
+type BridgeWindow = Window & { __T003_EVENT_STORE__: AnyBridge };
 
 const security = {
   principal_id: PRINCIPAL,
@@ -91,13 +95,54 @@ async function resetStore(page: Page) {
   });
 }
 
+async function putRawStoredEvent(
+  page: Page,
+  row: Record<string, unknown>,
+): Promise<void> {
+  await page.evaluate(
+    (storedRow) =>
+      new Promise<void>((resolve, reject) => {
+        const bridgeWindow = window as unknown as BridgeWindow;
+        const bridge = bridgeWindow.__T003_EVENT_STORE__;
+        const open = indexedDB.open(bridge.dbName);
+        open.onerror = () =>
+          reject(open.error ?? new Error("IndexedDB open failed"));
+        open.onsuccess = () => {
+          const db = open.result;
+          const transaction = db.transaction("events", "readwrite");
+          transaction.oncomplete = () => {
+            db.close();
+            resolve();
+          };
+          transaction.onerror = () => {
+            const error =
+              transaction.error ?? new Error("IndexedDB transaction failed");
+            db.close();
+            reject(error);
+          };
+          transaction.onabort = () => {
+            const error =
+              transaction.error ?? new Error("IndexedDB transaction aborted");
+            db.close();
+            reject(error);
+          };
+          transaction.objectStore("events").put(storedRow);
+        };
+      }),
+    row,
+  );
+}
+
 test.describe("T003 IndexedDB EventStore conformance", () => {
   test.beforeEach(async ({ page }) => {
+    let messageSequence = 0;
     installTestSources({
-      idPrefix: "msg_e2e_conf_",
       fixedTime: "2026-08-08T12:00:00.000Z",
     });
-    await page.goto("/");
+    setIdSource(
+      () => `01K${String(++messageSequence).padStart(23, "0")}`,
+    );
+    await page.goto("/test-harness");
     await waitForBridge(page);
     await resetStore(page);
   });
@@ -116,6 +161,95 @@ test.describe("T003 IndexedDB EventStore conformance", () => {
     } catch {
       /* ignore */
     }
+  });
+
+  test("rejects non-canonical v2 message IDs on append and load", async ({
+    page,
+  }) => {
+    const appendExperience = `${EXP_BASE}_invalid_message_id_append`;
+    const invalidDraft = {
+      ...sessionDraft(appendExperience),
+      message_id: "msg_reload_local_1",
+    };
+    const rejectedAppend = (await page.evaluate(
+      async ({ experience_id, principal_id, draft }) => {
+        const bridgeWindow = window as unknown as BridgeWindow;
+        const bridge = bridgeWindow.__T003_EVENT_STORE__;
+        return bridge.append({
+          experience_id,
+          principal_id,
+          idempotency_key: "invalid-message-id",
+          expected_version: -1,
+          events: [draft],
+        });
+      },
+      {
+        experience_id: appendExperience,
+        principal_id: PRINCIPAL,
+        draft: invalidDraft,
+      },
+    )) as BridgeResult<unknown>;
+
+    expect(rejectedAppend).toMatchObject({
+      ok: false,
+      error: { code: "INVALID_ENVELOPE" },
+    });
+
+    const loadExperience = `${EXP_BASE}_invalid_message_id_load`;
+    await putRawStoredEvent(page, {
+      ...sessionDraft(loadExperience),
+      message_id: "msg_persisted_v2",
+      stream_version: 1,
+      event_index_in_commit: 0,
+    });
+    const rejectedLoad = (await page.evaluate(async (experience_id) => {
+      const bridgeWindow = window as unknown as BridgeWindow;
+      const bridge = bridgeWindow.__T003_EVENT_STORE__;
+      return bridge.load(experience_id);
+    }, loadExperience)) as BridgeResult<unknown>;
+
+    expect(rejectedLoad).toMatchObject({
+      ok: false,
+      error: { code: "INVALID_ENVELOPE" },
+    });
+  });
+
+  test("replays a stored v1 event with its historical non-ULID ID", async ({
+    page,
+  }) => {
+    const experience = `${EXP_BASE}_legacy_message_id`;
+    const current = sessionDraft(experience);
+    const { hlc: _hlc, device_id: _deviceId, ...legacyBase } = current;
+    void _hlc;
+    void _deviceId;
+    await putRawStoredEvent(page, {
+      ...legacyBase,
+      protocol_version: LEGACY_PROTOCOL_VERSION,
+      message_id: "msg_historical_v1",
+      stream_version: 1,
+      event_index_in_commit: 0,
+    });
+
+    const loaded = (await page.evaluate(async (experience_id) => {
+      const bridgeWindow = window as unknown as BridgeWindow;
+      const bridge = bridgeWindow.__T003_EVENT_STORE__;
+      return bridge.load(experience_id);
+    }, experience)) as BridgeResult<
+      Array<{
+        protocol_version: string;
+        message_id: string;
+        device_id: string;
+      }>
+    >;
+
+    expect(loaded.ok).toBe(true);
+    if (!loaded.ok) return;
+    expect(loaded.value).toHaveLength(1);
+    expect(loaded.value[0]).toMatchObject({
+      protocol_version: PROTOCOL_VERSION,
+      message_id: "msg_historical_v1",
+      device_id: "legacy-local",
+    });
   });
 
   test("empty stream accepts expected_version -1 only", async ({ page }) => {

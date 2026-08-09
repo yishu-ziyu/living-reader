@@ -384,6 +384,7 @@ const MEMORY_KINDS = new Set([
   "confusion",
   "discussion_theme",
   "idea_ref",
+  "invitation_question",
 ]);
 const MEMORY_ORIGINS = new Set(["reader_confirmed", "agent_observed"]);
 
@@ -405,7 +406,7 @@ function validateMemoryNoted(
   if (!base.ok) return base;
   if (!MEMORY_KINDS.has(payload.kind as string)) {
     return fail(
-      "payload.kind must be read_position|confusion|discussion_theme|idea_ref",
+      "payload.kind must be read_position|confusion|discussion_theme|idea_ref|invitation_question",
     );
   }
   if (!MEMORY_ORIGINS.has(payload.origin as string)) {

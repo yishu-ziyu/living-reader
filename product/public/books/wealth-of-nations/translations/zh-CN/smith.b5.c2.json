@@ -1,0 +1,3624 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "locale": "zh-CN",
+  "chapterId": "smith.b5.c2",
+  "translations": [
+    {
+      "sourceId": "smith.b5.c2.p1",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_726"
+      },
+      "contentHash": "2a16bf9ebce626083016940ebb02971687d87f9408ff3b2aca9c02bf6e62c122",
+      "text": "必须用来支付保卫社会和维持最高行政长官尊严的费用，以及国家宪制未曾为之规定任何特定收入的其他一切必要政府费用的收入，可以取自以下两者之一：第一，专属于君主或国家、并且不依赖人民收入的某种财源；第二，人民的收入。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p2",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_727"
+      },
+      "contentHash": "cdb3a3c97c20c653887cbda723567abf23c37bb33d6522fb282ab2a86254cd85",
+      "text": "可以专属于君主或国家的财源或收入来源，必定由资本或土地构成。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p3",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_728"
+      },
+      "contentHash": "b6f19ec402ac9603189fde97c38dcea6c4d3d31b61250a92b6fdbc9c0296830d",
+      "text": "君主同任何其他资本所有者一样，可以亲自运用资本，也可以将它贷出，从而取得收入。在前一种情形下，他的收入是利润；在后一种情形下，则是利息。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p4",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_729"
+      },
+      "contentHash": "0c53f61fde17d50f82c2a136d2ab321fdfff4014bebaa14956b9bcb537c3d0df",
+      "text": "鞑靼或阿拉伯酋长的收入由利润构成。这种收入主要来自他自己的大小牲畜所产的奶和繁殖的幼畜；他亲自监督这些畜群的管理，并且是自己部落或族群的主要牧羊人或牧人。然而，只有在社会治理这种最早、最粗陋的阶段，利润才曾构成君主国公共收入的主要部分。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p5",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_730"
+      },
+      "contentHash": "05325203ae75cf3125de0e0e7152d1cc37a7cfc227709c94f40c2930340881cb",
+      "text": "小共和国有时从商业经营的利润中取得相当可观的收入。据说，汉堡共和国从一家公共酒窖和一家公共药房的利润中取得这种收入。君主若有闲暇经营酒商或药商的生意，这个国家就不可能很大。公共银行的利润曾是一些较大国家的收入来源。不仅汉堡如此，威尼斯和阿姆斯特丹也是如此。甚至有人认为，这类收入并非不值得大不列颠这样庞大的帝国加以注意。若按英格兰银行的普通股息为百分之五点五、资本为一千零七十八万英镑计算，据说，在支付管理费用以后，每年净利润必定达到五十九万二千九百英镑。有人声称，政府可以按百分之三的利息借得这笔资本，并通过亲自接管银行的经营，每年获得二十六万九千五百英镑的纯利润。经验证明，像威尼斯和阿姆斯特丹那样的贵族政府，其有条不紊、警觉而节俭的行政管理，极适于经营这种商业项目。但是，英格兰这样的政府——无论它可能具有何种美德，却从来不以善于节约著称；在和平时期，它通常以一种或许是君主国所固有的懒散、疏忽和挥霍来行事；在战争时期，它又一贯以民主政体容易陷入的那种毫无思虑的奢费来行事——能否安全地受托经营这样的项目，至少要可疑得多。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p6",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_731"
+      },
+      "contentHash": "93c79873a8d1a71e820b8992a442f3c7f0375c99c71df6c922dbb36c70152658",
+      "text": "邮政严格说来是一项商业经营。政府垫付设立各邮政机构以及购买或租用必要马匹或车辆的费用，再以对所运送物品征收的费用收回垫款，并获得丰厚利润。我相信，这也许是各种政府都曾成功经营的唯一商业项目。所需垫付的资本并不很大。这项业务没有任何奥秘。收益不仅确定，而且立即到手。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p7",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_732"
+      },
+      "contentHash": "d096398e904681484782ff4eaa36959849f0667f580da6c81e9b6abad8b1e117",
+      "text": "然而，君主们经常参与许多其他商业经营，并且像私人一样，愿意通过投身普通贸易部门来改善自己的财运。他们几乎从未成功。君主事务一向以挥霍无度的方式管理，这使他们几乎不可能成功。君主的代理人把主人的财富视为取之不尽；他们不在乎以什么价格买进，不在乎以什么价格卖出，也不在乎把主人的货物从一地运往另一地要花多少费用。这些代理人往往像君主一样挥霍度日，有时尽管如此挥霍，却还能通过一种适当的账目编制方法，积聚起君主般的财富。据马基雅维利告诉我们，洛伦佐·德·美第奇的代理人正是这样经营他的贸易的，而洛伦佐并非才具平庸的君主。佛罗伦萨共和国曾数次不得不替他偿还其代理人的奢费使他背负的债务。因此，他认为放弃商人的事业是有利的；他的家族原本正是靠这种事业发家的，而在晚年，他把这笔家产的剩余部分以及由他支配的国家收入，都用于更符合其地位的计划和开支。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p8",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_733"
+      },
+      "contentHash": "b9cb40654dc17d38eb774fdac7b2d39b3c89df8c3d5398a4809ec03dda9e6fa1",
+      "text": "似乎没有哪两种身份比商人和君主更不相容。如果说英国东印度公司的经商精神使他们成为极差的君主，那么君主的精神似乎也使他们成为同样糟糕的商人。当他们还只是商人时，他们成功地经营贸易，并能从利润中向资本所有者支付适度的股息。自从他们成为君主以后，尽管据说最初拥有三百多万英镑的收入，却不得不乞求政府给予特别援助，以避免立即破产。在从前的处境中，他们在印度的雇员把自己视为商人的办事员；在现在的处境中，这些雇员则把自己视为君主的大臣。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p9",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_734"
+      },
+      "contentHash": "8b4d292864556a0479d5b65f9ab088f50412ce3ea666978cf94dd22091731f55",
+      "text": "一个国家有时既可以从资本利润中，也可以从货币利息中取得一部分公共收入。如果它积聚了一笔财宝，便可以把其中一部分借给外国，也可以借给本国臣民。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p10",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_735"
+      },
+      "contentHash": "218be64370efcc5b1c515ab45e1a0e3eeae874c1c8508413854b982c4fe41a03",
+      "text": "伯尔尼州把一部分财宝借给外国，从而取得相当可观的收入；也就是说，它把这笔钱投入欧洲各负债国家的公债，主要是法国和英格兰的公债。这项收入是否可靠，首先必定取决于所投资公债的可靠性，或者取决于管理这些公债的政府是否守信；其次，取决于同债务国继续维持和平的确定性或可能性。一旦发生战争，债务国最先采取的敌对行动，很可能就是没收其债权国持有的公债。据我所知，这种向外国贷款的政策是伯尔尼州所独有的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p11",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_736"
+      },
+      "contentHash": "5a221e35ebb08f0fcb1dec777a0a80220bff938379370abee9ae8e517761a4c5",
+      "text": "汉堡市设立了一种公共当铺，以质押为担保，按百分之六的利息向本国臣民放款。据称，这家当铺，或所谓的伦巴德，为国家提供十五万克朗的收入；按每克朗四先令六便士计算，合三万三千七百五十英镑。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p12",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_737"
+      },
+      "contentHash": "d9ba96713382992b537f36a22ba4f6af73223adc68df10e3af6e2736abae14a0",
+      "text": "宾夕法尼亚政府没有积聚任何财宝，却发明了一种向本地臣民出借东西的方法；它出借的确实不是货币，而是与货币等值的东西。它以价值为贷款额两倍的土地作担保，向私人发放计息的纸币；这些纸币自发行之日起十五年后赎回，其间可以像银行券一样在人与人之间转让，并由议会法令宣布为本省居民彼此之间一切支付的法定清偿手段。借此，它取得了一笔适度收入，对于支付每年约四千五百英镑的开支——这个节俭而有秩序的政府的全部日常开支——颇有助益。这种办法能否成功，必定取决于三种不同情况：第一，除金银货币之外，对另一种商业工具的需求；或者说，对数量如此之大的可消费物资的需求，以至若不把本地金银货币的大部分送往国外购买，就无法得到这些物资；第二，采用这种办法的政府具有良好信用；第三，运用这种办法时有所节制，即全部纸币的价值，绝不超过在没有纸币的情况下维持其流通所必需的金银货币价值。其他几个美洲殖民地也曾在不同场合采用同一办法；但由于缺乏这种节制，它在其中大多数殖民地造成的混乱远多于便利。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p13",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_738"
+      },
+      "contentHash": "5e7f8a9a8097eb7b0563bd22ca95af9a5072c7858dd37be20258ece7361112b8",
+      "text": "然而，资本和信用具有不稳定而易消失的性质，因此不适宜被当作那种可靠、稳定和永久收入的主要财源，而只有这种收入才能使政府获得安全和尊严。任何已经超越游牧状态的大国政府，似乎都不曾从这类来源取得其公共收入的大部分。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p14",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_739"
+      },
+      "contentHash": "6f384daba990e7c9975d788f7f73f2e23b2f0061ab0a7f15656ff3cd1909202d",
+      "text": "土地是一种性质更稳定、更永久的财源；因此，许多远远超越游牧状态的大国，都曾把公有土地的地租作为公共收入的主要来源。古希腊和意大利各共和国曾长期从公有土地的产物或地租中，取得用来支付国家必要费用的收入的大部分。王室土地的地租也曾长期构成欧洲古代君主收入的大部分。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p15",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_740"
+      },
+      "contentHash": "dd0f112a4a73f8c0ca13ae757e7840e8d83d36c9578f21b41e57376bd34fe76a",
+      "text": "在现代，战争和备战是造成一切大国大部分必要费用的两种情况。但在古希腊和意大利各共和国，每个公民都是士兵，服役和备战的费用都由自己负担。因此，这两种情况都不会给国家造成任何十分可观的费用。一份相当有限的地产的地租，或许就足以支付政府其他一切必要费用。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p16",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_741"
+      },
+      "contentHash": "e446abe81a511685fa75bb9b9f40fa49fa00d4897270ea0168f0c3b67c69fe35",
+      "text": "在欧洲古代君主国中，当时的风俗习惯已使大多数人民为战争作了充分准备；而当他们出征时，按照封建保有条件，他们必须由自己负担给养，或由其直接领主负担，不给君主增添任何新费用。政府的其他费用大多十分有限。前面已经说明，司法行政非但不是一项费用，反而是一个收入来源。人们认为，乡民在收获前三天和收获后三天所提供的劳动，足以作为修建和维护这个国家的商业据认为所需的一切桥梁、公路和其他公共工程的财源。在那个时代，君主的主要费用似乎在于供养自己的家族和宫廷。因此，他的宫廷官员当时就是国家的高级官员。财政大臣收取他的地租。宫务大臣和宫内大臣管理他的家室开支。他的马厩则交由掌厩大臣和御马大臣照料。他的所有宅邸都建成城堡的形式，似乎也是他所拥有的主要要塞。这些宅邸或城堡的看守人，可以视为某种军事长官。他们似乎是和平时期唯一有必要供养的军事官员。在这些情况下，一份大地产的地租，在通常场合完全可以支付政府的一切必要费用。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p17",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_742"
+      },
+      "contentHash": "97306510f75b04029ebc2c36df57bf8cf956bfa82170d9b78e7bb40fcc7b7af6",
+      "text": "在欧洲大多数文明君主国的现状下，即使全国所有土地都归一个所有者所有，并按照在这种情况下很可能采用的方式经营，其全部地租或许也几乎达不到这些国家即便在和平时期向人民征收的日常收入。以大不列颠为例，其日常收入不仅包括支付当年经常开支所必需的款项，还包括支付公债利息以及偿还一部分公债本金的款项，每年总计超过一千万英镑。但按每英镑征收四先令的土地税，每年还不到二百万英镑。然而，这种所谓的土地税，被认为相当于以下收入的五分之一：不仅包括全部土地的地租，也包括全部房屋的租金，以及大不列颠全部资本的利息，只有贷给政府或作为农业资本用于土地耕作的那一部分资本除外。这项税收的产额中，有相当大一部分来自房屋租金和资本利息。例如，伦敦市按每英镑四先令征收的土地税，共计十二万三千三百九十九英镑六先令七便士；威斯敏斯特市共计六万三千零九十二英镑一先令五便士；白厅宫和圣詹姆斯宫共计三万零七百五十四英镑六先令三便士。王国其他一切城市和自治市镇，也都以同样方式分摊一定比例的土地税，而这些税收几乎完全来自房屋租金，或者来自被认为是营业资本和其他资本的利息。因此，按照大不列颠土地税的课税估价，全部土地的地租、全部房屋的租金和全部资本的利息——只有贷给政府或用于土地耕作的那一部分资本除外——所产生的收入总额，每年不超过一千万英镑，而这正是政府即使在和平时期向人民征收的日常收入。毫无疑问，若以全国平均而论，大不列颠土地税的课税估价远低于实际价值；不过据说，在若干特定郡和地区，这一估价接近实际价值。许多人估计，仅土地的地租，不包括房屋租金和资本利息，就有二千万英镑；这个估计在很大程度上是随意作出的，据我看，高于实情和低于实情的可能性同样大。但如果大不列颠的土地在目前耕作状态下每年提供的地租不超过二千万英镑，那么，假如这些土地全归一个所有者，并由其管事和代理人以疏忽、耗费而苛刻的方式管理，就很难提供这一地租的一半，甚至很可能连四分之一也提供不了。大不列颠的王室土地目前提供的地租，还不到这些土地若为私人所有时可能获得的地租的四分之一。如果王室土地的范围更大，其经营很可能还会更糟。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p18",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_743"
+      },
+      "contentHash": "4654df5b3ca849a4472fd75f2652096e704ec3223ba4216f067bf0cab4153f0c",
+      "text": "大多数人民从土地取得的收入，与土地的地租不成比例，而与土地的产物成比例。每个国家土地的全部年产物，除去留作种子的部分，不是每年由大多数人民消费掉，就是交换成由他们消费的其他东西。凡是使土地产物低于本来能够达到的水平的因素，对大多数人民收入的压低程度，都比对土地所有者收入的压低程度更大。在大不列颠，土地地租，也就是产物中属于所有者的那一部分，几乎没有任何地方被认为超过全部产物的三分之一。如果一片土地在一种耕作状态下每年提供一千万英镑地租，而在另一种状态下可以提供二千万英镑地租；并且假定在两种情况下，地租都是产物的三分之一；那么，所有者的收入每年只会比本来可能达到的数额少一千万英镑，而大多数人民的收入每年则会比本来可能达到的数额少三千万英镑，只须扣除种子所必需的部分。该国人口将会减少这样数量的人：按剩余产物在不同等级人群之间分配后，各等级可能采用的特定生活和消费方式计算，每年三千万英镑扣除种子后本可供养的人数。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p19",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_744"
+      },
+      "contentHash": "3716c77a7b3958f31a8d7644b531e98f6d8b641a2d07ba253a7fb306f7cc1e23",
+      "text": "欧洲目前固然没有任何一种文明国家从国有土地的地租中取得其公共收入的大部分；然而，在欧洲所有大君主国中，仍有许多大片土地属于王室。这些土地一般是森林；有时是那种走了数英里也几乎看不到一棵树的森林；无论就产物还是人口而言，都纯粹是对国土的荒废和损失。在欧洲每个大君主国，出售王室土地都会获得一大笔钱；如果用来偿还公债，便可解除一笔收入所负的抵押，而这笔收入会远远超过那些土地历来为王室提供的任何收入。在土地已经得到高度改良和耕作，并且在出售时提供着很容易从中取得的最高地租的国家，土地通常按三十年地租的价格出售；因而有充分理由预期，未经改良、未经耕作且地租低廉的王室土地，可以按四十年、五十年或六十年地租的价格出售。王室可以立即享有由这笔高昂售价解除抵押的收入。几年之后，它很可能还会享有另一笔收入。王室土地成为私有财产以后，几年之内就会得到良好改良和良好耕作。其产物增加会增加人民的收入和消费，从而增加国家人口。而王室从关税和消费税取得的收入，必然会随着人民收入和消费的增长而增长。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p20",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_745"
+      },
+      "contentHash": "e2fd1130402f610604fb23e0d47762d08fb81e319db956baa96d7d8f0a013d39",
+      "text": "在任何文明君主国中，王室从王室土地取得的收入，虽然看似不使个人付出任何代价，实际上却可能比王室享有的任何其他等额收入给社会造成更大代价。在一切情况下，以其他某种等额收入补偿王室的这笔收入，并把土地分给人民，都会符合社会利益；而要做到这一点，或许没有比将这些土地公开出售更好的办法。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p21",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_746"
+      },
+      "contentHash": "5fc2c23c4f02f96b762e6f2b7b6981ecc36bfde5b58ecc06870649e35763def8",
+      "text": "用于娱乐和壮观目的的土地，如公园、花园、公共散步场所等，到处都被视为费用的成因，而非收入的来源；在一个庞大而文明的君主国中，似乎只有这些土地应当属于王室。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p22",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_747"
+      },
+      "contentHash": "7a0b0acc051e6003af42127bc1e786d85c3e1c9ecc7adda1af051c27d4e4d8b4",
+      "text": "因此，公共资本和公有土地这两种可以专属于君主或国家的收入来源，既不适宜也不足以用来支付任何庞大文明国家的必要费用；所以，这些费用的大部分只能由某种或某些税收来支付，即人民贡献自己私人收入的一部分，为君主或国家组成一笔公共收入。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p23",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_748"
+      },
+      "contentHash": "4b22f4741db8d4908f3b7ac0f660d48a248ae88c06f1800e48479a72f9dcf669",
+      "text": "本书第一篇已经说明，个人的私人收入归根结底来自三种不同的来源：地租、利润和工资。每一种税最终都必须由这三种不同收入中的某一种支付，或不加区别地由它们共同支付。我将尽力首先说明那些意在落在地租上的税；其次，说明那些意在落在利润上的税；第三，说明那些意在落在工资上的税；第四，说明那些意在不加区别地落在私人收入这三种不同来源上的税。对这四种税逐一考察，将使本章第二部分分成四节，其中三节还需要再分成若干小节。以下考察将表明，其中有许多税最终并不是由原定要让其负担的资金或收入来源支付的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p24",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_749"
+      },
+      "contentHash": "c98b57a3b7510b1a203c38dcaf665a8fa0b0a4a828aee136eb872ed8b08a1c29",
+      "text": "在着手考察各种具体的税之前，有必要先提出以下四项关于税收的一般准则。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p25",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_750"
+      },
+      "contentHash": "ec8e67ce47387fb7d458212b112e695ad44427ea843ff6134d753581ad4bd4da",
+      "text": "一、每一国家的臣民都应当尽可能按照各自的能力比例，为维持政府而纳税；也就是说，应当按照他们各自在国家保护下所享有的收入比例纳税。政府费用之于一个大国的个人，就像管理费用之于一大片地产的共同承租人一样，所有共同承租人都有义务按照各自在地产中所占利益的比例分担。所谓税收的平等或不平等，就在于遵守或忽视这项准则。这里必须一劳永逸地指出，凡最终只落在上述三种收入之一上的税，只要它不影响另外两种收入，就必然是不平等的。在以下对各种税的考察中，我很少会进一步注意这种不平等；在大多数情况下，我的评论只限于这样一种不平等，即某项具体的税甚至不平等地落在它所影响的那一种私人收入上而造成的不平等。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p26",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_751"
+      },
+      "contentHash": "003284be9bc1838d2130731be17a2fbdb5999bcf04893fcd7862903e4addce80",
+      "text": "二、每个人有义务缴纳的税额应当确定，而不应任意决定。缴纳时间、缴纳方式和应缴数额，对纳税人和其他任何人都应当清楚明白。否则，每个纳税人都会或多或少受制于税吏；税吏既可以加重任何得罪了他的纳税人的税负，也可以利用这种加重税负的威胁，为自己勒索礼物或额外收益。税收的不确定性会助长这样一类人的蛮横，并便利其贪腐；这一类人即使既不蛮横也不贪腐，本来就不受欢迎。在税收方面，明确每个人应当缴纳多少，是如此重要的一件事，以致我相信各国的经验表明，相当程度的不平等，远不如很小程度的不确定性那样有害。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p27",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_752"
+      },
+      "contentHash": "4d8a6e78b503d92c9d26fc07b1b27e017b34fab53df64fa1126a3cc30cf5a214",
+      "text": "三、每一种税都应当在纳税人最可能便于缴纳的时间，或以最可能便于他缴纳的方式征收。土地或房屋地租税若在这类地租通常支付的同一日期缴纳，就是在纳税人最可能便于缴纳的时候征收，或者说，是在他最可能有钱缴纳的时候征收。对奢侈性消费品征收的税，最终全都由消费者支付，而且通常是以一种对他十分便利的方式支付。他在需要购买这些商品时，一点一点地缴纳这些税。又因为他可以随自己的意愿决定购买或不购买，所以，如果他竟因这种税而遭受任何很大的不便，那必定是他自己的过错。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p28",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_753"
+      },
+      "contentHash": "094196fe13d51c0ec0500d2fd89f0a84788dd21cfa0000fc65a0362780cdf027",
+      "text": "四、每一种税在设计上，都应当使它从人民口袋中取走和阻止进入人民口袋的钱，除缴入国家公共财政的数额之外，尽可能少。一种税从人民口袋中取走或阻止进入人民口袋的钱，可能会以以下四种方式大大超过它缴入公共财政的钱。第一，征收这种税可能需要大量官员，他们的薪俸可能吞掉税收收入的大部分，而他们的额外收益又可能给人民加上另一重税。第二，它可能妨碍人民勤勉经营，并使他们不愿从事某些本来可以为众多人提供生计和就业的行业。它在迫使人民纳税的同时，可能因此减少甚至摧毁某些本来能使他们更容易纳税的资金来源。第三，那些试图逃税而未能成功的不幸者，会遭受没收财产和其他惩罚；这种税常常可能使他们破产，从而终止社会本来可以从运用他们的资本中获得的利益。考虑不周的税会造成很大的走私诱惑，而走私的处罚又必定随着这种诱惑的增大而加重。法律违反一切通常的正义原则，先制造诱惑，再惩罚屈从于诱惑的人；而且，它通常还恰恰按照本来无疑应当减轻处罚的情节，即犯罪的诱惑，来加重处罚。第四，它使人民频繁受到税吏登门和令人厌恶的查验，从而可能使他们遭受许多不必要的麻烦、烦扰和压迫；尽管严格说来，烦扰并不是费用，但它无疑等同于每个人为了免受这种烦扰而愿意付出的费用。税收往往正是以这四种方式中的某一种，使人民承担的负担远远超过它给君主带来的利益。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p29",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_754"
+      },
+      "contentHash": "67256ede40d4900c2f25d793e97e507ac49fbdfd3f14420a08491f0d009e2e78",
+      "text": "上述准则显而易见的公正性和效用，使它们或多或少受到所有国家的重视。所有国家都曾尽其判断能力所及，努力使税收达到它们所能设计出的最大程度的平等和确定；在缴纳时间和缴纳方式上尽可能便利纳税人；并使人民承担的负担相对于税收给君主带来的收入尽可能小。以下对不同年代和国家采用过的一些主要税种所作的简要考察将表明，各国的这些努力在这方面并没有取得同等的成功。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p30",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_755"
+      },
+      "contentHash": "8385a0a039ea000537f45bdd975762978a0e2aea89c696f0079355212545721b",
+      "text": "土地地租税可以按照某种固定的准则征收，即把每个地区的地租评定为某一数额，而且此后不再改变这一估价；也可以用另一种方式征收，使它随着土地实际地租的每一次变动而变动，并随着耕作的改良或衰退而升降。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p31",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_756"
+      },
+      "contentHash": "50e54a43cd78d54ca458e46792e92a80dd009d6db08c762b8389bf5490674d1d",
+      "text": "像大不列颠的土地税那样，按照某种固定不变的准则向各地区课征的土地税，即使在最初设立时是平等的，也必然会随着时间的推移，由于全国不同部分的耕作得到改良或受到忽视的程度不一，而变得不平等。在英格兰，根据威廉和玛丽第四年法令向各郡和各教区课征土地税时所采用的估价，即使在最初确定时也很不平等。因此，这种税在这个限度内违背了上述四项准则中的第一项；但它完全符合另外三项准则。它是完全确定的。税款的缴纳时间与地租的支付时间相同，对纳税人来说可谓便利至极。虽然地主在所有情况下都是真正的纳税人，但税款通常由佃户垫付，地主必须允许佃户在支付地租时扣除这笔款项。征收这种税所需的官员人数，远少于征收任何其他收入大致相同的税所需的人数。由于每个地区的税额不随地租上涨而增加，君主不能分享地主改良所带来的收益。诚然，这些改良有时有助于减轻该地区其他地主的税负；但由此有时可能加在某一特定地产上的税负增量，总是极其微小，绝不可能使人不愿从事这些改良，也不会把土地产量压低在它本来会上升到的水平之下。既然它没有减少产量的倾向，也就不可能提高这种产品的价格。它不妨碍人民勤勉经营。除了纳税这一不可避免的不便之外，它不会给地主带来任何其他不便。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p32",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_757"
+      },
+      "contentHash": "af1379e79ab759b6d39d8d6b23f21dc04ab32cb2ce765f064b09fdb8ab5c4780",
+      "text": "然而，地主从大不列颠全部土地据以课征土地税的估价固定不变中获得的好处，主要归因于一些与这种税本身的性质完全无关的情况。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p33",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_758"
+      },
+      "contentHash": "f9186606f96f48ee200bcbd9e79d26ace4db79519702d981d5acccae1207c6e0",
+      "text": "这种好处部分归因于全国几乎每个地方的高度繁荣：自这一估价最初确定以来，大不列颠几乎所有地产的地租都在持续上涨，几乎没有哪一处下跌。因此，地主几乎全都获得了这样一项差额，即按照其地产的现行地租本来应缴的税额与按照旧有估价实际缴纳的税额之间的差额。如果国家的状况有所不同，如果地租因耕作衰退而逐渐下降，地主就几乎全都会损失这一差额。在革命以来碰巧出现的局面下，估价的固定不变有利于地主而不利于君主。在另一种局面下，它可能有利于君主而不利于地主。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p34",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_759"
+      },
+      "contentHash": "6def209156a9b9d1e9644b2c6ebc8e88fd1f04ece731e0edf1921900e2a58558",
+      "text": "由于这种税规定以货币缴纳，土地估价也就用货币表示。自这一估价确定以来，白银的价值一直相当稳定，铸币本位无论在重量还是成色上都没有改变。如果白银的价值大幅上涨，像美洲矿山发现以前两个世纪的进程中看来曾经发生的那样，估价固定不变就可能对地主造成极大的压迫。如果白银的价值大幅下跌，像那些矿山发现之后至少约一个世纪内无疑发生的那样，同样的估价固定不变就会大大减少君主的这一项收入。如果货币本位发生任何重大改变，无论是把同量白银定为较低的面额，还是定为较高的面额；例如，一盎司白银不再铸成五先令二便士，而是铸成面额低至二先令七便士的货币，或铸成面额高至十先令四便士的货币，那么在前一种情况下，就会损害所有者的收入，在后一种情况下，则会损害君主的收入。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p35",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_760"
+      },
+      "contentHash": "1d214fdc372a940ebecec1842ad6a81b3e3e59e5b1362111f3e298324e2d5220",
+      "text": "因此，在与实际发生的情况略有不同的情形下，这种估价固定不变可能给纳税人或国家造成极大的不便。然而，在漫长的年代中，这类情形必定会在某个时候发生。可是，尽管帝国像人类的一切其他作品一样，迄今全都被证明终有灭亡之日，每个帝国却都以永存为目标。因此，任何意在像帝国本身一样长久的制度，都不应只在某些情形下便利，而应在一切情形下都便利；或者说，它不应适应那些短暂、偶发或偶然的情形，而应适应那些必然存在、因而始终相同的情形。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p36",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_761"
+      },
+      "contentHash": "e05705850189f03c215a25edb8166a4e0c975ce11393a725d223fce15ec5951c",
+      "text": "法国有一派自称“经济学派”的文人，把随着地租每一次变动而变动，或者随着耕作的改良或荒废而升降的土地地租税，推崇为一切税中最公平的税。他们声称，一切税最终都落在土地地租上，因此都应当平等地课征于最终必定支付它们的资金来源。所有税都应当尽可能平等地落在最终必定支付它们的资金来源上，这一点无疑是正确的。但是，无须进入那场令人不快的讨论，去考察他们用来支持其非常巧妙的理论的那些形而上学论证；以下的考察就足以说明，哪些税最终落在土地地租上，哪些税最终落在其他某种资金来源上。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p37",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_762"
+      },
+      "contentHash": "20f799b5ae06374a3e0c21a24e518ee2570356b4399e304c0d49880d61480407",
+      "text": "在威尼斯领地，所有出租给农场主的耕地，都按地租的十分之一纳税。租约登记在各省或各地区财政官员保管的公共簿册中。所有者亲自耕种自己的土地时，就按照公平的估计评定土地价值，并准许他减免税额的五分之一，因此，对这种土地，他只须按推定地租缴纳百分之八，而不是百分之十。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p38",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_763"
+      },
+      "contentHash": "cf21a075219e8ec43d2de9e81650f270c7825f127b86116aa8b4ff3c85497a99",
+      "text": "这种土地税无疑比英格兰的土地税更平等。它也许不完全同样确定，而且税额的评定往往可能给地主造成多得多的麻烦。征收费用也可能高得多。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p39",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_764"
+      },
+      "contentHash": "6eb12317d99deb3f94a8191c8dd24110515edfe97441d9a8889cd3bf418e5fb1",
+      "text": "不过，也许可以设计出一种征管制度，既能在很大程度上防止这种不确定性，又能节制这种费用。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p40",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_765"
+      },
+      "contentHash": "9b589cf82cf325ec090e8c6118c8db58fd18654b543f80086b1fac67919e3009",
+      "text": "例如，可以规定地主和佃户共同把租约登记在公共簿册中。对于隐瞒或虚报任何租赁条件的行为，可以制定适当的处罚；如果其中一部分罚款付给双方中揭发并证实另一方有这种隐瞒或虚报行为的一方，就能有效阻止他们相互勾结，欺骗公共财政。通过这种登记，租约的一切条件都可以得到充分了解。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p41",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_766"
+      },
+      "contentHash": "697ec2eef89e0e7c90a78375b09818a23e5866aeb3dfcc1766f736d9f780b36c",
+      "text": "有些地主不提高地租，而是在续订租约时收取一笔续租金。这种做法在大多数情况下是挥霍者的权宜之计，他为得到一笔现款而出卖价值高得多的未来收入。因此，在大多数情况下，这对地主有害；它经常对佃户有害，而且总是对社会有害。它经常从佃户的资本中拿走很大一部分，从而大大削弱他耕种土地的能力，以致他会发现，支付少量地租也比本来支付大量地租更困难。凡是削弱他耕种能力的因素，必然会把社会收入中最重要的部分压低在本来应有的水平之下。如果对这种续租金课征比普通地租高得多的税，就可以抑制这种有害的做法，从而给所有有关各方，即地主、佃户、君主和整个社会，都带来不小的好处。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p42",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_767"
+      },
+      "contentHash": "514fadaca0b8189f17b48a61189c6e4f44b924614c16c5fb1268e570904752cd",
+      "text": "有些租约规定佃户在租期内须采用某种耕作方式和某种作物轮种次序。这种条件通常是地主自以为知识高人一等所造成的结果，而这种自负在大多数情况下毫无根据；它应当一律被视为附加地租，也就是以劳役而不是以货币支付的地租。为了抑制这种通常很愚蠢的做法，可以把这种地租的价值估得相当高，因而对它课征略高于普通货币地租的税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p43",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_768"
+      },
+      "contentHash": "4434e9ad68aa9dca39b43b96bb5d2d2277c5d9e252abc54ccbe3df049b42520c",
+      "text": "有些地主不要求以货币支付地租，而要求以实物支付，如谷物、牲畜、家禽、葡萄酒、油等；另一些地主则要求以劳役支付地租。这种地租给佃户造成的损害，总是大于给地主带来的利益。它们从前者口袋中取走或阻止进入前者口袋的钱，总是多于它们放进后者口袋的钱。在实行这种地租的每个国家，佃户的贫穷困苦程度，大致都与这种地租的实行程度相称。同样，如果把这种地租的价值估得相当高，从而对它课征略高于普通货币地租的税，也许就能充分抑制这种对整个社会有害的做法。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p44",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_769"
+      },
+      "contentHash": "807e5ee6c0d7d26d9172a77fde89ad3a11967deb156f9ee41593b0128e574e89",
+      "text": "当地主选择亲自经营自己的一部分土地时，可以由邻近的农场主和地主公平仲裁，评定其地租；还可以像威尼斯领地那样，准许他获得适度的税额减免，但条件是他所经营土地的地租不得超过某一数额。鼓励地主亲自耕种自己的一部分土地是很重要的。他的资本通常大于佃户的资本，即使技艺较差，也往往能取得较多的产品。地主有能力进行试验，而且通常也愿意这样做。他失败的试验只会给自己造成适度的损失；成功的试验则有助于改良全国的耕作，使土地得到更好的耕种。不过，使减税只鼓励他把亲自耕种维持在一定限度内，可能也是很重要的。如果大部分地主都受诱惑去经营自己的全部土地，那么全国就会充斥懒惰放荡的管事，而不再是稳重勤勉的佃户；佃户受自身利益驱使，必定会在资本和技艺允许的范围内尽可能妥善地耕种。那些管事的恶劣管理，很快就会使耕作退步，并减少土地的年产量，从而不仅减少其主人的收入，也减少整个社会收入中最重要的部分。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p45",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_770"
+      },
+      "contentHash": "494a0d31db5d316b35b6c1ed217c3cc90b39944b9415b2b66d29f124ffb454f7",
+      "text": "这样一种征管制度，也许能够使这种税免除任何足以给纳税人造成压迫或不便的不确定性；同时还可以把一种规划或政策引入通常的土地经营之中，对全国耕作的普遍改良和土地的良好耕种作出很大贡献。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p46",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_771"
+      },
+      "contentHash": "377b438dce3ef84a7cff956b8d864a13e6991cc9edc538c64fc7f9cb9b39660d",
+      "text": "征收一种随着地租每一次变动而变动的土地税，其费用无疑会略高于征收一种始终按照固定估价课征的土地税。无论是需要在全国不同地区适当设立的各个登记机构，还是可能偶尔需要对所有者选择亲自经营的土地进行的各种估价，都必然会造成一些额外费用。不过，所有这些费用可能十分有限，并且远低于征收许多其他税所发生的费用；与这种税可以轻易取得的收入相比，那些税所提供的收入极其微薄。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p47",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_772"
+      },
+      "contentHash": "12c6eabe7fabf7e0b2f177341a94fe2377eb872c6e91db21c66e4f147c741cb8",
+      "text": "这种浮动地租税可能会阻碍土地改良，这似乎是对它所能提出的最重要的反对意见。当君主对改良费用毫无贡献，却要分享改良带来的利润时，地主当然会不太愿意进行改良。甚至这一反对意见或许也可以消除：允许地主在开始改良之前，会同税务官员，根据由双方各自选出同等人数的邻近地主和农场主所作的公正仲裁，确定其土地的实际价值；并在足以使其获得完全补偿的一定年限内，按照这一估价向他征税。出于增加自身收入的考虑，使君主关注土地改良，是人们主张这种地租税的主要优点之一。因此，为补偿地主而规定的期限，不应比实现这一目的所必需的期限长得太多，以免利益过于遥远，过度削弱君主的这种关注。不过，这一期限宁可稍微过长，也绝不可有丝毫过短。无论怎样激励君主的关注，也永远抵消不了对地主关注的最轻微阻碍。君主的关注充其量只能是对哪些措施可能有助于更好地耕种其领土大部分土地所作的一种极其笼统而模糊的考虑。地主的关注则是对其地产上每一寸土地怎样利用才可能最有利所作的具体而细致的考虑。君主所应主要关注的，是运用其权力所及的一切手段，鼓励地主和农场主双方的关注：允许双方按照自己的方式和自己的判断追求各自的利益；给予双方最充分的保障，使他们能享有自己勤勉所得的全部报酬；并通过在其领土各处建立最便捷、最安全的陆路和水路交通，以及给予向其他一切君主领土出口的最大限度自由，为双方每一部分产品争取最广阔的市场。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p48",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_773"
+      },
+      "contentHash": "c3fff72d07cc5900f39c6a1f08bdd5926503e6e16fe7c8a47c0cb588d2f09aac",
+      "text": "如果通过这样的管理制度，能把这种税管理得不仅不妨碍土地改良，反而对其有所鼓励，那么除了一向不可避免的、不得不纳税的不便以外，它似乎不大可能给地主造成任何其他不便。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p49",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_774"
+      },
+      "contentHash": "c35b0bab121f31589721b2f4f8b2fd8c7b32a51923abb1b04066e91089abc491",
+      "text": "无论社会状况如何变化，无论农业改进还是衰落；无论白银价值如何变化，也无论铸币标准如何变化，这种税都能自行适应事物的实际状况，无须政府操心，并且在所有这些不同的变化中都同样公正、公平。因此，与任何始终依据某一固定估价征收的税相比，它更适宜被确立为一种永久不变的规章，或所谓国家的根本法。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p50",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_775"
+      },
+      "contentHash": "c221efe81649d223c4f5b7dbb13e2228667347d09bfb01519732510452b5e4dc",
+      "text": "有些国家没有采用登记租约这种简单明了的办法，反而诉诸对全国所有土地进行实际测量和估价这种费力而昂贵的办法。它们大概怀疑，出租人和承租人为了欺骗国家税收，可能串通起来隐瞒租约的真实条件。《末日审判书》似乎就是这种极其精确的测量所产生的结果。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p51",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_776"
+      },
+      "contentHash": "f486f52d96d56949d406da655685cf4b93bce0a843c479287a0dbc6300434aac",
+      "text": "在普鲁士国王的旧有领地内，地租税根据实际测量和估价评定，并不时复核和调整。根据这一估价，世俗地产所有者缴纳其收入的百分之二十至二十五，教会人士则缴纳百分之四十至四十五。西里西亚的测量和估价是奉现任国王之命进行的，据说非常精确。根据这一估价，属于布雷斯劳主教的土地按其地租的百分之二十五纳税。两种教派教会人士的其他收入按百分之五十纳税。条顿骑士团和马耳他骑士团的采邑按百分之四十纳税。以贵族保有权持有的土地按百分之三十八又三分之一纳税。以卑贱保有权持有的土地按百分之三十五又三分之一纳税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p52",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_777"
+      },
+      "contentHash": "07108f53387978934e2a1d3ab225d4cb4aaf19b61d23336c3056396c630fee95",
+      "text": "据说，波希米亚的测量和估价历时一百多年。直到1748年和约缔结以后，才奉现任女皇兼女王之命完成。米兰公国的测量始于查理六世时期，直到1760年以后才完成。它被认为是历来最精确的测量之一。萨伏依和皮埃蒙特的测量是在已故撒丁国王命令下进行的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p53",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_778"
+      },
+      "contentHash": "63b8de8d2a9e34e5a4c120d80e16fe6386f2ee884f5560c5ceb3978194fd241e",
+      "text": "在普鲁士国王的领地内，教会收入所负担的税比世俗地产所有者的收入高得多。教会收入的大部分是土地地租的一项负担。其中很少有任何部分用于土地改良，或以任何有助于增加广大人民收入的方式使用。普鲁士国王陛下大概因此认为，让它对纾解国家急需作出多得多的贡献，是合理的。在有些国家，教会土地免除一切税收。在另一些国家，教会土地所负担的税比其他土地轻。在米兰公国，教会于1575年以前拥有的土地，仅按其价值的三分之一计税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p54",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_779"
+      },
+      "contentHash": "f23fd996f69968eb13d19727cc4b50af3914f4c604721ed725b4da420b00f0fd",
+      "text": "在西里西亚，以贵族保有权持有的土地比以卑贱保有权持有的土地多纳三个百分点的税。普鲁士国王陛下大概认为，前者所附带的各种荣誉和特权足以补偿地产所有者所承受的少量加税；与此同时，后者所处的屈辱低下地位，也会因税负稍轻而在一定程度上得到缓解。在另一些国家，税制不但不缓解这种不平等，反而加剧它。在撒丁国王的领地内，以及法国实行所谓不动产税或土地税的各省，税收完全落在以卑贱保有权持有的土地上，以贵族保有权持有的土地则予以免税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p55",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_780"
+      },
+      "contentHash": "d15ecc6061f52b36828c1adda68e92ec1db83385408880c9c314cd4a21990087",
+      "text": "根据全面测量和估价评定的地租税，无论最初多么均等，经过一段不很长的时间，也必然会变得不均等。要防止它变得不均等，就要求政府持续而费力地关注全国每一个不同农场的状况和产量所发生的一切变化。普鲁士、波希米亚、撒丁和米兰公国的政府实际上都在作这种关注；这种关注极不符合政府的性质，因而不大可能长久持续；即使持续下去，从长远看，它给纳税人造成的麻烦和困扰，很可能远远超过它所能带来的任何纾解。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p56",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_781"
+      },
+      "contentHash": "d46fbab341ce5ecb3a78aa5297789f57af763b7925d4765b88bf91551e2e2197",
+      "text": "据说，1666年，蒙托邦财政区根据一次极其精确的测量和估价，评定了不动产税或土地税。到1727年，这一税额分配已经变得完全不均等。为了补救这一不便，政府找不到比对整个财政区加征十二万里弗尔附加税更好的办法。这项附加税按照旧有税额分配，摊派给所有负担这种土地税的不同地区。但它只向按照当前实际状况来看，在旧有税额分配下税负过轻的地区征收，并用来纾解在同一税额分配下税负过重的地区。例如，有两个地区，按照当前实际状况，一个应纳税九百里弗尔，另一个应纳税一千一百里弗尔，而按旧有税额分配，两者都纳税一千里弗尔。根据附加税，这两个地区各自都被评定为一千一百里弗尔。但这项附加税只向税负过轻的地区征收，并全部用于纾解税负过重的地区，因而后者只缴纳九百里弗尔。政府既不因附加税而获利，也不因它而受损，因为附加税全部用于补救旧有税额分配所造成的不平等。附加税的运用在很大程度上取决于财政区总督的裁量，因此必然在很大程度上是任意的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p57",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_782"
+      },
+      "contentHash": "69a75b61b7e4d3e746e37542a1eb267a86e1d08b6db5d5033a9537bf8cda7715",
+      "text": "对土地产物征收的税，实际上是对地租征收的税；尽管最初可能由农场主垫付，最终却由地主负担。当必须拿出一定比例的产物纳税时，农场主会尽其所能，估算这一部分的价值逐年平均可能达到多少，并相应减少他同意付给地主的地租。没有哪个农场主不会预先估算教会什一税这种地租税逐年平均可能达到多少。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p58",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_783"
+      },
+      "contentHash": "e17754a957a9c1c7512fd0cdffe9ad3b0ac6f3940e935f177bab7637b1c4c8f5",
+      "text": "什一税以及其他一切此类地租税，在表面上完全均等，实际上却极不均等；因为在不同情况下，一定比例的产物相当于地租中差异很大的比例。在某些极其肥沃的土地上，产物如此丰盛，以至于其中一半完全足以补还农场主用于耕种的资本，并带来当地农业资本的普通利润。如果没有什一税，他能够把另一半，或者说同样一回事，把另一半的价值，作为地租付给地主。但是，如果以什一税的方式从他那里取走产物的十分之一，他就必须要求减免其地租的五分之一，否则便无法收回其资本并取得普通利润。在这种情况下，地主的地租将不再达到全部产物的一半，即十分之五，而只达到十分之四。相反，在较贫瘠的土地上，产物有时如此之少，而耕种费用又如此之高，以至于需要全部产物的五分之四，才能补还农场主的资本并带来普通利润。在这种情况下，即使没有什一税，地主的地租也至多只能达到全部产物的五分之一，即十分之二。但是，如果农场主以什一税的方式缴纳产物的十分之一，他就必须要求等额减免地主的地租，这样地租便会降至全部产物的十分之一。在肥沃土地的地租上，什一税有时可能仅相当于五分之一的税，即每一英镑征收四先令；而在较贫瘠土地的地租上，它有时可能相当于二分之一的税，即每一英镑征收十先令。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p59",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_784"
+      },
+      "contentHash": "0f1c781667f2388d9b980cef6a40b9f8d06e8770a6cf3b56fadd39d21b4adbd4",
+      "text": "什一税经常是地租上一种极不均等的税，同时又总是对地主改良土地和农场主耕种土地的重大阻碍。当不承担任何一部分费用的教会要如此大量地分享利润时，地主不敢进行最重要、通常也是费用最高的改良；农场主也不敢种植价值最高、通常也同样成本最高的作物。茜草的种植长期因什一税而局限于尼德兰联省；这些省份是长老会地区，因而免受这种破坏性税收，遂在面对欧洲其他地区时，对这种有用的染料作物享有某种垄断地位。近来把这种植物的种植引入英格兰的尝试，只是在一项法令颁布后才进行的；该法令规定，每英亩茜草缴纳五先令，以代替各种什一税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p60",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_785"
+      },
+      "contentHash": "d4957660603263543fbe2d4e9b9dd77064ef3fee9b218726e8378f46dd18e836",
+      "text": "正如欧洲大部分地区的教会主要依靠一种不按地租而按土地产物比例征收的地租税维持一样，在亚洲许多不同国家，国家也主要依靠这种税维持。在中国，君主的主要收入由帝国所有土地产物的十分之一构成。不过，对这十分之一的估算非常宽松，据说在许多省份，它不超过通常产物的三十分之一。在孟加拉落入英国东印度公司手中以前，向伊斯兰教政府缴纳的地租税或土地地租，据说约达产物的五分之一。据说古埃及的地租税同样达到五分之一。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p61",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_786"
+      },
+      "contentHash": "e9a7e52b8a04ddabfd58ae863150f2f393d25efc443647fb43e270b7eddaf328",
+      "text": "据说，在亚洲，这种地租税使君主在土地改良和耕种方面具有利害关系。因此，据说中国的君主、伊斯兰教政府统治下孟加拉的君主以及古埃及的君主，都极其注意修筑和维护良好道路与可通航运河，以便通过为每一部分土地产物争取其本国领土所能提供的最广阔市场，尽可能提高这些产物各部分的数量和价值。教会的什一税被分割成如此细小的份额，以至于它的任何一个所有者都不可能具有这种利害关系。一个教区的牧师绝不会发现，为了扩大自己特定教区产物的市场而向国内遥远地区修筑道路或运河，对自己有利。这种税在用于维持国家时，具有一些可以在一定程度上抵消其不便的优点。在用于维持教会时，它只有不便而毫无优点。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p62",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_787"
+      },
+      "contentHash": "87731a01e6ccf545f5ef6b695be8b1f1882ccdc6132ea6a7199df67c4c29feef",
+      "text": "对土地产物征收的税，既可以实物征收，也可以按照一定的估价以货币征收。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p63",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_788"
+      },
+      "contentHash": "7158424a9b6d0307d6a448f140d67d5d54ca913fe73e90b54485646bcd759e10",
+      "text": "一个教区的牧师，或居住在自己地产上的小康绅士，有时也许会发现，前者以实物收取什一税，后者以实物收取地租，具有某些好处。应收取的数量以及收取的地域范围都很小，因此两人都能亲眼监督应归自己所有的每一部分财物的收取和处置。如果一位住在首都的大富绅士以这种方式收取遥远省份某处地产的地租，他就可能因其代办人和代理人的疏忽而遭受很大损失，因他们的欺诈而遭受更大损失。君主因其征税人的滥权和侵吞而遭受的损失，必然大得多。最粗心的私人所雇用的仆人，或许也比最细心的君主所雇用的仆人更多地处于主人监督之下；以实物缴纳的国家收入会因征收人员管理不善而遭受如此巨大的损失，以至于向人民征收的财物永远只有很小一部分能送达君主的国库。不过，据说中国有一部分国家收入是以这种方式缴纳的。官吏和其他征税人无疑会发现，继续实行这种比任何货币缴纳方式更易被滥用的缴纳办法，对他们有利。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p64",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_789"
+      },
+      "contentHash": "96089e0780d7780a489701342949808e3d7dce685c0517d696505ac5cddbeefa",
+      "text": "以货币征收的土地产物税，既可以按照随市场价格的一切变化而变化的估价征收，也可以按照固定估价征收，例如，无论市场状况如何，一蒲式耳小麦始终按同一个货币价格估值。按前一种方式征收的税，其收入只会随着土地实际产量因耕种受到改良或忽视而发生的变化而变化。按后一种方式征收的税，其收入不仅会随着土地产量的变化而变化，还会随着贵金属价值的变化，以及不同时期同一面额的铸币中所含贵金属数量的变化而变化。前一种税的收入与土地实际产物的价值将始终保持相同的比例。后一种税的收入在不同时期与该价值可能保持极不相同的比例。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p65",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_790"
+      },
+      "contentHash": "b47e3a8804439a396ff110cbcecd1ead1cfd886837049180ccb00d6f57d79efa",
+      "text": "如果既不缴纳一定比例的土地产物，也不缴纳一定比例产物的价款，而是缴纳一定数额的货币，作为对一切税款或什一税的完全补偿，那么在这种情况下，这种税就同英格兰的地租税具有完全相同的性质。它既不随土地地租上涨，也不随之下跌。它既不鼓励改良，也不妨碍改良。在大多数以所谓固定代缴额代替其他一切什一税的教区，什一税就是这种税。在孟加拉的伊斯兰教政府统治时期，该国大多数地区或柴明达尔辖区没有以实物缴纳产物的五分之一，而是规定了一项固定代缴额，据说数额非常宽松。东印度公司的某些雇员以使国家收入恢复其适当数额为借口，在若干省份取消了这种固定代缴额，改为实物缴纳。在他们的管理下，这种改变很可能既会妨碍耕种，也会给国家收入的征收带来新的滥用机会；这种收入已经远远低于据说它刚归公司管理时的数额。公司雇员或许从这一改变中获了利，但很可能是以他们的雇主和这个国家双方的损失为代价。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p66",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_791"
+      },
+      "contentHash": "d7c014dffbcf3f1b01c99e685585f86e78c53bdce72dfe908d9709465a2bd913",
+      "text": "房屋的租金可以分为两部分，其中一部分完全可以恰当地称为建筑租金；另一部分通常称为地皮租金。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p67",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_792"
+      },
+      "contentHash": "3563a6ebfe85d39de752b58bf8926795c34ae10d75fbc2abfd7bb4005827c06c",
+      "text": "建筑租金是建造房屋所耗资本的利息或利润。为了使建筑商这一行业同其他行业处于同等地位，这项租金必须足以：第一，向建筑商支付与他把资本按可靠担保贷出时本可取得的相同利息；第二，使房屋经常得到修缮，或者说同样一回事，在一定年限内补还建造房屋所使用的资本。因此，建筑租金，或者说建筑业的普通利润，在各地都由货币的普通利率调节。在市场利率为百分之四的地方，一所房屋的租金在支付地皮租金之外，若能按全部建筑费用带来百分之六或百分之六点五的收益，或许就能给建筑商带来足够的利润。在市场利率为百分之五的地方，或许需要百分之七或百分之七点五。如果建筑业的利润相对于货币利息在任何时候远高于这个水平，它很快就会从其他行业吸引大量资本，从而把利润降至适当水平。如果其利润在任何时候远低于这个水平，其他行业很快就会从中吸走大量资本，从而使这项利润重新上升。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p68",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_793"
+      },
+      "contentHash": "dd00cbbea05d3b16b9b37fd761084faad18b8fc24097504cf54f1303cae45ce7",
+      "text": "一所房屋的全部租金中，凡超过足以提供这种合理利润的部分，自然都归入地皮租金；而在土地所有者与建筑物所有者并非同一人的地方，这一部分在大多数情况下会全部支付给前者。这项剩余租金，是房屋居住者为该处地段某种真实或想象中的优越性所支付的价格。在远离任何大城市、可供选择的土地十分充裕的乡间住宅那里，地皮租金几乎微不足道，至多不过相当于房屋所占土地若用于农业时能够支付的地租。在某些大城市附近的乡间别墅那里，地皮租金有时要高得多；当地段特别便利或景色优美时，人们往往愿意为此支付很高的价钱。地皮租金通常在首都最高，而在首都中房屋需求碰巧最大的那些特定地区又最高；无论这种需求的缘由是贸易和事务，是娱乐和社交，还是纯粹的虚荣和时尚，都是如此。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p69",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_794"
+      },
+      "contentHash": "76f2e022ca8b0c63c50ff1f588d2ecb38f470e5d3b86dcb1b4bf28b04299aa0a",
+      "text": "一种由承租人缴纳、并按每所房屋全部租金的一定比例征收的房租税，至少在相当长的一段时间内，不可能影响建筑物租金。如果建筑商得不到合理的利润，他就不得不退出这个行业；这会提高对建筑的需求，并在短期内使他的利润恢复到与其他行业的利润相称的适当水平。这种税也不会全部落在地皮租金上，而会以某种方式分摊，一部分落在房屋居住者身上，一部分落在土地所有者身上。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p70",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_795"
+      },
+      "contentHash": "12b6d0ab88afcbf4eed0fb72167de0c129970e92efcb1c3c80eb33ca3d73c5b2",
+      "text": "例如，假定某个人认为自己每年能够负担六十镑的房租开支；再假定对房租征收每镑四先令、即五分之一的税，并由居住者缴纳。在这种情况下，一所租金六十镑的房屋每年将使他花费七十二镑，比他认为自己能够负担的数额多十二镑。因此，他会满足于一所较差的房屋，或一所租金五十镑的房屋；再加上他必须缴纳的十镑税款，恰好构成每年六十镑，也就是他认为自己能够负担的开支。为了纳税，他会放弃一部分本来可以从一所年租多十镑的房屋中获得的额外便利。我说，他会放弃这种额外便利的一部分；因为他很少会被迫放弃全部便利，相反，由于这项税，他花每年五十镑所能租到的房屋，会比没有这项税时花同样的钱所能租到的更好。因为这种税既然会排除这个特定的竞争者，从而必然减少对年租六十镑房屋的竞争，那么它同样也必然减少对年租五十镑房屋的竞争，并以同样方式减少对其他一切租金等级房屋的竞争，只有最低租金等级除外，对这一等级的竞争会在一段时间内增加。但是，凡竞争有所减少的各个等级房屋，其租金必然会有或多或少的下降。不过，由于这种下降至少在相当长的一段时间内不可能有任何部分影响建筑物租金，从长远看，下降的全部数额最终必然落在地皮租金上。因此，这项税的最终负担将一部分落在房屋居住者身上，他为了支付自己的份额，不得不放弃一部分便利；另一部分落在土地所有者身上，他为了支付自己的份额，不得不放弃一部分收入。这项最终负担会以何种比例在他们之间分摊，或许很难确定。在不同情况下，分摊比例很可能大不相同，而这种税也可能随这些不同情况，对房屋居住者和土地所有者产生极不均等的影响。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p71",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_796"
+      },
+      "contentHash": "7dfd4d2227897b6ebcdbf431d60112cffc9f8c612883c51213e6363711952ded",
+      "text": "这种税落在不同地皮租金所有者身上的不均等，完全源于这种分摊比例的偶然不均等。但它落在不同房屋居住者身上的不均等，不仅源于这一点，还源于另一个原因。房租开支占全部生活开支的比例，在不同财富等级中各不相同。这个比例在最高财富等级中或许最高，并随着财富等级降低而逐渐减少，因而一般在最低财富等级中最低。生活必需品构成穷人的主要开支。他们很难获得食物，其微薄收入的大部分都用于购买食物。生活中的奢侈与虚荣构成富人的主要开支；一所富丽堂皇的住宅，会装点并以最有利的方式衬托他们所拥有的一切其他奢侈品和虚荣之物。因此，房租税一般会对富人负担最重；在这种不均等中，或许并没有什么很不合理之处。富人对公共开支的贡献，不仅应与其收入成比例，而且还应略高于这个比例，这并不是很不合理的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p72",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_797"
+      },
+      "contentHash": "084ef11c8c5502fe0f58ca23ed32339284b20dc3d063ac112a60534660b03bc1",
+      "text": "房屋租金虽在某些方面与土地地租相似，但在一个方面与它有本质区别。土地地租是为使用一种生产性对象而支付的。支付地租的土地本身会生产出这笔地租。房屋租金是为使用一种非生产性对象而支付的。无论房屋还是房屋所占的土地，都不生产任何东西。因此，支付租金的人必须从其他收入来源中取得这笔款项，而这种来源与该对象相区别并独立于它。房租税中落在居住者身上的部分，必须同房租本身取自同一来源，并必须由他们的收入支付，不论这种收入来自劳动工资、资本利润还是土地地租。就这种税落在居住者身上而言，它属于这样一类税：不是只落在一种收入来源上，而是无差别地落在三种不同的收入来源上；并且在每一方面都与对任何其他种类消费品征收的税性质相同。一般说来，或许没有任何一项开支或消费，比一个人的房租更能据以判断其全部开支是宽裕还是俭省。对这一特定开支项目按比例征税，所产生的收入或许会比欧洲任何地方迄今从中取得的收入都多得多。不过，如果税率确实很高，大多数人都会尽其所能，通过满足于较小的房屋，并把大部分开支转向其他用途，来设法逃避这种税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p73",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_798"
+      },
+      "contentHash": "40bd7dbf5dde32ad5a280c4d8338d9efe0075bfdc065bf72eda88966ba1e556e",
+      "text": "采用与确定普通土地地租所必需的办法同类的措施，很容易以足够的准确性确定房屋租金。无人居住的房屋不应纳税。对这种房屋征税，税负会全部落在所有者身上，这样，他便会因一种既不能给他带来便利也不能给他带来收入的对象而纳税。所有者自住的房屋，不应按照其建造时可能花费的费用估价，而应按照公正仲裁所判定的、若出租给承租人可能取得的租金估价。如果按照其建造时可能花费的费用估价，那么每镑征收三或四先令的税，再加上其他税收，将使本国几乎所有富有而显赫的家族破产；我相信，其他每个文明国家也会如此。任何人只要仔细考察本国一些最富有、最显赫家族在城镇和乡间的不同住宅，就会发现，即使只按原始建筑费用的百分之六点五或百分之七计算，他们的房租也几乎等于其地产的全部纯地租。这是连续数代人累积起来的开支，诚然是花在极其美丽和宏伟的对象上；但与其成本相比，这些对象的交换价值却很小。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p74",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_799"
+      },
+      "contentHash": "7866df85f4f3623514b5841c686359a3c2fede52aed7f3ff4bce35cc6a247e08",
+      "text": "地皮租金是比房屋租金更适宜征税的对象。对地皮租金征税不会提高房屋租金。税负会全部落在地皮租金所有者身上，他总是以垄断者的身份行事，并索取使用其土地所能取得的最高租金。能够取得的租金是多是少，取决于竞争者碰巧较富还是较穷，或者他们为了满足自己对某一特定地块的偏爱，能够负担较多还是较少的费用。在每个国家，富有的竞争者在首都人数最多，因此最高的地皮租金总是在那里。由于这些竞争者的财富不会因地皮租金税而在任何方面增加，他们大概不会愿意为使用土地支付更多费用。税款是由居住者垫付还是由土地所有者垫付，无关紧要。居住者被迫缴纳的税款越多，他愿意为土地支付的租金就越少；因此，这项税的最终负担会全部落在地皮租金所有者身上。无人居住房屋的地皮租金不应纳税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p75",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_800"
+      },
+      "contentHash": "d78d7300670bbf4a0ec1b375faca39c3bf44f55559198fd061eed5d335434fab",
+      "text": "地皮租金和普通土地地租都是这样一种收入：在许多情况下，所有者无须自己操心或用心便可享有。即使为了支付国家开支而从他那里取走这项收入的一部分，也不会因此妨碍任何一种勤劳。社会的土地和劳动的年产物，即广大人民的真实财富和收入，在征收这种税之后可以与征税之前相同。因此，地皮租金和普通土地地租或许是最能承受特别税的收入种类。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p76",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_801"
+      },
+      "contentHash": "a351920cf9a5d9dc1d238ee4ab3002bbc0c35889681df2cd5f2aceafe2cf4a87",
+      "text": "在这方面，地皮租金似乎是比普通土地地租更适宜征收特别税的对象。在许多情况下，普通土地地租至少有一部分归因于地主的用心和良好管理。很重的税可能会过度打击这种用心和良好管理。地皮租金中超过普通土地地租的部分，完全归因于君主的良好治理；这种治理保护全体人民或某一特定地方居民的勤劳，使他们能够为其建造房屋的土地支付远远高于其实际价值的费用，或者对土地所有者因将土地用于这种用途而可能蒙受的损失，给予远远超过补偿额的款项。一项资金的存在既然有赖于国家的良好治理，那么对它特别征税，或者让它为维持这种治理而比其他大部分资金多作一些贡献，再合理不过。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p77",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_802"
+      },
+      "contentHash": "c304d59c7eda0e1b216b69b5d5dae3515b3f00b7567dd137d32a7eb1e7793d73",
+      "text": "虽然欧洲许多不同国家都对房屋租金征税，但据我所知，没有任何国家把地皮租金视为单独的征税对象。税制的设计者大概发现，很难确定租金中的哪一部分应视为地皮租金，哪一部分应视为建筑物租金。不过，要把租金的这两个部分彼此区分开来，似乎不应十分困难。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p78",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_803"
+      },
+      "contentHash": "b6c055af8311dae743ba818d7749a2be2e225e430f082343ac0bef303f18cf0a",
+      "text": "在大不列颠，通过所谓的年度土地税，房屋租金被认为按与土地地租相同的比例纳税。各个不同教区和地区据以课征这种税的估值始终不变。这种估值起初就极不均等，至今依然如此。在王国的大部分地区，这种税落在房屋租金上的负担仍比落在土地地租上的更轻。据说，只有少数起初估值很高、而房屋租金又大幅下降的地区，每镑三或四先令的土地税，才相当于房屋实际租金的同等比例。无人承租的房屋虽依法应当纳税，但在大多数地区，由于估税员的宽免而免税；这种宽免有时会使个别房屋的税率略有不同，尽管整个地区的税率始终相同。因新建、修缮等而增加的租金，会用于抵缴该地区的税额，这又造成个别房屋税率的进一步差异。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p79",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_804"
+      },
+      "contentHash": "837de3114d0adcd47d5e90f0fada534dfd479090340bfff9ab34169913583897",
+      "text": "在荷兰省，每所房屋都按其价值的百分之二点五纳税，既不考虑它实际带来的租金，也不考虑它是否有人承租。强迫所有者为一所无人承租、不能给他带来任何收入的房屋纳税，似乎是一种苛刻做法，尤其是在税负如此沉重的情况下。在荷兰，市场利率不超过百分之三，因此，按房屋全部价值征收百分之二点五的税，在大多数情况下必定超过建筑物租金的三分之一，甚至可能超过全部租金的三分之一。诚然，据说房屋据以估税的估值虽然很不均等，却总是低于实际价值。房屋重建、改良或扩建时，会重新估值，并据此课税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p80",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_805"
+      },
+      "contentHash": "e5b5fec7c608f4bd99faf91b3ca11623b6fbd05adcbbd4eb4b897b5505a6cd7e",
+      "text": "英格兰在不同时期对房屋征收过几种税，这些税的设计者似乎认为，要相当准确地确定每所房屋的实际租金存在很大困难。因此，他们依据某些更为显而易见的情况来规定税额；他们大概设想，这些情况在大多数场合会与租金保持某种比例。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p81",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_806"
+      },
+      "contentHash": "379203dd0fdcda3cf8b3d9f071ceb54f5f64fdbd82cf7400947c3832a1c38ca8",
+      "text": "这类税中的第一种是炉灶税，即每个炉灶征收两先令。为了查明房屋内有多少个炉灶，收税人必须进入房屋的每个房间。这种令人憎恶的登门查验使这项税也变得令人憎恶。因此，革命后不久，它便作为奴役的标志而被废除。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p82",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_807"
+      },
+      "contentHash": "ed1dd4f72c524242c916b3b10c930455bf37f19fa8a4ddfda59121ca8ddb13ff",
+      "text": "这类税中的下一种，是对每所有人居住的住宅征收两先令。有十扇窗户的房屋再缴四先令。有二十扇及以上窗户的房屋缴八先令。后来，这项税作了如下修改：有二十扇而不足三十扇窗户的房屋须缴十先令，有三十扇及以上窗户的房屋须缴二十先令。在大多数情况下，窗户的数量可以从外面数清；在所有情况下，都无须进入房屋的每个房间。因此，在这种税下，收税人的登门查验不像在炉灶税下那么令人反感。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p83",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_808"
+      },
+      "contentHash": "169f7ccc4fdcbe56565a6b051e47472f3e683529dfdf538cb2ead95111e92043",
+      "text": "后来，这项税被废除，取而代之的是窗户税；窗户税也经历了几次修改和增加。按照窗户税目前的规定（1775年1月），除对英格兰每所房屋征收三先令、对苏格兰每所房屋征收一先令外，还对每扇窗户征税；在英格兰，这项税额从不超过七扇窗户的房屋所适用的最低税率两便士起，逐渐增加到有二十五扇及以上窗户的房屋所适用的最高税率两先令。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p84",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_809"
+      },
+      "contentHash": "21f63f8f1b980ebd0ccbd98eda86a4e739ae221413e9d856f8a5f62f050d3998",
+      "text": "对所有这类税的主要异议，是它们不均等，而且是最糟糕的一种不均等，因为它们落在穷人身上的负担往往必定比落在富人身上的重得多。乡间城镇里一所年租十镑的房屋，有时可能比伦敦一所年租五百镑的房屋拥有更多窗户；虽然前者的居住者很可能比后者的居住者穷得多，但就其缴款按窗户税确定而言，他必须为维持国家作出更多贡献。因此，这类税与上文提到的四项准则中的第一项直接相反。它们似乎并不严重违反其他三项准则中的任何一项。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p85",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_810"
+      },
+      "contentHash": "95e0be9a55d1ca94ffaef71b70823c683e1729ae5b6aae3cbd5bb136680a7ca0",
+      "text": "窗户税以及所有其他房屋税的自然趋势，都是降低租金。显然，一个人为纳税支付得越多，他能够负担的租金就越少。不过，自征收窗户税以来，据我所知，大不列颠几乎每个城镇和村庄的房屋租金，总体上都有或多或少的上涨。几乎各地对房屋的需求都增长得如此之多，以致由此造成的租金上涨超过了窗户税所能造成的租金下降；这是国家高度繁荣和居民收入不断增长的许多证据之一。如果没有这项税，租金大概会涨得更高。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p86",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_811"
+      },
+      "contentHash": "ea7d67915975344c1e333c7c8b88c8df349d72764800d90cb24b8cbe7a6a9492",
+      "text": "资本所产生的收入或利润，自然分为两部分：一部分用于支付利息，归资本所有者所有；另一部分则是超过支付利息所必需数额的剩余。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p87",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_812"
+      },
+      "contentHash": "290b731504f505d2e13b0c13d3f94a70a83ffd137f325c6e8deb42c51a2023b8",
+      "text": "显然，利润的后一部分不是可以直接征税的对象。它是对运用资本所承担的风险和麻烦的补偿，而且在大多数情况下不过是一项很有限的补偿。运用资本的人必须得到这项补偿，否则，为了自身利益，他便无法继续运用资本。因此，如果按照全部利润的比例对他直接征税，他就不得不提高利润率，或者把税款转嫁到货币利息上；也就是说，少付利息。如果他按税额相应提高利润率，那么全部税款虽可能由他垫付，但最终会由两类人中的一类支付，究竟由哪一类支付，取决于他以何种不同方式运用自己所管理的资本。如果他把资本作为农业资本用于耕种土地，他只有保留更大一部分土地产品，或者等效地说，保留更大一部分土地产品的价款，才能提高利润率；而由于这只能通过减少地租来做到，税款的最终负担便会落在地主身上。如果他把资本作为商业资本或制造业资本来运用，他只有提高商品价格，才能提高利润率；在这种情况下，税款的最终负担会全部落在这些商品的消费者身上。如果他不提高利润率，就不得不把全部税款转嫁到利润中拨作货币利息的那一部分上。对于他借入的任何资本，他所能支付的利息都会减少，而全部税负在这种情况下最终会落在货币利息上。凡是他无法以一种方式摆脱的税负，他就不得不以另一种方式摆脱。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p88",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_813"
+      },
+      "contentHash": "6d6a5e8f492fe977d6593c6fce11590df8b734b8f1bcbd536151c3b47458c610",
+      "text": "乍看之下，货币利息似乎与土地地租一样，都是同样适合直接征税的对象。与土地地租一样，它也是在对运用资本的全部风险和麻烦作出充分补偿之后剩下的纯收益。对土地地租征税不能提高地租，因为在补足农业经营者的资本并加上他的合理利润之后所剩的纯收益，在征税后不可能比征税前更多；同理，对货币利息征税也不能提高利率，因为这里假定，一国的资本量或货币量，同土地数量一样，在征税后仍与征税前相同。第一篇已经说明，普通利润率在各地都取决于待运用的资本量与运用资本的机会量，即资本所须经营的业务量之间的比例。但是，对货币利息征收任何税，都既不能增加也不能减少运用资本的机会量，即资本所须经营的业务量。因此，如果待运用的资本量也不因这种税而增加或减少，普通利润率就必然保持不变。而这项利润中补偿资本运用者的风险和麻烦所必需的部分也会保持不变，因为这种风险和麻烦没有任何改变。因此，剩余的部分，即属于资本所有者并用来支付货币利息的部分，也必然保持不变。所以乍看之下，货币利息似乎与土地地租一样适合直接征税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p89",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_814"
+      },
+      "contentHash": "f14a683e542af40e0f8c510afb9dd6fc9ea2e7968b6ecd68e68885dda2be7406",
+      "text": "然而，有两种不同的情况，使货币利息远不如土地地租适合作为直接征税的对象。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p90",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_815"
+      },
+      "contentHash": "4a08d18bb21739f50851b2e7085b49b5914b2acf3f4ff4f12505c4881253461d",
+      "text": "第一，任何人所拥有的土地数量和价值绝不可能成为秘密，而且总能极其准确地查明。但是，他所拥有的资本总额几乎总是秘密，几乎从来无法以尚可接受的准确程度查明。此外，它还几乎不断发生变化。很少有一年，往往甚至没有一个月，有时几乎没有一天，它不或多或少地增减。调查每个人的私人状况，并且为了使税额与这些状况相适应而监视其财产的一切变动，这种调查将成为持续不断、永无止境的烦扰之源，是任何人民都无法忍受的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p91",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_816"
+      },
+      "contentHash": "9a02f5aa4453a6053fae6e165cb78b55cbcdee73ff7c189226e21da43a8745d0",
+      "text": "第二，土地是不能转移的，而资本却很容易转移。土地所有者必然是其地产所在特定国家的公民。资本所有者严格说来是世界公民，并不必然依附于任何特定国家。为了核定一项沉重的税，如果他在一个国家遭受令人烦恼的调查，他很可能会离开这个国家，把资本转移到另一个国家，在那里他可以经营业务，或更安逸地享用财产。他转移资本，就会终止这项资本在他所离开的国家维持的一切产业活动。资本耕作土地；资本雇用劳动。凡是会促使资本逃离任何特定国家的税，都会在相应程度上趋于使君主和社会的一切收入来源枯竭。随着资本的转移，不仅资本利润，就连土地地租和劳动工资，也必然或多或少地减少。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p92",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_817"
+      },
+      "contentHash": "8703c603e911461cfe0e3c103c90e4f451c24cd2c9821734f20c1d6b4daea87f",
+      "text": "因此，凡试图对资本所产生的收入征税的国家，都不得不放弃这类严厉的调查，而满足于某种非常粗略、因而或多或少带有任意性的估算。用这种方式核定的税，其极端的不平等和不确定性，只能靠税负极轻来弥补；由此，每个人都发现自己被核定的收入远低于实际收入，所以即使邻人的核定额比自己的略低，也不会感到太大困扰。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p93",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_818"
+      },
+      "contentHash": "c8a7233566971a060d8289aad7ca53f23ce658e28949c27f484d5eb497888aaa",
+      "text": "英国所谓的土地税，原意是按与土地相同的比例对资本征税。当土地税为每镑四先令，即假定地租的五分之一时，原意是按假定利息的五分之一对资本征税。现行年度土地税最初开征时，法定利率为百分之六。因此，每一百镑资本被认为应纳税二十四先令，即六镑的五分之一。自法定利率降至百分之五以来，每一百镑资本被认为只应纳税二十先令。由所谓土地税筹集的款项，分摊于乡村和各主要城镇之间。其中大部分摊派于乡村；在摊派于城镇的部分中，大部分又核定在房屋上。剩余的、须核定于城镇资本或商业的税额（土地上的资本原本不在征税之列），远远低于这些资本或商业的实际价值。因此，无论最初核定存在什么不平等，都没有造成多少困扰。每个教区和地区至今仍按最初的核定，对其土地、房屋和资本承担税额；而全国几乎普遍的繁荣，在多数地方都大大提高了这一切的价值，因而使那些不平等现在更显得无关紧要。此外，由于每个地区的税额始终不变，这项税在核定于任何个人的资本时所可能具有的不确定性，也已大为减少，其影响也变得小得多。如果说英格兰大部分土地按其实际价值的一半缴纳土地税都还谈不上，那么英格兰大部分资本的核定额，或许几乎还不到其实际价值的五十分之一。在有些城镇，全部土地税都核定于房屋，例如威斯敏斯特，资本和商业在那里免税。伦敦的情形则不同。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p94",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_819"
+      },
+      "contentHash": "ed995eafec2415b573e8202ca546b14d0661931d7e5a126e26561c9586ef6971",
+      "text": "在所有国家，对私人状况的严厉调查都被审慎地避免了。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p95",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_820"
+      },
+      "contentHash": "83558299a3025c341e000dd715b4ea71dc48086fe1dd421c94be6eec2b05afd4",
+      "text": "在汉堡，每个居民都必须把自己全部财产的百分之四分之一缴纳给国家；由于汉堡人的财富主要由资本构成，这项税可以视为资本税。每个人自行核定税额，每年在行政长官面前把一定数额的货币投入公库，并宣誓声明该数额是其全部财产的百分之四分之一，但无须声明其财产总额是多少，也不必因此而受任何审查。一般认为，这项税的缴纳极为忠实。在一个小共和国里，人民完全信任他们的行政长官，确信这项税是维持国家所必需的，并相信它会忠实地用于这一目的，有时可以期待这种出于良心的自愿缴纳。这并非汉堡人民所独有。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p96",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_821"
+      },
+      "contentHash": "e4439c78a88b1b81e49526b68b322902aef0169693cb0ddb8128f6fdb3e5599a",
+      "text": "瑞士的下瓦尔登州经常遭受风暴和洪水的侵袭，因而面临额外开支。在这种时候，人民便集会，据说每个人都会极其坦率地申报自己的财产数额，以便据此纳税。在苏黎世，法律规定，遇有紧急需要，每个人都应按其收入比例纳税，而收入数额必须由本人宣誓申报。据说，他们从不怀疑任何同胞会欺骗他们。在巴塞尔，国家的主要收入来自对出口货物征收的一项低额关税。全体公民都宣誓，每三个月缴清法律规定的一切税款。所有商人，甚至所有客店店主，都受信任自行记录其在境内或境外售出的货物。每三个月结束时，他们把这份账目交给财政官，并在账目末尾列出算得的税额。人们并不怀疑税收会因这种信任而受到损失。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p97",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_822"
+      },
+      "contentHash": "6dfda0bc0037b79645158ea38efaf486b753ac0216a854f7361689916ab0cdb0",
+      "text": "在瑞士这些州，强制每个公民公开宣誓申报其财产数额，看来一定不被视为一种苦难。在汉堡，这会被视为最大的苦难。从事高风险商业计划的商人，一想到随时可能被迫公开自己状况的真实情形，无不战战兢兢。他们预见，这往往会导致其信用破产和计划失败。一个稳健节俭、对所有这类计划都很陌生的民族，不会觉得有任何这种隐瞒的必要。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p98",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_823"
+      },
+      "contentHash": "4357756a82750332bf1324fd432f3089e81351610d507a0a6d04a129b42dd290",
+      "text": "在荷兰，已故奥兰治亲王升任执政后不久，对每个公民的全部财产征收了一项百分之二的税，即所谓第五十便士税。每个公民都像在汉堡那样自行核定并缴纳其税款；一般认为，这项税的缴纳极为忠实。当时，人民对他们的新政府怀有最深厚的感情，这个政府是他们刚刚通过一次普遍起义建立起来的。这项税只须缴纳一次，以解国家某一紧急之需。它确实过于沉重，无法成为常税。在一个市场利率很少超过百分之三的国家，百分之二的税相当于对资本通常所能产生的最高纯收益按每镑十三先令四便士征税。极少有人能在不或多或少侵蚀其资本的情况下缴纳这种税。在某一紧急关头，人民出于强烈的公共热忱，或许会竭尽全力，甚至放弃一部分资本，以解国家之急。但他们不可能在任何相当长的时期内继续这样做；即使他们这样做了，这项税也很快就会把他们彻底毁掉，使他们完全无力支持国家。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p99",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_824"
+      },
+      "contentHash": "7cd8e63346f81dd47ee616af0967ba96e2c36466327ebf770eb7fa36cfca27fb",
+      "text": "英国土地税法案规定的资本税，虽然与资本额成比例，却并非意在减少或取走该资本的任何部分。其本意只是对货币利息征税，并使之与土地地租税成比例；所以，当后者为每镑四先令时，前者也可以是每镑四先令。汉堡的税，以及下瓦尔登和苏黎世更为轻微的税，同样意在对资本的利息或纯收益征税，而不是对资本本身征税。荷兰的税则意在对资本本身征税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p100",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_825"
+      },
+      "contentHash": "00002d4b4e0dd5a221871c61beae50099bffc64983cd5ce9da5702bfe0b66e41",
+      "text": "在有些国家，对资本利润征收特别税；有时是对用于某些特定商业部门的资本利润征税，有时则是对用于农业的资本利润征税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p101",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_826"
+      },
+      "contentHash": "119615dc0f47c4cc638f6fade9a94867417e17b6f5ad4aea2224940bd22fb64d",
+      "text": "在英国，前一类税包括对流动小贩和货郎征收的税、对出租马车和轿子征收的税，以及啤酒馆店主为取得零售啤酒和烈性酒许可证而缴纳的税。在最近一次战争期间，还曾提议对店铺征收另一项同类税。据说，既然这场战争是为保卫国家商业而发动的，将从中获利的商人就应当为维持战争作出贡献。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p102",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_827"
+      },
+      "contentHash": "3671355c341748c3e11d3095f5dccfe667a067c4dc8c789e0b05939e0570ba8d",
+      "text": "然而，对用于任何特定商业部门的资本利润征税，最终绝不可能落在经销商身上（在一切通常情况下，他们必须取得合理利润；而在竞争自由的地方，他们也很少能取得超过这一水平的利润），而总会落在消费者身上；消费者必然要在商品价格中支付经销商所垫付的税款，而且通常还要多付一些。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p103",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_828"
+      },
+      "contentHash": "c86f0243793e697b453fa8f17d59b0460f4ff4da5cbbc80a832ef53a62d320c0",
+      "text": "这种税按经销商的营业规模确定时，最终由消费者缴纳，不会给经销商造成压迫。如果不是按这种比例确定，而是对所有经销商一律征收同样的税，那么即使在这种情况下税款最终也由消费者缴纳，却会优待大经销商，并给小经销商造成一些压迫。对每辆出租马车每周征收五先令的税，以及对每乘出租轿子每年征收十先令的税，就由不同的马车和轿子经营者垫付而言，与他们各自的营业规模恰好成比例。它既不优待大经销商，也不压迫较小的经销商。销售啤酒的许可证每年征税二十先令，销售烈性酒的许可证征税四十先令，销售葡萄酒的许可证再征税四十先令；由于这些税对所有零售商都一律相同，必然会给大经销商一些优势，并给小经销商造成一些压迫。前者必然比后者更容易从商品价格中收回税款。不过，税额轻微，使这种不平等不那么重要，而且对小啤酒馆的增多稍加抑制，在许多人看来或许并非不妥。原先拟议的店铺税，对所有店铺一律相同。也很难采取其他办法。在一个自由国家，如果不进行一种完全无法忍受的调查，就不可能以尚可接受的准确程度，使店铺税与店内所经营业务的规模相称。如果税额很大，就会压迫小经销商，并迫使几乎全部零售业落入大经销商手中。小经销商的竞争一旦消失，大经销商就会享有这一行业的垄断；他们也会像所有其他垄断者一样，很快联合起来，把利润提高到远远超过缴纳这项税所必需的水平。最终的支付不会落在店主身上，而会落在消费者身上，同时店主还会额外取得一笔可观的利润。由于这些原因，店铺税方案被搁置，取而代之的是1759年的补助税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p104",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_829"
+      },
+      "contentHash": "f53d8aaf824f832e5e1581abe28ad64b4e77a9a15579a1b081be486a3e92a964",
+      "text": "法国所谓的人头军役税，或许是欧洲任何地方对用于农业的资本利润所征各税中最重要的一项。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p105",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_830"
+      },
+      "contentHash": "01e44e9c52aad705b685b779108842c7304d414341fabf753fa441264edaca04",
+      "text": "在封建政府盛行时期欧洲的混乱状态下，君主不得不满足于向那些软弱得无力拒绝纳税的人征税。大领主虽然愿意在特定的紧急情况下协助君主，却拒绝让自己承担任何经常税，而君主也不够强大，无法强迫他们。欧洲各地的土地经营者，原来大部分都是农奴。在欧洲大部分地区，他们逐渐获得解放。其中有些人取得了地产的所有权，这些地产采用某种低等或卑贱的保有方式，有时从属于国王，有时从属于其他大领主，就像英格兰古代的公簿持有农一样。另一些人虽未取得所有权，却获得了从其领主那里占用的土地的定期租约，从而减少了对领主的依赖。这个较低阶层的人由此获得了这种程度的繁荣和独立，大领主们对此似乎怀有一种恶毒而轻蔑的愤慨，并欣然同意君主向他们征税。在有些国家，这项税仅限于对以卑贱保有方式拥有的土地征收；在这种情况下，军役税称为土地军役税。已故撒丁国王设立的土地税，以及朗格多克、普罗旺斯、多菲内和布列塔尼各省，蒙托邦财政区，阿让和孔东选区，并包括法国其他一些地区的军役税，都是对以卑贱保有方式拥有的土地征收的税。在另一些国家，无论所有者以何种保有方式持有土地，凡租种或租赁他人土地者，都按其假定利润纳税；在这种情况下，军役税称为人头军役税。在法国那些被称为选举区的省份中，大部分征收的都是这种军役税。土地军役税只对国内一部分土地征收，因而必然不平等；但它并不总是一项任意的税，尽管在某些情况下确实如此。人头军役税意在按照某一阶层的利润比例征收，而这种利润只能靠猜测，所以必然既任意又不平等。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p106",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_831"
+      },
+      "contentHash": "ce8821857fc11a3c6fc0090163fadf6402808eb9061b261284218576d7991af9",
+      "text": "法国目前（1775年）每年向二十个称为选举区的财政区征收的人头军役税，共计40,107,239里弗尔16苏。这笔款项在各省之间的分摊比例逐年变动，依据的是向国王御前会议提交的有关收成好坏以及其他情况的报告，这些情况可能提高或降低各省各自的纳税能力。每个财政区都划分为若干选区，而向整个财政区征收的款项在各选区之间的分摊比例，也根据向御前会议提交的有关各选区纳税能力的报告逐年变动。御前会议即使抱有最良好的意图，看来也不可能以尚可接受的准确程度，使这两级分摊中的任何一级与各自承受税额的省或地区的实际能力相称。即使是最正直的御前会议，也总会或多或少受到无知和错误信息的误导。每个教区对于整个选区所承担税额应负担的比例，以及每个人对于其所在教区所承担税额应负担的比例，也同样按照被认为有必要考虑的情况逐年变动。在前一种情况下，这些情况由选区官员判断；在后一种情况下，则由教区官员判断；两者都或多或少受财政监督官的指导和影响。据说，不仅无知和错误信息，友谊、党派敌意和私人怨恨，也经常误导这些税额核定者。显然，任何须缴纳这种税的人，在税额核定之前，都永远无法确定自己须缴多少。即使税额核定之后，他也不能确定。如果某个本应免税的人被征了税，或某个人被征收了超过其应负比例的税，虽然两者暂时都必须缴纳，但如果他们提出申诉并证实申诉有理，次年就会向整个教区重新征税，以偿还他们。如果任何纳税人破产或无力偿债，征税人就必须垫付他的税款，次年再向整个教区重新征税，以偿还征税人。如果征税人本人破产，选举他的教区就必须就其行为向选区的总收税官负责。但是，由于总收税官若起诉整个教区可能很麻烦，他便任意挑选五六名最富有的纳税人，迫使他们补足因征税人无力偿债而蒙受的损失。随后再向教区重新征税，以偿还这五六个人。这种重新征收的税，总是在征收当年的军役税之外另行加征。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p107",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_832"
+      },
+      "contentHash": "791e095e6f840e1236eea7564dd7c90e9c8150249dfb5ae43cd306ee4da41b03",
+      "text": "当一项税课于某一特定行业的资本利润时，商人都会谨慎行事，运到市场上的货物决不超过他们能够按足以补偿其垫付税款的价格售出的数量。他们中有些人会从该行业撤出一部分资本，因而市场供应比以前减少。货物价格上涨，税款最终由消费者支付。但是，当一项税课于农业所用资本的利润时，农场主从这种用途撤出任何一部分资本，都不符合他们的利益。每个农场主都占用一定数量的土地，并为此支付地租。适当耕种这片土地需要一定数量的资本；农场主若从这一必要数量中撤出任何一部分，就不大可能更有能力支付地租或税款。为了缴税，减少产量，从而使市场供应比以前更少，绝不可能符合他的利益。因此，这项税绝不会使他能够提高农产品的价格，以便把最终支付税款的负担转嫁给消费者，从而补偿自己。然而，农场主和其他一切经营者一样，必须获得合理的利润，否则他就必须放弃这一行业。征收这种税以后，他只有少付给地主地租，才能取得这份合理利润。他被迫缴纳的税款越多，所能负担的地租就越少。在租约有效期内征收这种税，无疑可能使农场主陷入困境，甚至破产。但在续订租约时，它总会落到地主身上。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p108",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_833"
+      },
+      "contentHash": "6209c561e72cfb5456849b504d4b95ddf9914c1c2decea3591d7a42db33faf45",
+      "text": "在征收人身泰耶税的国家，通常按照农场主看起来用于耕作的资本来核定其税额。因此，他往往不敢备有一套良好的马匹或耕牛，而竭力使用他所能采用的最简陋、最粗劣的农具来耕种。他对核税人员的公正如此不信任，以致装穷，并希望显得几乎无力支付任何款项，以免被迫缴纳过多的税。采用这种可悲的策略，他或许并不总能以最有效的方式顾及自身利益；而且，他因产量减少所遭受的损失，很可能大于因税额降低而得到的节省。尽管这种粗劣耕作无疑使市场供应有所减少，但它可能引起的轻微涨价，既然甚至不大可能补偿农场主产量减少的损失，就更不大可能使他有能力向地主支付更多地租。公众、农场主和地主，都因这种退化的耕作方式而或多或少地蒙受损失。人身泰耶税以许多不同方式阻碍耕作，从而使每一个大国财富的主要源泉趋于枯竭；关于这一点，我在本研究第三篇中已经有机会谈到。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p109",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_834"
+      },
+      "contentHash": "a8ce5b19106887c964e660ce4fe91cc91fe795bd15437177667a07f70a4630ac",
+      "text": "北美洲南部各省和西印度群岛所谓的人头税，即按每个黑人每年征收一定数额的税，严格说来，是对农业中所使用的某一种资本的利润征收的税。由于种植园主大多既是农场主又是地主，税款最终落在作为地主的他们身上，而得不到任何补偿。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p110",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_835"
+      },
+      "contentHash": "ef4dedfdd876b310b60e71d406a9df0d08e99627b3f302de0a9127b99e6ec05c",
+      "text": "按每个从事耕作的奴隶征收一定数额的税，古代似乎曾普遍存在于整个欧洲。现今俄罗斯帝国仍有一种这样的税。大概正因为如此，各种人头税常被说成是奴役的标志。然而，对缴纳者而言，每一种税都不是奴役的标志，而是自由的标志。它固然表明他受政府管辖，但也表明，由于他拥有一些财产，他本人不可能成为某个主人的财产。对奴隶征收的人头税与对自由人征收的人头税截然不同。后者由被征税者本人缴纳；前者则由另一类人缴纳。后者不是完全任意的，就是完全不平等的，而在大多数情况下两者兼而有之；前者虽在某些方面不平等，因为不同奴隶的价值不同，却在任何方面都不是任意的。每个知道自己奴隶人数的主人，都确切知道自己必须缴纳多少税款。然而，这些不同的税由于名称相同，便被认为具有相同的性质。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p111",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_836"
+      },
+      "contentHash": "ce0f7f2f091be81b2a4cc52b1887e462ffdc3fd8d3e598fc040389458fdbc8e2",
+      "text": "荷兰对男仆和女仆征收的税，不是对资本征收的税，而是对支出征收的税；就此而言，类似于对消费品征收的税。大不列颠最近对每名男仆按一基尼征收的税，也属于同一种类。它对中等阶层的负担最重。年收入二百镑的人可能雇一名男仆。年收入一万镑的人却不会雇五十名。它不影响穷人。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p112",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_837"
+      },
+      "contentHash": "aec5d89dcf1475272a50dfa315809e9281a56a0e63ec17f9a02afd4537886d50",
+      "text": "对特定用途中的资本利润征收的税，绝不可能影响货币利息。没有人会以较低的利率把钱借给从事被征税行业的人，而不以同样利率借给从事未被征税行业的人。对所有用途中资本所产生的收入征收的税，如果政府试图以任何程度的准确性加以征收，在许多情况下就会落到货币利息上。法国的二十分之一税，即每二十个便士征收一个便士的税，与英格兰所谓的土地税属于同一种类，并以同样方式，对土地、房屋和资本所产生的收入核定征收。就其涉及资本而言，核税虽不是十分严格，却比英格兰土地税中课于同一来源的部分准确得多。在许多情况下，它完全落在货币利息上。在法国，人们经常把钱投入所谓的设立年金契约；也就是说，设立永久年金，债务人可随时偿还原先垫付的款项而赎回，但除特定情况外，债权人不得要求赎回。二十分之一税似乎并未提高这些年金的比率，尽管它对所有这类年金都准确征收。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p113",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_838"
+      },
+      "contentHash": "f536121163192eeaad3f0f92067e42f6138493c8dfa9447295a8fd8c959a304e",
+      "text": "只要财产仍由同一个人占有，无论对它征收了什么永久性税收，其目的从来都不是减少或取走其资本价值的任何部分，而只是取走由它产生的收入的一部分。但是，当财产转手时，无论是从死者转给生者，还是从生者转给生者，常常会对它征收必然取走其资本价值一部分的税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p114",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_839"
+      },
+      "contentHash": "21549fabac6c4641b7b37e9e65523d183df85d378b534b5ca2c34861e3ecd33d",
+      "text": "各种财产从死者转给生者，以及不动产即土地和房屋从生者转给生者，就其性质而言，都是公开而众所周知的交易，或者是无法长期隐瞒的交易。因此，这类交易可以直接征税。以借贷货币的方式将资本或动产从生者转给生者，往往是一项秘密交易，而且总能使之成为秘密交易。因此，它不容易直接征税。对它曾以两种不同方式间接征税：第一，规定载明偿还义务的契据必须书写在已缴纳一定印花税的纸张或羊皮纸上，否则无效；第二，在同样以无效为处罚的条件下，规定该契据必须登记在公开或秘密的登记簿中，并对此种登记征收一定税款。对于将各种财产从死者转给生者的契据，以及将不动产从生者转给生者的契据，也经常征收印花税和登记税，尽管这些交易本来很容易直接征税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p115",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_840"
+      },
+      "contentHash": "97938cbdd1e0850439ec14dac0bf8cdf892317d7bec8f4f72d2d45996c7316b8",
+      "text": "奥古斯都向古罗马人征收的遗产二十分之一税，是对财产从死者转给生者征收的税。论述此税最为清楚的作者狄奥·卡西乌斯说，它课于一切继承、遗赠和死因赠与，但给予最近亲属和穷人的除外。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p116",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_841"
+      },
+      "contentHash": "6685213bc046dc17af62d28814148288fb4dff3f5fc490c240bf95637750e254",
+      "text": "荷兰的继承税也属于同一种类。旁系继承按照亲属关系的远近，就继承财产的全部价值征收百分之五至百分之三十的税。遗嘱赠与或给旁系亲属的遗赠，也须缴纳同样的税。丈夫给妻子或妻子给丈夫的赠与，缴纳十五分之一税。“悲哀的继承”，即尊亲属继承卑亲属的遗产，只缴纳二十分之一税。直系尊亲属的遗产由卑亲属继承，则不纳税。对于与父亲同住一宅的子女来说，父亲去世很少会使其收入增加，反而常因失去父亲的劳作、职务，或他所占有的某种终身收益地产，而使收入大幅减少。若征税取走他们所继承遗产的任何一部分，使他们的损失进一步加重，这种税便是残酷而苛刻的。然而，对于罗马法所谓已经解除家长权、苏格兰法所谓已经分户的子女，情况有时可能不同；也就是说，他们已经取得自己的份额，建立了自己的家庭，并由与父亲的资财相分离且独立的资财供养。这种子女无论得到父亲遗产的哪一部分，都会真正增加其财富，因此，除各种此类税收都会带来的不便之外，或许可以对其征收某种税，而不会造成更多不便。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p117",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_842"
+      },
+      "contentHash": "04eb4b85f223feb1fbd45fdd19e2ff7b21a5e772c48f46ef1c1ac980d224b1db",
+      "text": "封建法上的偶发性权利，是对土地从死者转给生者以及从生者转给生者征收的税。在古代，它们在欧洲各地都是王室收入的主要来源之一。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p118",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_843"
+      },
+      "contentHash": "373a05bed4659e7f130febf34890bf1b25b1ada6371d74df9ddaa91a9f7f2863",
+      "text": "王室每个直属封臣的继承人在接受领地授封时，都要缴纳一定税款，通常相当于一年的地租。如果继承人尚未成年，在其未成年期间，领地的全部地租都归领主所有；领主除须负担未成年人的生活费，并在领地上有享有寡妇产的遗孀时向她支付寡妇产外，不负担其他费用。未成年人达到成年后，仍须向领主缴纳另一种称为“承继税”的税，通常也相当于一年的地租。漫长的未成年期在现今往往能使一份大地产摆脱一切债务负担，并使家族恢复昔日的显赫；但在当时却不可能产生这种效果。漫长的未成年期通常造成的是地产的耗损，而不是债务负担的解除。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p119",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_844"
+      },
+      "contentHash": "aefab428b8857a35b4070f0b0e8ccce6f3fb95e747b903be10f7c7a92933d2ce",
+      "text": "按照封建法，封臣未经领主同意不得让渡土地，而领主通常会为给予同意而勒索一笔罚金或议定款。这笔罚金起初是任意确定的，后来在许多国家被规定为地价的一定比例。在一些大部分其他封建习俗都已废弃的国家，这种土地让渡税仍然构成君主收入中一个非常重要的来源。在伯尔尼州，对所有贵族封地征收的税高达其价格的六分之一，对所有非贵族封地则征收十分之一。在卢塞恩州，土地出售税并非普遍征收，只在某些地区施行。但是，如果有人为了迁出该州辖境而出售土地，他须按全部售价缴纳百分之十。许多其他国家也对所有土地或按某些保有方式持有的土地的出售，征收同类税款；这些税在君主收入中构成或大或小的重要来源。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p120",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_845"
+      },
+      "contentHash": "1ca7922bd217cf7a87bd170c3c588c4dadbb0c8f124fb95e42a26a2107b92b48",
+      "text": "这类交易可以通过印花税或登记税间接征税；这些税可以与所转让标的物的价值成比例，也可以不成比例。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p121",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_846"
+      },
+      "contentHash": "1f03c05802943984b3c7411c0f838d2044bbc52b912ea4f55db1cf2cb9e397d3",
+      "text": "在大不列颠，印花税的高低，与其说取决于所转让财产的价值，不如说取决于契据的性质；即使金额最大的债券，一枚十八便士或半克朗的印花也就足够了。最高税额每张纸或每张羊皮也不超过六镑；而这些高额税主要课于王室授予状和某些法律诉讼程序，完全不考虑标的物的价值。在大不列颠，契据或文书的登记除保管登记簿的官员所收费用外，不征任何税；这些费用很少超过对其劳动的合理报酬。王室不从中取得任何收入。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p122",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_847"
+      },
+      "contentHash": "7993a0d66f132b2bb1f28b956ff589cf21a1fd81277379f4af2b806d4018c80f",
+      "text": "荷兰既有印花税，也有登记税；它们在某些情况下与所转让财产的价值成比例，在另一些情况下则不成比例。所有遗嘱都必须书写在印花纸上，印花纸的价格与所处分的财产相称，因此每张印花纸的价格从三便士，即三个斯泰弗，到三百弗罗林不等；后者约合我国货币二十七镑十先令。如果所用印花的价格低于立遗嘱人本应使用的印花价格，其遗产即被没收。这是在他们所有其他继承税之外另行征收的。除汇票及其他一些商业票据外，所有其他契据、债券和契约都须缴纳印花税。不过，这项税并不随标的物价值的增加而提高。所有土地和房屋的出售，以及以两者中任何一种为抵押物设定的所有抵押，都必须登记，并在登记时按售价或抵押金额的百分之二点五向国家缴税。这项税还适用于所有载重量超过两吨的船舶的出售，无论有无甲板。看来，这些船舶被视为一种水上房屋。动产的出售，如果是由法院下令进行的，也须缴纳同样的百分之二点五的税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p123",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_848"
+      },
+      "contentHash": "852c47e2d1e37aedad6dacb0da8130b8fea03b67bb486c009952c9f12b215ee5",
+      "text": "法国既有印花税，也有登记税。前者被视为补助税或消费税的一个分支，在征收这些税的各省，由消费税官员征收。后者被视为王室领地收入的一个分支，由另一批官员征收。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p124",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_849"
+      },
+      "contentHash": "df345262c6c2ff4cd171032aca8ad6105179f0c52b5a5c08b0e3159c714f560e",
+      "text": "通过印花税和登记税征税的这些方式，是非常近代的发明。然而，在略多于一个世纪的时间里，印花税在欧洲已经几乎普遍施行，登记税也极为常见。一个政府向另一个政府学习的各种技艺中，没有哪一种比从人民口袋里榨取金钱学得更快。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p125",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_850"
+      },
+      "contentHash": "4215495ff1a893cce1ae92816383f86bcfaf054c68995126b38d66222f89be6b",
+      "text": "对财产从死者转给生者征收的税，无论直接还是最终，都落在财产受让人身上。土地出售税完全落在卖方身上。卖方几乎总是迫不得已才出售，因此只能接受他所能得到的价格。买方几乎从来不是非买不可，因此只会给出他愿意支付的价格。他会把税款和价款合在一起，考虑这块土地总共要花费多少。他被迫以税款形式支付得越多，就越不愿意以价款形式支付。因此，这种税几乎总是落在急需出售的人身上，所以往往十分残酷而苛刻。对新建房屋的出售征收的税，如果只出售建筑物而不出售其所占土地，通常落在买方身上，因为建筑商一般必须获得利润，否则就必须放弃这一行业。因此，如果他垫付了税款，买方通常就必须偿还给他。对旧房出售征收的税，出于与土地出售税相同的理由，通常落在卖方身上；在大多数情况下，卖方是因便利或必要而不得不出售。每年投放市场的新建房屋数量，或多或少受需求调节。除非需求足以使建筑商在支付一切费用后获得利润，否则他不会再建造房屋。任何时候碰巧投放市场的旧房数量，则由各种偶发事件决定，而这些事件大多与需求无关。一个商业城镇发生两三起大破产事件，就会使许多房屋上市出售，而这些房屋只能按所能取得的价格售出。地租收益权出售税完全落在卖方身上，理由与土地出售税相同。借款债券和契约的印花税及登记税，完全落在借款人身上，实际上也总是由他支付。法律诉讼程序的同类税款落在诉讼当事人身上。它们会降低争议标的对双方而言的资本价值。取得任何财产所花的费用越多，取得后它的净值必定越低。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p126",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_851"
+      },
+      "contentHash": "aa774c9d745bf217d07afc0b7d0d0f213e5a53c7f9691de09130bb65b7898ea9",
+      "text": "对各种财产转让征收的一切税，只要会减少该财产的资本价值，就有减少用于维持生产性劳动的资财的趋势。这些税都或多或少是不节俭的税：它们以人民的资本为代价，增加君主的收入；人民的资本只维持生产性劳动者，而君主的收入却很少维持生产性劳动者，所维持的几乎都是非生产性劳动者。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p127",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_852"
+      },
+      "contentHash": "6f6f0a016c61850bcb8da678f65b72d00406499cc210b8dfb6743d190d2a77d3",
+      "text": "这种税即使与所转让财产的价值成比例，仍然是不平等的，因为价值相等的财产，其转让频率并不总是相等。当这种税不与该价值成比例时——大部分印花税和登记税都是如此——其不平等程度就更高。它们在任何方面都不是任意的，而在一切情况下都很明确、很确定，或者可以做到完全明确、完全确定。尽管它们有时会落在支付能力不强的人身上，但缴税时间在大多数情况下对他来说相当便利。当缴税期限到来时，他在大多数情况下必定有钱可缴。这些税的征收费用很少，而且一般不会给纳税人造成任何其他不便，只有缴税这一向来不可避免的不便。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p128",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_853"
+      },
+      "contentHash": "bd7ec1f6d1b10e7a2c792014b187ebe59d2327ccc0a2b8a04da205c3315c03ad",
+      "text": "在法国，印花税很少受到抱怨。他们称为“核验税”的登记税则受到抱怨。据称，这种税在很大程度上是任意而不确定的，使负责征收的包税总局官员有机会进行大量勒索。在反对法国现行财政制度的大部分抨击性著作中，核验税的弊端都是一项主要内容。然而，不确定性看来并非必然内在于这种税的性质之中。如果民众的抱怨有充分根据，那么弊端与其说源于这种税的性质，不如说源于征收这种税的敕令或法律措辞不够精确、不够清楚。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p129",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_854"
+      },
+      "contentHash": "b813603061f99bf32f53ec6f5e5add4b22cfcf1e8070ce698b4373e7b03da556",
+      "text": "抵押权的登记，以及一般而言对不动产上一切权利的登记，由于能给债权人和购买者双方以很大保障，对公众极为有利。其他种类的大部分契据的登记，却往往给个人造成不便，甚至带来危险，而对公众毫无益处。凡是公认应当保密的登记，当然绝不应存在。个人的信用当然绝不应依赖税务下级官员的操守和宗教信念这种极其薄弱的保障。但是，在登记费已成为君主一项收入来源的地方，无论对于应当登记的契据，还是对于不应登记的契据，登记机构通常都会无休止地增设。在法国，有若干不同种类的秘密登记。这种弊端虽未必是此类税收的必然后果，但必须承认，它是其十分自然的后果。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p130",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_855"
+      },
+      "contentHash": "92240dca6923ea69e1207467722cdcf6b65ba4a42b7c19194ecf285d558a6325",
+      "text": "英国对纸牌和骰子、报纸和定期刊物等征收的那类印花税，严格说来是消费税；最终负担落在使用或消费这类商品的人身上。对零售啤酒、葡萄酒和烈性酒的许可证征收的那类印花税，虽然其意图或许是让零售商的利润来负担，最终同样由这些酒类的消费者支付。这类税虽然与上述对财产转让征收的印花税名称相同，并由同一批官员以同样方式征收，但其性质却迥然不同，所负担的收入来源也完全不同。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p131",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_856"
+      },
+      "contentHash": "f906c230212d3732c711dfa3eed538af05c8409cfc475be64ab30b5ef4e56aec",
+      "text": "我在第一篇中曾力图说明，低等劳动者的工资，在各地都必然受两种不同情况的调节：对劳动的需求和食物的通常价格或平均价格。对劳动的需求是增长、停滞还是下降，或者说，它所需要的人口是增长、保持不变还是减少，决定劳动者的生活资料，并决定这种生活资料应当丰裕、适中还是匮乏。食物的通常价格或平均价格，决定了必须付给劳动者多少货币，才能使他逐年平均地购买到这种丰裕、适中或匮乏的生活资料。因此，只要对劳动的需求和食物价格保持不变，对劳动工资直接征税，就不可能产生别的结果，只会使工资上涨到略高于税额的程度。例如，假定某地对劳动的需求和食物价格，使每周十先令成为劳动的通常工资；又假定对工资征收五分之一，即每镑四先令的税。如果对劳动的需求和食物价格保持不变，该地劳动者仍然必须取得只有每周十先令才能买到的生活资料，换言之，他纳税之后必须有每周十先令的净工资。但为了使他在缴纳这种税后仍能留下这样的净工资，该地劳动价格必定很快就不只是上涨到每周十二先令，而要上涨到十二先令六便士；也就是说，为使他能够缴纳五分之一的税，他的工资必然很快不只上涨五分之一，而要上涨四分之一。无论税率是多少，劳动工资在任何情况下都必定不只按这一比例上涨，而要按更高的比例上涨。例如，如果税率是十分之一，劳动工资必然很快不只上涨十分之一，而要上涨八分之一。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p132",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_857"
+      },
+      "contentHash": "86ef1d0887858a3975849fac5ab916a5ba5fc6c9b3227a90a1e4ed97e2c56949",
+      "text": "因此，对劳动工资直接征税，虽然或许由劳动者亲手缴纳，但严格说来，甚至不能说是由他垫付的；至少，如果征税之后对劳动的需求和食物的平均价格仍和征税之前相同，情况就是如此。在所有这类情形下，实际上不但税额，而且超过税额的一笔款项，都要由直接雇用他的人垫付。最终负担在不同情形下会落在不同的人身上。这种税可能引起的制造业劳动工资上涨，将由制造业主垫付，而他既有权也不得不把这笔上涨连同一份利润加在其货物价格上。因此，这项工资上涨连同制造业主的额外利润，最终将由消费者支付。这种税可能引起的乡村劳动工资上涨，将由农场主垫付；为了维持和以前同样数量的劳动者，他将不得不使用更多资本。为了收回这笔更多的资本以及资本的普通利润，他必须保留土地产品中更大的一部分，或者说得一样，保留其中更大一部分的价款，因而必须少向地主支付地租。因此，在这种情况下，这项工资上涨连同垫付它的农场主的额外利润，最终将由地主负担。在一切情形下，对劳动工资直接征税，长远来看，必然会使土地地租的减少和制成品价格的上涨，都大于把一笔等于该税收所得的款项适当地一部分课于土地地租、一部分课于消费品所会造成的程度。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p133",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_858"
+      },
+      "contentHash": "5a67fe112b54f7d86cbf13e4c90675a7c97c9d8b722d674450c23c5c8c908922",
+      "text": "如果对劳动工资直接征税并非总会引起工资按比例上涨，那是因为这种税通常会使对劳动的需求显著下降。产业的衰退、穷人就业机会的减少以及一国土地和劳动年产物的缩减，通常都是这种税的后果。然而，由于这种税，在对劳动需求的实际状况下，劳动价格总会高于没有这种税时的水平；而这项价格增加，连同垫付者的利润，最终总要由地主和消费者支付。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p134",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_859"
+      },
+      "contentHash": "b5c64256dc3241ca48bd388967d68007625f94d41ebf4ea31c4840276103c519",
+      "text": "对乡村劳动工资征税，并不会使土地原生产物的价格按税额的比例上涨；其理由与对农场主的利润征税不会使这种价格按该比例上涨相同。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p135",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_860"
+      },
+      "contentHash": "e65299c6fc363c87d6bac1ca23da3755b19a10a29f4bf9c82108a78825a71fdf",
+      "text": "不过，这类税虽荒谬而有害，却在许多国家实行。法国的塔耶税中课于乡村工匠和日工劳动所得的部分，严格说来就是这种税。他们的工资按其居住地区的通常标准计算；为了尽量避免对他们估税过重，他们的全年所得只按一年二百个工作日估算。每个人的税额逐年根据不同情况变动，而这些情况由征收员或总督任命来协助征收员的专员裁定。在波希米亚，由于始于1748年的财政制度改革，对手工业者的劳动所得征收很重的税。他们被分为四等。最高一等每年缴纳一百弗罗林；按每弗罗林二十二个半便士计算，合9镑7先令6便士。第二等纳七十弗罗林，第三等纳五十弗罗林，第四等包括乡村手工业者和城镇手工业者中的最低一等，纳二十五弗罗林。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p136",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_861"
+      },
+      "contentHash": "e49868ef159e067cca0ca41480e997f082736b8fbeefc4d262931aeab7ff97c8",
+      "text": "我在第一篇中曾力图说明，技艺精湛的工匠和自由职业者的报酬，必然同较低等行业的收益保持一定比例。因此，对这种报酬征税，只会使其上涨幅度略高于税率。如果报酬不这样上涨，这些技艺性行业和自由职业便不再与其他行业处于同等水平，从业者就会大量离去，直到其报酬很快恢复到原有的相对水平。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p137",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_862"
+      },
+      "contentHash": "822d7727c20bc8523ecac9bbd452220ebcaebab5cc73a44a73339eeebdfd1f37",
+      "text": "官职的俸禄不像行业和职业的收益那样受市场自由竞争的调节，因而并不总是与职务性质的需要保持合理比例。在大多数国家，它们或许都高于这种需要；因为主持政府事务的人通常倾向于给予自己和直属依附者略多于充足程度的报酬。因此，官职俸禄在大多数情况下完全有能力承受课税。此外，享有公职的人，尤其是俸禄较优厚的人，在各国都是普遍嫉妒的对象；所以，对其俸禄征税，即使税率比对其他任何收入略高，也总是很受欢迎的税。例如在英国，当土地税被认为按每镑四先令对其他各种收入估税时，对每年超过一百镑的官职薪俸实际按每镑五先令六便士征税，便很受欢迎；但王室幼支成员的年金、陆海军军官的薪饷以及少数其他不太招人嫉妒的收入除外。英国对劳动工资不征收其他直接税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p138",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_863"
+      },
+      "contentHash": "b9b48c04f66d1f9cadf5286c742c0dd18ba081c34d8cb1b18c556362d072da55",
+      "text": "意在无差别地落在各种不同收入上的税，是人头税和消费品税。这些税必须无差别地从纳税人所拥有的任何一种收入中缴纳，无论是其土地的地租、其资本的利润，还是其劳动的工资。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p139",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_864"
+      },
+      "contentHash": "21529e0d3386dc1a12164d1b6cadfcc22ea44e55d12f0c289d4a36de2785e495",
+      "text": "人头税如果试图按照每个纳税人的财产或收入确定比例，就会变得完全任意。一个人的财产状况每日都在变化，若不进行一种比任何税收都更令人无法忍受、而且至少每年重复一次的调查，就只能靠猜测。因此，在大多数情况下，他的税额必定取决于估税人员心情的好坏，因而必定完全任意而不确定。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p140",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_865"
+      },
+      "contentHash": "812d37be46e2d7862c26b17c48e386ff40a6823cefe8bbf38347eceb410765eb",
+      "text": "人头税如果不是按假定的财产，而是按每个纳税人的等级确定比例，就会变得完全不平等；因为同一等级中的财产多寡往往并不相等。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p141",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_866"
+      },
+      "contentHash": "7c6f21665419d894411f0ac98c564a8e33bc38b3afc1edadc9041450158380e6",
+      "text": "因此，这类税如果力求使之平等，就会变得完全任意而不确定；如果力求使之确定而不任意，就会变得完全不平等。无论税轻税重，不确定性总是一大祸害。轻税中，相当程度的不平等尚可忍受；重税中，则完全无法忍受。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p142",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_867"
+      },
+      "contentHash": "392bc3f7b4118a0a0babe3fef28b81c6144f4e83fed76e02889b6628f8d8852c",
+      "text": "威廉三世在位期间，英国曾实行过几种不同的人头税，其中大部分纳税人按其等级高低估税，如公爵、侯爵、伯爵、子爵、男爵、乡绅、绅士、贵族的长子和幼子等。所有财产超过三百镑的店主和商人，即其中较富有者，都缴纳同样的税额，无论他们的财产差异多么巨大。所考虑的更多是他们的等级，而不是财产。第一次征收人头税时按假定财产定税的若干人，后来改为按等级定税。高级律师、事务律师和诉讼代理人，在第一次人头税中按其假定收入每镑三先令估税，后来则按绅士的身份估税。对于一种不很重的税，人们发现，相当程度的不平等比任何程度的不确定性更容易忍受。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p143",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_868"
+      },
+      "contentHash": "1125d04fe4e8e814a13d0953f70265f69bc22c373a0882fae39f7a73f804ea7a",
+      "text": "法国自本世纪初以来从未间断征收的人头税，对最高阶层的人按照其等级，依一份固定不变的税则定税；对较低阶层的人则按假定的财产，以逐年变动的税额定税。王室宫廷官员、高等法院的法官和其他官员、军官等，按第一种方式估税。各省较低阶层的人则按第二种方式估税。在法国，权贵们很容易容忍一种相当不平等的税，因为就其所受影响而言，这种税并不很重；但他们不能容忍总督的任意估税。在那个国家，较低阶层的人必须耐心忍受其上级认为适合给予他们的待遇。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p144",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_869"
+      },
+      "contentHash": "8042432e15812c608fd1cb1d192a480b83a60542d72e6b7fed5b01cb97e05c94",
+      "text": "英国的各种人头税，从未征得预期的数额，也从未征得人们认为在准确征收时本可取得的数额。法国的人头税则总能取得预期数额。英国的温和政府按不同等级对人民征收人头税时，满足于这种估税实际产生的收入；国家可能因无力缴纳者，或因不愿缴纳者（这种人很多）而遭受的损失，政府不要求补偿，而由于法律执行宽厚，这些人并未被强迫缴纳。法国较严厉的政府则给每个财政区摊派一定数额，必须由总督想方设法筹足。如果某省申诉摊派过重，它可以在下一年度的估税中，得到与前一年超额摊派相应的减免。但在此期间，它仍须缴纳。为了确保筹足摊派给其财政区的数额，总督有权按一个更大的数额摊派，以便用其余纳税人的超额负担来弥补部分纳税人的短缴或无力缴纳；直到1765年，这项追加摊派数额的确定还完全由他自行裁量。不过在那一年，御前会议收回了这项权力。《法国赋税论》的那位消息极为完备的作者指出，在各省的人头税中，落在贵族以及因特权而免征塔耶税的人身上的比例最小。最大份额落在须缴纳塔耶税的人身上，他们的人头税按其缴纳另一种税的数额每镑若干来估定。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p145",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_870"
+      },
+      "contentHash": "37fbf3936d340c865390b5d2f7201140084ab3fb18ec33d8dd7ae797633077c6",
+      "text": "人头税在向较低阶层人民征收的范围内，就是对劳动工资的直接税，并伴有这类税的一切弊端。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p146",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_871"
+      },
+      "contentHash": "ce7535edf6e7b5708d17388e4256d16c1d19d02b5cb75f6234f6574b6e4db804",
+      "text": "人头税的征收费用很少；在严格催征的地方，又能给国家提供十分可靠的收入。正因如此，在很少顾及较低阶层人民的安逸、舒适和安全的国家，人头税十分常见。不过，在一个大帝国里，从这种税取得的收入通常始终只占公共收入的一小部分；而这种税历来所能提供的最高数额，总是可以通过其他某种对人民便利得多的方式筹得。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p147",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_872"
+      },
+      "contentHash": "c345cd94b9a0447dfcba66b3425df03f37630561a4b63c9fda0640be3b93f0bb",
+      "text": "由于不可能通过任何人头税按人民的收入比例对他们征税，看来才有了消费品税的发明。国家不知道如何直接按比例对臣民的收入征税，便试图通过对他们的支出征税，间接地对收入征税，因为人们认为，在大多数情况下，支出会大致与收入成比例。对支出征税，是通过对支出所用于购买的消费品征税来实现的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p148",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_873"
+      },
+      "contentHash": "1f3a49a9be0cfdc7b042f2f31b5e525595ff05fde6264faef0ebd2fd96c5ab41",
+      "text": "消费品不是生活必需品，就是奢侈品。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p149",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_874"
+      },
+      "contentHash": "4ed8c29e31c195f69c1d7442662815738b1bc4aafcd668f8b286f69e3f5b156b",
+      "text": "我所谓生活必需品，不仅指维持生命所不可缺少的商品，也包括一国习俗使得即使最低阶层的体面人缺少了也有失体面的任何东西。例如，严格说来，亚麻衬衫并非生活必需品。我想，希腊人和罗马人虽没有亚麻衣物，却生活得非常舒适。但在当今欧洲大部分地区，一个体面的日工如果没有亚麻衬衫，便会羞于在公共场合露面；人们会认为，缺少它表示一种可耻的贫穷程度，而据推定，若非行为极其不检点，没有人会轻易陷入这种贫穷。同样，习俗使皮鞋成为英国的生活必需品。男女两性中最贫穷的体面人，没有皮鞋都会羞于在公共场合露面。在苏格兰，习俗使皮鞋成为最低阶层男子的生活必需品；但对于同一阶层的女子并非如此，她们赤足行走也无损体面。在法国，皮鞋既不是男子也不是女子的生活必需品；当地两性的最低阶层，有时穿木鞋，有时赤足在公共场合出现，都无损体面。因此，在生活必需品之下，我不仅包括自然使最低阶层人民必需的一切，也包括既定礼仪规则使他们必需的一切。其他一切东西，我都称为奢侈品；但我使用这个名称，并不意味着对适度使用它们加以丝毫责难。例如，大不列颠的啤酒和麦芽啤酒，以及即使在葡萄酒产区的葡萄酒，我都称为奢侈品。任何等级的人完全不饮用这类酒，都不会受到任何责难。自然并未使它们成为维持生命的必需品；习俗也从未在任何地方使不饮用它们成为有失体面的事。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p150",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_875"
+      },
+      "contentHash": "2c5e0bcd7ad608982f8c196461fe67f06033bf1890b04a27a0b30d2c864e6fef",
+      "text": "由于劳动工资在各地一部分受对劳动的需求调节，一部分受必要生活资料的平均价格调节，凡提高这一平均价格的因素，都必然提高工资，使劳动者仍能购买对劳动的需求状况——无论这种需求是增长、停滞还是下降——所要求他拥有的那些必需品的数量。对这些物品征税，必然会使其价格上涨到略高于税额的程度，因为垫付税款的商人通常必须连同一份利润收回税款。因此，这种税必然使劳动工资随这种价格上涨而相应上涨。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p151",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_876"
+      },
+      "contentHash": "a69ed99166289127366f1d3daaf64daaf819aec1043ead39b19c1457ceaf540c",
+      "text": "因此，对生活必需品征税，其作用与对劳动工资直接征税完全相同。劳动者虽可能亲手缴纳这种税，但至少在任何相当长的时间里，严格说来甚至不能说是由他垫付的。长远来看，这种税总是必须由其直接雇主以提高工资率的方式向他垫付。如果他的雇主是制造业主，就会把这项工资上涨连同一份利润加在其货物价格上；因而这项税连同这笔加价，最终将由消费者支付。如果他的雇主是农场主，则最终负担连同一笔同样的加价，将落在地主的地租上。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p152",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_877"
+      },
+      "contentHash": "88a821373c9a71f677862cb3423b7300c97131a4f009d46006a38f282da9edac",
+      "text": "对我所说的奢侈品征税，情况则不同；即使是对穷人的奢侈品征税，也是如此。被征税商品的价格上涨，并不一定会引起劳动工资的任何上涨。例如，烟草虽是穷人和富人的奢侈品，对它征税却不会提高工资。尽管烟草在英格兰所征的税是其原价的三倍，在法国是其原价的十五倍，但这些高额税似乎对劳动工资没有任何影响。对茶和糖征收的税也可以作如是说；在英格兰和荷兰，茶和糖已成为社会最下层民众的奢侈品；对巧克力征收的税也是如此，据说巧克力在西班牙也已成为这类奢侈品。本世纪以来，大不列颠对烈性酒征收的各种税，被认为对劳动工资没有任何影响。每桶浓啤酒加征三先令的税，使波特啤酒价格上涨，但这并未提高伦敦普通劳动的工资。征税以前，这种工资每天约为十八便士至二十便士，现在也没有更高。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p153",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_878"
+      },
+      "contentHash": "25cdf862a6d667374f04bd240a69092f1b645050bfced40a8557cea331ccb600",
+      "text": "这类商品的高价并不一定会削弱下层民众养育家庭的能力。对节制而勤劳的穷人来说，对这类商品征税起着禁奢法的作用，使他们节制使用、甚至完全不再使用那些他们再也无法轻易负担的非必需品。由于这种被迫的节俭，他们养育家庭的能力不但没有减弱，反而或许常常因征税而增强。通常正是节制而勤劳的穷人养育的家庭人口最多，并且主要由他们来满足对有用劳动的需求。诚然，并非所有穷人都节制而勤劳；放荡而不守规矩的人，即使在价格上涨以后，也可能像从前一样继续纵情消费这类商品，而不顾这种纵欲可能给其家庭带来的困苦。不过，这种不守规矩的人很少能把众多子女抚养成人；他们的子女通常会因疏于照料、处置不当以及食物匮乏或有害健康而夭折。即使他们凭借强健的体质熬过了父母不良行为使其遭受的苦难，那种不良行为的榜样通常也会败坏他们的品德；结果，他们不但没有以自己的勤劳造福社会，反而因恶习和不法行为成为社会公害。因此，穷人奢侈品价格的上涨，虽可能在某种程度上加剧这类不守规矩家庭的困苦，从而在某种程度上削弱他们养育子女的能力，却大概不会大幅减少一国的有用人口。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p154",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_879"
+      },
+      "contentHash": "152c80c9b35e41a4d9ac1c7062c9036cb92ae97f866ff4521f04632a67f37e43",
+      "text": "生活必需品平均价格的任何上涨，除非由劳动工资按比例上涨来补偿，否则必然会或多或少地削弱穷人养育众多子女的能力，从而削弱他们满足有用劳动需求的能力；无论这种需求处于何种状态，是增长、停滞还是下降，或者说，无论这种需求所要求的是增长、停滞还是下降的人口。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p155",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_880"
+      },
+      "contentHash": "0b3df903f622edbce0727d396ff3d4d8621c17038a63f17610e246a639a47692",
+      "text": "对奢侈品征税，除了被征税商品以外，并无促使任何其他商品价格上涨的趋势。对生活必需品征税，由于会提高劳动工资，必然有提高一切制成品价格的趋势，从而减少其销售和消费的范围。奢侈品税最终由被征税商品的消费者缴纳，而得不到任何补偿。它们不加区别地落在每一种收入上，即劳动工资、资本利润和土地地租上。生活必需品税，只要影响到劳动穷人，最终便一部分由地主以土地地租减少的形式缴纳，一部分由富裕消费者——无论是地主还是其他人——以制成品涨价的形式缴纳；而且总是附带相当大的额外负担。粗呢绒之类既是真正生活必需品、又供穷人消费的制成品，其价格上涨，必须以穷人工资进一步上涨来补偿。中等和上等阶层的人，如果明白自身利益，就应当始终反对一切生活必需品税，也反对一切直接对劳动工资征收的税。这两类税的最终缴纳都完全落在他们自己身上，而且总是附带相当大的额外负担。地主所受的负担最重，因为他们总是以双重身份缴纳：以地主身份，承受地租的减少；以富裕消费者身份，承受开支的增加。马修·德克尔爵士曾指出，某些税在某些商品的价格中有时会重复并累积四五次；就生活必需品税而言，这一说法完全正确。例如，在皮革的价格中，你不仅必须支付自己鞋子所用皮革的税，还要支付鞋匠和制革匠鞋子所用皮革税的一部分。你还必须支付这些工匠为你工作时所消费的盐、肥皂和蜡烛的税，以及制盐工、制皂工和制烛工为他们工作时所消费的皮革的税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p156",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_881"
+      },
+      "contentHash": "4f9b2695455a0580c30b1c2fc657991f6e28d4caa4f4c40cc4791d9498a1f852",
+      "text": "在大不列颠，对生活必需品征收的主要税种，就是刚才提到的盐、皮革、肥皂和蜡烛这四种商品的税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p157",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_882"
+      },
+      "contentHash": "44809d649f32b7b50c62a1cb7050d299a9092589135251a6590479e164214b91",
+      "text": "盐是一种非常古老、也非常普遍的征税对象。罗马人曾对盐征税，而据我所知，如今欧洲各地也都对盐征税。任何个人每年消费的盐数量都很少，而且可以逐渐少量购买，因而人们似乎认为，即使对盐征收相当重的税，也没有人会有十分明显的感觉。在英格兰，每蒲式耳盐征税三先令四便士，约为这种商品原价的三倍。在另一些国家，税额还要更高。皮革是真正的生活必需品。亚麻内衣的使用使肥皂也成为生活必需品。在冬夜漫长的国家，蜡烛是从事行业所必需的工具。在大不列颠，皮革和肥皂每磅征税一便士半，蜡烛每磅征税一便士；按原价计算，皮革税约为百分之八或百分之十，肥皂税约为百分之二十或百分之二十五，蜡烛税约为百分之十四或百分之十五。这些税虽比盐税轻，却仍然很重。由于这四种商品都是真正的生活必需品，对它们征收如此重税，必然会在某种程度上增加节制而勤劳的穷人的开支，从而必然会或多或少地提高他们的劳动工资。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p158",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_883"
+      },
+      "contentHash": "abeecb98396de45c308314606e2fa44b01425aa6368e258ea7f8c10d67ac33cb",
+      "text": "在冬季像大不列颠一样寒冷的国家，燃料在那个季节从最严格的意义上说是生活必需品，不仅用于烹调食物，也用于使在室内工作的许多不同种类的工人得以舒适生活；而煤是所有燃料中最便宜的。燃料价格对劳动价格有极为重要的影响，因此大不列颠各地的制造业主要集中在产煤地区；国内其他地区由于这种必需品价格高昂，无法以同样低廉的成本生产。此外，在某些制造业中，煤还是从事行业所必需的工具，例如玻璃、铁和其他一切金属的制造业。如果奖励金在任何情况下可以是合理的，那么对于把煤从国内煤炭丰富的地区运往缺煤地区，或许可以如此。但立法机关不但没有给予奖励金，反而对沿海运输的煤每吨征税三先令三便士；对于大多数种类的煤，这超过煤在矿井口原价的百分之六十。经陆路或内河航运的煤不缴税。在煤自然便宜的地方，消费煤可以免税；在煤自然昂贵的地方，反而还负担重税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p159",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_884"
+      },
+      "contentHash": "9eb80a2e1c4d86a156ebd9efe27241c5dcb2edd0a1fd8ba6a943349972bfb127",
+      "text": "这类税虽然提高生活费用，从而提高劳动工资，却给政府带来一笔可观的收入，而这笔收入也许不容易通过任何其他方式取得。因此，继续征收这些税或许有充分理由。谷物出口奖励金，就其在当前耕作状况下有提高这种必需品价格的趋势而言，会产生同样的一切恶果；它非但不给政府带来任何收入，反而常常使政府承担很大一笔开支。外国谷物的高额进口税，在收成中等丰饶的年份相当于禁止进口；而按照通常法律状况，对输入活牲畜或腌制食品的绝对禁令也在施行，只是由于目前的匮乏，对爱尔兰和英国殖民地暂时中止了这种禁令，期限有限。这些规定都具有生活必需品税的一切恶果，却不给政府带来任何收入。要废除这类规定，似乎只须使公众确信：正是据以制定这些规定的那套制度毫无用处。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p160",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_885"
+      },
+      "contentHash": "b79cc61072bf08bd031de36969fbca83184e84f0e5a293ac2d5a13a97e24b77e",
+      "text": "许多其他国家的生活必需品税远高于大不列颠。许多国家在面粉和粗粉于磨坊磨成时征税，也在面包于烤炉烤成时征税。据认为，在荷兰，城市居民所消费面包的货币价格因这类税而翻了一番。作为其中一部分税的替代，居住在乡村的人按照他们被认为消费的面包种类，每年按人头缴纳一定数额。消费小麦面包的人缴纳三荷兰盾十五斯泰弗，约合六先令九便士半。据说，这些税和其他一些同类税由于提高了劳动价格，已经摧毁荷兰的大部分制造业。米兰地区、热那亚各邦、摩德纳公国、帕尔马、皮亚琴察和瓜斯塔拉诸公国以及教皇国，也征收类似的税，尽管没有那么重。一位颇有名望的法国作家曾提议，用这种一切税中危害最大者取代其他大部分税，以此改革本国财政。西塞罗说，没有任何荒谬之说不曾被某些哲学家提出过。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p161",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_886"
+      },
+      "contentHash": "28eace55f2ff1fdd0adb3ab6bdeae9d99b19a5ee5fd1a62a16e36c6c4a2d259e",
+      "text": "肉税甚至比面包税更为普遍。确实可以怀疑，肉是否在任何地方都算得上生活必需品。经验表明，谷物和其他蔬菜，辅以牛奶、奶酪和黄油，或者在没有黄油的地方辅以油，即使完全没有肉，也能提供最丰盛、最有益健康、最富营养和最能增强体力的饮食。体面在任何地方都不要求一个人必须吃肉，尽管在大多数地方，它确实要求他穿亚麻衬衫或皮鞋。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p162",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_887"
+      },
+      "contentHash": "885193d1aa5f223b586506048fb8d7e7342dc65570f33ac5d60ad95a0ddadb8e",
+      "text": "可消费商品，无论是必需品还是奢侈品，都可以用两种不同的方式征税。消费者可以因使用或消费某种商品而每年缴纳一定金额；也可以在商品尚处于经销商手中、还未交付消费者以前对其征税。需要相当长时间才能完全消费掉的可消费商品，最适合采用前一种方式征税。消费是即时完成或较快完成的商品，则最适合采用后一种方式。马车税和银器税是前一种征税方式的实例；其他大部分国产税和关税则是后一种征税方式的实例。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p163",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_888"
+      },
+      "contentHash": "9cb6404cfd970ad7aa2945d41befcdbb191225226a89dd6a5583ebf049dafe33",
+      "text": "一辆马车如果保养得当，可以使用十年或十二年。它本可以在离开马车制造商之手以前一次性征税。然而，对买主来说，为保有一辆马车的权利每年缴纳四英镑，肯定比一次性向马车制造商多付四十或四十八英镑，或支付相当于他使用同一辆马车期间可能承担的税款总额，更为方便。同样，一套餐具银器可以使用一个多世纪。消费者每年为每一百盎司银器缴纳五先令，即接近其价值的百分之一，肯定比按二十五年或三十年的年金买价一次性清偿这笔长期年金更为容易；后一种方式会使价格至少提高百分之二十五或百分之三十。影响房屋的各种税，采用数额适中的年度缴款方式，肯定比在房屋最初建造或出售时一次征收同等价值的重税更为方便。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p164",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_889"
+      },
+      "contentHash": "19819d8dc2693c23cab8781e808ec610d8a65dc792b273fa646b4f0522f49aed",
+      "text": "马修·德克尔爵士有一个著名的建议：一切商品，即使是即时消费或消费得很快的商品，也都应采用这种方式征税；经销商无需垫付任何税款，而由消费者每年缴纳一定金额，以取得消费某些商品的许可证。他这套方案的目的，是取消一切进出口税，从而促进对外贸易的所有不同部门，尤其是转运贸易，并使商人能够把全部资本和信用用于购买商品和支付船舶运费，而不必把其中任何一部分转用于垫付税款。不过，以这种方式对即时消费或快速消费的商品征税，似乎会遭到以下四项十分重大的反对。第一，与通常采用的征税方式相比，这种税会更加不均等，或者说不能按照不同纳税人的开支和消费来适当分摊。麦芽酒、葡萄酒和烈性酒的税由经销商垫付，最终则由不同消费者严格按照各自的消费量缴纳。但如果这项税是通过购买饮用这些酒类的许可证来缴纳，那么相对于自己的消费量而言，节制者所负担的税就会比嗜酒的消费者重得多。一个热情款待大量宾客的家庭，所负担的税会比招待宾客较少的家庭轻得多。第二，这种通过购买年度、半年度或季度许可证来消费某些商品的征税方式，会大大削弱快速消费品税的一项主要便利，即零星缴纳。目前一壶波特啤酒的价格是三便士半，其中麦芽税、啤酒花税和啤酒税，再加上酿酒商因垫付这些税款而收取的额外利润，或许总共约为一便士半。如果一个工人能方便地省出这一便士半，他就买一壶波特啤酒。如果不能，他就以一品脱为满足；既然省一文就是赚一文，他便因自己的节制而省下四分之一便士。他按照自己的支付能力，在有能力支付时，零星缴纳这项税；每一次缴纳都完全出于自愿，只要他愿意，便可以避免。第三，这类税发挥禁奢法作用的程度会较低。许可证一经购买，无论购买者喝得多还是喝得少，所缴的税都相同。第四，如果一个工人必须通过年度、半年度或季度缴款，一次性缴纳一笔税款，其数额相当于他目前在同一期间所喝的各壶、各品脱波特啤酒上几乎毫无不便地缴纳的全部税款，那么这笔款项常常可能使他深陷困窘。因此，这种征税方式显然绝不可能在不造成最严重压迫的情况下，取得接近现行方式毫无压迫地取得的收入。不过，有几个国家确实以这种方式对即时消费或消费得很快的商品征税。在荷兰，人们按人头缴纳一定金额，以取得饮茶许可证。我已经提到过一种面包税；对于农舍和乡村所消费的面包，荷兰也采用同样的方式征收此税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p165",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_890"
+      },
+      "contentHash": "177552d1495e1fa334b8fc3de491b9164347375c8d37d2ba70cf69f71a0e27d4",
+      "text": "国产税主要对供国内消费的本国产商品征收。它只对少数最普遍使用的商品征收。哪些商品须缴纳这些税，或者每一类商品须缴纳何种特定税款，都绝不会存在任何疑问。除了上述盐、肥皂、皮革和蜡烛四项税，以及也许还有绿色玻璃税以外，这些税几乎全都落在我所说的奢侈品上。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p166",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_891"
+      },
+      "contentHash": "9f1c890fe0313edaa1089918cd83655870b0474dd349a354058cfd837166a4e8",
+      "text": "关税的历史比消费税悠久得多。它们之所以被称为关税（customs），似乎是因为这个名称表示自远古以来沿袭的惯常缴款。关税最初似乎被视为对商人利润征收的税。在封建无政府状态的野蛮时代，商人和城镇里的其他所有居民一样，被视为只比获得自由的农奴略好一点；他们的人身受到鄙视，所得收益遭人嫉妒。大贵族既已同意国王向他们自己的佃户所得利润征收摊派税，也不反对国王同样向一个他们更没有利益去保护的阶层所得利润征收摊派税。在那个蒙昧时代，人们并不明白，商人的利润不能成为直接征税的对象；也不明白，所有这类税的最终负担必然会连同相当大的额外费用一起落在消费者身上。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p167",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_892"
+      },
+      "contentHash": "76c2678253d77a2d2d66d820338ccb489235fbb1fe31d61e880e8b6503710cdf",
+      "text": "外国商人的收益比英格兰商人的收益受到更不利的看待。因此，前者所负担的税自然要比后者重。对外国商人与英格兰商人征收不同关税，这种区别始于无知，却因垄断精神而延续下来，或者说，是为了使我国商人在国内市场和国外市场都获得优势。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p168",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_893"
+      },
+      "contentHash": "9ef797076c485ae2161c89e02a4f545f03a56eefa6df9938663d81e98489dfab",
+      "text": "除这一差别外，古代关税对所有种类的商品一律征收，无论是必需品还是奢侈品，也无论是出口商品还是进口商品。当时人们似乎认为，为什么经营某一种商品的商人应当比经营另一种商品的商人受到更多优待？又为什么出口商人应当比进口商人受到更多优待？",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p169",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_894"
+      },
+      "contentHash": "07c4f0c26774de3b1b27e873738fc8526724f0e9faf8456343f5f1f8ce4fcc81",
+      "text": "古代关税分为三类。第一类，也许是所有这些税中最古老的一类，是对羊毛和皮革征收的税。它看来主要是、或完全是出口税。英格兰的毛纺织业建立起来以后，为了防止国王因毛呢出口而损失任何一部分羊毛关税，毛呢也被征收同样的税。另外两类是：第一，对葡萄酒征收的税，由于按每吨若干征收，称为吨税；第二，对其他一切货物征收的税，由于按其估定价值每一英镑若干征收，称为磅税。爱德华三世第四十七年，除须缴纳特别税的羊毛、羊皮、皮革和葡萄酒外，一切进出口货物均按每英镑征收六便士。理查二世第十四年，这项税提高到每英镑一先令；但三年后，又降为六便士。亨利四世第二年提高到八便士；同一位君主在位第四年，又提高到一先令。从这时起到威廉三世第九年，这项税一直维持在每英镑一先令。吨税和磅税通常由同一项议会法案授予国王，合称吨税和磅税补助税。磅税补助税长期维持在每英镑一先令，即百分之五，因而在海关用语中，一项补助税逐渐用来表示这种百分之五的普遍税。这项补助税现称旧补助税，至今仍按查理二世第十二年制定的税率簿征收。据说，用税率簿确定应税货物价值的方法，早于詹姆斯一世时代。威廉三世第九年和第十年征收的新补助税，是对大部分货物追加征收百分之五。三分之一补助税和三分之二补助税合在一起，又构成百分之五，两者分别是这一税率的相应部分。1747年的补助税，对大部分货物征收第四个百分之五；1759年的补助税，则对某些特定种类的货物征收第五个百分之五。除这五项补助税外，还不时对特定种类的货物征收种类繁多的其他税，有时是为了应付国家的急需，有时则是依照重商主义的原则调节本国贸易。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p170",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_895"
+      },
+      "contentHash": "1085d46b96255036ea9730fd98a5870e7291e6ebb47c531aa7afac66a234f128",
+      "text": "这种制度逐渐变得越来越流行。旧补助税对出口和进口一概征收。后来四项补助税，以及此后不时对特定种类货物征收的其他税，除少数例外，全部只对进口征收。过去对本国出产和制造的货物征收的大部分出口税，或者已经减轻，或者已经完全取消。在多数情况下，它们已经取消。其中有些货物在出口时甚至获得了奖励金。外国货物进口时缴纳的税，在其出口时也可获得退税，有时退还全部，多数情况下退还一部分。进口时由旧补助税征收的税，出口时只退还一半；但后来各项补助税及其他赋税征收的税，对大部分货物而言，出口时均以同样方式全部退还。这种对出口日益优待、对进口日益抑制的做法，只有少数例外，而这些例外主要涉及某些制造业的原料。我们的商人和制造商愿意让这些原料以尽可能低的价格供给自己，却以尽可能高的价格供给其他国家的对手和竞争者。因此，外国原料有时获准免税进口，例如西班牙羊毛、亚麻和未经漂白的亚麻纱。本国出产的原料以及我国殖民地特产的原料，有时被禁止出口，有时则须缴纳较高的出口税。英格兰羊毛被禁止出口。海狸皮、海狸绒和塞内加尔树胶的出口须缴纳较高的税；因为大不列颠通过征服加拿大和塞内加尔，几乎取得了这些商品的垄断权。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p171",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_896"
+      },
+      "contentHash": "02af84c406cc66f87ab8114f1a0427ab1b44a3bcc2ec7bbd5d3b583765bc861e",
+      "text": "重商主义制度对广大人民的收入，即本国土地和劳动的年产物，不很有利，这一点我已在本书第四篇中力图说明。它对君主的收入似乎也没有更为有利；至少就这种收入依赖关税而言是如此。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p172",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_897"
+      },
+      "contentHash": "bdf9c239a1a5c0241a518ed3da3abd9abb50295636603b68e8feafbc9953ef9c",
+      "text": "由于这种制度，若干种货物被完全禁止进口。这种禁令在某些情况下完全阻止了这些商品的进口，在另一些情况下则迫使进口商不得不走私，从而大大减少了这些商品的进口。它完全阻止了外国毛织品的进口，并大大减少了外国丝织品和天鹅绒的进口。在这两种情况下，它都完全消灭了原本可以从这种进口中征得的关税收入。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p173",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_898"
+      },
+      "contentHash": "3254920a2f7066928fc7e801ca0413bcc08005f800699813d46a431252d07078",
+      "text": "为了抑制许多不同种类的外国货物在大不列颠的消费而对其进口征收的高额税，在许多情况下只起到了鼓励走私的作用；而在一切情况下，都使关税收入低于较温和的税率本可带来的收入。斯威夫特博士有句名言：在关税算术中，二加二有时不等于四，反而只等于一。对于这种重税，这句话完全正确；如果不是重商主义制度教导我们，在许多情况下把征税用作垄断而非获取收入的工具，这些重税绝不可能被征收。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p174",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_899"
+      },
+      "contentHash": "38c0da496f1a382f509fbc3a3c7c2ff2e93c9099d32521b476460b5856c8cb2c",
+      "text": "有时对本国出产和制造的货物出口给予奖励金，以及对大部分外国货物再出口支付退税，造成了许多欺诈，并造成了一种比其他任何走私都更损害公共收入的走私。众所周知，为取得奖励金或退税，货物有时会装船运出海；但不久以后，又在国内其他地方秘密卸回陆地。奖励金和退税造成的关税收入亏损非常巨大，其中很大一部分是以欺诈手段取得的。在截至1755年1月5日的年度中，关税总收入达5,068,000英镑。尽管该年没有谷物出口奖励金，从这项收入中支付的奖励金仍达167,800英镑。凭退税凭单和证明支付的退税达2,156,800英镑。奖励金与退税合计为2,324,600英镑。扣除这些款项后，关税收入仅为2,743,400英镑；再从中扣除用于薪金及其他杂项的287,900英镑管理费用，该年度的关税净收入便为2,455,500英镑。这样计算，管理费用占关税总收入的百分之五至百分之六，并且略高于扣除奖励金和退税支出后所余收入的百分之十。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p175",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_900"
+      },
+      "contentHash": "8f583db739b9c088c21c6f775c62578175cd897284aa04d1e9a04191e47d150e",
+      "text": "由于几乎所有进口货物都被征收重税，我国进口商尽可能多地走私，尽可能少地申报。相反，我国出口商申报的数量却多于实际出口的数量；有时是出于虚荣，为了在无须纳税的货物方面冒充大商人；有时则是为了取得奖励金或退税。由于这些不同的欺诈行为，在海关账簿上，我国的出口显得大大超过进口；这使那些用所谓贸易差额衡量国家繁荣的政治家感到无比欣慰。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p176",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_901"
+      },
+      "contentHash": "ee1cead8dd277aa457742a715a36fae914f08832f276118fc0560c235cc8e286",
+      "text": "一切进口货物，除非得到特别豁免，而这种豁免为数不多，都须缴纳某种关税。任何进口货物如果未列入税率簿，便根据进口商宣誓申报的价值，每二十先令征税四先令九又二十分之九便士，也就是接近五项补助税，或五项磅税。税率簿包罗极广，列举了种类繁多的物品，其中许多很少使用，因而不为人熟知。因此，某种特定货物应归入哪一项目，进而应缴纳何种税，往往难以确定。这方面的错误有时会使海关官员破产，也常常给进口商造成许多麻烦、费用和烦扰。因此，就明晰、精确和明确而言，关税远不如国产消费税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p177",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_902"
+      },
+      "contentHash": "8c90a2d7645b4bac9b46d241147b38b80bb61bc948ad8cba241dda4b147982c9",
+      "text": "要使任何社会的大部分成员按照各自的开支比例向公共收入缴款，似乎没有必要对这种开支中的每一个单项都征税。人们认为，由国产消费税所征得的收入，与由关税所征得的收入一样，在各缴纳者之间负担得同样均衡；而国产消费税只对少数使用和消费最普遍的物品征收。许多人认为，通过适当管理，关税同样可以只限于少数物品，既不使公共收入遭受任何损失，又能给对外贸易带来很大好处。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p178",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_903"
+      },
+      "contentHash": "ae4dfdd58c212a2a5a27ee7e0893f1e0fb1be847d199f9d821bc913b9b7bc10d",
+      "text": "目前，大不列颠使用和消费最普遍的外国物品，看来主要包括外国葡萄酒和白兰地；美洲和西印度群岛的某些产品，如糖、朗姆酒、烟草、椰子等；以及东印度群岛的某些产品，如茶、咖啡、瓷器、各种香料、若干种匹头等。目前，从关税取得的收入，也许大部分来自这些不同的物品。现行的外国制成品税，除上述列举的少数物品所负担的税外，大部分都不是为了取得收入，而是为了垄断，或者为了让我国商人在国内市场上取得优势。倘若取消一切禁令，并根据经验，对所有外国制成品按能使每种物品给公共财政带来最大收入的温和税率征税，我国工人在国内市场上仍可保有相当大的优势；而许多目前不给政府带来任何收入或只带来极少收入的物品，可能带来非常可观的收入。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p179",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_904"
+      },
+      "contentHash": "4b56a84304c60a1ef3f5f57fdea30d35f627419d67c14854c3ebf445245c93c8",
+      "text": "高税有时因减少应税商品的消费，有时因鼓励走私，常常给政府带来的收入反而少于较温和的税本可带来的收入。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p180",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_905"
+      },
+      "contentHash": "a21c96104b53622cd81f09d197961f44a3839aa0de86f4fc5049ddb54f67b038",
+      "text": "当收入减少是消费减少的结果时，只有一种补救办法，那就是降低税率。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p181",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_906"
+      },
+      "contentHash": "0a57ddcefaa0833139bcbc106a09908239825704ffd9307e12c412808206cd39",
+      "text": "当收入减少是鼓励走私的结果时，也许可以用两种办法补救：或者减少走私的诱惑，或者增加走私的困难。只有降低税率，才能减少走私的诱惑；只有建立最适于防止走私的管理制度，才能增加走私的困难。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p182",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_907"
+      },
+      "contentHash": "22db57e8edd852835f2a63d3ffd095c60fd8b3edeb287b1f913dd47644e9631f",
+      "text": "我相信，经验表明，国产消费税法对走私者活动的阻碍和牵制，远比关税法有效。只要在各种税的性质所容许的范围内，把一种尽可能类似国产消费税管理制度的制度引入关税管理，就可以大大增加走私的困难。许多人认为，这种改变很容易实现。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p183",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_908"
+      },
+      "contentHash": "803bbfa8a4171cc65ffbfde235d6e7b8ea8c5d91cd0c8bdd705fbcc3a1d2f855",
+      "text": "有人说，应当允许应缴纳任何关税的商品进口商自行选择：或者把商品运到自己的私人仓库，或者把商品存入由他本人出资或由公共财政出资设置、但钥匙由海关官员掌管且只有当着该官员的面才能开启的仓库。如果商人把商品运到自己的私人仓库，就应立即缴纳税款，此后不得退税；而该仓库应随时接受海关官员的巡查和检验，以确定其中存放的数量与已缴税的数量相符到何种程度。如果他把商品运到公共仓库，则在商品取出供国内消费之前无须缴税。如果取出用于出口，则免税；但必须始终提供适当担保，保证商品确实会如此出口。经营这些特定商品的批发商或零售商，应随时接受海关官员的巡查和检验，并须以适当证明证实其商店或仓库所存全部数量的商品均已缴税。目前，对进口朗姆酒征收的所谓国产消费税，就是以这种方式征收的；同一种管理制度也许可以推广到一切进口货物税，条件始终是，这些税必须像国产消费税一样，只限于少数使用和消费最普遍的货物。如果像目前一样推广到几乎所有种类的货物，就很难设置规模足够大的公共仓库；而性质非常娇贵，或保存时需要悉心照料的货物，商人除自己的仓库外，也无法放心地把它们寄存于任何仓库。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p184",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_909"
+      },
+      "contentHash": "2e1d236a0af62f01af6463887996e2255074c81796cad33be69ee25e6825208a",
+      "text": "如果采用这种管理制度，即使税率相当高，也能在相当大的程度上防止走私；并且，如果每一种税都能不时提高或降低，视哪一种做法最可能给国家带来最大收入而定；征税始终被用作获取收入而绝不用作垄断的工具；那么，看来并非不可能仅从少数使用和消费最普遍的货物的进口税中，取得至少等于现有关税净收入的收入；关税也可由此达到与国产消费税同等程度的简单、确定和精确。在这种制度下，外国货物再出口后又重新卸回陆地并在国内消费，政府目前因此支付退税而损失的收入，将可全部保全。这笔节省下来的款项本身就会非常可观；如果再加上取消对本国出产的货物出口给予的一切奖励金——但那些奖励金实际上是退还先前已垫付的某种国产消费税的情况除外——那么几乎不容怀疑，经过这种改变后，关税净收入完全可以与以往任何时候的水平相等。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p185",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_910"
+      },
+      "contentHash": "637f4ccfcfef47f882b15c18fd657968c1133e740e44ba0596f46ae66e9bc9f9",
+      "text": "如果这种制度改变不会使公共收入蒙受损失，本国的贸易和制造业必定会获得非常可观的好处。未征税商品的贸易——这种商品占绝大多数——将会完全自由，并能以一切可能的有利条件同世界各地开展往来。这些商品将包括一切生活必需品和一切制造业原料。生活必需品的自由进口，只要降低了它们在国内市场上的平均货币价格，就会降低劳动的货币价格，但丝毫不会降低劳动的实际报酬。货币的价值与它所能购买的生活必需品数量成比例。生活必需品的价值则完全不取决于用它们所能换得的货币数量。劳动货币价格的降低，必然伴随着一切本国制成品的货币价格按比例降低，从而使这些制成品在所有外国市场上取得某种优势。原料的自由进口，会使某些制成品的价格以更大的比例下降。如果生丝能够从中国和印度斯坦免税进口，英格兰的丝织品制造商就能以远低于法国和意大利制造商的价格出售产品。届时将没有必要禁止外国丝织品和天鹅绒进口。我国工人的货物价格低廉，不仅能确保他们占有国内市场，而且能使他们在外国市场上占有很大的支配地位。即使应税商品的贸易，也会比目前有利得多。如果这些商品从公共仓库提出用于出口国外，在这种情况下免除一切税款，其贸易便会完全自由。在这种制度下，各种货物的转运贸易都将享有一切可能的有利条件。如果这些商品从仓库提出供国内消费，由于进口商在有机会把货物卖给某个经销商或某个消费者之前无须垫付税款，他便总能以低于进口时即须垫税情况下的价格出售。在税额相同的情况下，按照这种方式，即使是应税商品的对外消费贸易，也能以比目前有利得多的条件经营。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p186",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_911"
+      },
+      "contentHash": "ab316338a79de323cd55498e3469ae2ca2a843ba6d8f8b283680cf08051a3a9b",
+      "text": "罗伯特·沃波尔爵士著名的国产消费税方案，其目的就是针对葡萄酒和烟草建立一种与这里所提议的制度并非十分不同的制度。不过，尽管当时提交议会的法案只包括这两种商品，人们却普遍认为，它意在为范围更广的同类方案开辟道路。党派势力与走私商人的利益相结合，对该法案掀起了极其激烈、尽管极不公正的喧嚣，以致这位大臣认为最好放弃它；由于害怕激起同样的喧嚣，他的继任者无一敢于重提这一计划。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p187",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_912"
+      },
+      "contentHash": "e2fb8e603e9c24a1119c352ed91d46e02cc1f1bd9fff7ef2d9ab1075a1bacea7",
+      "text": "对进口供国内消费的外国奢侈品征收的税，虽然有时落在穷人身上，却主要落在拥有中等或中等以上财产的人身上。例如，对外国葡萄酒、咖啡、巧克力、茶、糖等征收的税就是如此。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p188",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_913"
+      },
+      "contentHash": "a7ff9be1d8c1d1042c6d4de276ed9006a668f155ff802c3a4cd36da5c413560a",
+      "text": "对本国出产、供国内消费的较廉价奢侈品征收的税，按照各个等级人们各自的开支比例，相当均等地落在他们身上。穷人为自己消费的麦芽、啤酒花、啤酒和麦酒缴税；富人则既为自己的消费缴税，也为其仆人的消费缴税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p189",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_914"
+      },
+      "contentHash": "97634eb29394b6253129632a4879e2f1e62581f3c23adf5f62a719eed82df537",
+      "text": "必须注意，在每一个国家，下等阶层，即中等阶层以下的人，其消费总量无论在数量上还是在价值上，都远远大于中等阶层和中等阶层以上的人。下等阶层的支出总额远远大于上等阶层。第一，几乎每个国家的全部资本，每年都以生产性劳动工资的形式分配给下等阶层。第二，来自土地地租和资本利润的收入中，有很大一部分每年也以仆役及其他非生产性劳动者的工资和生活费用的形式，分配给同一阶层。第三，一部分资本利润也属于同一阶层，是他们运用小额资本所得的收入。小店主、手艺人和各种零售商每年获得的利润总额，在各地都相当可观，并构成年产物中相当可观的一部分。第四，也是最后一点，甚至一部分土地地租也属于同一阶层；其中相当大的一部分属于略低于中等阶层的人，甚至还有一小部分属于最低阶层；普通劳动者有时也拥有一两英亩土地。因此，这些下等阶层的人若逐个来看，支出虽很少，但若合在一起看，其支出的总量总是占全社会总支出的最大部分；本国土地和劳动的年产物中留下来供上等阶层消费的部分，无论在数量上还是在价值上，总是少得多。因此，主要落在上等阶层支出上，即落在年产物较小部分上的消费税，其收入很可能远少于不加区别地落在所有阶层支出上的税，甚至也少于主要落在下等阶层支出上的税；也就是说，远少于不加区别地落在全部年产物上的税，或主要落在其中较大部分上的税。因此，在各种不同的消费税中，对国产发酵酒和蒸馏酒的原料及制造所征的消费税，收入远为丰厚；而这一项消费税在很大程度上，也许主要落在普通民众的支出上。在截至1775年7月5日的一年中，这一项消费税的总收入达到3,341,837镑9先令9便士。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p190",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_915"
+      },
+      "contentHash": "dcb0e831135b4052a4f76a5f2115f89dd77614d43d21b14a5bb36690b12a4417",
+      "text": "不过，必须始终记住，应当征税的只能是下等阶层的奢侈性支出，而绝不应是他们的必要支出。对其必要支出征收的任何税，最终都会全部落在上等阶层身上；落在年产物中较小的部分，而不是较大的部分上。这种税在任何情况下，不是提高劳动工资，就是减少对劳动的需求。它若不把税款的最终负担转嫁给上等阶层，就不可能提高劳动工资。它若不减少本国土地和劳动的年产物，即一切税收最终都必须由之支付的基金，就不可能减少对劳动的需求。无论这种税把对劳动的需求降低到何种状态，它总会使该状态下的工资高于没有这种税时的水平；而这种工资增加额的最终负担，在任何情况下都必然落在上等阶层身上。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p191",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_916"
+      },
+      "contentHash": "83a54cc12b090929df142fb470d1b8c966f1d6ede84efc1c41534282eba607f3",
+      "text": "在大不列颠，并非为出售而是为自用酿造的发酵酒和蒸馏的烈酒，不缴纳任何消费税。这种豁免的目的，是使私人家庭免受税吏令人厌恶的登门查验，但它却往往使这些税对富人的负担远轻于穷人。诚然，自行蒸馏供私人使用的做法并不很常见，尽管有时也有人这样做。但在乡间，许多中等家庭和几乎所有富裕显贵之家，都自己酿造啤酒。因此，他们的浓啤酒每桶成本比营业酿酒商低八先令，因为营业酿酒商不仅要从其垫付的其他一切费用上取得利润，也要从税款上取得利润。因此，这类家庭饮用自己的啤酒，每桶必定至少比普通民众饮用任何同等品质的酒便宜九至十先令；而普通民众在各地都是从酿酒厂或啤酒馆一点一点地购买啤酒更为方便。同样，供私人家庭使用而制造的麦芽，也不受税吏登门查验；但在这种情况下，该家庭必须按每人七先令六便士折缴税款。七先令六便士相当于十蒲式耳麦芽的消费税；平均说来，这个数量完全相当于任何生活有节制的家庭中男女老幼所有成员可能消费的数量。但在富裕显贵之家，乡间款客之风盛行，家庭成员所饮用的麦芽酒只占全家消费量的一小部分。不过，或许是由于这种折缴办法，或许是由于其他原因，自制麦芽供私人使用远不像自酿啤酒那样普遍。很难想象有什么公平的理由，可以使那些为私人使用而自行酿造或蒸馏的人不必缴纳同类的折缴税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p192",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_917"
+      },
+      "contentHash": "e541705b3eb2b56c570957c2ac5d66ebd6f5fae206a6183bf803d6166808b5da",
+      "text": "人们常说，对麦芽征收一种轻得多的税，所能取得的收入可能超过目前对麦芽、啤酒和麦酒征收的全部重税所得；因为在酿酒厂中逃骗税收的机会比在制麦芽厂中多得多，而且为私人使用而酿酒的人可以免缴一切税款或折缴税，而为私人使用而制造麦芽的人却没有这种豁免。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p193",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_918"
+      },
+      "contentHash": "1ccfc805d738245cdd21d1500b9994b1c74b848c3bf46a35b9b1d0843ddc1df1",
+      "text": "在伦敦的波特啤酒酿酒业中，一夸特麦芽通常可以酿成两桶半以上、有时三桶波特啤酒。对麦芽征收的各种税合计每夸特六先令；对浓啤酒和麦酒征收的各种税合计每桶八先令。因此，在波特啤酒酿酒业中，对麦芽、啤酒和麦酒征收的各种税，就每夸特麦芽的产物而言，合计在二十六至三十先令之间。在乡间为当地一般销售而经营的酿酒业中，一夸特麦芽很少酿成少于两桶浓啤酒和一桶淡啤酒，常常可酿成两桶半浓啤酒。对淡啤酒征收的各种税合计每桶一先令四便士。因此，在乡间酿酒业中，对麦芽、啤酒和麦酒征收的各种税，就每夸特麦芽的产物而言，很少少于二十三先令四便士，往往达到二十六先令。因此，按全国平均计算，对麦芽、啤酒和麦酒所征税款的总额，就每夸特麦芽的产物而言，不能估计为少于二十四或二十五先令。但据说，如果取消对啤酒和麦酒征收的各种税，并把麦芽税提高到原来的三倍，即从每夸特六先令提高到十八先令，那么仅这一种税所能取得的收入，就会超过目前所有那些较重税收的收入。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p194",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_919"
+      },
+      "contentHash": "1fe6eb306807d9fcf4bb2264fca857e655a67966e2a56e5879ca939dccb8ec9f",
+      "text": "诚然，旧麦芽税中包括对每大桶苹果酒征收的四先令税，以及对每桶蒙啤酒征收的十先令税。1774年，苹果酒税只取得3,083镑6先令8便士的收入。这可能略低于通常数额，因为那一年对苹果酒征收的各种税，其收入都低于往常。蒙啤酒税虽重得多，但由于这种酒的消费量较小，收入还要更少。不过，为了抵偿这两种税通常可能取得的任何数额，所谓乡间消费税中还包括：第一，对每大桶苹果酒征收六先令八便士的旧消费税；第二，对每大桶酸葡萄汁征收同样为六先令八便士的税；第三，对每大桶醋征收八先令九便士的另一种税；最后，第四种是对每加仑蜂蜜酒或香料蜜酒征收十一便士的税。这几种税的收入，很可能远远超过所谓年度麦芽税对苹果酒和蒙啤酒所征税款的收入。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p195",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_920"
+      },
+      "contentHash": "4519975d36c35d1a1c8c84deaaa8d695a37b9b3d278042050718916b388c2c1b",
+      "text": "麦芽不仅用于酿造啤酒和麦酒，也用于制造初馏酒和烈酒。如果麦芽税提高到每夸特十八先令，那么对于以麦芽作为部分原料的那些特定种类的初馏酒和烈酒，可能有必要酌减对它们征收的各种消费税。在所谓麦芽烈酒中，麦芽通常只占原料的三分之一；其余三分之二或全是未制成麦芽的大麦，或由三分之一大麦和三分之一小麦组成。在麦芽烈酒蒸馏业中，走私的机会和诱惑都远大于酿酒厂或制麦芽厂；机会更大，是因为这种商品体积更小、价值更高；诱惑更大，是因为税率更高，每加仑烈酒的税额达到3先令10又2/3便士。提高麦芽税而降低蒸馏业所负的税，既会减少走私的机会，也会减弱走私的诱惑，从而可能使税收进一步增加。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p196",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_921"
+      },
+      "contentHash": "5472a1d60927e58545eb0df9a536fb1b643fa941f5953a2d7e72f90e36a7cbd0",
+      "text": "一段时间以来，大不列颠的政策一直是抑制烈酒的消费，因为人们认为烈酒容易损害普通民众的健康，败坏他们的道德。按照这一政策，蒸馏业税款的减免不应大到在任何程度上降低这些酒的价格。烈酒的昂贵程度可以一如既往；与此同时，有益健康并能振奋精神的啤酒和麦酒，其价格却可以显著降低。这样，民众目前最常抱怨的负担之一就可以得到部分减轻，同时税收也可以大幅增加。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p197",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_922"
+      },
+      "contentHash": "8090119f859d2e72796171501decbb17e15649dc7172b4c872ba728f2bcb5ba0",
+      "text": "达文南特博士对这种改变现行消费税制度的意见，看来没有根据。他的反对理由是：就这种税对利润的影响而言，它不再像目前这样相当平均地分摊在制麦芽商、酿酒商和零售商的利润上，而会全部落在制麦芽商的利润上；制麦芽商无法像酿酒商和零售商通过提高酒价那样容易地通过提高麦芽价格收回税款；而且，对麦芽征收如此重的税，可能会减少大麦田的地租和利润。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p198",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_923"
+      },
+      "contentHash": "c21820557d28a5b186c5115a1a4521f230e442f55449955b96585cd7b2cadfab",
+      "text": "任何税都不可能在相当长的时期内降低某一特定行业的利润率，因为该行业的利润率必定始终与邻近地区其他行业的利润率保持同一水平。目前对麦芽、啤酒和麦酒所征的税，并不影响这些商品经营者的利润，因为他们都通过提高商品价格收回税款，并在税款上取得额外利润。诚然，一种税可能使其所征商品变得非常昂贵，从而减少其消费。但麦芽是在麦芽酒中消费的；对每夸特麦芽征收十八先令的税，不大会使这类酒比目前合计二十四或二十五先令的各种税所造成的价格更高。相反，这类酒的价格很可能降低，其消费更可能增加而不是减少。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p199",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_924"
+      },
+      "contentHash": "c08d0b8ac59081ac1ae7532770014ac79e5efca4b0f92cc622e3a6b841ad10a5",
+      "text": "为什么制麦芽商通过提高麦芽价格收回十八先令，会比目前酿酒商通过提高酒价收回二十四或二十五先令、有时三十先令更加困难，这一点很不容易理解。诚然，制麦芽商将不再是为每夸特麦芽垫付六先令的税，而必须垫付十八先令的税。但酿酒商目前每酿造一夸特麦芽，就必须垫付二十四或二十五先令、有时三十先令的税。要制麦芽商垫付较轻的税，不可能比目前要酿酒商垫付较重的税更为不便。制麦芽商在仓库中存放的麦芽存货，售出所需的时间并不总是比酿酒商经常存放在地窖中的啤酒和麦酒存货更长。因此，前者往往可以和后者一样快地收回资金。不过，无论制麦芽商因不得不垫付较重税款而受到何种不便，只要给予他的纳税宽限期比目前通常给予酿酒商的期限长几个月，就很容易补救。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p200",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_925"
+      },
+      "contentHash": "234562aff3dc1bde158f1b26603b1a328c3bd474c8ebb40044d6ac51e6316612",
+      "text": "凡不减少对大麦需求的事物，都不可能减少大麦田的地租和利润。但是，如果通过制度改革，把酿成啤酒和麦酒的每夸特麦芽所负税款从二十四或二十五先令降到十八先令，这种改革更可能增加而不是减少这种需求。此外，大麦田的地租和利润，必定始终与肥沃程度相同、耕作同样良好的其他土地的地租和利润大致相等。如果前者较低，一部分大麦田很快就会改作其他用途；如果前者较高，很快就会有更多土地改种大麦。当某种特定土地出产物的通常价格处在可以称为垄断价格的水平时，对它征税必然会减少出产它的土地的地租和利润。某些名贵葡萄园所产葡萄酒远远不能满足有效需求，因而其价格相对于肥沃程度相同、耕作同样良好的其他土地的产物而言，总是高于自然比例；对这种葡萄酒征税，必然会减少这些葡萄园的地租和利润。这种葡萄酒的价格，已经是在通常送往市场的数量下所能取得的最高价格；如果不减少该数量，价格就不可能再提高；而数量又不能减少，否则损失会更大，因为这些土地无法转而生产任何其他价值相等的产物。因此，税收的全部负担都会落在地租和利润上；严格说来，是落在葡萄园的地租上。每当有人提议对糖征收任何新税时，我们的植糖园主常常抱怨说，这种税的全部负担不是落在消费者而是落在生产者身上；因为征税之后，他们从来无法把糖价提高到税前水平以上。看来，税前的糖价已经是垄断价格；而人们用来说明糖不适合作为征税对象的论据，或许恰恰证明了它是适当的征税对象，因为只要能够触及，垄断者的收益无疑是所有对象中最适宜征税的。不过，大麦的通常价格从来不是垄断价格，大麦田的地租和利润相对于肥沃程度相同、耕作同样良好的其他土地，也从来没有高于其自然比例。对麦芽、啤酒和麦酒所征的各种税，从未压低大麦价格，也从未减少大麦田的地租和利润。酿酒商购买麦芽的价格，总是随着对麦芽所征税款成比例地上涨；这些税连同对啤酒和麦酒所征的各种税，也总是或者提高消费者所付的价格，或者——结果相同——降低这些商品的质量。这些税的最终负担始终落在消费者而不是生产者身上。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p201",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_926"
+      },
+      "contentHash": "775f81892025c31ba00acd5c553cfad9d6fd05a82dfa02615e0b7d10b0f6022a",
+      "text": "这里提议的制度改革，唯一可能使之受损的是那些为自己私人使用而酿酒的人。但这个上等阶层目前对于穷苦劳动者和手艺人所缴纳的极重税款享有豁免，这无疑是极不公正、极不平等的，即使这项改革永远不会实行，这种豁免也应当取消。不过，很可能正是这个上等阶层的利益，迄今阻止了这种既几乎必然会增加税收、又会减轻民众负担的制度改革。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p202",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_927"
+      },
+      "contentHash": "944c935f4b45bed6f2f477cc4530adfb27e1fbc63902b28a921352117ab5ce4d",
+      "text": "除上述关税和消费税之类的税外，还有另外几种税以更不均等、更间接的方式影响商品价格。其中包括法语所谓的“Péages”，在古撒克逊时代所谓的“通行税”。这类税看来最初是为了与我国收费公路通行费，或我国运河和通航河流所收通行费相同的目的而设立的，即用于维护道路或航运。用于这些目的时，最适宜按照货物的体积或重量征收。由于它们最初是地方性和省区性的税收，用于地方和省区的用途，其管理在多数情况下便委托给征收地所在的特定城镇、教区或领地；人们认为这类共同体理应以某种方式对税款的用途负责。在许多国家，完全无须负责的君主已把这些税的管理权收归自己；他虽然在多数情况下大幅提高了税额，却又在许多情况下完全忽视了税款的用途。如果大不列颠的收费公路通行费有朝一日成为政府的一项财源，我们可以从许多其他国家的事例中看出很可能会产生什么后果。这类通行费无疑最终由消费者支付；但如果消费者支付的税不是按照其所消费物品的价值，而是按照其体积或重量计算，那么他所纳的税就不与其支出成比例。当这类税不是按照货物的体积或重量，而是按照货物的估定价值征收时，严格说来，它们就成为一种内地关税或消费税，极大地阻碍一切商业部门中最重要的一支，即本国的国内商业。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p203",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_928"
+      },
+      "contentHash": "a50d056e7d30563a3eac15e6b0e1f29dd5b83d0c2b8985b5f6b99a8f729f4ccb",
+      "text": "在一些小国，对从一个外国经陆路或水路穿越本国领土运往另一个外国的货物，也征收与上述通行税相似的税。在一些国家，这种税称为过境税。坐落在波河及其支流沿岸的一些意大利小邦，从这类税中取得一部分收入；这些税全部由外国人缴纳，而且或许是一个国家在不以任何方式阻碍本国产业或商业的情况下，所能向另一国臣民征收的唯一税种。世界上最重要的过境税，是丹麦国王对所有通过松德海峡的商船所征的税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p204",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_929"
+      },
+      "contentHash": "32a86e911dae2c2a26ae9c4740333be2a0663fcb5db36e2bfad9ce527733c471",
+      "text": "对奢侈品征收的此类税，例如大部分关税和消费税，虽然无差别地落在各种不同的收入上，并且最终都由消费应税商品的人支付而得不到任何回报，却并不总是平等地或按比例地落在每个人的收入上。由于每个人的消费程度由其性情决定，每个人纳税与其说是按收入比例，不如说是按自己的性情；挥霍者缴纳的多于其应有比例，节俭者则少于其应有比例。一个拥有巨额财富的人在未成年期间，通常很少通过消费来帮助维持那个保护他并使他获得巨额收入的国家。居住在另一个国家的人，并不通过消费为其收入来源所在国的政府提供任何维持费用。如果后一个国家既不征收土地税，也不对动产或不动产的转让征收任何可观的税，如爱尔兰的情形，那么这种离境地主便可能从一个政府的保护中获得巨额收入，却不为维持该政府贡献一先令。这种不平等，在一国政府某些方面从属于并依赖另一国政府的国家里，可能最为严重。在这种情况下，在从属国拥有最广大财产的人，通常会选择住在统治国。爱尔兰恰好处于这种境地，因此，向离境者征税的提议在该国如此受欢迎，我们并不应感到惊讶。也许，要确定一个人因何种形式或何种程度的离境而应作为离境者纳税，或者这种税究竟应从何时开始或终止，会有一点困难。不过，除去这种非常特殊的情形，由此类税收可能造成的个人缴纳不平等，远远被造成这种不平等的那个情况所补偿；这个情况就是，每个人的缴纳完全出于自愿，因为是否消费应税商品完全由他自己决定。因此，此类税收如果核定得当并征于适当的商品，就比任何其他税收更少引起抱怨。当税款由商人或制造商垫付时，最终支付税款的消费者很快就会把税款同商品价格混为一体，几乎忘记自己缴纳了任何税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p205",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_930"
+      },
+      "contentHash": "c8270437e51c0710aef098dc72bf336e03baed31e8c95a30f8ee85e257783483",
+      "text": "此类税收是或可以是完全确定的，也可以采用一种核定方式，使人们对于应缴多少或何时应缴，即对于缴纳的数额或时间，都毫无疑问。大不列颠的关税或其他国家的同类税收有时无论存在何种不确定性，都不可能出自这些税收本身的性质，而只能出自规定这些税收的法律在表述上的不准确或不高明。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p206",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_931"
+      },
+      "contentHash": "563c8f48b6a68be60701ad838ccda89925ff86692f5f65febbb10cf7579d7e5d",
+      "text": "奢侈品税通常可以而且总是能够零星缴纳，或者随着纳税者需要购买应税商品而按比例缴纳。在缴纳的时间和方式方面，它们是或可以是所有税收中最便利的。因此，总的说来，此类税收也许与税收四项一般准则中的前三项一样相符，不亚于任何其他税收。但它们在每一个方面都违背第四项准则。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p207",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_932"
+      },
+      "contentHash": "873168a1f35f2e46db8337ae0a159288d6034a3f8b2f3e730c0cf3bf353978f2",
+      "text": "同它们给国家国库带来的收入相比，此类税收从人民口袋中取走或阻止进入人民口袋的钱，总是多于几乎任何其他税收。它们似乎通过所有四种可能的方式做到这一点。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p208",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_933"
+      },
+      "contentHash": "fab5ada3c1034164ac8248e3d94011df7e56a807a78ffad82c513f2a73e82efc",
+      "text": "第一，即使以最明智的方式征收此类税收，也需要大批海关和消费税官员，他们的薪金和额外收入是人民承担的一项实际税负，却不给国家国库带来任何收入。不过，必须承认，这项费用在大不列颠比在大多数其他国家低。截止于1775年7月5日的那一年，由英格兰消费税专员管理的各项税收，收入总额为5,507,308镑18先令8¼便士，征收费用略高于百分之五点五。不过，从这项总收入中，必须扣除对消费税应税商品出口所支付的奖励金和退税，这将使净收入降至五百万镑以下。盐税虽属消费税，却由另一机构管理，其征收费用高得多。关税净收入不到二百五十万镑，而官员薪金及其他杂费所构成的征收费用则超过百分之十。但是，海关官员的额外收入处处都远高于其薪金；在有些港口，这种额外收入是薪金的两倍或三倍以上。因此，如果官员薪金和其他杂费占关税净收入的百分之十以上，那么征收这项收入的全部费用，包括薪金和额外收入在内，可能达到百分之二十或三十以上。消费税官员很少或根本没有额外收入；而且，这一税收部门设立较晚，通常不如海关腐败，长期以来，海关中已经产生并认可了许多弊端。据认为，如果将目前通过麦芽和麦芽酒各项不同税收所征得的全部收入都改为向麦芽征收，每年消费税的征收费用可节省五万多镑。如果把关税限制在少数几种商品上，并依照消费税法征收这些税，每年关税的征收费用大概可以节省得更多。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p209",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_934"
+      },
+      "contentHash": "72f58772544e7d38dcf55d568cb4d651254477f72428849d6fb3e22578f98e9e",
+      "text": "第二，此类税收必然会对某些产业部门造成一定的阻碍或抑制。因为它们总会提高应税商品的价格，所以会在这一程度上抑制其消费，从而抑制其生产。如果它是本国种植或制造的商品，用于种植和生产它的劳动就会减少。如果它是因征税而以这种方式涨价的外国商品，那么本国制造的同类商品确实可能因此在国内市场上获得某种优势，并可能有更多的国内产业因此转向生产这些商品。但是，外国商品的这种涨价虽然可能鼓励国内某一特定部门的产业，却必然抑制几乎所有其他部门的产业。伯明翰制造商购买外国葡萄酒的价格越高，他就必然越廉价地出售用来换取这种葡萄酒的那部分五金制品，或者同样可以说，越廉价地出售其价款被用来购买葡萄酒的那部分五金制品。因此，那部分五金制品对他的价值变小了，他从事这项生产的动力也就减弱了。一国消费者为另一国的剩余产品支付的价格越高，他们就必然越廉价地出售本国用来换取这些产品的那部分剩余产品，或者同样可以说，越廉价地出售其价款被用来购买这些产品的那部分本国剩余产品。那部分本国剩余产品对他们的价值变小了，他们增加其数量的动力也就减弱了。因此，所有消费品税都有使生产性劳动的数量低于原本水平的倾向：如果应税商品是本国商品，就会减少用于生产应税商品的劳动；如果是外国商品，就会减少用于生产购买这些商品所用商品的劳动。此类税收还总会或多或少地改变一国产业的自然方向，使它转入一条总与其自行发展时不同、而且通常较为不利的渠道。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p210",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_935"
+      },
+      "contentHash": "7eaec5014b2418a2823ca9a6221b60c842eb3c27c0eba7f03d2db013de77465b",
+      "text": "第三，通过走私逃避此类税收的希望，经常导致没收及其他处罚，使走私者彻底破产；这种人违反本国法律无疑应受严厉谴责，但其行为往往根本不可能违反自然正义的法则；如果本国法律没有把自然从未规定为犯罪的事情定为犯罪，他本会在各方面都是一名优秀公民。在那些腐败的政府之下，人们至少普遍怀疑存在大量不必要的开支和对公共收入的严重滥用，因而维护税收的法律很少受到尊重。只要无需作伪证便能找到任何容易而安全的机会，很少有人会因走私而心存顾忌。购买走私商品显然是在鼓励违反税收法以及几乎总与之相伴的伪证行为，但若有人声称对此心存顾忌，在大多数国家都会被视为一种迂腐的虚伪；这种做派不但不能赢得任何人的信任，反而只会使故意如此行事的人遭到怀疑，被认为比大多数邻人更加奸诈。由于公众的这种宽容，走私者往往受到鼓励，继续从事一种他由此学会视为在某种程度上无辜的营生；而当严厉的税收法即将惩处他时，他往往会用暴力保卫自己一向视为正当财产的东西。他起初或许只是轻率而非邪恶，到最后却往往变成最大胆、最顽固的社会法律违反者之一。走私者破产时，他原先用于维持生产性劳动的资本，便被国家收入或税务官员的收入所吸收，并被用于维持非生产性劳动，从而减少社会的总资本，以及这项资本原本可以维持的有用产业。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p211",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_936"
+      },
+      "contentHash": "648e594ee8da4f5a12bef48b498bc838103159d1bd0cb805afa369cd576ce67f",
+      "text": "第四，此类税收至少使应税商品的经销商受到收税人的频繁造访和令人厌恶的检查，无疑有时使他们遭受某种程度的压迫，并总给他们带来许多麻烦和烦恼；烦恼虽然如前所述，严格说来并不是费用，却肯定等同于每个人为摆脱它而愿意付出的费用。在这方面，消费税法虽然在实现其制定目的上更为有效，却比关税法更令人烦恼。商人进口了须缴纳某种关税的商品，缴清关税，并把商品存入自己的仓库以后，在大多数情况下，不会再受到海关官员的任何麻烦或骚扰。消费税应税商品的情况则不同。经销商无法摆脱消费税官员不断的造访和检查。因此，消费税比关税更不得人心，征收消费税的官员也是如此。据称，这些官员虽然一般说来也许履行职责完全不亚于海关官员，但由于其职责迫使他们频繁地给某些邻人带来很大麻烦，通常会形成某种海关官员往往没有的冷酷性格。不过，这种说法很可能仅仅出自欺诈性经销商的暗示，他们的走私活动因这些官员的勤勉而被阻止或查获。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p212",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_937"
+      },
+      "contentHash": "98767e0e6f5548d0c5be4cd1d0ecbf47a44f4f209ab01ffc75859642d38e3893",
+      "text": "不过，消费品税或许在某种程度上不可避免的种种不便，落在大不列颠人民身上，并不比落在任何政府开支与其大致相当的其他国家人民身上更重。我们的状况并不完美，也可以改善；但它同我们大多数邻国的状况一样好，甚至更好。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p213",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_938"
+      },
+      "contentHash": "6aa4570889d823d8e85b6285585675cce2ebf7fc680635c1d9ab9c36f7ec3082",
+      "text": "由于人们认为消费品税是对商人利润征收的税，有些国家便在商品每次接连出售时重复征收这些税。如果进口商人或制造商人的利润应当纳税，平等原则似乎就要求，介于这两者中的任何一方与消费者之间的所有中间买主的利润也同样纳税。西班牙著名的阿尔卡瓦拉税似乎就是根据这一原则设立的。它起初是百分之十，后来是百分之十四，现在则只有百分之六，征于每一种财产的出售，无论动产还是不动产；而且财产每次出售都要重复征收。征收这种税需要大批税务官员，其人数必须足以监视商品的运输，不仅要监视商品从一省运往另一省，而且要监视从一家商店运往另一家商店。这使不仅某些种类商品的经销商，而且各种商品的经销商、每个农场主、每个制造商、每个商人和店主，都要不断受到收税人的造访和检查。在设有这种税收的国家的大部分地区，任何产品都无法为远销而生产。该国每个地区的产量都必须与邻近地区的消费量相称。因此，乌斯塔里兹把西班牙制造业的毁灭归咎于阿尔卡瓦拉税。他本来也可以把农业的衰落归咎于这种税，因为它不仅征于制成品，也征于土地的原生产物。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p214",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_939"
+      },
+      "contentHash": "5127e21a0f492ecda09866515d4a70f5f1f302b8b35af093f89df244db3678a7",
+      "text": "那不勒斯王国有一种类似的税，税率为所有契约价值的百分之三，因而也征于所有买卖契约的价值。它比西班牙的税轻，而且大部分城镇和教区获准缴纳一笔议定款来代替它。他们可以按自己愿意的方式征收这笔议定款，通常采用一种不妨碍当地内部商业的方式。因此，那不勒斯的这种税远不如西班牙的税具有毁灭性。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p215",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_940"
+      },
+      "contentHash": "a389b71e0413a172ea4b8f13a2b98a2477411c00ed4e9aecb6978b4c62050fd2",
+      "text": "大不列颠联合王国各地实行统一的税收制度，只有少数无关紧要的例外，这使国内的内部商业，即内陆贸易和沿海贸易，几乎完全自由。内陆贸易几乎完全自由，大部分商品都可以从王国的一端运往另一端，无须任何许可证或通行证，也不受税务官员的盘问、造访或检查。虽有少数例外，但这些例外不至于妨碍国内商业的任何重要部门。沿海运输的商品确实需要证明书或沿海运输许可证。不过，除煤以外，其余商品几乎全都免税。内部商业的这种自由是税收制度统一的结果，也许是大不列颠繁荣的主要原因之一；因为每一个大国必然都是其本国产业大部分产品的最好、最广大的市场。如果同样的自由能因同样的统一而扩展到爱尔兰和各殖民地，那么国家的强盛和帝国各地的繁荣，大概都会比目前更为可观。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p216",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_941"
+      },
+      "contentHash": "d04eafeb04986246fd2db08c6970df1d8014b41589ed593bb2a4b5af06ae082d",
+      "text": "在法国，各省实行不同的税收法，为了阻止某些商品输入或使其输入须缴纳某些税，不仅需要大批税务官员包围王国边境，还要包围几乎每个省的边界，这对该国的内部商业造成了不小的妨碍。有些省获准为加贝尔税即盐税缴纳议定款。有些省则完全免征这种税。有些省不受包税总商在王国大部分地区享有的烟草专卖权约束。相当于英格兰消费税的间接税，在各省差异很大。有些省免征这种税，改缴议定款或等价税款。在实行并包征这种税的各省，还有许多仅限于某个特定城镇或地区的地方税。相当于我国关税的通行税，把王国分为三大部分：第一，适用1664年税则的各省，称为五大税区省份，其中包括皮卡第、诺曼底和王国大部分内地省份；第二，适用1667年税则的各省，称为视同外国的省份，其中包括大部分边境省份；第三，据说按外国待遇处理的各省；这些省获准同外国自由通商，因此，在同法国其他省份贸易时，须缴纳与其他外国相同的税。这些地方是阿尔萨斯、梅斯、图尔和凡尔登三个主教区，以及敦刻尔克、巴约讷和马赛三个城市。在五大税区省份（之所以这样称呼，是因为关税在古代被划分为五大部门，每个部门原来分别包征，尽管现在已全部合并为一个包税机构）和所谓视同外国的省份，都有许多仅限于某个特定城镇或地区的地方税。甚至在所谓按外国待遇处理的省份，也有一些这样的税，尤其是在马赛市。为了守卫实行如此不同税收制度的这些不同省份和地区的边界，国内商业所受的限制和税务官员的人数必然会增加到何种程度，自无须说明。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p217",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_942"
+      },
+      "contentHash": "fee06c0bd1684c4d465afe8aa3d3876e543ec157698590d32fee84ad4b18cca4",
+      "text": "除了这种复杂税收法体系造成的一般限制外，在大部分省份，葡萄酒贸易还受到特殊限制；葡萄酒也许是法国仅次于谷物的最重要产品。这些限制源于某些省份和地区的葡萄园比其他地方的葡萄园受到更多优待。我相信可以发现，最以葡萄酒闻名的省份，正是这种商品的贸易受到此类限制最少的省份。这些省份所享有的广大市场，既鼓励人们精心经营葡萄园的栽培，也鼓励人们精心从事葡萄酒的后续加工。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p218",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_943"
+      },
+      "contentHash": "170a28ae463059775f3b0fd43cc8772d0b9f4adb6b35d63be2892235314d5c97",
+      "text": "这种种不同而复杂的税收法并非法国所独有。小小的米兰公国被划分为六个省，每个省对若干种不同消费品都有一套不同的税收制度。帕尔马公爵更小的领地被划分为三个或四个部分，每一部分也同样各有一套制度。在这种荒谬的管理之下，若非土壤极其肥沃、气候极为优越，没有什么能防止这些国家迅速倒退到最贫困、最野蛮的状态。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p219",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_944"
+      },
+      "contentHash": "0b17a08782f0221dfef37f7da68b4e87104e286af4eede1e9d1940d788458d33",
+      "text": "消费品税既可以由一个官员由政府任命并直接向政府负责的行政机构征收，在这种情况下，税收收入必然会随着税收产额不时发生的变化而逐年变动；也可以按一笔固定租金包给包税人征收，允许包税人任命自己的官员，这些官员虽有义务按照法律规定的方式征税，却受包税人的直接监督，并直接向他负责。征税的最好、最节俭的方式绝不可能是包税制。除支付约定租金、官员薪俸和全部管理费用所必需的数额以外，包税人总要从税收产额中取得一定的利润，这项利润至少须与他垫付的资本、承担的风险、付出的辛劳，以及经营这样一种极其复杂的事务所需要的知识和技能相称。政府若在自己的直接监督之下设立一个与包税人所设机构同类的行政机构，至少可以节省这项几乎总是高得惊人的利润。承包任何一项数额可观的公共收入，都需要巨额资本或很高的信用；单是这些条件，就会把这种承包事业的竞争限制在极少数人之内。在拥有这种资本或信用的少数人中，具备必要知识或经验的人更少；这一情况又进一步限制了竞争。那极少数有条件参加竞争的人，发现彼此联合起来更符合自己的利益；他们不做竞争者，反而成为合伙人，并且在包税权付诸拍卖时，只肯提出一个远低于其实际价值的租金额。在公共收入实行包税制的国家，包税人通常是最富有的人。他们的财富本身就会激起公众的愤慨，而暴发户式财富几乎总会伴有的虚荣，以及他们通常借以炫示这种财富的愚蠢排场，更加激起这种愤慨。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p220",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_945"
+      },
+      "contentHash": "78d3337cdb141ad3bb9aa4bea613392680ac50a8fbfd27626f6a6790e86f3056",
+      "text": "凡是惩罚任何逃避纳税企图的法律，公共收入的包税人从来不会觉得过于严厉。他们对纳税人毫无怜悯之心，因为纳税人并不是他们的臣民，而且即使所有纳税人在包税期满后的第二天全都破产，他们的利益也不会受到多大影响。在国家最为危急的时候，君主对其收入足额缴纳的焦虑必然最为强烈，他们很少不抱怨说，如果没有比现行法律更严厉的法律，他们甚至连通常的租金也不可能缴纳。在这种公众困厄的时刻，他们的要求不容争辩。因此，税法逐渐变得越来越严厉。最严酷血腥的税法，总是见于大部分公共收入实行包税制的国家。最宽和的税法，则见于税收在君主直接监督之下征收的国家。即使是一个恶劣的君主，对其人民的怜悯也比人们所能期待于其收入包税人的更多。他知道，自己家族长久的显赫有赖于人民的繁荣，因此绝不会有意为了自己的任何一时利益而毁掉这种繁荣。其收入的包税人则不然，他们的显赫往往可能是人民败落而不是繁荣的结果。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p221",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_946"
+      },
+      "contentHash": "10fbbe8cc31c41aa2cb9e10bc1537b683c58cac3a1d7a8d8ffed6e74bbd81590",
+      "text": "一种税有时不仅按固定租金包给包税人，而且包税人还享有应税商品的垄断权。在法国，烟草税和盐税就是以这种方式征收的。在这种情况下，包税人向人民榨取的不是一项而是两项高得惊人的利润：一项是包税人的利润，另一项是更为惊人的垄断者利润。烟草是一种奢侈品，每个人都可以随自己的意愿购买或不购买。但是，盐是必需品，每个人都必须向包税人购买一定数量的盐；因为据推定，如果他不向包税人购买这一数量，就会向某个走私者购买。这两种商品的税都高得惊人。因此，走私的诱惑对许多人来说不可抗拒，而与此同时，法律的严酷和包税人手下官员的警觉，又使屈从于这种诱惑几乎必然招致毁灭。盐和烟草的走私每年把数百人送上桨帆船去服苦役，此外还有相当多的人因此被送上绞刑架。以这种方式征收的这些税，为政府提供了相当可观的收入。1767年，烟草包税权以每年二千二百五十四万一千二百七十八里弗尔的价格包出。盐的包税权则为三千六百四十九万二千四百零四里弗尔。这两项包税期都从1768年开始，持续六年。那些认为与君主的收入相比，人民的鲜血无足轻重的人，也许会赞成这种征税方法。许多其他国家也设立了类似的盐税、烟草税以及相应的垄断；尤其是在奥地利和普鲁士领地，以及意大利的大部分邦国。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p222",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_947"
+      },
+      "contentHash": "36012f4fbc9f14e8dd11cf6999e9839863c667b7fbf4ebf166d311b0579bc2ae",
+      "text": "在法国，王室实际收入的大部分来自八种不同的来源：人头土地税、按人征收的人头税、两项二十分之一税、盐税、消费税、过境税、王室领地收入和烟草包税收入。在大多数省份，后五项实行包税制。前三项在各地都由一个受政府直接监督和指挥的行政机构征收，而且人们普遍承认，就从人民口袋里取走的数额而言，它们给君主国库带来的收入多于其他五项；后五项的管理浪费更大，费用也更高。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p223",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_948"
+      },
+      "contentHash": "2ea3e188fd82d4f5fdb957a767d260ccf3fafd3449762f3424685719f75188f3",
+      "text": "法国财政按其现状看来，可以实行三项十分明显的改革。第一，废除人头土地税和按人征收的人头税，并增加二十分之一税的项数，使其产生一笔与上述两税税额相等的追加收入，这样既可以维持王室收入，又可以大幅减少征收费用；人头土地税和按人征收的人头税给下层民众造成的滋扰，可以完全避免；而上层阶级所负担的数额，也不一定会超过他们中大多数人目前的负担。我已经指出，二十分之一税与英格兰所谓的土地税性质极为相近。人们承认，人头土地税的负担最终落在土地所有者身上；而且由于按人征收的人头税的大部分，是对人头土地税纳税人按该税每一里弗尔附加若干数额课征的，其中大部分的最终缴纳也必然落在同一阶层的人身上。因此，即使增加二十分之一税的项数，使它产生一笔与这两项税的税额相等的追加收入，上层阶级的负担也不一定会超过目前。毫无疑问，许多个人的负担会增加，因为人头土地税通常极不均等地摊派在不同个人的地产和佃户身上。这些受到优待的臣民的利益和反对，是最可能阻止这项改革或任何其他同类改革的障碍。第二，使盐税、消费税、过境税、烟草税以及各种不同的关税和国内消费税，在王国各地一律相同，这些税就能以低得多的费用征收，王国的国内商业也可以变得像英格兰的一样自由。第三，也是最后一点，把所有这些税都交由受政府直接监督和指挥的行政机构征收，包税总商高得惊人的利润就可以并入国家收入。个人私利所引起的反对，很可能会像阻止第一项改革方案一样，有效地阻止后两项方案。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p224",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_949"
+      },
+      "contentHash": "f4073e811d9311d0e122f43f1f003df562ca9b3c2a505b6f92836dd877c7bb97",
+      "text": "法国的税收制度在各方面似乎都不如英国。大不列颠每年向不足八百万人征收一千万英镑，却不能说有任何一个特定阶层受到压迫。根据埃克斯皮伊神父所汇集的资料以及《论谷物立法与商业》一文作者的考察，法国连同洛林和巴尔两省，似乎很可能约有二千三百万或二千四百万人口；这也许是大不列颠人口的三倍。法国的土壤和气候优于大不列颠。这个国家处于改良和耕作状态的时间长得多，因此，各种需要长期培育和积累的事物也更为充足，例如大城市，以及城乡中便利而建造良好的房屋。凭借这些优势，可以预期法国为维持国家而征收三千万英镑收入，所造成的不便不会多于大不列颠征收一千万英镑。根据我所能获得的最好资料——尽管我承认这些资料很不完善——1765年和1766年，缴入法国国库的全部收入通常在三亿零八百万至三亿二千五百万里弗尔之间；也就是说，不到一千五百万英镑；如果法国人民按人口以与大不列颠人民相同的比例纳税，这还不到原本可以预期数额的一半。然而，人们普遍承认，法国人民所受税收压迫远甚于大不列颠人民。不过，法国无疑是欧洲各大帝国中，继大不列颠之后享有最温和、最宽厚政府的国家。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p225",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_950"
+      },
+      "contentHash": "31ee92d337fc9864f722b1e66b4147b8eeda74e8797b817172615c02dcf99f0f",
+      "text": "据说，在荷兰，对生活必需品征收的重税已经毁掉了其主要制造业，而且很可能连其渔业和造船业也会逐渐受到抑制。在大不列颠，生活必需品税微不足道，迄今尚无任何制造业因此而遭到毁灭。英国税收中对制造业打击最重的，是对进口原料征收的某些关税，尤其是对生丝征收的关税。不过，据说联省议会和各城市的收入合计超过五百二十五万英镑；而且由于联合省的居民不能合理地估计为超过大不列颠居民的三分之一，按人口比例计算，他们所负担的税必然重得多。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c2.p226",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_951"
+      },
+      "contentHash": "22eebe93f9d93b79cf722636edc3a7e70b3ec803e3adf903998869c02729bcd4",
+      "text": "在所有适当的征税对象都已用尽之后，如果国家的急需仍然要求征收新税，就必须向不适当的对象征税。因此，对生活必需品征税，未必可以用来指责这个共和国缺乏智慧；它为了取得并维持独立，尽管极为节俭，却仍卷入了代价如此高昂的战争，以致不得不负担巨额债务。此外，荷兰和泽兰这两个地理状况特殊的地区，即使仅仅为了维持自身存在，或者防止被海水吞没，也需要相当大的开支，这必然大大加重了这两个省的税收负担。共和政体似乎是荷兰现今强盛的主要支柱。巨额资本的所有者和大商人家族，在这个政府的行政管理中通常不是直接占有某种份额，就是间接具有某种影响。为了他们从这种地位中获得的尊重和权威，他们愿意居住在这样一个国家：如果自己运用资本，所得利润较少；如果把资本借给别人，所得利息也较少；而且，他们从资本中所能取得的十分有限的收入，可以购买的生活必需品和便利品，也少于欧洲任何其他地方。这些富人居住于此，必然使这个国家尽管存在种种不利条件，仍能维持一定程度的产业活动。任何摧毁共和政体、把全部行政权交到贵族和军人手中，并彻底消除这些富商重要性的公共灾难，都会很快使他们不愿继续生活在一个他们不再可能受到高度尊重的国家。他们会把住所和资本都迁往其他国家，而荷兰的产业和商业很快也会随着支撑它们的资本而离去。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    }
+  ]
+}

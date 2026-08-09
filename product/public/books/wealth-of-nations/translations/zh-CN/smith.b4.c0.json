@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "locale": "zh-CN",
+  "chapterId": "smith.b4.c0",
+  "translations": [
+    {
+      "sourceId": "smith.b4.c0.p1",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1156"
+      },
+      "contentHash": "09c2941d4a655b0e0b06ef702823ab4b617a6584b89853c0d7031619f3a3455a",
+      "text": "政治经济学被视为政治家或立法者所研究的科学的一个分支，它有两个不同的目标：第一，为人民提供丰足的收入或生计，或者更确切地说，使他们能够为自己取得这样的收入或生计；第二，为国家或共同体提供足以维持公共事务的收入。它旨在使人民和君主双方都富裕起来。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c0.p2",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1157"
+      },
+      "contentHash": "ff3770479ef293adbe39e49d9ae3fc76c932e1c846c58bc50694072641824a9e",
+      "text": "不同年代和不同国家的富裕程度有着不同的发展进程，这便产生了两种不同的政治经济学体系，来探讨如何使人民富裕起来。一种可以称为商业体系，另一种可以称为农业体系。我将尽力把这两种体系都尽可能充分而清楚地加以说明，并从商业体系讲起。它是现代的体系，在我国和我们这个时代，人们对它了解得最为透彻。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    }
+  ]
+}

@@ -1,13 +1,22 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { POST } from "@/app/api/agent-turn/route";
+import { verifyAgentTurnSource } from "@/modules/agent-os/provider/server";
 import {
   AgentTurnProviderError,
   createAgentTurnClientProvider,
   deriveAgentTurnSourceSnapshotId,
   type VerifiedAgentTurnSource,
 } from "@/modules/agent-os/provider";
-import { getSourceBlockById, loadWealthOfNationsBook } from "@/modules/book";
-import { snapshotVoiceSource } from "@/modules/voice";
+import {
+  getBookChapter,
+  getSourceBlockById,
+  loadBookManifest,
+  loadWealthOfNationsBook,
+} from "@/modules/book";
+import {
+  snapshotManifestVoiceSource,
+  snapshotVoiceSource,
+} from "@/modules/voice";
 import type { AgentTurnProviderInput } from "@/modules/agent-os/turn";
 
 const originalFetch = globalThis.fetch;
@@ -48,6 +57,7 @@ function input(
         visible_text: "市场太小会卖不掉。",
       },
     ],
+    invited_question_keys: [],
     pending_intent: null,
     ...overrides,
   };
@@ -117,6 +127,7 @@ describe("AgentTurn provider seams", () => {
           },
         ],
         active_recipe_ids: ["wealth-of-nations.market-extent.v1"],
+        invited_question_keys: [],
       },
     });
 
@@ -146,6 +157,38 @@ describe("AgentTurn provider seams", () => {
       code: "agent_turn_invalid_request",
     } satisfies Partial<AgentTurnProviderError>);
     expect(fetcher).toHaveBeenCalledTimes(1);
+  });
+
+  it("verifies a canonical manifest paragraph without a PDF mapping", async () => {
+    const manifest = await loadBookManifest("wealth-of-nations");
+    expect(manifest.ok).toBe(true);
+    if (!manifest.ok) throw new Error("manifest unavailable");
+    const chapter = getBookChapter(manifest.value, "smith.b1.c1");
+    expect(chapter.ok).toBe(true);
+    if (!chapter.ok) throw new Error("chapter unavailable");
+    const block = chapter.value.sourceBlocks.find(
+      (candidate) => candidate.sourceId === "smith.b1.c1.p2",
+    );
+    expect(block).toBeDefined();
+    if (!block) throw new Error("canonical source unavailable");
+
+    const snapshot = snapshotManifestVoiceSource(
+      block,
+      manifest.value.edition.editionId,
+      chapter.value.title,
+    );
+    await expect(verifyAgentTurnSource(snapshot)).resolves.toMatchObject({
+      source_id: "smith.b1.c1.p2",
+      edition_id: manifest.value.edition.editionId,
+      content_hash: block.contentHash,
+      quote: block.quote,
+    });
+    await expect(
+      verifyAgentTurnSource({ ...snapshot, contentHash: "stale" }),
+    ).rejects.toMatchObject({
+      code: "agent_turn_source_stale",
+      status: 409,
+    });
   });
 
   it("route rejects cross-origin and stale source snapshots before calling the runtime", async () => {
@@ -292,6 +335,7 @@ describe("AgentTurn provider seams", () => {
                 },
               ],
               active_recipe_ids: ["wealth-of-nations.market-extent.v1"],
+              invited_question_keys: [],
             },
           }),
           sourceSnapshot: snapshotVoiceSource(block.value),

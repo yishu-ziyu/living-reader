@@ -1,0 +1,680 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "locale": "zh-CN",
+  "chapterId": "smith.b1.c5",
+  "translations": [
+    {
+      "sourceId": "smith.b1.c5.p1",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_277"
+      },
+      "contentHash": "c8ac52460eb7efa6b887d253be4ccab87966606fe2721799573da43fa07f6d22",
+      "text": "每个人是富有还是贫穷，取决于他能够享用人生必需品、便利品和娱乐品的程度。但是，一旦劳动分工彻底形成，一个人自己的劳动所能供给他的，只是这些物品中很小的一部分。其中远大得多的一部分，他必须取自他人的劳动；而他的贫富程度，必定取决于他所能支配或有能力购买的这种劳动的数量。因此，对于拥有某种商品而不打算自己使用或消费、却打算用它交换其他商品的人来说，这种商品的价值，等于它使他能够购买或支配的劳动量。因此，劳动是衡量一切商品交换价值的真实尺度。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p2",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_278"
+      },
+      "contentHash": "e1829e376c51d7cba891141b95ed01d97886444b52385186eed1b74781ea2a7a",
+      "text": "每一种东西的真实价格，也就是想要取得它的人为之实际付出的代价，是取得它所花费的辛劳和烦恼。对于已经取得某种东西而想要将它处置掉或换取别的东西的人来说，这种东西的真正价值，在于它能够使他自己免去、并能转由他人承担的辛劳和烦恼。用货币或货物买到的东西，同我们通过自己身体的辛劳取得的东西一样，也是用劳动购买的。那种货币或那些货物，确实使我们免去了这种辛劳。它们包含一定数量劳动的价值，我们用它们交换当时被认为包含等量劳动价值的东西。劳动是最初的价格，是为一切物品支付的原始购买货币。世界上的一切财富，最初不是用黄金或白银，而是用劳动购买的；对于拥有财富并想用它交换某些新产品的人来说，财富的价值恰好等于它使他们能够购买或支配的劳动量。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p3",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_279"
+      },
+      "contentHash": "17732d137b75d8e2b2be7171699ad262515f69a033fef454389561914ab96eee",
+      "text": "正如霍布斯先生所说，财富就是权力。但是，一个取得或继承一大笔财产的人，并不一定因此取得或继承任何文职或军事上的政治权力。他的财产或许能为他提供取得这两种权力的手段，但仅仅拥有这笔财产，并不一定会把其中任何一种权力赋予他。这种占有直接而立即赋予他的权力，是购买力；也就是对当时市场上的一切劳动或一切劳动产品的一定支配权。他的财产是多是少，恰好与这种权力的大小成比例；也就是与这笔财产使他能够购买或支配的他人劳动量，或者同样说，他人劳动产品的数量成比例。每一种东西的交换价值，必定始终恰好等于它赋予其所有者的这种权力的大小。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p4",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_280"
+      },
+      "contentHash": "147059b5bae9958fdd2e8d1c16e2323e1ba3c33bbda9eaec7d9c055f2dabd137",
+      "text": "不过，劳动虽然是一切商品交换价值的真实尺度，却不是通常用来估定其价值的尺度。两种不同劳动量之间的比例，往往很难确定。花在两种不同工作上的时间，单凭这一点并不总能决定这个比例。所承受的艰苦程度和所运用的才智程度，也必须计算在内。一小时艰苦工作所包含的劳动，可能多于两小时轻松工作；从事一种须花十年劳动才能学会的手艺一小时，所包含的劳动也可能多于在一种普通而简单明了的职业上勤劳一个月。但是，无论艰苦程度还是才智程度，都不容易找到任何精确的尺度。诚然，在以不同种类劳动的不同产品彼此交换时，通常会对这两者都作一些补偿。然而，这种比例不是通过任何精确尺度来调整的，而是通过市场上的讨价还价，按照某种粗略的相等关系来调整；这种关系虽不精确，却足以维持日常生活中的交易。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p5",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_281"
+      },
+      "contentHash": "f50fdc56f731c6c3f10517acdd81ff990656085ff4153067a63a51f3c8209d76",
+      "text": "此外，每一种商品同其他商品交换、从而同其他商品比较的次数，都比同劳动交换和比较更为频繁。因此，用某种其他商品的数量，而不是用它所能购买的劳动量来估定其交换价值，是更为自然的。大多数人对于一定数量的某种具体商品所表示的意思，也比对于一定数量的劳动所表示的意思理解得更好。前者是一个清楚可感的对象；后者则是一个抽象概念，虽可使人充分理解，却不那么自然，也不那么直观。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p6",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_282"
+      },
+      "contentHash": "582a20e8c477e1284b0a095254339bc73f7fd5d2363b90e20bc684f84bdfdf72",
+      "text": "但是，当物物交换停止，而货币已成为商业的通用工具时，每一种具体商品同货币交换的次数，就比同任何其他商品交换的次数更为频繁。屠夫很少把牛肉或羊肉拿到面包师或酿酒商那里，去换取面包或啤酒；他把肉拿到市场上，换成货币，随后再用货币换取面包和啤酒。他用肉换得的货币量，也决定了他后来所能购买的面包和啤酒的数量。因此，对他来说，用货币这种他直接以肉换取的商品的数量来估定肉的价值，要比用面包和啤酒这两种只有借助另一种商品才能换取的商品的数量来估定，更为自然和直观；而且，说他的肉每磅值三便士或四便士，也比说每磅值三磅或四磅面包，或三夸脱或四夸脱淡啤酒，更为自然。由此，每一种商品的交换价值，通常更频繁地以货币量来估定，而不是以劳动量或任何其他可以换取该商品的商品数量来估定。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p7",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_283"
+      },
+      "contentHash": "f9189ad0f6e895d5db3ffe75ec4bbefe4e2fe3d4526023422fdeee061ed49c38",
+      "text": "然而，黄金和白银同其他一切商品一样，其价值也会变化，有时较便宜，有时较昂贵，有时较容易购得，有时较难购得。任何特定数量的黄金和白银所能购买或支配的劳动量，或所能换取的其他货物量，总是取决于进行这种交换时已知矿山的丰饶或贫瘠。十六世纪美洲丰富矿山的发现，使欧洲金银的价值降至先前的大约三分之一。由于把这些金属从矿山运到市场所需的劳动减少了，所以运到市场后，它们所能购买或支配的劳动也减少了；金银价值的这次变动或许是历史所记载的最大一次，却绝不是唯一一次。但是，正如一种数量尺度，例如以人体为准的英尺、英寻或一把之量，如果自身的量不断变化，就绝不可能成为衡量其他东西数量的精确尺度；同样，一种自身价值不断变化的商品，也绝不可能成为衡量其他商品价值的精确尺度。可以说，无论何时何地，等量劳动对于劳动者都有相等的价值。在其健康、体力和精神均处于通常状态，并具有通常程度的技能和熟练水平时，他必须总是牺牲同等份量的安逸、自由和幸福。无论他作为回报得到多少货物，他所付出的价格必定总是相同的。诚然，他的劳动有时可以购买较多的货物，有时只能购买较少的货物；但变化的是这些货物的价值，而不是购买它们的劳动的价值。无论何时何地，难以获得或须花费大量劳动才能取得的东西就是昂贵的；容易获得或只须花费很少劳动就能取得的东西就是便宜的。因此，只有劳动自身的价值从不变化，只有劳动才是最终而真实的标准，使一切商品的价值在任何时间和地点都可以据以估定和比较。劳动是商品的真实价格；货币只是商品的名义价格。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p8",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_284"
+      },
+      "contentHash": "7805e778988e29c1a3c5200ed1cfb68718d178603a6b51cf47475cfae788a4d0",
+      "text": "但是，等量劳动对于劳动者虽然总是具有相等的价值，在雇用他的人看来，其价值却有时较大，有时较小。雇主有时用较多的货物、有时用较少的货物来购买这些劳动，因此在他看来，劳动的价格也像其他一切东西的价格一样会发生变化。在一种情况下，劳动在他看来昂贵；在另一种情况下，则显得便宜。然而实际上，是货物在前一种情况下便宜，在后一种情况下昂贵。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p9",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_285"
+      },
+      "contentHash": "951c41a16435a83d38960aaa1eb1b3d1bc55d7d1681cbebc11beb599312e53fb",
+      "text": "因此，按照这种通俗意义，可以说劳动也和商品一样，具有真实价格和名义价格。劳动的真实价格，可以说由为其付出的生活必需品和便利品的数量构成；其名义价格，则由货币量构成。劳动者是富是贫，所得报酬是优厚还是微薄，取决于其劳动的真实价格，而不是名义价格。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p10",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_286"
+      },
+      "contentHash": "bf6c7de896c6569337e5f11601d35c88f9b693ebc64f3399483051085f9fcae9",
+      "text": "商品和劳动的真实价格与名义价格之间的区别，并不只是一个纯粹思辨的问题，有时在实践中也可能大有用处。同样的真实价格总是具有同样的价值；但由于金银价值发生变化，同样的名义价格有时具有很不相同的价值。因此，在出售一处地产而保留永久地租时，如果希望这种地租永远具有同样的价值，那么对于享有这项保留权的家族来说，重要的是地租不应由某一特定货币数额构成。否则，它的价值就会受到两种不同变化的影响：第一，面额相同的铸币在不同时期所含金银数量的变化；第二，等量金银在不同时期价值的变化。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p11",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_287"
+      },
+      "contentHash": "400904e4c5fb6ff270c3ee91626aa7873dd65d1811dc9d8912d4083fc11f3876",
+      "text": "君主和主权国家常常以为，减少其铸币所含纯金属的数量，会给他们带来暂时的利益；但他们很少以为增加这种数量会给他们带来任何利益。因此，我相信，各国铸币所含的金属量几乎一直在减少，几乎从未增加。因此，这类变化几乎总是倾向于降低货币地租的价值。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p12",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_288"
+      },
+      "contentHash": "5f0cd05c5de577d0e4b8d485acc17e5a49247c4293eac81722e7790ed1879fb2",
+      "text": "美洲矿山的发现降低了欧洲金银的价值。人们通常认为，这种降低至今仍在逐渐继续，并且很可能还会持续很长时间，不过我认为这种看法没有任何确凿证据。因此，按照这一假设，这类变化更可能降低而不是提高货币地租的价值，即使契约规定地租不是以某种面额的一定数量铸币支付（例如多少英镑），而是以若干盎司纯银或一定成色的白银支付，也是如此。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p13",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_289"
+      },
+      "contentHash": "547b4280bec0842ade1a73d167ea1382a40a347bd592c7d30cb59f01a379bc87",
+      "text": "以谷物保留的地租，其价值保持得比以货币保留的地租好得多，即使铸币的面额没有改变，也是如此。伊丽莎白十八年颁布法令，规定所有学院租约的地租须有三分之一以谷物保留，或以实物支付，或按最近公共市场的现行价格支付。据布莱克斯通博士说，这种谷物地租所产生的货币收入，最初虽仅占全部收入的三分之一，如今通常却接近其余三分之二所产生收入的两倍。照此说来，学院原有货币地租的价值必定已经降到几乎只有原来的四分之一；换言之，其价值仅略高于过去所值谷物的四分之一。但是，自腓力与玛丽统治以来，英国铸币的面额几乎没有发生变化，同样数目的镑、先令和便士所含纯银的数量也几乎相同。因此，学院货币地租价值的这种降低，完全是由白银价值的降低造成的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p14",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_290"
+      },
+      "contentHash": "09d34cd9e33b613600ea3f23f6af7ffb6f2ab649fd2c57da4bbbd2f79887bdc7",
+      "text": "当白银价值的降低与同一面额铸币所含白银数量的减少结合起来时，损失往往还要更大。在苏格兰，铸币面额所经历的变动远大于英格兰以往的变动；而在法国，这种变动又远大于苏格兰以往的变动。某些原本价值可观的古老地租，就这样几乎降得一文不值。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p15",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_291"
+      },
+      "contentHash": "2a718c5ce1c06847e02d82813376205209d0e5bf414a1f1ff2d2744620842d5b",
+      "text": "相隔很久的两个时期，等量劳动用等量谷物——劳动者的生活资料——来购买，会比用等量金银或也许任何其他商品来购买更为接近。因此，相隔很久的两个时期，等量谷物的真实价值会更为接近，或者说，它会使所有者能够购买或支配更为接近同一数量的他人劳动。我说，等量谷物在这方面比几乎任何其他商品的等量都更为接近，因为即使等量谷物也不能做到完全相等。正如我将在后文力图说明的，劳动者的生活资料，也就是劳动的真实价格，在不同情形下很不相同：一个正在走向富裕的社会比一个停滞不前的社会优厚，而一个停滞不前的社会又比一个走向衰退的社会优厚。不过，在任何特定时期，其他每一种商品所能购买的劳动量是多是少，都与它当时所能购买的生活资料数量成比例。因此，以谷物保留的地租，只会受到一定数量谷物所能购买的劳动量发生变化的影响。但是，以任何其他商品保留的地租，不仅会受到任何特定数量谷物所能购买的劳动量发生变化的影响，还会受到任何特定数量的那种商品所能购买的谷物量发生变化的影响。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p16",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_292"
+      },
+      "contentHash": "5d50fbdcac731116d7be65fe423f1d6ba38f87629a98b0b1015392c1caef6e5c",
+      "text": "不过，应当指出，谷物地租的真实价值虽然逐世纪的变化远小于货币地租，却逐年的变化大得多。正如我将在后文力图说明的，劳动的货币价格并不随谷物的货币价格逐年波动，而在各地看来，都不是适应这种生活必需品的暂时或偶然价格，而是适应它的平均或通常价格。谷物的平均或通常价格，又如我也将在后文力图说明的，是由白银的价值决定的，也就是由向市场供应这种金属的矿山的丰饶或贫瘠决定的，或者说，由把任何特定数量的白银从矿山运到市场所必须使用的劳动量，以及因而必须消费的谷物量决定的。但是，白银的价值虽然有时逐世纪发生很大变化，逐年却很少发生很大变化，反而经常连续半个世纪或一个世纪保持不变或几乎不变。因此，在如此漫长的时期内，谷物的通常或平均货币价格也可能保持不变或几乎不变；劳动的货币价格也会随之如此，至少只要社会在其他方面继续处于相同或几乎相同的状态。与此同时，谷物的暂时和偶然价格往往可能在某一年达到前一年的两倍，例如从每夸特二十五先令波动到五十先令。但是，当谷物处于后一价格时，谷物地租不仅名义价值会是处于前一价格时的两倍，真实价值也会是两倍，或者说，所能支配的劳动量或其他大多数商品的数量会增加一倍；因为在所有这些波动期间，劳动的货币价格以及大多数其他东西的货币价格都保持不变。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p17",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_293"
+      },
+      "contentHash": "40c01c65e585f44b42dc02c6a863b5b2412edcbfc940b91521894268b06fb7aa",
+      "text": "因此，劳动显然是唯一普遍而且唯一精确的价值尺度，也就是使我们能够在任何时间和任何地点比较不同商品价值的唯一标准。诚然，我们不能根据为不同商品支付的白银数量，逐世纪估定其真实价值。我们也不能根据谷物数量逐年估定这种价值。根据劳动量，我们却能最精确地逐世纪和逐年估定这种价值。就逐世纪而言，谷物是比白银更好的尺度，因为相隔若干世纪，等量谷物所能支配的劳动量，比等量白银所能支配的劳动量更为接近相同。相反，就逐年而言，白银是比谷物更好的尺度，因为等量白银所能支配的劳动量更为接近相同。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p18",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_294"
+      },
+      "contentHash": "60e5b44c0ed056d3fa44e1e5a24f0ac726c8b8d38cc21f10bfaa9824ca3341d9",
+      "text": "但是，虽然在设立永久地租，甚至订立期限很长的租约时，区分真实价格和名义价格可能有用；在买卖这种更为常见、普通的日常交易中，这种区分却毫无用处。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p19",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_295"
+      },
+      "contentHash": "77695a51602cf8270d4b41852b26aea9e550c4e05dd4311a7a425a280f0928bd",
+      "text": "在同一时间和地点，一切商品的真实价格和名义价格彼此完全成比例。例如，在伦敦市场上，你从任何商品得到的货币越多或越少，它当时当地使你能够购买或支配的劳动也就越多或越少。因此，在同一时间和地点，货币是衡量一切商品真实交换价值的精确尺度。不过，它只有在同一时间和地点才是如此。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p20",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_296"
+      },
+      "contentHash": "2da7002869385b1b6e245fa327fb8112e085df6eeef54285990c9a881319c5d1",
+      "text": "不同地点的商品真实价格与货币价格之间，虽然没有固定的比例，但是把货物从一地运到另一地的商人，只须考虑它们的货币价格，也就是他买进货物所付的白银量与可能卖出货物所得的白银量之间的差额。在中国广州，半盎司白银所能支配的劳动以及生活必需品和便利品，可能都比在伦敦一盎司白银所能支配的更多。因此，在广州以半盎司白银出售的一种商品，对当地拥有它的人来说，实际上可能比在伦敦以一盎司白银出售的一种商品对伦敦拥有它的人更昂贵，实际重要性也更大。然而，如果一个伦敦商人能在广州用半盎司白银买到一种商品，随后在伦敦以一盎司卖出，他就从这笔交易中获得百分之百的利润，恰如一盎司白银在伦敦的价值与在广州完全相同一样。在广州，半盎司白银本来能使他支配比一盎司白银在伦敦所能支配的更多劳动以及更多生活必需品和便利品，这一点对他并不重要。一盎司白银在伦敦总能使他支配所有这些东西的数量，是半盎司白银在那里所能支配数量的两倍，而这恰好就是他所要的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p21",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_297"
+      },
+      "contentHash": "dbb02a2940885ae43638ac0b661b5b24f7f3e0a398e86fffbe13315492b84313",
+      "text": "因此，既然货物的名义价格或货币价格最终决定一切买卖是否明智，并由此支配日常生活中几乎所有涉及价格的事务，那么它受到的关注远多于真实价格，也就不足为奇了。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p22",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_298"
+      },
+      "contentHash": "7e5acb4b29a745f0273ad8b5f303196f4a2d9556b320162e46f70646de643708",
+      "text": "不过，在这样一部著作中，有时把某种特定商品在不同时期和不同地点的不同真实价值加以比较，或者把它在不同场合可能赋予其所有者的、支配他人劳动的不同程度的力量加以比较，或许是有用的。在这种情况下，我们应当比较的，与其说是这种商品通常能够卖得的不同数量的白银，不如说是这些不同数量的白银能够购买的不同数量的劳动。然而，相隔遥远的时期和地点的劳动现行价格，几乎从来不可能得到任何程度的准确了解。谷物的现行价格，虽说很少有地方定期加以记录，但总的说来，人们对它们了解得更清楚，历史学家和其他著述者也更经常注意到它们。因此，我们通常只得以谷物价格为依据而感到满足，并不是因为它总是与劳动的现行价格保持完全相同的比例，而是因为它通常是能够得到的、最接近这种比例的近似值。以后我将有机会作几次这类比较。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p23",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_299"
+      },
+      "contentHash": "6a468762c3f8aab0da0b0cfe3c229e3e033088d757e770d4f6a1ad45d9702591",
+      "text": "随着产业的发展，商业国家发现，把几种不同的金属铸成货币很方便：金币用于数额较大的支付，银币用于购买价值中等的物品，铜币或其他某种较粗劣金属铸成的货币，则用于数额更小的交易。不过，它们总是把其中一种金属看作比另外两种更为特殊的价值尺度；而这种优先地位，通常似乎都给予了它们碰巧最先用作商业工具的那种金属。它们既然已经开始用这种金属作为本位——在尚无其他货币时，它们必定如此——那么即使后来不再有同样的必要，通常仍会继续这样做。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p24",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_300"
+      },
+      "contentHash": "86f006947f11ea502b96a2e631090cda7c92916b476bc2148e06d9a45b7b5cb4",
+      "text": "据说，罗马人在第一次布匿战争开始前五年以内一直只有铜币，到那时才开始铸造银币。因此，在那个共和国，铜似乎始终是价值尺度。在罗马，一切账目似乎都以阿斯或塞斯特提乌斯记载，一切财产的价值也都以阿斯或塞斯特提乌斯计算。阿斯始终是一种铜币的名称。塞斯特提乌斯一词意为两个半阿斯。因此，塞斯特提乌斯虽原为银币，其价值却是用铜币估定的。在罗马，一个欠了很多钱的人，据说拥有很多别人的铜币。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p25",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_301"
+      },
+      "contentHash": "aa7a1a3b90c02f3416942f63986853b2cac7aa2d270cd92fe18859b03135f6ec",
+      "text": "在罗马帝国废墟上建立国家的北方民族，似乎从定居之初就有银币，而在此后的几个世纪里，既不知道金币，也不知道铜币。撒克逊时代的英格兰已有银币；但直到爱德华三世时代，铸造的金币都很少，而直到大不列颠的詹姆斯一世时代才有铜币。因此，在英格兰，并且我相信出于同样的原因，在欧洲其他一切现代国家，一切账目都用银币记载，一切货物和财产的价值通常也都用银币计算；而当我们要表示某人财产的数额时，很少说它值多少几尼，而是说我们认为它可换得多少英镑。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p26",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_302"
+      },
+      "contentHash": "b9f3f22f320b532357339046e86ae7bfd2f4a6feb5ed76fb4da44cc6d413f5fd",
+      "text": "我相信，最初在所有国家，只有用那种被特别视为价值本位或尺度的金属所铸成的货币支付，才构成法定清偿。在英格兰，黄金铸成货币后很长时间仍未被视为法定支付手段。金银货币之间的价值比例并不是由任何法律或公告规定的，而是留给市场决定。如果债务人提出用金币偿付，债权人可以完全拒绝这种支付，也可以按照他与债务人能够商定的黄金估价接受支付。目前，铜币除用于小额银币的找零外，不是法定支付手段。在这种情况下，作为本位的金属与不作为本位的金属之间的区别，就不仅仅是名义上的区别了。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p27",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_303"
+      },
+      "contentHash": "3a4c20d95b03b872f206b847b1ed5b5c0bb176ee7975ce698bebcb7a1e412699",
+      "text": "随着时间推移，人们逐渐更加熟悉不同金属铸币的使用，因而也更加了解它们各自价值之间的比例；我相信，大多数国家都发现，确定这一比例，并以法律宣布，例如一枚具有某种重量和成色的几尼应当兑换二十一先令，或者可以作为该数额债务的法定支付手段，是很方便的。在这种情况下，只要这种规定的比例保持不变，作为本位的金属与不作为本位的金属之间的区别，就几乎只是名义上的区别了。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p28",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_304"
+      },
+      "contentHash": "ca176c726edfd781679abdce2d50386a663b9b5104309376c4e0f4825231cc08",
+      "text": "不过，一旦这种规定的比例发生任何改变，这一区别就又会变成，或至少看起来变成，不仅仅是名义上的区别。例如，如果一枚几尼的法定价值降为二十先令，或提高到二十二先令，由于一切账目都用银币记载，几乎一切债务契约也都用银币表示，在这两种情况下，大部分款项仍可用和以前相同数量的银币支付；但所需的金币数量却会大不相同：在一种情况下较多，在另一种情况下较少。白银的价值会显得比黄金更为稳定。白银会显得是衡量黄金价值的尺度，而黄金却不会显得是衡量白银价值的尺度。黄金的价值似乎取决于它能兑换多少白银，而白银的价值似乎并不取决于它能兑换多少黄金。不过，这一区别完全是由用银币而非金币记账，以及用银币而非金币表示一切大小金额的习惯造成的。德拉蒙德先生开出的二十五几尼或五十几尼的票据，在发生这种改变后，仍会像以前一样以二十五几尼或五十几尼兑付。在这种改变后，它仍会以和以前相同数量的黄金兑付，但所需的白银数量却大不相同。在兑付这种票据时，黄金的价值会显得比白银更为稳定。黄金会显得是衡量白银价值的尺度，而白银却不会显得是衡量黄金价值的尺度。如果以这种方式记账，以及表示本票和其他金钱债务的习惯有朝一日变得普遍，那么被视为特殊的价值本位或尺度的金属就会是黄金，而不是白银。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p29",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_305"
+      },
+      "contentHash": "383a9d55f16a8abf1dcd534226abfb31447bbf436be618f4eb298002e7f7b923",
+      "text": "实际上，只要铸币中不同金属各自价值之间的任何一种法定比例保持不变，最贵重金属的价值就会调节全部铸币的价值。十二枚铜便士含有半常衡磅质量并非上等的铜，在铸币以前通常不值七枚银便士。但由于法令规定十二枚这种便士可兑换一先令，市场上便认为它们值一先令，而且随时可以用它们换得一先令。甚至在大不列颠最近整顿金币以前，金币——至少是在伦敦及其邻近地区流通的那部分金币——低于其标准重量的程度，通常也小于大部分银币。尽管如此，二十一枚磨损失形的先令仍被视为等于一几尼；这枚几尼或许确实也已磨损失形，但很少会磨损得那么严重。最近的规定，或许已使金币尽可能接近其标准重量，达到了任何国家的流通货币所能达到的程度；而政府机关只按重量收取金币的命令，只要得到执行，就很可能使金币保持这种状态。银币仍处于金币整顿以前那种磨损和重量减轻的状态。不过，在市场上，二十一先令这种重量减轻的银币，仍被认为值一枚这种优良的金币几尼。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p30",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_306"
+      },
+      "contentHash": "c8b0a8eb98521376cd290458328817b89382bdbaef2f0b76bb392dcf2c439b3c",
+      "text": "金币的整顿显然提高了可与之兑换的银币的价值。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p31",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_307"
+      },
+      "contentHash": "3194452658cc3e8d1ed27ba454cb0fee64d1d2520cbdc4af51e2e25b5cc776f4",
+      "text": "在英格兰造币厂，一磅重的黄金铸成四十四枚半几尼；按每几尼二十一先令计算，等于四十六镑十四先令六便士。因此，一盎司这种金币用银币计算，价值三镑十七先令十又二分之一便士。在英格兰，铸币不征收任何费用或铸币税；把一磅或一盎司标准成色的金块送到造币厂的人，可以收回一磅或一盎司金币，不作任何扣除。因此，每盎司三镑十七先令十又二分之一便士，被称为英格兰黄金的造币厂价格，也就是造币厂用标准成色金块换给的金币数量。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p32",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_308"
+      },
+      "contentHash": "0cd519227c013dbee6492ef1cc594ab39384f76e1be8f525ebceefd0474efd62",
+      "text": "在金币整顿以前，多年来，标准成色金块的市场价格一直高于每盎司三镑十八先令，有时是三镑十九先令，而且常常是四镑；用磨损和重量减轻的金币支付的这一金额，很可能很少含有一盎司以上的标准成色黄金。金币整顿以后，标准成色金块的市场价格很少超过每盎司三镑十七先令七便士。在金币整顿以前，市场价格总是或多或少高于造币厂价格。整顿以后，市场价格则始终低于造币厂价格。但无论以金币还是银币支付，这一市场价格都是相同的。因此，最近的金币整顿，不仅提高了金币相对于金块的价值，也提高了银币相对于金块的价值，而且很可能还提高了这两种铸币相对于其他一切商品的价值；不过，大部分其他商品的价格受到许多其他原因的影响，所以金银铸币相对于它们的价值上涨，可能并不那么明显，也不那么容易觉察。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p33",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_309"
+      },
+      "contentHash": "c989fd681db25a661a0422fa7506491ab30bd88f2701aae0e8dc3f9bc8078598",
+      "text": "在英格兰造币厂，一磅重的标准成色银块铸成六十二先令，同样含有一磅重的标准成色白银。因此，每盎司五先令二便士，被称为英格兰白银的造币厂价格，也就是造币厂用标准成色银块换给的银币数量。在金币整顿以前，标准成色银块的市场价格在不同场合曾为每盎司五先令四便士、五先令五便士、五先令六便士、五先令七便士，而且常常是五先令八便士。不过，五先令七便士似乎是最常见的价格。金币整顿以后，标准成色银块的市场价格有时降至每盎司五先令三便士、五先令四便士和五先令五便士，而且几乎从未超过最后这个价格。尽管金币整顿以后银块的市场价格已大幅下降，却还没有降到造币厂价格那么低。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p34",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_310"
+      },
+      "contentHash": "bfd07ce7e5e948b6a3b4a90ebf417d791e31c8aa2694b1174e33ea3a99bdd167",
+      "text": "在英格兰铸币中不同金属的比价方面，正如铜的定价远高于其真实价值一样，银的定价也略低于其真实价值。在欧洲市场上，在法国铸币和荷兰铸币中，一盎司纯金大约兑换十四盎司纯银。在英格兰铸币中，它大约兑换十五盎司，也就是说，按照欧洲通常的估价，它换得的白银多于其应有的价值。不过，正如即使在英格兰，铜币的高价也不会提高铜条的价格一样，英格兰铸币中白银的低估价也不会压低银块的价格。银块仍保持着它与黄金之间的适当比例，正如铜条保持着它与白银之间的适当比例一样，原因也是相同的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p35",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_311"
+      },
+      "contentHash": "7d445bc7bb87f488ad4452981edefe88ad8019b949f8dd7c125779a4bd22e08e",
+      "text": "威廉三世在位期间整顿银币以后，银块的价格仍继续略高于造币厂价格。洛克先生把这种高价归因于准许出口银块而禁止出口银币。他说，这种出口许可使对银块的需求大于对银币的需求。但在国内日常买卖中需要银币的人数，肯定远远多于因出口或任何其他用途而需要银块的人数。目前，同样准许出口金块，也同样禁止出口金币；然而金块的价格却已降到造币厂价格以下。但当时英格兰铸币中白银相对于黄金的估价，和现在一样偏低；而金币——当时也被认为无须整顿——在那时和现在一样，调节着全部铸币的真实价值。既然当时整顿银币并未使银块价格降到造币厂价格，那么类似的整顿现在也不大可能产生这种效果。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p36",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_312"
+      },
+      "contentHash": "e0649e869cbc1ca7b8dbc5cc8d0b2ecee31886c0088ef1a17d74450e3c962ed9",
+      "text": "如果银币也像金币一样恢复到尽可能接近其标准重量的程度，那么按照现行比例，一枚几尼所能兑换的铸币白银，很可能会多于它所能购买的银块。在这种情况下，由于银币含有足额的标准重量，把它熔化便会有利可图：先把所得银块卖成金币，再把这些金币换成银币，以同样方式熔化。对现行比例作某种改变，似乎是防止这种不便的唯一办法。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p37",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_313"
+      },
+      "contentHash": "51c65ab31cbed0b2ff48ffbc83106e4da030bf6e1df555c161b3227f9ceaaea6",
+      "text": "如果铸币中白银相对于黄金的定价，高于其适当比例的程度，与目前低于这一比例的程度相同，这种不便或许会小一些；条件是同时以法律规定，银币作为法定支付手段，不得超过一枚几尼的找零数额，正如铜币作为法定支付手段不得超过一先令的找零数额一样。在这种情况下，不会有债权人因铸币中白银的高估价而受骗，正如目前不会有债权人因铜的高估价而受骗一样。只有银行家会因这项规定蒙受不利。当挤兑发生时，他们有时试图用六便士银币付款来拖延时间，而这项规定会使他们不能再用这种有损信誉的办法逃避立即付款。因此，他们将不得不始终在金库中保留比目前更多的现金；这对他们无疑可能是相当大的不便，但同时也会给他们的债权人提供相当大的保障。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p38",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_314"
+      },
+      "contentHash": "05a6aef545a038c0a1a8b9b3cf6a7c27adf2f85771fd77cc9a94584aedbfa1b3",
+      "text": "三镑十七先令十又二分之一便士，即黄金的造币厂价格，即使以我国目前这种优良的金币计算，其中肯定也不含有一盎司以上的标准成色黄金；因此，人们可能认为，它不应购买超过一盎司的标准成色金块。但铸成货币的黄金比金块方便；而且在英格兰，虽然铸币是免费的，但以金块形式送到造币厂的黄金，往往要等上几个星期才能以金币形式交还给所有者。在目前造币厂业务繁忙的时候，则要等上几个月才能交还。这种延迟相当于一项小额费用，使金币略微贵于等量的金块。如果英格兰铸币中白银按照它与黄金之间的适当比例定价，那么即使不整顿银币，银块的价格也很可能会降到造币厂价格以下；因为就连目前这些磨损失形的银币，其价值也是由它们所能换得的优良金币的价值调节的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p39",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_315"
+      },
+      "contentHash": "66992859f7c5e04804d476716c8eefa48fef4c062b0efba907da2eb255b6e51b",
+      "text": "对金银两种金属的铸造征收少量铸币税或费用，很可能会进一步扩大铸成货币的金银相对于等量金块或银块的价值优势。在这种情况下，铸币会按照这项小额费用的幅度提高所铸金属的价值，正如式样加工会按照这种加工的价格提高金银器的价值一样。铸币相对于金银块的价值优势，会防止铸币被熔化，也会抑制其出口。如果出于某种公共紧急需要而必须出口铸币，其中大部分很快就会自行回流。在国外，它只能按其作为金银块的重量出售；在国内，它却能购买比这个重量价值更多的东西。因此，把它运回国内会有利可图。在法国，铸币征收约百分之八的铸币税，据说法国铸币出口后会自行回流国内。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p40",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_316"
+      },
+      "contentHash": "269fc306187eb924f31797707a4a482c0ce85a2ebee3b25ebc64518fb59acac3",
+      "text": "金块和银块市场价格的偶然波动，与其他一切商品市场价格的类似波动，都由相同的原因造成。这些金属经常因海上和陆上的各种意外而损失，又不断消耗于镀金、镀银、花边和刺绣，消耗于铸币的磨损以及金银器的磨损；在一切本国没有矿山的国家，为了弥补这些损失和消耗，都必须不断进口这些金属。我们可以相信，进口商和其他一切商人一样，会尽其所能，使每次进口的数量适合他们判断可能立即出现的需求。不过，尽管他们十分留意，有时还是会做得过头，有时又会做得不足。当进口的金银块超过所需数量时，他们有时宁愿以略低于通常价格或平均价格的价格出售一部分，也不愿承担再次出口的风险和麻烦。反过来，当他们进口的数量少于所需数量时，得到的价格就会略高于这一价格。但是，尽管存在所有这些偶然波动，如果金块或银块的市场价格连续数年稳定而持续地或多或少高于或低于造币厂价格，我们便可以确信，这种稳定而持续的价格优势或劣势，是由当时铸币状况中的某种因素造成的；这种因素使一定数量铸币的价值，高于或低于它本应含有的准确数量的金银块的价值。结果的持续和稳定，意味着原因也具有相应的持续性和稳定性。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p41",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_317"
+      },
+      "contentHash": "37b17b74a7f1daba63a72a34227ae2da7cc6b4ffa43dff30eb6df22934871819",
+      "text": "任何一个特定国家的货币，在任何特定时间和地点，作为价值尺度的准确程度，取决于流通中的铸币与其标准相符的程度，或者说，取决于铸币实际含有的纯金或纯银数量与其应含的精确数量相符的程度。例如，如果在英格兰，四十四个半几尼恰好含有一磅标准金，即十一盎司纯金和一盎司合金，那么，在任何特定时间和地点，英格兰金币对商品实际价值的衡量，就会达到事物本身性质所允许的准确程度。但是，如果由于摩擦和磨损，四十四个半几尼通常所含的标准金不足一磅，而减少的程度在一些金币上又比另一些更大，那么，价值尺度就会像其他一切衡量重量和数量的尺度通常所遭遇的那样，具有同一种不确定性。由于这些衡量尺度很少恰好符合其标准，商人只能尽其所能，不按照这些衡量尺度应当具有的数值，而按照他根据经验发现它们实际上平均具有的数值，来调整其商品的价格。铸币中出现类似的紊乱，也同样会使商品价格不再按照铸币应当含有的纯金或纯银数量来调整，而是按照根据经验发现铸币实际上平均含有的数量来调整。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c5.p42",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_318"
+      },
+      "contentHash": "a006eb9c9636836a5bdd638fc353dc60b6e8f1a536d0958852df90a7d8c16a80",
+      "text": "应当指出，我所说的商品的货币价格，始终是指商品出售时所换得的纯金或纯银数量，而不考虑铸币的面额。例如，爱德华一世时代的六先令八便士，我认为与现今的一英镑具有相同的货币价格，因为据我们所能作出的最接近的判断，前者所含的纯银数量与后者相同。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    }
+  ]
+}

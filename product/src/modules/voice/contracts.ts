@@ -1,4 +1,4 @@
-import type { SourceBlock } from "@/modules/book";
+import type { BookSourceBlock, SourceBlock } from "@/modules/book";
 
 export type VoiceSourceSnapshot = Readonly<{
   sourceId: string;
@@ -54,6 +54,25 @@ export function snapshotVoiceSource(block: SourceBlock): VoiceSourceSnapshot {
     ),
   });
 }
+/**
+ * Seals a canonical full-book paragraph. Physical PDF pages are intentionally
+ * empty until that paragraph has a verified PDF mapping.
+ */
+export function snapshotManifestVoiceSource(
+  block: BookSourceBlock,
+  editionId: string,
+  title: string,
+): VoiceSourceSnapshot {
+  return Object.freeze({
+    sourceId: block.sourceId,
+    editionId,
+    title,
+    quote: block.quote,
+    contentHash: block.contentHash,
+    pdfPages: Object.freeze([]),
+  });
+}
+
 
 export function cloneVoiceSourceSnapshot(
   snapshot: VoiceSourceSnapshot,

@@ -5,6 +5,7 @@
 
 /** Stable semantic IDs. Never equal to OLL fragment ids or PDF page numbers. */
 export type DomainSourceId =
+  | `smith.b${number}.c${number}.p${number}`
   | "smith.b1.c1.division"
   | "smith.b1.c3.market_extent";
 

@@ -1,0 +1,3112 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "locale": "zh-CN",
+  "chapterId": "smith.b4.c7",
+  "translations": [
+    {
+      "sourceId": "smith.b4.c7.p1",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_184"
+      },
+      "contentHash": "4a1d23d3eba770ec6abc675f5e317ccc59e0c7ddf1ba8a898b15d63998559ffc",
+      "text": "最初促成欧洲各国在美洲和西印度群岛建立殖民地的利益，并不像促使古希腊和古罗马建立殖民地的利益那样完全明白而明确。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p2",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_185"
+      },
+      "contentHash": "e7ad660c715e7e816de8f2ef561a5328ace5f370bb5ae266bab8b95349bd3952",
+      "text": "古希腊各邦各自拥有的领土都很狭小；当其中任何一邦的人口增长到超过其领土所能轻易供养的程度时，便会派出一部分人，到世界上遥远偏僻的某个地方寻找新的居所；由于四面环绕着好战的邻邦，任何一邦都很难在本土大幅扩张领土。多利安人的殖民地主要建在意大利和西西里；在罗马建城以前的时代，这些地方居住着野蛮而未开化的民族。希腊人的另外两大部族伊奥尼亚人和埃奥利亚人的殖民地，则主要建在小亚细亚和爱琴海诸岛；这些地方的居民在当时所处的状态，似乎与西西里和意大利的居民大致相同。母城虽然把殖民地视为自己的孩子，认为它始终有权得到厚待和援助，并应以深切的感激和敬意作为回报，但也把它视为一个已经独立的孩子，并不声称对它拥有任何直接的权力或管辖权。殖民地自行确定政体，制定法律，选举行政长官，并以独立国家的身份同邻国媾和或交战，无须等待母城的批准或同意。促成每一处此类建置的利益，再明白、再明确不过了。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p3",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_186"
+      },
+      "contentHash": "9f41eb9efa6d79f20159c5af574ccaf22e043bdfc1848a12b2a43e2e5dc42967",
+      "text": "罗马同其他大多数古代共和国一样，最初是依据一项土地法建立的；这项法律按一定比例，把公有领土分配给组成国家的各个公民。人事的演变，通过婚姻、继承和转让，必然打乱了这种最初的分配，并常常使原本分配给许多不同家庭维持生计的土地落入一人之手。为纠正这种被认为是失序的状况，便制定了一项法律，把任何公民所能拥有的土地限制为五百尤格拉，约合三百五十英亩。不过，尽管我们读到这项法律曾在一两个场合得到执行，它后来不是被忽视，就是被规避，财产的不平等因而不断加剧。大部分公民没有土地，而按照当时的风俗习惯，一个自由人没有土地就很难维持自己的独立。在现代，一个穷人即使没有自己的土地，只要拥有少量资本，就既可以租种他人的土地，也可以经营一点零售生意；如果他没有资本，也可以当乡村劳动者或工匠，找到工作。但是，在古罗马，富人的土地全由奴隶耕种，他们在一名同样是奴隶的监工监督下劳动；所以，一个贫穷的自由人无论作为农场经营者还是劳动者，都几乎没有受雇的机会。一切行业和制造业，甚至零售业，也都由富人的奴隶经营，为其主人谋利；而这些主人的财富、权势和庇护，使贫穷的自由人很难与他们竞争。因此，没有土地的公民，除了靠每年选举中候选人的馈赠之外，几乎没有其他谋生手段。保民官每当想要煽动人民反对富人和权贵时，就提醒他们从前的土地分配，并把那项限制此类私人财产的法律说成共和国的根本法。人民大声要求获得土地，而我们可以相信，富人和权贵也下定了决心，绝不把自己的任何土地分给他们。因此，为了在一定程度上使人民满意，他们常常提议派出一个新殖民地。不过，即使在这种场合，征服四方的罗马也无须把自己的公民赶出去，让他们可以说是在茫茫世界中碰运气，连将在哪里定居都不知道。罗马通常在意大利已征服的行省给他们分配土地；由于这些地方处在共和国的领土之内，他们绝不可能组成任何独立国家，充其量不过是一种法人团体，虽有权制定附则管理自身，却始终受母城的纠正权、管辖权和立法权支配。派出这种殖民地，不仅能使人民得到一些满足，而且往往也会在新征服的行省建立一种驻防力量，因为这些行省若无驻防，是否服从还可能成问题。因此，无论考察建置本身的性质，还是考察建立它的动机，罗马殖民地都与希腊殖民地完全不同。所以，在原来的语言中，用来表示这两种不同建置的词，其含义也大不相同。拉丁语词“Colonia”仅仅表示垦殖地；相反，希腊语词“αποικα”表示迁居、离乡、出门。不过，罗马殖民地虽在许多方面不同于希腊殖民地，促使人们建立它们的利益却同样明白而明确。这两种制度的起源，不是不可抗拒的必要性，就是清楚而明显的效用。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p4",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_187"
+      },
+      "contentHash": "5315066b2aad3cff16c35da46729ae28ac19e6f134e72f4ff208d9c83a0b41a9",
+      "text": "欧洲人在美洲和西印度群岛建立殖民地，并非出于任何必要性；虽然这些殖民地所产生的效用极大，这种效用却并非完全如此清楚而明显。在最初建立殖民地时，人们并不了解这种效用；它既不是建立殖民地的动机，也不是促成这种建立的那些发现的动机。而且，即便在今天，这种效用的性质、范围和界限，或许也没有得到充分理解。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p5",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_188"
+      },
+      "contentHash": "a09e95887ee088379879f41f726ac40706d9df9737f2dc82e66a181e80646c53",
+      "text": "在十四和十五世纪，威尼斯人经营香料和其他东印度商品贸易，获利极为丰厚，并把这些商品分销给欧洲其他各国。他们主要在埃及购买这些商品；当时埃及受马穆鲁克人统治，马穆鲁克人是土耳其人的敌人，而威尼斯人也是土耳其人的敌人；这种利益上的结合再得到威尼斯金钱的支持，便形成了一种联系，使威尼斯人几乎垄断了这项贸易。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p6",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_189"
+      },
+      "contentHash": "f32c5a5e4d25e8dd11fd40b79c5192ec93df90868713dc03601c73f3332ae9d1",
+      "text": "威尼斯人的巨额利润激起了葡萄牙人的贪欲。在整个十五世纪，他们一直试图找到一条海路，通往摩尔人穿越沙漠、把象牙和金沙带给他们的那些国家。他们发现了马德拉群岛、加那利群岛、亚速尔群岛、佛得角群岛、几内亚海岸、洛安果海岸、刚果海岸、安哥拉海岸和本格拉海岸，最后又发现了好望角。他们早就希望分享威尼斯人利润丰厚的贸易，而最后这项发现使他们有了实现这一愿望的可能前景。1497年，瓦斯科·达·伽马率领一支由四艘船组成的舰队从里斯本港启航，航行十一个月后抵达印度斯坦海岸，从而完成了持续将近一个世纪、始终极为坚定且很少中断的一系列探索。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p7",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_190"
+      },
+      "contentHash": "67a6f9de10d47e54bbbf22df706bab4e45d053652cc7ba7dc1ee3303ebca3c75",
+      "text": "在此数年前，当欧洲人还在悬念中注视葡萄牙人的计划，而其成功看来尚无把握之时，一位热那亚领航员提出了一项更为大胆的计划：向西航行到东印度群岛。当时，欧洲人对于那些国家的位置所知极不完备。少数到过那里的欧洲旅行者把距离夸大了；或许是出于单纯和无知，因为这距离确实很远，在无法测量它的人看来几乎无穷无尽；也或许是为了让自己游历这些离欧洲极其遥远地区的经历更添几分神奇。哥伦布完全正确地推断，向东走的路越长，向西走的路就越短。因此，他提议向西航行，认为这既是最短也是最可靠的路线，并且幸运地使卡斯蒂利亚的伊莎贝拉相信他的计划很可能成功。1492年8月，他从帕洛斯港启航，比瓦斯科·达·伽马的远征队从葡萄牙出发早了将近五年；航行两三个月后，他先发现了巴哈马群岛或卢卡亚群岛中的一些小岛，随后又发现了圣多明各大岛。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p8",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_191"
+      },
+      "contentHash": "3aecb276a0a94d5827c89e5e2674b0c56f1860d5c8cd563347900716606e03c2",
+      "text": "但是，哥伦布无论在这次航行还是后来任何一次航行中所发现的地方，都与他要寻找的那些国家毫不相似。他没有见到中国和印度斯坦的财富、开垦程度和稠密人口；在圣多明各以及他到过的新世界其他一切地方，他所见到的只是一片完全被树林覆盖、未经开垦、仅有若干部落赤身裸体而生活悲惨的野蛮人居住的土地。不过，他不大愿意相信这些地方并不是马可·波罗所描述的某些国家。马可·波罗是到过中国或东印度群岛的第一个欧洲人，至少是留下这些地方任何记述的第一个欧洲人；即使极微小的相似之处，例如他在圣多明各一座名为“锡瓦奥”的山与马可·波罗提到的“锡潘戈”这个名称之间发现的相似，也往往足以使他不顾最明白的证据，重新回到这个自己偏爱的成见上来。他在写给斐迪南和伊莎贝拉的信中，把自己发现的地方称为“印度”。他毫不怀疑，这些地方就是马可·波罗所描述的那些国家的边缘地带，离恒河或亚历山大所征服的国家并不很远。即使最后确信它们并非同一地方，他仍安慰自己说，那些富庶国家相距不远，并因此在后来一次航行中沿着大陆海岸，向达连地峡方向寻找它们。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p9",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_192"
+      },
+      "contentHash": "7bc0fdce5711b1dc27dfdc18466676e4c0a20d1c113c995b65892b13071c904b",
+      "text": "由于哥伦布的这个错误，从那以后，“印度”这个名称便一直附着在那些不幸的地方；等到人们终于清楚地发现，新印度与旧印度截然不同时，前者便被称为西印度群岛，以区别于被称为东印度群岛的后者。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p10",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_193"
+      },
+      "contentHash": "7df99f659b60c512f4900991bda087a36f0e719cda0c54ef4049178677320f32",
+      "text": "不过，对哥伦布来说，重要的是，无论他发现的究竟是什么地方，都必须向西班牙宫廷说成极其重要；而在构成每个国家真正财富的东西，即土地产出的动植物方面，当时并没有什么足以充分证明这种说法合理的事物。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p11",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_194"
+      },
+      "contentHash": "6a9a055395f6e693d7a7dee4bbe8b9276c6966822431a1977be30854f72cde22",
+      "text": "科里是一种介于老鼠和兔子之间的动物，布丰先生认为它与巴西的阿佩雷亚是同一种动物；它是圣多明各最大的胎生四足动物。这个物种似乎从来都不很多；据说，西班牙人的猫狗早已把它以及其他几种体形更小的动物几乎完全灭绝了。不过，这些动物连同一种称为伊瓦纳或鬣蜥的颇大蜥蜴，构成了当地所能提供的动物性食物的主要部分。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p12",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_195"
+      },
+      "contentHash": "053b680e1fb014942158e25e774f364e6d3202b25c30c397c0e1f4659b858fa6",
+      "text": "当地居民的植物性食物，虽然由于他们不勤劳而不很丰富，却也没有那么匮乏。这些食物包括玉米、薯蓣、马铃薯、香蕉等；这些植物当时在欧洲完全不为人知，此后在欧洲也从未受到很高评价，人们也从未认为它们所提供的营养能与这一地区自古以来栽培的普通谷物和豆类所提供的营养相等。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p13",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_196"
+      },
+      "contentHash": "598e78a0a1bedd689bff8edd00808349c51a1a0e26269b82ec7d80d40c4c2cb6",
+      "text": "棉花的确为一种十分重要的制造业提供了原料，而且当时在欧洲人看来，无疑是这些岛屿所有植物产品中最有价值的一种。但是，尽管在十五世纪末，东印度群岛的细棉布和其他棉织品在欧洲各地都很受珍视，欧洲任何地方却都没有发展棉纺织业。因此，当时即使这种产品在欧洲人眼中也不可能显得非常重要。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p14",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_197"
+      },
+      "contentHash": "509c32a35aa45bdd618574193ae92399f30059289f6b69d90cda97ae19d0649c",
+      "text": "哥伦布发现，新近发现的那些国家无论在动物还是植物方面，都没有什么足以证明把它们说得极为有利是合理的东西，于是便把目光转向矿物；他安慰自己说，在这第三界产物的丰富程度上，他已找到对另外两界产物无足轻重的充分补偿。当地居民用来装饰服装的小块黄金，据他所知，常常是在山上流下来的小河和急流中发现的；这足以使他确信，那些山里蕴藏着极其丰富的金矿。因此，圣多明各被说成一个黄金富饶的地方，并因而——按照不仅现今而且当时的偏见——是西班牙王室和王国取之不尽的真正财富源泉。哥伦布第一次航行归来后，以某种凯旋礼仪被引见给卡斯蒂利亚和阿拉贡的君主；他所发现地方的主要物产列成庄严的队伍，在他前面依次抬过。其中唯一有价值的部分，是几条小金带、金手镯和其他黄金饰物，以及几包棉花。其余不过是些引起普通人惊奇和好奇的东西：几根大得出奇的芦苇，几只羽毛极其美丽的鸟，还有巨大鳄鱼和海牛的几张填充兽皮；走在这一切前面的，是六七个可怜的当地人，他们奇特的肤色和外貌大大增添了这场展示的新奇感。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p15",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_198"
+      },
+      "contentHash": "bea3d228ecb1754f4370de8ba2d44f8ba97ebce36f35a188660a608a3b31db53",
+      "text": "由于哥伦布的陈述，卡斯蒂利亚议会决定占领那些居民显然无力自卫的国家。使这些居民皈依基督教的虔诚目的，使这项计划的不义变得神圣。不过，希望在那里找到黄金宝藏，才是促使人们实施这项计划的唯一动机；为了使这一动机更具分量，哥伦布提议，凡在那里发现的全部金银，应有一半归王室所有。这项提议得到了议会批准。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p16",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_199"
+      },
+      "contentHash": "a3d2f79c3a766eb80c3c5717ac21a2eecef93fe0affc86c5e22e842cbcc0d1c4",
+      "text": "只要最初的冒险者输入欧洲的黄金，全部或绝大部分仍是以劫掠无力自卫的当地人这样极其容易的方式取得的，那么即使缴纳这项重税，或许也不是很困难。但是，当地人一旦被彻底掠走所有财物——这在圣多明各以及哥伦布发现的其他所有地方，六年或八年内便已全部完成——而要想找到更多黄金，就必须到矿山中开采时，这项税就再也不可能缴纳了。据说，正是对这项税的严厉征收，最先导致圣多明各的矿山被完全放弃，此后那些矿山再也没有开采过。因此，这项税很快降到三分之一，随后降到五分之一，再降到十分之一，最后降到金矿总产量的二十分之一。对白银征收的税，在很长时期内一直是总产量的五分之一，直到本世纪才降至十分之一。但是，最初的冒险者似乎对白银并不很感兴趣。任何不如黄金贵重的东西，似乎都不值得他们注意。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p17",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_200"
+      },
+      "contentHash": "f76c4e7750aadcd0e5199076725f7372dbd2abc600c27c78111f578ff3702f55",
+      "text": "哥伦布之后，西班牙人在新世界进行的其他一切事业，看来都是由同一动机推动的。正是神圣的黄金渴望，把奥赫达、尼奎萨和瓦斯科·努涅斯·德·巴尔沃亚带到达连地峡，把科尔特斯带到墨西哥，又把阿尔马格罗和皮萨罗带到智利和秘鲁。这些冒险者每到一处未知的海岸，首先总是询问那里能否找到黄金；他们根据所得的这方面消息，决定是离开还是在当地定居。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p18",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_201"
+      },
+      "contentHash": "46c45d906c7117376a3d3bd2df66476f34ad04394339a222b85d1d2cca83e970",
+      "text": "然而，在所有代价高昂而结果不定、使大多数参与者破产的计划中，或许没有一种比寻找新金银矿更能使人彻底倾家荡产。这也许是世界上最不利的抽彩，或者说，是中奖者的所得与未中奖者的损失之比最低的抽彩；因为奖项虽少，空签虽多，一张签的通常代价却是一位巨富的全部财产。采矿计划非但不能补偿投入其中的资本以及资本的普通利润，通常反而把资本和利润一并吞噬。因此，一位希望增加本国资本的审慎立法者，在一切计划之中，最不愿给予任何特别鼓励的就是这种计划，也最不愿让本国资本中流向这些计划的份额超过其自行流入的数量。事实上，几乎人人都如此荒谬地确信自己会有好运，以至于只要有一丁点成功的可能，流入这些计划的资本份额就往往会自行变得过多。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p19",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_202"
+      },
+      "contentHash": "14038835883641f49930803e264a8cc5e50a853c6a39a269f20529378d7eff13",
+      "text": "不过，尽管冷静的理性和经验对这类计划的判断一向极为不利，人类贪欲的判断通常却完全相反。使许多人产生“哲人之石”这种荒谬想法的同一种激情，也使另一些人产生存在无比丰富的金银矿这种同样荒谬的想法。他们没有想到，这些金属的价值，在一切时代和一切国家主要都源于其稀少；它们的稀少，则源于大自然在任何一个地方所储藏的数量都极少，源于大自然几乎在各处都用坚硬而难以处理的物质包围着这些少量金属，因而也源于为了穿透这些物质并取得金属，在各地都必不可少的劳动和费用。他们妄想，在许多地方也许能发现像通常所见的铅矿脉、铜矿脉、锡矿脉或铁矿脉一样宽大而丰富的金银矿脉。沃尔特·雷利爵士关于黄金城和黄金国埃尔多拉多的梦想，足以使我们明白，即使明智之人也并非始终能够免受这种奇异幻想的迷惑。在这位伟人去世一百多年以后，耶稣会士古米利亚仍确信那个神奇国家确实存在，并以极大的热忱——我敢说也是以极大的真诚——表示，自己若能把福音之光带给一个能够如此丰厚地酬报传教士虔诚劳动的民族，将会多么幸福。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p20",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_203"
+      },
+      "contentHash": "62454ca88f9ed2cc767504a777fcd218c055ded5327f94043e90d7218ef9bb30",
+      "text": "在西班牙人最初发现的那些国家里，目前没有任何已知的金矿或银矿被认为值得开采。据说最初的冒险者在那里发现的这些金属的数量，很可能被大大夸大了，正如最初发现后立即开采的那些矿山的丰饶程度也被大大夸大了一样。然而，据传那些冒险者所发现的财富，足以激起他们所有同胞的贪欲。每一个航往美洲的西班牙人都期望找到一个黄金国。在这件事上，命运也做了她在极少数其他场合做过的事。她在某种程度上实现了她的信徒们不切实际的奢望；在发现和征服墨西哥与秘鲁时（前者发生在哥伦布首次远征约三十年后，后者约四十年后），她呈现在他们面前的东西，与他们所寻求的那种贵金属的丰裕相去不远。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p21",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_204"
+      },
+      "contentHash": "0c1b41d44cabb14adc065d44dab50665b70bb4071c709231a0bbd4539fe5e0af",
+      "text": "因此，一项通往东印度群岛的商业计划，促成了西方的首次发现。一项征服计划，促成了西班牙人在那些新发现国家建立的所有殖民地。激励他们进行这种征服的动机，是一项开采金银矿的计划；而一连串人类智慧无法预见的偶然事件，使这项计划取得的成功，远远超过了发起者能够合理期待的程度。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p22",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_205"
+      },
+      "contentHash": "815d6cc82c06228fb0506e7082eaaa5baf5e0610439870a9e0a58cd2b9c1757e",
+      "text": "欧洲其他各国最初那些企图在美洲建立殖民地的冒险者，也受到同样虚幻的设想鼓舞；但他们并未获得同样的成功。巴西最初建立殖民地一百多年以后，那里才发现银矿、金矿或钻石矿。在英国、法国、荷兰和丹麦的殖民地，从来没有发现过这种矿；至少没有发现任何目前被认为值得开采的矿。然而，北美洲最早的英国殖民者曾提出，把将在那里发现的全部金银的五分之一献给国王，以此促使国王向他们颁发特许状。因此，在授予沃尔特·雷利爵士、伦敦公司和普利茅斯公司、普利茅斯委员会等的特许状中，这五分之一都保留给了王室。除了期望找到金银矿以外，那些最早的殖民者还期望发现一条通往东印度群岛的西北航道。迄今为止，他们在这两件事上都失望了。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p23",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_206"
+      },
+      "contentHash": "165be6c31289868df0b591a32f3883fa7a2781aca6abfff22359a26eb262e797",
+      "text": "一个文明国家的殖民地，如果占据的是一片荒地，或是一个人口极其稀少、当地人很容易给新移民让出地方的国家，那么它在走向富裕和强盛方面，比任何其他人类社会进步得都更迅速。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p24",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_207"
+      },
+      "contentHash": "1a3257cacb3d50ba8b5f508bff491473e354720e03f54a9559f386070341e6e8",
+      "text": "殖民者带去的农业知识和其他实用技艺，优于野蛮和未开化民族在许多个世纪中自然发展起来的水平。他们还带去了服从的习惯，以及对本国实行的正规政府、支撑这种政府的法律体系和正规的司法管理所具有的某些观念；他们自然会在新殖民地建立某种同类的制度。但是，在野蛮和未开化民族中，即使法律和政府已经建立到保护技艺所必需的程度，法律和政府的自然进步仍比技艺的自然进步更为缓慢。每个殖民者得到的土地，都多于他所能耕种的数量。他无须缴纳地租，几乎也无须缴纳任何税款。没有地主同他分享土地的产物，君主所得的份额通常也微不足道。他有一切动机使产量尽可能大，因为这样取得的产物几乎将全部归他所有。但他的土地通常如此辽阔，以致即使付出自己的全部勤劳，并利用他所能雇到的其他人的全部勤劳，也很少能使土地生产出其生产能力的十分之一。因此，他急于从四面八方招募劳动者，并以最优厚的工资酬报他们。但这种优厚工资，加上土地充裕而低廉，很快就会使这些劳动者离开他，自己成为地主，并同样优厚地酬报其他劳动者；而后者很快又会出于他们离开第一个雇主的同样原因而离开他们。劳动的优厚报酬鼓励结婚。孩子在幼小的婴儿时期营养充足，并得到妥善照料；长大以后，他们的劳动价值大大超过抚养他们的费用。成年以后，高昂的劳动价格和低廉的土地价格，使他们能够像他们的父辈从前那样自立门户。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p25",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_208"
+      },
+      "contentHash": "3d9cabca7d1659afbe2cb71ec383f1be6fe15a640a062351a7327b5c82230ebc",
+      "text": "在其他国家，地租和利润吞噬工资，两个较高阶层压迫较低阶层。但在新殖民地，两个较高阶层的利益迫使他们以更为慷慨、更为人道的方式对待较低阶层；至少在这个较低阶层不处于奴隶状态的地方是如此。天然肥力最高的荒地，只需花很少的钱就可以买到。土地所有者同时总是经营者；他期待从土地改良中得到的收入增加额，构成他的利润，而在这种情况下，这种利润通常非常大。但要获得这种巨额利润，就必须雇用他人的劳动来开垦和耕种土地；而新殖民地通常存在的土地广袤与人口稀少之间的不相称，使他难以获得这种劳动。因此，他不在工资上讨价还价，而愿意不惜任何代价雇用劳动。高工资鼓励人口增长。优良土地的低廉和充裕鼓励土地改良，并使土地所有者有能力支付这种高工资。土地的几乎全部价格都由这些工资构成；这些工资作为劳动工资来看虽然很高，但作为这种极有价值之物的价格来看却很低。凡是鼓励人口增长和土地改良进程的因素，也会鼓励真实财富和强盛的发展。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p26",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_209"
+      },
+      "contentHash": "fab25f5f594c00c48a86b359ecb0672b0084204b9dd16449c9a3febe0efbd037",
+      "text": "因此，古希腊许多殖民地走向富裕和强盛的进程，似乎都非常迅速。在一两个世纪之内，其中有几个看来已经赶上、甚至超过了它们的母城。据各种记载，西西里的叙拉古和阿格里真托、意大利的塔兰托和洛克里、小亚细亚的以弗所和米利都，看来至少不逊于古希腊的任何城市。它们建立的时间虽晚，但一切精致优雅的技艺以及哲学、诗歌和雄辩术，在那里得到研习的时间，似乎都不晚于母国任何地方，达到的水平也同样高。值得注意的是，希腊最古老的两位哲学家泰勒斯和毕达哥拉斯的学派，并非建立在古希腊，而是一个建立在亚洲的殖民地，另一个建立在意大利的殖民地。所有这些殖民地都建立在野蛮和未开化民族居住的国家，而这些民族很容易给新移民让出地方。这些殖民地拥有大量优良土地，而且由于完全独立于母城，它们可以按照自己认为最符合自身利益的方式处理自己的事务。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p27",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_210"
+      },
+      "contentHash": "c8d0b02aa3b1ee5336aa70d3a90176ff3e7422dd3e0a8a8337f389c53908498a",
+      "text": "罗马殖民地的历史远没有这样辉煌。其中有些殖民地，例如佛罗伦萨，确实经过许多个时代，并在母城衰亡之后，成长为相当重要的国家。但它们之中似乎没有一个曾经发展得非常迅速。它们全都建立在被征服的行省，而这些行省在大多数情况下原先已有稠密的人口。分配给每个殖民者的土地数量通常都不大，而且由于殖民地并不独立，他们不能总是按照自己认为最符合自身利益的方式处理自己的事务。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p28",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_211"
+      },
+      "contentHash": "e32566335eb433ed385aac3bc007d05f89df19ede4cc00895ef42995af6c68f0",
+      "text": "就优良土地的充裕而言，欧洲人在美洲和西印度群岛建立的殖民地，与古希腊的殖民地相似，甚至远远超过后者。就对母国的依附而言，它们与古罗马的殖民地相似；但它们与欧洲相距遥远，或多或少地减轻了这种依附对所有这些殖民地造成的影响。它们所处的位置，使其较少处于母国的视野之内，也较少受到母国权力的控制。它们按照自己的方式追求自身利益时，其行为在很多场合未受追究，原因或是欧洲不知道，或是欧洲不理解；还有一些场合，因为距离遥远使限制这种行为颇为困难，它便明确地得到容忍和默许。甚至西班牙暴虐专断的政府，也曾在很多场合因担心发生普遍起义，而不得不撤回或缓和为治理其殖民地而发布的命令。因此，欧洲所有殖民地在财富、人口和土地改良方面的进步都非常巨大。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p29",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_212"
+      },
+      "contentHash": "e0fd66cbd8de814c8a615d7477fc5fc21771ca1a884c4bdf39fd7639566fdc8b",
+      "text": "西班牙王室凭借其应得的金银份额，从殖民地建立之初便从中获得了一些收入。而且，这种收入的性质足以在人类的贪欲中激起对于更大财富的最不切实际的期待。因此，西班牙的殖民地从建立之初便深受母国关注，而欧洲其他国家的殖民地在很长时期内则大体受到忽视。前者或许并未因这种关注而发展得更好，后者也未因这种忽视而发展得更差。与它们在某种程度上占有的国土面积相比，西班牙殖民地被认为比几乎任何其他欧洲国家的殖民地人口更少，也更不繁荣。然而，即使是西班牙殖民地，在人口增长和土地改良方面的进步也无疑既迅速又巨大。据乌略亚记述，征服之后建立的利马城在近三十年前已有五万居民。同一位作者记述，基多原先不过是印第安人的一个破败小村，而在他那个时代人口也同样众多。杰梅利·卡雷里据说是一位冒牌旅行家，但他在所有地方写作时似乎都依据极其可靠的资料；据他记述，墨西哥城有十万居民。尽管西班牙作家有种种夸大之辞，这一数字大概仍是蒙特苏马时代该城人口的五倍以上。这些数字远远超过英国殖民地最大的三个城市波士顿、纽约和费城的人口。西班牙人征服以前，墨西哥和秘鲁都没有适于牵引的牲畜。美洲驼是他们唯一的驮畜，而它的力气似乎比普通驴小得多。他们不知道犁。他们不懂得使用铁器。他们既没有铸币，也没有任何一种固定的商业工具。他们的商业通过物物交换进行。一种木铲是他们主要的农具；锋利的石头充当切割用的刀和斧；鱼骨和某些动物坚硬的筋充当缝纫用的针；这些看来就是他们主要的生产工具。在这种情况下，这两个帝国中的任何一个，似乎都不可能像现在这样得到如此充分的改良和良好的耕作，因为现在那里充分拥有各种欧洲牲畜，铁器、犁以及欧洲许多技艺的使用也已经引入。但每个国家的人口必然与其改良和耕作的程度成比例。尽管征服之后发生了对当地人的残酷屠杀，这两个大帝国现在的人口很可能仍比以往任何时候都多；而且人民肯定已经大为不同，因为我想我们必须承认，西班牙克里奥尔人在许多方面都优于古代印第安人。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p30",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_213"
+      },
+      "contentHash": "18c94bebd67576fb679e1fccf073f58d85104d0743c2cc0ce5cc9f73c99e3538",
+      "text": "继西班牙人的殖民地之后，葡萄牙人在巴西的殖民地，是欧洲任何国家在美洲建立的殖民地中最古老的。但由于最初发现巴西之后很长一段时间内都没有在那里发现金矿或银矿，也由于它因此几乎不给王室带来任何收入，所以它在很长时期内大体受到忽视；而在这种受忽视的状态下，它成长为一个强大而有实力的殖民地。葡萄牙受西班牙统治时，巴西遭到荷兰人进攻；巴西分为十四个省，其中七个被荷兰人占领。正当他们期待很快征服另外七个省时，布拉干萨家族登上王位，使葡萄牙恢复了独立。于是，荷兰人由于是西班牙人的敌人，便成了葡萄牙人的朋友，因为葡萄牙人同样是西班牙人的敌人。因此，荷兰人同意把巴西尚未被他们征服的部分留给葡萄牙国王，而葡萄牙国王则同意把已被他们征服的部分留给他们，认为这种事情不值得同如此友好的盟邦争执。但荷兰政府很快开始压迫葡萄牙殖民者；后者并未以申诉来自我排遣，而是拿起武器反抗他们的新主人，并凭借自己的勇敢和决心，在母国确实暗中默许、却没有提供任何公开援助的情况下，把荷兰人赶出了巴西。因此，荷兰人发现自己不可能保住这个国家的任何部分，便甘愿让它全部归还葡萄牙王室。据说这个殖民地有六十多万人，包括葡萄牙人或葡萄牙人的后裔、克里奥尔人、穆拉托人，以及葡萄牙人与巴西人的混血种族。人们认为，美洲没有任何一个殖民地拥有如此众多的欧洲血统人口。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p31",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_214"
+      },
+      "contentHash": "e63baa8dba3bbc112d0bd5e9870f32f4ffa72015308c1d62265b2169f5a1a28e",
+      "text": "在十五世纪末叶以及十六世纪的大部分时期，西班牙和葡萄牙是大洋上的两个海军强国；因为威尼斯的商业虽然遍及欧洲各地，其舰队却几乎从未驶出地中海。西班牙人凭借最先发现美洲，声称整个美洲都属于自己；他们虽然无法阻止葡萄牙这样强大的海军力量在巴西建立殖民地，但当时他们的名声如此令人畏惧，以致欧洲其他大多数国家都不敢在那片大陆的任何其他地方立足。企图在佛罗里达建立殖民地的法国人，全被西班牙人杀害了。但在十六世纪末叶，他们所谓的“无敌舰队”遭到失败或挫败，导致西班牙海军力量衰落，使他们再也无力阻挠其他欧洲国家建立殖民地。因此，在十七世纪，英国人、法国人、荷兰人、丹麦人和瑞典人，即所有在大洋沿岸拥有港口的大国，都曾尝试在新世界建立一些殖民地。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p32",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_215"
+      },
+      "contentHash": "d170ce6efc606c0c9a689a8e3062cf90c2fd57c7e90f8c9f516a877717cf88fd",
+      "text": "瑞典人在新泽西建立了殖民地；而那里至今仍可见到许多瑞典家庭，足以证明，如果得到母国保护，这个殖民地很可能会繁荣起来。但由于受到瑞典忽视，它很快便被荷兰人的纽约殖民地吞并；而后者又在1674年落入英国人统治之下。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p33",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_216"
+      },
+      "contentHash": "266d61727ffd377ce03519feffa7690a4b1ce0eed3be7b57b131e9603c99998d",
+      "text": "圣托马斯和圣克罗伊这两个小岛，是丹麦人在新世界曾经占有的唯一领地。这些小殖民地也由一家享有专营权的公司统治；该公司既拥有购买殖民者剩余产品的独占权，又拥有向他们供应其所需外国货物的独占权，因而无论在收购还是销售时，它不仅有能力压迫他们，而且有压迫他们的最大诱因。由一家享有专营权的商人公司实施的统治，对任何国家来说，或许都是一切统治中最坏的。不过，这种统治虽然使这些殖民地的发展更为迟缓乏力，却未能完全阻止其发展。丹麦前任国王解散了这家公司，从那时起，这些殖民地便非常繁荣。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p34",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_217"
+      },
+      "contentHash": "de1b0e4e6db66c0d82a5ab793f789362e2f58e2eb63c47f41d201cc4925dc71f",
+      "text": "荷兰人在西方的殖民地，同他们在东印度群岛的殖民地一样，最初都置于一家享有专营权的公司统治之下。因此，其中一些殖民地的发展，虽然同几乎任何一个人口长期繁衍、制度长期确立的国家相比都相当可观，但同大多数新殖民地相比却迟缓而缓慢。苏里南殖民地虽然规模相当可观，却仍不及欧洲其他国家的大多数糖业殖民地。新尼德兰殖民地，即现在分成纽约和新泽西两省的地区，即使仍由荷兰人统治，大概也会很快变得相当重要。优良土地的充裕和低廉，是促进繁荣的如此强有力的原因，以致即使最恶劣的政府，也几乎无法完全遏止其作用的效力。此外，与母国相距遥远，也会使殖民者能够通过走私，或多或少地规避该公司对他们实行的垄断。目前，该公司允许所有荷兰船只在按货物价值缴纳百分之二点五的许可费后同苏里南贸易；它只为自己保留从非洲到美洲的直接贸易专营权，而这种贸易几乎完全由奴隶贸易构成。该公司放宽其专营特权，大概是这个殖民地目前享有这种程度繁荣的主要原因。库拉索和圣尤斯特歇斯是属于荷兰的两个主要岛屿，都是向各国船只开放的自由港；周围更优越的殖民地都只向一个国家的船只开放，而身处其间的这两个贫瘠岛屿所享有的这种自由，正是它们繁荣的重大原因。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p35",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_218"
+      },
+      "contentHash": "7d12bab8e45c4f1ba29ea05f5a8c8e700fb310952243b02c84080e0978629fb4",
+      "text": "在上个世纪的大部分时期以及本世纪的一段时期，法国的加拿大殖民地都由一家享有专营权的公司统治。在这种极为不利的管理之下，与其他新殖民地相比，它的发展必然非常缓慢；但所谓“密西西比计划”垮台后，这家公司被解散，它的发展便快得多。英国人占领这个国家时，发现那里的人口接近夏尔沃神父在二三十年前所认定人数的两倍。这位耶稣会士曾经走遍整个国家，并不想把它描述得比实际情况更不重要。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p36",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_219"
+      },
+      "contentHash": "6438cfb82e57a4f0d80114de9b47a6c2d47c3491dd7d6e805cc46159f09c2bc0",
+      "text": "法国的圣多明各殖民地是由海盗和劫掠者建立的；在很长一段时间里，他们既不需要法国的保护，也不承认法国的权威；而当这帮匪徒在一定程度上成为公民，承认这一权威时，在很长一段时间里，也必须极其温和地行使这种权威。在此期间，这个殖民地的人口和开发增长得非常迅速。它曾一度与法国其他所有殖民地一道受某家专营公司的压迫；这种压迫虽无疑延缓了它的发展，却未能完全阻止其进步。这种压迫一经解除，它的繁荣进程便恢复了。它现在是西印度群岛最重要的糖业殖民地，据说其产量超过英国所有糖业殖民地产量的总和。法国其他糖业殖民地一般也都非常兴旺。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p37",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_220"
+      },
+      "contentHash": "282038b287b66fc976bd3d1d836c6af7256799ec2d8bb14eb10db374d68947e5",
+      "text": "但没有任何殖民地的发展比英国人在北美洲的殖民地更为迅速。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p38",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_221"
+      },
+      "contentHash": "a91c86c50862c60a64d4c2d09f0699e3d3f073756c73dd1088e5f4e6d36a6d05",
+      "text": "优良土地充足，以及可以按照自己的方式自由处理自身事务，似乎是所有新殖民地繁荣的两大原因。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p39",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_222"
+      },
+      "contentHash": "dc5b8bcb7a88fc39528462bdd3c3b88c9fc07d30af50db3f900dd0fd7f351a86",
+      "text": "就优良土地的充足程度而言，英国在北美洲的殖民地虽无疑拥有极为丰厚的供应，却不及西班牙人和葡萄牙人的殖民地，也不优于最近一次战争之前法国拥有的某些殖民地。但英国殖民地的政治制度，比其他三个国家中任何一国的制度都更有利于这些土地的开发和耕种。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p40",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_223"
+      },
+      "contentHash": "b674251055150c90f550473374417993bdfd1e131bc28a750ef6b7077780ab73",
+      "text": "第一，未开垦土地的兼并虽绝未受到完全遏止，但在英国殖民地所受的限制比在其他任何殖民地都多。殖民地法律规定，每一位土地所有者都有义务在限定时间内开发和耕种其一定比例的土地，如未履行，则宣布这些荒废土地可授予任何其他人；这项法律也许执行得不很严格，但仍产生了一些效果。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p41",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_224"
+      },
+      "contentHash": "c144982686bc4d8ace787b2958ee6eeb81b26db98161acfc3bb057cfa4cd5b2a",
+      "text": "第二，宾夕法尼亚没有长子继承权，土地像动产一样，在一家所有子女之间平均分配。在新英格兰的三个省份，长子仅取得双份，如同摩西律法的规定。因此，在那些省份，即使有时有某个个人兼并了过多土地，经过一两代之后，这些土地也很可能再次得到充分分割。诚然，在其他英国殖民地，长子继承权如同英格兰法律所规定的那样适用。但在所有英国殖民地，土地一律以自由农役保有制持有，这种土地保有方式便于转让；获授任何大片土地的人通常会发现，尽快转让其中的大部分而仅保留少量免役地租，符合自己的利益。在西班牙和葡萄牙殖民地，凡附带任何荣誉头衔的大地产，其继承均适用所谓的马约拉斯戈权。这类地产全都归一人所有，实际上受到限嗣继承约束，不得转让。诚然，法国殖民地实行《巴黎习惯法》，在土地继承方面，它对年幼子女远比英格兰法律有利。但在法国殖民地，凡以骑士服役和效忠礼的贵族保有制持有的地产，其任何部分一经转让，在限定期间内，上级领主的继承人或本家族的继承人均享有赎回权；而该国所有最大地产都按这种贵族保有制持有，这必然妨碍转让。但在一个新殖民地，大片未开垦地产通过转让得到分割，很可能要比通过继承快得多。前文已经指出，优良土地充足且廉价，是新殖民地迅速繁荣的主要原因。土地兼并实际上破坏了这种充足和廉价。此外，兼并未开垦土地是开发土地的最大障碍。但用于开发和耕种土地的劳动，能为社会提供最大且最有价值的产物。在这种情况下，劳动产物不仅支付劳动本身的工资和雇用这种劳动的资本的利润，还支付所用于耕作的土地的地租。因此，英国殖民者的劳动更多地用于开发和耕种土地，很可能比其他三个国家殖民者的劳动提供更多且更有价值的产物；由于土地兼并，后三者的劳动或多或少被转用于其他用途。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p42",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_225"
+      },
+      "contentHash": "1a5eb19a3ca66458b9c65afbaf0e97f2ccfcd371995a607ca6b754abf32ebafa",
+      "text": "第三，英国殖民者的劳动不仅很可能提供更多且更有价值的产物，而且由于税负适度，这种产物中有更大的比例归他们自己所有，他们可以把它积存起来，用于推动更多的劳动。英国殖民者迄今从未为保卫母国或维持其文官政府出过任何费用。相反，他们自己迄今几乎完全是由母国出资保卫的。但舰队和军队的费用与文官政府的必要费用相比，高得完全不成比例。他们自己的文官政府费用一向很低，通常仅限于为总督、法官和其他一些治安官员支付适当薪俸，以及维持少数最有用的公共工程所必需的开支。目前骚乱开始以前，马萨诸塞湾文官机构的费用通常每年仅约18,000英镑。新罕布什尔和罗得岛各为3,500英镑；康涅狄格为4,000英镑；纽约和宾夕法尼亚各为4,500英镑；新泽西为1,200英镑；弗吉尼亚和南卡罗来纳各为8,000英镑。新斯科舍和佐治亚的文官机构部分由议会每年的拨款维持。但除此以外，新斯科舍每年还为殖民地的公共开支支付约7,000英镑，佐治亚约支付2,500英镑。总之，除马里兰和北卡罗来纳的文官机构因未得到确切账目而未计入外，目前骚乱开始以前，北美洲所有不同文官机构每年给居民造成的费用不超过64,700英镑；这是一个永远值得铭记的范例，说明只需多么少的费用，就不仅可以治理三百万人，而且可以把他们治理得很好。诚然，政府费用中最重要的部分，即防御和保护的费用，一直由母国负担。殖民地文官政府在迎接新总督、新议会开会等场合的仪式，虽足够得体，却不带任何耗费巨大的排场或铺张。他们的教会管理也依照同样节俭的方案进行。他们那里没有什一税；人数远非众多的教士，或靠数额适中的俸给，或靠民众自愿捐献维持。相反，西班牙和葡萄牙的国力从向其殖民地征收的税款中获得一些支持。诚然，法国从未从其殖民地取得任何可观的收入，因为法国向殖民地征收的税款通常都花在殖民地内。但这三个国家的殖民地政府全都按照费用高昂得多的方案运作，并伴随着耗费高昂得多的仪式。例如，迎接秘鲁新任总督所花的款项常常极其庞大。这类仪式不仅是富裕殖民者在这些特定场合缴纳的实际税款，还使他们养成在其他一切场合追求虚荣和挥霍的习惯。它们不仅是非常沉重的临时税款，而且促成了更加沉重的同类永久税款——私人奢侈和挥霍这种足以致人破产的税款。在这三个国家的所有殖民地，教会管理也都极其苛酷。所有这些殖民地都实行什一税，而西班牙和葡萄牙殖民地征收得最为严厉。此外，它们全都受到大批托钵修士的压榨；这些人的乞讨不仅获得许可，而且被宗教奉为神圣，因而成为穷苦民众的一项极其沉重的税负，因为民众受到极其用心的教导，认为施舍他们是一项义务，拒绝施舍则是极大的罪过。除此以外，在所有这些殖民地中，教士都是最大的土地兼并者。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p43",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_226"
+      },
+      "contentHash": "d103b22e947cb0379609da6aa8a246b754fc76a804e5dd412ef75d3fdd5c8433",
+      "text": "第四，在处置其剩余产物，即超出自身消费的部分时，英国殖民地比其他任何欧洲国家的殖民地都受到更多优待，并获准拥有更广阔的市场。每个欧洲国家都曾或多或少地力图由自己垄断其殖民地的贸易，因此禁止外国船只前往殖民地从事贸易，也禁止殖民地从任何外国进口欧洲货物。但不同国家实行这种垄断的方式却大不相同。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p44",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_227"
+      },
+      "contentHash": "10ac3b22be7e8a569593c9c1d7b9662aa85d714d70ac31644beeaf41c124692d",
+      "text": "有些国家把其殖民地的全部贸易交给一家专营公司；殖民地所需的一切欧洲货物都必须向该公司购买，自己的全部剩余产物也必须出售给该公司。因此，该公司的利益不仅在于尽可能高价出售前者、尽可能低价买进后者，而且即使按这种低价，也只买进能够在欧洲以极高价格售出的那部分后者。它们的利益不仅在于在一切情况下压低殖民地剩余产物的价值，而且在许多情况下还在于阻碍并抑制其数量的自然增长。在所有能够设计出来以遏制新殖民地自然成长的手段中，专营公司无疑是最有效的一种。然而，这一直是荷兰的政策，尽管在本世纪期间，荷兰的公司已在许多方面放弃行使其专营特权。这也是丹麦在已故国王统治之前所奉行的政策。法国也曾偶尔实行这种政策；近来，自1755年以来，在其他所有国家都因其荒谬而将其抛弃之后，葡萄牙却开始至少对巴西的两个主要省份，即伯南布哥和马拉尼昂，实行这种政策。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p45",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_228"
+      },
+      "contentHash": "09fd7aa5f1f5342d3742ff61e6c8ee862076794b08832b5c2d2b6bfcf163c469",
+      "text": "另一些国家虽未设立专营公司，却把殖民地的全部贸易限制在母国的某一个特定港口；任何船只若非编入船队并在特定季节启航，就不得从那里出航，单独启航的船只则必须取得一项特许，而这种特许在多数情况下要花很大代价才能获得。诚然，这项政策向母国全体国民开放了殖民地贸易，只要他们从适当的港口、在适当的季节、用适当的船只从事贸易即可。但所有为装备这些特许船只而合并资本的不同商人，都会发现协同行动符合自身利益，因此，以这种方式进行的贸易必然会按照与专营公司几乎相同的原则经营。这些商人的利润也会同样高得近乎离谱，同样具有压榨性。殖民地得到的供应会很不足，并且不得不以极高的价格买进，以极低的价格卖出。然而，直到最近几年以前，这一直是西班牙的政策；据说因此在西属西印度群岛，一切欧洲货物的价格都高得惊人。乌略亚告诉我们，在基多，一磅铁售价约为四先令六便士，一磅钢约为六先令九便士英币。但殖民地拿自己的产物交换，主要正是为了购买欧洲货物。因此，他们为一种货物支付得越多，从另一种产物实际得到的就越少；一种货物昂贵，与另一种产物廉价是同一回事。就葡萄牙除伯南布哥和马拉尼昂以外的所有殖民地而言，葡萄牙的政策在这方面与西班牙过去的政策相同；而对于这两个省份，葡萄牙近来采取了一种更糟的政策。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p46",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_229"
+      },
+      "contentHash": "2ce92c6d435fc39320adbc9bba809db744bc5ced20aa052537cc3d615822ec8a",
+      "text": "另一些国家则让殖民地贸易向本国全体臣民自由开放；他们可以从母国所有不同港口经营这种贸易，除海关的一般通关文书外，不需要任何其他许可。在这种情况下，商人人数众多且分散各地，使他们不可能达成任何普遍联合，而他们之间的竞争足以阻止他们攫取高得离谱的利润。在这样宽松的政策下，殖民地既能以合理价格出售自己的产物，也能以合理价格购买欧洲货物。自普利茅斯公司在我国殖民地尚处于幼年时期解散以来，这始终是英格兰的政策。法国通常也实行这种政策；自那家在英格兰通常被称为法国密西西比公司的公司解散以来，法国更是始终如一地实行这种政策。因此，法国和英格兰同其殖民地贸易的利润，虽无疑略高于允许其他所有国家自由竞争时的利润，却绝非高得离谱；相应地，在这两个国家的大部分殖民地，欧洲货物的价格也并非高得惊人。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p47",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_230"
+      },
+      "contentHash": "d2ce27753c316682442197fac75b766a315a3d76dec52b17677669a94f4628e3",
+      "text": "同样，在出口自己的剩余产物时，大不列颠殖民地也只在某些商品方面被限制于母国市场。这些商品已在《航海法》及后来的一些其他法令中列举出来，因此被称为列举商品。其余商品称为非列举商品，可以直接出口到其他国家，但必须用英国或殖民地船只运输，而且船主和四分之三的水手必须是英国臣民。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p48",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_231"
+      },
+      "contentHash": "26b4fa7c06e93f1d0ad954354d78eacea85830b4db931a8c24a26f353ec7d8ec",
+      "text": "非列举商品包括美洲和西印度群岛的一些最重要产物：各种谷物、木材、腌制食品、鱼、糖和朗姆酒。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p49",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_232"
+      },
+      "contentHash": "99528427cb4baf9d1b95daf9eed42b8a7f49dd870956a53eedaf8761e813aa7c",
+      "text": "谷物自然是所有新殖民地最先且最主要的耕作对象。法律允许它们为谷物拥有极为广阔的市场，便鼓励它们把这种耕作扩大到远远超过一个人口稀少国家消费量的程度，从而预先为不断增长的人口提供充足的生活资料。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p50",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_233"
+      },
+      "contentHash": "eb045b7234d754d99db70f1e0d26d71b9e5b264ca2fc392219dcbb30e61315e6",
+      "text": "在一个完全被树林覆盖、因而木材几乎或全无价值的国家，清理土地的费用是开发的主要障碍。法律允许殖民地为木材拥有极为广阔的市场，力图通过提高一种原本价值很小的商品的价格来促进开发，从而使殖民地能从原本纯属费用的事项中获得一些利润。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p51",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_234"
+      },
+      "contentHash": "1656a91126edb1387a5b5411bf295a9c7ff636785eeadc2d0e2583e43943da57",
+      "text": "在一个人口尚不到其容量一半、耕地也尚不到其面积一半的国家，牲畜自然会繁殖到超过居民消费量的程度，因而往往价值很低，甚至毫无价值。但前文已经说明，在任何国家的大部分土地得到开发以前，牲畜价格都必须与谷物价格保持一定比例。法律为美洲牲畜开放了极为广阔的市场，无论其形态如何，是死是活皆可，借此力图提高这种商品的价值；而其价格较高对土地开发至关重要。然而，乔治三世四年法令第15章把兽皮列入列举商品，因而有降低美洲牲畜价值的趋势，必然会在一定程度上削弱这种自由所产生的良好效果。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p52",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_235"
+      },
+      "contentHash": "8b74f242ec4d827d2b9dca042d2b66961d46b67e1c4f124e81eb2a003bc47f4a",
+      "text": "通过扩大我国殖民地的渔业来增加大不列颠的航运和海军力量，似乎是立法机关几乎始终关注的目标。因此，这些渔业得到自由所能给予的一切鼓励，也相应地兴盛起来。尤其是新英格兰渔业，在最近的骚乱之前，或许是世界上最重要的渔业之一。捕鲸业在大不列颠尽管获得高得离谱的奖励金，却经营得成效甚微，以至于许多人认为（不过我并不打算为这种看法作保），其全部产物的价值并不比每年为此支付的奖励金高出多少；而在新英格兰，捕鲸业不靠任何奖励金便得到极大规模的经营。鱼是北美人与西班牙、葡萄牙和地中海地区贸易的主要商品之一。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p53",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_236"
+      },
+      "contentHash": "c4a050aaa12d6eaccddad35f0830bfc1b3a9dd8e8aa43b74cdcbf276d3a6ec83",
+      "text": "糖原本是一种只能出口到大不列颠的列举商品。但在1731年，根据甘蔗种植园主的陈情，糖获准出口到世界各地。然而，准予这种自由时附加的限制，加上大不列颠的高糖价，在很大程度上使它失去了实效。大不列颠及其殖民地仍然几乎是英国种植园所产全部糖的唯一市场。它们的消费增长得如此之快，以至于尽管由于牙买加以及割让岛屿的开发不断增加，糖的进口量在这二十年间增长极大，据说对外国的出口量却并不比以前多多少。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p54",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_237"
+      },
+      "contentHash": "5431ddd7f68ef3c1fe6076f244acd38647ef587a232056efb293b367738bb5cb",
+      "text": "朗姆酒是美洲人与非洲沿岸贸易中一种非常重要的商品，他们从那里换回黑人奴隶。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p55",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_238"
+      },
+      "contentHash": "8514439bd8273662b8fa1e58f907d54fb0883ffca0c692c612e5644c84d6520c",
+      "text": "如果美洲在各种谷物、腌制食品和鱼方面的全部剩余产物都被列入列举商品，从而被迫进入大不列颠市场，它们就会与我国人民勤劳的产物发生过多冲突。这些重要商品之所以不仅未被列入列举商品，而且按照法律的通常规定，除稻米以外的一切谷物和腌制食品都被禁止进口到大不列颠，很可能与其说是由于顾及美洲的利益，不如说是由于对这种冲突心怀戒备。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p56",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_239"
+      },
+      "contentHash": "899fabab657bde41b5cd6c2cafe4d85a2fd97ac3db7886b980b38006afb7d286",
+      "text": "非列举商品原本可以出口到世界各地。木材和稻米一度被列入列举商品，后来移出时，就欧洲市场而言，被限制只能出口到菲尼斯特雷角以南的国家。乔治三世六年法令第52章使所有非列举商品都受到同样的限制。欧洲位于菲尼斯特雷角以南的地区不是制造业国家，我们不那么担心殖民地船只会从那里运回任何可能与我国制造品发生冲突的制造品。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p57",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_240"
+      },
+      "contentHash": "baf9771873d024e9a4be656a469ddac6ad139216c3cf86368bdc52d2379a2ee1",
+      "text": "列举商品分为两类：第一类，或是美洲特有的产物，或是在母国不能生产，至少实际上没有生产的商品。这类商品有糖蜜、咖啡、可可豆、烟草、多香果、姜、鲸须、生丝、棉花、海狸皮和美洲其他毛皮、靛蓝、黄木及其他染料木。第二类，并非美洲特有的产物，而是母国已经生产并且也能够生产，但数量不足以满足其大部分需求，主要仍靠外国供应的商品。这类商品包括一切海军物资，如桅杆、帆桁和斜桅，以及焦油、沥青、松节油、生铁和条铁、铜矿石、兽皮、钾碱和珠碱。第一类商品即使以最大数量进口，也不可能妨碍母国产物的增长，或影响其中任何部分的销售。据期待，把这些商品的销售限于本国市场，不仅能使我国商人在殖民地以较低价格买到它们，因而在国内出售时获得较多利润，而且能在殖民地与外国之间建立一种有利的承运贸易；由于大不列颠是这些商品最先输入的欧洲国家，它必然会成为这种贸易的中心或集散地。人们还认为，第二类商品的进口也可以安排得不影响国内生产的同类商品的销售，而只影响从外国进口的同类商品的销售；因为借助适当的关税，可以使它们始终比前者稍贵，而又比后者便宜得多。因此，有人提议把这类商品的销售限于本国市场，目的不是抑制大不列颠的生产，而是抑制某些外国的生产；当时人们认为，大不列颠同这些国家的贸易差额对自己不利。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p58",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_241"
+      },
+      "contentHash": "3c1d04d876c406cf17e58116f6de90f3de1e1536a591803b9d0852eb70753b9f",
+      "text": "禁止殖民地把桅杆、帆桁和斜桅以及焦油、沥青和松节油出口到大不列颠以外的任何国家，自然会压低殖民地木材的价格，因而增加清理土地的费用，而清理土地的费用正是殖民地发展的主要障碍。但在本世纪初，即1703年左右，瑞典的沥青和焦油公司企图提高其商品在大不列颠的售价，禁止用该公司自己的船只以外的船舶出口，并规定只能按该公司自行确定的价格和它认为适当的数量出口。为了对抗这一显著的商业政策，并使自己尽可能不仅不依赖瑞典，而且不依赖北方其他一切强国，大不列颠对从美洲进口海军物资给予奖励金。这项奖励金所产生的效果，是使美洲木材价格的上涨幅度远远超过限售于本国市场所能造成的下跌幅度；而且由于这两项规定同时颁布，它们的共同效果，与其说是妨碍，不如说是鼓励美洲土地的清理。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p59",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_242"
+      },
+      "contentHash": "7e3dc13cced15ddc949323fe3f921ef74b3de45299930a349eed68eeac0b44ae",
+      "text": "生铁和条铁虽然也列入了列举商品，但从美洲进口时，可以免缴从其他任何国家进口时所须缴纳的高额关税，因此，这项规定的一部分对鼓励在美洲兴建熔炉所起的作用，超过了另一部分对其所起的抑制作用。没有哪一种制造业会像熔炉那样耗费如此大量的木材，也没有哪一种制造业能对清理一个林木丛生的国家作出如此大的贡献。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p60",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_243"
+      },
+      "contentHash": "c2787362861550f7890269bcac169ebde21bd652caf46a6c18467d350d06765f",
+      "text": "这些规定中有些规定具有提高美洲木材价值、从而便利土地清理的倾向；立法机关或许既无此意图，也不明白这一点。不过，它们在这方面的有益效果虽然是偶然产生的，却并不因此而较不真实。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p61",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_244"
+      },
+      "contentHash": "b06012c84d39394b7e06889922f9f352ef6820b83067000184e6af0c306daba8",
+      "text": "无论是列举商品还是非列举商品，英属美洲殖民地与西印度群岛之间都获准实行最完全的贸易自由。这些殖民地如今人口已如此众多，经济又如此繁荣，以致每个殖民地的每一部分产物，都能在其他某些殖民地找到广大而广阔的市场。把它们合在一起，便构成了彼此产物的一个庞大内部市场。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p62",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_245"
+      },
+      "contentHash": "94ab0a52013e1be1d4935dd7aba47678570e4ef9299fc8de83546fbf21da9fed",
+      "text": "然而，英格兰对其殖民地贸易的宽大政策，主要限于殖民地产物的市场问题，而不论这些产物处于原料状态，还是处于可称为制造业最初阶段的状态。即使是以殖民地产物为原料的较高级或较精细的制造业，大不列颠的商人和制造业者也选择留给自己经营，并已说服立法机关，时而以高额关税，时而以绝对禁令，阻止这类制造业在殖民地建立。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p63",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_246"
+      },
+      "contentHash": "5963ca9204e24a80c71e6a1e2289f1002474cacb16b188aec072839969c75407",
+      "text": "例如，英属殖民地出产的粗制糖进口时，每英担只缴纳6先令4便士；白糖却须缴纳1镑1先令1便士；精制成糖锭的糖，无论双炼还是单炼，均须缴纳4镑2先令5又8/20便士。征收这些高额关税时，大不列颠是英属殖民地蔗糖唯一可以出口的市场，而且至今仍是其主要市场。因此，这些关税起初等于禁止为任何外国市场澄清或精炼蔗糖，而目前则等于禁止为这个也许吸收总产量十分之九以上的市场澄清或精炼蔗糖。因此，澄清或精炼蔗糖的制造业虽然在法国所有产糖殖民地都很兴盛，但在英格兰的任何产糖殖民地都很少经营，专为殖民地自身市场生产的除外。格林纳达掌握在法国人手中时，几乎每个种植园都有一所糖厂，至少从事蔗糖澄清。自从它落入英格兰人手中以后，几乎所有这类工场都已停办；据我获悉，目前，即1773年10月，全岛所剩不超过两三所。不过目前按照海关的宽免，澄清糖或精制糖如果由糖锭碾成粉末，通常可以作为粗制糖进口。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p64",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_247"
+      },
+      "contentHash": "7c0309cd24b894a6caf76b78f28e77c6b828096cc4428564bc3a5fb5364ba2dc",
+      "text": "大不列颠对从美洲进口的生铁和条铁免征同类商品从其他任何国家进口时所须缴纳的关税，以此鼓励美洲制造生铁和条铁；与此同时，她却绝对禁止在其任何美洲殖民地兴建炼钢炉和纵剪厂。她不容许殖民者从事这些较精细的制造业，哪怕只是为了自身消费；而坚持要他们所需的这类商品全都向她的商人和制造业者购买。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p65",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_248"
+      },
+      "contentHash": "27b3059841e699d18fa30eaa2970985230f65f9064f6d5d6bd15ce69e6091fae",
+      "text": "她禁止把美洲出产的帽子、羊毛和毛织品经水路从一个省输出到另一个省，甚至禁止用马匹驮运或用大车经陆路运输。这项规定有效地阻止了任何以远销为目的的此类商品制造业的建立，并把殖民者在这方面的勤劳限制在粗糙的家庭制造业上，而这类物品通常由一个家庭制作，供自己或同省某些邻居使用。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p66",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_249"
+      },
+      "contentHash": "1bd849dfc2dc9f8c5322af1f881a2cee338c430503bb653d5906aacbd6ef0552",
+      "text": "然而，禁止一个大民族尽其所能加工自身产物的各个部分，或禁止他们按照自己认为最有利的方式运用资本和勤劳，显然侵犯了人类最神圣的权利。然而，这类禁令虽然不公正，迄今却没有给殖民地造成很大损害。那里的土地仍然如此便宜，因而劳动如此昂贵，以致几乎所有较精细或较高级的制成品，从母国进口都比他们自己制造便宜。因此，即使没有禁止他们建立这类制造业，在他们目前的发展阶段，顾及自身利益也可能会阻止他们这样做。在他们目前的发展阶段，这些禁令也许既没有束缚他们的勤劳，也没有阻止它自发地投向任何用途，而只是母国商人和制造业者出于毫无根据的猜忌，在没有任何充分理由的情况下强加给他们的、无谓的奴役标志。到了更发达的阶段，这些禁令或许会真正变得压迫而难以忍受。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p67",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_250"
+      },
+      "contentHash": "d1c7a8a4c409595a1158d548aa1c7a71d0e9c259c27c51c58b79cc56f975210e",
+      "text": "大不列颠既把殖民地一些最重要产物的销售限于本国市场，作为补偿，她也使其中一些产物在该市场享有优势；有时对从其他国家进口的同类产物征收较高关税，有时对从殖民地进口这些产物给予奖励金。她以第一种方式使本国殖民地的糖、烟草和铁在本国市场享有优势，以第二种方式使殖民地的生丝、大麻和亚麻、靛蓝、海军物资和建筑木材享有优势。据我所能了解到的，以进口奖励金鼓励殖民地产物的第二种方式，是大不列颠所特有的。第一种方式则不然。葡萄牙不以对从其他任何国家进口的烟草征收较高关税为满足，而是在最严厉的刑罚之下禁止进口。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p68",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_251"
+      },
+      "contentHash": "33d4d174ae7ac968e1443e329e3aac52e45d8a77da041c64f90ec43d89b769cf",
+      "text": "在从欧洲进口商品方面，英格兰对待其殖民地也比任何其他国家更为宽大。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p69",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_252"
+      },
+      "contentHash": "0dc3e5c42c2ac3970c5ee1da05b2aa3201cf3f7eef0a44d49c912537f9a2c896",
+      "text": "外国商品进口时缴纳的关税，在出口到任何外国时，大不列颠准许退还一部分，几乎总是退还一半，通常退还更大部分，有时甚至全部退还。很容易预见，如果这些商品带着几乎所有外国商品进口大不列颠时所须缴纳的沉重关税运往任何独立外国，该国都不会接收。因此，除非出口时退还一部分关税，承运贸易便会终止；而重商主义体系却如此偏爱这种贸易。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p70",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_253"
+      },
+      "contentHash": "19c0e322ddffcac037524fa79b8a04f3f9538945336773a21afd314373e429cc",
+      "text": "然而，我们的殖民地绝不是独立外国；而且，大不列颠既已把向殖民地供应一切欧洲商品的专有权归于自己，本可以强迫殖民地接受负担着在母国缴纳的全部同样关税的这些商品，正如其他国家对其殖民地所做的那样。但恰恰相反，直到1763年，绝大部分外国商品出口到我国殖民地时所退还的关税，与再出口到任何独立外国时所退还的相同。诚然，1763年，乔治三世第四年法令第15章大大削减了这项宽免，并规定：“凡生长、出产或制造于欧洲或东印度，且从本王国出口到美洲任何英属殖民地或种植地的商品，不得退还称为旧补助税的关税的任何部分；葡萄酒、白棉布和细棉布除外。”在这项法律颁布以前，许多不同种类的外国商品在殖民地可以买得比在母国便宜；有些商品现在仍然如此。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p71",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_254"
+      },
+      "contentHash": "2599ddbefc80e5e1ba911420793981c107d1b6565047a604818e01fa61d6df37",
+      "text": "必须指出，在有关殖民地贸易的大部分规章中，从事这种贸易的商人一直是主要的建议者。因此，如果大部分规章更多考虑他们的利益，而不是殖民地或母国的利益，我们就不应感到奇怪。这些商人享有专有特权，可以向殖民地供应它们所需的一切欧洲商品，并可以收购殖民地剩余产物中一切不会妨碍他们自己在国内所经营的任何贸易的部分；殖民地的利益就这样牺牲给了这些商人的利益。对绝大部分欧洲和东印度商品再出口到殖民地，准许给予同再出口到任何独立国家时一样的退税；这样，即使按照重商主义对母国利益的理解，母国的利益也牺牲给了商人的利益。尽可能少付钱购买他们运往殖民地的外国商品，因而尽可能多地收回这些商品进口大不列颠时由他们垫付的关税，符合商人的利益。这样，他们就可以在殖民地用较大的利润出售同样数量的商品，或用同样的利润出售较大数量的商品，因而无论采取哪一种方式，都能有所获利。殖民地以尽可能低廉的价格和尽可能充足的数量获得所有这类商品，同样符合殖民地的利益。但这未必总是符合母国的利益。母国可能常常在两个方面受到损失：在财政收入方面，由于退还这些商品进口时已经缴纳的大部分关税而蒙受损失；在制造业方面，由于借助这些退税，外国制成品可以按优惠条件运往殖民地，致使母国产品在殖民地市场被其低价排挤而蒙受损失。一般认为，对德国亚麻布再出口到美洲殖民地给予退税，已在相当程度上延缓了大不列颠亚麻制造业的发展。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p72",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_255"
+      },
+      "contentHash": "2b7326d358b660f3369d164ff6e4b4d72e75319e0e5a5ecc4474118cdb292543",
+      "text": "不过，大不列颠有关殖民地贸易的政策，虽然同其他国家的政策一样，受同一种重商主义精神支配，但总的说来，它仍不及其中任何一国的政策那样狭隘和苛刻。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p73",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_256"
+      },
+      "contentHash": "c8ecde3ccdc067f8efe233f93f137e5bc3a5f1ab8f267ee3d39d1e7b31369adc",
+      "text": "除对外贸易以外，英格兰殖民者按照自己的方式处理自身事务的自由，在一切方面都是完全的。这种自由在每一方面都与他们在母国的同胞所享有的自由相等，并以同样的方式得到保障，即由人民代表组成的议会提供保障；这种议会宣称，只有它才有权征税以维持殖民地政府。这个议会的权威震慑行政权力；只要遵守法律，即使是地位最低微或最招人厌恶的殖民者，也不必害怕总督或该省任何其他文武官员的报复。殖民地议会虽然像英格兰下议院一样，并不总是很均等地代表人民，却更接近这种性质；而且，由于行政权力或者没有办法收买它们，或者由于得到母国支持而无须这样做，它们一般也许更受选民意愿的影响。殖民地立法机关中与大不列颠上议院相对应的参事会，并非由世袭贵族组成。在某些殖民地，例如新英格兰三个政府辖区，这些参事会不是由国王任命，而是由人民代表选举产生。英格兰的任何殖民地都没有世袭贵族。诚然，在所有殖民地，正如在其他一切自由国家一样，殖民地老家族的后裔比功绩与财产相等的暴发户更受尊重；但他只是更受尊重而已，并不享有任何可用来骚扰邻人的特权。在目前这场骚乱开始以前，殖民地议会不仅拥有立法权，而且拥有一部分行政权。在康涅狄格和罗得岛，它们选举总督。在其他殖民地，它们任命负责征收各自议会所课税款的财政官员，这些官员直接向相应议会负责。因此，英格兰殖民者之间的平等程度高于母国居民。他们的风尚更具共和性质，他们的政府，尤其是新英格兰三个省的政府，迄今也更具共和性质。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p74",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_257"
+      },
+      "contentHash": "e89b1b8c95cec0f3a0da8ad2c2811362c71c0aa851234d76d0d1d204412d7a30",
+      "text": "相反，西班牙、葡萄牙和法国的专制政府也施行于它们的殖民地；这类政府通常授予所有下级官员的自由裁量权，由于路途遥远，在那里自然会以异乎寻常的强暴方式行使。在一切专制政府统治下，首都的自由都多于国家其他任何地区。君主本人绝不会有败坏司法秩序或压迫广大人民的利益或意愿。在首都，君主亲自在场，或多或少震慑着所有下级官员；但在较偏远的省份，人民的申诉不大可能传到君主那里，这些官员便可安全得多地施行暴政。然而，美洲的欧洲殖民地，比以往所知任何最庞大帝国最遥远的省份还要遥远。自世界开始以来，英格兰殖民地的政府也许是唯一能使如此遥远省份的居民获得完全安全保障的政府。不过，法国殖民地的治理，始终比西班牙和葡萄牙殖民地的治理更温和、更有节制。这种治理上的优越，既符合以法国民族的性格，也符合塑造每个民族性格的因素，即其政府的性质；法国政府与大不列颠政府相比虽属专横强暴，与西班牙和葡萄牙政府相比却合乎法律而且自由。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p75",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_258"
+      },
+      "contentHash": "075f1967c67d4010d100e0a74044ab4e2579ad80695f2268465f9b68579de8a2",
+      "text": "不过，英格兰政策的优越性主要表现在北美殖民地的发展上。法国各产糖殖民地的发展至少不逊于、也许还胜过英格兰大部分产糖殖民地；可是，英格兰的产糖殖民地所享有的自由政府，与其北美殖民地实行的政府几乎属于同一种类型。但法国的产糖殖民地不像英格兰的产糖殖民地那样受到限制，不能自行精炼蔗糖；而且更为重要的是，其政府的特性自然会使它们对黑人奴隶实行较好的管理。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p76",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_259"
+      },
+      "contentHash": "da80b52abaefaa2ecf1df2452b52ac3d12f69cb295e0a28316d2fd2109227f4c",
+      "text": "在欧洲所有的殖民地，甘蔗种植都由黑人奴隶从事。人们认为，出生于欧洲温带气候下的人，其体质无法承受在西印度群岛烈日之下掘地的劳动；而且，甘蔗种植按目前的经营方式全靠手工劳动，尽管许多人认为，若能采用条播犁，可能会大有裨益。但是，正如使用牲畜进行的耕作，其利润与成效在很大程度上取决于对这些牲畜的良好管理一样，使用奴隶进行的耕作，其利润与成效也必定同样取决于对这些奴隶的良好管理；而在妥善管理奴隶方面，我想人们普遍承认，法国种植园主胜过英国种植园主。就法律能给予奴隶某种微弱保护、使其免受主人暴力侵害而言，在政府大体上专断的殖民地，这种法律可能比在政府完全自由的殖民地执行得更好。在每一个确立了不幸的奴隶制法律的国家，行政长官保护奴隶时，都在某种程度上干预了主人对其私有财产的管理；而在一个自由国家，主人也许是殖民地议会的议员，或者是这类议员的选举人，行政长官若非极其谨慎周密，便不敢这样做。他不得不对主人表示的尊重，使他更难保护奴隶。但是，在一个政府大体上专断的国家，行政长官通常甚至会干预个人对其私有财产的管理，而且如果他们不按照他的心意管理，他或许还会向他们发出一纸密札拘捕令；在那里，他要给予奴隶某种保护就容易得多，而普通的人道心也自然促使他这样做。行政长官的保护使奴隶在主人眼中不那么卑贱，主人因而会对他多加顾惜，并更温和地待他。温和的待遇不仅使奴隶更加忠实，而且使他更加聪明，因此从这两方面来说都使他更为有用。他更接近自由仆人的境况，也可能在一定程度上具有正直品格和维护主人利益的忠诚；这些美德常见于自由仆人，却绝不可能属于那种受到奴隶通常所受待遇的奴隶，而这种待遇通行于主人享有完全自由且安然无忧的国家。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p77",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_260"
+      },
+      "contentHash": "c42c6bb1c4f4642b5ff122dd8d14c91fc4ff8f6348b40393440e65aa958e4685",
+      "text": "奴隶在专断政府之下的处境优于在自由政府之下的处境，我相信，各个时代和各个民族的历史都支持这一点。在罗马史中，我们第一次读到行政长官介入、保护奴隶免受主人暴力侵害，是在皇帝统治时期。维狄乌斯·波利奥当着奥古斯都的面，下令把一个犯了轻微过错的奴隶剁成碎块，投入他的鱼池喂鱼时，皇帝愤怒地命令他立即释放的不仅是那个奴隶，而且还有属于他的所有其他奴隶。在共和国时期，任何行政长官都不可能拥有足够的权力保护奴隶，更不用说惩罚主人了。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p78",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_261"
+      },
+      "contentHash": "2dd81b1618965524233a273bba2635086aa7a5c9a61ab7dea90bb75a61ec6b29",
+      "text": "应当指出，使法国糖业殖民地，尤其是圣多明各这一大殖民地得到改良的资本，几乎完全来自这些殖民地自身逐步的改良和开垦。它几乎全都是土地和殖民者勤劳的产物，或者说——这其实是一回事——是这种产物的价款经良好经营逐渐积累起来，再用来增加产量的结果。但是，使英国糖业殖民地得到改良和开垦的资本，有很大一部分是从英国运出的，绝不是全都来自殖民者的土地和勤劳。英国糖业殖民地的繁荣，在很大程度上归功于英国的巨额财富；可以说，其中有一部分满溢到了这些殖民地。然而，法国糖业殖民地的繁荣完全归功于殖民者的良好经营，因此他们的经营必定在某些方面优于英国殖民者；而这种优势在任何方面都没有像在妥善管理奴隶方面那样显著。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p79",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_262"
+      },
+      "contentHash": "5588fed75da4462b33f5999594d5aa1ae5aa37a06f248c12f09dda4ae67323bf",
+      "text": "以上就是欧洲各国对其殖民地所采取政策的大体轮廓。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p80",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_263"
+      },
+      "contentHash": "38955620b6b7b8f5a1c5b486f4bfadf63ee8d35e289d2cc9d719338b7b3f8aec",
+      "text": "因此，无论就美洲殖民地最初的建立而言，还是就其后来的繁荣中有关内部治理的部分而言，欧洲的政策都几乎没有什么值得夸耀之处。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p81",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_264"
+      },
+      "contentHash": "2a6e8681c03f0047296f4bccff20c20dac873ea056ff27337689b24bed07a82d",
+      "text": "愚蠢和不公似乎是支配并指导最初建立这些殖民地计划的原则：一方面是搜寻金银矿的愚蠢，另一方面是觊觎占有一个国家的不公；那个国家无害的土著不仅从未伤害过欧洲人，反而以种种友善和好客的表示接待了最初的冒险者。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p82",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_265"
+      },
+      "contentHash": "333f0449289cf8af443e3fb3e1c568b19a745a06fd9c4d9d44b0ee15c0359fd7",
+      "text": "诚然，建立后来一些殖民地的冒险者，除寻找金银矿这一虚妄计划之外，还怀有其他一些更为合理、更值得称赞的动机；但即使这些动机，也没有给欧洲的政策增添多少光彩。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p83",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_266"
+      },
+      "contentHash": "cde43ce855b533e92b3a4c56da2e5f4887534707071ce1ff092408da0284c9bf",
+      "text": "英国清教徒在国内受到压制，便逃往美洲寻求自由，并在那里建立了新英格兰的四个政府。受到远为不公正待遇的英国天主教徒建立了马里兰的政府；贵格会教徒建立了宾夕法尼亚的政府。葡萄牙犹太人受宗教裁判所迫害，被剥夺财产并放逐到巴西；他们以身作则，在最初构成该殖民地人口的流放犯和娼妓中引入了某种秩序和勤劳，并教会他们种植甘蔗。在所有这些不同场合，使美洲获得人口和开垦的，不是欧洲各国政府的智慧和政策，而是它们的混乱和不公。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p84",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_267"
+      },
+      "contentHash": "5c6de15fec6d5b23a476af3b9bbe396c027761196e65a456df79049a0597a9c2",
+      "text": "在完成这些殖民事业中某些最重要的事业时，欧洲各国政府的功劳和它们在筹划这些事业时一样少。征服墨西哥并非西班牙枢密院的计划，而是古巴一位总督的计划；这项事业是由受托承担它的那位大胆冒险者凭借其魄力完成的，尽管那位总督不久便后悔信任了这样一个人，并竭尽所能加以阻挠。智利和秘鲁的征服者，以及美洲大陆上几乎所有其他西班牙殖民地的征服者，出发时从公共方面得到的鼓励，除了一项以西班牙国王名义建立殖民地和实行征服的概括许可外，别无其他。这些冒险全都由冒险者私人承担风险和费用。西班牙政府对其中任何一次冒险几乎都没有作出什么贡献。英国政府在促成其北美一些最重要殖民地的建立方面，所作的贡献同样微乎其微。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p85",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_268"
+      },
+      "contentHash": "08feba2d5a404ddb1805b53d69f764f2388d7b94f61b0728d758080369e23122",
+      "text": "这些殖民事业一旦完成，并发展到足以引起母国注意的规模，母国最初就它们制定的规章，总是旨在确保自己垄断其贸易；以它们为代价限制它们的市场并扩大自己的市场，因而不是加速和推进其繁荣进程，而是压抑和阻碍它。这种垄断实行方式的不同，构成了欧洲各国对其殖民地所采取政策中一个最根本的区别。其中最好的英国政策，也不过是比其余各国的政策稍微少一些狭隘和压迫而已。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p86",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_269"
+      },
+      "contentHash": "366fd16caa317aad437311cee3bad8be6fa4ba4c1fc157b8288aedc9ffc15429",
+      "text": "那么，欧洲的政策究竟以何种方式，对美洲殖民地最初的建立或今日的强盛作出了贡献呢？它确实以一种方式，而且仅以这一种方式，作出了很大贡献。伟人之母！它养育并造就了能够成就如此伟大事业、奠定如此庞大帝国基础的人；世界其他任何地区的政策，都不能造就，也从未真正而切实地造就过这样的人。殖民地那些积极进取的创建者所受的教育和怀有的宏伟抱负，都应归功于欧洲的政策；而其中一些最大、最重要的殖民地，就其内部治理而言，除此之外几乎没有任何东西应归功于它。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p87",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_270"
+      },
+      "contentHash": "99951781dc8a63ec767ac394357db68d546e160d2c6ddc2691bfded89e216a7c",
+      "text": "以上就是美洲殖民地从欧洲政策中得到的利益。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p88",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_271"
+      },
+      "contentHash": "b54d49841379c5108eb7ff6ec06f20bf6e0efea73adfbc39e08fd93fbedd8951",
+      "text": "那么，欧洲从美洲的发现和殖民中得到了哪些利益呢？",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p89",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_272"
+      },
+      "contentHash": "ed1376dc561e0dd5f972a3602b90d12853b3cb2c05f6ce6062e85addbd3d90e7",
+      "text": "这些利益可以分为：第一，把欧洲视为一个大国时，它从这些重大事件中得到的普遍利益；第二，每个殖民国家由于对专属于它的殖民地行使权力或统治，而从这些殖民地得到的特殊利益。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p90",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_273"
+      },
+      "contentHash": "b41ed4049d121835365f2489c32d3bec405a0e236fe57a34a3ffed6fbfba0201",
+      "text": "把欧洲视为一个大国时，它从美洲的发现和殖民中得到的普遍利益，第一在于享受的增加，第二在于勤劳的增长。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p91",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_274"
+      },
+      "contentHash": "45aeafe0143c5da0c8ce6cf8d402ece1c2f1f428385d5b796dad01a4dc1f1fa7",
+      "text": "输入欧洲的美洲剩余产物，为这个大洲的居民提供了他们原本无法拥有的各种商品，其中有些供便利和使用，有些供娱乐，有些供装饰，并由此促使他们的享受增加。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p92",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_275"
+      },
+      "contentHash": "05ddfc2d23fee35b159f731e8b1a7b3149e2f6a64cda5172c0cffbbfaffe862a",
+      "text": "人们很容易承认，美洲的发现和殖民促进了勤劳的增长：第一，是所有同美洲直接贸易的国家，如西班牙、葡萄牙、法国和英国；第二，是所有不与美洲直接贸易、却通过其他国家这个中介把本国产品运往美洲的国家，例如奥属佛兰德斯和德意志的一些省份，它们通过前述国家这个中介，向美洲运送大量亚麻布和其他货物。所有这些国家显然都为其剩余产物获得了更广阔的市场，因而必定受到了增加其数量的鼓励。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p93",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_276"
+      },
+      "contentHash": "6cad8b9fdae9ed02ac271c5716f5fa3c80b477fc0c803a79ffd5d09b237ba38a",
+      "text": "然而，匈牙利和波兰等国家也许从未向美洲运送过哪怕一件本国生产的商品，因此，这些重大事件竟然也促进了这些国家的勤劳，或许就不那么显而易见了。不过，这些事件确实产生了这种作用，这是不容怀疑的。美洲的一部分产物在匈牙利和波兰消费，那里对这个新地区的糖、巧克力和烟草也有一定需求。但是，购买这些商品所用的，必定要么是匈牙利和波兰勤劳的产物，要么是用这种产物的一部分购得的东西。这些美洲商品是输入匈牙利和波兰的新价值、新等价物，要在那里同这些国家的剩余产物交换。它们被运到那里，便为这些剩余产物创造了一个新的、更广阔的市场。它们提高了剩余产物的价值，并由此促进其增加。即使这些剩余产物没有任何一部分运往美洲，它仍可运往其他国家，而那些国家会用其所得美洲剩余产物份额的一部分来购买它；它还可以借助那种贸易的流通找到市场，而这种贸易最初正是由美洲的剩余产物推动起来的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p94",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_277"
+      },
+      "contentHash": "f06fdd9a1e286ccc201c7835544f64d240f47855ff5e1d81efffe5fcac29ff2a",
+      "text": "这些重大事件甚至可能促进某些国家增加享受和增长勤劳，而这些国家不仅从未向美洲运送过任何商品，也从未从那里得到过任何商品。即使这样的国家，也可能从另一些国家得到数量更多的其他商品，而后一些国家的剩余产物已借助美洲贸易而有所增加。这种更充足的供应既必然增加前一些国家的享受，也必然增长其勤劳。必定有数量更多的某种新等价物提供给它们，用来交换这种勤劳的剩余产物。必定为这种剩余产物创造了一个更广阔的市场，从而提高其价值，并由此促进其增加。每年投入欧洲商业大循环，并通过其各种周转而每年分配给其中所有不同国家的商品总量，必定增加了相当于美洲全部剩余产物的数量。因此，这个更大总量中的更大份额很可能落到这些国家中的每一个国家，从而增加其享受并增长其勤劳。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p95",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_278"
+      },
+      "contentHash": "0b1d687c39729dff56d90cdc48b3a0b20a63a44843a21a068a62d88653e553af",
+      "text": "母国的独占贸易，不仅往往会减少所有这些国家总体上的享受和勤劳，也会减少美洲殖民地尤其如此的享受和勤劳；或者至少会把二者压制在原本可能上升到的水平以下。它是压在一个巨大发条运转上的沉重负担，而这个发条推动着人类事务的很大一部分。它使殖民地产物在所有其他国家变得更加昂贵，从而减少对它们的消费，并由此限制殖民地的勤劳以及所有其他国家的享受和勤劳；其他国家为所享用之物支付更多，享受便更少，为所生产之物所得更少，生产也便更少。它使其他所有国家的产物在殖民地变得更加昂贵，从而以同样方式限制其他所有国家的勤劳，以及殖民地的享受和勤劳。它是一种障碍，为了某些特定国家的所谓利益，妨碍了所有其他国家的享受，加重了它们勤劳的负担；但对殖民地的妨碍和负担比对其他任何国家都更大。它不仅尽可能把所有其他国家排斥在一个特定市场之外，而且尽可能把殖民地局限在一个特定市场之内；在所有其他市场都开放时被排斥在一个特定市场之外，与在所有其他市场都关闭时被局限在一个特定市场之内，二者之间的差别非常大。然而，美洲殖民地的剩余产物，是欧洲从美洲的发现和殖民中所得一切享受增加和勤劳增长的最初源泉；而母国的独占贸易往往使这一源泉远不如原本可能达到的那样丰沛。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p96",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_279"
+      },
+      "contentHash": "297b7050171996ce10196b03cc1b0a29f5e70aaace43d030925dcb59d992eb7a",
+      "text": "每个殖民国家从专属于它的殖民地得到的特殊利益有两类：第一，是每个帝国都从其统治下的行省得到的共同利益；第二，是据认为可从美洲的欧洲殖民地这种性质极为特殊的行省得到的特有利益。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p97",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_280"
+      },
+      "contentHash": "173c16142234e1d77f877331bc174ebf5607520a9087413186cd98b7fa168b57",
+      "text": "每个帝国从其统治下的行省得到的共同利益，第一在于它们提供保卫帝国的军事力量，第二在于它们提供维持帝国文官政府的收入。罗马的殖民地偶尔会同时提供这两者。希腊的殖民地有时提供军事力量，但很少提供任何收入。它们很少承认自己服从母城的统治。它们通常是母城战时的盟友，却极少是母城平时的臣属。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p98",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_281"
+      },
+      "contentHash": "9dcee8c92c6ce5b1faea12a79a8df6213f89c786db6f30a1f33d595173585c28",
+      "text": "美洲的欧洲殖民地迄今从未提供任何保卫母国的军事力量。它们的军事力量迄今甚至不足以保卫自身；而在母国卷入的历次战争中，保卫殖民地通常会极大地分散这些国家的军事力量。因此，在这方面，所有欧洲殖民地无一例外，对各自母国而言，与其说是力量的来源，不如说是虚弱的原因。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p99",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_282"
+      },
+      "contentHash": "ef1633dc537cf894c4be3130bce513f16922e0fe355e3379bf74aa7bfeebd85d",
+      "text": "只有西班牙和葡萄牙的殖民地，曾经为保卫母国或维持其文官政府贡献过一些收入。向其他欧洲国家的殖民地，尤其是英国殖民地征收的税，和平时期很少能抵偿花费在它们身上的费用，战时则从不足以支付它们所引起的费用。因此，对各自的母国来说，这样的殖民地是费用而不是收入的来源。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p100",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_283"
+      },
+      "contentHash": "623f3ef9ac5f58596618793052c31aeafd8bb046bc1129ebc8d042e9cc1e3aa3",
+      "text": "这类殖民地给各自母国带来的利益，完全在于据认为可从美洲的欧洲殖民地这种性质极为特殊的行省得到的那些特有利益；而人们也承认，独占贸易是所有这些特有利益的唯一来源。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p101",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_284"
+      },
+      "contentHash": "5d8eb09101d3e3abdf28cf3dd78d38eb49e907e85a2452d729d44b463e1f6059",
+      "text": "由于这种独占贸易，例如，英国殖民地剩余产物中由所谓列举商品构成的全部部分，只能运往英国，不能运往任何其他国家。其他国家随后必须从英国购买。因此，这些商品在英国必定比在任何其他国家都便宜，对增加英国享受所作的贡献也必定比对增加任何其他国家享受所作的贡献更大。它们也必定更能促进英国的勤劳。英国用本国剩余产物的各个部分去交换这些列举商品时，所得价格必定高于其他任何国家用本国同类产物交换同样商品时所能得到的价格。例如，英国的制成品所能购得的本国殖民地的糖和烟草，必定多于其他国家的同类制成品所能购得的这些糖和烟草。因此，就英国制成品和其他国家制成品都要同英国殖民地的糖和烟草交换而言，这种价格优势给予前者的鼓励，超过了后者在这种情况下所能得到的鼓励。所以，殖民地的独占贸易，一方面减少或至少把没有这种贸易的国家的享受和勤劳压制在原本可能上升到的水平以下，另一方面也使拥有这种贸易的国家获得优于其他国家的明显优势。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p102",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_285"
+      },
+      "contentHash": "d89c0002eeae032eff4d82c1148e4d63e201eae3192c5bd5a773ad4b1ac63551",
+      "text": "不过，这种优势也许会被发现，与其说是绝对优势，不如说是可以称为相对优势的东西；它使享有这种优势的国家取得优越地位，与其说是通过把该国的勤劳和产物提高到自由贸易情况下自然会达到的水平以上，不如说是通过压低其他国家的勤劳和产物。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p103",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_286"
+      },
+      "contentHash": "b8d5144d78aff4f6ddfc7f8a1daf0b809cd9b3050780bb815fbbbc4afebbe28c",
+      "text": "例如，由于英格兰享有马里兰和弗吉尼亚烟草的垄断权，这种烟草运到英格兰，肯定比运到法国便宜；英格兰通常把其中相当大的一部分卖给法国。但是，如果法国和欧洲所有其他国家一直都获准同马里兰和弗吉尼亚自由贸易，那么这些殖民地的烟草到现在就可能不仅在所有这些其他国家，而且在英格兰也比实际价格便宜。由于市场远比烟草迄今享有的任何市场广阔，烟草产量到现在本来可能、而且很可能已经大为增加，从而使烟草种植园的利润降低到与谷物种植园利润相同的自然水平；据认为，前者目前仍略高于后者。烟草价格到现在本来可能、而且很可能已经降到略低于目前的水平。用等量的英格兰商品或那些其他国家的商品，在马里兰和弗吉尼亚本来可以买到比目前更多的烟草，因而也能在那里卖出高得多的价钱。因此，就这种草叶能够凭借其低廉和丰富来增加英格兰或任何其他国家的享受或促进其勤劳而言，在自由贸易的情况下，它很可能会在略大于目前所能达到的程度上产生这两种效果。诚然，在这种情况下，英格兰不会比其他国家占有任何优势。她也许能以略低的价格购买其殖民地的烟草，因而也能以略高于实际价格的价钱出售自己的一些商品。但她既不能以低于任何其他国家所能支付的价格购买前者，也不能以高于任何其他国家所能索取的价格出售后者。她也许会获得一种绝对优势，但肯定会失去一种相对优势。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p104",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_287"
+      },
+      "contentHash": "9535aa39a93296befc259bacea9fc3f464c7dc89f8cf750087105f3b2a1014e5",
+      "text": "然而，为了在殖民地贸易中取得这种相对优势，为了实施尽可能排斥其他各国、不让它们分享这种贸易的招人憎恶而恶毒的计划，有非常可信的理由认为，英格兰不仅牺牲了她同其他各国一样本可从这种贸易中得到的一部分绝对优势，而且使自己在几乎所有其他贸易部门都陷入了绝对劣势和相对劣势。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p105",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_288"
+      },
+      "contentHash": "1a78327fbf9d8bbcb08c79d47e1e52c9a81ee587135e3f6223a278c9b561b31a",
+      "text": "当英格兰通过《航海法案》把殖民地贸易的垄断权据为己有时，此前投在这种贸易中的外国资本必然从中撤出。此前只经营其中一部分的英格兰资本，现在不得不经营全部贸易。此前只向殖民地供应其所需欧洲货物的一部分的资本，现在成了用来供应全部所需货物的全部资本。但它无法供应全部货物，因而它所供应的货物必然卖得很贵。此前只购买殖民地一部分剩余产品的资本，现在成了用来购买全部剩余产品的全部资本。但它不可能以任何接近原来价格的价钱把全部买下，因而凡是它买下的，都必然买得很便宜。然而，在一种商人高价卖出、低价买进的资本用途上，利润必然非常丰厚，远高于其他贸易部门的普通利润水平。殖民地贸易中这种较高的利润，必然会从其他贸易部门吸引走此前投在其中的一部分资本。不过，这种资本转移，既必然逐渐加剧殖民地贸易中的资本竞争，也必然逐渐减弱所有其他贸易部门中的这种竞争；既必然逐渐降低前者的利润，也必然逐渐提高后者的利润，直到所有部门的利润达到一个不同于原先、并略高于原先水平的新水平。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p106",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_289"
+      },
+      "contentHash": "4a3a02bfa35ea6fa25fd2a485eed1db637687aa82bbbe75fd7d3061ff989cd18",
+      "text": "这种双重效果，一方面把资本从所有其他贸易中吸引出来，另一方面使所有贸易中的利润率都略高于原本应有的水平，不仅在这种垄断最初确立时由它造成，而且从那以后一直由它造成。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p107",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_290"
+      },
+      "contentHash": "0425ab8ac4e0fb2d2e3bd03fce47045142e09fc9f9caf12d78e829b0b7ec87e2",
+      "text": "第一，这种垄断一直不断地把资本从所有其他贸易中吸引出来，投入殖民地贸易。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p108",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_291"
+      },
+      "contentHash": "5b9d4de0f7be46ab2a304941c0d38c458633e84da0a6f485c9455e616ad70668",
+      "text": "自《航海法案》确立以来，大不列颠的财富虽然增加了很多，但其增长比例肯定不及殖民地财富的增长比例。然而，每个国家的对外贸易自然都同其财富成比例增长，其剩余产品也同其全部产品成比例增长；而大不列颠几乎把可称为殖民地对外贸易的全部贸易据为己有，她的资本增长却没有同这种贸易规模的扩大保持相同比例，因此，如果她不从其他贸易部门不断抽回此前投在其中的一部分资本，并且扣住本来会流入其中的更多资本，就无法经营这种贸易。因此，自《航海法案》确立以来，殖民地贸易一直不断增长，而其他许多对外贸易部门，尤其是同欧洲其他地区的贸易，则一直不断衰落。我们为向国外销售而进行的制造，大部分已不再像《航海法案》颁布以前那样，适应邻近的欧洲市场或较远的地中海周边各国市场，而是适应更加遥远的殖民地市场；它们所适应的是自己享有垄断权的市场，而不是有许多竞争者的市场。马修·德克尔爵士及其他著述家曾把其他对外贸易部门衰落的原因归结为赋税过重和征税方式不当、劳动价格高昂、奢侈增长等等，但这些原因全都可以在殖民地贸易的过度膨胀中找到。大不列颠的商业资本虽然非常庞大，却并非无限；而且，自《航海法案》颁布以来，它虽然大幅增加，却没有同殖民地贸易按相同比例增加；所以，要经营这种贸易，就不可能不从其他贸易部门抽走一部分资本，因而也不可能不使那些其他部门有所衰落。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p109",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_292"
+      },
+      "contentHash": "0a144fb141d76921bdf15c510a8fd8217018f37fd8b404232a551854786e0058",
+      "text": "必须指出，英格兰早就是一个贸易大国，她的商业资本十分庞大，而且很可能日益增大；这不仅是在《航海法案》确立殖民地贸易垄断权以前，而且是在殖民地贸易变得相当重要以前。在克伦威尔执政期间的对荷战争中，她的海军强于荷兰海军；在查理二世统治初期爆发的那场战争中，她的海军至少与法国和荷兰的联合海军相等，或许还更强。她的这种优势，在今天或许几乎不会显得更大；至少，如果荷兰海军目前同荷兰商业的比例和当时相同，便是如此。但在那两场战争中的任何一场里，这种强大的海军力量都不可能归因于《航海法案》。在第一场战争期间，该法案的方案才刚刚拟定；在第二场战争爆发以前，该法案虽已由法律权威正式制定，但其任何部分都不可能有时间产生任何重大效果，尤其是其中确立殖民地专属贸易的那一部分。当时，无论殖民地本身还是殖民地贸易，同现在相比都无足轻重。牙买加岛是一片有害健康的荒地，居民很少，耕作更少。纽约和新泽西为荷兰人所有；圣克里斯托弗岛的一半为法国人所有。安提瓜岛、南北卡罗来纳、宾夕法尼亚、佐治亚和新斯科舍都尚未建立殖民地。弗吉尼亚、马里兰和新英格兰已经建立殖民地；它们虽是非常兴旺的殖民地，但当时无论在欧洲还是美洲，或许没有一个人预见到、甚至怀疑到它们后来在财富、人口和开发方面会取得如此迅速的进展。总之，巴巴多斯岛是当时唯一具有一定重要性的英国殖民地，其当时状况与目前状况多少有些相似。即使《航海法案》颁布以后的一段时间内，英格兰所享有的殖民地贸易也只有一部分（因为该法案颁布数年以后才得到非常严格的执行），所以当时的殖民地贸易不可能是英格兰庞大贸易的原因，也不可能是由这种贸易所维持的强大海军力量的原因。当时维持这支强大海军力量的贸易，是欧洲贸易和地中海周边各国的贸易。然而，大不列颠目前在这种贸易中所占的份额，却无法维持任何这样强大的海军力量。如果任由日益增长的殖民地贸易向所有国家开放，那么无论大不列颠从中得到多少份额——而且她很可能得到相当大的份额——都必定会全部成为她原先已经拥有的这种庞大贸易的增量。由于垄断，殖民地贸易的增长与其说增加了大不列颠原有的贸易，不如说彻底改变了这种贸易的方向。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p110",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_293"
+      },
+      "contentHash": "e0f9269b67cb405e0380e79ef4f60c3c920800d0f5fa1300301959762dbf84ae",
+      "text": "第二，这种垄断必然促使英国各个贸易部门的利润率维持在高于其自然水平的程度；如果所有国家都获准同英国殖民地自由贸易，利润率本来不会这样高。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p111",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_294"
+      },
+      "contentHash": "e095de800e7273ec22325be5bf9467eaf3d8ea5658e9de51cc554526c50691f6",
+      "text": "殖民地贸易的垄断，一方面必然把大不列颠资本中一个较之其自发流入比例更大的部分吸引到这种贸易中；另一方面，由于排斥了全部外国资本，又必然使投在这种贸易中的资本总量低于自由贸易情况下自然应有的数量。然而，它减少了这个贸易部门中的资本竞争，因而必然提高这个部门的利润率。它也减少了英国资本在所有其他贸易部门中的竞争，因而必然提高英国资本在所有那些其他部门中的利润率。自《航海法案》确立以来，无论在任何一个特定时期，大不列颠商业资本的状况或规模如何，只要那种状况持续存在，殖民地贸易的垄断就必然使殖民地贸易以及英国所有其他贸易部门中的英国普通利润率高于没有这种垄断时的水平。如果自《航海法案》确立以来，英国的普通利润率已经大幅下降——事实确实如此——那么，如果不是该法案所确立的垄断有助于支撑这种利润率，它必定会降得更低。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p112",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_295"
+      },
+      "contentHash": "946628ef1142b1ae39ea23fcbc53709faa59253836dd5499569aa2c0805f3aad",
+      "text": "但是，在任何国家，凡是使普通利润率高于原本应有水平的因素，必然使该国在其不享有垄断权的每一个贸易部门中同时陷入绝对劣势和相对劣势。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p113",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_296"
+      },
+      "contentHash": "a223c7ac88f9961510728c4f7407e1cd9d622d5a6137df486c9e72ac64e843f3",
+      "text": "它使该国陷入绝对劣势：因为在这些贸易部门中，该国商人若不把输入本国的外国货物和输出外国的本国货物都卖得比原本更贵，便无法取得这种较高的利润。该国既必须买得更贵，也必须卖得更贵；既必须买得更少，也必须卖得更少；既必须享受得更少，也必须生产得更少，而没有这种情况时则不会如此。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p114",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_297"
+      },
+      "contentHash": "0de6b94dcb237471aaf1f78ea47f98b5e38ac17620fba471fc43ecb88ffe5b8a",
+      "text": "它使该国陷入相对劣势：因为在这些贸易部门中，它使不受同样绝对劣势影响的其他国家比原本更加高于该国，或更少低于该国。相对于该国的享受和生产，它使其他国家既能享受更多，也能生产更多。它使它们的优势比原本更大，或劣势比原本更小。它使该国产品的价格高于原本的水平，从而使其他国家的商人能够在国外市场上以低于该国的价格出售，并因此将该国从几乎所有它不享有垄断权的贸易部门中排挤出去。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p115",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_298"
+      },
+      "contentHash": "0a27a17c97e0eb4619da873271185bbd7bb01f094a8c0199aea0931ef191041e",
+      "text": "我国商人常常抱怨英国劳动的高工资，认为这是他们的制成品在国外市场上被人以更低价格出售的原因；但他们对于资本的高利润却闭口不谈。他们抱怨别人的收益过高，却对自己的收益一言不发。然而，英国资本的高利润在许多情况下对英国制成品价格上涨的作用，可能同英国劳动的高工资一样大，在某些情况下或许还更大。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p116",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_299"
+      },
+      "contentHash": "b0b5080a6e1c8f1cc5fa9a810d45451f11eb1492d4c08578592e7a8542542045",
+      "text": "正是通过这种方式，可以有充分理由说，大不列颠的资本一部分是被吸引走，一部分是被排挤出她不享有垄断权的大多数不同贸易部门，尤其是欧洲贸易和地中海周边各国的贸易。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p117",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_300"
+      },
+      "contentHash": "9cb74b6558969b2fef10f3fdd771c807fb5b7ad7866da4d2f99627a054eae050",
+      "text": "资本一部分是被从那些贸易部门吸引走的；这是因为殖民地贸易不断增长，而某一年用来经营这种贸易的资本又总是不足以经营下一年的贸易，因而殖民地贸易中较高的利润产生了吸引力。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p118",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_301"
+      },
+      "contentHash": "c201fa252d9d17c42629abc92d46923e207512b1a560b438996eb39d575f4ee8",
+      "text": "资本一部分是被排挤出那些贸易部门的；这是因为在大不列颠形成的高利润率，在大不列颠不享有垄断权的所有不同贸易部门中给了其他国家以优势。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p119",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_302"
+      },
+      "contentHash": "abce28602459d157a0f1555551822387213c47505abc7262f46b8c1fca79e573",
+      "text": "殖民地贸易的垄断从那些其他部门吸引走了一部分原本会投在其中的英国资本，同时也迫使许多外国资本流入其中；如果这些外国资本没有被逐出殖民地贸易，它们绝不会流入那些部门。在那些其他贸易部门中，这种垄断减少了英国资本的竞争，从而使英国利润率高于原本的水平。相反，它增加了外国资本的竞争，从而使外国利润率低于原本的水平。无论通过前一种方式还是后一种方式，它显然都必然使大不列颠在所有那些其他贸易部门中陷入相对劣势。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p120",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_303"
+      },
+      "contentHash": "4c2ec63faf621dc20d8818ea3b99df4812bfa9da9f485e04a5fb2da7b92c02c1",
+      "text": "不过，也许有人会说，殖民地贸易对大不列颠比其他任何贸易都更有利；而垄断迫使大不列颠资本中一个较之原本会流入的比例更大的部分流入这种贸易，从而把这些资本转入了对国家比它们所能找到的任何其他用途都更有利的用途。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p121",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_304"
+      },
+      "contentHash": "8f332479cc2b29b76480deb275dc4cfcfebf1b0bf4a5f83b99df22e6615d889a",
+      "text": "任何资本对于其所属国家最有利的用途，就是在该国维持最大数量的生产性劳动，并最大限度地增加该国土地和劳动的年产物的用途。但是，投在对外消费品贸易中的任何资本所能维持的生产性劳动数量，如第二篇所示，恰好同其周转的频繁程度成比例。例如，一笔一千镑的资本投在每年定期周转一次的对外消费品贸易中，就能在其所属国家持续雇用相当于一千镑在那里维持一年之久的生产性劳动。如果每年周转两次或三次，它就能持续雇用相当于两千镑或三千镑在那里维持一年之久的生产性劳动。因此，同邻近国家进行的对外消费品贸易，一般比同遥远国家进行的这种贸易更有利；基于同一理由，如第二篇也已说明的，直接的对外消费品贸易一般比迂回的这种贸易更有利。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p122",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_305"
+      },
+      "contentHash": "bec50c71eb6ca0bbd04a9e1f2d5a469e4973794bd47fe8f50bde6118f776004a",
+      "text": "但是，就殖民地贸易的垄断影响大不列颠资本的用途而言，它在一切情况下都迫使一部分资本从同邻近国家进行的对外消费品贸易转入同更遥远国家进行的这种贸易，并且在许多情况下，从直接的对外消费品贸易转入迂回的这种贸易。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p123",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_306"
+      },
+      "contentHash": "ed11fdad415743270202c62038241561c705cf6c5d8f9d97885857943e5cb8a2",
+      "text": "第一，殖民地贸易的垄断在一切情况下都迫使大不列颠的一部分资本从同邻近国家进行的对外消费品贸易转入同更遥远国家进行的这种贸易。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p124",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_307"
+      },
+      "contentHash": "34f0fb9594f90d63cbcfcdbcdddc3f2b9dff33046b6b69da813e1d4b1009daa6",
+      "text": "在所有情况下，它都迫使一部分资本从对欧洲及地中海周边国家的贸易，转入对美洲和西印度群岛等更遥远地区的贸易；从这些地区获得回报必然不那么频繁，这不仅是因为距离更远，也是因为这些国家的特殊情况。前面已经指出，新殖民地总是缺少资本。它们的资本总是远少于它们在改良和耕种土地方面能够以高额利润和巨大收益加以运用的数量。因此，它们对超出自有资本的更多资本有着持续不断的需求；为补足自身的欠缺，它们竭力从母国借取尽可能多的资本，因而总是欠着母国的债。殖民者形成这种债务的最常见方式，并不是向母国富人立契借款，尽管他们有时也这样做，而是尽可能多地拖欠那些从欧洲向他们供货的代理商，只要这些代理商肯容许他们赊欠。他们每年的回款往往不超过欠款的三分之一，有时甚至达不到这个比例。因此，他们的代理商预付给他们的全部资本，很少能在三年以内全部返回不列颠，有时甚至要四年或五年以上才能返回。例如，一千英镑的不列颠资本，如果每五年才全部返回大不列颠一次，那么它所能持续雇用的不列颠劳动量，只相当于这笔资本若每年全部返回一次时所能维持的五分之一；它所能持续雇用的劳动量，并非一千英镑一年所能维持的数量，而仅是二百英镑一年所能维持的数量。种植园主无疑通过他为欧洲商品支付的高价、他所开远期汇票的利息，以及他所开近期汇票展期时支付的佣金，弥补了，而且很可能不止弥补了他的代理商因这种迟延而可能遭受的一切损失。但是，尽管他可以弥补其代理商的损失，却无法弥补大不列颠的损失。在回报相隔很久的贸易中，商人的利润可能与回报非常频繁而迅速的贸易一样大，甚至更大；但是，他所居住国家获得的利益、那里持续维持的生产性劳动量以及土地和劳动的年产物，都必然少得多。我想，凡是对这些不同贸易部门有任何经验的人，都会欣然承认：对美洲贸易的回报，尤其是对西印度群岛贸易的回报，一般说来不仅比对欧洲任何地方、甚至比对地中海周边国家贸易的回报更迟，而且也更不规则、更不确定。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p125",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_308"
+      },
+      "contentHash": "14ef13385c7bdece36db726dd9fd348b3494c3dc72095e05f463357d18e2abd1",
+      "text": "第二，殖民地贸易的垄断，在许多情况下迫使大不列颠的一部分资本从直接的国外消费贸易转入迂回的国外消费贸易。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p126",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_309"
+      },
+      "contentHash": "538b06349929ff5edf849a091e5c0aaf4decdd606364fcb12e1282055ed960ed",
+      "text": "在那些列入清单、只能运往大不列颠市场的商品中，有几种商品的数量大大超过大不列颠的消费量，因而其中一部分必须出口到其他国家。但是，如果不迫使大不列颠的一部分资本转入迂回的国外消费贸易，就无法做到这一点。例如，马里兰和弗吉尼亚每年向大不列颠运送九万六千大桶以上的烟草，而据说大不列颠的消费量不超过一万四千大桶。因此，八万二千大桶以上的烟草必须再出口到其他国家，即法国、荷兰以及波罗的海和地中海周边国家。然而，大不列颠资本中把这八万二千大桶烟草运到大不列颠、再从那里转口到其他国家，并从那些国家把作为回报的商品或货币带回大不列颠的那一部分，是用于一种迂回的国外消费贸易；为了处理这笔巨大的剩余，它必然被迫投入这种用途。如果我们要计算这全部资本可能需要多少年才能返回大不列颠，就必须在美洲回报所需的时间之外，再加上那些其他国家的回报所需的时间。如果在我们同美洲进行的直接国外消费贸易中，所用的全部资本往往要三年或四年以上才能返回，那么，用于这种迂回贸易的全部资本就不大可能在四年或五年以内返回。如果前者所能持续雇用的国内劳动量，仅为每年周转一次的资本所能维持的三分之一或四分之一，那么后者所能持续雇用的，就仅为这种劳动量的四分之一或五分之一。在一些外港，人们通常准许烟草出口对象——那些外国代理商——赊账。不过，在伦敦港，烟草通常确实以现款出售。规则是：过秤付款。因此，在伦敦港，整个迂回贸易的最终回报，比美洲贸易的回报所多出的时间，只是商品可能滞销而存放在仓库里的时间；不过，它们有时可能在那里存放相当长的时间。但是，如果殖民地出售烟草时没有被限定只能以大不列颠为市场，那么运到我国的烟草，很可能只比国内消费所需的数量略多一点。在这种情况下，大不列颠目前用出口到其他国家的大量剩余烟草所购买、供本国消费的商品，很可能会用本国劳动的直接产物，或本国制成品的一部分来购买。这些产物和制成品将不再像现在这样，几乎完全适应一个大市场，而很可能会适应许多个较小的市场。大不列颠很可能不会进行一项大规模的迂回国外消费贸易，而会进行许多项同类的小规模直接国外消费贸易。由于回报频繁，目前经营这项大规模迂回贸易的资本，只须拿出一部分，而且很可能只是一小部分，或许不超过三分之一或四分之一，便足以经营所有那些小规模直接贸易，足以持续雇用同等数量的不列颠劳动，并同样维持大不列颠土地和劳动的年产物。由于用少得多的资本就能以这种方式实现这项贸易的所有目的，便会有大量闲余资本可用于其他用途：改良土地、增加制造业和扩展大不列颠的商业；至少会同以所有这些不同方式运用的其他不列颠资本展开竞争，降低所有这些用途中的利润率，从而使大不列颠在所有这些方面对其他国家所享有的优势，比目前还要大。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p127",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_310"
+      },
+      "contentHash": "56579a417e6d8c80712862750377a23513d2b574e3b598b20de560bfba7b0495",
+      "text": "殖民地贸易的垄断也迫使大不列颠的一部分资本从所有国外消费贸易转入运载贸易；因而使它不再或多或少地维持大不列颠的劳动，而是完全用来一部分维持殖民地的劳动，一部分维持其他某些国家的劳动。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p128",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_311"
+      },
+      "contentHash": "76223e74fb71559976a58087cdd8a0ffce3cb4c2a0343a4dee34d7acb37d380d",
+      "text": "例如，每年用从大不列颠再出口的八万二千大桶巨额剩余烟草所购买的商品，并非全都在大不列颠消费。其中一部分，例如德国和荷兰的亚麻布，会运回殖民地供那里专门消费。但是，大不列颠资本中购买烟草、而这批烟草后来又用来购买这种亚麻布的那一部分，必然从维持大不列颠的劳动中抽离出来，完全用于一部分维持殖民地的劳动，一部分维持那些以本国劳动产物支付烟草价款的特定国家的劳动。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p129",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_312"
+      },
+      "contentHash": "100f47b413e0e51486a58b0567b3b086e937f16010b191feff8737b096ff6f35",
+      "text": "此外，殖民地贸易的垄断迫使大不列颠资本中远比自然流向该贸易的比例更大的一部分流向该贸易，似乎完全破坏了不列颠劳动各个不同部门之间原本会形成的自然平衡。大不列颠的劳动不再适应许多个小市场，而主要适应一个大市场。它的商业不再流经许多条小渠道，而被引导着主要流经一条大渠道。但这使它的整个劳动和商业体系变得不如原来安全；使它整个政治机体的状况变得不如原来健康。在目前的情形下，大不列颠很像某些不健康的身体，其中一些要害部位生长过度，因而容易患上许多危险疾病；而在各部分比例较为适当的身体中，这些疾病几乎不会发生。那条被人为扩张至超过其自然尺寸的大血管，承载着这个国家比例反常的劳动和商业，被迫使其在其中循环；这条大血管稍有阻塞，就很可能给整个政治机体带来最危险的疾病。因此，与殖民地决裂的预期给大不列颠人民带来的恐惧，超过了他们面对西班牙无敌舰队或法国入侵时曾经感到的任何恐惧。正是这种恐惧，不论是否有充分根据，使废除印花税法至少在商人中成为一项颇受欢迎的措施。大多数我国商人一向以为，他们预见到：即使被完全排除在殖民地市场之外只持续几年，他们的贸易也会完全停止；大多数制造业主以为自己的事业会彻底毁灭；大多数工人则以为自己的工作会告终。然而，即使与欧洲大陆上的任何邻国决裂也可能使所有这些不同阶层中一些人的职业受到某种停顿或中断，人们在预见这种情形时却不会产生这种普遍的激动。血液在一些较小血管中的循环受阻时，很容易流入较大的血管，而不会引发任何危险的疾病；但当它在任何较大血管中受阻时，抽搐、中风或死亡便是直接而不可避免的后果。那些借助奖励金或对国内和殖民地市场的垄断，被人为抬高到反常程度而过度发展的制造业，哪怕只有一个在经营中遇到些微停顿或中断，也经常会引起令政府不安的骚乱和混乱，甚至妨碍立法机关的审议。因此，人们认为，如果我国如此大比例的主要制造业突然完全停工，必然会造成何等严重的混乱和纷扰？",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p130",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_313"
+      },
+      "contentHash": "e3ead4e4d81f8a43104b7f7620bc0349cf439e96fdbf48c24c55bcf79751e58d",
+      "text": "对那些赋予大不列颠殖民地贸易专营权的法律作适度而逐步的放宽，直到这种贸易在很大程度上实现自由，似乎是唯一能在今后一切时期使它摆脱这种危险的办法；这能使它、甚至迫使它从这种过度发展的用途中抽回一部分资本，转投其他用途，尽管利润较少；还能通过逐步缩减其劳动的一个部门并逐步扩大其余所有部门，渐渐使其各个不同部门恢复到完全自由必然会建立、并且只有完全自由才能维持的那种自然、健康而适当的比例。一下子向所有国家开放殖民地贸易，不仅可能给目前劳动或资本投入其中的大多数人造成某种暂时的不便，而且可能给他们造成巨大的永久损失。即使仅仅是进口超出大不列颠消费量的八万二千大桶烟草的船只突然失去业务，也可能让人非常明显地感受到影响。重商主义体系的一切规章都会产生这类不幸后果！它们不仅给政治机体的状况带来非常危险的疾病，而且这些疾病往往很难医治，除非至少暂时引起更严重的疾病。因此，殖民地贸易应以何种方式逐步开放；哪些限制应首先取消，哪些应最后取消；或者，应以何种方式逐步恢复完全自由和正义的自然体系，这些问题必须留待未来的政治家和立法者凭其智慧来决定。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p131",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_314"
+      },
+      "contentHash": "4df3301919622dc918bff0befeffccd75e2cd5d383f703107313febfb8ee8652",
+      "text": "五件未曾预见、也未曾想到的事情非常幸运地同时发生，使大不列颠在被完全排除于殖民地贸易一个非常重要的部门，即北美十二个联合省份的贸易之外时，受到的影响并不像人们通常预料的那样明显；这种完全排除至今已经持续了一年多（从1774年12月1日起）。第一，那些殖民地为准备实行不进口协定，把大不列颠所有适合其市场的商品全都搜购一空；第二，西班牙珍宝船队的异常需求，今年把德国和北方地区的许多商品，尤其是亚麻布搜购一空，而这些商品过去即使在不列颠市场上也会同大不列颠的制成品竞争；第三，俄国与土耳其之间的和平使土耳其市场产生了异常需求；在该国陷入困境、俄国舰队巡弋于爱琴海群岛期间，这个市场的供应一直非常不足；第四，欧洲北部对大不列颠制成品的需求，近些年来一直逐年增加；第五，最近对波兰的瓜分以及随之而来的和平局面，开放了这个大国的市场，今年又使来自该国的异常需求，加入了北方地区不断增加的需求。除第四件以外，这些事情在性质上都是暂时和偶然的；如果不幸被排除于殖民地贸易如此重要的一个部门之外的局面持续得更久一些，仍可能造成某种程度的困苦。不过，由于这种困苦会逐渐出现，人们感受到的严重程度将远低于它突然到来时；与此同时，这个国家的劳动和资本可能找到新的用途和方向，从而防止这种困苦达到任何相当严重的程度。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p132",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_315"
+      },
+      "contentHash": "f2e445ba3da1cdf059b7fbdafabd8bd5085d23f7f727d90a2336d30040202e0a",
+      "text": "因此，就殖民地贸易的垄断使大不列颠资本中流向这种贸易的比例高于在其他情况下会流向它的比例而言，它在所有情况下都使资本从同邻近国家进行的国外消费贸易，转入同更遥远国家进行的国外消费贸易；在许多情况下，使资本从直接的国外消费贸易转入迂回的国外消费贸易；在某些情况下，则使资本从一切国外消费贸易转入运载贸易。因此，在所有情况下，它都使资本从能够维持较多生产性劳动的方向，转入只能维持少得多的生产性劳动的方向。此外，由于使大不列颠如此大的一部分劳动和商业只适应一个特定市场，它使这种劳动和商业的整个状况，比其产物适应种类更多的市场时更不稳定、更不安全。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p133",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_316"
+      },
+      "contentHash": "7650552b8cf956805a853df27325e2f95db58e809fd1ff3a6a5143fb31a4fdbc",
+      "text": "我们必须仔细区分殖民地贸易的影响与这种贸易的垄断所产生的影响。前者总是而且必然有益；后者总是而且必然有害。但是，前者的益处如此之大，以至于殖民地贸易虽受垄断，并且尽管这种垄断具有有害影响，总的说来仍然有益，而且大为有益；只不过其益处比原本可能达到的程度小得多。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p134",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_317"
+      },
+      "contentHash": "b695b0d5c99c95eb9e4a813042174846b844518489646e2ec506ac72cc323a61",
+      "text": "处于自然和自由状态的殖民地贸易，其作用是为不列颠劳动产物中可能超过离本国较近的市场，即欧洲市场和地中海周边国家市场需求的那些部分，开辟一个虽遥远却广大的市场。处于自然和自由状态时，殖民地贸易不会从那些市场抽走任何一部分曾经运往那里的产物，而会不断提供新的等价物与剩余产物相交换，从而鼓励大不列颠不断增加这种剩余。处于自然和自由状态时，殖民地贸易倾向于增加大不列颠的生产性劳动量，却不会在任何方面改变此前已在那里运用的劳动的方向。在殖民地贸易的自然和自由状态下，其他一切国家的竞争会使利润率无论在新市场还是在新用途中，都无法上升到普通水平之上。这个新市场不会从旧市场抽走任何东西，反而可以说会创造一种新产物供自己消费；这种新产物会构成一笔用于经营新用途的新资本，而这笔新资本同样也不会从旧用途中抽走任何东西。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p135",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_318"
+      },
+      "contentHash": "043934c8bf51397f509884f236b756b52b3f083725b8948d8992ec7505b2a2ed",
+      "text": "相反，殖民地贸易的垄断排除了其他国家的竞争，从而提高了新市场和新用途中的利润率，并由此从旧市场抽走产物，从旧用途抽走资本。把我们在殖民地贸易中的份额扩大到超过原本会有的水平，正是垄断公开宣称的目的。如果实行垄断时我们在这种贸易中的份额并不大于不实行垄断时原本会有的份额，那么建立垄断就毫无理由。但是，无论什么措施，只要它迫使一国资本中流入某一贸易部门的比例，高于资本自行流入该部门的比例，而该部门的回报又比其他大多数贸易更缓慢、更遥远，就必然会使那里每年维持的生产性劳动总量，以及该国土地和劳动的全部年产物，少于原本会有的数量。它把该国居民的收入压低到自然会上升到的水平以下，从而削弱他们积累的能力。它不仅始终阻碍他们的资本维持本来能够维持的那样多的生产性劳动，而且还阻碍其资本以原本会有的速度增长，因而阻碍其资本维持更多的生产性劳动。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p136",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_319"
+      },
+      "contentHash": "cc9107eb367f05de81080ed280ca62fd8952d5388c6f402837da0ed5cb52cc9a",
+      "text": "然而，殖民地贸易的天然良好效果，对大不列颠来说远远抵消了垄断的不良效果，因此，把垄断也一并算在内，这种贸易即使按目前的方式进行，也不仅有利，而且极为有利。殖民地贸易所开辟的新市场和新就业，其规模远远大于因垄断而丧失的那部分旧市场和旧就业。可以说，由殖民地贸易创造出来的新产品和新资本，在大不列颠所维持的生产性劳动数量，超过了资本从其他周转较快的行业转移出去时所可能排挤出就业的劳动数量。然而，如果殖民地贸易即使按目前的方式进行也有利于大不列颠，那也不是由于垄断，而是尽管存在垄断。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p137",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_320"
+      },
+      "contentHash": "2896be34ced306531c725b788a781722cdeb19fadc9b8d37df636e45134e5e6a",
+      "text": "殖民地贸易所开辟的新市场，与其说是面向欧洲的原生产物，不如说是面向欧洲的制成品。农业是一切新殖民地最适宜经营的行业；土地低廉使这个行业比其他任何行业都更为有利。因此，它们盛产土地的原生产物，不但不从别国进口，通常还有大量剩余可供出口。在新殖民地，农业要么从其他一切职业中吸引人手，要么阻止人手转入其他任何职业。可腾出来从事必需品制造的人手很少，从事装饰品制造的则一个也没有。这两类制成品的大部分，它们发现从别国购买比自己制造更便宜。殖民地贸易主要是通过鼓励欧洲的制造业，间接鼓励欧洲的农业。这种贸易为欧洲制造业者提供就业，而这些制造业者构成了土地产品的一个新市场，并且是所有市场中最有利的一个；欧洲谷物和牲畜、面包和肉食的国内市场，就这样通过对美洲的贸易而大为扩展。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p138",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_321"
+      },
+      "contentHash": "65a2c5f9bc051e66f376f0b90a1917884cebbbacec105e3e199d4106c7d77143",
+      "text": "但是，仅仅垄断人口众多而繁荣的殖民地的贸易，并不足以在任何国家建立、甚至维持制造业，西班牙和葡萄牙的实例已充分证明了这一点。西班牙和葡萄牙在拥有任何重要殖民地之前，都是制造业国家。自从拥有了世界上最富饶、最肥沃的殖民地以后，两国都不再是制造业国家了。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p139",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_322"
+      },
+      "contentHash": "aaf5617ffd8cea070ee121d6d2c385a7176d1efcbcedf563e4b993195739800f",
+      "text": "在西班牙和葡萄牙，垄断的不良效果因其他原因而加剧，或许已经几乎抵消了殖民地贸易的天然良好效果。这些原因似乎是：其他各种垄断；金银价值被压低到多数其他国家的水平以下；不当的出口税使它们被排斥于国外市场之外，以及更加不当的国内货物转运税使国内市场缩小；但最重要的是，司法管理反复无常而且偏袒一方，它常常保护有钱有势的债务人，使受损害的债权人无法追讨，并使国内勤劳的人不敢为那些傲慢的大人物生产消费品，因为他们不敢拒绝赊账出售给这些人，却又完全不能确定这些人会还款。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p140",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_323"
+      },
+      "contentHash": "ca4490089c2322bce8be628c3dc9a3023f55e515d8e66d9377a49f0b3a5328d9",
+      "text": "相反，在英格兰，殖民地贸易的天然良好效果在其他原因的帮助下，已在很大程度上战胜了垄断的不良效果。这些原因似乎是：普遍的贸易自由，尽管存在一些限制，但至少不亚于、或许还胜过任何其他国家；国内产业生产的几乎一切货物都可以免税出口到几乎任何外国的自由；还有一项或许更为重要的自由，即可以不受任何限制地把这些货物从本国任何一地运往任何另一地，既无须向任何公共机关申报，也不受任何形式的询问或检查；但最重要的是，司法管理平等而公正，它使最卑微的英国臣民的权利也受到最尊贵者的尊重，并且通过保障人人享有自己勤劳的成果，对各种勤劳都给予了最大而最有效的鼓励。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p141",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_324"
+      },
+      "contentHash": "d98cd5c9d88ac44418bbc611d3b7c529f4182c845a05eebd331f6dbe4e8a5ec6",
+      "text": "然而，如果大不列颠的制造业确如事实那样因殖民地贸易而得到促进，这也不是由于这种贸易的垄断，而是尽管存在这种垄断。垄断的效果，不是增加大不列颠制成品的数量，而是改变其中一部分的质量和形态，使原本会适应一个周转频繁而迅速的市场的制成品，转而适应一个周转缓慢而遥远的市场。因此，它的效果是把大不列颠的一部分资本从一种本可维持较多制造业劳动的用途，转移到一种只能维持少得多的制造业劳动的用途，从而不是增加、而是减少大不列颠所维持的制造业劳动总量。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p142",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_325"
+      },
+      "contentHash": "78fd2c539a940d3e12029f55c9424588f613381602317c6d192d055d0397c904",
+      "text": "因此，殖民地贸易的垄断，同重商主义体系其他一切卑劣而恶毒的手段一样，压制所有其他国家的产业，尤其是殖民地的产业，却丝毫没有增加、反而减少了为其利益而设立这种垄断的国家的产业。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p143",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_326"
+      },
+      "contentHash": "14b4d32b494483d52c17210b2f5a638f4beca946a5beeb15c02c404e768cdf37",
+      "text": "无论该国的资本在任何特定时期规模如何，垄断都使这些资本不能像原本那样维持那么多的生产性劳动，也不能像原本那样为勤劳的居民提供那么多收入。但由于资本只能由收入中的节省来增加，垄断既然妨碍资本提供原本可以提供的那么多收入，也就必然妨碍资本按原本可以达到的速度增长，因而妨碍它维持更多的生产性劳动，并为该国勤劳的居民提供更多收入。因此，垄断必然使一个重大的原始收入来源，即劳动工资，在任何时期都不如原本那样充裕。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p144",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_327"
+      },
+      "contentHash": "9c8c9d15e7089fb5b3e6aeda1d047e60b8bfa171d29df077e780948217431234",
+      "text": "垄断提高商业利润率，从而妨碍土地改良。改良的利润取决于土地实际产量同投入一定资本后能够达到的产量之间的差额。如果这一差额所提供的利润，高于等额资本在任何商业用途上所能取得的利润，土地改良就会从一切商业用途中吸引资本。如果利润较低，商业用途就会从土地改良中吸引资本。因此，任何提高商业利润率的因素，不是缩小改良利润的优势，就是扩大改良利润的劣势；在前一种情况下，它阻止资本流向改良，在后一种情况下，它从改良中吸走资本。但垄断通过妨碍改良，必然延缓另一个重大的原始收入来源，即地租的自然增长。此外，垄断通过提高利润率，也必然使市场利率维持在高于原本水平的位置。但是，土地价格同其所提供地租之比，即购买土地通常支付的相当于若干年地租的数额，必然随利率上升而下降，随利率下降而上升。因此，垄断以两种不同方式损害地主的利益：它首先延缓地租的自然增长，其次延缓土地价格相对于其所提供地租的自然上涨。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p145",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_328"
+      },
+      "contentHash": "72ee616b199d0cd837b07b5896ed7169cf849a47ec926b4a9b1857bd657944cf",
+      "text": "诚然，垄断提高了商业利润率，从而稍稍增加了我国商人的收益。但由于它阻碍资本的自然增长，所以它往往不是增加、而是减少该国居民从资本利润中取得的收入总额；因为大资本按低利润率所得的收益，通常比小资本按高利润率所得的收益更多。垄断提高了利润率，却妨碍利润总额上升到原本能够达到的高度。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p146",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_329"
+      },
+      "contentHash": "48e39f3ff0d27e6624e734d7b08016d88a71d0752badbff73533a141127f3461",
+      "text": "劳动工资、地租和资本利润这一切原始收入来源，都因垄断而远不如原本那样充裕。为了促进一个国家中一个小小阶层的微小利益，它损害了该国其他一切阶层的利益，也损害了所有其他国家一切人的利益。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p147",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_330"
+      },
+      "contentHash": "05485fcf40f2741e7b97ac80fc74f11f586b5b127d983040acef904baba1c2d7",
+      "text": "垄断无论已经对或可能对任何一个特定阶层有利，都仅仅是通过提高通常利润率做到的。但是，除了前面已经提到的、高利润率必然给全国带来的一切不良效果之外，还有一种与它不可分离的效果——如果我们可以根据经验来判断的话——或许比所有这些效果合在一起更为致命。高利润率似乎到处都在摧毁那种在其他情况下本为商人性格所自然具有的节俭。利润高时，这种稳健的美德似乎成了多余之物，而奢侈挥霍似乎更符合其富裕处境。然而，大商业资本的所有者必然是每个国家全部产业的领导者和指挥者，他们的榜样对全体勤劳者风尚的影响，远远大于任何其他阶层的榜样。如果雇主用心而节俭，工人也很可能如此；但如果主人放荡而无序，仆人既按照主人为他规定的样式安排工作，也会按照主人为他树立的榜样安排生活。这样，所有那些天性最倾向于积累的人都无法进行积累；而那些本应最积极增加维持生产性劳动之资金的人，也不从其收入中增加这种资金。国家的资本非但没有增长，反而逐渐萎缩，其中所维持的生产性劳动数量也日益减少。加的斯和里斯本商人的畸高利润，增加了西班牙和葡萄牙的资本吗？它们减轻了这两个贫困国家的贫穷，促进了它们的产业吗？在这两个商业城市，商业开支的风气一向如此，以致那些畸高利润非但没有增加国家的总资本，似乎甚至几乎不足以维持产生这些利润的资本。可以说，外国资本每天都在越来越多地侵入加的斯和里斯本的贸易。正是为了把这些外国资本逐出本国资本日益无力经营的贸易，西班牙人和葡萄牙人才每天都竭力把其荒谬垄断的恼人束缚收得越来越紧。把加的斯和里斯本的商业风尚同阿姆斯特丹的商业风尚比较一下，你就会觉察到，资本的高利润和低利润对商人的行为与性格有着多么不同的影响。诚然，伦敦商人一般来说还没有变成加的斯和里斯本商人那样豪奢的老爷；但一般来说，他们也不是阿姆斯特丹商人那样用心而节俭的市民。不过，据认为，他们当中许多人比前者的大多数富有得多，却不如后者中的许多人富有。但他们的利润率通常远低于前者，又远高于后者。谚语说：“来得容易，去得也快。”各地通常的开支水平，似乎与其说是由实际的消费能力决定，不如说是由人们所设想的取得金钱以供消费的容易程度决定。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p148",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_331"
+      },
+      "contentHash": "acbd4d79c8243d231666f25ce94c287bba68515754e50a19aec6ae30cdaf5aa5",
+      "text": "因此，垄断给予一个阶层的唯一好处，以许多不同方式损害了国家的总体利益。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p149",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_332"
+      },
+      "contentHash": "a2e255b8ca471258c13333220aeabac1a1e27d374588a2b68360dcbd0706e254",
+      "text": "仅仅为了培养一群顾客而建立一个庞大帝国，乍看之下，似乎是一项只适合店主民族的计划。然而，这项计划完全不适合店主民族，却极其适合政府受店主影响的民族。只有这样的政治家，才会幻想动用同胞的鲜血和财富来建立并维持这样一个帝国，能给他们带来某种好处。你若对一个店主说：“替我买下一处好地产，我以后总是在你的店里买衣服，即使付的价格比别家店略贵一些也无妨。”你不会发现他很乐意接受你的提议。但如果别人替你买下这样一处地产，而你的恩人又责令你所有衣服都到这位店主的店里购买，那位店主就会对你的恩人感激不尽。英格兰为一部分在国内感到不安的臣民，在一个遥远国家买下了一处大地产。的确，代价很小；它没有达到相当于三十年地租——即当今土地通常价格——的数额，而只不过略高于各次远航装备所需的费用；这些远航最初发现了那片土地，侦察了海岸，并在名义上占有了这个国家。土地肥沃而辽阔，耕种者有大量良田可供耕作，并且有一段时期可以自由地把产品卖到任何愿意去的地方，因此只用了略多于三十或四十年的时间（1620年至1660年之间），便发展成一个人口如此众多而又如此繁荣的民族，以致英格兰的店主和其他商人希望把他们的生意垄断下来。因此，这些人既不声称自己支付过原始购地款的任何部分，也不声称自己支付过后来改良费用的任何部分，却向议会请愿，要求今后把美洲的耕种者限制在他们的店里：第一，从他们那里购买所需的一切欧洲货物；第二，把他们自己的产品中这些商人认为便于购买的一切部分卖给他们。因为他们并不认为购买这些产品的每一部分都很方便。其中有些部分如果进口到英格兰，可能会同他们自己在国内经营的某些行业发生冲突。因此，他们愿意让殖民者把这些特定产品卖到任何能卖出去的地方；越远越好；为此，他们提议把殖民者的市场限制在菲尼斯特雷角以南的国家。著名的《航海法案》中的一个条款，把这个地地道道的店主式提议确立为法律。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p150",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_333"
+      },
+      "contentHash": "a08a78d70cd09f786fd201be6af64de6c867da1402d09f850686159448d9709c",
+      "text": "迄今为止，维持这种垄断一直是大不列颠对其殖民地所主张的统治的主要目的，或者更确切地说，是唯一目的。人们认为，那些从未为支持文官政府或保卫母国提供过收入或军事力量的属地，其巨大好处就在于排他性贸易。垄断是它们依附地位的主要标志，也是迄今从这种依附地位中收获的唯一果实。大不列颠迄今为维持这种依附地位所支出的一切费用，实际上都是为了支持这种垄断而支出的。在目前这场骚乱开始以前，殖民地通常的和平时期建制费用包括：二十个步兵团的军饷；必须供应给他们的火炮、军需品和额外给养的费用；以及一支规模相当可观且长期维持的海军的费用，其任务是守卫北美洲漫长的海岸线以及我国西印度群岛的海岸线，防范其他国家的走私船。这一和平时期建制的全部费用都由大不列颠的收入负担，同时又只是殖民地统治给母国造成的费用中最小的一部分。如果我们想知道全部费用的数额，就必须在这一和平时期建制的年度费用之外，加上大不列颠因把殖民地视为受其统治的属地，而在不同时期为保卫殖民地所支出款项的利息。特别是，我们必须把最近一次战争的全部费用和此前一次战争的大部分费用加进去。最近一次战争完全是一场殖民地争端，无论其费用支出在世界哪个地方，是德国还是东印度，全部都理应记在殖民地账上。这笔费用超过九千万英镑，其中不仅包括新借的债务，也包括每一英镑加征二先令的土地税，以及每年从偿债基金中借取的款项。始于1739年的对西班牙战争，主要也是一场殖民地争端。其主要目标是阻止搜查那些同西班牙美洲大陆进行违禁贸易的殖民地船只。这全部费用，实际上都是为了支持一种垄断而给予的补贴。它宣称的目的是鼓励大不列颠的制造业并增加其商业。但其实际效果却是提高商业利润率，并使我国商人能把比原本更大比例的资本，转入一个周转比其他大多数行业更缓慢、更遥远的贸易部门；而如果一项补贴能够防止这两种结果，给予这样的补贴或许是非常值得的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p151",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_334"
+      },
+      "contentHash": "57f025a8b43efa7aa676e97680f8893a6779206afa4a84c7703f27038ebdede5",
+      "text": "因此，在目前的管理体制下，大不列颠从其对殖民地所主张的统治中得到的只有损失。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p152",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_335"
+      },
+      "contentHash": "91d38e55b35401854afcdbad62fbe468daf38d2b0e818f23b4f460f9d6ce80d0",
+      "text": "若提议大不列颠自愿放弃对其殖民地的一切权力，任由殖民地选举自己的行政长官、制定自己的法律，并按其认为适当的方式决定媾和与开战，那就是提出一种世界上任何国家都从未采纳、也永远不会采纳的措施。任何国家都不曾自愿放弃对任何一个省份的统治，无论治理它多么麻烦，也无论它所提供的收入与它所造成的费用相比多么微薄。这种牺牲虽然往往可能符合一个国家的利益，却总会挫伤每个国家的自尊；而且，也许更为重要的是，它总是与该国统治阶层的私人利益相抵触，因为统治阶层会因此失去许多名利职位的任用权，也失去许多获得财富和声望的机会；占有哪怕是最动荡、对广大人民最无利可图的省份，也很少不提供这些机会。即使是最耽于幻想的狂热者，也几乎不可能提出这样的措施，至少不可能认真指望它会得到采纳。然而，如果这一措施得到采纳，大不列颠不仅会立即摆脱殖民地和平时期常备机构的全部年度费用，而且还可以与它们缔结一项通商条约，切实确保本国享有自由贸易；这种自由贸易虽然对商人不如她目前享有的垄断有利，对广大人民却更为有利。这样友好分手以后，殖民地对母国的天然感情——这种感情也许已被我们最近的纷争几乎消磨殆尽——很快就会复苏。这种感情或许会使它们不但接连数百年遵守分手时与我们缔结的那项通商条约，而且在战争和贸易中都优待我们；它们不会再是动荡而结党的臣民，反而会成为我们最忠实、亲切而慷慨的盟友。于是，大不列颠与其殖民地之间，一方的慈爱之情和另一方的孝敬之意，或许会重新出现，正如古希腊的殖民地与其所源出的母城之间过去存在的那种感情一样。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p153",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_336"
+      },
+      "contentHash": "d27be986acd5f713ba55f96618b790f5b69d02358154ea2ae9e484421488701c",
+      "text": "要使任何一个省份有利于它所属的帝国，它在和平时期向公共财政提供的收入，就不仅应足以支付其自身和平时期常备机构的全部费用，而且应足以按其应负的比例为维持帝国的总政府作出贡献。每个省份都必然或多或少地增加该总政府的费用。因此，如果某个省份不为支付这项费用承担自己的份额，就必定会给帝国的其他某一部分加上不相称的负担。基于同样的道理，每个省份在战争时期向公共财政提供的非常收入，占整个帝国非常收入的比例，也应与它在和平时期的普通收入所占的比例相同。人们会很容易承认，大不列颠从殖民地取得的普通收入和非常收入，都没有在大英帝国的总收入中达到这一比例。诚然，有人认为，垄断增加了大不列颠人民的私人收入，从而使他们能够缴纳更多的税，因而弥补了殖民地公共收入的不足。但我已力图说明，这种垄断虽然是加在殖民地身上的一种极其沉重的税，并且可能增加大不列颠某一特定阶层的收入，却非但没有增加、反而减少了广大人民的收入；因而也非但没有提高、反而降低了广大人民纳税的能力。而且，因垄断而收入增加的人构成一个特定阶层；要按超过其他阶层的比例向这个阶层征税，不仅绝对不可能，甚至试图这样做也极不明智，这一点我将在下一篇中力图说明。因此，不可能从这个特定阶层取得任何特别的财源。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p154",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_337"
+      },
+      "contentHash": "0df55cd9bd5effc8db17cddda3c89085c5ab7ad7389d84626beb5f38936e1052",
+      "text": "殖民地的税收，既可以由它们自己的议会征收，也可以由大不列颠议会征收。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p155",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_338"
+      },
+      "contentHash": "67fa1754d3e43b2f6d4562d98d3fc8356aa47205ac4f807081ecc887b1e8671e",
+      "text": "要把殖民地议会操纵到能够向其选民征收足够的公共收入，不仅足以随时维持各自的文职和军事机构，而且足以按适当比例支付大英帝国总政府的费用，看来不大可能。就连英格兰议会，尽管直接处在君主的眼下，也经过很长时间才被纳入这样一种操纵体系，或者才被促使在拨款维持甚至本国的文职和军事机构方面表现得足够慷慨。只有把这套文职和军事机构所产生的官职，或这些官职的任用权中的很大一部分，分配给各个议员，才得以建立起即便针对英格兰议会的这样一套操纵体系。但是，殖民地议会远离君主的视线，数量众多，分布零散，组织形式各异，即便君主拥有同样的手段，也很难用同样的方式操纵它们；而实际上，这些手段并不存在。大英帝国总政府所产生的官职或这些官职的任用权，无论哪一种，都绝对不可能在所有殖民地议会的全部领袖人物中分配足够的份额，使他们甘愿放弃在当地的民望，并向其选民征税，以维持那个几乎把全部俸禄分给对他们而言素不相识之人的总政府。此外，行政当局对于这些不同议会中不同成员的相对重要性，必然不甚了解；试图以这种方式操纵他们时，也必定会经常冒犯别人，不断犯下错误。凡此种种，似乎都使这样一套操纵体系对他们来说完全行不通。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p156",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_339"
+      },
+      "contentHash": "f1f8ec62f9dd9af88e5d76b5dc4c9f87f96593b1e49c18727866a60c82520350",
+      "text": "此外，不能认为殖民地议会适合判断保卫和维持整个帝国需要什么。保卫和维持帝国的职责并未托付给它们。这不是它们的事务，它们也没有关于此事的正常信息渠道。一个省的议会，就像一个教区的教区委员会一样，或许能够十分恰当地判断自己特定辖区内的事务，却不可能有适当的手段来判断整个帝国的事务。它甚至不能恰当地判断本省在整个帝国中所占的比例，也不能判断本省的财富和重要性与其他省份相比处于何种相对程度，因为其他省份并不受某一特定省份议会的考察和监督。保卫和维持整个帝国需要什么，以及各部分应按什么比例作出贡献，只有考察和监督整个帝国事务的那个议会才能判断。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p157",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_340"
+      },
+      "contentHash": "f13ace622538d940fcc40329db96941908af1409000e6d673f952207ab91b271",
+      "text": "因此，有人提议以摊派方式向殖民地征税：由大不列颠议会确定每个殖民地应缴纳的数额，再由各省议会以最适合本省情况的方式评定和征收。这样，涉及整个帝国的事务便由考察和监督整个帝国事务的议会决定，而各殖民地的省内事务仍可由各自的议会管理。在这种情况下，尽管殖民地在英国议会中没有代表，但如果我们可以根据经验判断，议会所作的摊派也不大可能不合理。英格兰议会从未在任何场合表现出哪怕一丁点儿要让帝国中在议会内没有代表的地区负担过重的倾向。根西岛和泽西岛没有任何手段抵抗议会的权力，却比大不列颠任何地区所负的税都轻。议会试图行使其所谓向殖民地征税的权利时——无论这种权利是否有充分根据——迄今从未向它们索取过哪怕接近于它们本土同胞所缴纳数额之适当比例的任何款项。此外，如果殖民地的贡献随着土地税的升降而按比例升降，议会就不可能在向殖民地征税的同时不向自己的选民征税；在这种情况下，可以认为殖民地在议会中获得了实际上的代表。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p158",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_341"
+      },
+      "contentHash": "336d43b438489674b8d2aa46e8d1ccdf3e302897490862923d82a1a93bc8fe4a",
+      "text": "有些帝国并不是把所有不同省份——如果可以允许我这样说的话——合在一起征税；而是由君主规定各省应缴纳的数额，并在一些省份中按自己认为适当的方式评定和征收，而在另一些省份中，则留给各省相应的等级会议按照自己的决定评定和征收。这样的帝国并非没有实例。在法国的一些省份，国王不仅按自己的意愿课税，而且按自己认为适当的方式评定和征收。他向另一些省份索取一定数额，却让各省的等级会议按其认为适当的方式评定和征收这笔款项。按照摊派征税的方案，大不列颠议会与殖民地议会之间的关系，将大致相当于法国国王与那些仍享有本省等级会议特权的省份之等级会议之间的关系；这些省份被认为是法国治理得最好的省份。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p159",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_342"
+      },
+      "contentHash": "86395aa783e315dd2717da9fdf602c58b44d4f96b3efa3c7cb523045f7ccfe67",
+      "text": "但是，按照这一方案，殖民地固然没有正当理由担心自己承担的公共负担会超过本土同胞所负担的适当比例；大不列颠却可能有正当理由担心，它永远也达不到这一适当比例。近来一段时间，大不列颠议会在殖民地已不再拥有法国国王在那些仍享有本省等级会议特权的法国省份中所拥有的那种稳固权威。如果殖民地议会并非怀有十分友善的态度（除非对它们的操纵比以往任何时候都更为巧妙，否则它们不大可能怀有这种态度），它们仍可找到许多借口，规避或拒绝议会最为合理的摊派。假设一场对法战争爆发；为了保卫帝国的中枢，必须立即筹集一千万。这笔款项必须凭借某项议会基金的信用借入，并以该基金作抵押来支付利息。议会打算通过在大不列颠征税筹集该基金的一部分，并通过向美洲和西印度群岛所有不同的殖民地议会摊派筹集另一部分。人们会愿意凭借这样一项基金的信用出借自己的钱吗？这项基金有一部分要取决于所有那些议会是否乐意，而它们远离战事的中枢，有时也许还认为战争的结果与自己没有多大关系。以这样一项基金为信用，可能筹集到的钱不会超过大不列颠所征之税预计能够担保的数额。这样一来，因战争而负担的债务便会像迄今一向如此的那样，全部落在大不列颠身上；也就是落在帝国的一部分，而不是整个帝国身上。自世界开始以来，大不列颠也许是唯一一个随着帝国扩张只增加费用、却从未增加财源的国家。其他国家通常都把保卫帝国的绝大部分费用卸给其臣属省份。迄今为止，大不列颠却一直听任其臣属省份把这项费用几乎全部卸给她。根据议会摊派征税的方案，要使大不列颠与其本国殖民地处于平等地位——法律迄今一直认为这些殖民地处于臣属地位——议会似乎就必须拥有某种手段，以便在殖民地议会企图规避或拒绝摊派时，立即使摊派发生效力；但这些手段究竟是什么，并不容易设想，迄今也没有人加以说明。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p160",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_343"
+      },
+      "contentHash": "e62866479be4f51acc7c39c81584af0450dfe927ad0b4f459463b33ab9c5d2ff",
+      "text": "同时，如果大不列颠议会向殖民地征税的权利——甚至不以殖民地自身议会的同意为条件——有朝一日得到完全确立，那么殖民地议会的重要性从那一刻起便会终结，英属美洲所有领袖人物的重要性也会随之终结。人们希望在公共事务的管理中占有一席之地，主要是因为这会赋予他们重要地位。每一种自由政府制度的稳定和持久，都取决于大多数领袖人物——即每个国家的天然贵族——维持或捍卫各自重要地位的能力。这些领袖人物不断攻击彼此的重要地位，同时又捍卫自己的重要地位；国内党争与野心的全部活动，就在于此。美洲的领袖人物与所有其他国家的领袖人物一样，也希望保住自己的重要地位。他们感到，或者设想，如果他们那些喜欢称为议会、并认为其权力与大不列颠议会相等的议会，竟被贬低到成为大不列颠议会卑微的听命者和执行官，那么他们自己的重要地位大部分就会终结。因此，他们拒绝了由议会摊派征税的提议，并且像其他野心勃勃、意气高昂的人一样，宁愿拔剑捍卫自己的重要地位。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p161",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_344"
+      },
+      "contentHash": "e83074bca71d4089def365e2801cfd9898fb910407e05d61a41d4154fee6694a",
+      "text": "在罗马共和国趋于衰落之际，承担了保卫国家和扩张帝国之主要负担的罗马盟邦，要求获准享有罗马公民的一切特权。要求遭到拒绝后，同盟战争便爆发了。在这场战争期间，罗马随着它们一个接一个地脱离总同盟，陆续把这些特权授予其中的大部分盟邦。大不列颠议会坚持向殖民地征税；殖民地则拒绝由一个没有其代表的议会向它们征税。殖民地因须缴纳同样的税而按其对帝国公共收入的贡献比例，如果大不列颠准许每个脱离总同盟的殖民地拥有相应数量的代表，并作为补偿，允许它与本土同胞享有同样的贸易自由；而且日后随着其贡献比例的增加，其代表人数也相应增加；那么，每个殖民地的领袖人物面前就会出现一种取得重要地位的新途径，一个更新颖、更耀眼的野心目标。他们不必再为殖民地党争这场可称为寒酸抽彩中的小奖斤斤计较，而是可以凭着人们对自己的才干和好运所天然怀有的自信，指望抽中英国政治这场国家大彩票的轮盘中有时开出的某个大奖。除非找到这种或其他办法——而且似乎没有比这更显而易见的办法——来维持美洲领袖人物的重要地位并满足他们的野心，否则他们不大可能自愿服从我们；我们应当想到，为迫使他们服从而必然流下的鲜血，每一滴不是我们同胞的血，就是我们希望成为自己同胞之人的血。事情已经发展到这种地步，却还幻想仅凭武力便可轻易征服我们的殖民地，这样的人实在十分软弱。如今左右他们所谓大陆会议之决议的那些人，此刻感觉自己具有某种重要地位，这种地位也许连欧洲最显贵的臣民都很少感受到。他们从店主、手艺人和讼务代理人，一变而为政治家和立法者，正忙于为一个幅员辽阔的帝国设计一种新的政府形式；他们自信这个帝国将成为，而且它确实看来很可能成为，世界上有史以来最强大、最可畏的帝国之一。也许有五百个不同的人以不同方式直接在大陆会议之下行事，又也许有五十万人在这五百人之下行事；所有这些人都同样感到自己的重要地位有了相应的提升。目前，美洲统治党中的几乎每一个人，都在自己的想象中占据着一种地位，这种地位不仅高于他以前曾经占据的任何地位，也高于他以前曾经期望占据的任何地位；除非给他本人或他的领袖提出某种新的野心目标，否则，只要他具有一个人的寻常勇气，就会为捍卫这一地位而死。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p162",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_345"
+      },
+      "contentHash": "99bf6d7073134663d95c28fb7de051bf9d12796d10108390a78b6d1000f93185",
+      "text": "埃诺会长曾评论说，如今我们兴味盎然地阅读许多有关法兰西宗教同盟时期琐碎事件的记载，而这些事件发生时，也许并未被视为十分重要的新闻。但是，他说，当时每个人都自认为颇为重要；从那个时代流传至今的无数回忆录，大部分都是由一些乐于记载并夸大各种事件的人写成的，因为他们自信自己在这些事件中扮演了重要角色。众所周知，当时巴黎城是多么顽强地自我防卫，宁愿忍受何等可怕的饥荒，也不肯臣服于法国所有国王中最好、后来也最受爱戴的一位。大多数市民，或者那些统治大多数市民的人，是为了捍卫自己的重要地位而战，因为他们预见到，旧政府一旦复辟，他们的重要地位便会终结。我们的殖民地，除非能够劝使它们同意合并，否则它们很可能会像巴黎城对抗最贤明的国王之一那样，顽强地抵抗所有母国中最好的母国。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p163",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_346"
+      },
+      "contentHash": "e86090b2689d0f9f69d2d3798c6b56d19590644fe1bd0a114072775d6dc8f5e4",
+      "text": "代议制的观念在古代尚不为人所知。当一个国家的人民获准享有另一个国家的公民权时，他们除了集体前往，与另一个国家的人民一起投票和议事之外，没有其他行使这种权利的办法。准许意大利大部分居民享有罗马公民的特权，彻底毁掉了罗马共和国。当时已不可能分辨谁是罗马公民、谁不是罗马公民。任何一个部族都无法辨认自己的成员。任何乌合之众都可以混入人民大会，赶走真正的公民，并俨然以公民自居，决定共和国的事务。但是，即使美洲向议会派出五十或六十名新代表，下议院的守门人要分辨谁是议员、谁不是议员，也不会有任何很大的困难。因此，尽管罗马与意大利各同盟国的联合必然毁掉罗马政体，大不列颠与其殖民地的联合却丝毫不可能损害英国政体。相反，这一联合会使该政体趋于完备；没有这种联合，它似乎就是不完善的。负责审议并决定帝国各部分事务的议会，为了获得恰当而充分的信息，当然应当有来自帝国每一部分的代表。不过，我并不声称这种联合能够轻易实现，也不声称在实行过程中不会出现困难，乃至重大困难。然而，我还没有听说过任何看来无法克服的困难。主要困难也许并非源于事物的本性，而是源于大西洋这一边和另一边人民的偏见与看法。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p164",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_347"
+      },
+      "contentHash": "0bdf0a70a578bfdc2106ca6cc7f352f1c5c26740c560abb2bd287806ad0aac18",
+      "text": "我们这些身处大西洋这一边的人担心，美洲代表人数众多，可能会打破政体的均衡，或者一方面使王权的影响增加过多，或者另一方面使民主力量增强过多。但是，如果美洲代表的人数与美洲税收所得成比例，那么需要治理的人数就会与治理手段完全按同一比例增加，而治理手段也会与需要治理的人数完全按同一比例增加。联合之后，政体中的君主部分和民主部分彼此相对力量的程度，会与联合之前完全相同。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p165",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_348"
+      },
+      "contentHash": "5c4ba28e7906756bdf75e530e0f9dbf7d67c09be0f2a69702cba29d5148e5026",
+      "text": "大西洋另一边的人民担心，他们远离政府所在地，可能因此遭受许多压迫。但是，他们在议会中的代表——其人数从一开始就应当相当可观——很容易就能保护他们免受一切压迫。距离不会在很大程度上削弱代表对选民的依赖，代表仍会感到，他在议会中的席位以及由此获得的一切影响力，都有赖于选民的善意。因此，为了培养这种善意，代表会出于自身利益，以立法机关成员的全部权威，对任何文职或军职官员可能在帝国那些遥远地区犯下的每一种暴行提出控诉。此外，那个国家的本地人还可以颇有几分道理地自我安慰：美洲与政府所在地相距遥远的状况不会持续很久。迄今为止，那个国家在财富、人口和开发方面进展如此迅速，以至于也许再过略多于一个世纪，美洲的税收所得就可能超过不列颠的税收所得。到那时，帝国的所在地自然会迁往帝国中对整个帝国的共同防御和维持贡献最大的那个部分。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p166",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_349"
+      },
+      "contentHash": "834c545d31f1c349527dff196f7b87629af0c64600f669a8e5f541ea6702e20a",
+      "text": "发现美洲，以及发现经好望角通往东印度的航路，是人类历史记载中最伟大、最重要的两件大事。它们的后果已经非常重大；但是，自这些发现以来只过去了两三个世纪，在如此短暂的时期内，不可能已经看清它们后果的全部范围。这些重大事件今后会给人类带来什么利益或什么灾祸，任何人的智慧都无法预见。它们在一定程度上把世界上相距最遥远的地区连接起来，使这些地区能够相互满足需要、增进彼此享受，并鼓励彼此的勤劳，因而其总体趋势似乎是有益的。然而，对于东印度和西印度的本地人来说，这些事件可能带来的一切商业利益，都已被它们所造成的可怕灾祸吞没并丧失殆尽。不过，这些灾祸似乎更多是出于偶然，而不是源于这些事件本身的性质。在作出这些发现的特定时期，欧洲人一方碰巧在武力上占有极大优势，因而能够在那些遥远国家肆无忌惮地犯下各种不义之举。今后，也许那些国家的本地人会变得更强，或者欧洲人会变得更弱，世界各个不同地区的居民或许会在勇气和力量上达到一种均等；这种均等会使他们彼此畏惧，也唯有这种畏惧，才能迫使各个独立国家的不义行为对彼此的权利表现出某种尊重。然而，要确立这种力量均等，似乎没有什么比广泛的各国间贸易自然而然地、或者更确切地说必然地随之带来的知识和各种改进的相互交流更有可能做到这一点。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p167",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_350"
+      },
+      "contentHash": "8ff59299d0837db1bfc4fe455d88e920390928edb83bb3dc71696f4b51b88af0",
+      "text": "与此同时，这些发现的主要影响之一，是把重商主义体系提升到一种它本来绝不可能达到的辉煌与荣耀程度。这一体系的目标，是使一个大国通过贸易和制造业而不是通过土地的改良与耕作来致富，通过城市的勤劳而不是乡村的勤劳来致富。但是，由于这些发现，欧洲的商业城市不再仅仅为世界上很小的一部分（即濒临大西洋的欧洲部分，以及波罗的海和地中海周围的国家）从事制造和运输，而是如今已经为美洲众多而兴旺的耕作者从事制造，并为亚洲、非洲和美洲几乎所有不同民族从事运输，在某些方面也为他们从事制造。两个新世界已向它们的勤劳开放，每一个都比旧世界大得多、广阔得多，而且其中一个新世界的市场还在日益扩大。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p168",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_351"
+      },
+      "contentHash": "8afe1545a398dda83c3580ace7be423b8f32229f6d6923c2ba6778b0961b5276",
+      "text": "拥有美洲殖民地并与东印度直接贸易的国家，的确享有这项大贸易的全部外在排场与辉煌。然而，其他国家尽管受到旨在排斥它们的一切招人怨恨的限制，却常常享有这项贸易实际利益中更大的份额。例如，西班牙和葡萄牙的殖民地，对其他国家勤劳的实际鼓励，多于对西班牙和葡萄牙勤劳的实际鼓励。据说，仅亚麻布这一项，这些殖民地每年的消费额就超过三百万英镑，不过我并不声称这一数额确实可靠。但是，这一巨额消费几乎完全由法国、佛兰德斯、荷兰和德意志供应。西班牙和葡萄牙只供应其中很小的一部分。每年，为殖民地供应如此大量亚麻布的资本，都分配给那些其他国家的居民，并为他们提供收入。只有这项资本的利润花在西班牙和葡萄牙，在那里帮助维持加的斯和里斯本商人奢华无度的生活。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p169",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_352"
+      },
+      "contentHash": "763d6d40da2f02a20dfb3e2dc5135a54ee2cfc66e2634b90c398459d9823081a",
+      "text": "甚至每个国家为确保独占本国殖民地贸易而制定的规章，也常常对制定这些规章所偏袒的国家，比对这些规章所针对的国家更为有害。可以说，对其他国家勤劳的不公正压迫，反过来落到压迫者头上，对他们自身勤劳的摧残比对其他国家勤劳的摧残更严重。例如，根据这些规章，汉堡商人必须把准备供应美洲市场的亚麻布运到伦敦，并且必须从那里运回准备供应德意志市场的烟草；因为他既不能把前者直接运往美洲，也不能从美洲直接运回后者。由于这种限制，他出售前者的价格可能不得不比原本可以得到的价格略低，购买后者的价格则可能不得不略高；他的利润也可能因此略有减少。然而，在汉堡与伦敦之间的这项贸易中，他的资本周转肯定远比直接与美洲贸易时可能做到的迅速，即使我们假定——而事实绝非如此——美洲付款与伦敦付款同样准时。因此，在那些规章将汉堡商人限制于其中的贸易里，他的资本能够持续雇用的德意志勤劳数量，要比在他被排除在外的那项贸易里可能雇用的多得多。因此，对他来说，前一种用途也许不如后一种用途有利可图，但对他的国家却不可能更为不利。可以说，垄断自然而然地把伦敦商人的资本吸引到的用途，情况则完全不同。那种用途对他来说也许比其他大多数用途更有利可图，但由于周转缓慢，它对他的国家不可能更为有利。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p170",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_353"
+      },
+      "contentHash": "1ac1760e56860399579f6a6921c1f7fd502b03b6720a581a5b36abd3d40134be",
+      "text": "因此，欧洲各国尽管都曾作出种种不公正的尝试，企图独占本国殖民地贸易的全部利益，却没有一个国家能够独占任何东西，除了维持其强加于殖民地的压迫性权力在和平时期所需的费用，以及在战争时期保卫这种权力所需的费用。每个国家都完全独占了拥有殖民地所造成的不便，却不得不与许多其他国家分享殖民地贸易所带来的利益。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p171",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_354"
+      },
+      "contentHash": "6127e6d7ccb4eed11aba527a361949940f8d1f53ba163630b4b73cb755049dbd",
+      "text": "毫无疑问，乍看之下，对庞大美洲贸易的垄断，自然像是一项价值最高的收获。在轻率野心那缺乏辨别力的眼中，它自然会在政治与战争的混乱争夺中显得极其耀眼，成为值得为之争斗的目标。然而，正是这个目标耀眼的辉煌，也就是这项贸易无比庞大的规模，使对它的垄断变得有害；换言之，它使一种就其本性而言必然不如其他大多数用途有利于国家的用途，吸收远超其在其他情况下本会获得的那一比例的本国资本。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p172",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_355"
+      },
+      "contentHash": "a123642e94035cb5fb78f70412de1383f13d40ffe4997224714d6042dbfde289",
+      "text": "第二篇已经说明，每个国家的商业资本，可以说都会自然而然地寻求对该国最有利的用途。如果资本用于转运贸易，它所属的国家就会成为该资本所经营贸易涉及的所有国家的货物集散地。但是，这笔资本的所有者必然希望尽可能把这些货物中的更大部分在国内售出。这样，他就省去了出口的麻烦、风险和费用；因此，他会乐于在国内出售这些货物，不仅售价比运往国外所能预期的低得多，而且利润也略低一些。因此，他自然会尽力把自己的转运贸易转变为对外消费贸易。如果他的资本又用于对外消费贸易，那么出于同样的理由，他会乐于把自己为了向某个国外市场出口而收集的本国货物，尽可能多地在国内售出，从而会尽力把自己的对外消费贸易转变为国内贸易。这样，每个国家的商业资本都会自然而然地趋向近处的用途而避开远处的用途；趋向周转频繁的用途而避开周转相隔长久且缓慢的用途；趋向能够在资本所属的国家，或者资本所有者居住的国家，维持最大数量生产性劳动的用途，而避开在那里只能维持最少数量生产性劳动的用途。它自然趋向在通常情况下对该国最为有利的用途，而避开在通常情况下对该国最为不利的用途。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p173",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_356"
+      },
+      "contentHash": "6d08d4c2f9e10cc448f863edb964cecc8c945a3f0bf52cb47c748a9e74d1a4e9",
+      "text": "但是，如果在那些通常情况下对国家较为不利的远处用途中，利润碰巧升到略高于足以抵消人们对较近用途自然偏好的程度，这种较高的利润就会从那些较近的用途中吸引资本，直到所有用途的利润恢复到各自适当的水平。然而，这种较高的利润证明，在社会的现实状况下，与其他用途相比，那些远处用途获得的资本略显不足，社会的资本并未以最恰当的方式分配到社会中经营的所有不同用途。它证明，有些东西的买价低于或卖价高于其应有水平，也证明某一特定阶层的公民因为支付多于或得到少于适合于那种均等状态的数额，而受到程度不等的压迫；这种均等状态应当存在，并且确实自然而然地存在于所有不同阶层之间。尽管同一笔资本在远处用途所能维持的生产性劳动数量，绝不会与在近处用途所维持的相同，但远处用途可能和近处用途一样，是社会福利所必需的；因为远处用途所经营的货物，也许是许多较近用途得以进行所必需的。但是，如果经营这种货物的人的利润高于适当水平，这些货物的售价就会高于应有水平，或者略高于其自然价格，而所有从事较近用途的人都会因这种高价而受到程度不等的压迫。因此，在这种情况下，他们的利益要求从那些较近用途中抽出一些资本，转投到那项远处用途，以便把后者的利润降到适当水平，并把它所经营货物的价格降到自然价格。在这种特殊情况下，公共利益要求从通常情况下较为有利的用途中抽出一些资本，转投到通常情况下对公众较为不利的一项用途；而在这种特殊情况下，人们的自然利益和倾向与公共利益的契合，和在所有其他通常情况下一样完全一致，并引导他们从近处用途抽出资本，转投到远处用途。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p174",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_357"
+      },
+      "contentHash": "2cb49a8af5911dd487b57ee41ddc5e27bae829d57724d721ac46fb2bb40f8d2d",
+      "text": "个人的私人利益和情感，正是这样自然而然地促使他们把资本转向通常情况下对社会最为有利的用途。但是，如果出于这种自然偏好，他们把过多资本投入这些用途，那么这些用途的利润下降和所有其他用途的利润上升，就会立即促使他们改变这种不当的分配。因此，无须法律进行任何干预，人们的私人利益和情感自然会引导他们，把每个社会的资本划分并分配到社会中经营的所有不同用途，尽可能接近最符合整个社会利益的比例。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p175",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_358"
+      },
+      "contentHash": "1430ad7d1a23a70b356267d4c8833ccbe231df27e2b953e419b39c5dcfeb39be",
+      "text": "重商主义体系的所有不同规章，都必然或多或少地扰乱这种自然且最有利的资本分配。不过，涉及美洲贸易和东印度贸易的规章，也许比任何其他规章造成的扰乱都更严重；因为与这两个大洲的贸易，比任何其他两个贸易部门吸收的资本都多。然而，在这两个不同贸易部门中造成这种扰乱的规章，并不完全相同。垄断是二者所用的主要手段，但垄断的种类有所不同。事实上，某种形式的垄断似乎是重商主义体系唯一的手段。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p176",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_359"
+      },
+      "contentHash": "3cc335be23c2021117dbae866df607e877e3e1409e5a16392b02cf2a718d75bd",
+      "text": "在美洲贸易中，每个国家都力图通过完全排除其他所有国家与本国殖民地进行任何直接贸易，尽可能独占本国殖民地的整个市场。在十六世纪的大部分时间里，葡萄牙人也试图以同样方式经营东印度贸易，声称自己因首先发现通往那里的航路有功，因而独享在印度洋航行的权利。荷兰人仍继续排除其他所有欧洲国家与其香料群岛进行任何直接贸易。这类垄断显然是针对其他所有欧洲国家建立的；这些国家不仅因此被排除在一项本来可能适合它们投入一部分资本的贸易之外，而且不得不以略高于它们能够自行直接从生产国进口时的价格，购买这项贸易所经营的货物。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p177",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_360"
+      },
+      "contentHash": "b585a7cc9bdcce9c57c061b80655bbad280c8db6605b559cb39d77bb6cdcc5dd",
+      "text": "但是，自葡萄牙势力衰落以来，再没有一个欧洲国家声称独享在印度洋航行的权利；如今，印度洋的主要港口已向所有欧洲国家的船只开放。然而，除葡萄牙以外，以及近几年以来的法国以外，在每个欧洲国家，东印度贸易都受一家享有专营权的公司控制。这类垄断恰恰是针对设立它的那个国家本身建立的。该国大多数人不仅因此被排除在一项本来可能适合他们投入一部分资本的贸易之外，而且不得不以略高于这项贸易向所有同胞开放并允许自由经营时的价格，购买这项贸易所经营的货物。例如，自英国东印度公司成立以来，英格兰的其他居民除了被排除在这项贸易之外，还必定在所消费的东印度货物价格中，不仅支付了该公司因垄断这些货物而可能获得的一切超额利润，而且还支付了经营如此庞大一家公司的事务必然伴随的欺诈和滥权所造成的一切额外浪费。因此，第二类垄断的荒谬性远比第一类明显。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p178",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_361"
+      },
+      "contentHash": "9fb7dffbdea9250089929cacae2faa92bc06c42d60914722b68e043538d15b74",
+      "text": "这两类垄断都会或多或少地扰乱社会资本的自然分配，但它们并不总是以同一种方式扰乱这种分配。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p179",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_362"
+      },
+      "contentHash": "0b8ca32902d00b8583f679670ffa2b42ecf538a4865504eb5a44241939a36324",
+      "text": "第一类垄断总会把社会资本中高于其自行流入比例的一部分，吸引到建立这种垄断的特定贸易中。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p180",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_363"
+      },
+      "contentHash": "cd336c43fbf01d429e2345f48ef0716d0d7cd72a38bd43d1956dd41dde4bd349",
+      "text": "第二类垄断有时会因情况不同而把资本吸引到设有垄断的特定行业，有时又会使资本避开该行业。在贫穷国家，它们自然会把比原本会流入该行业更多的资本吸引过去。在富裕国家，它们自然会使原本会流入该行业的大量资本避开它。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p181",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_364"
+      },
+      "contentHash": "c86b2e0d0d594a1158c5f2b736f335740e4e6d41a4c031c34623f08d1ae2c03f",
+      "text": "例如，像瑞典和丹麦这样的贫穷国家，如果不是把贸易交由一家专营公司经营，很可能连一艘船也不会派往东印度。设立这样的公司必然会鼓励冒险经营者。垄断使他们在国内市场上不受任何竞争者的威胁，而在国外市场上，他们与其他国家的商人拥有同样的机会。垄断让他们看到，在数量可观的货物上获取巨额利润是有把握的，而在数量巨大的货物上获取可观利润也是有可能的。如果没有这种非同寻常的鼓励，这些贫穷国家的贫穷商人很可能绝不会想到，要把自己的少量资本拿去冒险经营在他们看来必然如此遥远而又如此没有把握的东印度贸易。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p182",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_365"
+      },
+      "contentHash": "fa5d7b15eed0f8cb867ba6c4a42492cbe2745d01a730356abbd57770f32cfff6",
+      "text": "相反，像荷兰这样的富裕国家，如果实行自由贸易，派往东印度的船只很可能会比实际派出的多得多。荷兰东印度公司的有限资本，很可能使许多原本会流入该贸易的巨额商业资本避开了它。荷兰的商业资本如此庞大，以至于仿佛不断地向外溢流：有时流入外国的公债，有时用于向外国的私人商人和冒险经营者放贷，有时流入周转过程最迂回的外国消费品贸易，有时则流入运输贸易。由于所有较近的用途都已完全容纳不下资本，凡是能以任何还算过得去的利润投在这些用途上的资本也都已经投了进去，荷兰的资本便必然流向最遥远的用途。东印度贸易如果完全自由，很可能会吸收这种过剩资本的大部分。东印度不仅为欧洲的制造品，也为美洲的金银以及其他若干产物提供了一个市场；这个市场比欧洲和美洲合在一起还要广大。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p183",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_366"
+      },
+      "contentHash": "0e8fccfed85f0566c5f500cb657170e48f79b93ee1a2abfdfe213e6f971e2057",
+      "text": "对资本自然分配的任何扰乱，都必然有害于发生这种扰乱的社会；无论这种扰乱是使原本会流入某一特定行业的资本避开该行业，还是把原本不会流入某一特定行业的资本吸引过去。如果没有任何专营公司，荷兰同东印度的贸易会比实际规模更大，那么，该国必定会因一部分资本被排除在最适合这部分资本的用途之外而蒙受相当大的损失。同样，如果没有专营公司，瑞典和丹麦同东印度的贸易会比实际规模更小，或者更可能的是根本不会存在，那么，这两个国家也必定会因一部分资本被吸引到一种或多或少不适合其当前状况的用途而蒙受相当大的损失。在它们当前的状况下，向其他国家购买东印度商品，也许对它们更为有利，即使价格稍贵一些，也好过把其少量资本中如此大的一部分转用于如此遥远的贸易；在这种贸易中，资本回收如此缓慢，这些资本在国内所能维持的生产性劳动数量如此之少，而那里又如此需要生产性劳动，已做的事情如此之少，尚待完成的事情如此之多。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p184",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_367"
+      },
+      "contentHash": "bdfc964fca40e20bd6a3d1f5b7c499bec0b693ad9ea9a5535bc5530e7ac9bc69",
+      "text": "因此，即使没有专营公司，某一国家便无法同东印度进行任何直接贸易，也不能由此推断该国应当设立这样的公司，而只能推断该国在这种情况下不应同东印度进行直接贸易。一般说来，经营东印度贸易并不需要这样的公司，这一点已由葡萄牙人的经验充分证明；他们在没有任何专营公司的情况下，连续一个多世纪几乎独享了这项贸易。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p185",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_368"
+      },
+      "contentHash": "c58a2314c7a5d8acb59d539add1ad6464bee33063863884aa692d9b5e0a0c473",
+      "text": "有人说，任何一个私人商人都不大可能拥有足够的资本，可以在东印度各港口供养代办人和代理人，为他偶尔派往那里的船只备办货物；然而，除非他能够这样做，否则找不到货载的困难往往会使他的船只错过返航季节，而如此长期延误的费用，不仅会耗尽这次冒险经营的全部利润，而且常常会造成十分可观的损失。不过，这种论点如果真能证明什么，就会证明任何一大贸易部门若无专营公司都无法经营，而这与所有国家的经验相违背。任何一大贸易部门中，都没有哪一个私人商人的资本足以经营为了经营主要部门而必须经营的全部从属部门。但是，当一个国家已具备经营某一大贸易部门的条件时，一些商人自然会把资本投向它的主要部门，另一些则会投向它的从属部门；虽然这样一来，它的各个不同部门全都有人经营，却极少出现全部由一个私人商人的资本经营的情况。因此，如果一个国家已具备经营东印度贸易的条件，其资本的一定部分自然会分散到这项贸易的各个不同部门。有些商人会发现，居住在东印度，并在那里运用自己的资本，为居住在欧洲的其他商人将要派出的船只备办货物，符合他们的利益。欧洲各国在东印度获得的殖民据点，如果从目前所属的专营公司手中收回，置于君主的直接保护之下，那么至少对于这些殖民据点所属国家的商人来说，这种居留会既安全又便利。如果在某一特定时期，一国资本中自行趋向并倾向于——可以这样说的话——东印度贸易的那一部分，不足以经营该贸易的所有不同部门，这就证明在那个特定时期，该国尚不具备经营这项贸易的条件；该国最好在一段时间内，即使付出较高价格，也向其他欧洲国家购买自己所需的东印度商品，而不要亲自从东印度直接进口。由于这些商品价格高昂而可能遭受的损失，很少会等于它把大部分资本从其他用途抽走所遭受的损失，因为与同东印度的直接贸易相比，那些用途对该国更为必要、更为有益，或更适合其环境和处境。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p186",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_369"
+      },
+      "contentHash": "3263d600cfca0cd6f25af4ce40af92546fe8d6e27b33272e579ee69aebaa714f",
+      "text": "欧洲人虽然在非洲海岸和东印度都拥有许多相当重要的殖民据点，却还没有在这两个地区中的任何一个建立起像美洲岛屿和大陆上那样众多而繁荣的殖民地。不过，非洲以及统称为东印度的若干国家，都是由未开化民族居住的。但这些民族绝不像那些悲惨而无助的美洲人那样软弱无防；而且，相对于他们所居住地区的自然肥沃程度而言，他们的人口也多得多。非洲或东印度最未开化的民族都是牧民；甚至霍屯督人也是如此。但除墨西哥和秘鲁以外，美洲各地的土著都只是猎人；同样面积、同样肥沃的土地所能供养的牧民人数与猎人人数之间，差别极大。因此，在非洲和东印度，要把土著赶走，并把欧洲人的种植园扩展到原住民的大部分土地上，就更为困难。此外，前面已经指出，专营公司的本性不利于新殖民地的发展，而且很可能正是这些殖民地在东印度进展甚微的主要原因。葡萄牙人在没有任何专营公司的情况下经营同非洲和东印度的贸易；他们在非洲海岸的刚果、安哥拉和本格拉，以及在东印度的果阿建立的殖民据点，虽然深受迷信和各种恶政的压抑，却仍隐约有些类似于美洲的殖民地，并且有一部分居民是在那里定居了好几代的葡萄牙人。荷兰人在好望角和巴达维亚的殖民据点，目前是欧洲人在非洲或东印度所建立的最重要的殖民地，而这两个殖民据点的地理位置都格外优越。好望角的居民是一个几乎和美洲土著同样未开化、同样完全无力自卫的种族。此外，可以说，它是欧洲与东印度之间的中途驿站，几乎每一艘欧洲船只，无论去程还是回程，都会在那里停留一段时间。仅仅向这些船只供应各种新鲜食物、水果，有时还有葡萄酒，就为殖民者的剩余产物提供了一个非常广大的市场。好望角在欧洲与东印度各地之间所处的地位，也正是巴达维亚在东印度各主要国家之间所处的地位。它位于从印度斯坦前往中国和日本的最繁忙航线上，并且差不多处在这条航线的中点。几乎所有往来于欧洲和中国之间的船只也都停靠巴达维亚；除此之外，它还是所谓东印度区域贸易的中心和主要商埠，不仅是欧洲人所经营的那部分贸易的中心和主要商埠，也是印度本地人所经营的那部分贸易的中心和主要商埠；在它的港口，经常可以看到由中国、日本、东京、马六甲、交趾支那和西里伯斯岛居民驾驶的船只。如此有利的地理位置，使这两个殖民地得以克服专营公司压迫性的本性有时可能给其发展造成的一切障碍。它们还使巴达维亚得以克服另一个不利条件，即那里或许拥有世界上最不利于健康的气候。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p187",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_370"
+      },
+      "contentHash": "8a8e680cc74824fb9961a16c442c26693ea5744579705cdae056a60e00ea02b2",
+      "text": "英国和荷兰的公司，虽然除上述两个殖民地外并未建立任何重要殖民地，却都在东印度取得了相当大的征服成果。但在它们各自治理新臣民的方式中，专营公司的天然本性表现得最为鲜明。据说，在香料群岛，凡丰收年份所产的香料超过它们预计能在欧洲按其认为足够的利润售出的数量，荷兰人就会把超出部分全部烧掉。在它们没有殖民据点的岛屿上，它们向采集当地自然生长的丁香树和肉豆蔻树的嫩花和绿叶的人发放奖金；但据说，这种野蛮政策如今已使这些树木几乎灭绝。即使在它们设有殖民据点的岛屿上，据说它们也已大幅减少了这些树木的数量。它们担心，如果连自己岛屿上的产量也远远超过其市场的适宜数量，土著就可能设法把其中一部分运给其他国家；而它们认为，确保自身垄断的最好办法，就是务必使生长出来的数量不超过它们自己运往市场的数量。它们采用各种压迫手段，把摩鹿加群岛中若干岛屿的人口减少到仅足以向其微不足道的守军，以及偶尔前来装运香料的船只，供应新鲜食物和其他生活必需品的程度。然而，据说即使在葡萄牙人的统治下，这些岛屿的人口也还相当稠密。英国公司还没有来得及在孟加拉建立一套破坏得如此彻底的制度。不过，它们的治理方案具有完全相同的倾向。据我得到的可靠保证，一个商馆的主管，也就是首席办事员，命令农民翻掉一块长势繁茂的罂粟田，改种稻米或其他谷物，并非罕见之事。借口是防止粮食短缺；但真正的原因，是主管碰巧有大量鸦片存货，想借机卖出更好的价钱。在另一些时候，命令则反了过来；当主管预见鸦片可能带来超额利润时，便会翻掉长势繁茂的稻田或其他谷物田，腾出地方种植罂粟。公司的雇员曾多次试图为自己建立对该国一些最重要贸易部门的垄断，不仅包括对外贸易，也包括内地贸易。如果任由他们继续下去，他们不可能不在某个时候企图限制自己以这种方式篡夺了垄断权的特定物品的产量，不仅把产量限制在他们自己能够购买的数量之内，而且限制在他们预计能够按其认为足够的利润售出的数量之内。照这样下去，经过一两个世纪，英国公司的政策很可能会证明与荷兰公司的政策同样具有彻底的破坏性。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p188",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_371"
+      },
+      "contentHash": "0f9ae3c84b3cab550138b42ab81579fc3a20ac4ae66eb222ddc6ada5580f0865",
+      "text": "不过，如果把这些公司视为其所征服国家的君主，那么没有什么会比这种破坏性方案更直接地违背它们的真正利益。在几乎所有国家，君主的收入都取自人民的收入。因此，人民的收入越多，他们的土地和劳动的年产物越多，他们就越有能力向君主提供更多收入。所以，尽可能增加这种年产物符合君主的利益。但是，如果这符合每一个君主的利益，那么对于像孟加拉君主那样，收入主要来自土地租金的君主来说，就尤其如此。这种租金必然与产物的数量和价值成比例，而数量和价值两者又都必然取决于市场的范围。产量总会或多或少准确地适应那些有能力购买者的消费量，而他们愿意支付的价格总会与其竞争的热切程度成比例。因此，开放最广大的市场来销售本国的产物，准许最充分的商业自由，以便尽可能增加买者的数量并加强买者之间的竞争，符合这种君主的利益；正因如此，他不仅应废除一切垄断，而且应废除对下列各项的一切限制：把本国产物从国内一地运往另一地，把本国产物出口到外国，或进口任何一种可以与本国产物交换的货物。这样一来，他最有可能同时增加这种产物的数量和价值，从而增加他自己从中取得的份额，也就是他自己的收入。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p189",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_372"
+      },
+      "contentHash": "d3d8f638c4f0091b27151e66934668e0020a66e69a505b94c1a71aecdca4bce6",
+      "text": "但是，一群商人组成的公司，似乎即使已经成为君主，也无法把自己看作君主。它们仍把贸易，也就是为转售而购买，看作自己的主要事业；而且出于一种奇怪的荒谬观念，它们认为君主身份不过是商人身份的附属物，是一种应当从属于商人身份的东西，或者是一种能使它们在印度买得更便宜、从而在欧洲出售时赚取更多利润的手段。为此，它们竭力把一切竞争者尽可能排除在其统治下各国的市场之外，从而至少把这些国家的一部分剩余产物压缩到刚够满足其自身需求的数量，或压缩到它们预计能够在欧洲按其认为合理的利润售出的数量。就这样，它们的商业习惯几乎不可避免地——尽管也许是在不知不觉中——使它们在一切通常场合宁可选择垄断者微小而短暂的利润，也不选择君主庞大而持久的收入，并会逐渐使它们像荷兰人对待摩鹿加群岛那样对待其统治下的各国。如果把东印度公司视为君主，那么，运往其印度领地的欧洲货物在那里卖得越便宜越符合它的利益；而从那里运出的印度货物在那里卖得越贵，即取得越好的价格，也越符合它的利益。但作为商人，它的利益却恰好相反。作为君主，它的利益与它所统治国家的利益完全相同。作为商人，它的利益则与该国的利益直接对立。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p190",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_373"
+      },
+      "contentHash": "77c3521c06cf7ba2e241c8404fe64d7be1e0fb04ba5cfcf3eb25b5dd4a455c42",
+      "text": "但是，如果这种政府的本性，即使仅就其在欧洲的领导机构而言，也以这种方式存在根本性的、也许无法补救的缺陷，那么，它在印度的行政机构就缺陷更甚。该行政机构必然由一个商人委员会组成；商人无疑是一种极受尊敬的职业，但在世界上任何国家，这种职业都不具有那种能自然震慑人民、不用武力便可使他们自愿服从的权威。这样的委员会只能依靠随行的军事力量来强制服从，因此，它的统治必然是军事性的和专制性的。然而，它们的本职是商人的业务，即为其主人出售委托给它们的欧洲货物，并相应购进供应欧洲市场的印度货物。它们的业务是尽可能高价卖出前者，尽可能低价买入后者，因而把一切对手尽可能排除在自己设店经营的特定市场之外。因此，就涉及公司贸易而言，行政机构的本性与领导机构的本性相同。它倾向于使政府从属于垄断利益，从而至少阻碍该国剩余产物中某些部分的自然增长，使其仅仅增长到足以满足公司需求的程度。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p191",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_374"
+      },
+      "contentHash": "83461be31afa31cfb30077afd8d4dcc619b9845f5d2a0c737835c7a0649b5c7d",
+      "text": "此外，行政机构的所有成员都或多或少地以自己的名义从事贸易，而禁止他们这样做也是徒劳的。若指望一个远在一万英里之外、因而几乎完全不在眼前的大商行的职员，仅凭主人一道命令，就立即放弃以自己的名义从事任何生意，永远抛弃一切发财的希望——尽管发财的手段就在他们手中——而满足于主人发给他们的微薄薪金，那就再愚蠢不过了；这些薪金虽属微薄，却很少能够增加，因为它们通常已经达到公司贸易的实际利润所能负担的最高限度。在这种情况下，禁止公司的雇员以自己的名义经商，几乎不会产生别的效果，只会使高级雇员得以借执行主人命令之名，压迫那些不幸招致他们不满的低级雇员。雇员们自然会力图为自己的私人贸易建立与公司公共贸易同样的垄断。如果任由他们按自己的意愿行事，他们便会公开而直接地建立这种垄断，直截了当地禁止其他所有人经营他们选择经营的商品；而这也许是建立这种垄断的最好且压迫最小的方式。但是，如果来自欧洲的命令禁止他们这样做，他们仍会力图秘密而间接地建立同样的垄断，其方式对该国的破坏性要大得多。他们会动用政府的全部权力，并歪曲司法，以骚扰和毁灭那些在任何商业部门中与他们竞争的人，而他们可能选择通过隐蔽的、或至少未公开承认的代理人来经营这些部门。不过，雇员的私人贸易自然会涉及比公司的公共贸易多得多的商品种类。公司的公共贸易仅限于对欧洲的贸易，而且只包括该国外贸的一部分。但雇员的私人贸易却可能扩展到该国内贸和外贸的所有不同部门。公司的垄断，只会妨碍在自由贸易情况下本应出口到欧洲的那部分剩余产品的自然增长。雇员的垄断则会妨碍他们选择经营的每一部分产品的自然增长，无论是供国内消费的，还是供出口的；因而会使全国的耕作衰退，并减少其居民人数。凡公司雇员选择经营某种产品时，这种垄断都会把该产品的数量——甚至生活必需品的数量——压低到这样一个水平：这些雇员既买得起，又能预期以令他们满意的利润卖出去。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p192",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_375"
+      },
+      "contentHash": "874d5128c5c0d4bcbd21630d3429686d19c22b0b649006cf69bdbfb698fd0a81",
+      "text": "而且，由于其处境的性质，雇员必然比他们的主人更倾向于严酷无情地维护自身利益，使之凌驾于他们所统治国家的利益之上。这个国家属于他们的主人，而主人不能不多少顾及属于自己之物的利益。但它并不属于这些雇员。主人们的真实利益，如果他们能够理解的话，与该国的利益是一致的；他们之所以压迫该国，主要是出于无知和卑劣的商业偏见。但雇员的真实利益绝不与该国的利益一致，即使掌握最充分的信息，也未必能终止他们的压迫。因此，从欧洲颁布并送去的规章，虽常常软弱无力，但在大多数场合都是出于善意。由印度的雇员制定的规章，有时表现出更多的才智，也许却少一些善意。这是一种极其奇特的政府：行政机构的每个成员都希望尽快离开该国，因而尽快摆脱政务；而在他离开该国并带走全部财产的第二天，即使整个国家被地震吞没，对他的利益也完全无关紧要。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p193",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_376"
+      },
+      "contentHash": "53b41dea5f957c3b09160304ff27b9f77de02d195169922bd8fe2fa4f4547f8c",
+      "text": "不过，我在这里所说的一切，并不是要对东印度公司雇员的总体品格作任何可憎的指摘，更不是要指摘任何特定个人的品格。我要谴责的是政府制度，是他们所处的境况，而不是在这种制度中行事之人的品格。他们的行为是其处境自然引导的结果；而那些最激烈地声讨他们的人，自己若处在同样的境况，恐怕也不会做得更好。在战争和谈判中，马德拉斯和加尔各答的委员会曾在若干场合表现出坚定果决的智慧，即使在罗马共和国最鼎盛的时代，也足以为其元老院增光。然而，这些委员会的成员原本所受的训练属于与战争和政治极为不同的职业。但是，似乎仅凭他们所处的境况，无须教育、经验，甚至无须先例，就一下子在他们身上造就了这种境况所要求的伟大品质，并赋予他们连自己也很难知道自己拥有的才能和德性。因此，如果这种境况在某些场合激励他们做出本来很难指望他们做出的高尚行为，那么，在另一些场合，它促使他们干出性质颇为不同的勾当，我们也不应感到惊讶。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c7.p194",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_377"
+      },
+      "contentHash": "c06853074f63b56c946c4580a76477e74cf47666be8c93f07351a68243f284ad",
+      "text": "因此，这种享有专营权的公司在各方面都是祸害；对于其设立所在的国家，它们总会带来程度不等的不便；对于那些不幸落入其统治之下的国家，它们则具有毁灭性。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    }
+  ]
+}

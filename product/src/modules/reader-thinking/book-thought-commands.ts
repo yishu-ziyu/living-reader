@@ -25,7 +25,10 @@ import {
   LIVE_PRINCIPAL_ID,
   PRODUCER,
 } from "./constants";
-import { evidenceIdentityKey } from "./source-evidence";
+import {
+  evidenceIdentityKey,
+  OLL_PARAGRAPH_FRAGMENT_RE,
+} from "./source-evidence";
 import {
   thinkingErr,
   thinkingOk,
@@ -52,7 +55,6 @@ export type BookThoughtPorts = {
 };
 
 const HASH_RE = /^[a-f0-9]{64}$/i;
-const FRAGMENT_RE = /^Smith_0206-01_\d+$/;
 
 const SNAPSHOT_KEYS = new Set([
   "source_id",
@@ -162,22 +164,26 @@ export function parseSourceDiscussionSnapshot(
       `MALFORMED_PAYLOAD: ${label}.quote 必须是 string`,
     );
   }
-  if (typeof o.fragment !== "string" || !FRAGMENT_RE.test(o.fragment)) {
+  if (
+    typeof o.fragment !== "string" ||
+    !OLL_PARAGRAPH_FRAGMENT_RE.test(o.fragment)
+  ) {
     return thinkingErr(
       "SOURCE_EVIDENCE_DRIFT",
       `无效 OLL fragment locator: ${String(o.fragment)}`,
     );
   }
   if (
-    typeof o.pdf_page !== "number" ||
-    !Number.isFinite(o.pdf_page) ||
-    o.pdf_page <= 0
+    o.pdf_page !== undefined &&
+    (typeof o.pdf_page !== "number" ||
+      !Number.isSafeInteger(o.pdf_page) ||
+      o.pdf_page <= 0)
   ) {
     return thinkingErr("SOURCE_EVIDENCE_DRIFT", "无效 pdf_page");
   }
   if (
     typeof o.print_page !== "number" ||
-    !Number.isFinite(o.print_page) ||
+    !Number.isSafeInteger(o.print_page) ||
     o.print_page <= 0
   ) {
     return thinkingErr("SOURCE_EVIDENCE_DRIFT", "无效 print_page");
@@ -226,7 +232,7 @@ export function isSourceDiscussionSnapshot(
 
 /**
  * Unified source snapshot identity (F38):
- * source_id, fragment, pdf/print page, edition id/revision/hash,
+ * source_id, fragment, optional PDF/required print page, edition identity,
  * source hash, evidence_refs.
  */
 export function snapshotsMatch(

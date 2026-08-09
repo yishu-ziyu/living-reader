@@ -1,0 +1,728 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "locale": "zh-CN",
+  "chapterId": "smith.b4.c1",
+  "translations": [
+    {
+      "sourceId": "smith.b4.c1.p1",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1158"
+      },
+      "contentHash": "c0d0eefdc9a4789e6d131441f0e701e059136f23a4f966e8dae26cee0b76a2f7",
+      "text": "财富在于货币，亦即金银，这是一种流行观念；它自然产生于货币的双重职能，即既是商业工具，又是价值尺度。由于货币是商业工具，当我们拥有货币时，就能比借助任何其他商品更容易地得到我们所需要的任何东西。我们总会发现，最要紧的事情是弄到钱。钱一到手，随后要购买任何东西都不困难。由于货币是价值尺度，我们用各种其他商品所能换得的货币数量来估量它们的价值。我们说一个富人身价很高，说一个穷人身价不值几个钱。一个节俭的人，或一个急于致富的人，被说成爱钱；一个疏忽大意、慷慨大方或挥霍无度的人，则被说成不把钱放在心上。致富就是弄到钱；总之，在日常用语中，财富和货币被认为在各个方面都是同义词。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p2",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1159"
+      },
+      "contentHash": "238f2260d91df9b0e834ca81a10e96df07897e6fb862948043662f344888ab5f",
+      "text": "正如富人被认为是拥有大量金钱的人一样，富国也被认为是拥有大量货币的国家；在任何国家积聚金银，都被认为是使其富裕起来的最便捷方法。美洲发现以后的一段时期内，西班牙人每当抵达一处未知海岸，首先照例要问的就是附近能否找到金银。他们根据所得的消息，判断是否值得在那里建立殖民地，或那个国家是否值得征服。法国国王派往著名的成吉思汗的一个儿子那里担任使节的修士普兰诺·卡尔皮尼说，鞑靼人常常问他，法兰西王国是否有很多绵羊和牛。他们询问的目的与西班牙人相同。他们想知道那个国家是否富裕得值得征服。在鞑靼人中，同在通常不懂得使用货币的其他一切游牧民族中一样，牲畜既是商业工具，也是价值尺度。因此，按照他们的看法，财富在于牲畜，正如按照西班牙人的看法，财富在于金银一样。两种观念相比，鞑靼人的观念也许更接近真理。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p3",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1160"
+      },
+      "contentHash": "ae52c398a11e58ecaf08783f0bc253d4be73fbe6bf458845db58a0e584304ce4",
+      "text": "洛克先生指出了货币与其他动产之间的区别。他说，其他一切动产都具有极易消耗的性质，因而由它们构成的财富不大可靠；一个国家今年可能拥有丰富的这类物品，到下一年，即使没有任何出口，也可能仅仅由于自身的耗费和挥霍而极度缺乏它们。相反，货币是一位可靠的朋友；尽管它可能从一只手转到另一只手，但只要能使它不流出国境，就不大容易被耗费和消耗。因此，按照他的看法，金银是一国动产财富中最稳固、最实在的部分；他认为，正因如此，增加这些金属应当成为该国政治经济学的重大目标。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p4",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1161"
+      },
+      "contentHash": "eca716ee4a0b691eba55d99296701cbd663307b3cfceda461a349988ea5621c6",
+      "text": "另一些人承认，如果一个国家能够与全世界隔绝，那么该国流通的货币无论多少都无关紧要。借助这些货币流通的消费品，不过是与数目较多或较少的货币单位相交换；但他们承认，国家真正的富裕或贫困，完全取决于这些消费品的丰富或匮乏。不过，他们认为，对于同外国有联系，并且不得不进行对外战争、在遥远国家维持舰队和军队的国家，情形则有所不同。他们说，要做到这一点，非把货币送往国外支付费用不可；而一个国家如果国内没有大量货币，就不可能把大量货币送往国外。因此，每一个这样的国家都必须力图在和平时期积聚金银，以便在必要时拥有可供进行对外战争的财力。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p5",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1162"
+      },
+      "contentHash": "712735e2059d7408fa8ff184fe8d9e5809d9498b1ce144436cbf2c1cf9ef9b9d",
+      "text": "由于这些流行观念，欧洲各国都曾研究过一切可能的方法，企图在本国积聚金银，尽管收效甚微。西班牙和葡萄牙拥有向欧洲供应这些金属的主要矿山，它们或者以最严厉的刑罚禁止金银出口，或者对其出口征收重税。类似的禁令在古代似乎也是欧洲其他大多数国家政策的一部分。甚至在我们最意想不到的地方，即苏格兰的一些古老议会法令中，也能发现这种禁令；这些法令以重刑禁止把金银运出王国。法国和英格兰在古代也曾实行类似的政策。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p6",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1163"
+      },
+      "contentHash": "ef1fc9986fdce7aaff6058ad07503d49c8f354ac51c0658f3de0e2f969385751",
+      "text": "当这些国家发展起商业以后，商人们发现，这种禁令在许多场合极其不便。对于他们想要进口本国或运往另一个外国的外国货物，他们用金银购买，往往比用任何其他商品购买更为有利。因此，他们抗议这种禁令有害于贸易。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p7",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1164"
+      },
+      "contentHash": "f062333caea47e25bdb3b03cc96640e57f0fc178d40c87c579c56ccfbb9b73a9",
+      "text": "他们首先陈述说，为购买外国货物而出口金银，并不总会减少王国中这些金属的数量。相反，这种做法常常可能增加这一数量；因为如果国内并未因此增加对外国货物的消费，这些货物就可以再出口到外国，并在那里以高额利润售出，从而带回远多于当初为购买它们而输出的财宝。孟先生把这种对外贸易活动比作农业上的播种和收获。他说：“如果我们只看农夫在播种时的行为，看他把许多好谷物抛入土中，我们就会认为他与其说是农夫，不如说是疯子。但当我们考察他在收获时的劳动，而收获正是他努力的目的时，我们就会发现他的行为产生了多么可贵而丰厚的增长。”",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p8",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1165"
+      },
+      "contentHash": "efa82ccfb72187e8b176707424eee876037a8db850086f6e7a94b8c0fa0c8ee4",
+      "text": "他们其次陈述说，这种禁令无法阻止金银出口，因为金银与其价值相比体积很小，很容易走私到国外。他们说，只有适当关注他们所谓的贸易差额，才能阻止这种出口。当一国出口总值大于进口总值时，外国就欠该国一笔差额；这笔差额必然用金银支付给该国，从而增加王国中这些金属的数量。但当一国进口总值大于出口总值时，该国就会反过来欠外国一笔差额；这笔差额必然以同样方式支付给外国，从而减少这一数量。在这种情况下，禁止这些金属出口无法阻止其出口，而只会使其更危险，因而成本更高。由此，汇兑对欠有差额的国家变得比原本可能的情况更加不利；因为购买一张向外国付款的汇票的商人，不仅必须向出售汇票的银行家支付把货币送到该国所固有的风险、麻烦和费用，还必须支付禁令造成的额外风险。但汇兑对任何一个国家越不利，贸易差额就必然变得对它越不利；因为该国货币与应得差额的国家的货币相比，必然相应贬值。例如，如果英格兰与荷兰之间的汇兑对英格兰不利百分之五，那么在英格兰就需要一百零五盎司白银，才能购买一张可在荷兰兑取一百盎司白银的汇票；因此，英格兰的一百零五盎司白银在荷兰只值一百盎司白银，也只能购买相应数量的荷兰货物；相反，荷兰的一百盎司白银在英格兰却值一百零五盎司白银，并能购买相应数量的英格兰货物。由于汇兑差额，销往荷兰的英格兰货物会便宜同样多，而销往英格兰的荷兰货物会昂贵同样多；前者吸引到英格兰的荷兰货币会相应减少，后者吸引到荷兰的英格兰货币会相应增加，增减的程度正好等于这一差额。因此，贸易差额必然对英格兰更加不利，并且需要把更多的金银差额输出到荷兰。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p9",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1166"
+      },
+      "contentHash": "451a3fba913e39d7700b44a94721eeee0f1218ca86eb77f979eb7a98104600ea",
+      "text": "这些论点一部分正确，一部分诡辩。就它们断言贸易中的金银出口常常可能有利于国家而言，它们是正确的。它们断言，当私人发现出口金银有利可图时，任何禁令都无法阻止其出口，这一点也是正确的。但它们认为，维持或增加这些金属的数量，比维持或增加任何其他有用商品的数量更需要政府关注，这就是诡辩；贸易自由无须任何这种关注，总能按适当数量供应其他有用商品。它们断言高汇价必然会扩大他们所谓的不利贸易差额，或导致更多金银出口，这一点也许也是诡辩。诚然，这种高汇价对那些要在外国支付款项的商人极为不利。他们必须为银行家向这些国家开给他们的汇票支付高得多的价格。但是，尽管禁令造成的风险可能使银行家承担一些额外费用，却不一定会使更多货币流出本国。这项费用通常会全部花在国内，用于把货币走私出境；除汇票所开出的确切金额外，它很少会造成哪怕一个六便士银币的额外输出。高汇价自然还会促使商人力图使出口额与进口额大致相抵，以便尽量缩小必须按这种高汇价支付的金额。此外，高汇价还必然起到一种税的作用，抬高外国货物的价格，从而减少其消费。因此，它不会趋于扩大，反而会趋于缩小他们所谓的不利贸易差额，并因而减少金银出口。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p10",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1167"
+      },
+      "contentHash": "593ad85295b5d915fdf11c68b7de43fae366ad48f5ed48801fb5ea6057998f1e",
+      "text": "然而，不管这些论点本身如何，它们说服了听取这些论点的人。这些论点是由商人向议会、君主的枢密院、贵族和乡绅提出的，也就是由被认为懂得贸易的人，向自知对这一问题一无所知的人提出的。经验不仅向商人，也向贵族和乡绅证明了对外贸易能使国家富裕；但是它究竟怎样或以何种方式使国家富裕，他们没有一个人十分清楚。商人完全清楚对外贸易以何种方式使自己富裕。了解这一点是他们分内的事。但了解对外贸易以何种方式使国家富裕，并不是他们分内的事。他们从不考虑这个问题，只有在需要请求国家改变某些有关对外贸易的法律时才会考虑。那时，他们就有必要说一说对外贸易的有益影响，以及当时施行的法律以何种方式妨碍了这些影响。当有待裁决这件事的人听说，对外贸易会把货币带进国内，而有关法律却妨碍它带进原本能够带进的那么多货币时，他们觉得这是对事情最令人满意的说明。因此，这些论点产生了预期的效果。在法国和英格兰，禁止金银出口的规定被限制为仅适用于本国铸币。外国铸币和金银条块可以自由出口。在荷兰及其他一些地方，这种自由甚至扩大到了本国铸币。政府不再着力防止金银出口，转而监视贸易差额，把它视为能够导致这些金属数量增减的唯一原因。政府从一种徒劳无益的操心，转向另一种复杂得多、棘手得多而同样徒劳无益的操心。孟的著作《英格兰得自对外贸易的财富》这一书名，不仅在英格兰，而且在其他一切商业国家，都成了政治经济学的一条基本准则。国内贸易或本国贸易本是一切贸易中最重要的贸易；在这种贸易中，等量资本能带来最大的收入，并为本国人民创造最多的就业，但它却被认为仅仅是对外贸易的辅助。他们说，国内贸易既不把货币带进国内，也不把货币带出国外。因此，除非它的繁荣或衰退间接影响对外贸易的状况，否则国家绝不会因国内贸易而变得更富或更穷。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p11",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1168"
+      },
+      "contentHash": "d521847e63f28b25d44062677d9d4992e6f591db089cbe8b63d5cc51cb46765d",
+      "text": "一个本国没有矿山的国家，无疑必须像一个本国没有葡萄园的国家必须从外国取得葡萄酒一样，从外国取得金银。不过，政府似乎没有必要对前一目标比对后一目标给予更多关注。一个拥有购买葡萄酒所需财力的国家，总能得到它所需要的葡萄酒；一个拥有购买金银所需财力的国家，也绝不会缺少这些金属。它们像其他一切商品一样，可以用一定的价格购买；正如它们是其他一切商品的价格一样，其他一切商品也是这些金属的价格。我们完全可以放心地相信，贸易自由无须政府任何关注，总会向我们供应所需要的葡萄酒；我们也可以同样放心地相信，它总会向我们供应我们有能力购买或使用的全部金银，无论是用于使我们的商品流通，还是用于其他用途。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p12",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1169"
+      },
+      "contentHash": "b88485438d8ff04395dee866db820195310492588006914ba913809ef0ccb5cb",
+      "text": "人类勤劳所能购买或生产的每一种商品的数量，在每个国家都会自然地按照有效需求自行调节，换言之，按照那些愿意支付为生产这种商品并把它运到市场所必须支付的全部地租、劳动费用和利润的人的需求自行调节。但是，没有任何商品能比金银更容易或更精确地按照这种有效需求自行调节；因为这些金属体积小而价值大，所以没有任何商品能比它们更容易从一地运往另一地，从价格低廉之处运往价格昂贵之处，从数量超过有效需求之处运往数量不足之处。例如，如果英格兰对额外数量的黄金存在有效需求，一艘邮船就能从里斯本或任何其他能够取得黄金的地方运来五十吨黄金，可铸成五百多万几尼。但如果对同等价值的谷物存在有效需求，按每吨五几尼计算，要进口这些谷物就需要一百万吨的运载能力，或一千艘每艘载重一千吨的船只。英格兰的海军也不足以承担。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p13",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1170"
+      },
+      "contentHash": "1801803bd822f4f1bbd7893deb5a1670300fc587f9af5c8257b692bfe2a00559",
+      "text": "当输入任何国家的金银数量超过有效需求时，无论政府怎样严密监视，都无法阻止其出口。西班牙和葡萄牙一切严酷血腥的法律，都不能把它们的金银留在国内。来自秘鲁和巴西的持续输入超过了这两个国家的有效需求，使这些金属在当地的价格降到邻国的价格以下。相反，如果在某一特定国家，这些金属的数量低于有效需求，以致其价格高于邻国的价格，政府就无须花费任何力气输入它们。即使政府竭力阻止其输入，也无法做到。当斯巴达人拥有购买这些金属的财力时，这些金属冲破了莱库古的法律为阻止其进入拉栖代梦而设置的一切障碍。海关一切严酷血腥的法律，也无法阻止荷兰东印度公司和哥德堡东印度公司的茶叶输入，因为它们比不列颠公司的茶叶略为便宜。然而，一磅茶叶的体积，大约是通常为其支付的最高价格之一——十六先令——所含白银体积的一百倍，是同等价格所含黄金体积的两千多倍，因而走私的困难程度也恰好分别大这么多倍。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p14",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1171"
+      },
+      "contentHash": "19ce32c76278309693d282a0fd3e11e547af905e4094c7574e88ef23cb6cf0f2",
+      "text": "金银能够轻易地从充裕之处运往需要之处，是这些金属的价格不像其他大多数商品的价格那样持续波动的部分原因；其他大多数商品由于体积庞大，在市场偶然供给过多或过少时，难以转移所在地。诚然，这些金属的价格并非完全没有变动，但它所发生的变化通常缓慢、渐进而均匀。例如，有人认为，在本世纪和上世纪期间，由于金银持续从西属西印度群岛输入，它们在欧洲的价值一直在逐渐下降，不过这种看法也许没有多少根据。但是，要使金银价格发生任何突然变化，以致所有其他商品的货币价格一下子明显而显著地上涨或下跌，就需要发生像发现美洲所引起的那种商业革命。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p15",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1172"
+      },
+      "contentHash": "bb97cae02ae85722263add9b0181649a9a0955af7f69c0606b721f41d0dd999b",
+      "text": "尽管如此，如果一个拥有购买金银所需财力的国家在某一时期仍然缺少金银，可以用来替代它们的办法，也比几乎任何其他商品都多。如果缺少制造业原料，生产就必须停止。如果缺少食物，人民就必须挨饿。但如果缺少货币，物物交换就会取而代之，尽管很不方便。赊购赊销，以及不同商人每月或每年相互抵销债权，可以不那么不便地代替货币。管理良好的纸币不仅可以毫无不便地代替货币，而且在某些情况下还有一些好处。因此，无论从哪方面说，政府的注意力从未像用于监视一国货币数量的维持或增加时那样，被如此不必要地耗费。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p16",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1173"
+      },
+      "contentHash": "0ced31fb12991a27e1d7da8586ad9f49a1857ef8d29cbac869871c8f3f11c274",
+      "text": "然而，没有什么抱怨比货币匮乏更常见了。对于既无资财购买、又无信用借取的人来说，货币如同葡萄酒一样，必然总是匮乏的。有其中任何一种条件的人，通常既不会缺少货币，也不会缺少他们所需的葡萄酒。然而，这种货币匮乏的抱怨，并不总是只出自挥霍无度之徒。有时，整个商业城镇及其邻近乡村都会普遍发出这种抱怨。过度经商是其通常原因。稳重的人，如果其经营计划与其资本不相称，也会像支出与收入不相称的浪荡子一样，既无资财买到货币，又无信用借到货币。他们的计划还没有见效，资本就已耗尽，信用也随之丧失。他们到处奔走借钱，而人人都告诉他们无钱可借。即使这种普遍的货币匮乏之叹，也并不总能证明国内流通的金币和银币少于通常数量，而只能证明许多人想要这些铸币，却没有任何东西可以拿来交换。当贸易利润碰巧高于通常水平时，过度经商便成为大小商人普遍会犯的错误。他们并不总是把比平常更多的货币送往国外，却在国内外都以信用购入数量异常庞大的货物，并将这些货物运往某个遥远的市场，希望回款能在付款要求到来之前收到。但付款要求先于回款到来，而他们手头没有任何东西，既不能用来取得货币，也不能用作借款的可靠担保。引起货币匮乏这一普遍抱怨的，不是金银的任何匮乏，而是这些人难以借到钱，以及他们的债权人难以收回欠款。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p17",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1174"
+      },
+      "contentHash": "117b97c01af86b0a44bebba7131278dde4737a7d7278ce6600762e09152145ed",
+      "text": "如果还要认真设法证明财富并不在于货币或金银，而在于货币所购买的东西，并且货币只有在用于购买时才有价值，那就未免太可笑了。毫无疑问，货币始终是国民资本的一部分；但前文已经说明，它通常只占很小的一部分，而且始终是其中利润最低的一部分。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p18",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1175"
+      },
+      "contentHash": "5051dd3086e69b4783d9f00c38ce332bb453c8930ca30093c040716500a129c8",
+      "text": "商人通常觉得用货币购买货物比用货物换取货币容易，这并不是因为财富更根本地存在于货币而非货物之中，而是因为货币是人所共知、业已确立的商业工具，人们随时都愿意拿任何东西来同它交换，而拿任何东西来换取货币却未必总能同样容易。此外，大部分货物都比货币更容易毁坏，商人保存货物往往可能蒙受大得多的损失。而且，当货物还积压在他手中时，他比已经把货款收入钱柜时更容易遇到自己无力应付的货币索求。除此以外，商人的利润更直接地来自出售而非购买；由于所有这些原因，他通常远比用货币交换货物更急于用货物交换货币。不过，一个仓库中堆满货物的个别商人，有时可能因为不能及时将其售出而破产，一个民族或国家却不会遭遇同样的不幸。商人的全部资本往往由旨在换取货币的易腐货物构成。但是，一个国家土地和劳动的年产物中，能够用来向邻国购买金银的，向来只占很小一部分。远为庞大的部分在本国人民之间流通和消费；即使在运往国外的剩余产物中，大部分通常也是用来购买其他外国货物的。因此，即使那些预定用来购买金银的货物换不到金银，这个国家也不会因此毁灭。它或许确实会蒙受一些损失和不便，并被迫采用某些替代货币所必需的权宜办法。然而，其土地和劳动的年产物仍会与往常相同，或非常接近往常，因为用来维持这种产物的可消费资本仍会与往常相同，或非常接近往常。尽管货物并不总像货币吸引货物那样容易地吸引货币，但从长远来看，货物吸引货币甚至比货币吸引货物更具必然性。货物除了购买货币以外还能用于许多其他目的，货币除了购买货物以外却别无他用。因此，货币必然追逐货物，货物却并不总是、也并不必然追逐货币。购买者并不总打算再次出售，而往往是打算使用或消费；出售者却总是打算再次购买。前者往往可能已经完成了全部交易，后者却绝不可能完成超过其交易的一半。人们想要货币，不是为了货币本身，而是为了能用它购买的东西。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p19",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1176"
+      },
+      "contentHash": "8a418f6b69835022224372d92e2cb93f0678e420d9a8b6e66cd926e79724cbf5",
+      "text": "据说，可消费的商品很快就会毁灭；金银却具有较为耐久的性质，如果不是由于这种持续不断的输出，金银便可世世代代积累起来，使国家的真实财富增加到令人难以置信的程度。因此，有人声称，对任何国家来说，没有什么贸易会比用这种耐久商品交换这种易腐商品更为不利。然而，我们并不认为以英国五金器具交换法国葡萄酒的贸易是不利的；可是五金器具也是一种非常耐久的商品，如果不是由于这种持续不断的输出，它们同样可以世世代代积累起来，使全国锅罐的数量增加到令人难以置信的程度。但人们很容易想到，每个国家这类器具的数量，必然受其用途的限制；拥有超过烹煮当地通常消费的食物所必需数量的锅罐，是荒谬的；而且，如果食物数量增加，锅罐数量也很容易随之增加，因为增加的食物中有一部分会用于购买锅罐，或用于维持更多以制造锅罐为业的工人。人们也应该同样容易想到，每个国家的金银数量都受这些金属用途的限制；它们的用途，一是以铸币形式使商品流通，二是以金银器皿形式提供一种家庭用具；每个国家的铸币数量，受需要由它来流通的商品价值调节：增加这种价值，其中一部分就会立即被送往国外，在任何可以买到铸币的地方购买流通这些商品所需增加的铸币数量；金银器皿的数量，则受那些选择以此种奢华自娱的私人家庭的数目和财富调节：增加这类家庭的数目和财富，增加的财富中就很可能有一部分会用于在任何可以买到金银器皿的地方购买更多金银器皿；试图通过把不必要数量的金银引入任何国家或扣留在该国，来增加该国的财富，就如同试图强迫私人家庭保有不必要数量的厨具，以增加他们的丰盛饮食一样荒谬。购买这些不必要器具的开支，不会增加家庭食物的数量或品质，反而会使其减少；同样，在每个国家，购买不必要数量金银的开支，也必然会减少那种供人民饮食、衣着和居住，维持并雇用人民的财富。必须记住，无论采取铸币还是金银器皿的形式，金银都和厨房用具一样是器具。增加对金银的用途，增加那些要借助金银来流通、处置和准备的可消费商品，你就必然会增加金银的数量；但如果你试图通过非常手段增加金银的数量，你也必然会减少金银的用途，甚至连其数量也会减少，因为这些金属的数量绝不可能超过其用途所需。一旦其积累超过这一数量，由于运输极其容易，而闲置不用所造成的损失又极其巨大，任何法律都无法阻止它们立即被运出国境。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p20",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1177"
+      },
+      "contentHash": "92ba6de3f2e36b16eb817f8b7a7d70e7e1dd528e1ae9a301a4b1679d8d4abd93",
+      "text": "为了使一个国家能够进行对外战争，并在遥远国家维持舰队和军队，并不总是必须积累金银。维持舰队和军队，靠的不是金银，而是可消费的货物。一个国家如果能以其国内产业的年产物，以及来自其土地、劳动和可消费资本的年收入，在遥远国家购买这些可消费的货物，便能在那里维持对外战争。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p21",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1178"
+      },
+      "contentHash": "90408ce3156b6a3466719f888a9781864da15f309e9fa9aea5e740e8dd06692e",
+      "text": "一个国家可以用三种不同方式，在遥远国家购得军队的军饷和给养：第一，把积累的金银的一部分运往国外；第二，把制成品年产物的一部分运往国外；最后，把未经加工的年产物的一部分运往国外。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p22",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1179"
+      },
+      "contentHash": "5495ba1adfb9127747601a0b1cd61618c66e045fc9191da19e8c07dbf22b0083",
+      "text": "任何国家中可以恰当地视为积累或贮藏起来的金银，都可以分成三部分：第一，流通货币；第二，私人家庭的金银器皿；最后，经过多年节俭而积聚起来并贮存在君主国库中的货币。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p23",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1180"
+      },
+      "contentHash": "76cd7566bec3ebce6cba7861707213b12b635c9b6c1f154e32d2b1e596c8798b",
+      "text": "从一个国家的流通货币中抽出很多货币以供他用，是很少可能发生的，因为流通货币很少会有大量过剩。任何国家每年买卖的货物价值，都需要一定数量的货币，使其流通并分配到适当的消费者手中，而不能使更多货币得到使用。流通渠道必然会把足以充满它的货币量吸引过来，而绝不容纳更多。不过，在对外战争期间，通常确有一部分货币会从这一渠道抽走。由于大批人口在国外得到维持，国内维持的人口就会减少。国内流通的货物减少，使其流通所需的货币也会减少。在这种场合，通常还会特别发行数量异常庞大的某种纸币，例如英国的财政部票据、海军票据和银行券；这些纸币取代流通中的金银，从而使更多金银得以运往国外。然而，所有这些办法，对于维持一场耗费巨大且持续数年的对外战争，只能提供微不足道的财源。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p24",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1181"
+      },
+      "contentHash": "03e4e53f9ce97eaf4129a43db9041498eed497acabeedefc1d7a08132ff1f9c8",
+      "text": "事实证明，在任何场合熔化私人家庭的金银器皿，都是一种更无足轻重的财源。在上一次战争开始时，法国人从这一办法中得到的好处，甚至不足以补偿器皿式样遭破坏的损失。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p25",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1182"
+      },
+      "contentHash": "418bdf96a9e5f72cec8a5529c1ec086e9e600ccf24dc10234336f1a36b115e04",
+      "text": "在往昔，君主积累的财宝提供过远为巨大而持久的财源。在当今时代，除普鲁士国王以外，积聚财宝似乎并不是欧洲各国君主政策的任何一部分。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p26",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1183"
+      },
+      "contentHash": "5386013d1c39fd2902ca5bcbbb5cb350f88172eee58a03b5e8fb63cebe559827",
+      "text": "本世纪历次对外战争或许是历史记载中耗费最巨大的战争，而维持这些战争的资金，似乎很少依赖输出流通货币、私人家庭的金银器皿或君主的财宝。上一次对法战争使大不列颠耗费九千多万英镑，其中不仅包括新借入的七千五百万英镑债务，还包括每镑加征两先令的土地税，以及每年从偿债基金借用的款项。这笔开支的三分之二以上用在遥远国家和地区，即德意志、葡萄牙、美洲、地中海各港口以及东印度群岛和西印度群岛。英格兰国王没有积累的财宝。我们从未听说有数量异常庞大的金银器皿被熔化。一般认为，国内流通的金银不超过一千八百万英镑。不过，自最近重铸金币以来，人们相信这个数字被大大低估了。因此，就按照我记得见过或听过的最夸大的估算，假定金银合计达到三千万英镑。如果战争是靠我国的货币进行的，那么即使按照这一估算，在六至七年的时间里，全部货币也必定至少两次被运出国外并再次运回。如果作这种假定，它就会提供最具决定性的论据，证明政府完全没有必要留心保存货币，因为按照这种假定，全国的全部货币必定在如此短的时期内，先后两次离开本国又返回本国，却没有任何人知道此事。然而，在这一时期的任何阶段，流通渠道从未显得比平常更为空虚。有资财为货币支付代价的人，很少有缺少货币的。诚然，在整场战争期间，对外贸易的利润都高于通常水平，战争临近结束时尤其如此。这造成了它一向会造成的结果，即大不列颠所有港口都普遍过度经商；而这又造成了通常的货币匮乏之叹，因为这种抱怨总是紧随过度经商而来。许多人想要货币，却既无资财购买，又无信用借取；而且，因为债务人觉得借钱困难，债权人也觉得收回欠款困难。然而，凡是能够付出相应价值的人，通常都可以按其价值获得金银。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p27",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1184"
+      },
+      "contentHash": "45248c2414ed39a59090bf54b00f71c0b2a877f93610e4881786502129f9789d",
+      "text": "因此，上一次战争的巨额开支，主要必定不是靠输出金银，而是靠输出某一种或某几种英国商品来支付的。当政府或受政府委托行事的人同某个商人订约，要向某一外国汇款时，这个商人自然会尽力把商品而不是金银运往国外，以便向他在其身上开出汇票的外国通信商付款。如果大不列颠的商品在那个国家没有销路，他就会设法把商品运往另一个国家，并在那里购买一张以原先那个国家为付款地的汇票。只要商品适合市场，运送商品总会带来相当可观的利润；运送金银却几乎从不带来任何利润。当这些金属被运往国外购买外国商品时，商人的利润并非来自购买，而是来自售出运回的货物。但是，当金银被运往国外仅仅为了偿还债务时，他得不到任何回货，因而也得不到任何利润。因此，他自然会施展才智，设法通过输出商品而非输出金银来偿付外债。《国民现状》的作者也相应指出，在上一次战争期间，英国输出了大量货物，却没有给本国带回任何回货。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p28",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1185"
+      },
+      "contentHash": "134f8c532be6c95052f40025106a866ac0a731f7b29c2d41bd6a962d530c51bd",
+      "text": "除上述三类金银以外，所有商业大国都有相当多的金银块，为对外贸易之目的而交替进口和出口。这些金银块在不同商业国家之间流通，方式如同一国铸币在各个特定国家内部流通一样，因而可以视为商业大共和国的货币。一国铸币的运动和流向，取决于各个特定国家疆域内流通的商品；商业大共和国货币的运动和流向，则取决于不同国家之间流通的商品。两者都用于便利交换：前者便利同一国家不同个人之间的交换，后者便利不同国家人民之间的交换。商业大共和国的这种货币，可能有一部分已经用于，而且很可能确实用于进行上一次战争。在全面战争时期，自然可以设想，这种货币会获得不同于它在太平盛世通常遵循的运动和流向；它会更多地在战场周围流通，并更多地用于在当地及邻近国家购买各支军队的军饷和给养。但无论大不列颠每年以这种方式使用了商业大共和国货币的哪一部分，这部分货币每年都必定是用英国商品，或用以英国商品购买的其他东西购得的；这仍然使我们回到商品，回到本国土地和劳动的年产物，因为正是这种最终财源使我们能够进行战争。事实上，一笔如此巨大的年度开支应由一项巨大的年产物来支付，是很自然的设想。例如，1761年的开支超过一千九百万英镑。任何积累都无法支撑如此巨大的年度挥霍。即使金银的任何年产量，也无法支撑这种开支。按照最可靠的资料，每年输入西班牙和葡萄牙两国的全部金银，通常也不会远超六百万英镑；在有些年份，这个数额甚至几乎不够支付上一次战争四个月的开支。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p29",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1186"
+      },
+      "contentHash": "12b07033a11d576ee12ddf2fd5762332582d1f86df3062c120f45ce6c6d4dcc1",
+      "text": "为了在遥远国家购买军队的军饷和给养，或者购买商业大共和国货币中将用于购置这些军饷和给养的一部分，最适宜运往遥远国家的商品，似乎是较为精细和经过更多加工的制成品；这类商品体积小而价值高，因而能以很少的费用运往十分遥远的地方。一个国家的产业如果每年生产大量通常输出外国的这类制成品剩余物，便可以进行一场耗费极大的对外战争达许多年之久，既无须输出任何可观数量的金银，甚至也无须拥有任何这样数量的金银可供输出。诚然，在这种情况下，其制成品每年剩余物中必定有相当一部分被输出，却没有给本国带回任何回货，尽管它确实会给商人带来回报；政府向商人购买以外国为付款地的汇票，以便在那里购买军队的军饷和给养。不过，这种剩余物中仍可能有一部分继续带回回货。战争期间，制造业者会面对双重需求，并被要求：第一，制造准备运往国外的货物，用以偿付为支付军队军饷和给养而开立、须在外国兑付的汇票；第二，制造购买通常在国内消费的一般回货所必需的货物。因此，即使在破坏性最大的对外战争中，大部分制造业往往也可能极为繁荣；反过来，在和平恢复时，它们却可能衰退。它们可能在国家毁坏之际繁荣，并在国家恢复兴盛之时开始衰败。上一次战争期间以及和平恢复后一段时间内，英国制造业许多不同部门所处的不同状况，可以用来说明刚才所说的情形。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p30",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1187"
+      },
+      "contentHash": "23c4871f73c4f4f79139fdbc887c6029663454757c9e8cbf0be2731fdc113095",
+      "text": "任何耗费巨大或旷日持久的对外战争，都无法仅靠出口土地的天然产物而便利地进行。要把足以购得一支军队的军饷和给养的如此大量的天然产物运往外国，费用会过于高昂。而且，很少有国家生产的天然产物会大大超过本国居民维持生计所需的数量。因此，把大量天然产物运往国外，就等于把人民必需生活资料的一部分运往国外。制成品的出口则不同。受雇制造这些产品的人民，其生活资料留在国内，出口的只是他们劳动的剩余部分。休谟先生屡次提到，古代英格兰国王无力连续不断地进行任何旷日持久的对外战争。当时，英格兰人除了土地的天然产物，或少量最粗糙的制成品以外，没有任何东西可以用来在外国购买军队的军饷和给养；前者没有多大一部分可以从国内消费中节省出来，而后者与天然产物一样，运输费用都过于高昂。这种无力并非源于缺少货币，而是源于缺少较精细和较改良的制成品。无论当时还是现在，英格兰的买卖都以货币进行。当时流通货币的数量与通常进行的买卖的次数和价值之间，必定保持着与现在相同的比例；或者更确切地说，这一比例必定更大，因为当时没有纸币，而纸币现在承担了过去由金银承担的很大一部分用途。在商业和制造业鲜为人知的民族中，君主在非常时期很少能从臣民那里取得任何可观的援助，其原因将在后文说明。因此，正是在这样的国家里，君主通常力图积蓄财宝，把它作为应付此类紧急情况的唯一手段。即使撇开这种必要性，他所处的境况也自然使他倾向于实行积累所必需的节俭。在那种简朴状态下，就连君主的开支，也不是由喜爱宫廷华丽服饰与排场的虚荣心支配的，而是用于慷慨施惠于他的佃户，以及殷勤款待他的侍从。但是，慷慨和好客极少导致挥霍，虚荣却几乎总是如此。因此，每个鞑靼首领都有财宝。据说，乌克兰哥萨克人的首领、查理十二世的著名盟友马泽帕，拥有极其丰厚的财宝。墨洛温王朝的法国国王全都有财宝。当他们把王国分给不同的子女时，也把财宝一并分掉。撒克逊诸王以及征服之后最初几位国王，似乎同样积蓄了财宝。每次新君即位后的第一项行动，通常就是夺取前王的财宝，把这视为确保继位最不可或缺的措施。发达商业国家的君主并无积蓄财宝的同样必要，因为在非常时期，他们通常能够从臣民那里取得特别援助。他们也较少有这样做的倾向。他们自然地、或许也是必然地追随时代风尚，其开支最终由支配其领地内所有其他大财产所有者的那种奢侈虚荣心所支配。他们宫廷中无足轻重的排场日益辉煌，其费用不仅妨碍积累，而且常常侵占原定用于更必要开支的款项。德尔基利达斯谈到波斯宫廷时所说的话，也可以用于欧洲若干君主的宫廷：他在那里看到的是辉煌有余而实力不足，仆从众多而士兵寥寥。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p31",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1188"
+      },
+      "contentHash": "4aec38d044ead5f7b4cfa9085fa318f9f2c96a1e3453075e1f78bbc1b8f5840f",
+      "text": "输入金银，并不是一国从对外贸易中所得的主要利益，更不是唯一利益。无论在哪些地方之间开展对外贸易，各方都从中获得两种不同的利益。它把当地没有需求的土地和劳动产物的剩余部分输出，并换回当地有需求的其他物品。它以这些剩余物品换取能够满足一部分需要并增加享受的其他物品，从而赋予剩余物品以价值。借助对外贸易，国内市场的狭小不会妨碍任何特定技艺或制造业部门中的劳动分工达到最高程度的完善。它为劳动产物中超过国内消费的部分开辟更广阔的市场，从而鼓励人们改进劳动的生产力，并把劳动的年产量增加到极限，由此增加社会的实际收入和财富。对外贸易不断为彼此开展贸易的所有不同国家提供这些重大而重要的服务。它们都从中获得巨大利益，不过商人居住的国家通常获益最大，因为商人通常更多地从事满足本国的需要和输出本国的剩余物品，而不是满足其他任何特定国家的需要和输出其剩余物品。对于没有矿山的国家来说，输入其可能需要的金银，无疑是对外贸易业务的一部分。然而，这是其中极其无足轻重的一部分。一个仅仅为此而开展对外贸易的国家，一百年中恐怕也难得需要装载一艘船。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p32",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1189"
+      },
+      "contentHash": "4790eddf282eef9381307c3ab08b513567e9a72dbf73842f7b6ba11651efd234",
+      "text": "美洲的发现并不是通过输入金银使欧洲富裕起来的。由于美洲矿山产量丰富，这些金属变得便宜了。现在购买一套银器，只需付出十五世纪购买它所需谷物或劳动的大约三分之一。每年付出同样数量的劳动和商品，欧洲如今每年可以购买大约相当于当时三倍数量的银器。但是，当一种商品的售价降到通常价格的三分之一时，不仅以前购买它的人能够购买原来三倍的数量，而且它的价格也降到了更多购买者所能承受的水平，购买者人数也许超过原来的十倍，也许超过二十倍。因此，即使欧洲已达到目前的发展状态，如今欧洲拥有的银器数量，也可能不仅是未曾发现美洲矿山时所会拥有数量的三倍以上，而是二十倍或三十倍以上。就此而言，欧洲无疑获得了一项实际的便利，尽管这项便利肯定十分微小。金银的低廉，使这些金属比从前稍微不适于充当货币。为了购买同样的东西，我们必须携带更多的金银，过去口袋里装四便士便已足够的地方，现在却要装一先令。很难说这种不便与相反的便利哪一个更微不足道。无论前者还是后者，都不可能使欧洲的状况发生任何十分重大的变化。然而，美洲的发现无疑确实造成了极其重大的变化。它为欧洲的一切商品开辟了一个崭新而且取之不竭的市场，因而促成了新的劳动分工和技艺改进；在古代商业的狭小范围内，由于缺少能够吸收其大部分产物的市场，这些变化绝不可能发生。欧洲各个不同国家的劳动生产力得到改进，劳动产物随之增加，居民的实际收入和财富也与之俱增。欧洲的商品对美洲来说几乎全是新奇的，美洲也有许多商品对欧洲来说是新奇的。因此，一系列以前从未设想过的新交换开始出现；这种交换原本自然应当对新大陆与对旧大陆同样有利，而它确实有利于旧大陆。欧洲人的野蛮不公，却使一件本应对所有人有益的事情，给那些不幸国家中的若干国家带来了毁灭和破坏。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p33",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1190"
+      },
+      "contentHash": "1f7afe4eca0f9784f58c04a53276ac7e6f1d0601a281077a25ea094553670970",
+      "text": "差不多在同一时期，经由好望角通往东印度群岛的航路被发现；尽管距离更远，这一发现为对外贸易开辟的范围，或许比美洲的发现还要广阔。美洲只有两个民族在某些方面高于野蛮人，而这两个民族几乎刚被发现便遭到毁灭。其余的都纯属野蛮人。可是，中国、印度斯坦、日本以及东印度群岛的其他若干帝国，虽然没有更丰富的金矿或银矿，但在其他各方面都比墨西哥或秘鲁富裕得多，耕作得更好，各种技艺和制造业也发达得多；即使我们相信西班牙作家关于那两个帝国古代状况的夸大记述——这些记述显然不值得相信——也是如此。但是，富裕而文明的国家彼此之间所能交换的价值，总是远远大于它们与野蛮人及未开化民族之间所能交换的价值。然而，迄今为止，欧洲从与东印度群岛的贸易中所得的利益，远少于从与美洲的贸易中所得的利益。葡萄牙人独占东印度贸易约一个世纪，欧洲其他民族只能通过他们间接地向那里运出或从那里运入任何货物。上个世纪初，荷兰人开始侵夺葡萄牙人的贸易时，把本国全部东印度贸易交给一家特许垄断公司经营。英格兰人、法国人、瑞典人和丹麦人全都仿效他们，因此，欧洲还没有任何一个大国享受过与东印度群岛自由贸易的利益。至于这种贸易为何从未像美洲贸易那样有利，无须提出其他理由，因为几乎每个欧洲国家与其本国殖民地之间的美洲贸易，都向其全体臣民开放。那些东印度公司的专有特权、巨额财富，以及这些特权和财富为其从各自政府那里赢得的厚爱和保护，引起了对它们的强烈嫉妒。由于这种贸易每年都从开展贸易的国家输出大量白银，这种嫉妒常常把它说成完全有害。利益相关者则答辩说，这种贸易由于不断输出白银，确实可能有使整个欧洲贫困的趋势，但不会使开展这种贸易的特定国家贫困；因为通过把一部分回程货物输出到欧洲其他国家，它每年带回本国的这种金属，远远多于它运出的数量。这一反对意见和答辩都以我刚才考察过的流行观念为依据。因此，没有必要再对其中任何一方多说什么。由于每年向东印度群岛输出白银，欧洲的银制餐具可能比原本会有的价格略贵，而铸造的银币所能购买的劳动和商品数量可能都更多。前一种影响是很小的损失，后一种影响是很小的利益；两者都太无足轻重，不值得公众给予任何关注。与东印度群岛的贸易为欧洲的商品，或者说几乎等同于此，为用这些商品购得的金银开辟了市场，因而必然有增加欧洲商品年产量、进而增加欧洲实际财富和收入的趋势。迄今为止，它使这些产量、财富和收入增加得如此之少，很可能是由于它处处受到的限制。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p34",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1191"
+      },
+      "contentHash": "081231163550cc6be1a0e37b289c84c9ac9a92afc09c50f099fb0e5ebf73c1d1",
+      "text": "财富在于货币、或在于金银这一流行观念，我认为有必要加以全面考察，尽管这样做可能有流于冗长之虞。正如我已经指出的，在日常语言中，货币往往意味着财富；而这种表达上的歧义，使这一流行观念变得如此为我们所熟悉，以至于即使那些确信其荒谬的人，也很容易忘记自己的原则，并在推理过程中把它当作确定无疑的真理。英格兰一些最优秀的商业论著作者开篇便指出，一国的财富不仅在于其金银，而且在于其土地、房屋和各种不同的可消费物品。然而，在他们的推理过程中，土地、房屋和可消费物品似乎从记忆中消失了，而其论证的主旨往往以一切财富都在于金银为前提，并认为增加这些金属是国家产业和商业的重大目标。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p35",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1192"
+      },
+      "contentHash": "d5f513dd3ba42e9f3adb5d9ddeb84fb4f96b579c7db63522c68f14688dd3df17",
+      "text": "然而，一旦确立了以下两个原则，即财富在于金银，而没有矿山的国家只能通过贸易差额，或通过使出口价值大于进口价值，才能获得这些金属，那么，政治经济学的重大目标就必然变成尽可能减少供国内消费的外国货物的输入，并尽可能增加国内产业产物的输出。因此，它使国家富裕的两大手段，就是限制输入和奖励输出。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p36",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1193"
+      },
+      "contentHash": "1d79ca927bb31d51dbcbaf9eb5852e668c71c5db5f372f96e9ae8b1cc1b49eb2",
+      "text": "对输入的限制有两种。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p37",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1194"
+      },
+      "contentHash": "ae612310ff71967c8d6e1ec0d2ee384e2acd2d2ae5f181c9b7ae4f490fef26e7",
+      "text": "第一，对任何国家输入的、国内能够生产的供国内消费的外国货物加以限制。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p38",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1195"
+      },
+      "contentHash": "f0ab121c1c46a7ce2b557fb249eb802eea39e4ce4c0cfeb4835b058d4f2418d0",
+      "text": "第二，对从那些被认为与本国贸易差额不利的特定国家输入的几乎所有种类货物加以限制。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p39",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1196"
+      },
+      "contentHash": "14d120c8d4f318d746fba66d14430139e0d9b2c46a135186c5855ee9d496e97c",
+      "text": "这些不同的限制，有时采取高额关税的形式，有时采取绝对禁止的形式。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p40",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1197"
+      },
+      "contentHash": "9b63cb63ebc7a2cc91c671e931d1aedcdef428a96dec3885ea7eb1e79cfc126d",
+      "text": "对输出的奖励，有时通过退税，有时通过奖金，有时通过与外国订立有利的通商条约，有时通过在遥远国家建立殖民地来实行。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p41",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1198"
+      },
+      "contentHash": "f77834e546667d798ae912f1ac1f5daf3ca1ba0746000432b8916bedf7d35191",
+      "text": "退税在两种不同情况下给予。国内制成品如须缴纳任何关税或消费税，在输出时往往退还全部或一部分税款；负有税款的外国货物如果为再输出而输入，在这种输出发生时，有时也退还全部或一部分税款。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p42",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1199"
+      },
+      "contentHash": "f72eeba0fe4909f98fb4cc2cc811d927cdda280bd1da1d8dfaa77058df477d25",
+      "text": "给予奖金，是为了鼓励某些新兴制造业，或其他种类中被认为值得特别扶持的产业。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p43",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1200"
+      },
+      "contentHash": "33e2b2346e2f297d967e1b186055302ff97d5ecde681a841eb624b900c542c7a",
+      "text": "通过有利的通商条约，为本国货物和商人在某个外国取得超过该国给予其他国家货物和商人的特殊特权。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p44",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1201"
+      },
+      "contentHash": "59fa9bf46e500b67154be827633dd4d11e67e2a6485c9e4ed7790849ba2efb3e",
+      "text": "通过在遥远国家建立殖民地，为建立殖民地的国家的货物和商人取得的，往往不仅是特殊特权，而且是垄断权。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c1.p45",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1202"
+      },
+      "contentHash": "b2c63225ef6a650b6a9e2dea4b0ae3a80a8ff52c1e949e15b30fe4df80058c17",
+      "text": "上述两种输入限制，加上这四种输出奖励，构成了商业体系企图通过扭转贸易差额使之有利于本国，从而增加任何国家金银数量的六种主要手段。我将在各自专门的一章中逐一考察这些手段，不再过多讨论它们被认为具有的把货币引入国内的趋势，而主要考察每一种手段可能对本国产业年产物产生何种影响。按照它们具有增加还是减少这种年产物价值的趋势，它们显然必定具有增加还是减少该国实际财富和收入的趋势。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    }
+  ]
+}

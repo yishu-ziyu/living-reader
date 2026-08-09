@@ -160,6 +160,15 @@ describe("StepFun realtime protocol", () => {
     ).toBeNull();
   });
 
+  it("accepts a source snapshot without an unverified PDF mapping", () => {
+    expect(
+      parseVoiceSourceSnapshot({ ...sourceSnapshot, pdfPages: [] }),
+    ).toMatchObject({
+      sourceId: sourceSnapshot.sourceId,
+      pdfPages: [],
+    });
+  });
+
   it("fails closed for arbitrary commands and oversized or malformed snapshots", () => {
     expect(parseVoiceClientCommand({ type: "session.update" })).toBeNull();
     expect(

@@ -1,0 +1,600 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "locale": "zh-CN",
+  "chapterId": "smith.b2.c5",
+  "translations": [
+    {
+      "sourceId": "smith.b2.c5.p1",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1045"
+      },
+      "contentHash": "c2a51cc7d1cfb56095186ec53c1e60eb84fedd2474d73c77778c3440464f26ee",
+      "text": "虽然一切资本都只用于维持生产性劳动，但等额资本所能推动的这种劳动的数量，却因其用途不同而有极大差异；这些用途给一国土地和劳动的年产物所增加的价值也是如此。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p2",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1046"
+      },
+      "contentHash": "abee51ff8e96143bf124b0bb0b7b121042bde5e9f07fc3f5c0c6cfeade868ad4",
+      "text": "资本可以按四种不同方式使用：第一，用来取得社会每年使用和消费所需的原生产物；第二，用来制造和加工这种原生产物，使之适于立即使用和消费；第三，把原生产物或制成品从其充裕的地方运往需要它们的地方；最后，把二者的特定份额分成适合需要者不时需求的小份。所有从事土地、矿山或渔场改良或经营者的资本，都按第一种方式使用；所有制造业主的资本，都按第二种方式使用；所有批发商人的资本，都按第三种方式使用；所有零售商人的资本，则按第四种方式使用。很难设想有哪一种资本用途不能归入这四种方式中的某一种。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p3",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1047"
+      },
+      "contentHash": "7e8180373c671347809773167e152a3d45d606bf61efa9a44957c79bdbe78420",
+      "text": "这四种资本使用方式中的每一种，对于其他三种方式的存在或扩展，或者对于社会的一般便利，都是必不可少的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p4",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1048"
+      },
+      "contentHash": "6feea20959d92e7f521f0d72ac8663463946797e124c37bb61034ab8fd81219c",
+      "text": "如果没有资本用于提供达到一定充裕程度的原生产物，任何种类的制造业和贸易都不可能存在。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p5",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1049"
+      },
+      "contentHash": "768115397d9a491528abb8673e66e3434893187b6d565724e82cb4bc0f4613dc",
+      "text": "原生产物中，有一部分在适于使用和消费之前需要大量加工；如果没有资本用于加工这部分原生产物，它或者根本不会被生产出来，因为不会有人需要它；或者即使自然产生，也不会有任何交换价值，因而不能给社会财富增加任何东西。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p6",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1050"
+      },
+      "contentHash": "21a7886b1f2fa8c04afa53a767cd9c97d5b0272d1f4ef37142f7eef00c8bb6eb",
+      "text": "如果没有资本用来把原生产物或制成品从其充裕的地方运往需要它们的地方，那么二者的产量都只能限于邻近地区消费所必需的数量。商人的资本用一地的剩余产物交换另一地的剩余产物，从而既鼓励两地的勤劳，也增加两地的享受。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p7",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1051"
+      },
+      "contentHash": "27699af9da94bc6f7205448bffad489f838b90360541a4c9df31cc5e13ae1f9a",
+      "text": "如果没有资本用来把原生产物或制成品的某些部分拆分成适合需要者不时需求的小份，每个人都将不得不购买超过眼前所需数量的货物。例如，如果没有屠户这种行业，每个人一次就不得不购买一整头牛或一整只羊。这对富人通常很不方便，对穷人就更不方便。如果一个贫穷工人不得不一次购买一个月或六个月的食物，他就会被迫把自己的资财中原来作为资本用于职业工具或店铺器具、能够给他带来收入的很大一部分，转入留供即时消费、不能给他带来收入的那部分资财。对这种人来说，再没有什么比能够按自己的需要逐日、甚至逐时购买生活资料更方便的了。这样，他便能把几乎全部资财用作资本，从而完成价值更大的工作；他以这种方式取得的利润，远远足以补偿零售商人的利润加在货物价格上的额外部分。一些政治作家对店主和商贩的偏见完全没有根据。非但没有必要对他们征税或限制其人数，而且无论其人数增加到什么程度，都绝不会损害公众，尽管他们可能彼此损害。例如，在某一城镇能够售出的杂货数量，受该城镇及其邻近地区需求的限制。因此，能够用于杂货贸易的资本，不能超过购买这一数量的杂货所需的数额。如果这项资本分属两个不同的杂货商，他们之间的竞争就会促使双方都比资本只掌握在一人手中时卖得更便宜；如果分属二十人，他们的竞争就会相应更加激烈，而他们为抬高价格而联合起来的可能性也会相应更小。他们的竞争或许会使其中一些人破产；但照管此事是有关当事人自己的事情，尽可放心交由他们自行判断。这种竞争绝不会损害消费者或生产者；相反，与整个行业被一两个人垄断时相比，它必然会促使零售商人卖得更便宜、买得更贵。他们中有些人或许有时会诱骗意志薄弱的顾客购买并不需要的东西。不过，这种弊害太不重要，不值得公众关注，而且限制他们的人数也未必能够防止这种弊害。举一个最容易引起疑虑的例子来说，并不是酒馆众多导致平民普遍嗜酒；相反，是由其他原因产生的这种嗜好必然使众多酒馆有生意可做。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p8",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1052"
+      },
+      "contentHash": "df104984338632bccf4a30ee85c43d3a0cd6be3021a9efd7d9ff67842d3fca89",
+      "text": "资本按这四种方式中的任何一种使用的人，本身都是生产性劳动者。他们的劳动在得到适当指导时，会固定并实现在其所施加的对象或可出售的商品上，而且通常至少会把相当于他们自身维持和消费费用的价值加到商品价格上。农场主、制造业主、商人和零售商人的利润，都来自前两者生产、后两者买卖的货物的价格。不过，等额资本分别按这四种不同方式使用，会直接推动数量极不相同的生产性劳动，并且也会以极不相同的比例，增加资本所属社会的土地和劳动的年产物的价值。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p9",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1053"
+      },
+      "contentHash": "056c0e858884ca4bab3f28b9baf3550575d40dcd38a8c0ea23484fd4993b9b76",
+      "text": "零售商人的资本连同其利润一起，补偿他向其购买货物的商人的资本，从而使后者能够继续经营。零售商人本人是这项资本直接雇用的唯一生产性劳动者。其用途给社会土地和劳动的年产物所增加的全部价值，就在于他的利润。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p10",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1054"
+      },
+      "contentHash": "a2e936c7cf253c344a27a08dae5f2ebc3950d1625a47588e60848a72adb42d9a",
+      "text": "批发商人的资本连同相应的利润一起，补偿他向其购买所经营的原生产物和制成品的农场主和制造业主的资本，从而使他们能够继续各自的行业。他主要通过这种服务，间接帮助维持社会的生产性劳动，并增加其年产物的价值。他的资本还雇用把货物从一地运往另一地的水手和运输工人，并且不仅以他的利润，还以这些人的工资的价值，增加这些货物的价格。这就是它直接推动的全部生产性劳动，也是它直接加到年产物上的全部价值。在这两个方面，它的作用都大大超过零售商人资本的作用。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p11",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1055"
+      },
+      "contentHash": "eebb688f578c4ef90818f65cea0edc43aa3a5f4ddb3dd4d45a40a56d8a18b648",
+      "text": "制造业主的一部分资本，作为固定资本用于他的职业工具，并连同其利润一起，补偿他向其购买这些工具的其他工匠的资本。他的一部分流动资本用于购买材料，并连同相应的利润一起，补偿他向其购买材料的农场主和矿主的资本。但其中很大一部分，总是每年或在短得多的期限内，分配给他所雇用的不同工人。它以这些工人的工资，以及他们的雇主从经营中使用的全部工资、材料和职业工具资本上所得的利润，增加这些材料的价值。因此，与任何批发商人手中的等额资本相比，它直接推动的生产性劳动数量大得多，加到社会土地和劳动的年产物上的价值也大得多。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p12",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1056"
+      },
+      "contentHash": "7969cb2e7712e9982271dd07269413edfedc87370f16dd5bfb6c149e9c14ca49",
+      "text": "任何等额资本所推动的生产性劳动数量，都不及农场主的资本。他的劳动仆役不仅是生产性劳动者，他的役畜也是生产性劳动者。在农业中，自然也与人一同劳动；自然的劳动虽然不需任何费用，其产物却和最昂贵工人的产物一样具有价值。农业最重要的作业，与其说是为了增加自然的生产力——尽管它们也确实增加这种生产力——不如说是为了把自然的生产力引向生产对人最有用的植物。一个长满荆棘和蒺藜的田地，所生产的植物数量，往往可以同耕作得最好的葡萄园或谷田一样多。栽种和耕作往往更多是在调节、而不是激发自然活跃的生产力；而在这些作业完成全部劳动之后，总有很大一部分工作仍要由自然来做。因此，从事农业的劳动者和役畜，不仅像制造业工人一样，使一项等于其自身消费额或雇用他们的资本连同资本所有者利润的价值再生产出来，而且还使一项大得多的价值再生产出来。除农场主的资本及其全部利润之外，他们通常还使地主的地租再生产出来。这种地租可以看作那些自然力的产物，而地主把这些自然力的使用权借给了农场主。地租的大小取决于人们所认为的这些自然力的强弱，换言之，取决于人们所认为的土地的天然肥力或改良后的肥力。它是在扣除或补偿一切可视为人的劳动的东西之后，所剩余的自然的劳动。它很少低于全部产物的四分之一，而且往往超过三分之一。制造业中使用的任何等量生产性劳动，都绝不可能带来如此巨大的再生产。在制造业中，自然什么也不做，一切都由人来做；而再生产量必定总是与实现再生产的作用者的力量成比例。因此，用于农业的资本不仅比用于制造业的任何等额资本推动更多的生产性劳动，而且相对于它所雇用的生产性劳动数量而言，它给一国土地和劳动的年产物、给其居民的真实财富和收入增加的价值也大得多。在资本可以采用的一切使用方式中，这种方式对社会远为有利。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p13",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1057"
+      },
+      "contentHash": "dec73eef643a4e7adef83d6738e85e5c7337a870c067337cd5f73e288aa29548",
+      "text": "任何社会中用于农业和零售贸易的资本，都必须始终留在该社会之内。它们的用途几乎局限于一个确切地点，即农场和零售商人的店铺。一般来说，它们也必须属于居住在该社会的成员，尽管此点有一些例外。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p14",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1058"
+      },
+      "contentHash": "9c5a423b8cb2dd67ea0e2579d35386fe542458ebadb3ddac65c69f67d5a39d62",
+      "text": "相反，批发商人的资本似乎在任何地方都没有固定或必需的所在地，而可以逐地游移，哪里能够买得便宜或卖得昂贵，就移到哪里。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p15",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1059"
+      },
+      "contentHash": "d6c050829d5a572c16e9f1bbef174ae7aa1867f1ad683eb0e344fbd3853c57c5",
+      "text": "制造业主的资本无疑必须留在制造业经营之地；但这个地方在哪里，并不总是必然确定的。它往往可以既远离材料生长之地，也远离制成品消费之地。里昂距离其制造业材料的供应地和产品的消费地都很远。西西里的时髦人士所穿的丝绸，是其他国家用西西里本地出产的原料制成的。西班牙的一部分羊毛在大不列颠制成呢绒，其中一部分呢绒随后又运回西班牙。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p16",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1060"
+      },
+      "contentHash": "7ab4096e706b100ef7ea00c38b12c4461cc119b883d3700eaa8698eccc30de33",
+      "text": "用其资本输出任何社会剩余产物的商人究竟是本国人还是外国人，是无关紧要的。如果他是外国人，该社会生产性劳动者的人数必然只比他是本国人时少一人，其年产物的价值也只少这一人的利润。他所雇用的水手或运输工人，仍然可以如同他是本国人时一样，无差别地属于他的国家、该社会的国家或某个第三国。外国人的资本同本国人的资本一样，通过把该社会的剩余产物换成其国内有需求的东西，赋予这种剩余产物以价值。它同样有效地补偿生产这种剩余产物者的资本，并同样有效地使他能够继续经营；批发商人的资本主要正是通过这种服务，帮助维持其所属社会的生产性劳动，并增加该社会年产物的价值。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p17",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1061"
+      },
+      "contentHash": "dd468ccd667cec8dcbf2ac2b6ba04cef293534e86828734a20ba7be6a5ed9624",
+      "text": "制造业主的资本留在国内更为重要。它必然会推动更大数量的生产性劳动，并给社会土地和劳动的年产物增加更大的价值。不过，即使它不留在国内，也可以对该国十分有用。英国制造业主每年加工从波罗的海沿岸进口的亚麻和大麻，他们的资本对于生产这些原料的国家无疑十分有用。这些原料是那些国家剩余产物的一部分，如果每年不拿来交换当地有需求的东西，就不会有任何价值，而且不久便会停止生产。输出这些原料的商人补偿生产者的资本，从而鼓励他们继续生产；英国制造业主又补偿这些商人的资本。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p18",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1062"
+      },
+      "contentHash": "1f4d7d9a76171615178bb0ba37b984e91e80d42f6350809f1f946e6523bf4d2f",
+      "text": "一国与一个人一样，往往可能没有足够的资本，既改良和耕种其全部土地，又把土地的全部原生产物制造和加工成适于立即使用和消费的产品，还把原生产物或制成品的剩余部分运往遥远的市场，在那里换取国内有需求的东西。大不列颠许多不同地区的居民，没有足够的资本改良和耕种其全部土地。苏格兰南部各郡的大部分羊毛，由于当地缺乏加工这些羊毛的资本，经过崎岖道路上的长途陆运之后，在约克郡制成呢绒。大不列颠有许多制造业小城镇，其居民没有足够的资本，把他们自身勤劳的产物运往对这些产物有需求和消费的遥远市场。他们中间即使有商人，严格说来也不过是居住在某些较大商业城市的富有商人的代理人。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p19",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1063"
+      },
+      "contentHash": "b28ece9a43913620778d58028fe313b561d8cc73df797429e7c6dd0e52b69127",
+      "text": "当任何国家的资本不足以兼顾这三个目的时，用于农业的份额越大，它在国内所推动的生产性劳动数量就越大；它的用途给社会土地和劳动的年产物所增加的价值也越大。仅次于农业，用于制造业的资本所推动的生产性劳动数量最多，给年产物增加的价值也最大。用于出口贸易的资本，在这三者中作用最小。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p20",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1064"
+      },
+      "contentHash": "7aa928838365de86b3c9b6fe47d40026ab4cf6bc284a3ad1553478bde6ae909e",
+      "text": "诚然，没有足够资本兼顾这三个目的的国家，尚未达到它似乎天然注定要达到的富裕程度。不过，以不足的资本过早地试图兼顾三者，对于一个社会来说，肯定不是取得足够资本的最短途径，正如对于一个人来说也不是一样。一国全体个人的资本，和单个人的资本一样都有其限度，只能完成某些特定的目的。一国全体个人的资本，也和单个人的资本一样，是通过他们不断积累并把从收入中节省的一切加到资本中而增加的。因此，当资本按能给全国所有居民带来最大收入的方式使用时，它很可能增长得最快，因为居民由此能够实现最大限度的节省。但是，全国所有居民的收入必然与其土地和劳动的年产物的价值成比例。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p21",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1065"
+      },
+      "contentHash": "d7f57de0e67984b26207f6d5f83edaa060f708afa1f610a18e44e440857d90c6",
+      "text": "我们的美洲殖民地迅速走向财富和强盛，主要原因在于迄今它们几乎把全部资本都用于农业。除了必然伴随农业进步而产生、并由每个家庭的妇女儿童从事的家庭制造业和较粗糙的制造业之外，它们没有制造业。美洲的出口贸易和沿海贸易，大部分都由居住在大不列颠的商人的资本经营。甚至有些殖民地，尤其是弗吉尼亚和马里兰，用来零售货物的商店和货栈，也有许多属于居住在母国的商人；这构成了少数几个社会的零售贸易由非居住成员的资本经营的事例之一。假如美洲人通过联合或任何其他形式的强制手段停止进口欧洲制成品，从而把垄断权授予本国能够制造同类货物的人，并把相当大一部分资本转用于这种用途，他们非但不会加速其年产物价值的进一步增加，反而会延缓这种增加；非但不会促进本国走向真实财富和强盛，反而会阻碍这一进程。假如他们试图以同样方式把全部出口贸易垄断在自己手中，情形就更会如此。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p22",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1066"
+      },
+      "contentHash": "81f7dc7c608db0eaf53e4297a6d4692b84301376fa2474a1c8916385c4ad752d",
+      "text": "事实上，人类繁荣的进程似乎几乎从未持续得如此长久，足以使任何大国取得兼顾这三个目的的资本；除非我们也许相信关于中国、古埃及和古代印度斯坦的财富和开垦状况的种种惊人记载。根据所有记载，这三个国家是世上有史以来最富裕的国家，但它们主要以农业和制造业方面的优势著称。它们在对外贸易方面似乎并不突出。古埃及人对海洋有一种迷信的厌恶；印度人中盛行着一种近乎相同的迷信；中国人在对外贸易方面也从未出类拔萃。这三个国家剩余产物的大部分，似乎一向由外国人输出；外国人用他们发现在当地有需求的其他东西来交换，所用的往往是金银。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p23",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1067"
+      },
+      "contentHash": "222d6647c4e0c5171084e4e7754a2bbb35b71cce1cda9833abfeb6de41c6b00f",
+      "text": "因此，在任何国家，同一笔资本所推动的生产性劳动数量是较大还是较小，给该国土地和劳动的年产物增加的价值是较多还是较少，都取决于它按何种不同比例用于农业、制造业和批发贸易。而且，它用于不同种类的批发贸易时，所产生的差异也非常大。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p24",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1068"
+      },
+      "contentHash": "7e5d5c7da62a19806d5851d38707840b7ccfaa8b961cdbe8657546135c974b62",
+      "text": "一切批发贸易，即一切为了再行批发而进行的购买，都可以归为三种不同的类型：国内贸易、对外消费贸易和转口贸易。国内贸易，是在同一国家的一个地区购买该国劳动的产品，再到另一个地区出售。它包括内陆贸易和沿海贸易。对外消费贸易，是购买外国货物供国内消费。转口贸易，是经办外国各国之间的商业，即把一国的剩余产品运往另一国。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p25",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1069"
+      },
+      "contentHash": "7a1898aa72e088e92f5a50a1ea8ca096f80544ebc6aea3b5bd10a9edec60b8db",
+      "text": "用于在国内一个地区购买该国劳动的产品，以便到另一个地区出售的资本，通常每进行一次这样的经营，便补偿两笔不同的资本；这两笔资本原先都用于该国的农业或制造业，因而使它们能够继续从事原来的用途。当这种资本从商人居住地运出一定价值的商品时，通常至少会带回同等价值的其他商品作为回报。当这两者都是国内劳动的产品时，每进行一次这样的经营，就必然补偿两笔不同的资本；这两笔资本原先都用于维持生产性劳动，因而使它们能够继续提供这种维持。把苏格兰制造品运往伦敦，再把英格兰谷物和制造品运回爱丁堡的资本，每进行一次这样的经营，就必然补偿两笔原先都用于大不列颠农业或制造业的英国资本。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p26",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1070"
+      },
+      "contentHash": "9f0dd63998a37a134e83e9ee414913ac45d0f83ba9f402abf4d5d51db86f54ce",
+      "text": "用于购买外国货物供国内消费的资本，如果这项购买以国内劳动的产品支付，那么每进行一次这样的经营，也会补偿两笔不同的资本；但其中只有一笔用于维持国内劳动。把英国货物运往葡萄牙，再把葡萄牙货物运回大不列颠的资本，每进行一次这样的经营，只补偿一笔英国资本。另一笔是葡萄牙资本。因此，即使对外消费贸易的资本周转与国内贸易的一样迅速，其中所用的资本对本国劳动或生产性劳动所给予的鼓励也只有后者的一半。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p27",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1071"
+      },
+      "contentHash": "afce3fd531ce0fa4d304f55d9ea00dada0d5238dece2787f8668b298e234ae42",
+      "text": "然而，对外消费贸易的资本周转很少能像国内贸易那样迅速。国内贸易的资本通常不到一年就能收回，有时一年能收回三四次。对外消费贸易的资本很少能在一年之内收回，有时要过两三年才能收回。因此，一笔用于国内贸易的资本，有时已经经营十二次，也就是运出并收回十二次，而一笔用于对外消费贸易的资本还没有经营一次。所以，如果两笔资本相等，前者对本国劳动给予的鼓励和维持将是后者的二十四倍。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p28",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1072"
+      },
+      "contentHash": "d9266c555f4b89917976df0f45d8d1d4f0f1eb4ad7d9aaece69a2cafca879230",
+      "text": "供国内消费的外国货物，有时可能不是以国内劳动的产品购买，而是以另一些外国货物购买。不过，后一些外国货物必定是直接以国内劳动的产品购买的，或者是以另一些由这种产品购得的东西购买的；因为除战争和征服的情形外，外国货物只能以国内生产的某种东西来交换取得，不论是直接交换，还是经过两次或更多次不同的交换。因此，用于这种迂回的对外消费贸易的资本，其作用在各方面都与用于最直接的同类贸易的资本相同，所不同的只是最终回款很可能还要更迟，因为它必须取决于两三项彼此不同的对外贸易的回款。如果用弗吉尼亚的烟草购买里加的亚麻和大麻，而这种烟草是用英国制造品购得的，那么商人必须等待两项彼此不同的对外贸易收回资本，才能用同一笔资本重新购买同样数量的英国制造品。如果弗吉尼亚的烟草不是用英国制造品购买，而是用牙买加的糖和朗姆酒购买，而这些糖和朗姆酒又是用英国制造品购得的，那么他就必须等待三项贸易的资本收回。如果这两三项彼此不同的对外贸易恰好由两三个不同的商人经营，其中第二个商人购买第一个商人进口的货物，第三个商人又购买第二个商人进口的货物，以便再次出口，那么在这种情况下，每个商人收回自己资本的速度确实会更快；但投入这项贸易的全部资本最终收回的速度仍会一如既往地缓慢。投入这种迂回贸易的全部资本属于一个商人还是三个商人，对国家而言没有任何区别，尽管对各个商人而言可能有所不同。在这两种情况下，为了用一定价值的英国制造品换取一定数量的亚麻和大麻，所须投入的资本都要比制造品与亚麻和大麻直接交换时所需的资本大两倍，即达到三倍。因此，用于这种迂回的对外消费贸易的全部资本，通常会比用于较为直接的同类贸易的等额资本，对本国生产性劳动给予较少的鼓励和维持。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p29",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1073"
+      },
+      "contentHash": "8cbd7164c5b346ee812eb019d0f8598295dd240020e133aa06fc255d91e9be9c",
+      "text": "无论用来购买供国内消费的外国货物的是哪一种外国商品，都不会使这种贸易的性质，或它对经营该贸易的国家的生产性劳动所能给予的鼓励和维持，产生任何实质性差别。例如，如果这些货物是用巴西的黄金或秘鲁的白银购买的，那么这些金银也必定像弗吉尼亚的烟草一样，是用某种本国劳动的产品购买的，或者是用另一些由这种产品购得的东西购买的。因此，就本国的生产性劳动而言，借助金银进行的对外消费贸易，具有任何同样迂回的对外消费贸易的一切优点和一切不便，而且它补偿直接用于维持这种生产性劳动的资本时，速度也会同样快或同样慢。它似乎甚至比任何其他同样迂回的对外贸易多一个优点。这些金属体积小而价值高，因而把它们从一地运往另一地，费用低于几乎任何其他同等价值的外国货物。它们的运费低得多，保险费并不更高；此外，没有什么货物比它们更不容易在运输中受损。因此，通过金银作媒介，往往可以用较少数量的国内劳动产品，购买同等数量的外国货物，而通过任何其他外国货物作媒介则做不到这一点。用这种方式，往往能够比用任何其他方式更充分并以更少的费用满足本国的需求。至于这种贸易不断输出这些金属，是否可能以其他方式使经营该贸易的国家陷于贫困，我以后将有机会详加考察。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p30",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1074"
+      },
+      "contentHash": "a4b2aeacfac1c64872bf318f0dab08dada5f27c9aece47e444dee1141871dd06",
+      "text": "一国资本中用于转口贸易的那一部分，完全不再用于维持该国的生产性劳动，而被用来维持某些外国的生产性劳动。尽管它每经营一次可能补偿两笔不同的资本，但这两笔资本都不属于该国。荷兰商人的资本把波兰的谷物运往葡萄牙，再把葡萄牙的水果和葡萄酒运回波兰，每进行一次这样的经营，便补偿两笔资本，而这两笔资本都不曾用于维持荷兰的生产性劳动；其中一笔用于维持波兰的生产性劳动，另一笔则用于维持葡萄牙的生产性劳动。只有利润定期流回荷兰，并构成这种贸易必然给该国土地和劳动的年产物带来的全部增加。不过，如果某一国家的转口贸易确实使用该国的船舶和水手经营，那么投入其中用来支付运费的那部分资本，就会分配给该国一定数量的生产性劳动者，并使他们活动起来。事实上，凡在转口贸易中占有相当份额的国家，几乎都是以这种方式经营的。这种贸易本身很可能正是由此得名，因为这些国家的人民充当了其他国家的承运人。不过，以这种方式经营似乎并不是这种贸易性质上的必要条件。例如，一个荷兰商人可以投入资本，经办波兰与葡萄牙之间的商业，把一国的部分剩余产品运往另一国，但不用荷兰船舶，而用英国船舶。可以推想，他在某些特定场合确实这样做。然而，正是因为上述原因，人们认为转口贸易对大不列颠这样的国家特别有利，因为该国的防御和安全取决于其水手和船舶的数量。但是，同一笔资本无论用于对外消费贸易，甚至用于由沿海船舶经营的国内贸易，都可以像用于转口贸易一样雇用同样多的水手和船舶。任何一笔特定资本所能雇用的水手和船舶数量，并不取决于贸易的性质，而是部分取决于货物体积同其价值的比例，部分取决于运送货物的港口之间的距离；其中主要取决于前一种情况。例如，从纽卡斯尔到伦敦的煤炭贸易所使用的船舶，比英格兰全部转口贸易所使用的还要多，尽管两港之间的距离并不很远。因此，用非常的鼓励手段，迫使一国资本中超过自然流入份额的更多资本进入转口贸易，并不一定总会增加该国的船舶。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p31",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1075"
+      },
+      "contentHash": "f3f775fda4b243bce1b923f44c7b730ff9499bca792e1d65907b227e6f447e67",
+      "text": "因此，用于一国国内贸易的资本，通常会比用于对外消费贸易的等额资本，鼓励和维持该国更多的生产性劳动，并使其年产物的价值增加得更多；而用于对外消费贸易的资本，在这两方面又比用于转口贸易的等额资本更有优势。每个国家的财富，以及其权力中取决于财富的那部分权力，必定总是与其年产物的价值成比例；一切税收最终都必须从这一来源支付。然而，每个国家政治经济学的重大目标，就是增加该国的财富和权力。因此，它不应使对外消费贸易优先于国内贸易，也不应给予前者更多的鼓励；同样，也不应使转口贸易优先于另外两种贸易中的任何一种，或给予它更多的鼓励。它既不应强迫，也不应诱使本国资本中超过自行自然流入份额的更多资本进入后两种渠道中的任何一种。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p32",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1076"
+      },
+      "contentHash": "5bb2c4bd09889419b1ee58a1a72784f1a28bc129464b3e87cfa9988cd8275e30",
+      "text": "不过，当事物的发展不受任何约束或强制而自然引入这些不同贸易部门中的任何一个时，每一个部门不仅有利，而且是必要和不可避免的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p33",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1077"
+      },
+      "contentHash": "2fb40afb1a42e6fe027f90fb42ccb3ee4a6b8f93cc6f1cdd4fc0e466eb2a290b",
+      "text": "当某一特定产业部门的产品超过本国需求所需的数量时，剩余部分就必须运往国外，换取国内有需求的某种东西。没有这种出口，本国的一部分生产性劳动就必须停止，其年产物的价值也会减少。大不列颠的土地和劳动通常生产的谷物、毛织品和五金制品，超过国内市场需求所需的数量。因此，其中的剩余部分必须运往国外，换取国内有需求的某种东西。只有通过这种出口，这些剩余产品才能获得足以补偿生产它们所需劳动和费用的价值。沿海地区和所有通航河流的两岸之所以是有利于产业发展的地点，只是因为它们便于把这类剩余产品出口并交换成当地需求更大的其他东西。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p34",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1078"
+      },
+      "contentHash": "c7c6d0c926c8a1f00e0e6d0ec28ff12ad980f3acd8012a4aabedab3cd72de57b",
+      "text": "当用国内劳动的剩余产品这样购得的外国货物超过国内市场的需求时，其中的剩余部分就必须再次运往国外，换取国内需求更大的某种东西。每年在弗吉尼亚和马里兰购买大约九万六千大桶烟草，所用的是英国劳动的一部分剩余产品。但大不列颠的需求所需的也许不超过一万四千大桶。因此，如果其余八万二千大桶不能运往国外，换取国内需求更大的某种东西，它们的进口就必须立即停止；与此同时，目前所有受雇生产每年用来购买这八万二千大桶烟草的货物的大不列颠居民，其生产性劳动也必须停止。这些货物是大不列颠土地和劳动产品的一部分；它们在国内没有市场，又失去了原有的国外市场，因而必定停止生产。因此，在某些场合，最迂回的对外消费贸易对于维持本国的生产性劳动及其年产物的价值，可能和最直接的对外消费贸易同样必要。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p35",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1079"
+      },
+      "contentHash": "8a084aa0e04b2e025205eba389cc77f516dea7c37c415cac4769954903018127",
+      "text": "当一国的资本总额增加到这种程度，以致无法全部用于供应该国的消费和维持该国的生产性劳动时，其中的剩余部分就会自然地涌入转口贸易，用来为其他国家履行同样的职能。转口贸易是国家极其富裕的自然结果和征象，但它似乎不是这种富裕的自然原因。那些倾向于对它给予特别鼓励的政治家，似乎把结果和征象误当成了原因。荷兰按国土面积和居民人数的比例来说，远为欧洲最富裕的国家，因而在欧洲转口贸易中也占有最大的份额。英格兰也许是欧洲第二富裕的国家，人们也认为它在这种贸易中占有相当大的份额；不过，通常被当作英格兰转口贸易的贸易，也许往往会被发现不过是迂回的对外消费贸易。在很大程度上，把东印度群岛、西印度群岛和美洲的货物运往欧洲各个市场的贸易，便属于这种情况。这些货物通常要么直接以英国劳动的产品购买，要么以另一些用这种产品购得的东西购买，而这些贸易的最终回货通常都在大不列颠使用或消费。使用英国船舶在地中海各港口之间经营的贸易，以及英国商人在印度各港口之间经营的某些同类贸易，也许构成了严格意义上的大不列颠转口贸易的主要部门。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p36",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1080"
+      },
+      "contentHash": "0db1ae284b695ac05f2244a4100426be6c9782044bdf462d85054c7e4c4897b1",
+      "text": "国内贸易的规模及其所能使用的资本，必然受国内所有相距遥远、需要彼此交换各自产品的地方的剩余产品价值所限制。对外消费贸易的规模及其所能使用的资本，受全国剩余产品的价值以及这些产品所能购买之物的价值所限制。转口贸易的规模及其所能使用的资本，则受世界各个不同国家剩余产品的价值所限制。因此，与另外两种贸易相比，它可能达到的规模在某种意义上是无限的，能够吸收最大数量的资本。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c5.p37",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1081"
+      },
+      "contentHash": "4df0e3db8327afab77ccf37d79229bb3bea4f87617b982cb7108088292ff84a0",
+      "text": "对自身私人利润的考虑，是决定任何资本所有者把资本用于农业、制造业，还是批发或零售贸易某一特定部门的唯一动机。资本采用上述不同方式中的这一种或那一种，可能推动数量不同的生产性劳动，并可能给社会土地和劳动的年产物增加不同的价值，但这些问题从来不会进入他的考虑。因此，在农业是一切用途中利润最高，而务农和改良土地是通往巨额财富最直接道路的国家，个人资本自然会以最有利于整个社会的方式使用。然而，在欧洲任何地区，农业利润似乎都不优于其他用途的利润。诚然，近几年来，欧洲各地的筹划者一直用种种极其诱人的描述取悦公众，宣称耕种和改良土地可以获得巨额利润。无须具体讨论他们的计算，一个非常简单的观察就足以使我们确信，他们的结论必定是错误的。我们每天都能看到有人通过商业和制造业，在一生之内获得巨额财富，而且这些财富往往从很少的资本起步，有时甚至没有资本。也许在本世纪迄今为止的欧洲，还不曾出现过一个在同样时间内以这样的资本通过农业获得这种财富的事例。然而，在欧洲所有大国，仍有许多良田尚未开垦，而已经开垦的土地大部分远未改良到其所能达到的程度。因此，农业几乎到处都能吸收比迄今投入其中的资本多得多的资本。欧洲政策中的哪些情况，使城市中经营的行业比乡村中经营的农业享有如此巨大的优势，以致私人往往发现，把资本用于亚洲和美洲最遥远的转口贸易，比用于改良和耕种自己邻近地区最肥沃的田地更有利，我将在以下两卷中努力详加说明。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    }
+  ]
+}

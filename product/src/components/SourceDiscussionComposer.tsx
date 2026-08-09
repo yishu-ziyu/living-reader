@@ -5,18 +5,31 @@ import { classifyIntent } from "@/modules/agent-os";
 import { useReaderThinking } from "./ReaderThinkingProvider";
 import { useVoiceInputPort } from "./VoiceInputProvider";
 
+const LEGACY_TEST_SUFFIX_BY_SOURCE_ID: Readonly<Record<string, string>> = {
+  "smith.b1.c1.division": "division",
+  "smith.b1.c3.market_extent": "market",
+};
+
+export function sourceTestSuffix(sourceId: string): string {
+  return (
+    LEGACY_TEST_SUFFIX_BY_SOURCE_ID[sourceId] ??
+    sourceId.replace(/[^a-zA-Z0-9_-]/g, "-")
+  );
+}
+
 export function SourceDiscussionComposer({
   sourceId,
   label,
+  showStatus = true,
 }: {
   sourceId: string;
   label: string;
+  showStatus?: boolean;
 }) {
   const thinking = useReaderThinking();
   const voiceInput = useVoiceInputPort();
   const [question, setQuestion] = useState("");
-  const short =
-    sourceId.includes("division") ? "division" : "market";
+  const testSuffix = sourceTestSuffix(sourceId);
 
   const submitFinalText = async (text: string) => {
     const control = classifyIntent(text);
@@ -51,7 +64,7 @@ export function SourceDiscussionComposer({
   return (
     <div
       className="source-discussion"
-      data-testid={`source-discussion-${short}`}
+      data-testid={`source-discussion-${testSuffix}`}
       data-source-id={sourceId}
     >
       <label className="idea-composer-label">
@@ -61,11 +74,13 @@ export function SourceDiscussionComposer({
           onChange={(e) => setQuestion(e.target.value)}
           rows={2}
           placeholder={
-            short === "division"
+            testSuffix === "division"
               ? "例如：分工会让人更熟练吗？ / 明天天气怎么样"
-              : "例如：市场范围如何限制分工？"
+              : testSuffix === "market"
+                ? "例如：市场范围如何限制分工？"
+                : "例如：这段原文的关键判断是什么？"
           }
-          data-testid={`discussion-input-${short}`}
+          data-testid={`discussion-input-${testSuffix}`}
           disabled={!thinking.ready || thinking.status.kind === "busy"}
         />
       </label>
@@ -73,7 +88,7 @@ export function SourceDiscussionComposer({
         <button
           type="button"
           className="idea-submit"
-          data-testid={`discussion-ask-${short}`}
+          data-testid={`discussion-ask-${testSuffix}`}
           disabled={
             !thinking.ready ||
             !question.trim() ||
@@ -91,7 +106,7 @@ export function SourceDiscussionComposer({
         <button
           type="button"
           className="idea-secondary"
-          data-testid={`discussion-stop-${short}`}
+          data-testid={`discussion-stop-${testSuffix}`}
           disabled={!thinking.ready}
           onClick={async () => {
             setQuestion("");
@@ -103,7 +118,7 @@ export function SourceDiscussionComposer({
         <button
           type="button"
           className="idea-secondary"
-          data-testid={`discussion-continue-${short}`}
+          data-testid={`discussion-continue-${testSuffix}`}
           disabled={!thinking.ready || thinking.status.kind === "busy"}
           onClick={async () => {
             setQuestion("");
@@ -113,14 +128,16 @@ export function SourceDiscussionComposer({
           继续
         </button>
       </div>
-      <p
-        className="session-state-hint"
-        data-testid={`session-state-${short}`}
-        data-session-state={thinking.sessionState}
-      >
-        session: {thinking.sessionState}
-        {thinking.boundary.soft_return_declined ? " · 已关闭回引" : ""}
-      </p>
+      {showStatus ? (
+        <p
+          className="session-state-hint"
+          data-testid={`session-state-${testSuffix}`}
+          data-session-state={thinking.sessionState}
+        >
+          session: {thinking.sessionState}
+          {thinking.boundary.soft_return_declined ? " · 已关闭回引" : ""}
+        </p>
+      ) : null}
     </div>
   );
 }

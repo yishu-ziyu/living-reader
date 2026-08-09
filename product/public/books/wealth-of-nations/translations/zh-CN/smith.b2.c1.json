@@ -1,0 +1,504 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "locale": "zh-CN",
+  "chapterId": "smith.b2.c1",
+  "translations": [
+    {
+      "sourceId": "smith.b2.c1.p1",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_849"
+      },
+      "contentHash": "6cb12ac0bf83a53bee117fb2ac4d02fe91949f6b255ee75db976c9e29411b505",
+      "text": "当一个人拥有的资财只够维持他几天或几周的生活时，他很少想到从中取得任何收入。他尽可能节省地加以消费，并竭力通过自己的劳动，在它全部耗尽以前取得某种可以补充它的东西。在这种情况下，他的收入完全来自他的劳动。各国绝大部分劳动贫民都处于这种状态。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p2",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_850"
+      },
+      "contentHash": "37606e6186ed452986ec30b1a53d330257265ce400cc10b4413aff19fe6fa1e4",
+      "text": "但是，当他拥有足以维持数月或数年生活的资财时，他自然会设法从其中大部分取得收入，只留下在这项收入开始进来以前足以维持他眼前消费的数量。因此，他的全部资财分成两部分。他预期能给他带来这项收入的那一部分，称为他的资本。另一部分则供他眼前消费；它包括：第一，他的全部资财中原来为此目的保留的那一部分；或者第二，他无论从何种来源取得并逐渐进来的收入；或者第三，往年用上述两者中的任何一种购得、但尚未完全消费掉的物品，如一批衣服、家具之类。人们通常为自己的眼前消费而保留的资财，就存在于这三项中的一项、另一项或全部之中。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p3",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_851"
+      },
+      "contentHash": "c4e6d2405431ecaa5caa65337f083a40ecd84b697bb97ee149d473d1f807adfc",
+      "text": "资本可以用两种不同的方式来运用，以便给运用者带来收入或利润。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p4",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_852"
+      },
+      "contentHash": "069799f58282b3735f05e7e3f76b7b7ff4be088f80dca1ce65fd514a55fad7de",
+      "text": "第一，可以用来培育、制造或购买货物，再把它们出售以取得利润。以这种方式运用的资本，只要仍在运用者手中，或继续保持同一形态，就不会给他带来任何收入或利润。商人的货物在他将其卖成货币以前，不会给他带来任何收入或利润；而货币在再次换成货物以前，同样不会给他带来收入或利润。他的资本不断以一种形态离开他，又以另一种形态回到他手中；只有通过这种流通或连续的交换，它才能给他带来任何利润。因此，这种资本完全可以恰当地称为流动资本。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p5",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_853"
+      },
+      "contentHash": "8e3eca81d8a27e9083a099bcd4d502c73f263f3dcf9ff0e3f603e8c8cb831e8a",
+      "text": "第二，可以用来改良土地，购买有用的机器和生产工具，或用于诸如此类无须更换主人或进一步流通便能带来收入或利润的事物。因此，这种资本完全可以恰当地称为固定资本。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p6",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_854"
+      },
+      "contentHash": "a388588f53c7dc009d93b937cc042dc6150c052ad27d8f7ab8430e1e0a5e073b",
+      "text": "不同职业所使用的固定资本与流动资本之间，需要有很不相同的比例。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p7",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_855"
+      },
+      "contentHash": "e4606d5187c7120fe40bd7fd8b0d4a2e9c5427e3e162854f2af46a36cfc81cda",
+      "text": "例如，商人的资本完全是流动资本。除非把他的店铺或仓库也视为生产工具，否则他不需要任何机器或生产工具。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p8",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_856"
+      },
+      "contentHash": "8e371ed8fe3ade171fb5596f7a75707d2f086f7d443e4456345b799e3154d4ae",
+      "text": "每个手工业主或制造业主的资本，都必须有一部分固定在他的生产工具上。不过，这一部分在有些行业很小，在另一些行业却很大。裁缝师傅除了一包针以外，不需要别的生产工具。鞋匠师傅的工具略贵一些，尽管只贵一点点。织工师傅的工具则比鞋匠的贵得多。不过，所有这类手工业主的资本，远大部分都流动于工人的工资或原料的价格之中，并由制成品的价格连同利润一起偿还。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p9",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_857"
+      },
+      "contentHash": "94a274f9a6426973611dc9cb272632493394620293d1265719b9f937329d5825",
+      "text": "另一些作业则需要大得多的固定资本。例如，在大型炼铁厂中，熔炼矿石的熔炉、锻炉和轧条机，都是非耗费巨资不能建造的生产工具。在煤矿以及各种矿山中，为排水和其他用途所必需的机械，往往还要更加昂贵。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p10",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_858"
+      },
+      "contentHash": "7baa66e572f9e96dfb05d7f3e6eebc5e040ed010eaf07d892bbc095a4d09841c",
+      "text": "农场主用于农具的那部分资本是固定资本；用于劳动雇工的工资和生活供养的那部分，则是流动资本。他保有前者而从中取得利润，交出后者而从中取得利润。他的役畜的价格或价值，与农具的价格或价值一样，是固定资本；役畜的生活供养，与劳动雇工的生活供养一样，是流动资本。农场主通过保有役畜，并交出供养它们的物品来取得利润。买来育肥不是为了役使、而是为了出售的牲畜，其价格和饲养费用都是流动资本。农场主通过交出它们来取得利润。在畜牧地区，买进一群绵羊或一群牛，既不是为了役使，也不是为了出售，而是为了从它们的羊毛、乳汁和繁殖中取得利润，那么这些牲畜就是固定资本。利润是通过保有它们取得的。饲养它们的费用是流动资本。利润是通过交出这种资本取得的；它会以羊毛、乳汁和新生牲畜的价格，连同它本身的利润以及牲畜全部价格所产生的利润一起收回。种子的全部价值也恰当地属于固定资本。尽管它在田地和谷仓之间来来回回，却从不更换主人，因而严格说来并不流通。农场主不是通过出售种子，而是通过种子的增殖取得利润。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p11",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_859"
+      },
+      "contentHash": "b0a37ad6e974977abf61a0417a6a27f0de728a3fd6482be1151650e5a5be0948",
+      "text": "任何国家或社会的资财总额，与其全体居民或成员的资财总额相同，因而自然也分成同样的三个部分，每一部分都有不同的职能或作用。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p12",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_860"
+      },
+      "contentHash": "ef36dffffa2bd239a29acbf240d7acc59ba7e9414e1aa34b57b56e75c78f49d7",
+      "text": "第一部分，是留供眼前消费的部分，其特征是不会带来收入或利润。它包括由实际消费者购得、但尚未完全消费掉的食物、衣服、家具等存量。一国在任何时候现存的全部纯粹住宅，也构成这第一部分的一部分。投入一所房屋的资财，如果该房屋将作为所有者的住宅，从那一刻起就不再发挥资本的职能，也不再给所有者带来任何收入。住宅本身对居住者的收入毫无贡献；虽然它无疑对居住者极为有用，但这种用处就像衣服和家具对他的用处一样，而衣服和家具构成的是他的支出，而不是他的收入。如果住宅要出租给承租人以收取租金，由于房屋本身不能生产任何东西，承租人就总得从他由劳动、资本或土地取得的其他某项收入中支付租金。因此，一所房屋虽然可以给其所有者带来收入，从而对他发挥资本的职能，却不能给公众带来任何收入，也不能对公众发挥资本的职能；全体人民的收入绝不可能因此有最微小程度的增加。同样，衣服和家具有时也能带来收入，从而对某些个人发挥资本的职能。在化装舞会盛行的国家，把化装舞会服装出租一夜是一门生意。家具商常常按月或按年出租家具。殡葬承办人按日或按周出租葬礼用具。许多人出租带家具的房屋，不仅因房屋的使用而收取租金，也因家具的使用而收取租金。不过，从这些物品取得的收入，最终总得来自其他某种收入来源。在个人或社会留供眼前消费的资财各部分中，投入房屋的部分消费得最慢。一批衣服可以使用数年；一批家具可以使用半个世纪或一个世纪；而一批建造坚固且维护得当的房屋，可以使用许多个世纪。不过，尽管它们完全耗尽的时刻更为遥远，它们仍像衣服或家具一样，确实是留供眼前消费的资财。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p13",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_861"
+      },
+      "contentHash": "b7c007239c8ea0714329460f2755d50197569352b510d61040faf7959c54000b",
+      "text": "社会资财总额所分成的三个部分中的第二部分，是固定资本；其特征是不经流通或更换主人便能带来收入或利润。它主要由以下四项构成：",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p14",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_862"
+      },
+      "contentHash": "33873118f3b4c9de4a780b9f87e50184473de3a8bef9777c7b46b030fe2a2905",
+      "text": "第一，一切便利劳动和缩短劳动时间的有用机器和生产工具；",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p15",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_863"
+      },
+      "contentHash": "2f978ade7a7a018bd86126ab24440c2fc70e90d1ad1e3cdda5b88888fbde272b",
+      "text": "第二，一切能够取得收入的盈利性建筑物；它们不仅使将其出租收取租金的所有者取得收入，也使占用并为之支付租金的人取得收入，如店铺、仓库、工场、农舍及其一切必要的附属建筑、马厩、谷仓等。这些与纯粹的住宅大不相同。它们是一种生产工具，可以从同一角度来看待；",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p16",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_864"
+      },
+      "contentHash": "8ca740a80b835d80a4e547802aab64d7ef53d017010af84c44c5c8759e929e2d",
+      "text": "第三，土地改良，即为清理、排水、圈围、施肥以及使土地达到最适于耕作和栽培的状态而有利可图地投入的一切。经过改良的农场，完全可以恰当地视同那些便利劳动和缩短劳动时间的有用机器；借助这些机器，同等数额的流动资本能给运用者带来大得多的收入。经过改良的农场与任何这类机器同样有利，而且更加耐久；除了把农场主用于耕作的资本以最有利可图的方式投入其中以外，它往往不需要其他修缮；",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p17",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_865"
+      },
+      "contentHash": "945bfb80c803bf0b99b71f541e4d3ec3327e372582144016b672438adbb74ee7",
+      "text": "第四，社会全体居民或成员后天获得的有用能力。获得这种才能，总要在获得者受教育、学习或当学徒期间花费维持其生活的费用，这是一笔真实的支出，可以说是固定并实现在他身上的资本。这些才能既是他个人财富的一部分，也是他所属社会财富的一部分。工人经过提高的熟练程度，可以视同便利劳动和缩短劳动时间的机器或生产工具；它虽然要花费一定的费用，却会连同利润一起偿还这笔费用。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p18",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_866"
+      },
+      "contentHash": "8e919833bd32f2b96e5ad925aac4323bacbfbaaf4d48ab0afbc3ce78b68af962",
+      "text": "社会资财总额自然分成的三个部分中的第三个也是最后一个部分，是流动资本；其特征是只有通过流通或更换主人才能带来收入。它同样由四部分组成：",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p19",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_867"
+      },
+      "contentHash": "496b04edc878c5f0ebfb9100446f8003622d5e0762bc2345ef07d5d09a49008b",
+      "text": "第一，货币，其他三部分借助它流通并分配给各自适当的消费者；",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p20",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_868"
+      },
+      "contentHash": "5104c557af90fb9710b448e09ade8fda514c795a17141865bdb58329d746136d",
+      "text": "第二，屠夫、牧畜者、农场主、谷物商、酿酒商等人所持有的食物储备，他们期望从出售这些食物中取得利润；",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p21",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_869"
+      },
+      "contentHash": "79ad5877e1ebdf05293a21d68919f7364056607ec855ee5f3279e8e2925bdfe5",
+      "text": "第三，衣服、家具和建筑物的材料，无论是完全未经加工，还是经过了程度不等的加工，只要尚未制成上述三种成品中的任何一种，而仍掌握在种植者、制造商、绸布商、呢布商、木材商、木匠与细木工、制砖商等人手中；",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p22",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_870"
+      },
+      "contentHash": "9b184463197817d59eeb30063b126bc420009e2c15e42ac295d11d820a1c9155",
+      "text": "第四，也是最后一项，已经制成并完工、但仍掌握在商人或制造商手中，尚未出售或分配给适当消费者的制成品；例如，我们常在铁匠、细木家具匠、金匠、珠宝商、瓷器商等人的店铺里看到的现成成品。这样，流动资本就由掌握在各自经销者手中的各种食物、材料和制成品，以及使它们流通并分配给最终使用或消费它们的人所必需的货币构成。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p23",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_871"
+      },
+      "contentHash": "0c13b1a91ad45f9f062430db20ef0bce2e1b5efae4819c0d459c4df012a1ce3a",
+      "text": "这四部分中的三部分，即食物、材料和制成品，每年或经过一段或长或短的时期，都会有规律地从流动资本中抽出，转入固定资本或留供眼前消费的资财。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p24",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_872"
+      },
+      "contentHash": "5e491bc9d9cae6eebedf06aef1d1c5de994648ab7caad9407da73479d05bbfac",
+      "text": "每一项固定资本最初都来源于流动资本，并且需要流动资本不断予以维持。一切有用的机器和生产工具，最初都来源于流动资本；流动资本提供制造它们所用的材料和制造它们的工人的生活供养。它们也需要同类资本来不断进行维修。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p25",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_873"
+      },
+      "contentHash": "decdde23df57e65ddefa81b85a137d54ae5ec7e0036042084008851a283ea316",
+      "text": "任何固定资本都只有借助流动资本才能带来收入。即使最有用的机器和生产工具，如果没有流动资本提供供其加工的材料以及操作它们的工人的生活供养，也生产不出任何东西。无论土地改良到何种程度，如果没有流动资本维持耕种土地和收获其产物的劳动者，也不会带来收入。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p26",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_874"
+      },
+      "contentHash": "f1466a9556b1e6e832db3f4f58f2423dfdaccc475b7e760800153ed555b773e1",
+      "text": "维持并增加可以留供眼前消费的资财，是固定资本和流动资本唯一的目标和目的。正是这些资财为人民提供食物、衣服和住所。人民的富裕或贫困，取决于这两种资本能够为留供眼前消费的资财提供充足还是匮乏的供给。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p27",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_875"
+      },
+      "contentHash": "23c7e3a26ce278c48c27f32f797c078adf3dbce5dd080ef3e0d1546ebfc6fd9b",
+      "text": "流动资本中有如此大的一部分不断被抽出，以便转入社会资财总额的另外两个部分，因此它本身也必定需要不断得到补充，否则很快就不复存在。这些补充主要来自三个来源：土地、矿山和渔场的产物。它们不断提供食物和材料，其中一部分后来被加工成制成品，从而补充不断从流动资本中抽出的食物、材料和制成品。流动资本中由货币构成的那部分，其维持和增加所需的东西也来自矿山。因为，尽管在通常的经营过程中，这一部分不像其他三部分那样，必然会从流动资本中抽出而转入社会资财总额的另外两个部分，但它像一切其他东西一样，最终必定会损耗磨损，有时也会遗失或输往国外；因此，它也必定需要不断补充，尽管所需补充量无疑小得多。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p28",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_876"
+      },
+      "contentHash": "067e93a6a66c04b0b4ff9809c82416ddcffb1d401400cd4a33c06ae98fe753a7",
+      "text": "土地、矿山和渔场都需要固定资本和流动资本来开发；它们的产物不仅连同利润补偿这些资本，也补偿社会中的其他一切资本。因此，农场主每年把制造商上一年消费的食物和加工的材料补偿给制造商；制造商则把农场主在同一期间损耗磨损的制成品补偿给农场主。这就是这两个阶层之间每年进行的真正交换，尽管一方的原生产物与另一方的制造品很少直接互相易货交换；因为农场主很少会把他的谷物和牲畜、亚麻和羊毛，恰好卖给他选择向其购买所需衣服、家具和生产工具的同一个人。因此，他把自己的原生产物卖成货币，再用这些货币在任何可以买到的地方购买他所需要的制造品。土地甚至至少部分补偿开发渔场和矿山所使用的资本。正是土地的产物把鱼从水中捕捞出来；也正是地表的产物把矿物从地下深处开采出来。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p29",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_877"
+      },
+      "contentHash": "45ac8bbc1fb376b48d60181a9fc31489e35ae30e92791c04174f3c71617a771e",
+      "text": "在自然丰饶程度相等时，土地、矿山和渔场的产量，与用于它们的资本数额及其适当运用成比例。在资本相等且运用得同样适当时，产量与它们的自然丰饶程度成比例。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p30",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_878"
+      },
+      "contentHash": "6c10959bf7d3dc7d8eba1ecde4f49af741cd598efb6158fea2823fdf275fa4af",
+      "text": "在一切有相当安全保障的国家，每个具有常识的人都会设法运用他所能支配的一切资财，来取得眼前的享受或未来的利润。如果用于取得眼前的享受，它就是留供眼前消费的资财。如果用于取得未来的利润，它就必定通过留在他手中或离开他来取得这种利润。在前一种情况下，它是固定资本；在后一种情况下，它是流动资本。在有相当安全保障的地方，一个人若不把自己所能支配的全部资财，无论是自有的还是向别人借来的，用于这三种方式中的某一种，就一定是彻底疯了。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c1.p31",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_879"
+      },
+      "contentHash": "424e40a71f75ccce87c2c6e56c9610695c0c693fb172d49de5f63f62e12e9515",
+      "text": "诚然，在那些不幸的国家，人们不断害怕上级的暴力，因而常常把很大一部分资财埋藏起来，以便在受到他们自认为随时可能遭受的任何灾祸威胁时，随手带到某个安全地点。据说，这在土耳其、印度斯坦以及我相信亚洲大多数其他政府统治下，都是一种常见做法。在封建政府施行暴政期间，这似乎也是我们祖先中的一种常见做法。当时，发现埋藏物被视为欧洲最强大君主收入中不可轻视的一部分。它包括那些被发现藏在地下、而任何特定个人都不能证明自己对其享有权利的财宝。当时，这被视为如此重要的一项财源，以致总被认为属于君主，既不属于发现者，也不属于土地所有者，除非后者的特许状中有明确条款把对此财宝的权利授予他。它与金矿和银矿受到同样对待；特许状中若无特别条款，金矿和银矿从不被认为包括在一般的土地授予之内，尽管铅矿、铜矿、锡矿和煤矿由于重要性较低，则被认为包括在内。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    }
+  ]
+}

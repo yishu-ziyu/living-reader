@@ -1,0 +1,1704 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "locale": "zh-CN",
+  "chapterId": "smith.b2.c2",
+  "translations": [
+    {
+      "sourceId": "smith.b2.c2.p1",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_880"
+      },
+      "contentHash": "6a8ab4e38845075dd6413f5d3f4f296e8551467d3402adcb2d07eb81d7ee25fb",
+      "text": "第一篇已经说明，大部分商品的价格都分解为三个部分，其中一部分支付劳动工资，另一部分支付资本利润，第三部分支付生产这些商品并将其运往市场所使用土地的地租；确实，有些商品的价格只由其中两个部分构成，即劳动工资和资本利润；还有极少数商品的价格完全由一个部分构成，即劳动工资；但是，每种商品的价格都必然分解为这三个部分中的某一个、某两个或全部三个部分；其中既不归于地租也不归于工资的任何部分，都必然是某个人的利润。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p2",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_881"
+      },
+      "contentHash": "d093f4c2dea6d599187fdbab8206f4b2f92ca77b67d4f64aa8adc3a4189a0626",
+      "text": "既然就分别考察的每一种特定商品而言，情形如上所述，那么，就综合考察构成每个国家土地和劳动全部年产物的一切商品而言，情形也必然如此。这种年产物的全部价格或交换价值，必然分解为同样三个部分，并在该国不同居民之间进行分配，或者作为他们的劳动工资，或者作为他们的资本利润，或者作为他们的土地地租。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p3",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_882"
+      },
+      "contentHash": "82175a7e0122027691b6460a2370d9f530baed8d72b4f9427216c2b74ee2b956",
+      "text": "不过，尽管每个国家土地和劳动的年产物的全部价值就这样在不同居民之间分配，并构成他们的收入；但是，正如我们在一处私人地产的地租中区分总地租和净地租一样，我们同样也可以在一个大国全体居民的收入中作这种区分。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p4",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_883"
+      },
+      "contentHash": "7156f0073c6cc1a0354aa226c7228fda2d40f4a74f45397d90121eb07211adf8",
+      "text": "一处私人地产的总地租包括农场主支付的一切；净地租则是扣除管理、修缮及其他一切必要费用后，归地主自由支配的剩余部分；也就是他无须损害地产，便可以存入其即时消费储备，或者花在饮食、车马、住宅及家具的装饰、个人享受和娱乐上的部分。他的实际财富同他的净地租、而不是同他的总地租成比例。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p5",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_884"
+      },
+      "contentHash": "905a592ddeeed4b981c49acae7b657a6512d2e227a24042f4234430f9a603a4c",
+      "text": "一个大国全体居民的总收入，包括其土地和劳动的全部年产物；净收入则是首先扣除维持其固定资本、其次扣除维持其流动资本的费用后，归他们自由支配的剩余部分；也就是他们无须侵蚀资本，便可以存入其即时消费储备，或者花在生活资料、便利和娱乐上的部分。他们的实际财富同样同其净收入、而不是同其总收入成比例。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p6",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_885"
+      },
+      "contentHash": "ffd0b75f928a3c805e44b8de42a39887e9435b302e474ff0cf968bfac5380e25",
+      "text": "维持固定资本的全部费用，显然必须从社会净收入中排除。无论是维护有用的机器和生产工具、有收益的建筑物等所必需的材料，还是把这些材料加工成适当形态所必需的劳动产物，都绝不可能构成净收入的任何部分。不过，这种劳动的价格确实可以构成净收入的一部分，因为受雇从事这种工作的工人，可以把其工资的全部价值存入自己的即时消费储备。但在其他种类的劳动中，价格和产物都进入这种储备：价格进入工人的储备，产物进入其他人的储备，而这些人的生活资料、便利和娱乐因那些工人的劳动而增加。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p7",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_886"
+      },
+      "contentHash": "b5abac4433ccc679cf395530bd596fc44592482c0f35b3805693b3d98797276c",
+      "text": "固定资本的目的，是提高劳动的生产力，或者使同样数量的劳动者能够完成多得多的工作。在一座农场里，如果一切必要的建筑物、围墙、排水设施、交通设施等都处于最完善的良好状态，那么，与一座面积相等、土地同样肥沃却不具备同等便利条件的农场相比，同样数量的劳动者和役畜将生产多得多的产物。在制造业中，同样数量的工人借助最优良的机器，比使用较不完善的生产工具能够加工多得多的货物。适当地用于任何一种固定资本的费用，总会带来丰厚利润，而且它使年产物增加的价值，远远大于维持这类改良所需的费用。不过，这种维持仍然需要这种产物的一定部分。一定数量的材料和一定数量工人的劳动，本来都可以直接用来增加社会的食物、衣服和住所，即生活资料和便利，如今却被转用于另一种用途；这种用途诚然非常有利，但毕竟不同于前一种用途。正因如此，凡是能使同样数量的工人用比以往更便宜、更简单的机器完成同等数量工作的机械改良，始终都被视为对每个社会有利。过去用于维持较复杂、较昂贵机器的一定数量的材料和一定数量工人的劳动，此后可以用来增加该机器或任何其他机器仅仅为了完成的工作量。某个大型制造业企业的经营者每年花费一千镑维持机器，如果能把这项费用减到五百镑，自然会用另外五百镑购买更多材料，交由更多工人加工。因此，他的机器仅仅为了完成的那种工作，其数量自然会增加，社会能够从这种工作中获得的一切利益和便利也会随之增加。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p8",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_887"
+      },
+      "contentHash": "61e2c89826b611b3481d4712738cf9fc4f2fcdd1d58d2b3b5c98a039ce93df4d",
+      "text": "一个大国维持固定资本的费用，完全可以恰当地比作一处私人地产的修缮费用。修缮费用往往可能是维持地产产物、从而维持地主的总地租和净地租所必需的。不过，如果通过更妥善的安排，可以在不引起产物减少的情况下缩减这项费用，那么总地租至少仍与从前相同，而净地租必然增加。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p9",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_888"
+      },
+      "contentHash": "3c37d57b6d10a9dab0d340a8e58f77fdf415425c3b4315071dc26fe8a287aca7",
+      "text": "不过，虽然维持固定资本的全部费用就这样必然要从社会净收入中排除，维持流动资本的费用却不是如此。流动资本由四部分构成，即货币、食物、材料和制成品；前面已经指出，后三部分会有规则地从流动资本中退出，或者转入社会的固定资本，或者转入居民的即时消费储备。那些可消费物品中，凡未用于维持前者的部分，全都转入后者，并构成社会净收入的一部分。因此，维持流动资本这三个部分，除维持固定资本所必需的部分外，并不从社会净收入中抽走年产物的任何部分。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p10",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_889"
+      },
+      "contentHash": "5e98d8faf75e24cc07333d64adcf276953a9d3be9345972f5b756298c30a09f0",
+      "text": "在这方面，社会的流动资本不同于个人的流动资本。个人的流动资本完全不能构成其净收入的任何部分，因为其净收入必定完全由利润构成。但是，尽管每个人的流动资本构成其所属社会流动资本的一部分，却不因此而完全不能同时构成社会净收入的一部分。商店里的全部货物虽然绝不能列入商人自己的即时消费储备，却可以列入其他人的这种储备；这些人凭借来自其他来源的收入，可以有规则地向商人偿还货物的价值并连同其利润，而不致使商人或他们自己的资本有任何减少。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p11",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_890"
+      },
+      "contentHash": "3756f4f83d5cc4af0547d01381689619d3659c52b8b50eef93959163a8b588b6",
+      "text": "因此，货币是社会流动资本中唯一其维持费用会导致社会净收入减少的部分。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p12",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_891"
+      },
+      "contentHash": "6f586f351cbb7b40376e63c36bfbfa4467b2eaf9031f2cc3c0f430608597dee3",
+      "text": "就固定资本和流动资本中由货币构成的部分对社会收入的影响而言，二者极其相似。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p13",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_892"
+      },
+      "contentHash": "f8828b94224294fbce94efa52318a0a2f64f39d326cc38e45d1e0add07b6b4c0",
+      "text": "第一，正如那些机器和生产工具等需要一定费用，先用于设置，后用于维护，而这两项费用虽然构成社会总收入的一部分，却都要从社会净收入中扣除；同样，在任何国家流通的货币储备也必定需要一定费用，先用于筹集，后用于维持，而这两项费用虽然构成社会总收入的一部分，也同样都要从社会净收入中扣除。一定数量的极贵重材料，即金银，以及一定数量极精巧的劳动，没有用来增加供个人即时消费的储备，即个人的生活资料、便利和娱乐，而是被用来维持那种庞大却昂贵的商业工具；社会中每个人的生活资料、便利和娱乐，都借助这种工具，按照其应得的比例有规则地分配给他。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p14",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_893"
+      },
+      "contentHash": "eb6aba44d49bbb83259e0cfc97408ec29692b75e5cf791c1a02a81c3788aac04",
+      "text": "第二，正如构成个人或社会固定资本的机器和生产工具等，既不构成个人或社会总收入的任何部分，也不构成其净收入的任何部分；同样，货币虽使社会全部收入得以有规则地分配给社会各个成员，其本身却不构成这种收入的任何部分。流通的巨轮与借其流通的货物完全不同。社会的收入完全由那些货物构成，而不是由使其流通的巨轮构成。在计算任何社会的总收入或净收入时，我们始终必须从货币和货物的全年流通总额中，扣除货币的全部价值，因为其中没有一文钱能够构成总收入或净收入的任何部分。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p15",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_894"
+      },
+      "contentHash": "b22490505630d617579a604f72df165f799f37528312325c0e95c135507173d2",
+      "text": "只有语言的歧义，才会使这个命题显得可疑或自相矛盾。只要得到适当的解释和理解，它几乎是不言自明的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p16",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_895"
+      },
+      "contentHash": "1993550f5e6136096675f9012d31371087b20ce65689119cc6b164283f467f87",
+      "text": "当我们谈到某一特定数额的货币时，有时仅仅指构成该数额的金属铸币；有时在我们的意思中，还含蓄地涉及可以用这些铸币换得的货物，或者拥有这些铸币所赋予的购买力。因此，当我们说英格兰的流通货币据估计为一千八百万镑时，我们只是想表示某些著述家估计、或者不如说推测在该国流通的金属铸币数额。但是，当我们说一个人每年有五十镑或一百镑的进项时，我们通常不仅想表示每年支付给他的金属铸币数额，而且想表示他每年可以买到或消费的货物价值。我们通常是想确定他的生活方式是什么或应当是什么，或者说，他可以适当享用的生活必需品和便利品在数量和质量上达到何种程度。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p17",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_896"
+      },
+      "contentHash": "f4ebebf4dc9bafbee79fbadb1bd50a85ebfeac7ccb896da803eab0d0953a8eb6",
+      "text": "当我们用某一特定数额的货币，不仅表示构成该数额的金属铸币数量，而且在其含义中还含蓄地涉及可以用这些铸币换得的货物时，这种货币在此种情况下所表示的财富或收入，只等于由同一词语这样颇为含混地暗示的两个价值中的一个；而且更确切地说，等于后者而不是前者，等于货币所值之物而不是货币本身。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p18",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_897"
+      },
+      "contentHash": "fec2b4380e573454b472aad3350891f53b2771278009feff4fe197f61b68aa2d",
+      "text": "因此，如果一个人的每周年金是一枚基尼，他在一周之内就能用它购买一定数量的生活资料、便利和娱乐。这一数量是大是小，他的实际财富、实际周收入也相应是多是少。他的周收入当然不既等于这枚基尼，又等于用它可以买到的东西，而只等于这两个相等价值中的一个；而且更确切地说，等于后者而不是前者，等于这枚基尼所值之物而不是这枚基尼本身。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p19",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_898"
+      },
+      "contentHash": "7052d30542f52628a0cbbe90169a89a9e65ce88769b4fb521a5601857da6b99b",
+      "text": "如果这种人的年金不是用黄金支付，而是每周给他一张一基尼的票据，那么他的收入显然与其说存在于这张纸中，不如说存在于他能用它取得的东西中。一枚基尼可以看作向附近所有商人兑取一定数量必需品和便利品的票据。领取这枚基尼的人的收入，与其说存在于这块黄金中，不如说存在于他能用它取得的东西中，或者存在于他能用它换得的东西中。如果它什么也换不到，那么它就会像一张向破产者索款的票据一样，其价值不会超过一张最无用的纸。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p20",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_899"
+      },
+      "contentHash": "083d7d6d024b99116c949c1c80c4fdc5a228498e0823a4099509ae46e4ec824e",
+      "text": "同样，尽管任何国家各个居民的每周或每年收入可以、而且实际上往往确实是用货币支付给他们的，但是，他们全体合计的实际财富，即实际周收入或年收入，必定始终同他们全体能够用这些货币购买的可消费物品数量成比例。他们全体合计的全部收入，显然不既等于货币，又等于可消费物品，而只等于这两个价值中的一个；而且更确切地说，等于后者而不是前者。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p21",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_900"
+      },
+      "contentHash": "712290a241d1bb7cd762dd16a35ebd5a41d7c4395bb712addbd835d68c6abd87",
+      "text": "因此，尽管我们常用每年支付给一个人的金属铸币来表示他的收入，那是因为这些铸币的数额决定其购买力的大小，或者决定他每年有能力消费的货物价值。我们仍然认为，他的收入存在于这种购买或消费的能力中，而不是存在于赋予他这种能力的铸币中。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p22",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_901"
+      },
+      "contentHash": "8565a602fd6ff2c199bcbaf983a9724a6ebef350a7d787764b84f9f63b1f3111",
+      "text": "不过，即使就个人而言这一点已经足够明显，就社会而言则更为明显。每年支付给个人的金属铸币数额，往往恰好等于他的收入，因此也是表示其收入价值最简明、最恰当的方式。但是，在一个社会中流通的金属铸币数额，绝不可能等于其全体成员的收入。由于今天支付一个人每周年金的同一枚基尼，明天可以支付另一个人的每周年金，后天又可以支付第三个人的每周年金，所以，任何国家每年流通的金属铸币数额，其价值必定总是远远小于每年用这些铸币支付的全部货币年金。但是，随着这些货币年金依次支付，人们用其总额先后获得的购买力，或者先后买到的货物，其价值必定始终恰好等于这些年金；领取这些年金的各个人的收入也同样如此。因此，这种收入不可能存在于那些金属铸币中，因为铸币数额远远低于这种收入的价值；它只能存在于购买力中，存在于这些铸币在人们之间转手流通时可以用来先后买到的货物中。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p23",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_902"
+      },
+      "contentHash": "f8028df3ce4180733d6781d380fb6b9f0ce7073577032de4535c9bf9107247dc",
+      "text": "因此，货币这一流通的巨轮、商业的巨大工具，同其他一切生产工具一样，虽然构成资本的一部分，而且是很有价值的一部分，却不构成其所属社会收入的任何部分；构成货币的金属铸币虽然在每年的流通中，把适当归于每个人的收入分配给他，却不构成这种收入的任何部分。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p24",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_903"
+      },
+      "contentHash": "ceeb26ceea0cdcd1613ffe758caa0b5a17c7ef127a5432481e692aab1ec46691",
+      "text": "第三，也是最后一点，构成固定资本的机器和生产工具等，与流动资本中由货币构成的部分还有如下相似之处：正如设置和维护这些机器的费用中，凡不减损劳动生产力的任何节省，都是社会净收入的改善；同样，筹集和维持流动资本中由货币构成的那一部分的费用中，任何节省也都是性质完全相同的改善。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p25",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_904"
+      },
+      "contentHash": "fcea4a43fec71e54a890607239e5515f5a1d9edf6a072b95ae4889023a32d20d",
+      "text": "维持固定资本的费用中的每一项节省，究竟如何构成社会净收入的改善，这一点已经足够明显，而且前面也已作过部分说明。每项事业的经营者，其全部资本必然分为固定资本和流动资本。只要其全部资本保持不变，一个部分越小，另一个部分就必然越大。正是流动资本提供劳动所需的材料和工资，并推动产业运转。因此，维持固定资本的费用中，凡不减损劳动生产力的任何节省，都必定会增加推动产业运转的资金，从而增加土地和劳动的年产物，即每个社会的实际收入。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p26",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_905"
+      },
+      "contentHash": "de86361f43e8693463efc4ed037585663e1fc6bbba2db64017acc38f71dcba60",
+      "text": "以纸币代替金银货币，是用一种成本低得多、而有时同样便利的商业工具，取代一种非常昂贵的商业工具。流通从此由一个新的巨轮推动，而设置和维持这个新巨轮的费用都低于旧巨轮。不过，这一操作是如何实现的，又如何趋于增加社会总收入或净收入，却并非同样显而易见，因而可能需要作进一步说明。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p27",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_906"
+      },
+      "contentHash": "4e9117a6aad0846116fd8ab3a2892059069bf5521080d563e4b4cc30d20e81f5",
+      "text": "纸币有若干不同种类；但银行及银行家的流通钞票，是其中最广为人知、而且看来最适合这一用途的一种。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p28",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_907"
+      },
+      "contentHash": "53fccc5febb597ea079731fe7409c6d684f9ddc6bbc39cd037c0ff63349c4eaa",
+      "text": "当某一特定国家的人民如此信任某个银行家的财力、诚信和审慎，相信凡是随时可能向他提示要求兑现的本票，他总会应要求立即支付时；由于人们相信随时都能用这些本票换得金银货币，这些本票便具有了与金银货币相同的流通力。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p29",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_908"
+      },
+      "contentHash": "73d64840ee96814919c0445ebc552d101e2aae0095119712eff850c58dcff2a3",
+      "text": "假定某个银行家把自己的本票借给客户，数额达到十万镑。由于这些本票能够实现货币的一切用途，他的债务人向他支付的利息，就与他借给他们同额货币时一样。这种利息就是其收益的来源。尽管这些本票中不断有一部分回到他那里要求兑现，但其中另一部分却会连续流通数月乃至数年。因此，尽管他通常有数额达十万镑的本票在流通，二万镑金银往往就足以应付偶然的兑付要求。因此，通过这种操作，二万镑金银便实现了原本需要十万镑金银才能实现的一切职能。借助他价值十万镑的本票，能够进行同等规模的交换，能够使同等数量的可消费物品流通并分配给其适当的消费者，就像借助等值的金银货币一样。因此，通过这种方式，八万镑金银可以从该国的流通中节省出来；如果许多不同的银行和银行家同时进行不同的同类操作，全部流通就可以只用在其他情况下所需金银的五分之一来完成。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p30",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_909"
+      },
+      "contentHash": "d128f15cedb13b627c8ecacb7eb5d82987ea8fd880798ed44be73ef0e1246c81",
+      "text": "例如，假定某一国家在某一时期流通中的货币总额为一百万英镑，当时这笔钱足以使该国土地和劳动的全部年产物得以流通。再假定过了一段时间，各家银行和银行家发行了总额为一百万英镑、凭票即付的本票，同时在各自的金库中保留二十万英镑，以应付不时之需。这样，流通中便会剩下八十万英镑的金银和一百万英镑的银行券，纸币与金属货币合计一百八十万英镑。然而，该国土地和劳动的年产物原先只需一百万英镑，就能流通并分配到适当的消费者手中，而这种银行业务并不能立即增加该年产物。因此，在这之后，一百万英镑仍足以使其流通。由于买卖的货物与以前完全相同，同样数量的货币便足以用来买卖这些货物。可以说，流通的渠道仍与以前完全相同。我们假定一百万英镑已足以充满这条渠道。因此，凡是超过这一数额而注入其中的货币，都不可能在渠道中流通，而必定会溢出。现在注入其中的是一百八十万英镑。因此，必定有八十万英镑溢出，因为这笔钱超过了国内流通所能使用的数额。可是，尽管这笔钱不能在国内使用，它的价值太高，不能任其闲置。因此，它将被送往国外，以寻求在国内找不到的有利可图的用途。但是，纸币不能流往国外；因为远离发行它的银行，也远离可以依法强制兑现它的国家之后，它便不会在一般支付中被接受。因此，总额为八十万英镑的金银将被送往国外，而国内的流通渠道将由一百万英镑纸币充满，取代原先充满这条渠道的一百万英镑金属货币。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p31",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_910"
+      },
+      "contentHash": "d194eedfa891c6fb3f3a2dc7c29222c4cff7edbe6eb1bf07e02e1f8dfd113c65",
+      "text": "不过，尽管如此大量的金银被送往国外，我们也绝不能以为它们是白白送出去的，或以为其所有者把它们赠送给了外国。他们会用这些金银换取某种外国货物，以供另一个外国或本国消费。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p32",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_911"
+      },
+      "contentHash": "7f7782ed212c91315960a0c1d615b17b22c8408ddddfb081fdbb0efb45a6411c",
+      "text": "如果他们用这笔金银在一个外国购买货物，以供应另一个外国的消费，也就是从事所谓的转运贸易，那么他们获得的任何利润都会成为本国纯收入的一项增加。这就像为经营一项新贸易而创设的一笔新资本；国内业务现在由纸币办理，而金银则转化为经营这项新贸易的资本。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p33",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_912"
+      },
+      "contentHash": "d01be2b2ff0fa59eeff50db7314714b80644bb5cfd1a1f7c5c411778547d4151",
+      "text": "如果他们用这笔金银购买供国内消费的外国货物，那么，第一，他们可以买入那些很可能被无所事事、毫无生产的人消费的货物，如外国葡萄酒、外国丝绸等；第二，他们也可以买入额外的材料、工具和生活资料，以维持并雇用更多勤劳的人，这些人会连同利润一起再生产出其全年消费的价值。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p34",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_913"
+      },
+      "contentHash": "bef5b16b06e4d09c1260e1bb2f8aaa8df4e200c5eae8f9316e2826ad6caef5b1",
+      "text": "这笔金银用于第一种方式的那一部分，会助长挥霍，在不增加生产、也不建立任何可永久支持这种开支的资本的情况下增加开支和消费，因而在各方面都有害于社会。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p35",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_914"
+      },
+      "contentHash": "3146e4362b64f86fc8243db880c77a5970e1c6b0f6be14ab840e586201779e06",
+      "text": "这笔金银用于第二种方式的那一部分，会促进勤劳；而且，尽管它增加了社会的消费，却也提供了一笔永久支持这种消费的资本，因为消费者会连同利润一起再生产出其全年消费的全部价值。社会的总收入，即其土地和劳动的年产物，会增加这些工人的劳动加到所加工材料上的全部价值；社会的纯收入则会增加这部分价值在扣除维持其行业所用工具和器械所必需的费用之后的余额。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p36",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_915"
+      },
+      "contentHash": "15d6705ab27fdc4bd5805d9fd6e664a34ba1532e7a5f12601ef4e7d92d261dbc",
+      "text": "由于这种银行业务而被迫流往国外、并用于购买供国内消费的外国货物的金银，其中较大部分被用于而且必定被用于购买第二类货物，这件事看来不仅很可能，而且几乎不可避免。某些个人有时可能会在收入毫无增加的情况下大幅增加开支，但我们可以确信，任何一个阶级或等级的人都从未这样做过；因为尽管通常的审慎原则并不总能支配每一个人的行为，却总会影响每个阶级或等级中大多数人的行为。然而，把无所事事的人视为一个阶级或等级，他们的收入丝毫不可能因这种银行业务而增加。因此，他们的开支一般不会因此增加很多，尽管其中少数人的开支可能增加，而且实际上有时确会增加。因此，无所事事的人对外国货物的需求与以前相同或几乎相同；所以，由这种银行业务迫使流往国外、并用于购买供国内消费的外国货物的货币，很可能只有很小一部分会用来购买供他们使用的货物。其中较大部分自然会用来雇用勤劳的人，而不是供养无所事事的人。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p37",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_916"
+      },
+      "contentHash": "a702acbb422722e61c2ebf31626d8d4bacd53c1c6c79bb067be39284d4c6e25c",
+      "text": "在计算任何社会的流动资本所能雇用的劳动量时，我们始终必须只考虑其中由生活资料、材料和制成品构成的部分；另一部分由货币构成，只用于使前三者流通，因而始终必须扣除。要使劳动运转起来，需要三样东西：可供加工的材料、用于工作的工具，以及促使人们从事工作的工资或报酬。货币既不是可供加工的材料，也不是用于工作的工具；而且，尽管工人的工资通常以货币支付，但他的实际收入与其他所有人的实际收入一样，并不在于货币本身，而在于货币所值之物；不在于金属片本身，而在于能够用它们换得的东西。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p38",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_917"
+      },
+      "contentHash": "5dfee3c17511d5d642f58bc1d82cd5137981de4a576b25925861f2f8fb952e80",
+      "text": "任何资本所能雇用的劳动量，显然必定等于它能够为之提供材料、工具和适合其工作性质的生活资料的工人人数。购买工作的材料和工具以及工人的生活资料，可能都需要货币。但是，全部资本所能雇用的劳动量，当然不可能既等于用于购买的货币价值，又等于用货币买到的材料、工具和生活资料的价值，而只能等于这两种价值中的一种；更确切地说，是后者而不是前者。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p39",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_918"
+      },
+      "contentHash": "e59696db58053c783219d63302c0febc3a93ad4906262576aa54ba53d12507ba",
+      "text": "当纸币取代金银货币时，全部流动资本所能提供的材料、工具和生活资料的数量，可以增加相当于原来用于购买这些物品的全部金银价值的数量。流通和分配这一大轮子的全部价值，被加到了借助这个轮子流通和分配的货物上。这种做法在某种程度上类似于一项大型工程的承包人：由于机械方面的某项改进，他拆除旧机器，并把旧机器价格与新机器价格之间的差额加入自己的流动资本，加入他用来向工人提供材料和工资的资本。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p40",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_919"
+      },
+      "contentHash": "ea6588c2e58aa82deea98c7dc7938de69d201bd162a9c57603a74140d2a10da2",
+      "text": "任何国家的流通货币与借助它流通的年产物总价值之间究竟有何比例，恐怕不可能确定。不同著述家估计它是这一价值的五分之一、十分之一、二十分之一和三十分之一。但是，无论流通货币在年产物总价值中所占的比例多么小，由于年产物中只有一部分，而且往往只是一小部分，注定用于维持劳动，流通货币与这一部分相比，必定总会占有相当大的比例。因此，当纸币取代金银之后，流通所必需的金银也许减少到原有数量的五分之一；如果其余五分之四中哪怕只有较大部分的价值被加入用于维持劳动的资本，它也必定会使劳动量大幅增加，从而使土地和劳动的年产物价值大幅增加。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p41",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_920"
+      },
+      "contentHash": "4d5e32de52543c7ff9725bb1c1804377670a0a6b6379d7c53b745251f6c039f5",
+      "text": "在过去二十五年或三十年中，苏格兰几乎每个较大的城镇，甚至某些乡村，都通过设立新的银行公司进行了这种运作。其结果与上文所述完全相同。该国的业务几乎完全借助这些不同银行公司的纸币进行，各种买卖和支付通常都用这种纸币办理。除兑换一张二十先令的银行券外，银币极少出现，金币出现得更少。不过，尽管这些不同公司的经营并非无可指摘，因而需要议会法案加以规制，该国显然仍从它们的业务中获得了很大好处。我曾听人断言，格拉斯哥市的贸易在当地最初设立银行后大约十五年内增长了一倍；而自爱丁堡最初设立两家公共银行以来，苏格兰的贸易增长了三倍以上。其中一家名为苏格兰银行，于1695年依据议会法案成立；另一家名为皇家银行，于1727年依据皇家特许状成立。无论整个苏格兰的贸易还是格拉斯哥市的贸易，在如此短的时期内是否真的以如此大的比例增长，我都不敢说知道。如果二者中任何一个确实以这个比例增长，那么这种结果看来太过巨大，不可能单凭这一原因的作用来解释。不过，苏格兰的贸易和劳动在这段时期确实有了很大增长，而且银行对这种增长贡献良多，这是不容置疑的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p42",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_921"
+      },
+      "contentHash": "3dd68a26af98ea8acbc8ee7ae0881fb71ea9e9cbdd6420e3638d840c7b94da0b",
+      "text": "1707年合并以前在苏格兰流通、合并后立即送入苏格兰银行以便重新铸造的银币，价值共计411,117英镑10先令9便士。金币没有留下统计数字；但从苏格兰铸币厂的旧账目来看，每年铸造的金币价值略高于银币价值。当时还有相当多的人因为怀疑能否得到偿付，没有把银币送入苏格兰银行；此外，还有一些没有被召回的英国铸币。因此，合并以前在苏格兰流通的金银总价值，不能估计为少于一百万英镑。这似乎几乎构成了该国的全部流通货币；因为尽管当时尚无竞争者的苏格兰银行所发行的流通纸币数量相当可观，但看来只占全部流通货币中很小的一部分。现今苏格兰的全部流通货币不能估计为少于二百万英镑，其中由金银构成的部分很可能不到五十万英镑。不过，尽管苏格兰的流通金银在这段时期减少了这么多，其实际财富和繁荣似乎并未受到任何损害。相反，其农业、制造业和贸易，也就是其土地和劳动的年产物，显然有所增加。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p43",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_922"
+      },
+      "contentHash": "6caf9e682b1c6c78cde1c86032db0bc0dcfdc6c88a2cda00419e5200f6e1645b",
+      "text": "大多数银行和银行家主要通过贴现汇票，也就是在汇票到期以前凭票垫款，来发行本票。无论垫付多少款项，他们总会扣除截至汇票到期之日的法定利息。汇票到期后的付款，会使银行收回先前垫付的价值，并获得利息这一笔纯利润。银行家向汇票获得贴现的商人垫付的不是金银，而是自己的本票；这样，他就有一个好处：他根据经验发现，自己的本票通常会保持流通，因而能够把贴现总额增加相当于这些本票全部价值的数额。由此，他能够从大得多的一笔款项中获得利息纯收益。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p44",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_923"
+      },
+      "contentHash": "dcb513b9ff3d178c17dce53d98a4067cf0a540969d19ca34b76f41371fe0b930",
+      "text": "苏格兰目前的商业并不十分发达，而最初两家银行公司成立时，商业甚至更加微不足道；如果这些公司把业务局限于贴现汇票，它们的业务量就会很小。因此，它们发明了另一种发行本票的方法，即开设所谓的现金账户：凡是能够找到两个信用确凿并拥有优良地产的人为其担保的个人，银行就给他一定数额的信贷，例如两千或三千英镑；担保的内容是，在授信额度以内垫付给他的任何款项，都应在索还时连同法定利息一并偿还。我相信，世界各地的银行和银行家通常都会提供这种信贷。但是，据我所知，苏格兰银行公司接受还款的宽松条件是它们所特有的，而且或许既是这些公司业务量巨大的主要原因，也是该国从这种业务中获益的主要原因。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p45",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_924"
+      },
+      "contentHash": "e2c5c94ce9f60a2b1c46af485c66b10e7715f4c52d01b629a1fa012b738c85d6",
+      "text": "任何人在这些公司中的一家拥有这种信贷，例如据此借入一千英镑，都可以分期偿还这笔钱，每次偿还二十或三十英镑；从每笔小额款项存入之日起，直到全部款项以这种方式还清，公司都会从大额借款的利息中减去相应部分。因此，所有商人和几乎所有从事经营的人都觉得在这些公司开立这种现金账户很方便，也因而有意促进这些公司的业务：他们在各种支付中都乐于接受这些公司的银行券，并鼓励一切受他们影响的人也这样做。客户向银行申请款项时，银行通常以自己的本票向其垫付。商人用这些本票向制造商支付货款，制造商用它们向农场主支付材料和生活资料的价款，农场主用它们向地主支付地租，地主又用它们向商人支付商人为其提供的便利品和奢侈品的价款，商人再把它们交回银行，以结清自己的现金账户，或偿还可能从银行借入的款项；这样，该国几乎全部货币业务都借助这些本票办理。由此便产生了这些公司的巨大业务量。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p46",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_925"
+      },
+      "contentHash": "c3bccd9ab91f48ebf4eb09f25010b0f3e3b5dda97c2613108c8e727aaa8618d5",
+      "text": "借助这些现金账户，每个商人都能在不失审慎的情况下经营比原本更大的生意。假如有两个商人，一个在伦敦，另一个在爱丁堡，在同一行业中使用等额资本，那么爱丁堡商人能够在不失审慎的情况下经营更大的生意，并比伦敦商人雇用更多的人。伦敦商人总得在身边留有一笔可观的钱，或放在自己的金库中，或存放在不给他支付利息的银行家那里，以应付不断到来的、要求支付赊购货物价款的请求。假定这笔钱的通常数额为五百英镑。他仓库中货物的价值，必定总比无需被迫闲置这笔钱时少五百英镑。假定他通常每年出售一次手头的全部资本，或者说出售价值相当于手头全部资本的货物。由于被迫闲置这么大一笔钱，他每年必定比原本可以销售的货物少销售价值五百英镑的货物。他的年利润必定减少他本可通过多销售价值五百英镑的货物而赚得的全部利润；而受雇为他把货物制备上市的人数，也必定比增加五百英镑资本所能雇用的人数少同样多。另一方面，爱丁堡商人无须闲置任何款项来应付这种不时之需。当这种请求实际到来时，他从自己在银行的现金账户中支付，并用不时销售货物所得的货币或纸币逐步偿还借款。因此，凭借同样的资本，他能够在不失审慎的情况下，始终在仓库中存放比伦敦商人更多的货物；从而既能使自己获得更多利润，也能让更多为这些货物上市做准备的勤劳者持续就业。该国从这种业务中获得的巨大好处便由此而来。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p47",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_926"
+      },
+      "contentHash": "0f7795cad08fc22182e811655b028810afb47a17784365a418d9dd4659bf9c2b",
+      "text": "诚然，人们或许会认为，贴现汇票的便利为英格兰商人提供了一种与苏格兰商人的现金账户相等的便利。但必须记住，苏格兰商人贴现汇票与英格兰商人同样容易，此外还拥有现金账户这一额外便利。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p48",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_927"
+      },
+      "contentHash": "c5ec095c23ccbae139cbe058141cb7ab37428ab790901b19b61b7ee30d8bd48a",
+      "text": "在任何国家中能够顺畅流通的各种纸币，其总额绝不可能超过它所取代的金银价值，也不可能超过在没有纸币的情况下，假定商业状况相同，本来会在那里流通的金银价值。例如，如果二十先令银行券是苏格兰流通的最低面额纸币，那么在那里能够顺畅流通的全部纸币，就不可能超过办理该国境内通常发生的、价值二十先令及以上的年度交易所必需的金银总额。如果流通纸币在任何时候超过这一数额，因为超出的部分既不能送往国外，也不能用于国内流通，它必定会立即回到银行，要求兑换金银。许多人会立即发觉，自己持有的这种纸币超过了办理国内业务所需的数额；由于无法把它送往国外，他们便会立即要求银行兑现。把这种多余的纸币兑换成金银之后，他们很容易通过将其送往国外而找到用途；但只要它仍保持纸币的形式，他们就无法为它找到任何用途。因此，银行会立即遭遇挤兑，规模相当于这种多余纸币的全部数额；如果银行在付款方面表现出任何为难或迟缓，挤兑规模就会大得多，因为由此引起的恐慌必然会加剧挤兑。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p49",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_928"
+      },
+      "contentHash": "357106877a4b52c510b6a21dc454bc5b37c09c6d22f361432c15783431c10e8d",
+      "text": "除了各行各业共有的费用，如房租、仆役、办事员、会计等人的工资之外，银行特有的费用主要包括两项：第一，为应付银行券持有人不时提出的兑付要求，必须随时在金库中保留一大笔货币，而银行会因此损失这笔货币的利息；第二，在金库因应付这种不时出现的要求而被支空时，必须迅速予以补充的费用。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p50",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_929"
+      },
+      "contentHash": "47afdc631d2e60f9bae6a6c5f68afea0c152152a23da82ac67ed85d8680d03db",
+      "text": "一家银行公司如果发行的纸币超过了该国流通所能使用的数量，因而超额部分不断回到它那里要求兑付，那么它随时保存在金库中的金银数量，不仅应当随其流通量的这种过度增加而按比例增加，而且应当以大得多的比例增加；因为它发行的银行券回流到它那里的速度，比其数量的超额比例快得多。因此，这样一家公司增加第一项费用时，不仅应当与这种被迫的业务扩张成比例，而且应当以大得多的比例增加。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p51",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_930"
+      },
+      "contentHash": "033498b8be4a402277cbede3a2f42a1cb4c932b9c9c36906eb206970c1536c9e",
+      "text": "这种公司的金库虽然应当储备得充裕得多，但其支空速度必然也比业务限制在较为合理的范围内时快得多；为了补充金库，不仅需要更为强力地支出费用，而且需要持续不断地支出。这样不断从金库中大量支出的铸币，也无法用于该国的流通。它所取代的纸币超过了该国流通所能使用的数量，因此，它本身也超过了这种流通所能使用的数量。不过，由于不会容许这些铸币闲置，它们就必须以某种形式运往国外，以便找到在国内无法找到的有利可图的用途；而这种金银的持续输出增加了获取金银的困难，因而必然进一步增加银行为寻找新的金银、补充那些支空得如此迅速的金库而承担的费用。因此，与这种被迫的业务扩张相比，这样一家公司第二项费用的增加幅度必定比第一项还要大。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p52",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_931"
+      },
+      "contentHash": "9a0e60a08ba8af5071a3ccc84c23924f319a708afb35ef8b014e1790a29e5222",
+      "text": "假定某一家银行的全部纸币中，该国流通可以轻易吸收和使用的数量恰好为四万英镑；又假定为应付不时出现的兑付要求，这家银行不得不随时在金库中保留一万英镑的金银。如果这家银行试图使四万四千英镑进入流通，那么超出流通可以轻易吸收和使用的数量的那四千英镑，几乎会一经发行便立即回到银行要求兑付。因此，为应付不时出现的兑付要求，这家银行随时应当保存在金库中的，不应只有一万一千英镑，而应是​​一万四千英镑。这样一来，它不会从超额流通的四千英镑中获得任何利息收益；同时，它还要承担不断筹集四千英镑金银的全部费用，因为这些金银一送进金库，便会以同样快的速度不断流出。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p53",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_932"
+      },
+      "contentHash": "86c4ccb2023c06def31d99a7b4a9cf38af75b3595abbfa4658d1a0fc9c175cc1",
+      "text": "如果每一家银行公司始终理解并顾及自身的特殊利益，流通中就绝不可能充斥过多的纸币。但是，并非每一家银行公司都始终理解或顾及自身的特殊利益，因此流通中经常充斥过多的纸币。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p54",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_933"
+      },
+      "contentHash": "32dff03fdf700cc94742435b34de97ca85be115393e554b0adcb0781de566060",
+      "text": "英格兰银行发行的纸币数量过大，超额部分不断回流，要求兑换金银，因此连续多年不得不每年铸造价值八十万至一百万英镑的金币，平均约为八十五万英镑。为了进行这样大规模的铸币，银行常常不得不以每盎司四英镑的高价购买金块（这是因为几年前金币已经磨损并减重），不久后却以每盎司三英镑十七先令十又二分之一便士的币值将其作为铸币发行；这样，在如此巨额的铸币上，银行便损失了百分之二点五至百分之三。因此，尽管银行不缴纳铸币税，尽管铸币费用理应由政府承担，政府的这种慷慨也未能完全免除银行的费用。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p55",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_934"
+      },
+      "contentHash": "825e525bd40ec3087762540450d821c547419947ba23d51f0b6e441253322a3e",
+      "text": "苏格兰各银行由于同样的超额发行，全都不得不长期在伦敦雇用代理人为其筹集货币，费用很少低于百分之一点五或百分之二。这些货币用货车运往苏格兰，并由承运人承保，另付百分之零点七五的费用，即每一百英镑付十五先令。这些代理人并不总能以金库支空的同等速度为其雇主补充金库。在这种情况下，银行采取的办法是，按其所需金额向伦敦的往来行开出汇票。当这些往来行后来向它们开出汇票，要求偿付这笔款项并加付利息和佣金时，其中一些银行因过度发行使自己陷入困境，有时除了向同一家或伦敦的其他往来行开出第二批汇票外，没有别的办法偿付这张汇票；这样，同一笔款项，或者更确切地说，金额相同的汇票，有时会往返两三次以上，而负债银行始终要按累计总额支付利息和佣金。即使是那些从未因极端轻率而出名的苏格兰银行，有时也不得不采用这种足以使其破产的办法。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p56",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_935"
+      },
+      "contentHash": "1e29d02e1316cc9fc03f076e3acc9c98df6a370bb1617a401a4130da88f05641",
+      "text": "英格兰银行或苏格兰各银行为兑换其纸币中超过该国流通所能使用的那一部分而付出的金币，同样也超过了这种流通所能使用的数量；这些金币有时以铸币形式运往国外，有时被熔化后以金块形式运往国外，有时则被熔化后以每盎司四英镑的高价卖给英格兰银行。人们从全部铸币中仔细挑出的，只有最新、最重、成色最好的金币，并将其运往国外或熔化。在国内，只要仍保持铸币形式，这些较重的金币并不比较轻的金币更值钱；但在国外，或在国内熔成金块之后，它们就更值钱。英格兰银行尽管每年铸造大量金币，却惊讶地发现，每年的铸币短缺仍与前一年相同；尽管银行每年都发行大量优良的新铸币，铸币的状况非但没有越来越好，反而一年比一年糟。银行每年都发现，自己不得不铸造与前一年几乎同量的黄金；而且，由于铸币不断磨损和被剪削，金块价格持续上涨，这种每年进行的大规模铸币，其费用也一年比一年高。应当指出，英格兰银行为自己的金库供应铸币，也就间接地不得不为整个王国供应铸币，因为铸币不断以各种不同方式从其金库流向全国各地。因此，为维持苏格兰和英格兰纸币的这种过度流通而需要的任何铸币，以及这种过度流通在王国必需铸币中造成的任何空缺，都不得不由英格兰银行补足。毫无疑问，苏格兰各银行都为自己的轻率和疏忽付出了极为高昂的代价。但是，英格兰银行付出的高昂代价，不仅是为了自身的轻率，也是为了几乎所有苏格兰银行严重得多的轻率。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p57",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_936"
+      },
+      "contentHash": "c8d2e33be6b6f5be60857f498ef21edfc9f0e9893f3b2308d0590e60f6146792",
+      "text": "联合王国两部分中某些大胆投机者的过度经营，是纸币这种过度流通的最初原因。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p58",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_937"
+      },
+      "contentHash": "fcb2927747e1fe62316e7676538a6a64f2dea4cf397d59ca5b2abf54bbc99ea2",
+      "text": "银行可以适当地垫付给商人或任何一种经营者的，既不是他用来经营的全部资本，甚至也不是这笔资本的任何重大部分，而只是其中这样一部分：若无银行垫款，他本来就不得不把这部分资本以闲置的现金形式留在手边，以应付不时出现的需求。如果银行垫付的纸币从不超过这一价值，它就绝不会超过在没有纸币的情况下该国必然流通的金银价值；也绝不会超过该国流通可以轻易吸收和使用的数量。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p59",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_938"
+      },
+      "contentHash": "2844d10f23a2c33a9f07d677d0f37db8073095f3e39eb73d0e0adf01a31ad5f1",
+      "text": "当银行为商人贴现一张由真实债权人向真实债务人开出的真实汇票，而且该汇票到期时确实由该债务人偿付时，银行只是把商人本来不得不以闲置的现金形式留在手边、用于应付不时出现的需求的那部分价值垫付给他。汇票到期时的偿付，会把银行垫付的价值连同利息一起归还银行。只要银行的业务限于同这类客户往来，它的金库就像一座池塘：虽然总有一股水流不断流出，却也总有另一股水流不断流入，而且流入量与流出量完全相等；因此，无须任何额外的操心或留意，池塘总能保持同样充盈，或接近同样充盈。补充这种银行的金库，几乎从来不需要什么费用，甚至完全不需要费用。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p60",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_939"
+      },
+      "contentHash": "8a303892335141cd775275860e0afe746d9d05586b20352219f0c6d3ba6d0e9f",
+      "text": "即使没有汇票可供贴现，商人在并未过度经营的情况下，也可能经常需要一笔现金。当银行除了贴现他的汇票外，还在这种时候通过他的现金账户向他垫付这种款项，并按照苏格兰银行公司提供的宽松条件，在他偶尔出售货物收到款项时，接受他零星分次偿还，银行就使他完全不必把任何一部分资本以闲置的现金形式留在手边，以应付不时出现的需求。当这种需求实际出现时，他可以从现金账户中充分应付。然而，银行同这类客户往来时，应当极为留意地考察：在某个较短时期内（例如四个月、五个月、六个月或八个月），它通常从他们那里收到的偿还总额，是否完全等于它通常向他们垫付的总额。如果在这样的较短时期内，某些客户在大多数情况下的偿还总额完全等于垫付总额，银行便可以安全地继续同这类客户往来。在这种情况下，不断从金库流出的水流即使很大，不断流入金库的水流也必定至少同样大；因此，无须任何额外的操心或留意，金库很可能始终保持同样充盈或接近同样充盈，几乎从来不需要为补充金库而支付任何额外费用。相反，如果另外一些客户通常偿还的总额远远少于银行向他们垫付的总额，银行就无法安全地继续同这类客户往来，至少在他们继续以这种方式同银行往来时是如此。在这种情况下，不断从金库流出的水流必然远远大于不断流入的水流；因此，除非通过大量而持续的费用支出来补充金库，否则金库很快就必定会完全枯竭。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p61",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_940"
+      },
+      "contentHash": "078030aaf3b101dd7edf15a9ab60f88320bc56425ad077f02e156099abbc5445",
+      "text": "因此，苏格兰的银行公司在很长时期内都非常注意要求所有客户经常而有规律地还款；对于任何不同它们进行所谓经常而有规律的往来的人，无论其财产或信用如何，它们都不愿与之交易。通过这种留意，它们除了几乎完全节省补充金库的额外费用外，还获得了另外两项十分重大的好处。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p62",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_941"
+      },
+      "contentHash": "b69cbb4836c7f94862db2a07db8cddded1454bcd26243a047c604d5332de1e92",
+      "text": "第一，通过这种留意，它们无须在自己的账簿所提供的材料之外寻找任何其他证据，便能对债务人的财务状况是在兴旺还是在衰退作出某种还算可靠的判断；因为人们的还款大都规律或不规律，取决于其财务状况是在兴旺还是在衰退。一个把钱贷给也许六个或十二个债务人的私人，可以亲自或通过代理人，不断而细致地观察和调查每个人的行为与处境。但是，一家把钱贷给也许五百个不同的人，而且其注意力不断被性质截然不同的事务占据的银行公司，除了自己的账簿所提供的情况外，不可能经常获得有关大部分债务人的行为和财务状况的信息。苏格兰各银行公司要求所有客户经常而有规律地还款时，心中很可能考虑到了这一好处。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p63",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_942"
+      },
+      "contentHash": "aca153bbbe7b5e91603a95c6ce55e4403c3b55395c0ae60308e4e2d7f187ec31",
+      "text": "第二，通过这种留意，它们确保自己不可能发行超过该国流通可以轻易吸收和使用的纸币。当它们发现，在不太长的时期内，某个客户在大多数情况下的还款完全等于它们向他提供的垫款时，它们便可以确信，它们垫付给他的纸币，在任何时候都不曾超过若无这种垫款他本来就不得不留在手边、用于应付不时出现的需求的金银数量；因此，它们通过他而投入流通的纸币，在任何时候都不曾超过假如没有纸币本会在该国流通的金银数量。他还款的频率、规律性和金额，足以证明它们的垫款额在任何时候都不曾超过他的资本中这样一部分：若无银行垫款，他本来就不得不把这部分资本以闲置的现金形式留在手边，用于应付不时出现的需求，也就是为了使其余资本持续得到运用。只有他的资本中的这一部分，才会在不太长的时期内，以纸币或铸币的货币形式不断回到每个经营者手中，又不断以同样的形式从他手中流出。如果银行的垫款通常超过了他的资本中的这一部分，那么在不太长的时期内，他通常的还款额就不可能等于银行通常的垫款额。通过同他的往来而不断流入银行金库的水流，就不可能等于通过同样的往来而不断流出的水流。银行垫付的纸币如果超过了在没有这种垫款的情况下他本来不得不留在手边、用于应付不时出现的需求的金银数量，很快就可能超过在没有纸币的情况下本会在该国流通的全部金银数量（假定商业规模不变），从而超过该国流通可以轻易吸收和使用的数量；而这部分超额纸币会立即回到银行，要求兑换金银。这第二项好处虽然同样真实，但苏格兰各家不同的银行公司对它的理解，或许不如对第一项好处那样透彻。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p64",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_943"
+      },
+      "contentHash": "d7c85f3a8038eec0de67056fb1072c8cb2b90bb8b05bdc328e0339cf95691e47",
+      "text": "当一个国家信誉良好的商人，一方面由于贴现汇票的便利，另一方面由于现金账户的便利，可以不必把任何一部分资本以闲置的现金形式留在手边，以应付不时出现的需求时，他们就没有理由再期待银行和银行家提供进一步的帮助；银行和银行家做到这一步之后，如果还要更进一步，就无法兼顾自身的利益和安全。银行如果要顾及自身利益，就不能把商人用来经营的全部流动资本，甚至其中的大部分垫付给他；因为这种资本虽然不断以货币形式回到他手中，又不断以同样的形式从他手中流出，但全部回流与全部支出之间相隔太久，以致在适合银行周转的这种不太长的时期内，他的还款总额不可能等于银行的垫款总额。银行更不能垫付他的固定资本中的任何重大部分；例如，经营炼铁厂的人用来建造炼铁炉和熔炼厂、工场和仓库、工人住宅等的资本；经营矿山的人用来开凿矿井、架设抽水机械、修筑道路和运矿车道等的资本；从事土地改良的人用来清理、排水、圈围、施肥和耕作荒芜未垦的田地，以及建造农舍及其所需马厩、谷仓等全部附属设施的资本。固定资本的回流，几乎在所有情况下都比流动资本缓慢得多；这类支出即使以最大的审慎和判断力作出，也极少能在许多年以内回到经营者手中，而这个期限对于银行的周转来说实在太长。毫无疑问，商人和其他经营者完全可以适当地用借款来实施其计划中相当大的一部分。不过，为公平对待债权人，在这种情况下，他们自有资本的数额应当足以为债权人的资本提供保障——如果可以这样说的话——也就是即使计划的成功程度远远不及策划者的预期，也应使这些债权人蒙受损失的可能性极小。即使采取了这种预防措施，凡打算数年之后才偿还的借款，也不应从银行借入，而应以债据或抵押的方式，向那些打算依靠其货币利息生活、不愿亲自费心运用资本的私人借入；正因为如此，这些人愿意把资本借给那些信用良好、很可能会将其保留数年的人。银行贷款无须承担印花纸费用，也无须支付律师起草债据和抵押契据的费用，并且按照苏格兰银行公司的宽松条件接受还款；这样的银行对于这类商人和经营者而言，无疑会是非常方便的债权人。但这类商人和经营者对于这样的银行而言，无疑会是最不方便的债务人。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p65",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_944"
+      },
+      "contentHash": "683738da7fde1317b629167916fe3b07518e0312ddc9956d4c42d9293eb4b764",
+      "text": "如今，苏格兰各家银行公司发行的纸币已经完全等于，或者更确切地说，已经略多于该国流通所能轻易吸收和运用的数量，这种状况已有二十五年多了。因此，早在很久以前，这些公司就已经向苏格兰的商人和其他经营者提供了银行和银行家在不违背自身利益的前提下所能提供的一切帮助。它们甚至做得更多一些。它们略微经营过度，因而使自己蒙受了损失，或者至少是利润的减少；在这种特定业务中，即使程度最轻的经营过度，也必然伴随着这种后果。那些商人和其他经营者从银行和银行家那里得到了这么多帮助，却还想得到更多。他们似乎认为，银行除了花费几令纸张之外，不会发生任何其他费用，因而可以把信用扩张到所需的任何数额。他们抱怨这些银行的董事眼界狭窄、精神怯懦，说他们没有随着本国贸易的扩展而相应扩大信用；所谓贸易的扩展，无疑是指他们自己的计划已经扩展到这样一种程度：无论靠自有资本，还是靠他们通常以债券或抵押方式能够从私人那里借到的资金，都无法继续经营下去。他们似乎认为，银行在道义上有义务补足这一缺额，为他们提供经营所需的全部资本。然而，银行持有不同看法；银行拒绝扩大信用之后，其中一些商人便采用了一种权宜之计。这种办法虽然费用高得多，却在一段时间内同银行把信用扩张到最大限度一样有效地达到了他们的目的。这种权宜之计，正是众所周知的开票和重开票手法；不幸的商人在濒临破产时，有时会求助于这种手法。以这种方式筹集资金的做法在英格兰早已为人所知；据说在最近一次战争期间，由于高额贸易利润强烈诱使人们过度经营，这种做法曾发展到极大的规模。它从英格兰传入苏格兰；相对于该国极为有限的商业和非常微薄的资本而言，它很快就发展到比以往在英格兰所达到的规模大得多的程度。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p66",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_945"
+      },
+      "contentHash": "6a1c04da2e70847a57f323d943bebb7e5cae0c44b6bd4821a88e0240316776d8",
+      "text": "开票和重开票的做法为所有商界人士所熟知，因而对它作任何说明，也许会被认为没有必要。但是，由于本书可能落到许多并非商界人士的人手中，而且即使商界人士自己，对这种做法给银行业造成的影响也未必普遍了解，我将尽力把它解释得尽可能清楚。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p67",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_946"
+      },
+      "contentHash": "25d0b51c76d500efbbbb8e7ac167ad122cd9de0420dd754e45e4485ef1c6e2b0",
+      "text": "商人习惯形成于欧洲的野蛮法律尚不能强制人们履行契约之时，并在最近两个世纪中被欧洲各国纳入法律。这些习惯赋予汇票极为特殊的权利，以致人们更愿意凭汇票垫付资金，而不愿意凭任何其他种类的债务凭证垫付；尤其是在汇票规定于出票日后两三个月这样短的期限内付款时，更是如此。如果汇票到期时，承兑人在汇票一经提示后没有立即付款，他从那一刻起便成为破产者。汇票随即作成拒付证书，并退回出票人；出票人如果不立即付款，也同样成为破产者。如果汇票在到达向承兑人提示付款的人手中之前，已经过其他若干人之手，这些人先后以货币或货物向彼此垫付了票面金额，并且为了表示他们各自依次收到了这一金额，都按照先后顺序作了背书，也就是把自己的姓名写在汇票背面，那么每个背书人依次都要向汇票持有人承担支付票面金额的责任；如果不能支付，他也从那一刻起成为破产者。即使汇票的出票人、承兑人和背书人的信用全都可疑，短促的期限仍能给汇票持有人一些保障。即使他们每个人都很可能破产，他们是否会在这么短的时间内全都破产，却仍未可知。一个疲惫的旅客对自己说：这所房子摇摇欲坠，支撑不了多久；但它未必恰好在今晚倒塌，所以我愿意冒险今晚睡在里面。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p68",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_947"
+      },
+      "contentHash": "f5e71053ed7bd4d027382564f32373aafa177eb09b19c81b1c3504fc1f84f2b3",
+      "text": "假定爱丁堡的商人甲向伦敦的乙开出一张出票日后两个月付款的汇票。实际上，伦敦的乙并不欠爱丁堡的甲任何债务；但他同意承兑甲的汇票，条件是在付款期限到来之前，他要向爱丁堡的甲重开一张金额相同、另加利息和手续费、同样在出票日后两个月付款的汇票。因此，在头两个月期满之前，乙向爱丁堡的甲重开了这张汇票；甲又在第二个两个月期满之前，向伦敦的乙开出第二张同样在出票日后两个月付款的汇票；在第三个两个月期满之前，伦敦的乙又向爱丁堡的甲重开一张也在出票日后两个月付款的汇票。这种做法有时不仅连续进行数月，而且连续进行数年；汇票总是退回爱丁堡的甲那里，并带上此前所有汇票累积的利息和手续费。利息为每年百分之五，每次开票的手续费从不低于百分之零点五。这项手续费每年重复收取六次以上，所以无论甲以这种权宜之计筹得多少钱，每年付出的代价都必然略高于百分之八，有时还要高得多；这是在手续费价格偶然上涨，或他不得不对以前汇票的利息和手续费支付复利时发生的。这种做法叫作以循环方式筹集资金。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p69",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_948"
+      },
+      "contentHash": "2fd0c53aaf485d39d62acf99d93c80e45177ae0ef2c1fe4d1a406b895f89c226",
+      "text": "在一个大部分商业计划的普通资本利润被认为介于百分之六至百分之十之间的国家，一项投机事业若所得收益不仅能够偿还为经营它而以这种方式借款所付的巨额费用，而且还能给计划发起人带来一笔可观的剩余利润，那一定是极为幸运的。尽管如此，许多规模庞大、范围广泛的计划仍被付诸实施，并连续经营数年，除了以这种巨额费用筹得的资金之外，没有任何其他资金加以支持。毫无疑问，计划发起人在他们的黄金美梦中，极其清晰地看到了这笔巨额利润。然而，当他们梦醒时，无论是在计划结束之际，还是在他们再也无力继续经营之时，我相信，他们极少有幸真正发现这笔利润。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p70",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_949"
+      },
+      "contentHash": "03263feb6df0b11b7c30bfd295660706422ae2834e05d6e4c925e9c6d5f55c91",
+      "text": "爱丁堡的甲向伦敦的乙开出的汇票，总是在到期前两个月，由爱丁堡的某家银行或某位银行家按贴现方式兑付；伦敦的乙向爱丁堡的甲重开的汇票，也同样总是由英格兰银行或伦敦的其他某些银行家按贴现方式兑付。凭这种循环汇票垫付的资金，在爱丁堡是以苏格兰各银行的纸币垫付的；在伦敦，当汇票由英格兰银行贴现时，则以该银行的纸币垫付。尽管作为这些纸币垫付依据的所有汇票在到期时都依次得到了偿付，但凭第一张汇票实际垫付的价值，却从未真正归还给垫付它的银行；因为每张汇票到期之前，总会开出另一张金额略高于即将偿付的汇票的新汇票，而对这张新汇票进行贴现，对于支付即将到期的那张汇票是必不可少的。因此，这种偿付完全是虚假的。借助这些循环汇票一度从银行金库流出的资金之流，从未有任何真正流入银行金库的资金之流予以补充。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p71",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_950"
+      },
+      "contentHash": "2de5b5f32313557e18e8e6d95d0d8c3fad154135dcd5a37bbd8ab788108c5f5a",
+      "text": "凭这些循环汇票发行的纸币，在许多场合相当于用来经营某项规模庞大、范围广泛的农业、商业或制造业计划的全部资金，而不仅仅是其中这样一部分：如果没有纸币，计划发起人就不得不把它留在身边，不加运用并以现款形式保存，以应付不时之需。因此，这些纸币的大部分，超出了在没有纸币的情况下本会在该国流通的金银价值。也就是说，它超出了该国流通所能轻易吸收和运用的数量，因而立即回到银行，要求兑换金银，而银行只得设法予以提供。这是一笔资本，那些计划发起人极其巧妙地设法从这些银行抽取出来，不仅未经银行知情或审慎同意，而且在一段时间内，银行或许甚至丝毫没有怀疑自己实际上已经垫付了这笔资本。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p72",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_951"
+      },
+      "contentHash": "83595e9c7e0f2734617a0dd2d3ac8cc36acb4b738b4e6613b748272e804de476",
+      "text": "如果两个人不断相互开票和重开票，并且总是向同一位银行家贴现汇票，这位银行家必然会立即发现他们在做什么，并清楚看出他们不是用任何自有资本经营，而是用他垫付给他们的资本经营。但是，如果他们有时向一位银行家贴现，有时向另一位银行家贴现，而且并非总是由同样的两个人相互开票和重开票，而是偶尔在一大圈计划发起人之间轮流开票，那么这种情形就不那么容易被发现。这些人认为，以这种筹资方式相互帮助符合各自的利益，因此尽可能使人难以区分真实汇票与虚假汇票，难以区分真实债权人向真实债务人开出的汇票与这种汇票：严格说来，它真正的债权人只有贴现它的银行，而真正的债务人只有使用这笔资金的计划发起人。即使银行家发现了这种情形，有时也可能发现得太迟，并且可能发觉自己贴现这些计划发起人的汇票已经达到如此巨大的数额，以致如果拒绝再予贴现，就必然会使他们全都破产，从而在毁掉他们的同时，或许也会毁掉自己。因此，为了自身的利益和安全，他可能会发现，在这种极其危险的处境中，有必要继续维持一段时间，但同时设法逐渐退出；为此，他在贴现方面一天比一天设置更多、更大的困难，以迫使这些计划发起人逐步转向其他银行家或其他筹资方式，从而使自己能够尽快脱离这个圈子。因此，在经过一段时间、而且全都已经陷得太深之后，英格兰银行、伦敦的主要银行家，甚至较为审慎的苏格兰银行开始在贴现方面设置的种种困难，不仅使这些计划发起人惊慌，而且使他们极度愤怒。他们把自己的困境称为国家的困境；这种困境无疑是由银行这种审慎而必要的克制造成的直接后果。他们声称，国家的这种困境完全是由于银行的无知、怯懦和管理不善，因为银行没有对那些努力美化、改良和富裕国家的人所从事的锐意进取的事业给予足够慷慨的帮助。他们似乎认为，银行有责任按照他们希望借款的期限和数额，尽可能长期、尽可能大量地放款。然而，银行以这种方式拒绝向那些已经得到过多信用的人再提供更多信用，正是当时挽救银行自身信用或国家公共信用的唯一可行办法。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p73",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_952"
+      },
+      "contentHash": "6832c363c2b32148c92e855492fec04b036bcbe2255f2e264e8f311a4d38572b",
+      "text": "在这一片喧嚷和困境之中，苏格兰成立了一家新银行，其明确目的就是缓解国家的困境。这一构想是慷慨的，但执行得并不审慎，而且它意图缓解的困境之性质和原因，或许也没有得到很好的理解。这家银行无论在给予现金账户方面，还是在贴现汇票方面，都比以往任何银行更加慷慨。对于后者，它似乎几乎不区分真实汇票和循环汇票，而是一律予以贴现。这家银行公开奉行的原则是，凭任何合理的担保，垫付将用于那些收益最缓慢、最遥远的改良事业的全部资本，例如土地改良。据说，促进这类改良甚至是它成立时所抱持的公益目的中最主要的一项。它慷慨给予现金账户并贴现汇票，无疑因此发行了大量银行券。但是，这些银行券大部分都超出了该国流通所能轻易吸收和运用的数量，因而一经发行，便同样迅速地回到该银行，要求兑换金银。它的金库从未得到充分充实。分两次认购的该银行资本总计十六万英镑，其中只有百分之八十实缴。这笔款项本应分若干期缴纳。很大一部分股东缴纳第一期款项时，都在银行开设了现金账户；董事们认为，对待本行股东有义务像对待其他所有人一样慷慨，因此允许其中许多人通过这个现金账户借入他们为以后各期缴款所缴纳的款项。因此，这些缴款不过是把刚刚从一个金库取出的款项放进另一个金库而已。然而，即使这家银行的金库充实得再好，它发行量过多，也必然会使金库耗空，其速度之快，不可能靠任何其他权宜之计及时补充，唯一例外就是一种招致毁灭的办法：向伦敦开出汇票，并在汇票到期时，再向同一地点开出另一张汇票，连同利息和手续费一并偿付。由于它的金库充实得如此之差，据说它开业不过几个月，就被迫采用了这种办法。这家银行股东的地产价值数百万英镑，而且他们认购银行最初的债券或契约，实际上就以这些地产为银行履行全部债务作了担保。如此巨额的担保必然赋予它极高的信用，借助这种信用，尽管经营过于慷慨，它仍得以维持业务两年多。当它被迫停业时，流通中的银行券约有二十万英镑。为了维持这些银行券的流通——它们一经发行便不断回流——该银行一直采取向伦敦开出汇票的做法，汇票的数量和金额不断增加；到它停业时，总额已超过六十万英镑。因此，这家银行在略多于两年的时间里，以百分之五的利率向不同的人垫付了八十多万英镑。对于它以银行券形式投入流通的二十万英镑，这百分之五或许可以视为纯收益，除了管理费用之外无须作任何其他扣除。但对于它不断向伦敦开出汇票筹得的六十多万英镑，它以利息和手续费的形式支付了百分之八以上；因此，在其全部业务的四分之三以上的部分，它损失了百分之三以上。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p74",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_953"
+      },
+      "contentHash": "f4ccb35320de787652a9601fd68c4ca07ff7945682413bdebaa93aae0c95bed2",
+      "text": "这家银行的经营所产生的效果，似乎与规划和管理它的那些人的意图完全相反。他们似乎打算支持当时正在全国不同地区开展的锐意进取的事业——他们把这些事业看作这样的事业；同时还打算把全部银行业务都吸引到自己手中，排挤所有其他苏格兰银行，特别是在爱丁堡设立的那些银行，因为它们不愿贴现汇票已经引起了一些不满。毫无疑问，这家银行给那些计划发起人提供了一些暂时的纾困，使他们得以把各自的计划比原本可能做到的多维持约两年。但它这样做，只是使他们陷入了深得多的债务，以致毁灭到来时，对他们及其债权人的打击都沉重得多。因此，这家银行的经营非但没有缓解，实际上从长远来看反而加剧了那些计划发起人给自己和国家带来的困境。如果他们大部分人被迫比实际停业时间早两年停业，对他们自己、他们的债权人和他们的国家都会好得多。然而，这家银行给那些计划发起人提供的暂时纾困，却给其他苏格兰银行带来了真实而持久的纾困。所有经营循环汇票的人，在其他银行已经如此不愿给这些汇票贴现之后，都转而求助于这家新银行，并在这里受到热烈欢迎。因此，那些其他银行得以十分轻易地摆脱那个致命的圈子；否则，它们若不蒙受重大损失，甚至或许还要遭受一定程度的信用损害，就无法脱身。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p75",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_954"
+      },
+      "contentHash": "2c2a63b9e1d6ca4198dd7bc6fcbe18c5ccd0814760cf90b28a2916ec976e7a54",
+      "text": "因此，从长远来看，这家银行的经营加剧了它本想缓解的国家真实困境，却有效地使它本想排挤的那些竞争对手摆脱了极大的困境。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p76",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_955"
+      },
+      "contentHash": "334d21c8f0b064ca620921b41472c3251b2b42ea326056f970fd8731859e2e05",
+      "text": "这家银行刚开办时，有些人认为，无论它的金库以多快的速度被提空，它都可以用那些接受过其纸币垫款者的证券筹集资金，从而轻易地予以补充。我相信，经验很快就使他们确信，这种筹款方法远远太慢，不能满足他们的需要；而那些原本就没有多少储备、又如此迅速被提空的金库，除了采用一种毁灭性的办法之外，别无他法可以补充：即向伦敦开出汇票，待汇票到期时，再向同一地点开出附加了累积利息和手续费的新汇票来偿付。不过，即使他们能用这种方法按需要的速度筹到资金，他们的每一笔此类业务也必定不是带来利润，而是造成损失；所以从长远看，作为一家商业公司，他们必定会使自己破产，尽管也许不会像采用开票和重开汇票这种成本更高的做法那样迅速。对于那些超出本国流通所能吸收和运用的纸币，他们仍然不可能赚取任何利息，因为这些纸币一经发行，便同样迅速地回到他们手中，要求兑换金银；为了兑付这些纸币，他们自己不得不不断借款。相反，这种借款的全部费用，包括雇用代理人寻找有钱可贷者、同这些人商议以及拟订适当的债券或转让文书的费用，都必定由他们承担，并在账目结算时成为相应数额的纯损失。以这种方式补充金库的计划，可以比作一个人的做法：他有一个水塘，一股水流不断从中流出，却没有任何水流不断注入，而他却打算雇一批人不停地提着水桶，到数英里外的一口井去取水补充水塘，使其水量始终保持不变。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p77",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_956"
+      },
+      "contentHash": "68d5a7c85094d5b0d76aef2b1635d769f6e32be93d103a21d8d3a2e5c3e0783d",
+      "text": "不过，即使这种做法对银行这家商业公司而言不仅切实可行，而且有利可图，国家也不可能从中得到任何好处；相反，必定会因此遭受相当重大的损失。这种做法丝毫不能增加可供贷放的货币数量。它只能把这家银行变成全国的一种总贷款所。需要借款的人必须向这家银行申请，而不再向那些把钱贷给该银行的私人申请。不过，一家也许把钱贷给五百个不同的人的银行，其董事对其中大多数人可能知之甚少；它在选择债务人时，不大可能比一个只把钱贷给少数几个自己认识的人、并认为有充分理由信赖其稳健节俭作风的私人更加明智。像我刚才略述其经营方式的那家银行，其债务人大多很可能是空想的投机家，是不断开出和重开流通汇票的人；他们会把钱用于铺张冒进的事业，而这些事业即使得到一切可能给予的援助，也很可能永远无法完成；即使完成，也永远不能偿还其实际耗费，永远不能提供一笔足以维持与投入其中的劳动数量相等的劳动的资本。相反，私人债权人那些稳健节俭的债务人，更可能把借来的钱用于同其资本相称的稳健事业；这些事业虽然少一些宏伟和奇异之处，却多一些扎实和有利可图之处，能够连同丰厚利润偿还投入其中的一切，因而能够提供一笔足以维持比投入其中的劳动多得多的劳动的资本。因此，这种做法的成功丝毫不会增加国家的资本，只会把其中很大一部分从谨慎而有利可图的事业转移到轻率而无利可图的事业。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p78",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_957"
+      },
+      "contentHash": "144136380b90c27c1921099b5902617a4f0247041ad15b689cb11fcf01bbd50f",
+      "text": "著名的劳先生认为，苏格兰的产业之所以萧条，是因为缺少用来推动它的货币。为弥补这种货币短缺，他提议设立一家特殊类型的银行；他似乎设想，这家银行可以发行数额相当于全国全部土地总价值的纸币。苏格兰议会在他最初提出这项计划时，认为不宜采纳。后来，当时担任法国摄政王的奥尔良公爵略作修改后采纳了这项计划。认为纸币几乎可以无限增加的观念，正是所谓密西西比计划的真正基础；这也许是世界上前所未见的、在银行业和证券投机两方面都最为荒唐的计划。杜韦尔奈先生在其《对杜托先生〈关于商业和财政的政治思考〉的考察》中，对这项计划的各种运作作了如此充分、清楚、井然且明确的说明，我就不再加以叙述。这项计划所依据的原则，则由劳先生本人在一篇关于货币和贸易的论说中作了解释；那篇论说是他最初在苏格兰提出这项计划时发表的。那篇论说以及依据同样原则写成的其他一些著作中所陈述的那些辉煌却不切实际的观念，至今仍继续影响着许多人，而且也许在一定程度上促成了近来苏格兰和其他地方都有人抱怨的银行业过度扩张。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p79",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_958"
+      },
+      "contentHash": "a0ceffdb5b2e9cda59419046406d1d8f075289639256d5f5189451590fe9862d",
+      "text": "英格兰银行是欧洲最大的发行银行。根据一项议会法案，它凭盖有国玺、日期为1694年7月27日的特许状成立为法人。当时，它向政府垫付了120万英镑，以换取每年10万英镑的年金：其中每年利息96,000英镑，利率为百分之八，另有每年4,000英镑作为管理费用。由革命建立的新政府当时竟不得不以如此高的利率借款，可见其信用必定很低。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p80",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_959"
+      },
+      "contentHash": "b19caf279ad9b23397ff1ffdeeab0a903b6ccaf6f7e7a3a4a60b4344f4ac13d4",
+      "text": "1697年，该银行获准通过增资并入1,001,171英镑10先令，以扩大其股本。因此，当时它的总股本达到2,201,171英镑10先令。据说，这次增资是为了维持公共信用。1696年，政府计数券曾以百分之四十、五十乃至六十的折扣流通，银行券则以百分之二十的折扣流通。在当时进行的大规模银币重铸期间，该银行认为应当暂停兑付其银行券，这必然使银行券失去信用。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p81",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_960"
+      },
+      "contentHash": "e9cf5b21ea4d5ee019c33bb60b88c93accfa4c5759dcbd4be5cc5a5c558861ce",
+      "text": "根据安妮女王第七年法令第七章，该银行向国库垫付并缴入400,000英镑；连同此前以原有年金为条件垫付的款项，总额达到1,600,000英镑，而该年金包括96,000英镑利息和4,000英镑管理费用。因此，到1708年，政府的信用已经同私人一样好，因为它能以百分之六的利率借款，而这是当时通常的法定利率和市场利率。根据同一法令，该银行注销了金额为1,775,027英镑17先令10½便士、利率为百分之六的国库券，同时获准接受认购，将其资本增加一倍。因此，1708年该银行的资本达到4,402,343英镑；它向政府垫付的总额则达到3,375,027英镑17先令10½便士。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p82",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_961"
+      },
+      "contentHash": "ed849838a70c6da77630999d53308f6261288726c38e86d3924b635c9e81c393",
+      "text": "1709年通过催缴百分之十五，缴入并转为资本的金额为656,204英镑1先令9便士；1710年又催缴百分之十，金额为501,448英镑12先令11便士。因此，经过这两次催缴，银行资本达到5,559,995英镑14先令8便士。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p83",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_962"
+      },
+      "contentHash": "558d10e268c9847639c386b6085ed7b629a897c26c0033a98d45cd6ff49a51e8",
+      "text": "根据乔治一世第三年法令第八章，该银行交回了200万英镑的国库券予以注销。因此，它当时向政府垫付的总额为5,375,027英镑17先令10便士。根据乔治一世第八年法令第二十一章，该银行从南海公司购入了价值4,000,000英镑的证券；1722年，由于为使自己能够完成这项购买而接受了认购，其股本增加了3,400,000英镑。因此，当时该银行向公众垫付了9,375,027英镑17先令10½便士，而其股本仅为8,959,995英镑14先令8便士。正是在这一次，该银行垫付给公众并从中收取利息的款项，首次超过了其股本，也就是它向银行股东支付股息所依据的金额；换句话说，银行在其分红资本之外，开始拥有未分红资本。此后，它一直拥有这种未分红资本。到1746年，该银行先后向公众垫付了11,686,800英镑，而其分红资本经多次催缴和认购已增至10,780,000英镑。此后，这两个数额一直保持不变。根据乔治三世第四年法令第二十五章，该银行同意为续展其特许状向政府支付110,000英镑，不计利息，也不予偿还。因此，这笔款项没有增加上述两个数额中的任何一个。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p84",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_963"
+      },
+      "contentHash": "2c7e1bb64fcac6a014790ee483b7e09110568c76b878e9ed19064406cff83b3f",
+      "text": "该银行的股息随着它在不同时期对垫付给公众的款项所收取的利率变化而变化，也随着其他情况而变化。这一利率已逐渐从百分之八降至百分之三。过去若干年间，银行股息一直为百分之五点五。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p85",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_964"
+      },
+      "contentHash": "07cb9c3de175d8e0a515c91dabb6bffe23feaa31998bbaf585d3aa35d46a2ea1",
+      "text": "英格兰银行的稳固程度与英国政府相同。只有它垫付给公众的全部款项都损失殆尽之后，其债权人才会蒙受任何损失。在英格兰，其他任何银行公司都不能依据议会法案设立，也不能由六名以上成员组成。它不仅像普通银行一样经营，而且还是国家的一部重要机器。它收付应付给公共债权人的大部分年金，使国库券流通，并按土地税和麦芽税的年度税额向政府垫款，而这些税款常常要到数年后才全部缴清。在这些不同业务中，它对公众所负的职责有时可能迫使它在董事并无任何过错的情况下，向流通中投入过多纸币。它也贴现商人的汇票，并曾在几个不同场合支持不仅英格兰、而且汉堡和荷兰主要商号的信用。据说有一次，即1763年，它为此在一周内垫付了约1,600,000英镑，其中很大一部分是金银条块。不过，无论这一数额之大，还是时间之短，我都不敢保证确实无误。在另一些场合，这家大公司竟陷入不得不用六便士硬币付款的境地。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p86",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_965"
+      },
+      "contentHash": "a36ad4f71b4af0372aef6346bdfda2e6cebf60fa997c401aaefa24216e308bcf",
+      "text": "最为明智的银行业务并不是通过增加一国的资本，而是通过使其中比原本会活跃并具有生产性的更大一部分变得活跃并具有生产性，来促进该国的产业。商人为了应付不时之需而不得不留在手边、闲置不用并以现金形式持有的那部分资本，是等额的呆滞资本；只要它保持这种状态，就既不为他本人、也不为他的国家生产任何东西。明智的银行业务使他能够把这种呆滞资本转化为活跃且具有生产性的资本，转化为用来加工的材料、用来工作的工具以及为了工作而准备的食物和生活资料；转化为既给他本人、也给他的国家带来产出的资本。在任何国家流通，并借以使该国土地和劳动的产物每年流转并分配给适当消费者的金银货币，也完全像商人的现金一样，全是呆滞资本。它是该国资本中价值很高、却不为国家生产任何东西的一部分。明智的银行业务以纸币取代这许多金银中的很大一部分，使国家能够把很大一部分呆滞资本转化为活跃且具有生产性的资本，转化为能给国家带来产出的资本。在任何国家流通的金银货币，完全可以恰当地比作一条大道：它虽然使全国所有的牧草和谷物得以流通并运往市场，自身却连一垛牧草或谷物也不生产。明智的银行业务——如果容许我使用这样一个大胆的比喻——仿佛在空中铺设了一种车道，使国家可以说能把很大一部分大道改造成优良的牧场和谷田，从而大大增加其土地和劳动的年产物。不过，必须承认，一国的商业和产业以这种方式仿佛悬挂在纸币的代达罗斯之翼上时，虽可有所增长，却不可能像在金银的坚实地面上行进时那样完全安全。除了因纸币经营者不熟练而面临的风险之外，它们还会遭遇另外几种风险，而无论这些经营者多么谨慎或高明，都无法加以防范。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p87",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_966"
+      },
+      "contentHash": "699a1e1ac55cf90f552761bd9c1277b1f87b6130e26d0171406afd8fafb58dca",
+      "text": "例如，在一场失败的战争中，如果敌人占领首都，并因而占有支撑纸币信用的那笔财宝，那么在全部流通都靠纸币进行的国家，由此造成的混乱，会远远大于大部分流通靠金银进行的国家。通常的商业工具一旦失去价值，交易便只能通过物物交换或信用来进行。由于各种税款通常都用纸币缴纳，君主既没有东西可用来支付军队，也没有东西可用来充实军需库；国家的局势会比大部分流通由金银构成时更加无可挽回。因此，一个渴望始终使自己的领地保持在最容易防守状态的君主，不仅应当防止纸币过度增加，以致使发行纸币的银行本身破产；甚至还应当防止纸币增加到使这些银行能用它充斥国内大部分流通的程度。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p88",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_967"
+      },
+      "contentHash": "fef63d552848c31ce182208ca28f371b8871e5cd88e2c77a4494a917f67a95b3",
+      "text": "每个国家的流通都可以看作分为两个不同部分：商人彼此之间的流通，以及商人与消费者之间的流通。同一些货币，无论是纸币还是金属货币，虽然有时可用于一种流通，有时可用于另一种流通；但由于两种流通始终同时进行，每一种都需要一定数量的某种货币来维持。不同商人之间流通的货物价值，绝不可能超过商人与消费者之间流通的货物价值，因为商人购买的一切货物，最终都是要卖给消费者的。商人之间的流通由于以批发方式进行，每一笔具体交易通常都需要相当大的金额。相反，商人与消费者之间的流通由于通常以零售方式进行，往往只需要很小的金额；一先令，甚至半便士，常常就已足够。不过，小额货币的流通速度比大额货币快得多。一先令易手的次数比一基尼多，半便士易手的次数又比一先令多。因此，所有消费者每年的购买额虽然在价值上至少等于所有商人的购买额，却通常可以用少得多的货币完成；因为同一些货币流通得更快，在一种购买中充当交易工具的次数要比在另一种购买中多得多。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p89",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_968"
+      },
+      "contentHash": "2f42c64cdade8ca516113e6df5e6d26be219dd872aec221b1c497209daade8af",
+      "text": "纸币可以受到这样的管制：要么使其大体局限于不同商人之间的流通，要么使其也扩展到商人与消费者之间流通的很大一部分。在像伦敦那样没有面额低于十英镑的银行券流通的地方，纸币大体局限于商人之间的流通。一张十英镑的银行券到了消费者手中，当他第一次需要在商店购买价值五先令的货物时，通常就不得不把它兑开；所以，消费者往往还没有花掉这笔钱的四十分之一，它便已回到商人手中。在像苏格兰那样发行面额低至二十先令的银行券的地方，纸币扩展到了商人与消费者之间流通的相当大一部分。在议会法案制止十先令和五先令银行券流通以前，纸币在这种流通中所占的部分还要更大。在北美洲的通货中，纸币通常发行到一先令这样小的面额，几乎充斥了这类流通的全部。在约克郡的某些纸币通货中，甚至发行过面额低至六便士的纸币。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p90",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_969"
+      },
+      "contentHash": "f80377465da98e55fa2bf21149caa41a4860c09fa63b388cb6edc07e81ec08a2",
+      "text": "在准许并普遍实行发行如此小额银行券的地方，许多卑微之人既有能力、也受到鼓励成为银行家。一个人的五英镑甚至二十先令本票会遭到所有人的拒绝，但如果本票发行到六便士这样小的面额，人们就会毫不迟疑地接受。不过，这类穷酸银行家必然经常破产，这可能给许多曾以其银行券收款的穷人造成相当严重的不便，有时甚至会造成极大的灾难。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p91",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_970"
+      },
+      "contentHash": "71ec46eaf9d2ab70a9446e80db1ac491af00fd7173c59cb0f9e817d28a556037",
+      "text": "也许更好的办法是，在王国任何地方都不发行面额低于五英镑的银行券。这样，纸币在王国各地就很可能会像目前在伦敦一样，大体局限于不同商人之间的流通；伦敦不发行面额低于十英镑的银行券，而在王国大部分地区，五英镑虽然也许只能买到略多于十英镑在伦敦那种挥霍消费中所能买到的一半货物，却被视为同样大的数目，也同样很少一次花光。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p92",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_971"
+      },
+      "contentHash": "a7222debceeda67e6eb628d611e0756fa6e9c1f8402d32fc16d378a6e3f9d35a",
+      "text": "应当注意，在纸币像伦敦那样大体局限于商人与商人之间流通的地方，金银总是很充足。在纸币像苏格兰那样扩展到商人与消费者之间流通的相当大一部分、并像北美洲那样扩展得更广的地方，它几乎把金银完全逐出该国，因为国内商业几乎所有日常交易都由纸币完成。取缔十先令和五先令银行券，在一定程度上缓解了苏格兰金银的匮乏；取缔二十先令银行券，很可能会进一步缓解这种匮乏。据说，自从北美洲取缔其中一些纸币通货以来，那里的这些金属变得更加充足。据说，在这些通货创设之前，它们也更加充足。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p93",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_972"
+      },
+      "contentHash": "35e45b867732cfccd78db826403d39428939ababd33e008f734f128b8a35a3be",
+      "text": "尽管纸币应当大体限于商人与商人之间的流通，银行和银行家仍然可以像纸币几乎充斥全部流通时那样，对本国的产业和商业提供几乎同等程度的帮助。商人为应付不时之需而不得不留在手边的现款，完全是用于他自己与向其购货的其他商人之间的流通。他无须为自己与作为其顾客的消费者之间的流通留存任何现款，因为消费者会把现款带给他，而不是从他那里取走现款。因此，即使只准发行面额足以使纸币大体限于商人与商人之间流通的纸币，银行和银行家仍然可以一部分通过贴现真实汇票，一部分通过现金账户放款，使这些商人中的大多数免于为了应付不时之需而把其资本的任何可观部分以闲置的现款形式留在手边。银行和银行家仍然能够向各类商人提供他们所能适当提供的最大帮助。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p94",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_973"
+      },
+      "contentHash": "128e144aa32b3b551092c5d294fafa4a07a7be0417a0cc75528075d18d92914a",
+      "text": "有人或许会说，私人既然自愿接受银行家的本票作为付款，便限制他们接受任何金额、无论大小的这种本票；或者，当银行家的所有邻人都愿意接受这种本票时，限制银行家发行这种本票，显然侵犯了自然自由，而法律的正当职责不是侵犯这种自由，而是维护它。毫无疑问，这类规章在某种程度上可以被视为对自然自由的侵犯。但是，少数个人对自然自由的行使，如果可能危及整个社会的安全，就会而且应当受到一切政府的法律限制；最自由的政府与最专制的政府都是如此。为防止火势蔓延而规定必须修建防火隔墙，与这里所提议的银行业规章，恰恰是同一性质的对自然自由的侵犯。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p95",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_974"
+      },
+      "contentHash": "962266b74b93bdde7b6bcd4dcef2c44941b6143a85518ed0e2093435eb2aede7",
+      "text": "由信用无可置疑的人发行、见票即无条件兑付、而且事实上总在提示后立即兑付的银行券所构成的纸币，在各方面都与金币和银币价值相等；因为随时都可以用它换得金币和银币。凡是用这种纸币买卖的东西，其买价或卖价必然同用金银买卖时一样低廉。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p96",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_975"
+      },
+      "contentHash": "2d134991b71e87a025b6f0fcf80b1698be24eb912365b30f5a0e04626646da98",
+      "text": "有人说，纸币的增加会扩大货币数量，从而降低全部通货的价值，因而必然提高商品的货币价格。但是，从流通中退出的金银数量总是等于加入其中的纸币数量，所以纸币未必会增加全部通货的数量。从上个世纪初到现在，苏格兰的食品从未像1759年那样便宜，尽管由于十先令和五先令银行券的流通，当时该国的纸币比现在更多。苏格兰食品价格与英格兰食品价格之间的比例，如今与苏格兰银行公司大量增加以前相同。在大多数情况下，英格兰的谷物完全不比法国贵，尽管英格兰有大量纸币，而法国几乎没有。1751年和1752年，也就是休谟先生发表《政治论丛》时，以及苏格兰纸币大量增加后不久，食品价格确实明显上涨，但这很可能是季节恶劣所致，而不是纸币增加所致。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p97",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_976"
+      },
+      "contentHash": "abf477f2d281091684b3bae6dc52aa7c31cc9e650af69bb8fc6131ee9238a05f",
+      "text": "诚然，如果一种纸币由这样的本票构成，情形便会不同：这种本票能否立即兑付，在任何程度上取决于发行人的意愿；或取决于持票人未必总有能力履行的某项条件；或须在若干年后才能要求兑付，而在此期间又不计利息。这种纸币的价值无疑会或多或少地低于金银，其低落程度取决于人们认为获得立即兑付的困难或不确定性是较大还是较小；或者取决于可以要求兑付的期限是较远还是较近。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p98",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_977"
+      },
+      "contentHash": "7bd123420d1e3bb28fde425186672671da19406f3096342fcd4772dd5b0e9826",
+      "text": "若干年前，苏格兰各银行公司惯于在其银行券中加入他们所谓的“选择条款”，根据这一条款，他们承诺向持票人付款，或者在银行券提示时立即兑付，或者由董事选择在提示六个月后兑付，并支付这六个月的法定利息。其中一些银行的董事有时会利用这一选择条款；当有人要求以金银兑换其大量银行券时，他们有时还威胁说，除非这些人满足于只兑换所要求数额的一部分，否则便会利用这一条款。当时，这些银行公司的本票构成苏格兰通货中远为主要的部分，而这种兑付的不确定性必然使其价值低于金币和银币。在这种弊端持续期间（主要盛行于1762年、1763年和1764年），伦敦与卡莱尔之间的汇率保持平价，而伦敦与邓弗里斯之间的汇率有时却对邓弗里斯不利达百分之四，尽管该城距卡莱尔不到三十英里。但在卡莱尔，汇票用金银支付；而在邓弗里斯，汇票用苏格兰银行券支付，能否将这些银行券兑换成金银铸币的不确定性，就这样使其价值比金银铸币低了百分之四。禁止十先令和五先令银行券的同一项议会法令也禁止了这一选择条款，从而使英格兰与苏格兰之间的汇率恢复到其自然水平，或者恢复到贸易和汇款状况碰巧使其达到的水平。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p99",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_978"
+      },
+      "contentHash": "331a7a1e04503f76bb1c4c963ca0736d4f59a571f3641592e08e4964aa73d37e",
+      "text": "在约克郡的纸币流通中，即使支付六便士这样小的一笔金额，有时也取决于这样一个条件：持票人必须把一基尼的零钱带给发行人；这种条件常常可能令这类纸币的持有人很难履行，并且必然使这种通货的价值低于金币和银币。因此，一项议会法令宣布所有这类条款均属非法，并且像在苏格兰一样，禁止了所有面额低于二十先令、向持票人付款的本票。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p100",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_979"
+      },
+      "contentHash": "3baf4e14514a153357870138855f87731e89950b50dd07c54d3a49cd2071525a",
+      "text": "北美洲的纸币，不是见票即向持票人兑付的银行券，而是政府纸币，须在发行数年之后才能要求兑付。殖民地政府虽然不向这种纸币的持有人支付利息，却宣布它是、并在事实上使它成为可按发行的全部面值用于付款的法定货币。但是，即使承认殖民地政府的信用完全可靠，例如，在利率为百分之六的国家，十五年后支付的一百镑，也只比四十镑现款稍多一些。因此，强迫债权人接受这种纸币，作为对一笔实际以现款付出的一百镑债务的全额清偿，是一种如此严重的不公正行为，甚至或许是任何其他自称自由的国家的政府几乎都不曾尝试过的。它显然带有这样的印记：正如诚实直率的道格拉斯博士向我们断言的那样，它起初就是一个由欺诈性的债务人设计、用来欺骗其债权人的方案。宾夕法尼亚政府在1722年首次发行纸币时，确曾佯称要使其纸币与金银具有同等价值，办法是规定：凡在用殖民地纸币出售货物时和用金银出售货物时对货物采取不同价格的人，一律予以惩罚；这种规定与它意在支持的规定同样专横，但效力却远为逊色。实定法可以使一先令成为抵偿一基尼的法定货币，因为它可以指示法院解除已经提出这种偿付的债务人的债务。但任何实定法都不能强迫一个出售货物、并可随意决定出售或不出售的人，在货物价格中接受一先令等同于一基尼。尽管有任何这类规定，从对大不列颠的汇率仍可看出，在有些殖民地，一百英镑有时被认为等于一百三十镑当地货币，而在另一些殖民地，甚至等于一千一百镑当地货币；这种价值差异，源于各殖民地纸币发行数量的差异，以及最终清偿和兑付期限的远近与实现可能性的差异。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p101",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_980"
+      },
+      "contentHash": "9a82fa709badac5b46cbf3b3be25deb7028f53bb7a7dcaa5545a32cd82a00801",
+      "text": "因此，那项在殖民地受到极不公正抱怨的议会法令，规定今后在那里发行的任何纸币均不得成为法定货币；没有任何法律能比它更为公平。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p102",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_981"
+      },
+      "contentHash": "a0eb603ef3976d550845af1e014a04b03757576dc22308bd9020246be2f8e643",
+      "text": "宾夕法尼亚发行纸币一向比我们的任何其他殖民地都更为节制。因此，据说其纸币的价值从未低于该殖民地首次发行纸币之前流通的金银。在发行纸币之前，该殖民地已经提高了其铸币的名义价值，并通过殖民地议会法令，规定五先令英币在殖民地按六先令三便士流通，后来又按六先令八便士流通。因此，一镑殖民地货币，即使在这种货币还是金银时，其价值也比一英镑低百分之三十以上；而当这种货币改为纸币后，其价值低于一英镑的幅度也很少大大超过百分之三十。提高铸币名义价值的借口，是通过使等量金银在殖民地所代表的金额大于在宗主国所代表的金额，来防止金银输出。然而，人们发现，来自宗主国的一切货物的价格，都恰好随着铸币名义价值提高的比例而上涨，因而他们的金银仍像从前一样迅速地输出。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p103",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_982"
+      },
+      "contentHash": "5bedba8c843b80bb7291d75195b5a6c3f73796bca950c97203634991d73a1813",
+      "text": "每个殖民地的纸币都可按其发行的全部面值用来缴纳该殖民地的税款，因而除了由其最终清偿和兑付期限在事实上或人们想象中的远近所赋予的价值之外，还必然从这一用途获得某种附加价值。这种附加价值的大小，取决于发行的纸币数量超过可用于缴纳发行纸币的那个殖民地税款的数量是多还是少。在所有殖民地，纸币发行量都远远超过能够以这种方式使用的数量。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p104",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_983"
+      },
+      "contentHash": "3ce698c9607b6a49f05126deb3c114ffd25e2f8681a06a10413088bab309c14b",
+      "text": "一位君主如果规定其税收的一定比例必须用某种纸币缴纳，便可由此赋予这种纸币某种价值，即使其最终清偿和兑付的期限完全取决于君主的意愿。如果发行这种纸币的银行谨慎地使其数量始终略低于很容易以这种方式使用的数量，对它的需求便可能使其甚至获得升水，或者在市场上的售价略高于其发行时所代表的金银通货数量。有些人以这种方式解释所谓阿姆斯特丹银行的升水，即银行货币高于流通货币的价值，尽管据他们声称，这种银行货币不能由所有者任意从银行取出。大部分外国汇票必须用银行货币支付，也就是通过在银行账簿上转账来支付；而且据他们说，银行董事谨慎地使银行货币总量始终低于这一用途所产生的需求量。他们说，正因为如此，银行货币才有升水，或者比该国同一名义金额的金银通货高出百分之四或百分之五的升水。不过，关于阿姆斯特丹银行的这种说法，后文将会表明，在很大程度上纯属臆想。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p105",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_984"
+      },
+      "contentHash": "714c2c61faf07102dc84af373785148bb25a39b96c5405ea93a7123f66ebd5fc",
+      "text": "一种价值低于金银铸币的纸币，并不会因此降低这些金属的价值，也不会使等量的这些金属只能交换较少数量的任何其他种类货物。金银价值与任何其他种类货物价值之间的比例，在一切情况下都不取决于任何特定国家可能流通的某种特定纸币的性质或数量，而取决于在任何特定时期恰好向商业世界的大市场供应这些金属的矿山是富饶还是贫瘠。它取决于把一定数量的金银运到市场所必需的劳动量，与把一定数量的任何其他种类货物运到市场所必需的劳动量之间的比例。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c2.p106",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_985"
+      },
+      "contentHash": "cc676e56bb47eac824d6a04e5b72fca998556a63f5dfc77360896fa38bcbd93c",
+      "text": "如果限制银行家发行低于一定金额的任何流通银行券或向持票人付款的票据，并规定这类银行券一经提示便必须立即无条件兑付，那么，在其他所有方面，他们的业务都可以完全自由化，而不致危及公众安全。近来联合王国两个部分的银行公司不断增加，这件事曾使许多人深感惊慌，但它并没有降低、反而提高了公众的安全。它迫使所有银行在经营中更加谨慎，不让其通货发行量超过与其现金相称的适当比例，从而防范众多竞争者之间的对抗随时可能给它们招致的恶意挤兑。它把每一家公司的流通限制在更狭小的范围内，并减少其流通票据的数量。由于把全部流通分成更多部分，任何一家公司的倒闭——这种意外在事物的发展过程中必定会不时发生——对公众造成的影响也会变小。这种自由竞争还迫使所有银行家在与顾客交易时更加优厚，以免顾客被竞争对手夺走。一般而言，如果任何商业部门或任何一种劳动分工有利于公众，那么竞争越自由、越普遍，它就总会越有利于公众。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    }
+  ]
+}

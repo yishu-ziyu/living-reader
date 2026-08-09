@@ -62,6 +62,21 @@ export function listReviewedRecipes(): readonly WorldRecipe[] {
   return catalog.list();
 }
 
+export function listReviewedRecipeIdsForSource(
+  sourceId: string,
+): readonly string[] {
+  const recipeIds: string[] = [];
+  for (const recipe of catalog.list()) {
+    if (
+      recipe.source_locator.source_id === sourceId ||
+      recipe.source_locator.legacy_source_id === sourceId
+    ) {
+      recipeIds.push(recipe.recipe_id);
+    }
+  }
+  return recipeIds;
+}
+
 export function getReviewedRecipe(recipe_id: string): WorldRecipe | null {
   return catalog.get(recipe_id);
 }

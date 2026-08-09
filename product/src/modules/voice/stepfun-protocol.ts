@@ -133,8 +133,7 @@ export function parseVoiceSourceSnapshot(
     !title ||
     !quote ||
     !contentHash ||
-    pdfPages.length !== value.pdfPages.length ||
-    pdfPages.length === 0
+    pdfPages.length !== value.pdfPages.length
   ) {
     return null;
   }

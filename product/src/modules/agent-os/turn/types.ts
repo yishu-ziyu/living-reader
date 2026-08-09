@@ -46,6 +46,7 @@ export type RelationshipContext = {
   current_chapter_id: string | null;
   memories: readonly RelationshipMemory[];
   active_recipe_ids: readonly string[];
+  invited_question_keys: readonly string[];
 };
 
 export type PendingIntent = {
@@ -75,6 +76,8 @@ export type AgentTurnInput = {
   asr_confidence?: number;
   explicit_control?: "none" | "stop" | "refuse";
   recent_turns: readonly AgentTurnVisibleTurn[];
+  /** Invitation keys already shown to this reader. */
+  invited_question_keys: readonly string[];
   pending_intent: PendingIntent | null;
   relationship_context?: RelationshipContext;
 };
@@ -113,6 +116,7 @@ export type AgentTurnProviderInput = {
   world_basis: WorldBasis | null;
   invitation_basis: InvitationBasis | null;
   recent_turns: readonly AgentTurnVisibleTurn[];
+  invited_question_keys: readonly string[];
   pending_intent: PendingIntent | null;
   relationship_context?: RelationshipContext;
 };

@@ -27,6 +27,7 @@ function input(overrides: Partial<AgentTurnInput> = {}): AgentTurnInput {
     world_basis: basis,
     invitation_basis: null,
     recent_turns: [],
+    invited_question_keys: [],
     pending_intent: null,
     ...overrides,
   };
@@ -689,6 +690,7 @@ describe("T009 AgentTurn", () => {
         },
       ],
       active_recipe_ids: ["wealth-of-nations.market-extent.v1"],
+      invited_question_keys: [],
     };
     let received: unknown;
 
@@ -768,6 +770,84 @@ describe("T009 AgentTurn", () => {
     expect(result.command).toBeNull();
     expect(result.zero_world_mutation).toBe(true);
     expect(dispatchCalls).toBe(0);
+  });
+
+  it("does not repeat one reader question when the model paraphrases its trigger", async () => {
+    const invitationBasis = {
+      experience_id: "exp-reading",
+      graph_revision: 2,
+      relation_id: "relation-market",
+      relation_basis_revision: 1,
+      accepted_relation_ids: ["relation-market"],
+      source_snapshot_id: "smith.b1.c3.p1:hash-current",
+    } as const;
+    const readerQuestion = "市场范围为什么会限制分工？";
+    const questionKey = deriveInvitationQuestionKey(
+      invitationBasis.experience_id,
+      readerQuestion,
+    );
+    const paraphrasedCandidate = {
+      ...inviteMarketWorld,
+      trigger_question: "市场扩大以后，分工会发生什么变化？",
+    };
+
+    const result = await handleAgentTurn(
+      input({
+        final_text: readerQuestion,
+        source_snapshot_id: invitationBasis.source_snapshot_id,
+        active_source_ids: ["smith.b1.c3.p1"],
+        world_basis: null,
+        invitation_basis: invitationBasis,
+        invited_question_keys: [questionKey],
+      }),
+      {
+        provider: { decide: async () => paraphrasedCandidate },
+        dispatch: async () => {
+          throw new Error("a repeated invitation must never dispatch");
+        },
+      },
+    );
+
+    expect(result.mode).toBe("discuss");
+    expect(result.invitation).toBeNull();
+    expect(result.command).toBeNull();
+    expect(result.zero_world_mutation).toBe(true);
+  });
+
+  it("accepts an invitation when the live reader uses the recipe's legacy source alias", async () => {
+    const legacySourceId = "smith.b1.c3.market_extent";
+    const invitationBasis = {
+      experience_id: "exp-reading",
+      graph_revision: 2,
+      relation_id: "relation-market",
+      relation_basis_revision: 1,
+      accepted_relation_ids: ["relation-market"],
+      source_snapshot_id: `${legacySourceId}:hash-current`,
+    } as const;
+
+    const result = await handleAgentTurn(
+      input({
+        final_text: inviteMarketWorld.trigger_question,
+        source_snapshot_id: invitationBasis.source_snapshot_id,
+        active_source_ids: [legacySourceId],
+        world_basis: null,
+        invitation_basis: invitationBasis,
+      }),
+      {
+        provider: {
+          decide: async () => ({
+            ...inviteMarketWorld,
+            target_source_ids: [legacySourceId],
+          }),
+        },
+        dispatch: async () => {
+          throw new Error("an invitation must never dispatch or accept a world");
+        },
+      },
+    );
+
+    expect(result.mode).toBe("invite_world");
+    expect(result.invitation?.recipe_id).toBe("smith.b1.market-extent.v1");
   });
 
   it("fails closed when an invitation recipe or its source/relation basis is not current", async () => {

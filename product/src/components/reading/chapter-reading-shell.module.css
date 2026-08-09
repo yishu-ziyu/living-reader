@@ -112,7 +112,7 @@
 }
 
 .page {
-  width: min(100%, 62rem);
+  width: min(100%, 65rem);
   margin: 0 auto;
 }
 
@@ -142,7 +142,7 @@
 }
 
 .prose {
-  width: min(100%, 52rem);
+  width: min(100%, 65rem);
   margin: 0 auto;
 }
 
@@ -382,6 +382,257 @@
   font: 0.78rem/1.4 Inter, system-ui, sans-serif;
 }
 
+.agentZone {
+  display: grid;
+  gap: 1rem;
+  margin-block: 1.25rem 4.5rem;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid #c9bea9;
+  border-radius: 1.15rem;
+  background: #f7f2e8;
+  box-shadow: 0 18px 48px rgb(67 56 38 / 0.08);
+  color: #28241e;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.agentZone[data-agent-active="false"] {
+  gap: 0.6rem;
+  margin-block: 0.75rem 2.5rem;
+  padding: 0.75rem 0.9rem;
+  box-shadow: none;
+}
+
+.agentZone[data-agent-active="false"] .agentZoneHeader {
+  grid-template-columns: minmax(0, 1fr);
+  padding-block-end: 0.45rem;
+}
+
+.agentZone[data-agent-active="false"] .agentZoneHeader h2 {
+  font-size: 1rem;
+}
+
+.agentZone[data-agent-active="false"] .agentZoneHeader p {
+  display: none;
+}
+
+.agentZoneHeader {
+  display: grid;
+  grid-template-columns: minmax(12rem, 0.8fr) minmax(16rem, 1.2fr);
+  gap: 1rem;
+  align-items: end;
+  padding-block-end: 0.85rem;
+  border-block-end: 1px solid #d8cebd;
+}
+
+.agentZoneHeader span,
+.worldInvitation > div > span {
+  color: #a5482f;
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.agentZoneHeader h2 {
+  margin: 0.25rem 0 0;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
+    "Songti SC", STSong, serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.agentZoneHeader p {
+  margin: 0;
+  color: #6e675c;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
+    "Songti SC", STSong, serif;
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+.agentZone :global(.source-discussion) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.65rem 0.8rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.agentZone :global(.source-discussion .idea-composer-label) {
+  grid-column: 1 / -1;
+}
+
+.agentZone :global(.idea-composer-label span) {
+  color: #615a50;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.agentZone :global(textarea) {
+  box-sizing: border-box;
+  inline-size: 100%;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid #c9bea9;
+  border-radius: 0.65rem;
+  outline: none;
+  background: #fffdf7;
+  color: #28241e;
+  font: 0.9rem/1.55 Inter, system-ui, sans-serif;
+  resize: vertical;
+}
+
+.agentZone :global(textarea:focus-visible) {
+  border-color: #a5482f;
+  box-shadow: 0 0 0 3px rgb(165 72 47 / 0.12);
+}
+
+.agentZone :global(.discussion-actions) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.agentZone :global(.session-state-hint) {
+  align-self: center;
+  justify-self: end;
+  margin: 0;
+  color: #877e71;
+  font-size: 0.66rem;
+}
+
+.agentZone :global(.discussion-actions button),
+.agentZone :global(.idea-composer button),
+.agentZone :global(.relation-proposal button),
+.invitationActions button {
+  min-block-size: 2.5rem;
+  padding-inline: 0.8rem;
+  border: 1px solid #b9ad99;
+  border-radius: 999px;
+  background: #fffdf7;
+  color: #342f28;
+  cursor: pointer;
+  font: 700 0.75rem/1 Inter, system-ui, sans-serif;
+  transition:
+    border-color 160ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 120ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.agentZone :global(button:active) {
+  transform: scale(0.97);
+}
+
+.agentZone :global(button:disabled) {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.agentZone :global(.agent-turn-surface) {
+  padding: 0.8rem 0.95rem;
+  border-inline-start: 3px solid #a5482f;
+  background: #fffdf7;
+  color: #3c362e;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
+    "Songti SC", STSong, serif;
+  line-height: 1.65;
+}
+
+.agentZone :global(.agent-turn-surface p) {
+  margin: 0;
+}
+
+.worldInvitation {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.25rem;
+  align-items: end;
+  padding: 1rem;
+  border: 1px solid #a5482f;
+  border-radius: 0.85rem;
+  background: #fff8ed;
+  animation: invitation-in 240ms cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+.worldInvitation h3 {
+  margin: 0.3rem 0 0;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
+    "Songti SC", STSong, serif;
+  font-size: 1.15rem;
+  line-height: 1.3;
+}
+
+.worldInvitation p {
+  margin: 0.4rem 0 0;
+  color: #6e675c;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
+    "Songti SC", STSong, serif;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.invitationActions {
+  display: flex;
+  gap: 0.45rem;
+}
+
+.invitationActions button:last-child {
+  border-color: #a5482f;
+  background: #a5482f;
+  color: #fffaf1;
+}
+
+.relationSetup {
+  padding-block-start: 0.5rem;
+  border-block-start: 1px solid #d8cebd;
+  color: #6e675c;
+  font-size: 0.75rem;
+}
+
+.relationSetup > summary {
+  cursor: pointer;
+  font-weight: 750;
+}
+
+.relationSetup > div {
+  display: grid;
+  gap: 0.75rem;
+  margin-block-start: 0.75rem;
+}
+
+.relationSetup :global(.idea-composer),
+.relationSetup :global(.relation-proposal) {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0.75rem;
+  border: 1px solid #d8cebd;
+  border-radius: 0.65rem;
+  background: #fffdf7;
+}
+
+.relationSetup :global(.relation-actions) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.relationSetup :global(.thinking-status) {
+  margin: 0;
+}
+
+@keyframes invitation-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 720px) {
   .toolbar {
     grid-template-columns: auto minmax(0, 1fr);
@@ -450,12 +701,41 @@
   .toc ol {
     margin-left: 0;
   }
+
+  .agentZone {
+    margin-block: 0.75rem 3rem;
+    padding: 0.85rem;
+    border-radius: 0.85rem;
+  }
+
+  .agentZoneHeader,
+  .worldInvitation,
+  .agentZone :global(.source-discussion) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .agentZone :global(.session-state-hint) {
+    justify-self: start;
+  }
+
+  .invitationActions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .invitationActions button {
+    inline-size: 100%;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .reader,
   .reader * {
     scroll-behavior: auto !important;
+  }
+
+  .worldInvitation {
+    animation: none;
   }
 }
 

@@ -7,6 +7,8 @@ import { orderEventsForProjection } from "../projections/order-events";
 
 export const MAX_RELATIONSHIP_MEMORIES = 12;
 export const MAX_MEMORY_TEXT_CHARACTERS = 240;
+export const MAX_ACTIVE_RELATIONSHIP_RECIPES = 4;
+export const MAX_INVITED_QUESTION_KEYS = 64;
 
 export type MemoryEntry = {
   memory_id: string;
@@ -24,10 +26,15 @@ export type MemoryProjection = {
   last_stream_version: number;
 };
 
+export type RelationshipMemoryEntry = MemoryEntry & {
+  kind: Exclude<MemoryKind, "invitation_question">;
+};
+
 export type RelationshipContext = {
   current_chapter_id: string | null;
-  memories: MemoryEntry[];
+  memories: RelationshipMemoryEntry[];
   active_recipe_ids: string[];
+  invited_question_keys: string[];
 };
 
 export type RelationshipContextQuery = {
@@ -37,7 +44,7 @@ export type RelationshipContextQuery = {
 
 type VersionedMemory = MemoryEntry & { stream_version: number };
 
-function cloneEntry(entry: MemoryEntry): MemoryEntry {
+function cloneEntry<T extends MemoryEntry>(entry: T): T {
   return { ...entry };
 }
 
@@ -98,12 +105,26 @@ function belongsToChapter(
   );
 }
 
+function isRelationshipMemory(
+  entry: MemoryEntry,
+): entry is RelationshipMemoryEntry {
+  return entry.kind !== "invitation_question";
+}
+
 /** Bounded relationship context; origin and text are copied without rewriting. */
 export function buildRelationshipContext(
   projection: MemoryProjection,
   query: RelationshipContextQuery,
 ): RelationshipContext {
+  const invitedQuestionKeys = [
+    ...new Set(
+      projection.memories
+        .filter((entry) => entry.kind === "invitation_question")
+        .map((entry) => entry.text),
+    ),
+  ].slice(0, MAX_INVITED_QUESTION_KEYS);
   const ordered = projection.memories
+    .filter(isRelationshipMemory)
     .map((entry, index) => ({ entry, index }))
     .sort((left, right) => {
       const leftCurrent = belongsToChapter(
@@ -123,6 +144,10 @@ export function buildRelationshipContext(
   return {
     current_chapter_id: query.current_chapter_id,
     memories: ordered,
-    active_recipe_ids: [...(query.active_recipe_ids ?? [])],
+    active_recipe_ids: (query.active_recipe_ids ?? []).slice(
+      0,
+      MAX_ACTIVE_RELATIONSHIP_RECIPES,
+    ),
+    invited_question_keys: invitedQuestionKeys,
   };
 }

@@ -21,6 +21,7 @@ import {
   createAgentTurnClientProvider,
   createWorldDispatchPort,
   deriveAgentTurnSourceSnapshotId,
+  deriveWorldActionIdempotencyKey,
   emptyBoundarySession,
   handleAgentTurn,
   inspectCurrentWorld,
@@ -29,6 +30,8 @@ import {
   rejectRelation,
   reviseRelation,
   tryCanonicalConstrainedBy,
+  type AgentWorldInvitation,
+  type AgentTurnActionId,
   type AgentTurnDecision,
   type AgentTurnDispatchPort,
   type AgentTurnDispatchReceipt,
@@ -36,14 +39,16 @@ import {
   type BookThoughtCandidate,
   type BoundarySession,
   type InvitationBasis,
+  type RelationshipContext,
   type PendingIntent,
   type SourceDiscussionSnapshot,
   type WorldBasis,
 } from "@/modules/agent-os";
 import {
   buildCommittedWorldPresentation,
-  WOOL_TOWN_RULESET_ID,
+  listReviewedRecipeIdsForSource,
   type CommittedWorldPresentation,
+  type PresentationPlan,
   type WorldCommand,
 } from "@/modules/world";
 import {
@@ -58,14 +63,20 @@ import {
   reviseIdea,
   snapshotsMatch,
   submitIdea,
-  validateAndSealSourceEvidence,
   type SourceEvidenceMap,
   type SourceEvidenceSnapshot,
   type ThinkingError,
 } from "@/modules/reader-thinking";
 import { createDomainEventDraftBrowser } from "@/modules/reader-thinking/draft";
-import type { EventStore } from "@/modules/reader-world/event-store";
-import type { DomainEvent } from "@/modules/reader-world/events";
+import {
+  createReaderWorldUseCase,
+  deriveWorldInvitationAcceptanceId,
+} from "@/modules/reader-world/use-case";
+import {
+  recordInvitationQuestion,
+  type MemoryEventDraftInput,
+} from "@/modules/reader-world/memory";
+import type { DomainEventDraft } from "@/modules/reader-world/events";
 import { foldReadingGraph } from "@/modules/reader-world/projections/reading-graph";
 import type { ReadingGraphView } from "@/modules/reader-world/projections/types";
 import { emptyReadingGraphView } from "@/modules/reader-world/projections/types";
@@ -105,8 +116,12 @@ export type AgentTurnState = Readonly<{
 type ThinkingApi = {
   ready: boolean;
   graph: ReadingGraphView;
-  /** Null unless the raw stream and Session gate jointly prove a committed view. */
-  worldPresentation: CommittedWorldPresentation | null;
+  /** Current renderer-independent plan for the accepted executable world. */
+  worldPresentation: PresentationPlan | null;
+  /** Event-projected source/relation/event chain for the current plan. */
+  worldEvidence: CommittedWorldPresentation | null;
+  worldUiState: "closed" | "constructing" | "open" | "error";
+  worldActionPending: boolean;
   status: UiStatus;
   activeIdeas: ReadingGraphView["ideas"];
   ideaHistory: ReadingGraphView["ideas"];
@@ -115,6 +130,8 @@ type ThinkingApi = {
   currentRelation: ReadingGraphView["relations"][number] | null;
   canPropose: boolean;
   candidate: BookThoughtCandidate | null;
+  /** Most recently submitted source; owns shared response/world UI. */
+  activeSubmittedSourceId: string | null;
   /** Live T002 evidence map (sourceId → sealed snapshot). */
   sourceEvidence: SourceEvidenceMap;
   getSourceEvidence: (sourceId: string) => SourceEvidenceSnapshot | null;
@@ -143,6 +160,12 @@ type ThinkingApi = {
   reviseRelation: (corrections: string) => Promise<void>;
   reproposeRelation: () => Promise<void>;
   acceptRelation: () => Promise<void>;
+  acceptWorldInvitation: () => Promise<boolean>;
+  declineWorldInvitation: () => void;
+  completeWorldConstruction: () => void;
+  actInWorld: (actionId: string) => Promise<void>;
+  collapseWorld: () => void;
+  reopenWorld: () => void;
   reload: () => Promise<void>;
   /** T007 control-only state (not EventStore). */
   boundary: BoundarySession;
@@ -259,45 +282,10 @@ function visibleTurn(
 
 const WOOL_TOWN_SEED = 42;
 
-type GraphCommittedEvent = Extract<
-  DomainEvent,
-  { message_name: "reader_world.graph.committed.v1" }
->;
-type WorldSeededEvent = Extract<
-  DomainEvent,
-  { message_name: "reader_world.world.seeded.v1" }
->;
-
 type WorldBootstrapSession = Readonly<{
   state: SessionStateValue;
   context: ReaderSessionContext;
   send: (event: ReaderSessionEvent) => SessionTransitionReceipt;
-}>;
-
-export type WorldBootstrapResult =
-  | Readonly<{
-      status: "opened";
-      seeded: boolean;
-      world_id: string;
-      world_revision: number;
-    }>
-  | Readonly<{
-      status: "blocked";
-      reason:
-        | "EVIDENCE_UNAVAILABLE"
-        | "GRAPH_NOT_CURRENT"
-        | "SESSION_NOT_READY"
-        | "WORLD_IDENTITY_MISMATCH"
-        | "STORE_UNAVAILABLE";
-    }>;
-
-export type BootstrapCommittedWoolTownInput = Readonly<{
-  store: EventStore;
-  graph: ReadingGraphView;
-  sourceEvidence: SourceEvidenceMap;
-  session: WorldBootstrapSession;
-  ids: { nextId: (prefix: string) => string };
-  clock: { nowRfc3339: () => string };
 }>;
 
 function sameStringSet(left: readonly string[], right: readonly string[]): boolean {
@@ -310,86 +298,26 @@ function sameStringSet(left: readonly string[], right: readonly string[]): boole
   );
 }
 
-function isSubset(values: readonly string[], allowed: readonly string[]): boolean {
-  const allowedSet = new Set(allowed);
-  return values.every((value) => allowedSet.has(value));
+type InvitationQuestionPersistenceResult = Awaited<
+  ReturnType<typeof recordInvitationQuestion>
+>;
+
+export async function persistInvitationQuestionKey(
+  questionKey: string,
+  invitedQuestionKeys: Set<string>,
+  persist: () => Promise<InvitationQuestionPersistenceResult>,
+): Promise<InvitationQuestionPersistenceResult> {
+  const recorded = await persist();
+  if (recorded.ok) invitedQuestionKeys.add(questionKey);
+  return recorded;
 }
 
-function graphCommitEvent(event: DomainEvent): event is GraphCommittedEvent {
-  return event.message_name === "reader_world.graph.committed.v1";
-}
-
-function worldSeededEvent(event: DomainEvent): event is WorldSeededEvent {
-  return event.message_name === "reader_world.world.seeded.v1";
-}
-
-function currentEvidenceIsValid(
-  graph: ReadingGraphView,
-  sourceEvidence: SourceEvidenceMap,
-  session: WorldBootstrapSession,
-): boolean {
-  const canonical = tryCanonicalConstrainedBy(graph);
-  const accepted = graph.relations.find(
-    (relation) =>
-      relation.relation_id === canonical?.relation_id &&
-      relation.review_status === "accepted" &&
-      !relation.stale &&
-      graph.accepted_relation_ids.includes(relation.relation_id),
-  );
-  if (
-    !canonical ||
-    !accepted ||
-    accepted.from_id !== canonical.from_id ||
-    accepted.to_id !== canonical.to_id ||
-    accepted.relation_type !== canonical.relation_type ||
-    accepted.basis_revision !== canonical.basis_revision ||
-    !sameStringSet(accepted.evidence_refs, canonical.evidence_refs)
-  ) {
-    return false;
-  }
-
-  const ideas = [canonical.from_id, canonical.to_id].map((ideaId) =>
-    graph.ideas.find(
-      (idea) => idea.idea_id === ideaId && idea.status === "active",
-    ),
-  );
-  if (ideas.some((idea) => !idea)) return false;
-
-  const allowedEvidence = new Set<string>();
-  for (const idea of ideas) {
-    if (!idea) return false;
-    for (const sourceId of idea.source_ids) {
-      if (!session.context.source_snapshot_ids.includes(sourceId)) return false;
-      const source = sourceEvidence[sourceId];
-      if (!source || source.source_id !== sourceId) return false;
-      const sealed = validateAndSealSourceEvidence({
-        source_id: source.source_id,
-        fragment: source.fragment,
-        pdf_page: source.pdf_page,
-        print_page: source.print_page,
-        edition_id: source.edition_id,
-        edition_revision: source.edition_revision,
-        edition_content_hash: source.edition_content_hash,
-        source_content_hash: source.source_content_hash,
-      });
-      if (
-        !sealed.ok ||
-        !sameStringSet(source.evidence_refs, sealed.value.evidence_refs)
-      ) {
-        return false;
-      }
-      for (const evidenceRef of sealed.value.evidence_refs) {
-        allowedEvidence.add(evidenceRef);
-      }
-    }
-    if (!isSubset(idea.evidence_refs, [...allowedEvidence])) return false;
-  }
-
-  return (
-    isSubset(canonical.evidence_refs, [...allowedEvidence]) &&
-    isSubset(accepted.evidence_refs, [...allowedEvidence])
-  );
-}
+type WorldInvitationAcceptanceIdentity = Readonly<{
+  turn_id: string;
+  message_id: string;
+  correlation_id: string;
+  recorded_at: string;
+}>;
 
 function sessionCanOpenWorld(
   session: WorldBootstrapSession,
@@ -410,215 +338,84 @@ function sessionCanOpenWorld(
   );
 }
 
-/**
- * T010's sole production bootstrap: raw accepted graph + sealed evidence install
- * the canonical seed in one EventStore append, then advance only via Session events.
- */
-export async function bootstrapCommittedWoolTown(
-  input: BootstrapCommittedWoolTownInput,
-): Promise<WorldBootstrapResult> {
-  const experienceId = input.session.context.experience_id;
-  if (!experienceId) {
-    return { status: "blocked", reason: "SESSION_NOT_READY" };
-  }
-
-  const loaded = await input.store.load(experienceId);
-  if (!loaded.ok) return { status: "blocked", reason: "STORE_UNAVAILABLE" };
-  const events = loaded.value;
-  const rawGraph = foldReadingGraph(experienceId, events);
-  if (
-    rawGraph.graph_stale ||
-    input.graph.graph_stale ||
-    rawGraph.graph_revision < 1 ||
-    rawGraph.graph_revision !== input.graph.graph_revision ||
-    !sameStringSet(rawGraph.accepted_relation_ids, input.graph.accepted_relation_ids)
-  ) {
-    return { status: "blocked", reason: "GRAPH_NOT_CURRENT" };
-  }
-
-  const canonical = tryCanonicalConstrainedBy(rawGraph);
-  const accepted = rawGraph.relations.find(
-    (relation) =>
-      relation.relation_id === canonical?.relation_id &&
-      relation.review_status === "accepted" &&
-      !relation.stale &&
-      rawGraph.accepted_relation_ids.includes(relation.relation_id),
+function invitationIsCurrent(
+  invitation: AgentWorldInvitation,
+  graph: ReadingGraphView,
+  session: WorldBootstrapSession,
+): boolean {
+  const current = invitationBasisFromCommittedGraph(
+    graph,
+    session,
+    invitation.basis.source_snapshot_id,
   );
-  if (!canonical || !accepted) {
-    return { status: "blocked", reason: "GRAPH_NOT_CURRENT" };
-  }
-  if (!currentEvidenceIsValid(rawGraph, input.sourceEvidence, input.session)) {
-    return { status: "blocked", reason: "EVIDENCE_UNAVAILABLE" };
+  return (
+    current !== null &&
+    current.experience_id === invitation.basis.experience_id &&
+    current.graph_revision === invitation.basis.graph_revision &&
+    current.relation_id === invitation.basis.relation_id &&
+    current.relation_basis_revision === invitation.basis.relation_basis_revision &&
+    sameStringSet(
+      current.accepted_relation_ids,
+      invitation.basis.accepted_relation_ids,
+    )
+  );
+}
+
+function advanceSessionToWorld(
+  session: WorldBootstrapSession,
+  graph: ReadingGraphView,
+  basis: Pick<InvitationBasis, "relation_id" | "relation_basis_revision">,
+  worldId: string,
+  worldRevision: number,
+): boolean {
+  if (
+    session.state === "active.playable" ||
+    session.state === "active.evidence"
+  ) {
+    return (
+      session.context.world_id === worldId &&
+      session.context.world_basis_graph_revision === graph.graph_revision
+    );
   }
   if (
+    (session.state !== "active.reading" &&
+      session.state !== "active.reviewing_graph") ||
     !sessionCanOpenWorld(
-      input.session,
-      rawGraph,
-      accepted.relation_id,
-      accepted.basis_revision,
+      session,
+      graph,
+      basis.relation_id,
+      basis.relation_basis_revision,
     )
   ) {
-    return { status: "blocked", reason: "SESSION_NOT_READY" };
-  }
-
-  const graphCommits = events.filter(graphCommitEvent);
-  const graphCommit = graphCommits[graphCommits.length - 1];
-  if (
-    !graphCommit ||
-    graphCommit.payload.graph_revision !== rawGraph.graph_revision ||
-    !sameStringSet(
-      graphCommit.payload.accepted_relation_ids,
-      rawGraph.accepted_relation_ids,
-    )
-  ) {
-    return { status: "blocked", reason: "GRAPH_NOT_CURRENT" };
-  }
-
-  const canonicalWorldId = `world_wool_town_g${rawGraph.graph_revision}`;
-  const seeds = events.filter(worldSeededEvent);
-  if (seeds.length > 1) {
-    return { status: "blocked", reason: "WORLD_IDENTITY_MISMATCH" };
-  }
-
-  let seeded = false;
-  if (seeds.length === 1) {
-    const seed = seeds[0]!;
-    if (
-      events.indexOf(seed) <= events.indexOf(graphCommit) ||
-      seed.payload.world_id !== canonicalWorldId ||
-      seed.payload.graph_revision !== rawGraph.graph_revision ||
-      seed.payload.seed !== WOOL_TOWN_SEED ||
-      seed.payload.ruleset_id !== WOOL_TOWN_RULESET_ID
-    ) {
-      return { status: "blocked", reason: "WORLD_IDENTITY_MISMATCH" };
-    }
-  } else {
-    const version = await input.store.getVersion(experienceId);
-    const lastStreamVersion = events[events.length - 1]?.stream_version ?? 0;
-    if (!version.ok || version.value !== lastStreamVersion) {
-      return { status: "blocked", reason: "STORE_UNAVAILABLE" };
-    }
-    const draft = await createDomainEventDraftBrowser({
-      message_name: "reader_world.world.seeded.v1",
-      message_id: input.ids.nextId("msg"),
-      experience_id: experienceId,
-      correlation_id: input.ids.nextId("corr"),
-      causation_id: graphCommit.message_id,
-      producer: {
-        module: "reader_world",
-        instance: "world-bootstrap-t010",
-      },
-      security: {
-        principal_id: LIVE_PRINCIPAL_ID,
-        authority: "system",
-        integrity: "local",
-      },
-      recorded_at: input.clock.nowRfc3339(),
-      payload: {
-        world_id: canonicalWorldId,
-        graph_revision: rawGraph.graph_revision,
-        seed: WOOL_TOWN_SEED,
-        ruleset_id: WOOL_TOWN_RULESET_ID,
-      },
-    });
-    const appended = await input.store.append({
-      experience_id: experienceId,
-      principal_id: LIVE_PRINCIPAL_ID,
-      idempotency_key: `world_seed:${rawGraph.graph_revision}:${accepted.relation_id}`,
-      expected_version: version.value || -1,
-      events: [draft],
-    });
-    if (!appended.ok) {
-      return { status: "blocked", reason: "STORE_UNAVAILABLE" };
-    }
-    seeded = !appended.value.duplicate;
-  }
-
-  const inspected = await inspectCurrentWorld({
-    store: input.store,
-    experience_id: experienceId,
-  });
-  if (
-    !inspected.ok ||
-    inspected.world_state.phase !== "playable" ||
-    inspected.world_state.world_id !== canonicalWorldId ||
-    inspected.world_state.graph_revision !== rawGraph.graph_revision ||
-    inspected.world_state.seed !== WOOL_TOWN_SEED ||
-    inspected.world_state.ruleset_id !== WOOL_TOWN_RULESET_ID
-  ) {
-    return { status: "blocked", reason: "WORLD_IDENTITY_MISMATCH" };
-  }
-
-  const current = input.session;
-  if (
-    current.state === "active.playable" ||
-    current.state === "active.evidence"
-  ) {
-    if (
-      current.context.world_id !== canonicalWorldId ||
-      current.context.world_basis_graph_revision !== rawGraph.graph_revision
-    ) {
-      return { status: "blocked", reason: "WORLD_IDENTITY_MISMATCH" };
-    }
-    return {
-      status: "opened",
-      seeded: false,
-      world_id: canonicalWorldId,
-      world_revision: inspected.world_state.world_revision,
-    };
+    return false;
   }
   if (
-    current.state !== "active.reading" &&
-    current.state !== "active.reviewing_graph"
+    !session.context.playability_passed ||
+    session.context.playability_graph_revision !== graph.graph_revision
   ) {
-    return { status: "blocked", reason: "SESSION_NOT_READY" };
-  }
-
-  if (
-    !current.context.playability_passed ||
-    current.context.playability_graph_revision !== rawGraph.graph_revision
-  ) {
-    const playability = current.send({
+    const playability = session.send({
       type: "PLAYABILITY_PASSED",
-      graph_revision: rawGraph.graph_revision,
+      graph_revision: graph.graph_revision,
     });
-    if (!playability.accepted) {
-      return { status: "blocked", reason: "SESSION_NOT_READY" };
-    }
+    if (!playability.accepted) return false;
   }
-  const opening = current.send({
+  const opening = session.send({
     type: "WORLD_OPEN_REQUESTED",
-    graph_revision: rawGraph.graph_revision,
+    graph_revision: graph.graph_revision,
   });
   const preparation = opening.requested_effects.find(
     (effect): effect is Extract<typeof effect, { kind: "prepare_world" }> =>
       effect.kind === "prepare_world",
   );
-  if (
-    !opening.accepted ||
-    !preparation ||
-    preparation.graph_revision !== rawGraph.graph_revision
-  ) {
-    return { status: "blocked", reason: "SESSION_NOT_READY" };
-  }
-  const ready = current.send({
+  if (!opening.accepted || !preparation) return false;
+  return session.send({
     type: "WORLD_READY",
     correlation_id: preparation.correlation_id,
-    graph_revision: rawGraph.graph_revision,
-    world_id: canonicalWorldId,
-    world_revision: inspected.world_state.world_revision,
+    graph_revision: graph.graph_revision,
+    world_id: worldId,
+    world_revision: worldRevision,
     effect_generation: preparation.generation,
-  });
-  if (!ready.accepted) {
-    return { status: "blocked", reason: "SESSION_NOT_READY" };
-  }
-
-  return {
-    status: "opened",
-    seeded,
-    world_id: canonicalWorldId,
-    world_revision: inspected.world_state.world_revision,
-  };
+  }).accepted;
 }
 
 function uniqueQuoteExcerpt(source: SourceDiscussionSnapshot): string {
@@ -680,6 +477,7 @@ export function ReaderThinkingProvider({
   children,
   sourceEvidence,
   discussionSnapshots,
+  relationshipContext,
   voiceSourceSnapshots,
 }: {
   children: ReactNode;
@@ -687,6 +485,8 @@ export function ReaderThinkingProvider({
   sourceEvidence: SourceEvidenceMap;
   /** Live SourceBlock quote + evidence for T006 discussion. */
   discussionSnapshots: DiscussionSnapshotMap;
+  /** Event-projected, bounded memory context for the next semantic turn. */
+  relationshipContext?: RelationshipContext;
   /** Server-sealed source quote/hash map shared by text and final voice turns. */
   voiceSourceSnapshots: Readonly<Record<string, VoiceSourceSnapshot>>;
 }) {
@@ -697,7 +497,13 @@ export function ReaderThinkingProvider({
     emptyReadingGraphView(LIVE_EXPERIENCE_ID),
   );
   const [worldPresentation, setWorldPresentation] =
+    useState<PresentationPlan | null>(null);
+  const [worldEvidence, setWorldEvidence] =
     useState<CommittedWorldPresentation | null>(null);
+  const [worldUiState, setWorldUiState] = useState<
+    "closed" | "constructing" | "open" | "error"
+  >("closed");
+  const [worldActionPending, setWorldActionPending] = useState(false);
   const [candidate, setCandidate] = useState<BookThoughtCandidate | null>(null);
   const [boundary, setBoundary] = useState<BoundarySession>(() =>
     emptyBoundarySession(),
@@ -712,6 +518,8 @@ export function ReaderThinkingProvider({
   const [lastAgentTurnDecision, setLastAgentTurnDecision] =
     useState<AgentTurnDecision | null>(null);
   const [committedCommandCount, setCommittedCommandCount] = useState(0);
+  const [activeSubmittedSourceId, setActiveSubmittedSourceId] =
+    useState<string | null>(null);
   const portsRef = useRef<{
     store: Awaited<ReturnType<typeof getBrowserEventStore>>;
     ids: ReturnType<typeof createBrowserIdPort>;
@@ -723,6 +531,10 @@ export function ReaderThinkingProvider({
   const pendingIntentRef = useRef<PendingIntent | null>(null);
   const boundaryRef = useRef<BoundarySession>(boundary);
   const recentFinalTurnsRef = useRef<AgentTurnVisibleTurn[]>([]);
+  const invitedQuestionKeysRef = useRef<Set<string>>(new Set());
+  const worldInvitationAcceptanceIdentitiesRef = useRef<
+    Map<string, WorldInvitationAcceptanceIdentity>
+  >(new Map());
   const lastWorldBasisRef = useRef<WorldBasis | null>(null);
   const agentTurnChainRef = useRef<Promise<void>>(Promise.resolve());
   const agentTurnGenerationRef = useRef(0);
@@ -731,8 +543,9 @@ export function ReaderThinkingProvider({
   >(new Map());
   const graphRef = useRef(graph);
   const sessionRef = useRef(session);
-  const worldPresentationGenerationRef = useRef(0);
-  const worldBootstrapInFlightRef = useRef(false);
+  const worldPresentationRef = useRef<PresentationPlan | null>(null);
+  const worldOperationGenerationRef = useRef(0);
+  const worldRestoreKeyRef = useRef("");
 
   useEffect(() => {
     boundaryRef.current = boundary;
@@ -745,6 +558,10 @@ export function ReaderThinkingProvider({
   useEffect(() => {
     sessionRef.current = session;
   }, [session]);
+
+  useEffect(() => {
+    worldPresentationRef.current = worldPresentation;
+  }, [worldPresentation]);
 
   const showError = useCallback((err: ThinkingError) => {
     setStatus({
@@ -971,6 +788,377 @@ export function ReaderThinkingProvider({
     [discussionSnapshots],
   );
 
+  const getReaderWorldUseCase = useCallback(() => {
+    const ports = portsRef.current;
+    if (!ports) return null;
+    const dispatchWorld = createWorldDispatchPort({
+      store: ports.store,
+      principal_id: LIVE_PRINCIPAL_ID,
+      draft_factory: (draft) =>
+        createDomainEventDraftBrowser({
+          ...draft,
+          recorded_at: ports.clock.nowRfc3339(),
+        }),
+    });
+    return createReaderWorldUseCase({
+      store: ports.store,
+      principal_id: LIVE_PRINCIPAL_ID,
+      draft_factory: (draft) => createDomainEventDraftBrowser(draft),
+      dispatch_world: dispatchWorld,
+    });
+  }, []);
+
+  const projectWorldEvidence = useCallback(
+    async (
+      plan: PresentationPlan,
+      experienceId: string,
+    ): Promise<CommittedWorldPresentation | null> => {
+      const store = portsRef.current?.store;
+      if (!store) return null;
+      const loaded = await store.load(experienceId);
+      if (!loaded.ok) return null;
+      const committedGraph = foldReadingGraph(experienceId, loaded.value);
+      if (
+        committedGraph.graph_stale ||
+        committedGraph.graph_revision !== plan.basis.graph_revision ||
+        committedGraph.accepted_relation_ids.length === 0
+      ) {
+        return null;
+      }
+      const sources = Object.values(discussionSnapshots);
+      return buildCommittedWorldPresentation({
+        events: loaded.value,
+        sources,
+        session: {
+          state: "active.playable",
+          context: {
+            experience_id: experienceId,
+            source_snapshot_ids: sources.map((source) => source.source_id),
+            source_snapshot_ready: sources.length > 0,
+            relation_reviewed: true,
+            graph_revision: committedGraph.graph_revision,
+            graph_committed: true,
+            accepted_relation_ids: committedGraph.accepted_relation_ids,
+            playability_passed: true,
+            playability_graph_revision: committedGraph.graph_revision,
+            world_id: plan.basis.world_id,
+            world_revision: plan.basis.world_revision,
+            world_basis_graph_revision: committedGraph.graph_revision,
+          },
+        },
+      });
+    },
+    [discussionSnapshots],
+  );
+
+
+  useEffect(() => {
+    const accepted = graph.relations.find(
+      (relation) =>
+        relation.review_status === "accepted" &&
+        !relation.stale &&
+        graph.accepted_relation_ids.includes(relation.relation_id),
+    );
+    const experienceId = session.context.experience_id;
+    if (
+      !ready ||
+      !accepted ||
+      !experienceId ||
+      !session.context.graph_committed ||
+      session.context.graph_revision !== graph.graph_revision ||
+      worldPresentationRef.current
+    ) {
+      return;
+    }
+    const restoreKey = [experienceId, graph.graph_revision].join("|");
+    if (worldRestoreKeyRef.current === restoreKey) return;
+    worldRestoreKeyRef.current = restoreKey;
+
+    let cancelled = false;
+    let restored = false;
+    void (async () => {
+      const world = getReaderWorldUseCase();
+      if (!world) return;
+      const presented = await world.restore({
+        experience_id: experienceId,
+        reduced_motion: window.matchMedia(
+          "(prefers-reduced-motion: reduce)",
+        ).matches,
+      });
+      if (!presented.ok || cancelled) return;
+      const evidence = await projectWorldEvidence(
+        presented.presentation,
+        experienceId,
+      );
+      if (!evidence || cancelled) return;
+      if (
+        !advanceSessionToWorld(
+          sessionRef.current,
+          graphRef.current,
+          {
+            relation_id: accepted.relation_id,
+            relation_basis_revision: accepted.basis_revision,
+          },
+          presented.presentation.basis.world_id,
+          presented.presentation.basis.world_revision,
+        )
+      ) {
+        return;
+      }
+      restored = true;
+      worldPresentationRef.current = presented.presentation;
+      setWorldPresentation(presented.presentation);
+      setWorldEvidence(evidence);
+      setActiveSubmittedSourceId(
+        presented.presentation.source.legacy_source_id,
+      );
+      setWorldUiState("closed");
+      setStatus({
+        kind: "info",
+        message: `上次的世界停在修订 ${presented.presentation.basis.world_revision}，可继续进入。`,
+      });
+    })();
+    return () => {
+      cancelled = true;
+      if (
+        !restored &&
+        worldRestoreKeyRef.current === restoreKey
+      ) {
+        worldRestoreKeyRef.current = "";
+      }
+    };
+  }, [
+    getReaderWorldUseCase,
+    graph,
+    projectWorldEvidence,
+    ready,
+    session,
+  ]);
+  const acceptWorldInvitation = useCallback(async (): Promise<boolean> => {
+    const invitation = lastAgentTurnDecision?.invitation;
+    const ports = portsRef.current;
+    const world = getReaderWorldUseCase();
+    const currentSession = sessionRef.current;
+    const currentGraph = graphRef.current;
+    if (
+      !invitation ||
+      !ports ||
+      !world ||
+      !invitationIsCurrent(invitation, currentGraph, currentSession)
+    ) {
+      setStatus({
+        kind: "error",
+        message: "这次世界邀请已经过期，请先回到当前原文重新问一次。",
+        code: "WORLD_INVITATION_STALE",
+      });
+      return false;
+    }
+
+    let acceptanceIdentity =
+      worldInvitationAcceptanceIdentitiesRef.current.get(
+        invitation.question_key,
+      );
+    if (!acceptanceIdentity) {
+      acceptanceIdentity = {
+        turn_id: deriveWorldInvitationAcceptanceId(invitation.question_key),
+        message_id: ports.ids.nextId("msg"),
+        correlation_id: ports.ids.nextId("corr"),
+        recorded_at: ports.clock.nowRfc3339(),
+      };
+      worldInvitationAcceptanceIdentitiesRef.current.set(
+        invitation.question_key,
+        acceptanceIdentity,
+      );
+    }
+
+    const generation = ++worldOperationGenerationRef.current;
+    setWorldUiState("constructing");
+    setWorldActionPending(false);
+    setStatus({ kind: "busy", message: "正在把关系编译成可操作世界…" });
+    const accepted = await world.acceptInvitation({
+      invitation,
+      ...acceptanceIdentity,
+      seed: WOOL_TOWN_SEED,
+      reduced_motion: window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches,
+    });
+    if (generation !== worldOperationGenerationRef.current) return false;
+    if (!accepted.ok) {
+      setWorldUiState("error");
+      setStatus({
+        kind: "error",
+        message: "世界没有通过一致性检查，原文与关系都没有被改动。",
+        code: accepted.code,
+      });
+      return false;
+    }
+    if (
+      !advanceSessionToWorld(
+        currentSession,
+        currentGraph,
+        invitation.basis,
+        accepted.presentation.basis.world_id,
+        accepted.presentation.basis.world_revision,
+      )
+    ) {
+      setWorldUiState("error");
+      setStatus({
+        kind: "error",
+        message: "阅读状态已经变化，世界先不打开。",
+        code: "SESSION_NOT_READY",
+      });
+      return false;
+    }
+    const evidence = await projectWorldEvidence(
+      accepted.presentation,
+      invitation.basis.experience_id,
+    );
+    if (generation !== worldOperationGenerationRef.current) return false;
+    if (!evidence) {
+      setWorldEvidence(null);
+      setWorldUiState("error");
+      setStatus({
+        kind: "error",
+        message: "世界已经提交，但证据链无法完整重建，暂不显示。",
+        code: "WORLD_EVIDENCE_UNAVAILABLE",
+      });
+      return false;
+    }
+
+    worldPresentationRef.current = accepted.presentation;
+    setWorldPresentation(accepted.presentation);
+    setWorldEvidence(evidence);
+    setWorldUiState("constructing");
+    setStatus({
+      kind: "info",
+      message: "世界已提交，正在把规则、角色与材料流放进原文。",
+    });
+    return true;
+  }, [
+    getReaderWorldUseCase,
+    lastAgentTurnDecision,
+    projectWorldEvidence,
+  ]);
+
+  const declineWorldInvitation = useCallback(() => {
+    worldOperationGenerationRef.current += 1;
+    setWorldUiState("closed");
+    setWorldPresentation(null);
+    setWorldEvidence(null);
+    worldPresentationRef.current = null;
+    setLastAgentTurnDecision(
+      makeClarifyDecision("好，我们继续沿着原文读。", null),
+    );
+    setStatus({ kind: "info", message: "世界邀请已收起，阅读继续。" });
+  }, []);
+
+  const completeWorldConstruction = useCallback(() => {
+    if (worldPresentationRef.current) setWorldUiState("open");
+  }, []);
+
+  const collapseWorld = useCallback(() => {
+    worldOperationGenerationRef.current += 1;
+    sessionRef.current.send({ type: "COLLAPSE" });
+    setWorldUiState("closed");
+    setWorldActionPending(false);
+    setStatus({ kind: "info", message: "世界已收起，阅读位置保持不变。" });
+  }, []);
+
+  const reopenWorld = useCallback(() => {
+    if (!worldPresentationRef.current) return;
+    setWorldUiState("open");
+    setStatus({ kind: "info", message: "已回到刚才的世界。" });
+  }, []);
+
+  const actInWorld = useCallback(
+    async (actionId: string): Promise<void> => {
+      const plan = worldPresentationRef.current;
+      const ports = portsRef.current;
+      const world = getReaderWorldUseCase();
+      const experienceId = sessionRef.current.context.experience_id;
+      const action =
+        actionId === "deepen_specialization" || actionId === "expand_market"
+          ? (actionId satisfies AgentTurnActionId)
+          : null;
+      if (
+        !plan ||
+        !ports ||
+        !world ||
+        !experienceId ||
+        !action ||
+        !plan.actions.some((candidate) => candidate.action_id === action)
+      ) {
+        setStatus({
+          kind: "error",
+          message: "这个动作不属于当前世界。",
+          code: "WORLD_ACTION_UNAVAILABLE",
+        });
+        return;
+      }
+      const generation = ++worldOperationGenerationRef.current;
+      setWorldActionPending(true);
+      setStatus({ kind: "busy", message: "角色正在依据规则回应…" });
+      const turnId = ports.ids.nextId("world_action");
+      const acted = await world.act({
+        experience_id: experienceId,
+        reduced_motion: window.matchMedia(
+          "(prefers-reduced-motion: reduce)",
+        ).matches,
+        turn_id: turnId,
+        idempotency_key: deriveWorldActionIdempotencyKey(turnId, action, {
+          experience_id: experienceId,
+          world_id: plan.basis.world_id,
+          graph_revision: plan.basis.graph_revision,
+          world_revision: plan.basis.world_revision,
+          ruleset_id: plan.basis.ruleset_id,
+        }),
+        command: {
+          action,
+          experience_id: experienceId,
+          world_id: plan.basis.world_id,
+          graph_revision: plan.basis.graph_revision,
+          expected_world_revision: plan.basis.world_revision,
+          ruleset_id: plan.basis.ruleset_id,
+        },
+      });
+      if (generation !== worldOperationGenerationRef.current) return;
+      setWorldActionPending(false);
+      if (!acted.ok) {
+        setStatus({
+          kind: "error",
+          message: "世界拒绝了这次动作，已提交状态保持不变。",
+          code: acted.code,
+        });
+        return;
+      }
+      const evidence = await projectWorldEvidence(
+        acted.presentation,
+        experienceId,
+      );
+      if (generation !== worldOperationGenerationRef.current) return;
+      if (!evidence) {
+        setWorldEvidence(null);
+        setWorldUiState("error");
+        setStatus({
+          kind: "error",
+          message: "动作已经提交，但证据链无法完整重建，暂不显示。",
+          code: "WORLD_EVIDENCE_UNAVAILABLE",
+        });
+        return;
+      }
+      worldPresentationRef.current = acted.presentation;
+      setWorldPresentation(acted.presentation);
+      setWorldEvidence(evidence);
+      setWorldUiState("open");
+      setStatus({
+        kind: "info",
+        message: `世界已推进到修订 ${acted.presentation.basis.world_revision}。`,
+      });
+    },
+    [getReaderWorldUseCase, projectWorldEvidence],
+  );
+
   const inspectAgentTurnBasis = useCallback(async (): Promise<WorldBasis | null> => {
     const currentSession = sessionRef.current;
     const experienceId = currentSession.context.experience_id;
@@ -1015,6 +1203,50 @@ export function ReaderThinkingProvider({
       if (options.generation !== agentTurnGenerationRef.current) return false;
       setWorkingPending(decision.pending_intent_next);
       setLastAgentTurnDecision(decision);
+      if (decision.mode === "invite_world" && decision.invitation) {
+        const invitation = decision.invitation;
+        const currentPorts = portsRef.current;
+        const experienceId = sessionRef.current.context.experience_id;
+        if (!currentPorts || !experienceId) {
+          setStatus({
+            kind: "error",
+            message: "邀请已显示，但跨会话记录失败。",
+            code: "STORE_UNAVAILABLE",
+          });
+          return false;
+        }
+
+        const questionKey = invitation.question_key;
+        const recorded = await persistInvitationQuestionKey(
+          questionKey,
+          invitedQuestionKeysRef.current,
+          () =>
+            recordInvitationQuestion({
+              store: currentPorts.store,
+              experience_id: experienceId,
+              principal_id: LIVE_PRINCIPAL_ID,
+              question_key: questionKey,
+              source_id:
+                source?.source_id ?? invitation.basis.source_snapshot_id,
+              ports: {
+                next_id: () => currentPorts.ids.nextId("memory"),
+                now: currentPorts.clock.nowRfc3339,
+                create_event_draft: async (
+                  draft: MemoryEventDraftInput,
+                ): Promise<DomainEventDraft> =>
+                  (await createDomainEventDraftBrowser(draft)) as DomainEventDraft,
+              },
+            }),
+        );
+        if (!recorded.ok) {
+          setStatus({
+            kind: "error",
+            message: "邀请已显示，但跨会话记录失败。",
+            code: recorded.error.code,
+          });
+          return false;
+        }
+      }
 
       if (
         options.countCommitted &&
@@ -1084,6 +1316,7 @@ export function ReaderThinkingProvider({
     async (
       input: SubmitAgentTurnInput,
       generation: number,
+      scrollY: number,
     ): Promise<AgentTurnDecision> => {
       const stale = () =>
         makeClarifyDecision("这一句已经过期，世界先不动。", null);
@@ -1173,18 +1406,8 @@ export function ReaderThinkingProvider({
       lastWorldBasisRef.current = basis;
 
       const ports = portsRef.current;
-      const worldDispatch = ports
-        ? createWorldDispatchPort({
-            store: ports.store,
-            principal_id: LIVE_PRINCIPAL_ID,
-            draft_factory: (draft) =>
-              createDomainEventDraftBrowser({
-                ...draft,
-                recorded_at: ports.clock.nowRfc3339(),
-              }),
-          })
-        : null;
-      const dispatch: AgentTurnDispatchPort | null = worldDispatch
+      const world = getReaderWorldUseCase();
+      const dispatch: AgentTurnDispatchPort | null = world
         ? async (request) => {
             if (generation !== agentTurnGenerationRef.current) {
               return staleDispatchReceipt();
@@ -1202,9 +1425,52 @@ export function ReaderThinkingProvider({
             ) {
               return staleDispatchReceipt();
             }
-            return worldDispatch(request);
+            setWorldActionPending(true);
+            const acted = await world.act({
+              experience_id: request.command.experience_id,
+              reduced_motion: window.matchMedia(
+                "(prefers-reduced-motion: reduce)",
+              ).matches,
+              turn_id: request.turn_id,
+              command: request.command,
+              idempotency_key: request.idempotency_key,
+            });
+            setWorldActionPending(false);
+            if (!acted.ok) return staleDispatchReceipt();
+            const evidence = await projectWorldEvidence(
+              acted.presentation,
+              request.command.experience_id,
+            );
+            if (!evidence) {
+              setWorldEvidence(null);
+              setWorldUiState("error");
+              setStatus({
+                kind: "error",
+                message: "动作已经提交，但证据链无法完整重建，暂不显示。",
+                code: "WORLD_EVIDENCE_UNAVAILABLE",
+              });
+              return acted.dispatch;
+            }
+            worldPresentationRef.current = acted.presentation;
+            setWorldPresentation(acted.presentation);
+            setWorldEvidence(evidence);
+            setWorldUiState("open");
+            requestAnimationFrame(() => {
+              requestAnimationFrame(() => {
+                window.scrollTo({ top: scrollY, behavior: "auto" });
+              });
+            });
+            return acted.dispatch;
           }
         : null;
+      const scopedRelationshipContext = relationshipContext
+        ? {
+            ...relationshipContext,
+            active_recipe_ids: [
+              ...listReviewedRecipeIdsForSource(sourceSnapshot.sourceId),
+            ],
+          }
+        : undefined;
       const decision = ports
         ? await handleAgentTurn(
             {
@@ -1223,6 +1489,15 @@ export function ReaderThinkingProvider({
                 ? {}
                 : { asr_confidence: input.asr_confidence }),
               recent_turns: recentFinalTurnsRef.current.slice(-4),
+              invited_question_keys: [
+                ...new Set([
+                  ...(scopedRelationshipContext?.invited_question_keys ?? []),
+                  ...invitedQuestionKeysRef.current,
+                ]),
+              ],
+              ...(scopedRelationshipContext
+                ? { relationship_context: scopedRelationshipContext }
+                : {}),
               pending_intent: pendingIntentRef.current,
             },
             {
@@ -1243,15 +1518,20 @@ export function ReaderThinkingProvider({
     },
     [
       discussionResolver,
+      getReaderWorldUseCase,
       inspectAgentTurnBasis,
       publishAgentTurnDecision,
+      projectWorldEvidence,
       setWorkingPending,
       voiceSourceSnapshots,
+      relationshipContext,
     ],
   );
 
   const submitAgentTurn = useCallback(
     (input: SubmitAgentTurnInput): Promise<AgentTurnDecision> => {
+      setActiveSubmittedSourceId(input.sourceId);
+      const scrollY = window.scrollY;
       const control = classifyIntent(input.final_text);
       if (
         control.intent === "explicit_stop" ||
@@ -1261,8 +1541,17 @@ export function ReaderThinkingProvider({
         // before it waits behind that turn in the serialized queue.
         agentTurnGenerationRef.current += 1;
       }
+      if (control.intent === "explicit_stop") {
+        const result = reduceBoundary(boundaryRef.current, {
+          type: "SUBMIT",
+          text: input.final_text,
+          active_source_id: input.sourceId,
+        });
+        boundaryRef.current = result.session;
+        setBoundary(result.session);
+      }
       const generation = agentTurnGenerationRef.current;
-      const run = async () => executeAgentTurn(input, generation);
+      const run = async () => executeAgentTurn(input, generation, scrollY);
       const queued = agentTurnChainRef.current.then(run, run);
       agentTurnChainRef.current = queued.then(
         () => undefined,
@@ -1291,6 +1580,9 @@ export function ReaderThinkingProvider({
       ready,
       graph,
       worldPresentation,
+      worldEvidence,
+      worldUiState,
+      worldActionPending,
       status,
       boundary,
       sessionState: session.state,
@@ -1314,6 +1606,7 @@ export function ReaderThinkingProvider({
         }
         return candidate;
       })(),
+      activeSubmittedSourceId,
       sourceEvidence,
       getSourceEvidence: resolveEvidence,
       reload,
@@ -1331,6 +1624,7 @@ export function ReaderThinkingProvider({
         committed_command_count: committedCommandCount,
       },
       submitBoundaryInput: async (sourceId, text) => {
+        setActiveSubmittedSourceId(sourceId);
         const control = classifyIntent(text);
         if (control.intent === "explicit_stop") {
           await submitAgentTurn({
@@ -1475,6 +1769,7 @@ export function ReaderThinkingProvider({
         });
       },
       submitIdea: async (sourceId, text) => {
+        setActiveSubmittedSourceId(sourceId);
         await withBusy(async () => {
           const snap = resolveEvidence(sourceId);
           if (!snap) {
@@ -1659,19 +1954,30 @@ export function ReaderThinkingProvider({
             return;
           }
           applyGraph(r.value.graph);
+          setWorldUiState("closed");
           setStatus({
             kind: "info",
-            message: "关系已确认并写入 GraphCommitted（世界仍关闭，T005 不开放）。",
+            message: "关系已确认。继续围绕原文提问，Agent 会在合适时邀请你进入世界。",
           });
         });
       },
+      acceptWorldInvitation,
+      declineWorldInvitation,
+      completeWorldConstruction,
+      actInWorld,
+      collapseWorld,
+      reopenWorld,
     };
   }, [
     ready,
     graph,
     worldPresentation,
+    worldEvidence,
+    worldUiState,
+    worldActionPending,
     status,
     candidate,
+    activeSubmittedSourceId,
     boundary,
     reload,
     withBusy,
@@ -1687,6 +1993,12 @@ export function ReaderThinkingProvider({
     lastAgentTurnDecision,
     committedCommandCount,
     setWorkingPending,
+    acceptWorldInvitation,
+    declineWorldInvitation,
+    completeWorldConstruction,
+    actInWorld,
+    collapseWorld,
+    reopenWorld,
   ]);
 
 

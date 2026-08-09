@@ -1,6 +1,10 @@
 /** Injectable identity / clock for deterministic tests (no Date.now / random). */
 
 import type { SourceDiscussionSnapshot } from "@/modules/agent-os/companion";
+import {
+  createSequentialUlid,
+  nextMessageId,
+} from "@/modules/reader-world/events/clock";
 
 export type IdPort = {
   nextId: (prefix: string) => string;
@@ -30,14 +34,12 @@ export function createMapSourceDiscussionResolver(
   };
 }
 
-let seq = 0;
-
 export function createSequentialIdPort(start = 0): IdPort {
   let n = start;
   return {
     nextId: (prefix: string) => {
       n += 1;
-      return `${prefix}_${n}`;
+      return prefix === "msg" ? createSequentialUlid(0, n) : `${prefix}_${n}`;
     },
   };
 }
@@ -46,13 +48,10 @@ export function createFixedClockPort(iso = "2026-08-09T00:00:00.000Z"): ClockPor
   return { nowRfc3339: () => iso };
 }
 
-/** Browser default: deterministic counter + real ISO (ids only sequential). */
+/** Browser default: canonical event identity plus a real ISO clock. */
 export function createBrowserIdPort(): IdPort {
   return {
-    nextId: (prefix: string) => {
-      seq += 1;
-      return `${prefix}_${seq}_${Math.floor(performance.now())}`;
-    },
+    nextId: () => nextMessageId(),
   };
 }
 

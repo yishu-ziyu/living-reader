@@ -11,10 +11,11 @@ import {
 } from "../src/modules/book/domain";
 import { writeJsonIfChanged } from "./build";
 
-const MAX_BATCH_CHARACTERS = 16_000;
+const MAX_BATCH_CHARACTERS = 20_000;
 const MAX_PARALLEL_CHAPTERS = 4;
 const STEPFUN_CHAT_COMPLETIONS_URL =
   "https://api.stepfun.com/v1/chat/completions";
+export const STEPFUN_MODEL_ID = "step-3.5-flash";
 
 export type TranslationInput = Readonly<{
   sourceId: ParagraphSourceId;
@@ -29,6 +30,30 @@ export type TranslationOutput = Readonly<{
 export type TranslationBatch = (
   blocks: readonly TranslationInput[],
 ) => Promise<readonly TranslationOutput[]>;
+
+export const CANNAN_ZH_CN_PROMPT_REVISION =
+  "cannan-zh-cn-v3+sol-bilingual-review-v1";
+export const CANNAN_ZH_CN_SYSTEM_PROMPT = [
+  "You are the Chinese translator for The Living Reader.",
+  "Translate Adam Smith's 1904 Cannan English text into accurate, fluent modern Simplified Chinese.",
+  "Preserve every proposition, qualification, comparison, number, proper name, and causal relationship.",
+  "Do not summarize, omit, expand, explain, add notes, merge, split, reorder, or invent text.",
+  "Use Chinese punctuation and readable paragraphs. Return only the requested structured translations.",
+  "Keep terminology consistent: division of labour=劳动分工; labour=劳动; stock (as invested capital)=资本; wages=工资; profit=利润; rent=地租; effectual demand=有效需求; natural price=自然价格; market price=市场价格; commodity=商品; exchangeable value=交换价值; productive labour=生产性劳动; unproductive labour=非生产性劳动.",
+  "Choose contextually correct Chinese when a glossary term has another ordinary meaning.",
+  "The text field must contain only the complete Simplified Chinese translation, with no labels or source text.",
+  'Return JSON matching this schema exactly: {"translations":[{"sourceId":"string from input","text":"complete Simplified Chinese translation"}]}',
+  "Return every input sourceId exactly once, in input order, and no other sourceId.",
+].join("\n");
+
+export function createCannanZhCnTranslationPrompt(
+  blocks: readonly TranslationInput[],
+): Readonly<{ system: string; user: string }> {
+  return {
+    system: CANNAN_ZH_CN_SYSTEM_PROMPT,
+    user: JSON.stringify({ paragraphs: blocks }),
+  };
+}
 
 export type BuildBookTranslationsOptions = Readonly<{
   manifest: BookManifestV2;
@@ -79,26 +104,36 @@ export async function buildBookTranslations(
   const chapters = options.manifest.books.flatMap((book) => book.chapters);
   const reports = new Array<ChapterBuildReport>(chapters.length);
   let nextChapterIndex = 0;
+  let failed = false;
+  let failure: unknown;
   await Promise.all(
     Array.from(
       { length: Math.min(MAX_PARALLEL_CHAPTERS, chapters.length) },
       async () => {
-        while (nextChapterIndex < chapters.length) {
+        while (!failed && nextChapterIndex < chapters.length) {
           const chapterIndex = nextChapterIndex;
           nextChapterIndex += 1;
-          reports[chapterIndex] = await buildChapterTranslation({
-            bookId: options.manifest.bookId,
-            chapter: chapters[chapterIndex]!,
-            outputDir,
-            translate: options.translate,
-            model: options.model,
-            promptRevision: options.promptRevision,
-            translatedAt,
-          });
+          try {
+            reports[chapterIndex] = await buildChapterTranslation({
+              bookId: options.manifest.bookId,
+              chapter: chapters[chapterIndex]!,
+              outputDir,
+              translate: options.translate,
+              model: options.model,
+              promptRevision: options.promptRevision,
+              translatedAt,
+            });
+          } catch (error) {
+            if (!failed) {
+              failed = true;
+              failure = error;
+            }
+          }
         }
       },
     ),
   );
+  if (failed) throw failure;
 
   return {
     chapterCount: reports.length,
@@ -124,7 +159,18 @@ async function buildChapterTranslation(input: {
   promptRevision: string;
   translatedAt: string;
 }): Promise<ChapterBuildReport> {
-  const artifactPath = path.join(input.outputDir, `${input.chapter.chapterId}.json`);
+  const artifactPath = path.join(
+    input.outputDir,
+    `${input.chapter.chapterId}.json`,
+  );
+  const sourceBySourceId = new Map(
+    input.chapter.sourceBlocks.map((block) => [block.sourceId, block] as const),
+  );
+  if (sourceBySourceId.size !== input.chapter.sourceBlocks.length) {
+    throw new Error(
+      `Chapter ${input.chapter.chapterId} contains duplicate sourceIds`,
+    );
+  }
   const existing = await readExistingTranslation(artifactPath);
   const existingBySourceId = new Map(
     existing?.translations.map((entry) => [entry.sourceId, entry] as const) ?? [],
@@ -135,14 +181,14 @@ async function buildChapterTranslation(input: {
 
   for (const block of input.chapter.sourceBlocks) {
     const candidate = existingBySourceId.get(block.sourceId);
+    // Model is provenance, not cache identity; prompt revisions explicitly invalidate machine output.
     const reusable =
       candidate &&
       candidate.contentHash === block.contentHash &&
       sameLocator(candidate.sourceLocator, block.sourceLocator) &&
-      candidate.text.trim() &&
+      isChineseTranslation(candidate.text) &&
       (candidate.reviewStatus === "human_reviewed" ||
-        (candidate.model === input.model &&
-          candidate.promptRevision === input.promptRevision));
+        candidate.promptRevision === input.promptRevision);
     if (reusable) {
       entries.set(block.sourceId, candidate);
       reusedBlockCount += 1;
@@ -152,7 +198,6 @@ async function buildChapterTranslation(input: {
   }
 
   let translatedBlockCount = 0;
-  let written = false;
   for (const batch of splitTranslationBatches(pending)) {
     const translated = await input.translate(batch);
     const translatedBySourceId = new Map<ParagraphSourceId, string>();
@@ -160,9 +205,9 @@ async function buildChapterTranslation(input: {
       if (
         !batch.some((block) => block.sourceId === value.sourceId) ||
         translatedBySourceId.has(value.sourceId) ||
-        !value.text.trim()
+        !isChineseTranslation(value.text)
       ) {
-        throw new Error(`Invalid translation output for ${value.sourceId}`);
+        throw new Error(`Invalid Chinese translation for ${value.sourceId}`);
       }
       translatedBySourceId.set(value.sourceId, value.text.trim());
     }
@@ -171,9 +216,7 @@ async function buildChapterTranslation(input: {
     }
 
     for (const block of batch) {
-      const source = input.chapter.sourceBlocks.find(
-        (candidate) => candidate.sourceId === block.sourceId,
-      )!;
+      const source = sourceBySourceId.get(block.sourceId)!;
       entries.set(block.sourceId, {
         sourceId: block.sourceId,
         sourceLocator: source.sourceLocator,
@@ -186,18 +229,17 @@ async function buildChapterTranslation(input: {
       });
       translatedBlockCount += 1;
     }
-    written =
-      (await writeJsonIfChanged(
-        artifactPath,
-        chapterArtifact(input.bookId, input.chapter, entries),
-      )) || written;
   }
 
-  written =
-    (await writeJsonIfChanged(
-      artifactPath,
-      chapterArtifact(input.bookId, input.chapter, entries),
-    )) || written;
+  if (entries.size !== input.chapter.sourceBlocks.length) {
+    throw new Error(
+      `Chapter ${input.chapter.chapterId} translation is incomplete`,
+    );
+  }
+  const artifact = chapterArtifact(input.bookId, input.chapter, entries);
+  const validated = validateChapterTranslation(artifact);
+  if (!validated.ok) throw validated.error;
+  const written = await writeJsonIfChanged(artifactPath, validated.value);
   return {
     translatedBlockCount,
     reusedBlockCount,
@@ -270,6 +312,25 @@ function sameLocator(
   );
 }
 
+function isChineseTranslation(value: string): boolean {
+  return value.trim().length > 0 && /[\u3400-\u9fff]/u.test(value);
+}
+
+class StepFunHttpError extends Error {
+  readonly retryable: boolean;
+
+  constructor(status: number) {
+    super(`StepFun translation request failed with HTTP ${status}`);
+    this.name = "StepFunHttpError";
+    this.retryable =
+      status >= 500 ||
+      status === 408 ||
+      status === 409 ||
+      status === 425 ||
+      status === 429;
+  }
+}
+
 export function createStepFunTranslationBatch(
   apiKey: string,
   fetchRequest: typeof fetch = fetch,
@@ -277,24 +338,12 @@ export function createStepFunTranslationBatch(
   if (!apiKey.trim()) throw new Error("STEPFUN_API_KEY is required");
 
   return async (blocks) => {
+    const prompt = createCannanZhCnTranslationPrompt(blocks);
     const body = {
-      model: "step-3.5-flash",
+      model: STEPFUN_MODEL_ID,
       messages: [
-        {
-          role: "system",
-          content: [
-            "You are translating Adam Smith's The Wealth of Nations from the Cannan edition into clear, faithful Simplified Chinese.",
-            "Translate every input paragraph completely. Preserve argument structure, qualifications, names, numbers, and quoted wording.",
-            "Do not summarize, explain, omit, or add commentary. Do not translate sourceId.",
-            "Return JSON matching this schema exactly:",
-            '{"translations":[{"sourceId":"string from input","text":"complete Simplified Chinese translation"}]}',
-            "Return every input sourceId exactly once and no other sourceId.",
-          ].join("\n"),
-        },
-        {
-          role: "user",
-          content: JSON.stringify({ paragraphs: blocks }),
-        },
+        { role: "system", content: prompt.system },
+        { role: "user", content: prompt.user },
       ],
       response_format: { type: "json_object" },
       reasoning_effort: "low",
@@ -315,15 +364,16 @@ export function createStepFunTranslationBatch(
           signal: AbortSignal.timeout(180_000),
         });
         if (!response.ok) {
-          throw new Error(
-            `StepFun translation request failed with HTTP ${response.status}`,
-          );
+          throw new StepFunHttpError(response.status);
         }
         const payload = (await response.json()) as unknown;
         const content = readStepFunContent(payload);
         const parsed = JSON.parse(content) as unknown;
-        return readTranslationOutputs(parsed);
+        return readTranslationOutputs(parsed, "StepFun");
       } catch (error) {
+        if (error instanceof StepFunHttpError && !error.retryable) {
+          throw error;
+        }
         lastError = error;
         if (attempt < 3) {
           const { promise, resolve } = Promise.withResolvers<void>();
@@ -354,9 +404,12 @@ function readStepFunContent(value: unknown): string {
   return choice.message.content;
 }
 
-function readTranslationOutputs(value: unknown): TranslationOutput[] {
+function readTranslationOutputs(
+  value: unknown,
+  providerName: string,
+): TranslationOutput[] {
   if (!isRecord(value) || !Array.isArray(value.translations)) {
-    throw new Error("StepFun JSON output is malformed");
+    throw new Error(`${providerName} JSON output is malformed`);
   }
   return value.translations.map((entry, index) => {
     if (
@@ -364,7 +417,9 @@ function readTranslationOutputs(value: unknown): TranslationOutput[] {
       typeof entry.sourceId !== "string" ||
       typeof entry.text !== "string"
     ) {
-      throw new Error(`StepFun translation output ${index} is malformed`);
+      throw new Error(
+        `${providerName} translation output ${index} is malformed`,
+      );
     }
     return {
       sourceId: entry.sourceId as ParagraphSourceId,

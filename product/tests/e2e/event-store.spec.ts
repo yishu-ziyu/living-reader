@@ -34,7 +34,7 @@ test.describe("T003 IndexedDB EventStore", () => {
   }) => {
     const { drafts, reset } = withFixedScenarioDrafts();
     try {
-      await page.goto("/");
+      await page.goto("/test-harness");
       await expect(page.getByTestId("reading-shell")).toBeVisible();
       await waitForBridge(page);
 
@@ -212,7 +212,7 @@ test.describe("T003 IndexedDB EventStore", () => {
   }) => {
     const { drafts, reset } = withFixedScenarioDrafts();
     try {
-      await page.goto("/");
+      await page.goto("/test-harness");
       await waitForBridge(page);
       await page.evaluate(async () => {
         const bridge = (window as unknown as { __T003_EVENT_STORE__: AnyBridge })

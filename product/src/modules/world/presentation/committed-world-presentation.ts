@@ -78,7 +78,7 @@ export type CommittedWorldSourceBinding = Readonly<{
   source_id: string;
   quote: string;
   fragment: string;
-  pdf_page: number;
+  pdf_page?: number;
   print_page: number;
   edition_id: string;
   edition_revision: string;
@@ -236,7 +236,8 @@ function sourceBindings(
       !nonEmptyString(source.source_id) ||
       !nonEmptyString(source.quote) ||
       !nonEmptyString(source.fragment) ||
-      !positiveSafeInteger(source.pdf_page) ||
+      (source.pdf_page !== undefined &&
+        !positiveSafeInteger(source.pdf_page)) ||
       !positiveSafeInteger(source.print_page) ||
       !nonEmptyString(source.edition_id) ||
       !nonEmptyString(source.edition_revision) ||
@@ -251,7 +252,9 @@ function sourceBindings(
       source_id: source.source_id,
       quote: source.quote,
       fragment: source.fragment,
-      pdf_page: source.pdf_page,
+      ...(source.pdf_page === undefined
+        ? {}
+        : { pdf_page: source.pdf_page }),
       print_page: source.print_page,
       edition_id: source.edition_id,
       edition_revision: source.edition_revision,

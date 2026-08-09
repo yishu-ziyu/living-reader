@@ -1,23 +1,23 @@
 import { err, ok, type BookResult } from "./errors";
 import { quoteFromBody, sourceContentHash } from "./hash";
+import { isDomainSourceId } from "./source-id";
 import type {
   DomainSourceId,
   SourceBlock,
   SourceLocator,
 } from "./types";
-import { DOMAIN_SOURCE_IDS } from "./types";
 
-const KNOWN_SOURCE_IDS = new Set<string>(Object.values(DOMAIN_SOURCE_IDS));
+export { isDomainSourceId } from "./source-id";
 
 export function assertKnownSourceId(
   sourceId: string,
 ): BookResult<DomainSourceId> {
-  if (!KNOWN_SOURCE_IDS.has(sourceId)) {
+  if (!isDomainSourceId(sourceId)) {
     return err("unknown_source", `Unknown source_id: ${sourceId}`, {
       sourceId,
     });
   }
-  return ok(sourceId as DomainSourceId);
+  return ok(sourceId);
 }
 
 export function validateSourceBlock(block: SourceBlock): BookResult<SourceBlock> {

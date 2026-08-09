@@ -1,20 +1,22 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import {
+  collectFootnoteTargetIds,
   DOMAIN_SOURCE_IDS,
   err,
   ok,
   resolveSourceId,
   validateBookManifestV2,
+  validateFootnoteClosure,
+  validateSourceBlock,
   type BookArtifact,
   type BookManifestV2,
   type BookResult,
+  type SourceBlock,
 } from "@/modules/book/domain";
-import { compileWealthOfNationsFromFragments } from "./compileFromFragments";
-import { validateManifestFileShape } from "./manifestShape";
 
 /**
- * Load Wealth of Nations MVP sources from public manifest + official fragments.
+ * Load the two legacy Agent aliases from the canonical public manifest v2.
  * Server / test only (uses filesystem). Never throws on malformed manifest.
  */
 export async function loadWealthOfNationsBook(
@@ -37,95 +39,14 @@ export async function loadWealthOfNationsBook(
     return err("invalid_manifest", "Manifest JSON parse failed");
   }
 
-  if (
-    parsedJson !== null &&
-    typeof parsedJson === "object" &&
-    !Array.isArray(parsedJson) &&
-    "schemaVersion" in parsedJson &&
-    parsedJson.schemaVersion === 2
-  ) {
-    const manifest = validateBookManifestV2(parsedJson);
-    if (!manifest.ok) return manifest;
-    return loadLegacyAliasBook(base, manifest.value);
-  }
-
-  const shape = validateManifestFileShape(parsedJson);
-  if (!shape.ok) return shape;
-  const file = shape.value;
-
-  const fragments: Record<string, string> = {};
-  for (const spec of file.sources) {
-    const fragPath = path.join(base, spec.fragmentPath);
-    try {
-      fragments[spec.fragment] = await readFile(fragPath, "utf8");
-    } catch {
-      return err("fragment_not_found", `Cannot read fragment file`, {
-        fragPath,
-        fragment: spec.fragment,
-      });
-    }
-  }
-
-  const footnoteHtml: Record<string, string> = {};
-  const footnoteExpectedText: Record<string, string> = {};
-  for (const fn of file.footnotes ?? []) {
-    // Reject duplicate ids before any map overwrite.
-    if (Object.prototype.hasOwnProperty.call(footnoteHtml, fn.id)) {
-      return err(
-        "duplicate_locator",
-        `Duplicate footnotes.id before overwrite: ${fn.id}`,
-        { id: fn.id },
-      );
-    }
-    const fnPath = path.join(base, fn.path);
-    try {
-      footnoteHtml[fn.id] = await readFile(fnPath, "utf8");
-    } catch {
-      return err("source_unavailable", `Cannot read footnote file`, {
-        path: fn.path,
-        id: fn.id,
-      });
-    }
-    if (fn.expectedText) {
-      footnoteExpectedText[fn.id] = fn.expectedText;
-    }
-  }
-
-  return compileWealthOfNationsFromFragments({
-    bookId: file.bookId,
-    title: file.title,
-    author: file.author,
-    edition: {
-      editionId: file.edition.editionId,
-      revision: file.edition.revision,
-      language: "en",
-      label: file.edition.label,
-      sourceUri: file.edition.sourceUri,
-      contentHash: file.edition.contentHash,
-    },
-    sources: file.sources.map((s) => ({
-      sourceKey: s.sourceKey,
-      sourceId: DOMAIN_SOURCE_IDS[s.sourceKey],
-      readingOrder: s.readingOrder,
-      title: s.title,
-      chapterLabel: s.chapterLabel,
-      fragment: s.fragment,
-      pdfPage: s.pdfPage,
-      printPage: s.printPage,
-      glossZh: s.glossZh,
-      expectedQuote: s.expectedQuote,
-      expectedContentHash: s.expectedContentHash,
-    })),
-    fragments,
-    footnoteHtml,
-    footnoteExpectedText,
-  });
+  const manifest = validateBookManifestV2(parsedJson);
+  if (!manifest.ok) return manifest;
+  return loadAgentAliasBook(manifest.value);
 }
 
-async function loadLegacyAliasBook(
-  base: string,
+function loadAgentAliasBook(
   manifest: BookManifestV2,
-): Promise<BookResult<BookArtifact>> {
+): BookResult<BookArtifact> {
   const divisionId = resolveSourceId(manifest, DOMAIN_SOURCE_IDS.division);
   const marketId = resolveSourceId(manifest, DOMAIN_SOURCE_IDS.market);
   if (!divisionId.ok) return divisionId;
@@ -138,40 +59,66 @@ async function loadLegacyAliasBook(
   if (!division || !market) {
     return err("source_unavailable", "Legacy alias targets are unavailable");
   }
+  if (
+    division.sourceLocator.resource !== "Smith_0206-01.html" ||
+    market.sourceLocator.resource !== "Smith_0206-01.html"
+  ) {
+    return err("missing_locator", "Legacy alias source resource is unavailable");
+  }
   const volumeOne = manifest.volumes.find((volume) => volume.volume === 1);
   if (!volumeOne) {
     return err("invalid_manifest", "Volume 1 metadata is unavailable");
   }
 
-  const fragments: Record<string, string> = {};
-  for (const block of [division, market]) {
-    const fragmentPath = path.join(
-      base,
-      "fragments",
-      `${block.sourceLocator.fragment}.html`,
-    );
-    try {
-      fragments[block.sourceLocator.fragment] = await readFile(fragmentPath, "utf8");
-    } catch {
-      return err("fragment_not_found", "Cannot read legacy fragment file", {
-        fragmentPath,
-      });
-    }
-  }
-  const footnoteId = "lf0206-01_footnote_nt114";
-  let footnoteHtml: string;
-  try {
-    footnoteHtml = await readFile(
-      path.join(base, "footnotes", `${footnoteId}.html`),
-      "utf8",
-    );
-  } catch {
-    return err("source_unavailable", "Cannot read legacy footnote file", {
-      footnoteId,
-    });
+  const candidates: SourceBlock[] = [
+    {
+      sourceId: DOMAIN_SOURCE_IDS.division,
+      sourceKey: "division",
+      editionId: volumeOne.volumeId,
+      readingOrder: 1,
+      title: "Of the division of labour",
+      chapterLabel: "BOOK I. CH. I.",
+      body: division.body,
+      quote: division.quote,
+      contentHash: division.contentHash,
+      sourceLocator: {
+        provider: "OLL",
+        resource: "Smith_0206-01.html",
+        fragment: division.sourceLocator.fragment,
+      },
+      evidenceRefs: [{ kind: "pdf_page", pdfPage: 36, printPage: 5 }],
+      glossZh: "分工与劳动生产力（释义，非译文）。",
+    },
+    {
+      sourceId: DOMAIN_SOURCE_IDS.market,
+      sourceKey: "market",
+      editionId: volumeOne.volumeId,
+      readingOrder: 2,
+      title: "That the division of labour is limited by the extent of the market",
+      chapterLabel: "BOOK I. CH. III.",
+      body: market.body,
+      quote: market.quote,
+      contentHash: market.contentHash,
+      sourceLocator: {
+        provider: "OLL",
+        resource: "Smith_0206-01.html",
+        fragment: market.sourceLocator.fragment,
+      },
+      evidenceRefs: [{ kind: "pdf_page", pdfPage: 45, printPage: 19 }],
+      glossZh: "分工受市场范围限制（释义，非译文）。",
+    },
+  ];
+  const sourceBlocks: SourceBlock[] = [];
+  for (const candidate of candidates) {
+    const valid = validateSourceBlock(candidate);
+    if (!valid.ok) return valid;
+    sourceBlocks.push(valid.value);
   }
 
-  return compileWealthOfNationsFromFragments({
+  const neededFootnoteIds = new Set(
+    sourceBlocks.flatMap((block) => collectFootnoteTargetIds(block.body)),
+  );
+  const book: BookArtifact = {
     bookId: manifest.bookId,
     title: manifest.title,
     author: manifest.author,
@@ -183,40 +130,17 @@ async function loadLegacyAliasBook(
       sourceUri: volumeOne.sourcePackageUri,
       contentHash: volumeOne.sourcePackageHash,
     },
-    sources: [
-      {
-        sourceKey: "division",
-        sourceId: DOMAIN_SOURCE_IDS.division,
-        readingOrder: 1,
-        title: "Of the division of labour",
-        chapterLabel: "BOOK I. CH. I.",
-        fragment: division.sourceLocator.fragment,
-        pdfPage: 36,
-        printPage: 5,
-        glossZh: "分工与劳动生产力（释义，非译文）。",
-        expectedQuote: division.quote,
-        expectedContentHash: division.contentHash,
-      },
-      {
-        sourceKey: "market",
-        sourceId: DOMAIN_SOURCE_IDS.market,
-        readingOrder: 2,
-        title: "That the division of labour is limited by the extent of the market",
-        chapterLabel: "BOOK I. CH. III.",
-        fragment: market.sourceLocator.fragment,
-        pdfPage: 45,
-        printPage: 19,
-        glossZh: "分工受市场范围限制（释义，非译文）。",
-        expectedQuote: market.quote,
-        expectedContentHash: market.contentHash,
-      },
-    ],
-    fragments,
-    footnoteHtml: { [footnoteId]: footnoteHtml },
-    footnoteExpectedText: {
-      [footnoteId]: "[Ed. 1 reads ‘improvements’.]",
-    },
-  });
+    sourceBlocks,
+    footnotes: manifest.footnotes
+      .filter((footnote) => neededFootnoteIds.has(footnote.id))
+      .map((footnote) => ({
+        id: footnote.id,
+        marker: footnote.marker,
+        text: footnote.text,
+        ...(footnote.backRefId ? { backRefId: footnote.backRefId } : {}),
+      })),
+  };
+  return validateFootnoteClosure(book);
 }
 
 /** Fail-closed lookup used by UI and tests. */

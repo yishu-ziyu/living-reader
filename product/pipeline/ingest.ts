@@ -7,11 +7,13 @@ import type {
   BookManifestV2,
   BookSourceBlock,
   ManifestBookPart,
+  ManifestFootnoteTarget,
   ManifestSourceLocator,
   ManifestVolume,
   NeedsReviewItem,
   ParagraphSourceId,
 } from "../src/modules/book/domain";
+import { parseOllFootnoteFragment } from "../src/infrastructure/book/oll/parseFootnoteHtml";
 import { parseOllParagraphFragment } from "../src/infrastructure/book/oll/parseParagraphHtml";
 
 type FixedSourceFile = ManifestVolume & {
@@ -55,6 +57,7 @@ export async function ingestWealthOfNations(
   const metadata = await readSourceMetadata(sourceDir);
   const books = new Map<number, MutableBook>();
   const needsReview: NeedsReviewItem[] = [];
+  const footnotes: ManifestFootnoteTarget[] = [];
   let rawParagraphIdCount = 0;
 
   for (const volume of [...metadata.volumes].sort(
@@ -78,6 +81,7 @@ export async function ingestWealthOfNations(
     }
     rawParagraphIdCount += rawCount;
     ingestVolume(html, volume, books, needsReview);
+    footnotes.push(...parseOllFootnotes(html, volume));
   }
 
   const orderedBooks = finalizeBooks(books);
@@ -98,6 +102,7 @@ export async function ingestWealthOfNations(
   ) as BookManifestV2["aliases"];
 
   assertUniqueBlocks(allBlocks);
+  assertManifestFootnoteClosure(allBlocks, footnotes);
 
   return {
     schemaVersion: 2,
@@ -110,11 +115,20 @@ export async function ingestWealthOfNations(
       language: "en",
       label: "Edwin Cannan edition (1904), official OLL volumes 1-2",
     },
-    volumes: metadata.volumes.map(
-      ({ inputPath: _inputPath, compressedHash: _compressedHash, ...volume }) =>
-        volume,
-    ),
+    volumes: metadata.volumes.map((source) => ({
+      volume: source.volume,
+      volumeId: source.volumeId,
+      resource: source.resource,
+      sourcePageUri: source.sourcePageUri,
+      sourcePackageUri: source.sourcePackageUri,
+      sourcePackageHash: source.sourcePackageHash,
+      contentHash: source.contentHash,
+      rawParagraphIdCount: source.rawParagraphIdCount,
+      startsAt: source.startsAt,
+      endsAt: source.endsAt,
+    })),
     books: orderedBooks,
+    footnotes,
     aliases,
     needsReview,
     build: {
@@ -149,10 +163,15 @@ function ingestVolume(
   books: Map<number, MutableBook>,
   needsReview: NeedsReviewItem[],
 ): void {
-  const footnotesStart = html.search(
-    /<div\b[^>]*class="[^"]*type-footnote\s+note[^"]*"/i,
-  );
-  const mainHtml = footnotesStart === -1 ? html : html.slice(0, footnotesStart);
+  // Targets are collected from the full volume by parseOllFootnotes.
+  // Exclude the appended footnote section only from chapter prose tokenization.
+  const contentStops = [
+    html.search(/<div\b[^>]*class="[^"]*type-colophon[^"]*"/i),
+    html.search(/<div\b[^>]*class="[^"]*type-footnote\s+note[^"]*"/i),
+  ].filter((index) => index >= 0);
+  const contentEnd =
+    contentStops.length > 0 ? Math.min(...contentStops) : html.length;
+  const mainHtml = html.slice(0, contentEnd);
   const firstBookIndex = mainHtml.search(/<h2\b[^>]*>\s*BOOK\s+[IVX]+\b/i);
   if (firstBookIndex === -1) {
     throw new Error(`${volume.resource} has no formal Book heading`);
@@ -179,7 +198,7 @@ function ingestVolume(
 
     const token = match[0];
     if (/^<h2\b/i.test(token)) {
-      const heading = textFromHtml(token);
+      const heading = headingTextFromHtml(token);
       const bookMatch = heading.match(/^BOOK\s+([IVX]+)\b:?\s*(.*)$/i);
       if (bookMatch) {
         const bookNumber = romanToInteger(bookMatch[1]);
@@ -283,6 +302,75 @@ function ingestVolume(
   }
 }
 
+function parseOllFootnotes(
+  html: string,
+  volume: FixedSourceFile,
+): ManifestFootnoteTarget[] {
+  const footnotes: ManifestFootnoteTarget[] = [];
+  for (const match of html.matchAll(/<div\b[^>]*>/gi)) {
+    if (!/\bclass="[^"]*\btype-footnote\b[^"]*"/i.test(match[0])) continue;
+    const start = match.index ?? 0;
+    const end = findClosingDivEnd(html, start);
+    if (end === -1) {
+      throw new Error(`${volume.resource} contains an unclosed footnote target`);
+    }
+    const parsed = parseOllFootnoteFragment(html.slice(start, end));
+    if (!parsed.ok) {
+      throw new Error(
+        `${volume.resource} footnote target is invalid: ${parsed.error.code} ${parsed.error.message}`,
+      );
+    }
+    footnotes.push({
+      ...parsed.value,
+      sourceLocator: makeLocator(volume, parsed.value.id),
+    });
+  }
+  return footnotes;
+}
+
+function findClosingDivEnd(html: string, start: number): number {
+  const divPattern = /<\/?div\b[^>]*>/gi;
+  divPattern.lastIndex = start;
+  let depth = 0;
+  let match: RegExpExecArray | null;
+  while ((match = divPattern.exec(html)) !== null) {
+    if (/^<\//.test(match[0])) {
+      depth -= 1;
+      if (depth === 0) return match.index + match[0].length;
+      continue;
+    }
+    if (!/\/>$/.test(match[0])) depth += 1;
+  }
+  return -1;
+}
+
+function assertManifestFootnoteClosure(
+  blocks: BookSourceBlock[],
+  footnotes: ManifestFootnoteTarget[],
+): void {
+  const targets = new Map<string, ManifestFootnoteTarget>();
+  const locators = new Set<string>();
+  for (const footnote of footnotes) {
+    const locator = `${footnote.sourceLocator.resource}#${footnote.sourceLocator.fragment}`;
+    if (targets.has(footnote.id) || locators.has(locator)) {
+      throw new Error(`Duplicate footnote target: ${footnote.id} at ${locator}`);
+    }
+    targets.set(footnote.id, footnote);
+    locators.add(locator);
+  }
+
+  for (const block of blocks) {
+    for (const node of block.body) {
+      if (node.type !== "footnote_ref") continue;
+      if (!node.targetId || !targets.has(node.targetId)) {
+        throw new Error(
+          `Unresolved footnote target: ${block.sourceId} -> ${node.targetId || "(empty)"}`,
+        );
+      }
+    }
+  }
+}
+
 function finalizeBooks(books: Map<number, MutableBook>): ManifestBookPart[] {
   let chapterOrder = 0;
   return [...books.values()]
@@ -376,6 +464,15 @@ function assertHash(
   if (actual !== expected) {
     throw new Error(`${label} content hash drift: expected ${expected}, got ${actual}`);
   }
+}
+
+function headingTextFromHtml(html: string): string {
+  return textFromHtml(
+    html.replace(
+      /<a\b(?=[^>]*\bclass=["'][^"']*\bfootnote-link\b)[^>]*>[\s\S]*?<\/a>/gi,
+      "",
+    ),
+  );
 }
 
 function textFromHtml(html: string): string {

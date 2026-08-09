@@ -10,7 +10,10 @@ import {
   validateBookManifestV2,
 } from "@/modules/book";
 import { ingestWealthOfNations } from "../../../pipeline/ingest";
-import { buildWealthOfNationsAssets } from "../../../pipeline/build";
+import {
+  buildWealthOfNationsAssets,
+  validateBookAssets,
+} from "../../../pipeline/build";
 
 const productRoot = process.cwd();
 const sourceDir = path.join(
@@ -30,6 +33,9 @@ describe("full-book OLL ingest", () => {
     expect(manifest.books.map((book) => book.bookNumber)).toEqual([
       1, 2, 3, 4, 5,
     ]);
+    expect(manifest.books[0]?.chapters[0]?.title).toBe(
+      "OF THE DIVISION OF LABOUR",
+    );
 
     const bookFour = manifest.books.find((book) => book.bookNumber === 4);
     expect(bookFour).toBeDefined();
@@ -50,7 +56,7 @@ describe("full-book OLL ingest", () => {
     const allBlocks = manifest.books.flatMap((book) =>
       book.chapters.flatMap((chapter) => chapter.sourceBlocks),
     );
-    expect(allBlocks.length).toBeGreaterThan(2_000);
+    expect(allBlocks).toHaveLength(2_063);
     expect(allBlocks[0]?.sourceId).toBe("smith.b1.c1.p1");
     expect(
       allBlocks.every((block) => /^smith\.b\d+\.c\d+\.p\d+$/.test(block.sourceId)),
@@ -64,6 +70,47 @@ describe("full-book OLL ingest", () => {
     expect(allBlocks.every((block) => /^[a-f0-9]{64}$/.test(block.contentHash))).toBe(
       true,
     );
+    expect(chapterThree?.sourceBlocks.at(-1)?.sourceLocator.fragment).toBe(
+      "Smith_0206-01_1292",
+    );
+    const bookFiveChapterThree = manifest.books
+      .find((book) => book.bookNumber === 5)
+      ?.chapters.find((chapter) => chapter.chapterId === "smith.b5.c3");
+    expect(bookFiveChapterThree?.sourceBlocks.at(-1)?.sourceLocator.fragment).toBe(
+      "Smith_0206-02_1047",
+    );
+    expect(
+      allBlocks.every(
+        (block) =>
+          !block.quote.includes("Edition: current; Page:") &&
+          !block.quote.toLowerCase().includes("aberdeen university press"),
+      ),
+    ).toBe(true);
+
+    const footnoteRefs = allBlocks.flatMap((block) =>
+      block.body
+        .filter((node) => node.type === "footnote_ref")
+        .map((node) => node.targetId),
+    );
+    const footnotesById = new Map(
+      manifest.footnotes.map((footnote) => [footnote.id, footnote] as const),
+    );
+    expect(footnoteRefs).toHaveLength(1_508);
+    expect(manifest.footnotes).toHaveLength(1_632);
+    expect(footnotesById.size).toBe(manifest.footnotes.length);
+    expect(
+      footnoteRefs.every((targetId) => {
+        const target = footnotesById.get(targetId);
+        return (
+          target !== undefined &&
+          target.text.trim().length > 0 &&
+          target.sourceLocator.fragment === target.id
+        );
+      }),
+    ).toBe(true);
+    expect(
+      footnotesById.get("lf0206-01_footnote_nt554")?.text,
+    ).toContain("£1,514,962");
   });
 
   it("keeps legacy semantic IDs as aliases of canonical paragraph identities", async () => {
@@ -129,6 +176,31 @@ describe("full-book OLL ingest", () => {
       ok: false,
       error: { code: "quote_hash_drift" },
     });
+
+    const missingFootnote = structuredClone(manifest);
+    missingFootnote.footnotes = missingFootnote.footnotes.filter(
+      (footnote) => footnote.id !== "lf0206-01_footnote_nt114",
+    );
+    expect(validateBookManifestV2(missingFootnote)).toMatchObject({
+      ok: false,
+      error: { code: "source_unavailable" },
+    });
+
+    const duplicateFootnote = structuredClone(manifest);
+    duplicateFootnote.footnotes.push(
+      structuredClone(duplicateFootnote.footnotes[0]!),
+    );
+    expect(validateBookManifestV2(duplicateFootnote)).toMatchObject({
+      ok: false,
+      error: { code: "duplicate_locator" },
+    });
+
+    expect(
+      validateBookManifestV2({ ...manifest, footnotes: "not-an-array" }),
+    ).toMatchObject({
+      ok: false,
+      error: { code: "invalid_manifest" },
+    });
   });
 
   it("writes a validated manifest atomically and keeps clean reruns byte-identical", async () => {
@@ -147,6 +219,14 @@ describe("full-book OLL ingest", () => {
       await rm(outputDir, { recursive: true, force: true });
     }
   });
+  it("validates every checked-in translation against its canonical source block", async () => {
+    await expect(validateBookAssets()).resolves.toMatchObject({
+      chapterCount: 34,
+      sourceBlockCount: 2_063,
+      translatedBlockCount: 2_063,
+    });
+  });
+
 
   it("loads the manifest through the public book list/get interface", async () => {
     const rootDir = await mkdtemp(path.join(os.tmpdir(), "living-reader-books-"));

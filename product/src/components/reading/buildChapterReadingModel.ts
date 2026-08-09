@@ -1,12 +1,15 @@
 import type {
+  BodyNode,
   BookChapter,
   BookManifestV2,
   ChapterTranslation,
+  Footnote,
   ManifestSourceLocator,
 } from "@/modules/book";
 import type {
   ReadingChapter,
   ReadingChapterTranslation,
+  ReadingSourceBlock,
   ReadingToc,
 } from "./ChapterReadingShell";
 
@@ -49,6 +52,17 @@ export function buildChapterReadingModel(
     return null;
   }
 
+  const footnotesById = new Map<string, Footnote>();
+  for (const footnote of manifest.footnotes) {
+    if (footnotesById.has(footnote.id)) return null;
+    footnotesById.set(footnote.id, {
+      id: footnote.id,
+      marker: footnote.marker,
+      text: footnote.text,
+      ...(footnote.backRefId ? { backRefId: footnote.backRefId } : {}),
+    });
+  }
+
   const entries: Record<
     string,
     ReadingChapterTranslation["entries"][string]
@@ -69,6 +83,20 @@ export function buildChapterReadingModel(
     };
   }
 
+  const sourceBlocks: ReadingSourceBlock[] = [];
+  for (const block of chapter.sourceBlocks) {
+    const footnotes = resolveBlockFootnotes(block.body, footnotesById);
+    if (!footnotes) return null;
+    sourceBlocks.push({
+      sourceId: block.sourceId,
+      locator: `${block.sourceLocator.resource}#${block.sourceLocator.fragment}`,
+      contentHash: block.contentHash,
+      body: block.body,
+      footnotes,
+      evidenceLabel: manifest.edition.label,
+    });
+  }
+
   return {
     chapter: {
       bookId: manifest.bookId,
@@ -84,13 +112,7 @@ export function buildChapterReadingModel(
           ? "导言"
           : `第${chineseNumber(chapter.chapterNumber)}章`,
       chapterTitle: chapter.title,
-      sourceBlocks: chapter.sourceBlocks.map((block) => ({
-        sourceId: block.sourceId,
-        locator: `${block.sourceLocator.resource}#${block.sourceLocator.fragment}`,
-        contentHash: block.contentHash,
-        originalText: block.quote,
-        evidenceLabel: manifest.edition.label,
-      })),
+      sourceBlocks,
     },
     toc: {
       books: manifest.books.map((book) => ({
@@ -113,6 +135,22 @@ export function buildChapterReadingModel(
       entries,
     },
   };
+}
+
+function resolveBlockFootnotes(
+  body: BodyNode[],
+  footnotesById: Map<string, Footnote>,
+): Footnote[] | null {
+  const resolved: Footnote[] = [];
+  const seen = new Set<string>();
+  for (const node of body) {
+    if (node.type !== "footnote_ref" || seen.has(node.targetId)) continue;
+    const target = footnotesById.get(node.targetId);
+    if (!target) return null;
+    resolved.push(target);
+    seen.add(node.targetId);
+  }
+  return resolved;
 }
 
 function sameLocator(

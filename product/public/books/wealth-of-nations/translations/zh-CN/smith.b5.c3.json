@@ -1,0 +1,1544 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "locale": "zh-CN",
+  "chapterId": "smith.b5.c3",
+  "translations": [
+    {
+      "sourceId": "smith.b5.c3.p1",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_952"
+      },
+      "contentHash": "3281a02e253af6d8388be1fcdecb6d4a3daa45822099bd0635be94b5ca548f55",
+      "text": "在商业尚未扩展、制造业尚未改进的那种未开化社会状态下，只有商业和制造业才能带来的那些昂贵奢侈品还完全不为人知；我在本书第三篇中曾试图说明，拥有巨额收入的人，除了供养这笔收入所能供养的几乎全部人数之外，无法以任何其他方式花费或享用这笔收入。巨额收入在任何时候都可以说在于支配大量生活必需品。在那种未开化状态下，这种收入通常以大量这类必需品支付，即以普通食物和粗糙衣料的原料，以谷物和牲畜、羊毛和生皮支付。当商业和制造业都不提供任何东西，让所有者能用超过自己消费所需的那大部分原料去交换时，他除了用剩余物资供养并给它所能供养和提供衣服的几乎全部人数提供衣服之外，别无他法。在这种情形下，富人和权贵的主要开支，是不含奢侈的殷勤款待和不事炫耀的慷慨施予。但我在同一篇中也曾试图说明，这些开支并不很容易使人破产。也许没有哪一种自私的享乐会琐屑到追求它从未使明智之人破产。对斗鸡的狂热曾使许多人破产。但我相信，因这种殷勤款待或慷慨施予而破产的事例并不很多，尽管奢侈的款待和炫耀的施予曾使许多人破产。在我们的封建祖先中，地产往往长期留在同一家族，足以表明人们一般都有量入为出的倾向。大土地所有者经常践行的乡野式殷勤款待，在今天的我们看来，或许不符合我们往往视为与良好理财不可分离的那种秩序；但我们无疑必须承认，他们至少节俭到通常不会花掉自己的全部收入。他们一般有机会把一部分羊毛和生皮卖钱。他们也许把这笔钱的一部分用于购买当时条件所能提供的少数虚荣品和奢侈品，但其中一部分似乎通常被他们储藏起来。事实上，他们对省下的钱除了储藏之外，也很难作其他处置。经商有失绅士身份，而放债取息在当时被视为高利贷并为法律所禁止，就更加有失身份。此外，在那种暴乱无序的时代，手边储藏一笔钱也很方便，以便一旦被逐出家园，他们可以带着某种具有公认价值的东西逃往安全之地。使储藏金钱成为便利之举的同一种暴力，也使隐藏所藏金钱同样成为便利之举。无主埋藏物，即发现而不知其所有者的财宝，屡见不鲜，足以表明当时储藏财宝和隐藏所藏财宝都十分常见。无主埋藏物当时被视为君主收入的一个重要来源。如今，王国境内的全部无主埋藏物，恐怕也很难成为一位拥有优良地产的私人绅士的一项重要收入来源。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p2",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_953"
+      },
+      "contentHash": "2793e1899f21a20b47f25f9e8b37641cc540a07b190f65c600f061c05fe626d6",
+      "text": "这种储蓄和储藏的倾向，不仅盛行于臣民之中，也盛行于君主身上。正如第四篇已经指出的，在商业和制造业鲜为人知的民族中，君主所处的境况，自然使他倾向于实行积累所必需的节俭。在那种境况下，就连君主的开支也不可能受那种以宫廷华丽服饰为乐的虚荣心支配。时代的蒙昧只能提供很少几件构成这种华丽服饰的小饰物。当时不需要常备军，所以，即使君主的开支，也像其他任何大领主的开支一样，几乎只能用于向佃户施惠和款待侍从。但施惠和款待极少导致挥霍，虚荣却几乎总会如此。因此，正如已经指出的，欧洲所有古代君主都有自己的宝藏。据说，当今每一位鞑靼酋长也都有一份宝藏。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p3",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_954"
+      },
+      "contentHash": "636faa63ffc281293334b46bef3022aa801f0d684819b3b55cb0b1c3d4e25378",
+      "text": "在一个各种昂贵奢侈品充裕的商业国家里，君主也像其领土内几乎所有大地产所有者一样，自然会把收入的很大一部分花在购买这些奢侈品上。他自己的国家和邻国，为他大量供应构成宫廷那种辉煌却无关紧要的排场的一切昂贵饰物。为了追求同类但较低一级的排场，他的贵族遣散侍从，使佃户获得独立，并逐渐使自己变得像其领土内大多数富裕市民一样无足轻重。影响贵族行为的同一种轻浮欲望，也影响着君主的行为。怎么能设想，他会是其领土内唯一一个对这类享乐无动于衷的富人呢？即使他没有做很可能做的事情，即把收入中如此大的一部分花在这些享乐上，以致大大削弱国家的防御力量，也很难期望他不会把收入中超过维持这种防御力量所必需的全部部分都花在这些享乐上。他的日常开支变得与日常收入相等，若不经常超过日常收入，就算很好了。不能再指望他积聚财宝；当非常急需要求非常开支时，他必然要向臣民求取非常援助。自1610年法国亨利四世去世以来，欧洲大国君主中，据认为只有现任及上一任普鲁士国王积聚过数额可观的财宝。导致积累的节俭，在共和政府中几乎已和在君主政府中一样罕见。意大利各共和国和尼德兰联省全都负债。伯尔尼州是欧洲唯一积聚了数额可观财宝的共和国。其他瑞士共和国则没有。对某种排场，至少是对宏伟建筑和其他公共装饰的爱好，在小共和国貌似庄重的议事厅里，往往和在最强大国王骄奢放纵的宫廷里同样盛行。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p4",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_955"
+      },
+      "contentHash": "0abe77773b9f023abac31e1fe0a3908b19ded1feae2364777edd1bc3e8569557",
+      "text": "和平时期缺乏节俭，就造成战时不得不举债。战争来临时，国库中除了维持和平编制日常开支所必需的款项外，再无余款。战时，为保卫国家，需要建立一套开支为其三倍或四倍的编制，因而需要一笔比和平时期收入大三倍或四倍的收入。即便假定君主拥有按开支增长比例立即增加收入的手段——而他几乎从来没有这种手段——但这项增加的收入必须取自的那些税收，其所得也许仍要到征税后十个月或十二个月才会开始流入国库。然而，战争一开始，或者更确切地说，战争一显得可能开始，陆军就必须扩充，舰队就必须装备，设防城市就必须进入防御状态；这支陆军、这支舰队和这些设防城市，都必须获得武器、弹药和给养。在这个危机迫在眉睫的时刻，必须立即支出巨额款项，而迫近的危险不会等待新税逐渐而缓慢地回收。在这种急需之下，政府除了借款，别无其他办法。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p5",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_956"
+      },
+      "contentHash": "3fc3d86a4bacd4e334c1bfb19b037ed3c5043d2886f2980365c594778462826e",
+      "text": "正是这种商业社会状态，通过道德原因的作用，以这种方式迫使政府不得不借款，同时也使臣民既有能力又有意愿放款。如果它通常带来借款的必要，也同样带来借款的便利。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p6",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_957"
+      },
+      "contentHash": "987f88ac107ea95aa78457cf8e14ead513f05aa94fbf13a525afcc9f491bb7a0",
+      "text": "一个商人和制造业者众多的国家，必然有这样一群人：不仅他们自己的资本，而且所有借钱给他们或赊货给他们之人的资本，经由他们手中周转的频繁程度，不亚于甚至超过一个不从事贸易或营业、靠收入生活的私人收入经由其手中的频繁程度。这种人的收入通常每年只能经由他手中一次。但是，从事资金回流很快的贸易的商人，其资本和信用的总额有时一年可以经由他手中两次、三次或四次。因此，一个商人和制造业者众多的国家，必然有这样一群人：只要他们愿意，随时都有能力向政府垫付一笔巨款。商业国家的臣民之所以有放款能力，原因就在这里。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p7",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_958"
+      },
+      "contentHash": "980ee4925f4a0f583d994f9655741e7bd2d1694f5e4b7bffd610bda407f5b1f6",
+      "text": "在任何司法管理不正规、人民觉得自己的财产占有得不到保障、契约信用不受法律支持、国家权力不被认为经常用来强制所有有偿付能力的人清偿债务的国家里，商业和制造业都很难长期繁荣。简言之，在对政府的公正不具备一定程度信任的任何国家里，商业和制造业都很难繁荣。正是那种在平常场合促使大商人和大制造业者把财产托付给某一政府保护的信任，在非常场合也促使他们把财产的使用权托付给该政府。他们借钱给政府，甚至一刻也不会削弱自己经营贸易和制造业的能力。相反，他们通常还会增强这种能力。国家的需要使政府在大多数场合愿意以对放款人极为有利的条件借款。政府给予原债权人的债权凭证可以转让给任何其他债权人；由于人们普遍信任国家的公正，这种凭证在市场上的售价通常高于最初为它支付的金额。商人或有钱人借钱给政府可以赚钱，而且不仅不会减少，反而会增加他的营业资本。因此，当行政当局准许他参与一笔新借款的首次认购时，他通常认为这是一种恩惠。商业国家的臣民之所以有放款的意向或意愿，原因就在这里。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p8",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_959"
+      },
+      "contentHash": "8a52616a247e6a098a48f3ff5cf6a5608fe7107206c0f7e9088c35f6f8500755",
+      "text": "这种国家的政府很容易依赖臣民在非常场合把钱借给政府的这种能力和意愿。它预见到借款很方便，因而免除了自己储蓄的责任。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p9",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_960"
+      },
+      "contentHash": "feaeb0c8a1f051695e1c203debd15aeda895fb5e660aa7015ea78c5bc75060c9",
+      "text": "在未开化的社会状态下，不存在巨额商业资本或制造业资本。个人把自己所能省下的钱全部储藏起来，并把储藏的钱隐藏起来，是因为他们不信任政府的公正，担心如果别人知道他们藏有钱财以及钱财藏在哪里，他们很快就会遭到劫掠。在这种情形下，很少有人有能力，也没有人愿意在非常急需时把钱借给政府。君主意识到，他必须以储蓄为这种急需作准备，因为他预见到借款绝无可能。这种预见进一步加强了他节俭的自然倾向。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p10",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_961"
+      },
+      "contentHash": "e3594cb0ca9cbeb3e248dd8261fd79c1f5893150203f8a2c86f7584f8e244357",
+      "text": "目前压迫着欧洲所有大国、长远看来很可能使它们破产的巨额债务，其发展过程相当一致。国家像私人一样，通常一开始凭借可称为个人信用的东西借款，并不指定或抵押任何特定款项来偿债；等到这种办法失效，便转而以特定款项的指定或抵押为担保继续借款。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p11",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_962"
+      },
+      "contentHash": "309bed8e2044c1afb80d75aa1862d2ce37e9191cd4af97b293803405db2fe70e",
+      "text": "所谓大不列颠无基金担保债务，就是以前述两种方式中的第一种借入的。它一部分是不付利息或被认为不付利息的债务，类似于私人以赊账方式欠下的债务；另一部分是付息债务，类似于私人凭汇票或本票欠下的债务。应为非常服务支付的款项，或应为未作经费安排或在提供时未获付款的服务支付的款项；陆军、海军和军械部门的部分非常开支，拖欠外国君主的补助金，拖欠的海员工资等，通常构成第一种债务。海军券和财政署券有时为偿付一部分这类债务、有时为其他目的而发行，构成第二种债务；财政署券自发行之日起计息，海军券则在发行六个月后计息。英格兰银行或者自愿按这些票券的现行价值贴现，或者为取得某些报酬而与政府约定使财政署券流通，也就是按票面价值接受财政署券并支付其到期利息，从而维持其价值并便利其流通，并由此经常使政府能够借入数额很大的这类债务。在没有银行的法国，国家票券（billets d’état）有时曾以六成或七成的贴水出售，即仅按票面价值的四成或三成成交。在威廉国王时期大规模重新铸币期间，英格兰银行认为适宜暂停其日常业务，据说财政署券和税收木筹曾以二成五至六成的贴水出售，即按票面价值的七成五至四成成交；毫无疑问，这部分是因为人们认为由革命建立的新政府不稳定，但也有一部分是因为缺少英格兰银行的支持。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p12",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_963"
+      },
+      "contentHash": "93e9c99780c8b261134913e44bf38a9a7c58be0b5ce8130a63dfed1e20b56c3c",
+      "text": "当这种办法用尽，而为了筹款必须指定或抵押某一特定公共收入来源来偿付债务时，政府在不同场合曾用两种不同的方式这样做。有时，它只在很短的一段时间内，例如一年或几年，作这种指定或抵押；有时则永久指定或抵押。在第一种情况下，人们认为这项款项足以在限定期限内偿付借款的本金和利息。在第二种情况下，人们认为它只够支付利息，或支付与利息等额的永久年金，而政府有权随时偿还所借本金以赎回这项年金。以前一种方式筹款，称为预支筹款；以后一种方式筹款，称为设立永久基金筹款，或简称设立基金筹款。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p13",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_964"
+      },
+      "contentHash": "b7ae2b8d412bbabba796e98c3d13189abe174f00b4e8dc4024878cb263152b16",
+      "text": "在大不列颠，依据征收年度土地税和麦芽税的法案中经常列入的借款条款，这两项税收每年照例被预支。英格兰银行通常垫付核准以这些税收筹集的款项，并在税收所得逐渐入库时收回垫款；自革命以来，其利率在百分之八至百分之三之间变动。如有亏空——而且总会有亏空——便由下一年度的拨款弥补。这样，公共收入中尚未抵押的唯一重要来源，照例在收入尚未入库之前就已花掉。国家就像一个不顾将来的挥霍者，迫切需要使他无法等待收入按期支付；它经常向自己的代办人和代理人借款，并为使用自己的钱支付利息。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p14",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_965"
+      },
+      "contentHash": "b32fe7b757f2be49043075dae78e8af90552613f5b7b754004e822c1589471e0",
+      "text": "在威廉国王统治时期和安妮女王统治的大部分时期，我们对于设立永久基金筹款的做法还不像现在这样熟悉；那时，大部分新税只征收很短的一段时间（仅四年、五年、六年或七年），每年拨款中很大一部分是以这些税收的预期所得为担保的借款。由于税收所得经常不足以在限定期限内偿付借款的本金和利息，因而出现亏空；为弥补亏空，就有必要延长期限。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p15",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_966"
+      },
+      "contentHash": "a61542d8e3e98645762a309cfb30379c30b936837febf17f5b0a7ef9f24d42ff",
+      "text": "1697年，根据威廉三世八年第二十章，数项税收的亏空由当时所谓的第一总抵押或基金承担；该基金由数种本会在更短期限内期满的不同税收延长至1706年8月1日而构成，其所得汇集为一项总基金。由这段延长期限承担的亏空，共计5,160,459镑14先令9¼便士。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p16",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_967"
+      },
+      "contentHash": "69df71aa87e5a31a1b05d8ec22ceddb1c0397316fa1397d91fdc9a6319acd1ec",
+      "text": "1701年，为同样目的，这些税连同其他一些税进一步延长至1710年8月1日，称为第二总抵押或基金。由它承担的亏空，共计2,055,999镑7先令11½便士。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p17",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_968"
+      },
+      "contentHash": "3daa494171f0235697c404b01b759a458042e7818d8676bd082345179789d8e7",
+      "text": "1707年，这些税进一步延长至1712年8月1日，作为新借款的基金，称为第三总抵押或基金。以它为担保借入的金额为983,254镑11先令9¼便士。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p18",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_969"
+      },
+      "contentHash": "fde072346673e34280f31fc8309c14e0a42b76f7dcab72bf1f6d668835550856",
+      "text": "1708年，这些税全部进一步延长至1714年8月1日，作为新借款的基金，称为第四总抵押或基金；但旧有的吨税和磅税补助金除外，其中只有一半被列为这项基金的一部分；苏格兰亚麻布进口税也除外，该税已由合并条款取消。以它为担保借入的金额为925,176镑9先令2¼便士。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p19",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_970"
+      },
+      "contentHash": "4b99d3ab4e985f876db28549b59a51c42c26172c5000aa25030526845cb56f9b",
+      "text": "1709年，为同一目的，这些税全部进一步延长至1716年8月1日，称为第五总抵押或基金；但旧有的吨税和磅税补助金除外，这时它已完全不再列入这项基金。以它为担保借入的金额为922,029镑6先令0便士。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p20",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_971"
+      },
+      "contentHash": "a8a741c355aba4b9c5ae7376ad75cb3a7ab855936917ade9ddc26847d11897a5",
+      "text": "1710年，这些税再次延长至1720年8月1日，称为第六总抵押或基金。以它为担保借入的金额为1,296,552镑9先令11¾便士。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p21",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_972"
+      },
+      "contentHash": "7dd7a2828f30d12a6c34bf3feaa4c411a40586a205c1f9a77f4003c2652a940c",
+      "text": "1711年，同一些税（此时它们已由此承受四项不同的预支），连同其他数项税，被规定永久征收，并作为支付南海公司资本利息的基金；该公司当年为偿还债务和弥补亏空，向政府垫付了9,177,967镑15先令4便士，这是当时有史以来最大的一笔借款。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p22",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_973"
+      },
+      "contentHash": "26a4f2bd3d9d716f3c95c5dd1f71932b30c04f2a4659c4aedd1397c68dc26e7f",
+      "text": "据我所能考察，在此以前，为支付债务利息而永久征收的主要税收，甚至可以说唯一税收，是为了支付英格兰银行和东印度公司垫付给政府的款项的利息，以及一家拟议中的土地银行原来预计会垫付、但从未实际垫付的款项的利息而征收的那些税。当时，银行基金总额为3,375,027镑17先令10½便士，为此支付年金或利息206,501镑13先令5便士。东印度基金总额为3,200,000镑，为此支付年金或利息160,000镑；银行基金按百分之六计息，东印度基金按百分之五计息。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p23",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_974"
+      },
+      "contentHash": "14ac068b73c690dbad347cdbf0003956496671dae58ae3406f4ddffaa179334e",
+      "text": "1715年，根据乔治一世元年法令第12章，原已抵押用以支付英格兰银行年金的各项税收，连同由该法令同样规定为永久征收的其他若干税收，被汇集为一个称作“总合基金”的共同基金；该基金不仅负担英格兰银行年金的支付，还负担其他若干种类不同的年金和债务。此后，乔治一世三年法令第8章和乔治一世五年法令第3章又扩大了这一基金，当时增入其中的各项税收也同样被规定为永久征收。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p24",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_975"
+      },
+      "contentHash": "24034174d2b3c0ba34bb77e4b662343811676cb6a4614fa2f526ac257d883f80",
+      "text": "1717年，根据乔治一世三年法令第7章，另外若干税收被规定为永久征收，并汇集为另一个称作“普通基金”的共同基金，用以支付若干年金，总额为724,849镑6先令10½便士。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p25",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_976"
+      },
+      "contentHash": "6c28ce888ea8aed9841a4e64a7839476eabaa3800c4a5474c59b48f538869a4c",
+      "text": "由于这些不同法令，以前仅在短短若干年内预先支用的大部分税收，被规定为永久征收，作为一项基金，用以支付通过连续多次预先支用而以这些税收为担保借入款项的利息，而不是本金。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p26",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_977"
+      },
+      "contentHash": "958f57d67278cf0f0cd69c21f7065152c161dc2be45b27df649fb0a0db6cb5e8",
+      "text": "假如筹款从来只采用预先支用的方法，那么经过若干年，公共收入就会获得解脱，政府无须操心其他事情，只须注意不要让基金负担超过其在限定期限内所能偿还的债务，并且在第一次预先支用期满以前不要再次预先支用。但欧洲大多数政府都不能做到这些。它们常常在第一次预先支用时就使基金负担过重；即使第一次没有发生这种情形，它们通常也必定会在第一次预先支用期满以前进行第二次、第三次预先支用，从而使基金负担过重。基金以这种方式变得完全不足以支付以其为担保所借款项的本金和利息，于是就有必要只让它负担利息，或负担一笔与利息相等的永久年金；这种缺乏远见的预先支用，必然产生危害更大的永久设立基金的做法。不过，尽管这种做法必然把公共收入获得解脱的时间，从一个确定的期限推迟到一个如此不确定、以致很可能永远不会到来的期限，但由于这种新做法在任何情况下所能筹集的金额都比旧的预先支用办法更多，所以人们一旦熟悉了前一种做法，在国家发生重大紧急需要时，便普遍宁取前者而舍后者。解除当前的紧急需要，始终是那些直接参与公共事务管理的人主要关心的目标。至于公共收入将来获得解脱，他们则留给后世去操心。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p27",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_978"
+      },
+      "contentHash": "b635b1893fcfb790dbe8fe727d63de0402f768d9c1879797e168ca7cc8260041",
+      "text": "安妮女王在位期间，市场利率已从百分之六降至百分之五；在她在位第十二年，法律宣布，以私人担保借款时可合法收取的最高利率为百分之五。在大不列颠大部分临时税收被规定为永久征收，并分别归入总合基金、南海基金和普通基金后不久，公共债权人也像私人债权人一样，被劝说接受百分之五作为其款项的利息。这使按这种方式永久设立基金的大部分债务的本金节省了百分之一，亦即从上述三大基金支付的大部分年金节省了六分之一。归入这些基金的各项税收所得，在支付目前由这些基金负担的年金所需数额之外，因这项节省而留下了相当大的余额，并为后来所谓的偿债基金奠定了基础。1717年，这笔余额为323,434镑7先令7½便士。1727年，大部分国债的利息进一步降至百分之四；1753年和1757年，又分别降至百分之三点五和百分之三；这些降息进一步扩大了偿债基金。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p28",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_979"
+      },
+      "contentHash": "592b61ab469fb40d869ee7a55b2f9ad5fb801d539ac25a1b5c7dcc3ccf29024d",
+      "text": "偿债基金虽然是为偿还旧债而设立的，却极大地方便了新债的举借。它是一项随时可供抵押的辅助基金，可以补助任何其他可靠性可疑、而国家在紧急情况下拟以其为担保筹款的基金。大不列颠的偿债基金究竟更常用于这两个目的中的哪一个，下文很快就会充分说明。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p29",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_980"
+      },
+      "contentHash": "1f0683d14f1974a988ae4fd000270a0791fbcb3f8feded7f6f60cf210314b227",
+      "text": "除了预先支用和永久设立基金这两种借款方法外，还有另外两种方法，多少居于二者之间。这就是以定期年金为担保借款，以及以终身年金为担保借款。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p30",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_981"
+      },
+      "contentHash": "fc7991ca76516d4c89fb068f000fcaf25dc0e6477f7fee6f8775262409085aa3",
+      "text": "在威廉国王和安妮女王统治期间，常常以定期年金为担保借入巨款，期限有时较长，有时较短。1693年，通过了一项法令，以一笔百分之十四的年金，即每年140,000镑的年金为担保，借款一百万镑，为期十六年。1691年，通过了一项法令，以终身年金为担保借款一百万镑，其条件按今天的标准看来会非常优厚。但认购并未足额。第二年，缺额通过按百分之十四、即按略高于七年年金买价的条件发行终身年金借款而补足。1695年，购买这些年金的人获准把它们换成九十六年期年金，条件是按每一百镑向财政部缴纳六十三镑；也就是说，终身百分之十四年金与九十六年期百分之十四年金之间的差额，以六十三镑，即相当于四年半年金的买价出售。当时人们认为政府如此不稳定，以致即使这样的条件也很少能吸引购买者。安妮女王在位期间，政府在不同场合既以终身年金为担保借款，也以三十二年期、八十九年期、九十八年期和九十九年期年金为担保借款。1719年，三十二年期年金的所有者被劝说接受相当于这些年金十一年半买价的南海公司资本，以取代这些年金，此外还得到一笔与当时所欠年金相等的追加资本。1720年，其他长期和短期的定期年金大部分都认购转入了同一基金。当时，长期年金每年总额为666,821镑8先令3½便士。到1775年1月5日，其中剩余部分，即当时未认购转入的部分，仅为136,453镑12先令8便士。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p31",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_982"
+      },
+      "contentHash": "abfda2b8cacda6939ee23711220d06f9969a9d578c2dcec7833e2724a975b28f",
+      "text": "在始于1739年和1755年的两场战争期间，无论以定期年金还是以终身年金为担保借入的款项都很少。不过，九十八年期或九十九年期年金的价值几乎与永久年金相等，因此，人们也许会认为，以它为基金所能借到的款项也应当几乎同样多。但是，那些为了安排家产并为遥远的将来作准备而购买公债的人，不愿购买价值不断减少的公债；而这种人在公债所有者和购买者中都占相当大的比例。因此，长期年金尽管其内在价值可能与永久年金几乎相同，却不能吸引近乎同样多的购买者。新贷款的认购者通常打算尽快出售自己的认购份额；与金额仅仅相等、不可赎回的长期年金相比，他们极为偏好可由议会赎回的永久年金。前者的价值可以认为始终相同，或几乎相同；因此，与后者相比，它是一种更便于转让的资本。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p32",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_983"
+      },
+      "contentHash": "46a8ccf32fcffa383e768e474e49fd9680d0a3da665b902ee3d906985944ec78",
+      "text": "在上述两场战争期间，无论定期年金还是终身年金，除作为给予新贷款认购者的额外报酬之外，很少发放；这种额外报酬是在可赎回年金或利息之外给予的，而该贷款被认为正是凭借后者的信用筹集的。发放这些年金，并不是把它们作为借款所凭借的正式基金，而是作为对贷款人的额外鼓励。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p33",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_984"
+      },
+      "contentHash": "2e94fc0c12aaecc4f8de7bdc4c7bf0416b0be890891455d6d3e828d86972b609",
+      "text": "终身年金有时以两种不同方式发放：或以各个单独的生命为依据，或以若干生命组成的组为依据；后一种方式在法语中依其发明者之名，称为“Tontines”（汤廷年金）。按单独生命发放年金时，每一名年金领取者的死亡，都使公共收入在其年金所涉及的范围内解除负担。按汤廷年金发放时，在一组所包括的全部年金领取者死亡以前，公共收入不会开始解除负担；这样一组有时可由二十人或三十人组成，其中生存者继承所有先于自己死亡者的年金，最后一名生存者则继承全组的年金。以同一笔收入为担保，通过汤廷年金所能筹集的款项总是多于按单独生命发放的年金。附有生存者继承权的年金，实际价值高于数额相等、按单独生命发放的年金；而且，由于每个人天生都相信自己会有好运——一切彩票的成功正是建立在这个原则上——这种年金的售价通常比其实际价值还高一些。在政府惯于通过发放年金筹款的国家，正因如此，汤廷年金通常比按单独生命发放的年金更受青睐。能够筹集最多款项的办法，几乎总是优先于可能最快使公共收入获得解脱的办法。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p34",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_985"
+      },
+      "contentHash": "8f72d41aa95e6c5aa452ff5d3cd06edcb5ed40f95e06e11f14310914a9882998",
+      "text": "法国国债中终身年金所占的比例远大于英国。根据波尔多高等法院于1764年呈交国王的一份备忘录，法国全部国债估计为二十四亿里弗尔；其中，作为发放终身年金代价的本金，据估计为三亿里弗尔，即全部国债的八分之一。这些年金本身据计算每年为三千万里弗尔，相当于一亿二千万里弗尔的四分之一，而后者是对全部国债利息的估计数。我很清楚，这些估计并不精确；但既然它们是由一个如此值得尊敬的机构作为接近实情的数字提出的，我想也可以把它们视为这样的数字。法国和英国政府对于使公共收入获得解脱的关切程度不同，并不是两国各自借款方式存在这种差异的原因。这种差异完全源于贷款人不同的看法和利益。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p35",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_986"
+      },
+      "contentHash": "e145c13a3fc625cee33fec07d3579c3f8f6964feff507b5b5b4d4e74c081a17c",
+      "text": "在英国，由于政府所在地设在世界上最大的商业城市，向政府垫款的人通常是商人。他们垫款的目的不是减少、反而是增加自己的商业资本；除非他们预期能把自己在新贷款中的认购份额出售并获得一定利润，否则绝不会认购。但如果他们垫出款项所购买的不是永久年金，而只是以自己或他人生命为依据的终身年金，他们就未必总能如此有利可图地将其出售。以自己生命为依据的年金，他们出售时总会蒙受损失；因为对于一笔以年龄和健康状况与自己大致相同的他人生命为依据的年金，没有人愿意支付同他为以自己生命为依据的年金所愿支付的同样价格。诚然，以第三者生命为依据的年金，对买方和卖方无疑具有相等的价值；但从发放之时起，它的实际价值便开始减少，而且只要继续存在，就会越来越少。因此，它绝不可能像永久年金那样成为便于转让的资本；永久年金的实际价值可以认为始终相同，或几乎相同。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p36",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_987"
+      },
+      "contentHash": "61e887e1325424a3c04ac41c7d90454bae3588d0c918ed0d7bc109165bfc7c70",
+      "text": "在法国，由于政府所在地并不设在一个大商业城市，商人在向政府垫款者中所占的比例没有那么大。财政界人士、包税总承包人、未实行包税的各项税收的征收官、宫廷银行家等，构成了国家每逢紧急需要时垫款者的大部分。这种人通常出身卑微，却非常富有，而且往往极为傲慢。他们不屑与身份相当的人结婚，而有身份的女子又鄙视与他们结婚。因此，他们常常决定终身不娶；他们既没有自己的家庭，也不大关心亲属的家庭，而这些亲属还是他们未必很愿意承认的；所以，他们只求有生之年生活奢华，并不介意自己的财产随自己一同终结。此外，法国富人中厌恶结婚，或因其生活状况而不宜或不便结婚的人数，比英国多得多。对于这些很少或完全不关心后世的人来说，没有什么比用自己的资本换取一笔收入更方便；这笔收入恰好持续到他们希望它结束之时，既不更短，也不更长。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p37",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_988"
+      },
+      "contentHash": "fb3d88b692e135052caebdd5a97569aa64450cfa3474cb7f58fdcf3f118040cc",
+      "text": "现代大多数政府在和平时期的日常支出等于或几乎等于其日常收入，所以战争来临时，它们既不愿意也没有能力使收入随着支出的增加而相应增加。它们不愿意，是因为害怕得罪人民；税收如此大幅而突然地增加，很快就会使人民对战争产生厌恶。它们没有能力，是因为并不十分清楚哪些税收足以产生所需的收入。借款的便利，使它们摆脱了这种恐惧和无能原本会造成的困境。借助借款，它们只需很有限地增加税收，就能年复一年筹集足以进行战争的款项；借助永久设立基金的做法，它们只需把税收增加到尽可能小的程度，就能每年筹集尽可能大的一笔款项。在大帝国中，住在首都以及远离战场的各省的人，有许多几乎感觉不到战争造成的任何不便，反而安逸地享受从报纸上阅读本国舰队和军队战功的乐趣。对他们来说，这种乐趣补偿了他们因战争而缴纳的税款与和平时期惯常缴纳的税款之间的小额差别。他们通常对和平恢复感到不满，因为和平终止了他们的这种乐趣，也终止了他们因战争持续更久而对征服和国家荣耀抱有的无数幻想。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p38",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_989"
+      },
+      "contentHash": "e1b9011179c1d0aec2f6b56fe2e20eedacdb4a5740a3d3843410516512de6c17",
+      "text": "诚然，和平恢复很少能使他们摆脱战争期间所征收的大部分税收。这些税收已经抵押，用来支付为进行战争而欠下债务的利息。如果旧有收入连同新税，在支付这笔债务的利息和政府日常支出之外还能产生一些收入余额，这笔余额也许可以转为偿债基金，用以偿还债务。但是，第一，即使假定这项偿债基金不作任何其他用途，它通常也完全不足以在任何可以合理预期和平会持续的时期内，偿清战争期间所欠的全部债务；第二，这项基金几乎总是被用于其他目的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p39",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_990"
+      },
+      "contentHash": "7f130c59aa7840a91064d05c28ff7dc9cc1b9248dd1f3d6c5232b7c071a6baf7",
+      "text": "征收新税的唯一目的，是支付以这些税收为担保所借款项的利息。如果它们产生了更多收入，那通常既非原先所打算，也非原先所预期，因而很少会十分可观。偿债基金的产生，通常与其说来自税收超过支付原来由其负担的利息或年金所需数额的余额，不如说来自后来对这种利息的削减。荷兰1655年的偿债基金和教皇国1685年的偿债基金，都是以这种方式形成的。这就是此类基金通常不足的原因。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p40",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_991"
+      },
+      "contentHash": "236590fd6335cd4d23e43e3f15d5ae713e059fe86f41ed32e1fa7312985f224a",
+      "text": "即使在最安定的和平时期，也会发生需要额外支出的各种事件；政府总会觉得，挪用偿债基金来支付这种支出，比征收新税更为方便。每一种新税，人民都会立即或多或少地感受到。它总会引起一些怨言，并遭到一些反对。税种增加得越多，对每一种不同征税对象所征的税越高，人民对每一种新税的抱怨就越强烈，要找到新的征税对象，或把已向原有征税对象征收的税再大幅提高，也就变得越困难。暂时停止偿债，人民不会立即感受到，既不会引起怨言，也不会招致抱怨。向偿债基金借款，总是摆脱当前困难的一种显而易见而又容易实行的办法。国债积累得越多，设法削减国债可能变得越有必要，挪用偿债基金的任何部分可能越危险、危害越大；国债就越不可能得到任何显著削减，而偿债基金则越有可能、也越肯定会被挪用于支付和平时期发生的一切额外支出。当一个国家的税收负担已经过重时，除了新战争的需要，除了民族复仇的敌忾或对国家安全的忧虑，没有什么能使人民以尚可容忍的耐心接受一种新税。这就是偿债基金通常遭到挪用的原因。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p41",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_992"
+      },
+      "contentHash": "a845ea284f3ecbe7fd91f313e1e8338829845cc55a77686f6d61c36af242b83a",
+      "text": "在大不列颠，自从我们最初采用永久设立基金这种危害极大的办法以来，和平时期国债的削减，从来都与战争时期国债的积累不成比例。大不列颠目前这笔庞大债务的基础，最初奠定于1688年开始、1697年以《里斯维克和约》结束的那场战争。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p42",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_993"
+      },
+      "contentHash": "0ef3ba9a1ca66f55855d98a01371b20642428b98d450f83de1d187cf24ddd1f7",
+      "text": "1697年12月31日，大不列颠已设立基金和未设立基金的国债共计21,515,742镑13先令8½便士。这些债务中很大一部分是以短期预先支用方式举借的，另有一部分是以终身年金为担保举借的；所以，到1701年12月31日以前，在不到四年的时间内，已有5,121,041镑12先令0¾便士一部分被偿清，一部分归还给国家；此后再也没有在如此短的时期内实现过幅度这样大的国债削减。因此，剩余债务仅为16,394,701镑1先令7¼便士。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p43",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_994"
+      },
+      "contentHash": "06b3e4aab14f73339f3220b973d62d27ab8ffce49e0d2c6a7f1d75032f1ddd88",
+      "text": "在1702年开始、以《乌得勒支和约》结束的战争中，国债进一步积累。到1714年12月31日，国债达到53,681,076镑5先令6又1/12便士。长短期年金认购转入南海基金，增加了国债本金，所以到1722年12月31日，国债本金达到55,282,978镑1先令3⅚便士。债务削减始于1723年，但进展如此缓慢，以致到1739年12月31日，在十七年最安定的和平期间，偿还总额不过8,328,354镑17先令11又3/12便士，而当时国债本金仍达46,954,623镑3先令4又7/12便士。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p44",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_995"
+      },
+      "contentHash": "892caff08ba4b3b39baa07d8af2040b772de9e3db3ce7c98abbd2da7ed3db1b0",
+      "text": "始于1739年的对西班牙战争，以及不久后接踵而来的对法国战争，使债务进一步增加；到1748年12月31日，即战争经《亚琛和约》结束之后，债务已达78,293,313英镑1先令10¾便士。持续十七年的最彻底和平，只使其减少了8,328,354英镑17先令11又3/12便士。一场持续不到九年的战争，却使其增加了31,338,689英镑18先令6⅙便士。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p45",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_996"
+      },
+      "contentHash": "5fa549624fd80d5f3c7a56fb85810f2b17b94d927cbfa691e123b2e0ec657859",
+      "text": "在佩勒姆先生执政期间，公债利率从百分之四降至百分之三，或者至少采取了降低利率的措施；偿债基金有所增加，一部分公债也得到了清偿。1755年，在最近一次战争爆发之前，大不列颠的有基金公债为72,289,673英镑。1763年1月5日，和平缔结时，有基金公债为122,603,336英镑8先令2¼便士。无基金债务据称为13,927,589英镑2先令2便士。但战争造成的开支并未随和平的缔结而终止；因此，尽管到1764年1月5日，有基金公债已增加到129,586,789英镑10先令1¾便士，其中一部分是通过新借款增加的，另一部分是通过把一部分无基金债务转为有基金公债增加的，但仍有9,975,017英镑12先令2又15/44便士的无基金债务，在该年和次年入账（据《大不列颠贸易和财政论》的那位消息极为灵通的作者所说）。所以，依照这位作者的说法，1764年大不列颠的公债，连同有基金和无基金的债务在内，共达139,561,807英镑2先令4便士。此外，1757年作为酬金授予新借款认购者的终身年金，按十四年购价估算，价值472,500英镑；1761年和1762年同样作为酬金授予的长期年金，按二十七年半购价估算，价值6,826,875英镑。在持续约七年的和平时期，佩勒姆先生审慎而真正爱国的政府未能清偿六百万英镑的旧债。在持续时间几乎相同的一场战争中，却新欠下了七千五百多万英镑的债务。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p46",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_997"
+      },
+      "contentHash": "936af1642ae2c7cfcba342c3ea26123f16b2662640e4e7905a8bfd07e8deb960",
+      "text": "1775年1月5日，大不列颠的有基金公债为124,996,086英镑1先令6¼便士。无基金债务，不包括一笔巨额王室经费债务，为4,150,236英镑3先令11⅞便士。两者合计129,146,322英镑5先令6便士。按照这一账目，在十一年最彻底的和平期间清偿的全部债务，仅为10,415,474英镑16先令9⅞便士。然而，就连这点小额的债务削减，也并非全都来自国家经常收入的节余。有几笔完全不依赖这种经常收入的额外款项，也促成了这项削减。其中可以列入：连续三年每一英镑土地税增征一先令；从东印度公司收取的二百万英镑，作为对其取得领土的补偿；以及从英格兰银行收取的十一万英镑，作为续展其特许状的代价。除此之外，还必须加上另外几笔款项；由于这些款项源自最近一次战争，或许应当视为对战争开支的扣减。主要有：",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p47",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_998"
+      },
+      "contentHash": "30e9070177692932338cd829dd9fec4881b8a11a7a9a5325c2593e1ec2bbb616",
+      "text": "如果我们在这笔款项上，加上查塔姆伯爵和卡尔克拉夫特先生账目的余额，以及其他同类的陆军节余，再加上从英格兰银行、东印度公司和每一英镑土地税增征一先令所得的款项，总额必定远远超过五百万英镑。因此，自和平以来用国家经常收入节余清偿的债务，逐年平均还不到每年五十万英镑。毫无疑问，自和平以来，由于债务得到清偿、可赎回的百分之四公债降为百分之三公债，以及一些终身年金因受领人去世而终止，偿债基金已大幅增加；如果和平得以持续，现在每年或许可以从中拿出一百万英镑用于清偿债务。因此，去年一年又清偿了一百万英镑；但与此同时，一笔巨额王室经费债务仍未偿付，而我们现在又卷入了一场新的战争，这场战争在进行过程中可能会变得与我们以往任何一场战争一样耗费巨大。到下一次战役结束前可能新欠下的债务，或许几乎等于用国家经常收入节余清偿的全部旧债。因此，若指望靠国家目前这种经常收入中可能产生的任何节余，最终将公债完全清偿，那纯属幻想。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p48",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_999"
+      },
+      "contentHash": "12f8e30c5454688d86e573223a8b9b41da9e170d8f4b243796dc2fdd2824a43d",
+      "text": "有一位作者把欧洲各负债国家的公债，尤其是英格兰的公债，说成是在该国其他资本之外追加的一大笔资本积累；借助这笔资本，该国的贸易得以扩展，制造业得以增多，土地得到的耕种和改良远远超过仅凭其他资本所能达到的程度。他没有考虑到，公债最初的债权人垫付给政府的资本，从他们垫付之时起，就已是从年度产物中抽离出来的一定部分，不再发挥资本的职能，而去发挥收入的职能；不再用于维持生产性劳动者，而去维持非生产性劳动者，并且通常在一年之内就被花费和耗尽，甚至没有任何将来再生产的希望。作为他们垫付资本的回报，他们确实取得了公债年金，而这种年金在大多数情况下具有高于所垫资本的价值。毫无疑问，这种年金为他们补回了资本，使他们能够把自己的贸易和业务维持在与从前相同、甚至可能更大的规模；也就是说，他们能够以这种年金为信用向别人借得一笔新资本，或者把它出售，从别人那里取得一笔属于自己的新资本，其数额等于或大于他们垫付给政府的资本。然而，他们以这种方式从别人那里买来或借来的新资本，必定原先已经存在于国内，并且必定像一切资本一样，用于维持生产性劳动。当它落入那些曾把自己的钱垫付给政府的人手中时，尽管在某些方面对他们而言是一笔新资本，对国家而言却不是；它只不过是从某些用途抽出、转用于另一些用途的一笔资本。尽管它为他们补回了垫付给政府的资本，却没有为国家补回这笔资本。如果他们不曾把这笔资本垫付给政府，国内原会有两笔资本，即年度产物的两个部分，而不是一个部分，用于维持生产性劳动。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p49",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1000"
+      },
+      "contentHash": "8a4fb3aac01f55838d6c37a3cf17518f497176eb823791e6610edfd0d8d2b905",
+      "text": "当政府开支由当年从未被抵押的税收所得中筹集的收入来支付时，只不过是把私人收入的一定部分从维持一种非生产性劳动转去维持另一种非生产性劳动。他们缴纳这些税款中的一部分，无疑原可积累为资本，因而用于维持生产性劳动；但其中较大部分很可能会被花掉，因而用于维持非生产性劳动。不过，政府开支以这种方式支付时，无疑会或多或少妨碍新资本的进一步积累，却不一定会造成任何实际既存资本的毁灭。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p50",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1001"
+      },
+      "contentHash": "598940159ce9853d3d30c00e376273491257f1f4bc193b059bb7e650cd7409ed",
+      "text": "当政府开支通过设立有基金公债来支付时，它是以每年毁灭一部分原先存在于国内的资本来支付的；也就是把年度产物中原先指定用于维持生产性劳动的一部分，改用于维持非生产性劳动。不过，在这种情况下，由于税收比在当年筹集足以支付同样开支的收入时更轻，个人的私人收入所承受的负担必然较小，因而他们把这种收入的一部分储蓄并积累为资本的能力，受损也小得多。如果说设立有基金公债的办法毁灭了更多旧资本，那么与通过当年筹集的收入支付政府开支的办法相比，它同时也较少妨碍新资本的积累或取得。在有基金公债制度下，私人的节俭和勤勉能够更容易地修补政府的浪费和奢侈偶尔在社会总资本中造成的缺口。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p51",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1002"
+      },
+      "contentHash": "4eaafbf3acb23ab4a81fea467c97052a8e834de3f7d6d6afd041c64f44e2a21d",
+      "text": "不过，只有在战争持续期间，有基金公债制度才具有胜过另一种制度的这一优点。如果战争开支总是由当年筹集的收入来支付，作为这项特别收入来源的税收就不会比战争持续得更久。私人积累资本的能力虽然在战争期间较弱，但在和平期间原会强于有基金公债制度下的情形。战争不一定会造成任何旧资本的毁灭，而和平则会促成多得多的新资本积累。战争一般会更快结束，也不会那么轻率地发动。人民在战争持续期间感受到它的全部负担，很快便会厌倦战争；而政府为了迁就他们，就不必在不再需要继续战争之后仍把它进行下去。预见到战争所带来的沉重而无法避免的负担，会阻止人民在没有任何真实或重大利益值得争夺时轻率地要求战争。私人积累资本的能力有所削弱的时期会更少出现，持续时间也会更短。相反，这种能力最为旺盛的时期，其持续时间会远远长于在有基金公债制度下所能达到的程度。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p52",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1003"
+      },
+      "contentHash": "dc0eae2d428258840d9f5478e49ae8fbb17408cbd588ebdf19562e319ab10f19",
+      "text": "此外，当有基金公债制度发展到一定程度时，随之而来的税收繁多，有时甚至会在和平时期像另一种制度在战争时期一样，严重削弱私人积累资本的能力。大不列颠目前和平时期的财政收入每年超过一千万英镑。如果这笔收入未被抵押，那么只要管理得当，无须新增一先令债务，或许就足以进行最为激烈的战争。大不列颠居民的私人收入目前在和平时期所受的拖累，以及他们积累资本的能力所受的损害，与从未采用这种有害的有基金公债制度时最耗费巨大的战争期间原会遭受的程度相同。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p53",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1004"
+      },
+      "contentHash": "58b810b2d1606772d45e8648e0c73c7679f1103f300df22fa0346bf45ab3499c",
+      "text": "有人说，在支付公债利息时，不过是右手付给左手。钱并未流出国外。只是把一部分居民的部分收入转移给另一部分居民；国家并未因此减少一个法辛的财富。这种辩解完全建立在重商主义体系的诡辩之上；在我已经对该体系作了长篇考察之后，或许没有必要再对此多说什么。此外，这种辩解还假定全部公债都是欠本国居民的，而事实并非如此；荷兰人以及其他几个外国国家的人，在我国公债中都占有相当大的份额。不过，即使全部债务都是欠本国居民的，也不会因此而少一些危害。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p54",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1005"
+      },
+      "contentHash": "de5ad661753e0ecd41ccd35f5ccc9c301f1ce361704583102fcbc587b12dee81",
+      "text": "土地和资本是全部私人收入和公共收入的两个原始来源。资本支付生产性劳动的工资，无论这种劳动用于农业、制造业还是商业。这两个原始收入来源的管理，分别属于两类不同的人：土地所有者，以及资本的所有者或运用者。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p55",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1006"
+      },
+      "contentHash": "8de01aec7f8a4eca0b0284caffa7116edeb189589220d6e19571c4384d1d67f6",
+      "text": "为了自己的收入，土地所有者有利益尽其所能使自己的地产保持良好状态，办法是为佃户建造和修缮房屋，修建和维护必要的排水设施与围墙，以及实施和维护所有其他理应由地主实施和维护的昂贵改良。但各种土地税可能使地主的收入大幅减少；而对生活必需品和便利品征收的各种税，又可能使这笔已经减少的收入具有极低的实际价值，以致他发现自己完全无力实施或维护那些昂贵的改良。然而，一旦地主不再履行自己应尽的职责，佃户便完全不可能继续履行自己的职责。随着地主困境的加深，该国农业必然衰落。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p56",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1007"
+      },
+      "contentHash": "163db411d951a92f328f112d2d5463172cb5bf52f7083420608299b042a960ab",
+      "text": "当生活必需品和便利品所负担的各种税收，使资本的所有者和运用者发现，在某一特定国家，无论他们从资本取得多少收入，都买不到在几乎任何其他国家用同等收入可以买到的同样数量的必需品和便利品时，他们就会倾向于迁往别国。而当为了征收这些税，所有或大部分商人和制造业者，也就是所有或大部分大资本的运用者，不断遭受收税人的登门检查所带来的屈辱和烦扰时，这种迁移倾向很快就会变成实际迁移。随着支撑该国勤劳活动的资本迁走，这种勤劳活动必然衰退；而在农业衰落之后，贸易和制造业也将走向毁灭。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p57",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1008"
+      },
+      "contentHash": "13a6b433e2362b6b05bf54689945ff190bf8efca97d9deacf01fb06db19afb09",
+      "text": "土地和资本这两个重大收入来源各自产生的收入，如果把其中大部分从这两个来源的所有者手中，即从对每一特定部分土地的良好状态和每一特定部分资本的妥善管理具有直接利益的人手中，转移到另一类人手中，即对这些事项没有这种特定利益的公债债权人手中，长此以往，必定既造成土地荒废，也造成资本浪费或外迁。毫无疑问，公债债权人对本国农业、制造业和商业的繁荣具有一般利益，因而对本国土地的良好状态和资本的妥善管理也具有一般利益。如果这些方面中的任何一个普遍失灵或衰落，各种税收的收入可能就不再足以向他支付应得的年金或利息。但是，仅仅作为公债债权人，他对任何特定部分土地的良好状态，或任何特定部分资本的妥善管理，并无利益。作为公债债权人，他不了解任何这样的特定部分。他不会对其进行监督。他不可能加以关心。在某些情况下，其毁灭可能不为他所知，也不会直接影响他。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p58",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1009"
+      },
+      "contentHash": "d1078928ec2d3cfdb0881282f0fd866603ed4360ebaf9511705231646a7f4d12",
+      "text": "设立有基金公债的做法，逐渐削弱了每一个采用它的国家。意大利各共和国似乎是最先实行这一做法的。仅存的、尚可自称独立存在的两个共和国热那亚和威尼斯，都已因此受到削弱。西班牙似乎从意大利各共和国学会了这种做法，而且，由于它的税收制度可能不如它们明智，西班牙相对于自身的自然实力受到了更严重的削弱。西班牙的债务由来已久。早在十六世纪末以前，它已负债累累，比英格兰欠下一先令债务还早大约一百年。法国尽管拥有全部自然资源，却在同一种沉重负担的压迫下日渐衰弱。尼德兰联省共和国因债务而受到的削弱，不亚于热那亚或威尼斯。一种给其他每个国家都带来衰弱或荒废的做法，难道可能唯独在大不列颠完全无害吗？",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p59",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1010"
+      },
+      "contentHash": "7a86b38ae9b54dcb46e0bfb7507b1d2616d912e21bb5d8a82ff09d9447ff14fb",
+      "text": "或许有人会说，那些不同国家建立的税收制度不如英格兰的制度。我相信确实如此。但应当记住，即使最明智的政府，在用尽一切适当的征税对象之后，也必定会在紧急情况下求助于不适当的对象。明智的荷兰共和国在某些场合，也不得不求助于同西班牙大部分税收一样不便的税收。在公共收入尚未得到任何显著解脱之前又爆发一场战争，并在进行过程中变得像上次战争一样耗费巨大，这可能会由于不可抗拒的必要性，使英国的税收制度变得同荷兰的制度一样苛重，甚至同西班牙的制度一样苛重。事实上，值得称道的是，我们现行税收制度迄今给勤劳活动造成的妨碍如此之小，以致即使在耗费最为巨大的战争期间，个人的节俭和良好经营似乎也能够通过储蓄和积累，修补政府的浪费和奢侈在社会总资本中造成的一切缺口。最近一次战争是大不列颠历来进行过的最耗费巨大的战争；但在战争结束时，她的农业一如既往地繁荣，制造业者一如既往地人数众多并得到充分就业，商业也一如既往地广泛。因此，支撑所有这些不同勤劳活动部门的资本，必定与以往任何时候一样多。和平以来，农业又得到进一步改良，全国每个城镇和村庄的房租都已上涨，这证明人民的财富和收入正在增加；而大部分旧税，尤其是主要的国产税和关税，每年所得的数额也在不断增加，这同样清楚地证明消费正在增加，因而产物也在增加，因为只有增加的产物才能支撑这种消费。大不列颠似乎轻松承担着半个世纪前无人相信她有能力承担的负担。不过，我们切不可因此轻率地断定她有能力承担任何负担；甚至也不可过于确信，她能够在不陷入严重困境的情况下，承担比已经加在她身上的负担稍重一些的负担。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p60",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1011"
+      },
+      "contentHash": "c5e2d9da24bf1086a54f2d5328c253bd890842cb06de19de8a22ad6d798b8cbc",
+      "text": "我认为，国债一旦积累到一定程度，几乎没有一个得到正当而彻底清偿的实例。公共收入即使曾经得到过解脱，也总是通过破产实现的；有时是公开宣布的破产，但总是真正的破产，尽管经常伪装成偿付。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p61",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1012"
+      },
+      "contentHash": "7f0b07c3d0d50985e946a880d789194849cee0ebb96f0dd5fe52761e3e4ef3f7",
+      "text": "提高铸币的名义币值，一直是用来把真正的国家破产伪装成貌似偿付的最常见手段。例如，假如通过议会法案或王室公告，把一枚六便士的名义币值提高为一先令，把二十枚六便士的名义币值提高为一英镑；那么，一个按旧币值借了二十先令，即将近四盎司白银的人，按新币值只须用二十枚六便士，即不足两盎司白银来偿还。用这种办法，一笔约一亿二千八百万英镑的国债——差不多相当于大不列颠有基金担保债务和无基金担保债务的本金——可以用约六千四百万英镑的现行货币偿清。诚然，这不过是一种虚假的偿付，而国家债权人实际上每应得一英镑就会被骗去十先令。灾祸还会远远超出国家债权人的范围，每个私人的债权人都会遭受相应的损失；这不但不会给国家债权人带来任何好处，反而在大多数情况下会使他们遭受巨大的额外损失。的确，如果国家债权人通常也欠别人很多债，他们就可以用国家偿付给他们的同一种铸币偿付自己的债权人，从而在一定程度上弥补自己的损失。但在大多数国家，国家债权人大部分是富人；相对于其他同胞而言，他们更多处在债权人的地位，而不是债务人的地位。因此，这种虚假的偿付，在大多数情况下非但不能减轻国家债权人的损失，反而会使其加重；而且在不给国家带来任何好处的情况下，把灾祸扩展到许多其他无辜的人身上。它会造成私人财产普遍而且危害极大的颠覆；在大多数情况下，它以勤勉节俭的债权人为代价，使懒惰挥霍的债务人致富，并把国家资本的一大部分从可能增加和改进它的人手中，转移到可能耗散和毁掉它的人手中。当一个国家有必要宣布破产时，正如一个个人有必要宣布破产时一样，公正、公开而坦率承认的破产，总是既最不损害债务人的名誉、又最少伤害债权人的措施。一个国家为了掩盖真正破产的耻辱，竟诉诸这种很容易被识破、同时又危害极大的戏法，那么它的荣誉所受到的维护无疑是极其可怜的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p62",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1013"
+      },
+      "contentHash": "5f6c851968bf13ab5f10224edfba0739d63b55237f07e4f76922d0d8ddffea3b",
+      "text": "然而，几乎所有国家，无论古代还是现代，在被迫走到这一步时，都曾在某些场合玩过这种戏法。第一次布匿战争结束时，罗马人把阿斯——他们用来计算其他一切铸币价值的铸币或计价单位——从含十二盎司铜减为只含两盎司；也就是说，他们把两盎司铜提高到一个此前一向表示十二盎司铜价值的名义币值。共和国因而能够用实际所欠数额的六分之一，偿付它所负担的巨额债务。我们在现代很容易设想，如此突然、如此巨大的破产，必定引起了极其强烈的民众抗议。但看来它并未引起任何抗议。规定这一措施的法律，与其他一切有关铸币的法律一样，是由一位保民官提交人民大会并使其获得通过的，而且很可能是一项深受欢迎的法律。在罗马，如同在所有其他古代共和国一样，穷人经常欠富人和权贵的债；富人和权贵为了在每年的选举中取得他们的选票，惯于以高得离谱的利息借钱给他们。这些债务从未得到偿还，很快便累积到一个过于庞大的数额，既非债务人所能偿还，也无人能代他偿还。债务人由于害怕受到极其严厉的强制执行，不必再得到任何酬谢，就不得不把票投给债权人所推荐的候选人。尽管有各种反对贿赂和腐败的法律，候选人的施舍，连同元老院不时下令配给的谷物，仍是罗马共和国后期较贫困公民赖以维持生活的主要来源。为了摆脱对债权人的这种依附，较贫困的公民不断要求要么完全废除债务，要么实行他们所谓的“新账表”；也就是说，制定一项法律，使他们只须偿付累积债务的一定比例，便有权获得全部清偿证明。把各种面额铸币的价值减至原来的六分之一的法律，使他们能够用实际所欠数额的六分之一偿清债务，因而等同于对他们最有利的新账表。为了安抚人民，富人和权贵曾在几个不同场合被迫同意废除债务和实行新账表的法律；他们之所以同意这项法律，很可能一部分出于同一原因，另一部分则是因为他们希望通过解放公共收入，使主要由他们自己掌管的政府恢复活力。这样一种措施会立即把一亿二千八百万英镑的债务减为二千一百三十三万三千三百三十三英镑六先令八便士。在第二次布匿战争期间，阿斯又进一步减值，先从含两盎司铜减为含一盎司，后来又从一盎司减为半盎司；也就是减至其原始价值的二十四分之一。若把罗马人的三次措施合为一次，一笔以我们的现行货币计算为一亿二千八百万英镑的债务，就可以用这种办法一下子减为五百三十三万三千三百三十三英镑六先令八便士的债务。甚至大不列颠的巨额债务，也可以用这种办法很快偿清。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p63",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1014"
+      },
+      "contentHash": "1622d15b644ca0083784fbd83a80adb1ccddfd6a3e0a050e63155d44430c5b60",
+      "text": "我相信，各国的铸币都曾借助这类手段逐渐越来越低于其原始价值，而同一名义金额所包含的白银数量也逐渐越来越少。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p64",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1015"
+      },
+      "contentHash": "afa315d6a01f99f556d9b8913a1f0b40afbcf163f6e5005b45ae2b4f9bc8faba",
+      "text": "各国有时为了同一目的，还会掺假降低铸币的成色标准；也就是说，在铸币中掺入更多合金。例如，按照现行标准，我们每磅重量的银币中掺有十八本尼威特合金；假如掺入的不是十八本尼威特，而是八盎司合金，那么一英镑，即这种铸币的二十先令，就只值略多于我们现行货币的六先令八便士。这样，我们现行货币六先令八便士所含的白银数量，就会被提高到差不多一英镑的名义币值。降低成色标准，与法国人所谓的增值，即直接提高铸币名义币值，具有完全相同的效果。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p65",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1016"
+      },
+      "contentHash": "2badd8f0fa6451603e357b450be934d8d68b725dd023dd2fefb6fbb1be36557c",
+      "text": "增值，即直接提高铸币的名义币值，向来是，而且按其性质必然是，一种公开而明示的措施。通过这种办法，重量和体积较小的铸币，被冠以从前赋予重量和体积较大铸币的同一名称。相反，降低成色标准通常是一种隐蔽的措施。借助这种办法，造币厂发行的铸币，在面额上，并且在力所能及的安排下，在重量、体积和外观上，都与以前流通但价值高得多的铸币相同。法国国王约翰为了偿还债务而降低铸币成色时，造币厂的所有官员都宣誓保密。这两种措施都是不公正的。但单纯的增值是公开暴力造成的不公，而降低成色则是背信欺诈造成的不公。因此，后一种措施一经发现——而它从来不可能隐瞒很久——总会激起比前一种措施强烈得多的愤慨。铸币经过任何大幅增值以后，极少恢复到原来的重量；但即使经过最严重的成色降低，它也几乎总会恢复到原来的纯度。因为除此以外，几乎从未有办法平息人民的愤怒和不满。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p66",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1017"
+      },
+      "contentHash": "43d5b7d37b61ee8e32d7b3afa9956778f8bfebd71b3714a929c6901bccab2f52",
+      "text": "在亨利八世统治末期和爱德华六世统治初期，英格兰铸币不仅提高了名义币值，也降低了成色标准。在詹姆斯六世未成年期间，苏格兰也实行过类似的欺诈手段。其他大多数国家也偶尔实行过这种手段。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p67",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1018"
+      },
+      "contentHash": "16703c02239647ab55a9bf9725c191598036192a86309aca1dbcc2acb6843a03",
+      "text": "只要大不列颠公共收入的结余，即支付和平时期常备机构的年度开支后所剩的数额，如此微不足道，要期望公共收入有朝一日能够完全摆脱债务负担，甚至期望在实现这种解放方面取得任何重大进展，看来都是完全徒劳的。显而易见，若不大幅增加公共收入，或同等大幅地削减公共开支，这种解放就绝不可能实现。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p68",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1019"
+      },
+      "contentHash": "01d536ed613dc8e84ebd9c804ccd0f9da225ddd109a6b1073546857802585f2b",
+      "text": "一种更为公平的土地税，一种更为公平的房租税，以及对现行关税和消费税制度作出前一章提到的那些改革，或许能够在不增加大多数人民负担、而只是把负担更公平地分摊给全体人民的情况下，大幅增加收入。然而，即使最乐观的设计者，也几乎不敢自我安慰说，这种增加足以使人有任何合理希望，认为它要么能够彻底解放公共收入，要么甚至能够在和平时期朝这种解放取得足够进展，以防止或抵偿下一场战争中公共债务的进一步累积。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p69",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1020"
+      },
+      "contentHash": "2b596758a7f6c73e6fe02a2d7cb98b6705e9cd2af031140b5bc96bf1c97c6eec",
+      "text": "如果把英国的税收制度推广到帝国境内所有由英国人或其他欧洲血统居民居住的不同省份，就可以期望收入得到更大幅度的增加。然而，若不让所有这些不同省份在英国议会中，或者随你称为不列颠帝国三级会议的机构中，获得公正而平等的代表权——每个省份的代表数与其税收收入之间的比例，应当和大不列颠的代表数与在大不列颠征收的税收收入之间的比例相同——这样做恐怕很难符合英国宪法的原则。不过，许多有权势的个人的私人利益和广大人群根深蒂固的偏见，目前看来确实给如此重大的变革设置了障碍；这些障碍也许极难克服，甚至根本不可能克服。然而，在不佯称要断定这种联合是否可行的情况下，在这样一部思辨性著作中，考察英国的税收制度在多大程度上可以适用于帝国所有不同省份；若如此应用，可以期望取得多少收入；以及这种全面联合可能以何种方式影响联合范围内各省份的幸福和繁荣，或许并非不妥。这种设想即使往最坏处说，也只能被视为一个新的乌托邦；它无疑不如旧乌托邦有趣，却并不比旧乌托邦更加无用和空想。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p70",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1021"
+      },
+      "contentHash": "13a5179f220996f3394f3e768ffc1895a9af6c350d1dd0a54ab062e6c6b86bcb",
+      "text": "土地税、印花税、各种关税和各种消费税，构成英国税收的四个主要部门。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p71",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1022"
+      },
+      "contentHash": "6d253f60802028ccfab35f184d199ec10e8b5ba41936888d0726cacbe5e07453",
+      "text": "爱尔兰缴纳土地税的能力肯定不亚于大不列颠，而我们在美洲和西印度群岛的殖民地则更有能力缴纳土地税。地主在既不负担什一税、也不负担济贫税的地方，缴纳这种税的能力肯定强于同时负担另外两种税的地方。在没有固定折纳额而且以实物征收什一税的地方，什一税对本来会成为地主地租的收入所造成的削减，大于一种实际达到每英镑五先令的土地税。在大多数情况下，这种什一税会超过土地实际地租的四分之一；所谓土地实际地租，就是完全补偿农业经营者的资本及其合理利润以后所剩的数额。如果取消一切固定折纳额和一切什一税俗人领有权，大不列颠和爱尔兰完整的教会什一税，很难估计为少于六百万或七百万英镑。如果大不列颠和爱尔兰都没有什一税，地主就能多缴六百万或七百万英镑土地税，而其负担不会重于他们中很大一部分人目前承受的负担。美洲不缴纳什一税，因而完全有能力缴纳土地税。诚然，美洲和西印度群岛的土地通常并非由佃户承租，也没有出租给农业经营者。因此，不能按照任何地租簿对其估税。但在威廉和玛丽统治第四年，大不列颠的土地也不是按照任何地租簿估税的，而是依据非常粗略且不准确的估算。美洲的土地既可以用同样的方法估税，也可以像最近在米兰地区以及奥地利、普鲁士和撒丁领地所做的那样，在精确测量之后进行公平估价，据此估税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p72",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1023"
+      },
+      "contentHash": "c507eaf0659108363ef498dcdd405f6ab901889bd3a6999e82064f9dac33fcc5",
+      "text": "显而易见，在法律诉讼程序以及转让不动产和动产的契据形式相同或近乎相同的一切国家，都可以毫无变更地征收印花税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p73",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1024"
+      },
+      "contentHash": "4e5419980dcf1b1b31f9252eaa740092c4608decda38b10204e97ee951d28de6",
+      "text": "如果把大不列颠的海关法推广到爱尔兰和各殖民地，同时也按照公正原则应有的做法，把贸易自由推广到这些地方，那么这对双方都会极为有利。目前压迫爱尔兰贸易的一切招致怨恨的限制，以及美洲列举商品与非列举商品之间的区别，都会彻底终止。菲尼斯特雷角以北各国，会像该角以南各国目前对美洲一部分产品开放那样，对美洲各类产品开放。由于海关法实现这种统一，不列颠帝国所有不同地区之间的贸易，将会像大不列颠目前的沿海贸易一样自由。这样，不列颠帝国本身就会为其所有不同省份的每一类产品提供一个巨大的国内市场。市场如此大规模的扩展，很快就会使爱尔兰和各殖民地因关税增加而可能遭受的一切损失得到补偿。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p74",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1025"
+      },
+      "contentHash": "83e371f8a4aa55655590c36a85ff4ac8b91212fd2df4953a5d44a9b644dbddd5",
+      "text": "英国税收制度中，只有消费税这一部分在应用于帝国不同省份时，需要根据各省情况作出某种改变。它可以毫无变更地应用于爱尔兰，因为该王国的产品和消费品与大不列颠的性质完全相同。在应用于美洲和西印度群岛时，由于这些地方的产品和消费品与大不列颠大不相同，或许有必要作出一些调整，正如把消费税应用于英格兰的苹果酒产区和啤酒产区时一样。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p75",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1026"
+      },
+      "contentHash": "c6b09966405396b6fdf8a780d7960a141086aece47fc9a0ec4385da4c7dc31dd",
+      "text": "例如，美洲人民的日常饮料中，有相当大一部分是一种称为啤酒的发酵饮料，但由于它是用糖蜜制成的，与我们的啤酒很少相似。这种饮料只能保存几天，不能像我们的啤酒那样在大型酿酒厂酿制并储存待售；相反，每个私人家庭都必须自己酿造自用，就像自己烹调食物一样。但是，像对待麦酒馆经营者和酿酒出售者那样，让每个私人家庭都遭受收税人的可憎查访和检查，是与自由完全不相容的。如果为了公平而认为有必要对这种饮料征税，可以对制造它的原料征税，既可以在原料的制造地征收，也可以在贸易状况使这种消费税不适宜的情况下，在原料输入将要消费这种饮料的殖民地时征收关税。除了英国议会对输入美洲的糖蜜征收每加仑一便士的关税以外，马萨诸塞湾还对用属于任何其他殖民地的船只输入的糖蜜征收这种地方税，每大桶八便士；南卡罗来纳则对从北方殖民地输入的糖蜜征收另一种税，每加仑五便士。或者，如果发现这两种办法都不方便，每个家庭可以就其消费这种饮料议定包税额；既可以按照家庭人数计算，就像英格兰的私人家庭议定麦芽税包税额一样；也可以按照这些人的不同年龄和性别计算，就像荷兰征收几种不同税收一样；或者大体按照马修·德克尔爵士所建议的在英格兰征收一切消费品税的办法计算。前文已经指出，这种征税方式用于很快消费掉的物品时，不是一种很方便的方式。不过，在没有更好办法的情况下，仍可采用这种方式。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p76",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1027"
+      },
+      "contentHash": "bda6d946fc5358023af216115321c78d45e8876b4547f51d33f3b935d6b7228c",
+      "text": "糖、朗姆酒和烟草在任何地方都不是生活必需品，却已经成为几乎普遍消费的商品，因此是极其适宜的征税对象。如果实现与各殖民地的联合，可以在这些商品离开制造者或种植者之手以前征税；或者，如果这种征税方式不适合这些人的情况，可以在制造地以及帝国境内它们后来可能运往的所有不同港口，把这些商品存入公共仓库，由所有者和税务官员共同保管，直至交付给消费者、供国内消费的零售商人或出口商人时为止；在这种交付以前无须垫付税款。交付出口时，只要提供适当担保，保证它们确实会运出帝国，就可以免税。这些或许是与各殖民地联合时，可能需要对英国现行税收制度作出某种重大改变的主要商品。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p77",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1028"
+      },
+      "contentHash": "35520014792a2cfd931d7f0b14158c4bfe5a3542ec0dafcc6a600594eed5974d",
+      "text": "这种税收制度若推广到帝国所有不同省份，可能产生多少收入，无疑完全无法相当准确地确定。依靠这一制度，大不列颠每年从不足八百万人口中征得一千多万英镑的收入。爱尔兰有二百多万人口；而据提交给大陆会议的统计，美洲十二个联合省份有三百多万人口。不过，这些统计或许有所夸大，其目的也许是鼓舞他们自己的人民，或恫吓这个国家的人民；因此，我们姑且假定北美和西印度殖民地合计不超过三百万人，或者说，欧洲和美洲的整个不列颠帝国人口不超过一千三百万。如果这种税收制度从不足八百万居民中征得一千多万英镑的收入，那么从一千三百万居民中就应当征得一千六百二十五万多英镑的收入。假定这种制度能够产生这笔收入，还必须从中扣除爱尔兰和各殖民地通常为支付各自民政开支而征收的收入。截至1775年3月的两年间，爱尔兰民政和军事建制的开支连同公债利息，平均每年略低于七十五万英镑。根据一份对美洲和西印度主要殖民地收入所作的非常精确的统计，在目前的骚乱开始以前，这笔收入为十四万一千八百英镑。不过，这份统计没有包括马里兰、北卡罗来纳以及我们近来在大陆和各岛屿上取得的全部领地的收入，而这也许会造成三万或四万英镑的差额。因此，为取整数，我们姑且假定维持爱尔兰和各殖民地民政所必需的收入可达一百万英镑。这样便会剩下一千五百二十五万英镑的收入，可用于支付帝国的一般开支和偿还公债。但是，如果在和平时期，大不列颠目前的收入中能够拿出一百万英镑偿还这项债务，那么从这笔增加后的收入中完全可以拿出六百二十五万英镑。这个庞大的偿债基金还可以每年用上一年已经清偿的债务所节省的利息来扩充，并且可能以这种方式增长得极为迅速，以至于几年内便足以清偿全部债务，从而使帝国目前已经衰弱、萎靡的活力得到完全恢复。与此同时，人民还可以免除一些最沉重的税；即那些对生活必需品或制造业原料征收的税。劳动贫民因而将能够生活得更好，以更低成本劳动，并以更低价格把他们的商品送到市场。其商品的低廉会增加对这些商品的需求，从而增加对生产这些商品的人的劳动的需求。劳动需求的这种增加，既会增加劳动贫民的人数，也会改善他们的境况。他们的消费将会增加，随之而来的，是从其消费品中那些仍可保留征税的各项物品所得的收入也会增加。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p78",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1029"
+      },
+      "contentHash": "f0fe876e42c9e1be47a39e17da9e73893602bd3200c537f24b4f15d0efe525d7",
+      "text": "不过，这种税收制度产生的收入，未必会立即按照受其征税的人数成比例增加。帝国中这些原先不习惯承担此类负担、如今却被加以这种负担的省份，在一段时间内理应得到充分宽待；即使以后各地都尽可能严格地征收同样的税，各地所得收入也不会都与人口数量成比例。在一个贫穷国家，须缴纳关税和消费税的主要商品消费量很小；而在一个人口稀少的国家，走私的机会却很多。苏格兰下层人民对麦芽酒类的消费量很小；按人口数量和税率的比例计算，那里对麦芽、啤酒和麦酒征收的消费税少于英格兰；麦芽的税率则因假定存在品质差异而有所不同。我认为，在消费税的这些特定项目上，两国的走私活动并没有很大差别。按两国各自的人口数量计算，苏格兰的蒸馏酒税和大部分关税所产生的收入都少于英格兰，这不仅是因为应税商品的消费较少，而且是因为走私容易得多。在爱尔兰，下层人民甚至比苏格兰的下层人民更穷，而且国内许多地区的人口几乎同样稀少。因此，按人口数量计算，爱尔兰的应税商品消费量可能甚至少于苏格兰，而走私的便利程度则大致相同。在美洲和西印度，即使是最低阶层的白人，其境况也远好于英格兰同一阶层的人，而他们对通常用来满足自己享受的各种奢侈品的消费量，很可能大得多。诚然，在大陆南部殖民地和西印度群岛都构成大多数居民的黑人，由于处于奴隶状态，其处境无疑比苏格兰或爱尔兰最贫穷的人民还要恶劣。不过，我们不可因此设想，他们吃得更差，或他们对可征收适度税款的物品的消费量，甚至少于英格兰下层人民的消费量。为了让他们好好劳动，主人让他们吃得好并保持良好精神状态，符合主人的利益，正如让役畜也保持这种状态符合他的利益一样。因此，黑人几乎到处都和白人仆役一样，得到定额配给的朗姆酒以及糖蜜或云杉啤酒；即使对这些物品征收适度税款，这种配给也很可能不会取消。因此，按居民人数计算，美洲和西印度的应税商品消费量，很可能与不列颠帝国任何地区的一样大。诚然，那里的走私机会会多得多，因为按地域面积计算，美洲的人口远比苏格兰或爱尔兰稀少。不过，如果目前通过对麦芽和麦芽酒类征收的各种税所得的收入，改由对麦芽征收单一税取得，那么消费税最重要项目中的走私机会将几乎完全消失；如果关税不再对几乎所有不同的进口物品征收，而只限于几种使用和消费最普遍的物品，并且这些税的征收受消费税法管辖，那么走私的机会虽然不会同样彻底消失，却会大大减少。由于这两项看来非常简单易行的改变，关税和消费税按人口最稀少省份的消费量计算，很可能会像目前按人口最稠密省份的消费量计算一样，产生同样多的收入。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p79",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1030"
+      },
+      "contentHash": "bfc9ccc4b187a6f00f84c0094da27f0aea1c2b5f65daa7f57ead4d321cada28d",
+      "text": "诚然，有人说，美洲人没有金银货币；国内贸易靠纸币进行，偶尔流入他们那里的金银，也全部被送往大不列颠，作为他们从我们这里获得商品的回报。但又有人补充说，没有金银，就不可能缴税。我们已经取得了他们所有的金银。怎么可能从他们那里取得他们并不拥有的东西呢？",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p80",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1031"
+      },
+      "contentHash": "593b18fde18cc815a497b21b850569e6358ccdc7e949cf3229a55f2cb3beab7a",
+      "text": "美洲目前金银货币的匮乏，并不是该国贫穷或那里的人无力购买这些金属所造成的。在一个劳动工资远高于英格兰、而食品价格又远低于英格兰的国家，如果大多数人有必要或觉得方便购买更多金银，他们肯定有财力这样做。因此，这些金属的匮乏必定是选择而非必要的结果。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p81",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1032"
+      },
+      "contentHash": "96eda5bdfdafc6b7b7b539308c906f3eb8054632b3ead69d4b19ccd9ba796e91",
+      "text": "无论办理国内事务还是国外事务，金银货币才会成为必要或便利的工具。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p82",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1033"
+      },
+      "contentHash": "413b406bba5e88283dabe4e25ffa3974158f02b78cea7e3d10ded80e030d3c27",
+      "text": "本研究第二篇已经说明，每个国家的国内事务，至少在和平时期，都可以用纸币办理，其便利程度几乎与使用金银货币相同。美洲人总能把多于他们容易获得的资本有利地用于改良土地；对他们来说，尽可能节省使用金银这种昂贵贸易工具的费用，而把他们原本必须用于购买这些金属的那部分剩余产品，用来购买行业工具、衣料、若干种家具以及建设和扩展其定居地与种植园所必需的铁制品，是便利的；也就是说，不购买闲置资本，而购买活跃且有生产力的资本。殖民地政府认为，向人民提供足以、而且通常超过办理国内事务所需数量的纸币，符合自己的利益。其中一些政府，尤其是宾夕法尼亚政府，通过按一定百分比的利率把这种纸币贷给臣民而取得收入。另一些政府，如马萨诸塞湾政府，在特殊紧急情况下发行这种纸币以支付公共开支，随后在适合殖民地便利的时候，按其逐渐跌至的贬值价值将其赎回。1747年，该殖民地便以这种方式，用其票据发行金额的十分之一偿还了大部分公债。种植园主为国内交易节省使用金银货币的费用，符合他们的便利；殖民地政府向他们提供一种流通媒介，虽伴有一些相当严重的弊端，却使他们能够节省这项费用，也符合殖民地政府的便利。纸币过剩必然会把金银排挤出殖民地的国内交易，正如它出于同一原因，已经把这些金属排挤出苏格兰大部分国内交易一样；在这两个地方，造成这种纸币过剩的，不是贫穷，而是人民勇于创业和筹划的精神，是他们渴望把所能获得的全部资本都用作活跃且有生产力的资本。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p83",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1034"
+      },
+      "contentHash": "58bf7b6d2c05f05eb77542c4c3696bd059950da13ac8a349a107bc287af22bb5",
+      "text": "各殖民地同大不列颠进行的对外贸易中，金银使用得多还是少，恰好与其必要程度成比例。在不需要这些金属的地方，它们很少出现；在需要它们的地方，通常都能找到。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p84",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1035"
+      },
+      "contentHash": "1b3aa690ef7c005287465355f510c884ac302420c9baf4e770a2cca1ae226e7b",
+      "text": "在大不列颠与烟草殖民地之间的贸易中，英国商品通常以相当长的赊账期预付给殖民者，后来再用按某一价格计价的烟草偿付。对殖民者来说，用烟草支付比用金银支付更方便。任何商人若能用自己碰巧经营的某种别的商品，而不是用货币，来偿付其业务往来者卖给他的商品，都会更加方便。这样的商人无须为应付不时之需，把资本的任何部分以闲置的现款形式留在手边。他的店铺或仓库随时都可以存放数量更多的商品，也可以经营更大规模的业务。但一个商人的所有业务往来者，很少都会觉得接受他碰巧经营的其他某种商品，作为他们卖给他的商品的价款，是便利的。与弗吉尼亚和马里兰进行贸易的英国商人，恰好是一类特殊的业务往来者；对他们来说，就卖给这些殖民地的商品接受烟草而非金银作为付款，更为方便。他们期望从出售烟草中获利，却无法从出售金银中获利。因此，金银很少出现在大不列颠与烟草殖民地之间的贸易中。马里兰和弗吉尼亚在对外贸易中需要这些金属的程度，同在国内贸易中一样低。因此，据说它们拥有的金银货币比美洲任何其他殖民地都少。不过，人们认为它们与任何邻近殖民地同样繁荣，因而也同样富裕。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p85",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1036"
+      },
+      "contentHash": "c7b02d80a78caba727783e115923acdd510b5673d43df0b6ebcbd61f757550f4",
+      "text": "在北方殖民地，即宾夕法尼亚、纽约、新泽西、新英格兰的四个政府辖区等地，它们出口到大不列颠的本地产品的价值，抵不上它们为自身使用、也为由它们充当承运人的其他一些殖民地使用而进口的制成品的价值。因此，必须用金银向母国支付差额，而它们通常都能找到这笔差额。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p86",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1037"
+      },
+      "contentHash": "cb638b02b501e52beaec55d6860b19c157cd564d9b2d071801031978a0eaa883",
+      "text": "在蔗糖殖民地，每年出口到大不列颠的产品价值，远远超过从那里进口的全部商品的价值。如果每年运往母国的糖和朗姆酒都在这些殖民地付款，大不列颠就不得不每年以货币汇出一笔很大的差额，而西印度贸易也会被某一类政治家视为极其不利。但碰巧的是，许多主要糖料种植园主都居住在大不列颠。他们的地租以其产业所产的糖和朗姆酒汇给他们。西印度商人在这些殖民地为自己购入的糖和朗姆酒，价值抵不上他们每年在那里出售的商品。因此，必然要用金银向他们支付差额，而这笔差额通常也能找到。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p87",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1038"
+      },
+      "contentHash": "26f5ac8f18d38b616ff538db39006e89518be096d5afe989b7b5ecb8a237b19a",
+      "text": "各殖民地向大不列颠付款的困难和不规则程度，与它们各自所欠差额的大小完全不成比例。北方殖民地的付款通常比烟草殖民地更有规律，尽管前者一般用货币支付相当大的差额，后者却要么不支付差额，要么只支付小得多的差额。从我们各蔗糖殖民地取得付款的困难大小，与其说取决于它们各自所欠差额的多少，不如说取决于它们所拥有的未开垦土地数量；也就是说，取决于种植园主在多大程度上受到诱惑而过度经营，或着手开拓和耕种超出其资本规模所适合数量的荒地。牙买加这个大岛仍有大量未开垦土地，因此，从该岛取得的回款通常比从巴巴多斯、安提瓜和圣克里斯托弗这些较小岛屿取得的回款更不规则、更不确定；这些小岛多年来已经得到完全开垦，因而为种植园主的投机活动提供的余地较小。新取得的格林纳达、多巴哥、圣文森特和多米尼克，为这种投机活动开辟了新领域；近来从这些岛屿取得的回款，也像从牙买加这个大岛取得的回款一样不规则和不确定。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p88",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1039"
+      },
+      "contentHash": "89dd25ddcfac49246a8d43123ca2ee3173382aa66d745b289f167b7880cee45f",
+      "text": "因此，大多数殖民地目前金银货币的匮乏，并不是殖民地贫穷造成的。它们对活跃且有生产力的资本有巨大需求，所以拥有尽可能少的闲置资本对它们来说很方便；也正因如此，它们宁愿满足于一种虽不如金银便利、却比金银便宜的贸易工具。它们由此能够把那些金银的价值转化为行业工具、衣料、家具以及建设和扩展其定居地与种植园所必需的铁制品。在那些离开金银货币便无法办理的业务中，它们似乎总能找到必要数量的这些金属；即使它们常常找不到，通常也不是由其不可避免的贫穷，而是由其不必要且过度的冒险造成的。它们的付款不规则、不确定，并非因为它们贫穷，而是因为它们过于急切地想变得极其富有。即使殖民地税收收入中超出支付其自身民政和军事建制开支所需的全部部分，都要以金银汇往大不列颠，各殖民地也完全有财力购买所需数量的这些金属。诚然，在这种情况下，它们将不得不用目前用于购买活跃且有生产力的资本的一部分剩余产品去换取闲置资本。在办理国内事务时，它们将不得不使用昂贵的贸易工具，而不是廉价的贸易工具；购买这种昂贵工具的费用，也许会在一定程度上抑制它们改良土地时那种过度冒险的活力和热情。不过，美洲收入可能根本不必有任何部分以金银汇出。它可以通过向大不列颠某些特定商人或公司开出并由其承兑的汇票来汇出；美洲的一部分剩余产品已经委托给这些商人或公司，他们自己以商品形式收到这笔收入的价值之后，会把美洲的收入以货币缴入国库；全部业务往往可以不从美洲输出一盎司金银便办理完毕。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p89",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1040"
+      },
+      "contentHash": "95641df9236158f08bc9ac62e6952ae0bb26cb2cb7743d88ab28c678e23e5131",
+      "text": "让爱尔兰和美洲都为清偿大不列颠的公债作出贡献，并不违反正义。这项债务是为了支持由革命确立的政府而承担的；爱尔兰的新教徒不仅把他们目前在本国享有的全部权力归功于这个政府，而且把他们为自己的自由、财产和宗教所拥有的一切保障都归功于它；美洲有几个殖民地把现有的特许状、因而也把现有的政体归功于这个政府，美洲所有殖民地则都把从此一直享有的自由、安全和财产归功于它。这项公债的承担，不只是为了保卫大不列颠，也是为了保卫帝国所有不同的省份；特别是最近一次战争中承担的巨额债务，以及前一次战争中承担的大部分债务，严格说来都是为了保卫美洲而承担的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p90",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1041"
+      },
+      "contentHash": "c7f02c2f739c386ec5043a9cdeb6c769d0d2818821b577c77e6efdc119cdf6f6",
+      "text": "通过与大不列颠合并，爱尔兰除了会获得贸易自由之外，还会获得其他重要得多的好处，而这些好处足以远远补偿合并可能伴随的任何增税。通过与英格兰合并，苏格兰的中下阶层完全摆脱了一个此前一直压迫他们的贵族阶层的权力。通过与大不列颠合并，爱尔兰各阶层的大多数人也会同样彻底地摆脱一个压迫性强得多的贵族阶层；这个贵族阶层不像苏格兰的贵族阶层那样，建立在出身和财富的自然且值得尊重的差别之上，而是建立在一切差别中最可憎的差别，即宗教偏见和政治偏见之上；这些差别比其他任何差别都更能激起压迫者的蛮横以及受压迫者的仇恨和愤慨，而且通常会使同一国家的居民彼此之间的敌意，比不同国家的居民之间历来所有的敌意都更深。若不与大不列颠合并，爱尔兰居民在许多个世纪内都不大可能把自己视为一个民族。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p91",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1042"
+      },
+      "contentHash": "1663a7fbb534b2878d5510b58d63ef551b1e1d09c7be86fdc31d2453d9168121",
+      "text": "殖民地从未盛行过压迫性的贵族统治。然而，即使是殖民地，在幸福与安宁方面也会从与大不列颠合并中获得相当大的好处。至少，这会使它们摆脱那些与小型民主政体不可分离的怨毒而激烈的党争；由于这些殖民地的政府形式近乎民主，这些党争曾屡次使当地人民在感情上发生分裂，并扰乱其政府的安宁。如果完全脱离大不列颠，而这种情况若不通过此种合并加以阻止，看来极有可能发生，那么这些党争的激烈程度会十倍于以往。在目前的骚乱开始以前，母国的强制权力一直能够约束这些党争，使其不致爆发为比粗暴无礼和侮辱更严重的事态。如果这种强制权力被完全取消，这些党争或许很快就会爆发为公开的暴力和流血冲突。在所有统一于一个一体化政府之下的大国中，偏党精神在边远各省通常不如在帝国中心盛行。这些省份远离首都，远离党争和野心激烈争夺的主要场所，因此较少卷入任何一个争斗党派的谋划，并且在观察所有党派的行为时更为冷淡和公正。偏党精神在苏格兰不如在英格兰盛行。在合并的情况下，它在爱尔兰或许会不如在苏格兰盛行，而各殖民地或许很快就会享有一种目前在大英帝国任何地方都不曾有过的和睦与一致。诚然，爱尔兰和各殖民地所承担的税负都会重于它们目前缴纳的任何税负。不过，只要勤勉而忠实地将公共收入用于偿还国债，这些税收的大部分可能无须长期延续，而大不列颠的公共收入也可能很快减至维持适度的和平时期建制所必需的水平。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p92",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1043"
+      },
+      "contentHash": "a2a7463935574d99a26d77fa13ca6c502795e3ec746b65ca6945f3c1dda886ba",
+      "text": "东印度公司取得的领土无疑属于王权，也就是说，属于大不列颠的国家和人民；这些领土或许可以成为另一项收入来源，而且比上述所有来源加在一起还要丰厚。据说，那些国家比大不列颠更为肥沃、幅员更广；而且就其面积而言，也远比大不列颠富庶、人口稠密。为了从那里取得巨额收入，或许没有必要对那些已经承受了足够、甚至过重税负的国家实行任何新的税制。与其加重那些不幸国家的负担，或许更适宜减轻这种负担；并且应当努力通过防止它们现已缴纳的税款大部分遭到侵吞和滥用，而不是通过征收新税，来从它们那里取得收入。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p93",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1044"
+      },
+      "contentHash": "28ab47dbc5d455e24f86755949bea825b7b3068f14f813c95cf9968b4de5836e",
+      "text": "如果大不列颠发现无法从上述任何一种资源中取得可观的新增收入，那么她所能剩下的唯一办法就是削减开支。无论在征收还是使用公共收入的方式上，虽然两方面或许仍有改进的余地，但大不列颠看来至少与任何邻国一样节俭。她在和平时期为自身防务而维持的军事建制，比任何能够自称在财富或实力上与她匹敌的欧洲国家都更为有限。因此，这些项目似乎都无法大幅削减开支。在目前的骚乱开始以前，殖民地和平时期建制的开支非常可观；这项开支可以节省，而且如果不能从殖民地取得收入，当然就应当全部节省下来。和平时期这项经常开支虽然很大，但与战时保卫殖民地给我们造成的费用相比，便微不足道了。前面已经指出，最近一次战争完全是为殖民地而发动的，耗费大不列颠九千多万英镑。1739年的西班牙战争主要也是为它们而发动的；在那场战争及其所导致的对法战争中，大不列颠花费了四千多万英镑，其中很大一部分理应计在殖民地账上。在这两场战争中，殖民地使大不列颠耗费的款项，远远超过第一场战争开始前国债总额的两倍。如果没有这些战争，那笔国债原本可能、而且到这时或许已经全部偿清；如果没有殖民地，前一场战争或许不会发动，而后一场战争则肯定不会发动。正因为殖民地被认为是大英帝国的省份，这笔费用才花在它们身上。但是，既不贡献收入、也不贡献军事力量来维持帝国的国家，不能被视为帝国的省份。它们或许可以被视为帝国的附属品，视为帝国的一套华丽炫目的仪仗。但是，如果帝国已无力负担维持这套仪仗的费用，就当然应当将其舍弃；如果帝国不能使其收入与开支相应增加，至少也应使开支适应收入。尽管各殖民地拒绝服从英国的征税，如果它们仍要被视为大英帝国的省份，那么在未来某次战争中保卫它们，可能会使大不列颠付出与以往任何战争中同样巨大的费用。一个多世纪以来，大不列颠的统治者一直用这样一种幻想来哄骗人民，即他们在大西洋西岸拥有一个庞大的帝国。然而，这个帝国迄今只存在于想象之中。迄今为止，它不是一个帝国，而只是建立帝国的计划；不是一座金矿，而只是开采金矿的计划；这个计划已经耗费、还在继续耗费巨额费用，而且如果仍按以往的方式推行下去，很可能还会耗费巨额费用，却不大可能带来任何利润；因为前面已经说明，殖民地贸易垄断对广大人民所产生的结果，不是利润，而纯粹是损失。如今无疑已到了这样的时候：我们的统治者要么应当使这个黄金美梦成为现实——他们或许不仅让人民，也让自己一直沉溺于这个梦中——要么就应当自己从梦中醒来，并设法唤醒人民。如果这个计划无法完成，就应当放弃。如果大英帝国有任何一个省份无法为维持整个帝国作出贡献，那么现在无疑已到了大不列颠使自己摆脱下列费用的时候：战时保卫这些省份的费用，以及和平时期维持它们任何部分的文职或军事建制的费用；并且应当努力使她未来的眼光和谋划适应其国力实际上仅属中等的状况。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p94",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1045"
+      },
+      "contentHash": "6545b901c5d610d24fa8ffbfc467b3efeb07ef79e6f6116fe04e35051038409f",
+      "text": "为说明并证实第四编第五章关于白鲱渔业按吨位发放的奖励金所述的内容，兹附下列两份账目。我相信，读者可以信赖这两份账目的准确性。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p95",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1046"
+      },
+      "contentHash": "7b0a4c2d0fe8aa8907885af4e5c8b8e8772e08f306e253fcd65f84bf37edcc3e",
+      "text": "出口鲱鱼所损失的税收，或许不能恰当地视为奖励金；但就申报供国内消费的鲱鱼而言，这种税收损失当然可以视为奖励金。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b5.c3.p96",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_1047"
+      },
+      "contentHash": "2f4914ef608c516140d66dc0e258080a267374ea9e7ac21718f7c345c8a8269b",
+      "text": "应当注意，外国盐每蒲式耳重84磅，而英国盐每蒲式耳仅重56磅。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "locale": "zh-CN",
+  "chapterId": "smith.b2.c4",
+  "translations": [
+    {
+      "sourceId": "smith.b2.c4.p1",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1028"
+      },
+      "contentHash": "f2903b83fabf1b8a882a2b203ae3648dba237a29ef65c80c73ee40c5ab5e3d1b",
+      "text": "贷放取息的资本，在贷方看来始终是一笔资本。他预期这笔资本到期会归还给他，而在此期间，借方会为使用它而每年向他支付一定的租金。借方既可以把它用作资本，也可以把它用作留供即时消费的储备。如果他把它用作资本，就会用它维持生产性劳动者，而这些劳动者会连同利润一起再生产出其价值。在这种情况下，他无需转让或侵蚀任何其他收入来源，就既能归还资本，又能支付利息。如果他把它用作留供即时消费的储备，那他所扮演的就是挥霍者的角色，把原本用来供养勤劳者的东西耗费在供养游手好闲者上。在这种情况下，除非转让或侵蚀某种其他收入来源，例如财产或土地的地租，否则他既不能归还资本，也不能支付利息。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c4.p2",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1029"
+      },
+      "contentHash": "b011ddbcb2d5644f2a2fac5e38aea382364dd771ac858610e5511d129a465547",
+      "text": "贷放取息的资本无疑偶尔会以这两种方式使用，但用于前一种方式远比用于后一种方式频繁。为花费而借钱的人很快就会破产，借钱给他的人通常也会有理由为自己的愚蠢而后悔。因此，凡不涉及暴利高利贷的情形，为这种目的借贷，对双方利益都有害；虽然无疑有时确有人既这样借也这样贷，但鉴于人人都顾及自己的利益，我们可以确信，这种事情不可能像我们有时容易想象的那样经常发生。问任何一个具有一般审慎态度的富人，他的大部分资本是借给哪一类人的：是他认为会将其用于获利的人，还是会将其无所事事地花掉的人；他会嘲笑你竟提出这样的问题。因此，即使在借款人当中——他们并非世上最以节俭著称的人——节俭勤劳者的人数也远远超过挥霍懒惰者。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c4.p3",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1030"
+      },
+      "contentHash": "38b6862236c595fe18ea2e03f98437298ba969dca804afbb00a40c005bb23849",
+      "text": "通常借到资本而又不被期待用它取得多大利润的，只有以地产作抵押借款的乡绅。甚至他们也几乎从不只是为了花费而借款。可以说，他们所借的钱通常在借到之前就已经花掉了。他们一般已经消费了大量由店主和商人赊给他们的货物，以致发现必须借款付息来偿还债务。所借的资本补回了那些店主和商人的资本，而乡绅无法从自己地产的地租中补回这些资本。严格说来，这笔钱不是为了花费而借，而是为了补回一笔先前已经花掉的资本。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c4.p4",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1031"
+      },
+      "contentHash": "4421b03006f74d7bcb0282c8b1dd81b1a62d6ff34d40c201dc83d8a7c393dad1",
+      "text": "几乎所有有息贷款都是用货币贷出的，不论是纸币还是金银。但借方真正需要的、贷方真正供给他的，并不是货币，而是货币所值之物，即货币可以买到的货物。如果他需要这笔钱作为即时消费的储备，那么能放入这一储备的只有那些货物。如果他需要这笔钱作为雇用劳作人员的资本，那么也只有从那些货物中，才能向勤劳者提供开展工作所必需的工具、材料和生活资料。贷方通过贷款，仿佛把自己对于本国土地与劳动年产物中某一部分的权利转让给借方，任由借方按自己的意愿使用。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c4.p5",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1032"
+      },
+      "contentHash": "eefe653da18fb3c1ee583812b4ec347fe3570d80a26283078479ed04243f6c2b",
+      "text": "因此，在任何国家，能够贷放取息的资本数量，或者按通常的说法，能够贷放取息的货币数量，并不取决于该国各种贷款所用工具——无论纸币还是铸币——的价值，而取决于年产物中这样一部分的价值：它一旦出自土地或生产性劳动者之手，就不仅被指定用来补回一笔资本，而且是补回这样一笔资本，即其所有者不愿费心亲自运用的资本。由于这种资本通常以货币贷出并以货币偿还，它们构成了所谓的货币资本利益集团。它不仅有别于土地利益集团，也有别于商业和制造业利益集团，因为在后两者中，所有者亲自运用自己的资本。不过，即使在货币资本利益集团中，货币也仿佛只是一纸转让契据，把所有者不愿亲自运用的那些资本从一人手中转到另一人手中。这些资本可以按几乎任何倍数大于作为其转让工具的货币金额；因为同一批货币可以先后用于许多笔不同的贷款，也可以用于许多次不同的购买。例如，A借给W一千英镑，W立即用它向B购买价值一千英镑的货物。B自己不需要这笔货币，便把原封不动的同一批货币借给X，X立即用它向C购买另一批价值一千英镑的货物。C同样出于相同理由，把它借给Y，Y又用它向D购买货物。这样，同一批铸币或纸币在几天之内就可以充当三笔不同贷款和三次不同购买的工具，其中每一笔贷款或每一次购买的价值，都等于这批货币的全部金额。三位有钱人A、B和C转让给三个借款人W、X、Y的，是进行这些购买的能力。贷款的价值与用途都在于这种能力。三位有钱人贷出的资本，等于用它能够购买的货物价值，是进行这些购买的货币价值的三倍。然而，这些贷款完全可以都有充分担保，因为各个债务人把所购货物用于某种用途，使其到期时能够连同利润一起带回等值的铸币或纸币。同一批货币既能这样充当相当于其价值三倍，或基于同一理由，三十倍的不同贷款的工具，它也同样可以先后充当偿还这些贷款的工具。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c4.p6",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1033"
+      },
+      "contentHash": "36034aab34ac3b7080433d75760307d72dc41cb61e090a016b1ebf8d7ca78ed3",
+      "text": "这样看来，一笔贷放取息的资本，可以被视为贷方把年产物中某个相当大的部分转让给借方；条件是借方作为回报，在贷款存续期间，每年向贷方转让一个较小的部分，称为利息；并在贷款期满时，转让一个与最初转让给他的部分同样大的部分，称为偿还。虽然货币，无论铸币还是纸币，通常都充当转让较小部分和较大部分的契据，但货币本身与通过它转让的东西全然不同。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c4.p7",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1034"
+      },
+      "contentHash": "585c7e114c86b9d4fc43890b3a68c3b3b8247104ae2b6e70e03512d12f145253",
+      "text": "在任何国家，年产物中一经出自土地或生产性劳动者之手便被指定用来补回资本的那一份所占比例越大，所谓货币资本利益集团也自然随之扩大。所有者希望从中取得收入、却不愿费心亲自运用的那些特定资本的增加，自然伴随着资本的普遍增加；换句话说，随着资本增加，可供贷放取息的资本数量也逐渐越来越大。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c4.p8",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1035"
+      },
+      "contentHash": "7a03e7ab7808f7198ba1730573085d00eb5ba4b1d101131bc44f840f3792c804",
+      "text": "随着可供贷放取息的资本数量增加，利息，即使用这种资本所必须支付的价格，必然下降；这不仅是由于商品数量增加时通常会使其市场价格下降的那些一般原因，也是由于这一特定情形所特有的其他原因。任何国家的资本增加时，运用这些资本所能取得的利润必然下降。在国内为任何新增资本找到一种有利可图的运用方式，会逐渐变得越来越困难。于是不同资本之间便产生竞争，一个资本的所有者力图夺取另一个资本所占据的用途。但在大多数场合，他若想把后者从这种用途中挤出去，除了以更优惠的条件进行交易，别无办法。他不仅必须把自己经营的商品卖得稍微便宜一些，而且为了能把商品卖出去，有时还必须以更高的价格买进。由于用来维持生产性劳动的资金增加，对这种劳动的需求也与日俱增。劳动者很容易找到工作，资本所有者却难以找到可雇用的劳动者。他们之间的竞争抬高了劳动工资，压低了资本利润。但当运用一笔资本所能取得的利润以这种方式仿佛从两头受到削减时，能够为使用这笔资本而支付的价格，也就是利率，也必然随之下降。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c4.p9",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1036"
+      },
+      "contentHash": "56abe87183b67f08dbe61fb0d6f06de4423ea2e48e8d00f7323bb9290e5cb457",
+      "text": "洛克先生、劳先生和孟德斯鸠先生，以及许多其他作者，似乎都认为，由于西属西印度群岛的发现而导致的金银数量增加，是欧洲大部分地区利率下降的真正原因。他们说，这些金属本身既然贬值，使用其中任何特定一部分的价值也必然随之降低，因而可以为这种使用支付的价格也降低了。这种观点乍看之下似乎很有道理，但休谟先生已经如此彻底地揭示了它的错误，或许没有必要再多说什么。不过，下面这个十分简短明了的论证，或许有助于更清楚地说明那种似乎使这些先生误入歧途的谬误。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c4.p10",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1037"
+      },
+      "contentHash": "778f202f0078a210bf7aa542bcf8f33965ea34f3085878712719f8150a7ffa85",
+      "text": "在西属西印度群岛被发现以前，百分之十似乎是欧洲大部分地区的通常利率。自那以后，不同国家的利率已经降至百分之六、五、四和三。让我们假定，在每一个国家，白银价值的下降比例都恰好与利率下降的比例相同；例如，在利率从百分之十降至百分之五的国家，同量白银如今所能购买的货物数量恰好只有以前的一半。我相信，无论在哪里，这一假定都会被发现与事实不符；但它最有利于我们将要考察的观点；而且即使根据这一假定，白银价值下降也绝不可能有丝毫降低利率的倾向。如果在这些国家，现在的一百英镑价值不超过当时的五十英镑，那么现在的十英镑价值必定不超过当时的五英镑。不论使资本价值下降的原因是什么，同样的原因也必然使利息的价值下降，而且下降的比例完全相同。即使利率从未变动，资本价值与利息价值之间的比例也必定保持不变。反之，改变利率，就必然改变这两个价值之间的比例。如果现在的一百英镑价值不超过当时的五十英镑，那么现在的五英镑价值就不可能超过当时的二英镑十先令。因此，把利率从百分之十降至百分之五，就等于为使用一笔假定只相当于原先价值一半的资本，支付一笔只相当于原先利息价值四分之一的利息。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c4.p11",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1038"
+      },
+      "contentHash": "5910385e1f4dedd411ccf1a580fe857aaffa5d9c989f51cb9ce19b6919dc4455",
+      "text": "如果借以流通的商品数量保持不变，那么白银数量的任何增加，都只能产生降低这种金属价值的效果。各种货物的名义价值都会提高，但其实际价值会与以前完全相同。它们会换得更多枚银币，但它们所能支配的劳动量以及所能维持和雇用的人数，都会与以前完全相同。国家的资本仍会与以前相同，尽管要把其中任何等量的一部分从一人手中转到另一人手中，可能需要更多枚银币。转让契据会像一位冗长啰嗦的律师所写的让渡文书一样变得更加累赘，但所转让的东西会与以前完全相同，也只能产生相同的效果。维持生产性劳动的资金既然相同，对这种劳动的需求也会相同。因此，它的价格或工资尽管名义上提高了，实际上却会相同。工资会用更多枚银币支付，但只能购买同样数量的货物。资本利润无论名义上还是实际上都会相同。劳动工资通常按支付给劳动者的白银数量计算。因此，当这一数量增加时，他的工资看起来就提高了，尽管有时并不比以前多。但资本利润不是按用来支付利润的银币枚数计算的，而是按这些银币与所用全部资本的比例计算的。因此，在某个国家，人们说每周五先令是通常的劳动工资，百分之十是通常的资本利润。但是，该国的全部资本既然与以前相同，构成全部资本的各笔个人资本之间的竞争也会同样与以前相同。它们全都以同样的有利和不利条件经营。因此，资本与利润之间的通常比例会保持不变，货币的通常利息也因而不变；因为通常能够为使用货币而支付多少，必然取决于通常运用货币能够赚取多少。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c4.p12",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1039"
+      },
+      "contentHash": "05775d474e3c581166952b21bc772193bcef7573e574ec6588e5f7bd3099a7bc",
+      "text": "反之，如果流通这些商品的货币数量保持不变，那么国内每年流通的商品数量的任何增加，除了提高货币价值之外，还会产生许多其他重要影响。国家的资本尽管名义上可能保持不变，实际上却会增加。它可以继续用同样数量的货币表示，却能支配更多的劳动。它所能维持和雇用的生产性劳动量会增加，因而对这种劳动的需求也会增加。工资自然会随需求而上涨，但看起来却可能下降。工资可能用较少量的货币支付，但这一较少量的货币所能购买的货物，可能比以前较大量的货币所能购买的还要多。资本利润无论实际上还是表面上都会减少。国家的全部资本既然增加，构成全部资本的各笔资本之间的竞争自然也会随之加剧。各笔资本的所有者将不得不满足于从各自资本所雇用的劳动的产物中取得较小的份额。货币利息始终与资本利润同步，因此可以这样大幅下降，尽管货币的价值，即任何特定金额所能购买的货物数量，大幅增加了。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c4.p13",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1040"
+      },
+      "contentHash": "5c94ba0bdba1560bfff1954ec5d1158c5f57dd9e03183a522fae547b48b48389",
+      "text": "在有些国家，法律禁止收取货币利息。但是，由于在任何地方运用货币都能有所收益，在任何地方使用货币也都应支付一定报酬。经验证明，这种规定非但不能防止高利贷之害，反而会加剧它；因为债务人不仅必须为使用货币支付报酬，还必须为债权人因接受这种使用报酬而承担的风险支付报酬。可以说，他不得不为债权人承保，使其免受高利贷处罚。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c4.p14",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1041"
+      },
+      "contentHash": "18e33d4cec3032e9516a5ffcd13ce9785738c72b3d82e6cc85f090af4851b817",
+      "text": "在允许收取利息的国家，法律为防止高利盘剥，通常会规定可以收取而不受处罚的最高利率。这一利率应当始终略高于最低市场价格，即能够提供最无可置疑担保的人通常为使用货币而支付的价格。如果法定利率定得低于最低市场利率，这种规定的效果必定与完全禁止利息的效果大致相同。债权人不会以低于货币使用价值的报酬把钱借出，而债务人必须为债权人因收取这种使用权的全部价值而承担的风险向他支付报酬。如果法定利率恰好定在最低市场价格，那就会在尊重本国法律的诚实人那里，毁掉所有不能提供最佳担保者的信用，迫使他们求助于索取高得离谱利息的高利贷者。在大不列颠这样的国家，借给政府的货币利率为百分之三，以良好担保借给私人的利率为百分之四或四点五，因此现行百分之五的法定利率或许是再适当不过的了。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c4.p15",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1042"
+      },
+      "contentHash": "be80af6c69b1732d201cd1746be40dfa67dcff274a51ca40204d0387e1bf67c2",
+      "text": "应当注意，法定利率虽然应当略高于最低市场利率，却不应高出太多。例如，如果大不列颠的法定利率高达百分之八或百分之十，大部分可供借贷的货币就会贷给挥霍者和投机家，因为只有他们愿意支付这种高额利息。稳健的人为使用货币所愿支付的，只会是他们预计通过运用货币所获收益的一部分，因此不会冒险参与这种竞争。这样一来，该国资本的很大一部分就会离开最有可能有利且有效地加以运用的人之手，落入最有可能将其浪费和毁掉的人手中。反之，如果法定利率只比最低市场利率略高一点，那么作为借款人，稳健的人普遍会比挥霍者和投机家更受青睐。放贷者从前者那里得到的利息，几乎与他敢向后者索取的一样多，而他的钱放在前一类人手中要比放在后一类人手中安全得多。这样一来，该国资本的很大一部分就会落入最有可能有利地运用它的人手中。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c4.p16",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1043"
+      },
+      "contentHash": "e14e873c7190ab9c8f4b09cf30831f646f04033ad9bbe71b281619644accac50",
+      "text": "任何法律都不能把通常利率降低到该法律制定时的最低普通市场利率以下。尽管法国国王在1766年颁布敕令，试图把利率从百分之五降至百分之四，法国的货币仍继续以百分之五的利率贷放，人们以多种不同方式规避了这项法律。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c4.p17",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1044"
+      },
+      "contentHash": "1e1ac17c27ec9613ec547ea5b22114c84fdc7bbf4b853885c093364fe447abd2",
+      "text": "应当指出，土地的通常市场价格，在任何地方都取决于通常的市场利率。一个拥有一笔资本并希望从中取得收入、又不愿费心亲自运用它的人，会权衡究竟应当用它购买土地，还是把它贷出取息。土地具有较高的安全性，加之这种财产几乎在任何地方都附带着其他一些好处，通常会使他甘愿从土地取得比把钱贷出取息所能得到的更少的收入。这些好处足以补偿一定的收入差额；但它们只能补偿一定的差额；如果地租比货币利息少得更多，就不会有人购买土地，这很快就会降低土地的通常价格。反之，如果这些好处远远不止补偿这一差额，人人都会购买土地，这又会很快提高土地的通常价格。当利率为百分之十时，土地通常按十年或十二年地租的金额出售。随着利率降至百分之六、百分之五和百分之四，土地价格便上升到二十年、二十五年和三十年地租的金额。法国的市场利率高于英格兰，土地的通常价格也较低。在英格兰，土地通常按三十年地租的金额出售；在法国，则按二十年地租的金额出售。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    }
+  ]
+}

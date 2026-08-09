@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "locale": "zh-CN",
+  "chapterId": "smith.b1.c3",
+  "translations": [
+    {
+      "sourceId": "smith.b1.c3.p1",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_251"
+      },
+      "contentHash": "daa6de3ec09f07b6675ac955e0211c8aa2073035c5367f5e0c6ddee1bdc492dc",
+      "text": "正如交换能力促成了劳动分工一样，这种分工的程度也必然总是受交换能力大小的限制，换句话说，受市场范围的限制。当市场很小时，任何人都不会受到鼓励，完全专门从事一种职业，因为他没有能力把自己劳动产品中超过自身消费的全部剩余部分，交换成他所需要的他人劳动产品的那些部分。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c3.p2",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_252"
+      },
+      "contentHash": "db166daf49ee7c22aad572bc900a782a067ff857ef76d822c1ca215ff712f7c9",
+      "text": "有些种类的行业，即使是最卑微的，也只能在大城市里经营。例如，搬运工在其他地方找不到工作，也无法维持生计。村庄对他来说是一个远为过于狭小的活动范围；即便一个普通的集镇，也很难大到足以不断给他提供工作。在像苏格兰高地那样荒凉的地区，散布着孤零零的住宅和很小的村庄，每个农民都必须为自己的家庭兼做屠夫、面包师和酿酒师。在这种地方，相距不到二十英里，甚至很难找到两个同业的铁匠、木匠或泥瓦匠。那些住在离最近的这类工匠八英里或十英里之遥的零散家庭，必须学会亲自完成许多琐碎的工作；在较为人口稠密的地区，他们本会请这些工匠来帮忙。各地的乡村工匠几乎都不得不从事彼此关系十分密切、使用同一种材料的所有不同行业分支。乡村木匠承做各种木制品；乡村铁匠承做各种铁制品。前者不仅是木匠，还是细木工、家具木工，甚至是木雕工，又兼做车轮匠、犁匠以及大小车辆制造者。后者的工作更为繁杂。在苏格兰高地偏远的内陆地区，甚至不可能有制钉工这样一种职业。这样的工匠若每天制造一千枚钉子，每年工作三百天，一年就会制造三十万枚钉子。但在这样的地方，他一年连一千枚钉子，也就是一天的产品，都不可能卖掉。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c3.p3",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_253"
+      },
+      "contentHash": "e3743cd868a1ee5768186f10e06a65fde152d1a859e5f53a16980ede777b9b18",
+      "text": "水路运输为各种行业开辟的市场，比单靠陆路运输所能提供的市场更为广阔，因此，各种行业自然是在沿海地区和通航河流两岸开始细分和改进的，而且往往要过很久以后，这些改进才会扩展到国内的内陆地区。一辆由两人照管、八匹马牵引的宽轮货车，在大约六周内往返伦敦和爱丁堡之间，运送的货物接近四吨。一艘由六人或八人驾驶、航行于伦敦港与利斯港之间的船，在大约同样长的时间内，往返运送的货物往往有二百吨。因此，六人或八人借助水路运输，在同样长的时间内，能够在伦敦和爱丁堡之间往返运送的货物，与五十辆由一百人照管、四百匹马牵引的宽轮货车所能运送的一样多。因此，用最便宜的陆路运输把二百吨货物从伦敦运到爱丁堡，运费中必须计入一百人三周的生活费用、四百匹马的生活费用和损耗——马匹的损耗几乎与其生活费用相等——以及五十辆大货车的损耗。相比之下，同样数量的货物由水路运输，只须计入六人或八人的生活费用和一艘载重二百吨的船的损耗，再加上较高风险的价值，也就是陆运保险费与水运保险费之间的差额。因此，假如这两个地方之间除陆路运输外再无其他交通方式，那么，由于只有价格与重量相比非常高的货物才能从一地运往另一地，两地目前彼此之间的贸易只能进行很小的一部分，从而它们目前相互给予对方行业的鼓励也只能保留很小的一部分。世界上相距遥远的地区之间，各种贸易都会很少，甚至根本不会有。从伦敦到加尔各答，什么货物能够负担得起陆路运输的费用？即使有什么货物贵重到足以负担这种费用，又怎么能够安全地穿过如此众多野蛮民族的领土运送呢？然而，这两个城市目前彼此进行着规模相当大的贸易，并且通过相互提供市场，给对方的行业以很大的鼓励。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c3.p4",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_254"
+      },
+      "contentHash": "1c3da6b935835365afc47a05760a9d4d5ebbeb437d9f5d93a081bfb31162474d",
+      "text": "因此，既然水路运输有这样的优势，那么，技艺和行业最初得到改进的地方，自然就是这种便利能使各种劳动产品以全世界为市场的地方；而这些改进扩展到国内的内陆地区，总是要晚得多。长期以来，国内内陆地区的大部分货物，除了以环绕其周围、并把它们与沿海地区和通航大河隔开的区域为市场外，不会有其他市场。因此，它们的市场范围必然长期与那个区域的富裕程度和人口数量成比例，因而它们的改进必然总是迟于那个区域的改进。在我们的北美殖民地，种植园一直沿着海岸或通航河流两岸发展，几乎没有任何地方的种植园扩展到离这两者都相当远的地方。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c3.p5",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_255"
+      },
+      "contentHash": "fbc24a9678e4975c1176692b70cd3824bf54865fa4c07761a7b037dea0d3c4b9",
+      "text": "根据最为可靠的历史记载，看来最早开化的民族，是居住在地中海沿岸的那些民族。地中海是已知的世界上大得多于其他海湾的内海，它没有潮汐，因而除仅由风引起的波浪外，也没有其他波浪；其水面平静，岛屿众多，彼此相邻的海岸距离又近，所以对世界航海事业的萌芽极为有利。当时，人们由于不懂指南针，不敢驶离看得见海岸的范围，又由于造船技术不完善，不敢把自己置于大洋汹涌的波涛之中。在古代世界，越过赫拉克勒斯之柱，也就是驶出直布罗陀海峡，长期以来一直被认为是一项极其惊人而危险的航海壮举。甚至腓尼基人和迦太基人这两个古代最熟练的航海和造船民族，也是到很晚才尝试这样做，而且很长时间内只有他们尝试过。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c3.p6",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_256"
+      },
+      "contentHash": "8159a62815f84ceada62089f6ae248aa9085de7a010d009fc3ebaf60a0e5ea29",
+      "text": "在地中海沿岸的所有国家中，埃及似乎是最早使农业或制造业得到相当程度发展和改进的国家。上埃及任何地方距离尼罗河都不超过几英里；在下埃及，这条大河分成许多不同的水道，只须略施人工，这些水道似乎就能提供水路交通，不仅把所有大城市连接起来，也把所有较大的村庄，甚至乡间许多农舍连接起来；这与目前莱茵河和马斯河在荷兰的情形大致相同。这种内河航运范围广大而又便利，很可能是埃及早期得到改进的主要原因之一。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c3.p7",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_257"
+      },
+      "contentHash": "f2c893bcafcea556efb97183dee80cf2f289d32f955a21a3f48210609ee4bfdb",
+      "text": "东印度的孟加拉各省和中国东部的一些省份，农业和制造业的改进似乎同样有极为悠久的历史；不过，这种悠久历史究竟有多长，并没有得到我们这个地区认为权威可靠的任何历史记载的证实。在孟加拉，恒河和其他几条大河像埃及的尼罗河一样，形成许多可通航的水道。在中国东部各省，几条大河也通过各自不同的支流形成大量水道，这些水道彼此连通，所提供的内河航运范围远远超过尼罗河或恒河，或许也超过二者之和。值得注意的是，无论古埃及人、印度人还是中国人，都不鼓励对外贸易，而似乎全都从这种内河航运中获得了巨大的财富。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c3.p8",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_258"
+      },
+      "contentHash": "13d5658d19421e32d691a9d7a4f2d8306eb59be40e3c1abcb70b0c25fc0caa66",
+      "text": "非洲所有内陆地区，以及亚洲中位于黑海和里海以北相当远处的全部地区，即古代的斯基泰、现代的鞑靼和西伯利亚，似乎在世界各个时代都一直处于我们目前所见的同样野蛮、未开化的状态。鞑靼海是无法通航的冰冻海洋；尽管世界上几条最大的河流流经那个地区，但它们彼此距离太远，无法把贸易和交通扩展到该地区的大部分地方。非洲没有欧洲的波罗的海和亚得里亚海、横跨欧亚两洲的地中海和黑海，以及亚洲的阿拉伯湾、波斯湾、印度湾、孟加拉湾和暹罗湾那样的大海湾，无法借此把海上贸易深入到这片大陆的内陆地区；而非洲各条大河彼此距离太远，不足以促成任何规模可观的内河航运。此外，如果一条河流没有分成许多支流或水道，而且在到达海洋之前就流入另一国领土，那么任何国家通过这条河所能进行的贸易决不可能有很大规模；因为占有那另一片领土的国家，始终有能力阻断上游地区与海洋之间的交通。多瑙河航运对巴伐利亚、奥地利和匈牙利各国的用处很小；如果其中任何一国占有多瑙河直至其注入黑海的全部河道，其用处与现在相比就会大得多。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    }
+  ]
+}

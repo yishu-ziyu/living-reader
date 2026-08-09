@@ -31,6 +31,7 @@ const PRINCIPAL_ID = "reader_t009";
 const WORLD_ID = "world_t009_wool";
 const RULESET_ID = "wool-town-v1";
 const FIXED_TIME = "2026-08-09T08:00:00.000Z";
+const CANONICAL_ULID_PATTERN = /^[0-7][0-9A-HJKMNP-TV-Z]{25}$/;
 
 type RecordedStore = {
   inner: InMemoryEventStore;
@@ -106,7 +107,6 @@ async function appendCanonicalBaseline(store: EventStore): Promise<void> {
       authority: "reader",
       integrity: "local",
     },
-    message_id: "seed-graph-1",
     recorded_at: FIXED_TIME,
     payload: {
       graph_revision: 1,
@@ -124,7 +124,6 @@ async function appendCanonicalBaseline(store: EventStore): Promise<void> {
       authority: "system",
       integrity: "local",
     },
-    message_id: "seed-world-1",
     recorded_at: FIXED_TIME,
     payload: {
       world_id: WORLD_ID,
@@ -171,7 +170,6 @@ async function appendRecipeBaseline(
       authority: "reader",
       integrity: "local",
     },
-    message_id: "seed-recipe-graph-1",
     recorded_at: FIXED_TIME,
     payload: {
       graph_revision: 1,
@@ -189,7 +187,6 @@ async function appendRecipeBaseline(
       authority: "system",
       integrity: "local",
     },
-    message_id: "seed-recipe-world-1",
     recorded_at: FIXED_TIME,
     payload: {
       world_id: WORLD_ID,
@@ -237,7 +234,6 @@ async function appendWorldRecord(
       authority: "system",
       integrity: "local",
     },
-    message_id: `manual-world-${version.value + 1}`,
     recorded_at: FIXED_TIME,
     payload: {
       world_id: payload.world_id ?? WORLD_ID,
@@ -354,10 +350,12 @@ describe("T009 world EventStore dispatcher", () => {
     expect(events.map((event) => event.payload.world_revision)).toEqual([1, 1, 1, 1]);
     expect(events.every((event) => !("causation_index" in event.payload))).toBe(true);
     expect(events.every((event) => event.payload.metrics?.cash === 28)).toBe(true);
-    expect(events[0]?.message_id).toContain("reader_world.world_dispatch.v1");
-    expect(events[0]?.message_id).toContain(EXPERIENCE_ID);
-    expect(events[0]?.message_id).toContain("turn-expand");
-    expect(events[0]?.message_id).toContain("index=0");
+    const messageIds = events.map((event) => event.message_id);
+    expect(
+      messageIds.every((id) => CANONICAL_ULID_PATTERN.test(id)),
+    ).toBe(true);
+    expect(new Set(messageIds).size).toBe(4);
+    expect(receipt.message_ids).toEqual(messageIds);
   });
 
   it("records baseline specialization refusal without changing compiled metrics", async () => {
@@ -528,7 +526,7 @@ describe("T009 world EventStore dispatcher", () => {
     ).toEqual({ ok: false, code: "INVALID_STATE" });
   });
 
-  it("returns the original receipt for a duplicate key and appends nothing", async () => {
+  it("returns the stored receipt for a duplicate key and appends nothing", async () => {
     const { store, append_requests } = createRecordedStore();
     await appendCanonicalBaseline(store);
     append_requests.length = 0;
@@ -536,6 +534,12 @@ describe("T009 world EventStore dispatcher", () => {
     const key = agentTurnKey("turn-duplicate", input);
 
     const first = await dispatch(store, input, "turn-duplicate", key);
+    const stored = await store.getIdempotencyReceipt(
+      PRINCIPAL_ID,
+      input.experience_id,
+      key,
+    );
+    if (!stored.ok) throw stored.error;
     const afterFirst = await store.load(EXPERIENCE_ID);
     if (!afterFirst.ok) throw afterFirst.error;
     const countAfterFirst = afterFirst.value.length;
@@ -545,6 +549,7 @@ describe("T009 world EventStore dispatcher", () => {
     const countAfterRetry = afterRetry.value.length;
 
     expect(first).toMatchObject({ duplicate: false, event_count: 4, world_revision: 1 });
+    expect(stored.value?.message_ids).toEqual(first.message_ids);
     expect(retry).toMatchObject({
       ok: true,
       committed: true,
@@ -684,7 +689,6 @@ describe("T009 world EventStore dispatcher", () => {
         authority: "system",
         integrity: "local",
       },
-      message_id: "seed-world-2",
       recorded_at: FIXED_TIME,
       payload: {
         world_id: WORLD_ID,

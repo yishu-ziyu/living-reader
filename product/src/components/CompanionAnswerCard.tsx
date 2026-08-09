@@ -50,9 +50,10 @@ function CompanionAnswerCardInner({ cand }: { cand: BookThoughtCandidate }) {
           <blockquote lang="en">{cand.quote_exact}</blockquote>
           <small data-testid="companion-source-meta">
             {cand.source_snapshot.source_id} ·{" "}
-            {cand.source_snapshot.fragment} · PDF
-            {cand.source_snapshot.pdf_page}/print
-            {cand.source_snapshot.print_page}
+            {cand.source_snapshot.fragment}
+            {cand.source_snapshot.pdf_page === undefined
+              ? ` · print${cand.source_snapshot.print_page}`
+              : ` · PDF${cand.source_snapshot.pdf_page}/print${cand.source_snapshot.print_page}`}
           </small>
         </section>
         <section data-testid="companion-inference-panel">

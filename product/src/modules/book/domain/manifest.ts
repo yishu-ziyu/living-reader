@@ -1,4 +1,4 @@
-import type { BodyNode } from "./types";
+import type { BodyNode, Footnote } from "./types";
 
 export type ParagraphSourceId = `smith.b${number}.c${number}.p${number}`;
 export type ChapterId = `smith.b${number}.c${number}`;
@@ -13,6 +13,10 @@ export type ManifestSourceLocator = {
   volumeId: string;
   resource: string;
   fragment: string;
+};
+
+export type ManifestFootnoteTarget = Footnote & {
+  sourceLocator: ManifestSourceLocator;
 };
 
 export type BookSourceBlock = {
@@ -77,6 +81,7 @@ export type BookManifestV2 = {
   };
   volumes: ManifestVolume[];
   books: ManifestBookPart[];
+  footnotes: ManifestFootnoteTarget[];
   aliases: Record<LegacySourceId, ParagraphSourceId>;
   needsReview: NeedsReviewItem[];
   build: {

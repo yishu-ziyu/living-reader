@@ -23,7 +23,6 @@ html {
 }
 
 body {
-  min-width: 1040px;
   margin: 0;
   background: var(--paper);
 }
@@ -694,6 +693,25 @@ a.footnote-marker:focus-visible {
   display: none;
 }
 
+.world-reopen {
+  display: block;
+  margin: 16px auto;
+  border: 1px solid rgba(59, 45, 29, 0.45);
+  border-radius: 999px;
+  padding: 8px 16px;
+  background: rgba(255, 252, 244, 0.9);
+  color: #3b2d1d;
+  font: 600 12px/1.4 Inter, system-ui, sans-serif;
+  cursor: pointer;
+}
+
+.world-reopen:hover,
+.world-reopen:focus-visible {
+  border-color: #183c32;
+  outline: 2px solid rgba(24, 60, 50, 0.25);
+  outline-offset: 2px;
+}
+
 .world-closed-label {
   margin: 0;
   padding: 24px;
@@ -926,4 +944,20 @@ a.footnote-marker:focus-visible {
   border: 1px solid var(--line);
   background: transparent;
   cursor: pointer;
+}
+
+
+.resume-router {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  color: #536473;
+  background: #f4f7f9;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.resume-router p {
+  margin: 0;
+  font-size: 0.875rem;
+  letter-spacing: 0.04em;
 }

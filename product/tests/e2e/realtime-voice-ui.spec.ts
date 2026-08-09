@@ -220,7 +220,7 @@ test.describe("T011/T024 realtime voice UI", () => {
     page,
   }) => {
     await installVoiceBrowserMock(page, { permission: "denied" });
-    await page.goto("/");
+    await page.goto("/test-harness");
 
     await expect(page.getByTestId("realtime-voice-panel")).toBeVisible();
     await expect(page.getByTestId("voice-state")).toContainText("尚未开始");
@@ -252,7 +252,7 @@ test.describe("T011/T024 realtime voice UI", () => {
     page,
   }, testInfo) => {
     await installVoiceBrowserMock(page, { permission: "denied" });
-    await page.goto("/");
+    await page.goto("/test-harness");
 
     await page.getByTestId("voice-start").click();
     await expect(page.getByTestId("voice-state")).toContainText(
@@ -278,7 +278,7 @@ test.describe("T011/T024 realtime voice UI", () => {
     page,
   }, testInfo) => {
     await installVoiceBrowserMock(page, { permission: "unsupported" });
-    await page.goto("/");
+    await page.goto("/test-harness");
     await page.getByTestId("voice-start").click();
     await expect(page.getByTestId("voice-state")).toContainText(
       "当前浏览器不支持",
@@ -293,7 +293,7 @@ test.describe("T011/T024 realtime voice UI", () => {
     page,
   }) => {
     await installVoiceBrowserMock(page, { permission: "granted" });
-    await page.goto("/");
+    await page.goto("/test-harness");
 
     const panel = page.getByTestId("realtime-voice-panel");
     await expect(panel).toHaveAttribute("data-voice-activity", "resting");
@@ -355,7 +355,7 @@ test.describe("T011/T024 realtime voice UI", () => {
     await page.emulateMedia({ reducedMotion: "reduce" });
     await page.setViewportSize({ width: 390, height: 844 });
     await installVoiceBrowserMock(page, { permission: "denied" });
-    await page.goto("/");
+    await page.goto("/test-harness");
 
     const panel = page.getByTestId("realtime-voice-panel");
     const sourceButton = page.getByRole("button", { name: "PDF 36 · 分工" });
@@ -384,7 +384,7 @@ test.describe("T011/T024 realtime voice UI", () => {
       permission: "granted",
       session: "missing-key",
     });
-    await page.goto("/");
+    await page.goto("/test-harness");
     await page.getByTestId("voice-start").click();
     await expect(page.getByTestId("voice-state")).toContainText(
       "服务端尚未配置 STEPFUN_API_KEY",
@@ -407,7 +407,7 @@ test.describe("T011/T024 realtime voice UI", () => {
   }, testInfo) => {
     await installVoiceBrowserMock(page, { permission: "granted" });
     const agentTurnRequests = await installAgentTurnMock(page);
-    await page.goto("/");
+    await page.goto("/test-harness");
     await page.getByTestId("voice-start").click();
     await expect(page.getByTestId("voice-state")).toContainText("正在聆听");
 
@@ -522,8 +522,9 @@ test.describe("T011/T024 realtime voice UI", () => {
       });
     });
 
-    await page.goto("/");
+    await page.goto("/test-harness");
     await page.getByTestId("voice-start").click();
+    await expect(page.getByTestId("voice-state")).toContainText("正在聆听");
     await page.evaluate(() => {
       (
         window as typeof window & {
@@ -538,15 +539,15 @@ test.describe("T011/T024 realtime voice UI", () => {
     await requestStarted;
 
     await page.getByTestId("voice-stop").click();
-    await expect(page.getByTestId("voice-state")).toContainText("正在停止");
+    await expect(page.getByTestId("voice-state")).toContainText(
+      "通话已停止，麦克风已释放",
+    );
     releaseResponse();
 
     await expect(page.getByTestId("voice-state")).toContainText(
       "通话已停止，麦克风已释放",
     );
-    await expect(page.getByTestId("agent-turn-companion-line")).not.toHaveText(
-      "迟到结果不应出现",
-    );
+    await expect(page.getByTestId("agent-turn-companion-line")).toHaveCount(0);
     expect(requestCount).toBe(1);
     await expect(page.locator("[data-testid^='idea-card-']")).toHaveCount(0);
   });
@@ -556,7 +557,7 @@ test.describe("T011/T024 realtime voice UI", () => {
   }) => {
     await installVoiceBrowserMock(page, { permission: "granted" });
     const agentTurnRequests = await installAgentTurnMock(page);
-    await page.goto("/");
+    await page.goto("/test-harness");
 
     await page.getByTestId("voice-start").click();
     await page.getByTestId("voice-stop").click();
@@ -617,8 +618,9 @@ test.describe("T011/T024 realtime voice UI", () => {
       });
     });
 
-    await page.goto("/");
+    await page.goto("/test-harness");
     await page.getByTestId("voice-start").click();
+    await expect(page.getByTestId("voice-state")).toContainText("正在聆听");
     await page.evaluate(() => {
       const emit = (
         window as typeof window & {
@@ -656,7 +658,7 @@ test.describe("T011/T024 realtime voice UI", () => {
     page,
   }, testInfo) => {
     await installVoiceBrowserMock(page, { permission: "granted" });
-    await page.goto("/");
+    await page.goto("/test-harness");
     await page.getByTestId("voice-start").click();
     await expect(page.getByTestId("voice-state")).toContainText("正在聆听");
 

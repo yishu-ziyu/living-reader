@@ -7,7 +7,7 @@ test.describe("T005 Relation review", () => {
   test("A021–A023: submit, revise, fixture, reject, repropose, accept, stale", async ({
     page,
   }) => {
-    await page.goto("/");
+    await page.goto("/test-harness");
     await expect(page.getByTestId("reading-shell")).toBeVisible();
     await expect(page.getByTestId("world-slot")).toHaveAttribute(
       "data-state",

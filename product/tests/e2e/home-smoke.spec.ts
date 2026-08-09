@@ -1,6 +1,14 @@
 import { expect, test } from "@playwright/test";
 import path from "node:path";
 
+test("root enters the canonical full-book chapter reader", async ({ page }) => {
+  await page.goto("/");
+  await expect(page).toHaveURL(
+    /\/read\/wealth-of-nations\/smith\.b1\.c1$/u,
+  );
+  await expect(page.getByTestId("chapter-reading-shell")).toBeVisible();
+});
+
 test.describe("T002 home smoke · A014", () => {
   test("adapter SourceBlocks, pages 5/19, footnote target, closed world", async ({
     page,
@@ -15,7 +23,7 @@ test.describe("T002 home smoke · A014", () => {
       consoleErrors.push(String(err));
     });
 
-    await page.goto("/");
+    await page.goto("/test-harness");
     await expect(page.getByTestId("reading-shell")).toBeVisible();
     await expect(page.getByText("鲜活阅读器 · 正式入口")).toBeVisible();
 

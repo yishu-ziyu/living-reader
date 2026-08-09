@@ -83,7 +83,8 @@ export type MemoryKind =
   | "read_position"
   | "confusion"
   | "discussion_theme"
-  | "idea_ref";
+  | "idea_ref"
+  | "invitation_question";
 
 export type MemoryOrigin = "reader_confirmed" | "agent_observed";
 

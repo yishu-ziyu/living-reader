@@ -5,7 +5,10 @@ import {
   InlineWorldBlock,
   INLINE_WORLD_FRAME_HEIGHT_PX,
 } from "@/modules/world/components";
-import { committedWorldPresentationFixture } from "./committed-world-presentation.fixture";
+import {
+  committedWorldPresentationFixture,
+  presentationPlanFixture,
+} from "./committed-world-presentation.fixture";
 
 function positionOf(html: string, value: string): number {
   const position = html.indexOf(value);
@@ -22,7 +25,8 @@ describe("T010 InlineWorldBlock", () => {
     const open = renderToStaticMarkup(
       createElement(InlineWorldBlock, {
         state: "open",
-        presentation: committedWorldPresentationFixture(),
+        plan: presentationPlanFixture(),
+        evidence: committedWorldPresentationFixture(),
         onCollapse,
         onReturnToSource: () => undefined,
         returnActionTestId: "evidence-return-market",
@@ -47,7 +51,8 @@ describe("T010 InlineWorldBlock", () => {
     const html = renderToStaticMarkup(
       createElement(InlineWorldBlock, {
         state: "open",
-        presentation: committedWorldPresentationFixture(),
+        plan: presentationPlanFixture(),
+        evidence: committedWorldPresentationFixture(),
         onCollapse: () => undefined,
         onReturnToSource: () => undefined,
         returnActionTestId: "evidence-return-market",
@@ -69,7 +74,7 @@ describe("T010 InlineWorldBlock", () => {
     expect(html).toContain('data-testid="world-event-feed"');
     expect(html).toContain('data-event-sequence="0"');
     expect(html).toContain('data-actor-id="merchant"');
-    expect(html).toContain('merchant:ship:orders_open');
+    expect(html).toContain("merchant:ship:orders_open");
     expect(html).toContain('data-testid="world-metric-supply"');
     expect(html).toContain('data-metric-key="supply"');
     expect(html).toContain('data-metric-value="17"');
@@ -91,11 +96,47 @@ describe("T010 InlineWorldBlock", () => {
     expect(defaultWorld).not.toContain("seed");
   });
 
+  it("returns through the recipe's evidence-backed legacy source alias", () => {
+    const html = renderToStaticMarkup(
+      createElement(InlineWorldBlock, {
+        state: "open",
+        plan: presentationPlanFixture(),
+        evidence: committedWorldPresentationFixture(),
+        onCollapse: () => undefined,
+        onReturnToSource: () => undefined,
+      }),
+    );
+
+    expect(html).toContain('data-testid="evidence-return-source"');
+    expect(html).toContain('data-source-id="smith.b1.c3.market_extent"');
+  });
+
+  it("shows legacy actionless worlds as read-only instead of offering a dead action", () => {
+    const plan = {
+      ...presentationPlanFixture(),
+      actions: [],
+    };
+    const html = renderToStaticMarkup(
+      createElement(InlineWorldBlock, {
+        state: "open",
+        plan,
+        evidence: committedWorldPresentationFixture(),
+        onAction: () => undefined,
+        onCollapse: () => undefined,
+      }),
+    );
+
+    expect(html).toContain('data-testid="world-read-only"');
+    expect(html).toContain("只能回看，不能继续改动");
+    expect(html).not.toContain('data-testid="world-action-expand_market"');
+  });
+
   it("does not introduce a second approval, preview or fullscreen surface", () => {
     const html = renderToStaticMarkup(
       createElement(InlineWorldBlock, {
         state: "open",
-        presentation: committedWorldPresentationFixture(),
+        plan: presentationPlanFixture(),
+        evidence: committedWorldPresentationFixture(),
         onCollapse: () => undefined,
       }),
     );

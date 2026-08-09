@@ -1,0 +1,392 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "locale": "zh-CN",
+  "chapterId": "smith.b1.c6",
+  "translations": [
+    {
+      "sourceId": "smith.b1.c6.p1",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_319"
+      },
+      "contentHash": "1f5765ffb49258ee3a6033318f064aa7079f5d6f4db370cc5bdf3e8fa4066343",
+      "text": "在资本积累和土地私有化以前的早期野蛮社会状态中，取得不同物品所必需的劳动量之间的比例，似乎是能够为这些物品彼此交换提供任何准则的唯一条件。例如，在一个狩猎民族中，如果猎杀一只海狸通常要花费猎杀一只鹿两倍的劳动，那么一只海狸自然应当交换两只鹿，或者说应当值两只鹿。通常由两天或两小时劳动生产出来的东西，其价值自然应当是通常由一天或一小时劳动生产出来的东西的两倍。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c6.p2",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_320"
+      },
+      "contentHash": "44e9637882b2e6542ae09713a687622e06561e93dfa18458a4f20915ce1c43d9",
+      "text": "如果一种劳动比另一种更为艰苦，自然会对这种较大的艰苦程度作出一定补偿；一种劳动一小时的产品，往往可以交换另一种劳动两小时的产品。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c6.p3",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_321"
+      },
+      "contentHash": "1e3d5d335f527c4bfeb468518b6df938738001e3ce19cb58db6cce4cd144a30f",
+      "text": "或者，如果一种劳动需要非同寻常的熟练和才智，人们对这种才能的尊重，自然会使其产品获得超过按所用时间本应具有的价值。这种才能若非经过长期勤勉努力，很少能够获得，而其产品的较高价值，往往不过是对取得这种才能所必需花费的时间和劳动的合理补偿。在社会的发达状态中，对较大艰苦程度和较高技能的这类补偿，通常体现在劳动工资中；而在社会最早期、最野蛮的阶段，大概也必定存在某种同类情形。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c6.p4",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_322"
+      },
+      "contentHash": "1a8dcc97e53783cfe481013f3306eb426c516c5245163db56f3792b8f19b2f03",
+      "text": "在这种状态下，劳动的全部产品都属于劳动者；通常用于取得或生产任何商品的劳动量，是能够调节该商品通常应当购买、支配或换取的劳动量的唯一条件。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c6.p5",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_323"
+      },
+      "contentHash": "9c19af65a93c2f315cb6e17139840bfda8b9bb2579f6584adacdc71445d92323",
+      "text": "一旦资本积累在某些人手中，其中一些人自然会用它使勤勉的人从事工作，为他们提供原料和生活资料，以便通过出售他们的制成品，或通过出售他们的劳动给原料增加的价值而获取利润。在以制成品交换货币、劳动或其他货物时，除了足以支付原料价格和工人工资的部分以外，还必须提供一些东西，作为给这项工作的经营者的利润，因为他在这项冒险事业中拿自己的资本承担了风险。因此，在这种情形下，工人给原料增加的价值分解为两部分：一部分支付他们的工资，另一部分则是他们的雇主就其预付的全部原料资本和工资资本取得的利润。除非他预期从出售工人的制成品中所得，不仅足以补偿自己的资本而且还有剩余，否则雇用他们就对他没有任何好处；而除非他的利润同其资本的规模保持一定比例，否则使用大额资本而非小额资本对他也没有任何好处。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c6.p6",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_324"
+      },
+      "contentHash": "7791e19f6d8fd95499cb4f7b8ccbbb9bd2ca0cefa7e6b720491b1e26c938d9bc",
+      "text": "也许有人会认为，资本利润不过是某种特殊劳动，即监督和管理劳动的工资的另一名称。然而，二者完全不同，受完全不同的原则调节，而且利润同这种假定的监督和管理劳动的数量、艰苦程度或才智毫不成比例。利润完全由所用资本的价值调节，并随这种资本规模的大小而增减。例如，假定在某个地方，制造业资本的普通年利润率为百分之十，那里有两家不同的制造厂，每家都雇用二十名工人，每人每年工资十五英镑，因而每家制造厂每年的工资支出都是三百英镑。再假定一家制造厂每年加工的粗劣原料只值七百英镑，而另一家加工的精细原料则值七千英镑。在这种情况下，一家每年使用的资本总额只有一千英镑，另一家使用的资本总额却有七千三百英镑。因此，按百分之十的利润率，一家的经营者预期每年只获利约一百英镑，另一家的经营者则预期获利约七百三十英镑。但是，尽管他们的利润相差如此悬殊，他们的监督和管理劳动却可能完全相同，或几乎相同。在许多大型企业中，几乎全部这类劳动都交给某个总管事。他的工资恰当地表示了这种监督和管理劳动的价值。虽然在确定其工资时，通常不仅会考虑他的劳动和技能，也会考虑对他的信任，但这种工资从不与他所监督管理的资本保持任何固定比例；而这项资本的所有者，尽管这样摆脱了几乎全部劳动，仍期望自己的利润与资本保持固定比例。因此，在商品价格中，资本利润构成一个与劳动工资完全不同并受完全不同原则调节的组成部分。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c6.p7",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_325"
+      },
+      "contentHash": "87e11664685278f65eb2e906e5c9b43a2295f1aa57745c01b004cc87b162f7df",
+      "text": "在这种状态下，劳动的全部产品并不总是属于劳动者。在多数情况下，他必须同雇用他的资本的所有者分享这种产品。通常用于取得或生产任何商品的劳动量，也不再是能够调节该商品通常应当购买、支配或换取的劳动量的唯一条件。显然，还必须有一个追加的数量，用来支付预付这种劳动的工资并提供其原料的资本的利润。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c6.p8",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_326"
+      },
+      "contentHash": "f717041c82387a8394b874472abd02cc5980f4c673159376b7dad59b78e52607",
+      "text": "一国的土地一旦全部成为私有财产，地主也像其他所有人一样，喜欢在自己从未播种的地方收获，甚至对土地的天然产物也要求地租。森林里的木材、田野里的青草以及大地的一切天然果实，在土地公有时，劳动者只须付出采集它们的辛劳；现在，即使对他来说，也被规定了一个追加价格。于是，他必须为获准采集它们而付费，并且必须把自己的劳动采集或生产出来的东西的一部分交给地主。这一部分，或者等同于它的这一部分的价格，构成土地的地租，并在大多数商品的价格中成为第三个组成部分。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c6.p9",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_327"
+      },
+      "contentHash": "fe8cd95c293857340ba2f3eb261644f91e72b7b9f0691ff4879e890851d6297d",
+      "text": "必须注意，价格的所有不同组成部分的真实价值，分别以它们能够购买或支配的劳动量来衡量。劳动不仅衡量价格中分解为劳动的那一部分的价值，也衡量其中分解为地租的部分和分解为利润的部分的价值。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c6.p10",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_328"
+      },
+      "contentHash": "e25f54ad6bfc2a9a7eec0d8c7c6b1266a20f2ba450ef11400a8c5ff2588543e1",
+      "text": "在任何社会中，每种商品的价格最终都分解为这三个部分中的某一个、某两个或全部三个；而在任何进步社会中，这三个部分都或多或少地作为组成部分进入绝大多数商品的价格。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c6.p11",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_329"
+      },
+      "contentHash": "28d2b127cbbdb9184589bb07e6a9a683e4bb9d48834f4619f9b5b255ecab2396",
+      "text": "例如，在谷物价格中，一部分支付地主的地租，另一部分支付生产谷物所用劳动者和役畜的工资或生活费用，第三部分支付农场主的利润。这三个部分似乎直接或间接地构成谷物的全部价格。也许有人会认为，还需要第四个部分来补偿农场主的资本，或者补偿其役畜及其他农具的磨损。不过，必须考虑到，任何农具，例如一匹役马的价格，本身也是由同样三个部分构成的：饲养它的土地的地租，照料和饲养它的劳动，以及预付这项土地的地租和这项劳动的工资的农场主的利润。因此，尽管谷物的价格可以支付马匹的价格及其生活费用，其全部价格最终仍直接或间接地分解为地租、劳动和利润这三个相同的部分。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c6.p12",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_330"
+      },
+      "contentHash": "c889963e8eb37f62062bd4fbe9c04f7f265af52f7e414632d1072167c7584f36",
+      "text": "在面粉或粗磨粉的价格中，我们必须在谷物价格之外，加上磨坊主的利润及其雇工的工资；在面包价格中，还要加上面包师的利润及其雇工的工资；而在这两者的价格中，都要加上把谷物从农场主家运到磨坊主家，再从磨坊主家运到面包师家的劳动，以及预付这种劳动工资者的利润。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c6.p13",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_331"
+      },
+      "contentHash": "070576c0a500316092de80ebb2a897233c8127a8bc68d327d1a76a57b7f3980b",
+      "text": "亚麻的价格和谷物的价格一样，分解为同样三个部分。在亚麻布的价格中，我们必须在这一价格之外，加上亚麻整理工、纺纱工、织布工、漂白工等人的工资，以及他们各自雇主的利润。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c6.p14",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_332"
+      },
+      "contentHash": "a28ac3dddd116c48fb102aaed4cf5a73ab156ac42059159eda6f5df7993ecc57",
+      "text": "任何特定商品的加工制造程度越高，其价格中分解为工资和利润的部分，相对于分解为地租的部分所占的比例也越大。在制造加工过程中，不仅利润的项数增加，而且后一道工序的每项利润都大于前一道工序的利润，因为产生这项利润的资本必定总是更大。例如，雇用织布工的资本必定大于雇用纺纱工的资本，因为它不仅要连同利润一起补偿后一项资本，此外还要支付织布工的工资；而利润总是必须与资本保持一定比例。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c6.p15",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_333"
+      },
+      "contentHash": "be73bd93082c59721750599a5043cee14d502d155789fd74f02660120849bcf3",
+      "text": "不过，即使在最进步的社会中，也总有少数商品的价格只分解为两个部分，即劳动工资和资本利润；还有数量更少的商品，其价格完全由劳动工资构成。例如，在海鱼价格中，一部分支付渔民的劳动，另一部分支付用于渔业的资本的利润。地租极少构成其价格的一部分，不过有时确实如此，我将在后文说明。河流渔业的情形则不同，至少欧洲大部分地区是如此。鲑鱼渔场要支付租金，这种租金虽很难称为土地的地租，却和工资与利润一样，构成鲑鱼价格的一部分。在苏格兰某些地区，有少数穷人以沿海岸采集那些通常称为苏格兰卵石的杂色小石为业。石匠付给他们的价格完全是他们的劳动工资；地租和利润都不构成其中任何部分。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c6.p16",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_334"
+      },
+      "contentHash": "f99a3db2a7064253cf946d468f2452918dcc0a371ae3557f8d0f6a42878ffa20",
+      "text": "但是，任何商品的全部价格最终仍必定分解为这三个部分中的某一个、某两个或全部三个；因为在支付土地的地租，以及生产、加工制造并把商品运到市场所用全部劳动的价格以后，无论还剩下价格的哪一部分，都必然成为某个人的利润。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c6.p17",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_335"
+      },
+      "contentHash": "1f50823a832d5911b90a7b6b28720bedbb29c861cc6896c6efd73d0450bb9fea",
+      "text": "正如每一种特定商品的价格或交换价值，单独来看，都分解为这三个部分中的某一个、某两个或全部三个一样；构成各国劳动全部年产物的所有商品，合起来看，其价格也必定分解为同样三个部分，并以劳动工资、资本利润或土地地租的形式，分配给该国不同居民。每个社会每年由劳动采集或生产的一切，换言之，其全部价格，就以这种方式在一开始分配给社会中的一些不同成员。工资、利润和地租，是一切收入以及一切交换价值的三个原始来源。所有其他收入最终都来自这三者中的某一个。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c6.p18",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_336"
+      },
+      "contentHash": "4e1d7b8c5a0c02d3a2208040ccba3b2c00c7215de7316481b4a37144fcc2e071",
+      "text": "任何从属于自己的基金取得收入的人，都必定从自己的劳动、资本或土地中取得收入。来自劳动的收入称为工资。由管理或使用资本的人从资本中取得的收入，称为利润。不亲自使用资本而把它借给他人的人从中取得的收入，称为利息或资金使用费。这是借款人因借助资金的使用而获得谋取利润的机会，向贷款人支付的报酬。这项利润的一部分自然属于借款人，因为他承担使用资金的风险和辛劳；另一部分则属于贷款人，因为他为借款人提供了取得这项利润的机会。资金利息总是一种派生收入；如果不从使用资金所得的利润中支付，就必须从其他某种收入来源中支付，除非借款人也许是个挥霍者，为支付第一笔债务的利息而借下第二笔债。完全来自土地的收入称为地租，属于地主。农场主的收入一部分来自他的劳动，一部分来自他的资本。对他而言，土地只是一种工具，使他能够赚取这项劳动的工资，并取得这项资本的利润。一切税收以及以税收为基础的一切收入，各种薪金、抚恤金和年金，最终都来自这三个原始收入来源中的某一个，并直接或间接地从劳动工资、资本利润或土地地租中支付。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c6.p19",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_337"
+      },
+      "contentHash": "b1dd4b381c6d9160275f200e53db96495cbd660cf7811a36b4df3e6dd6aa1ec2",
+      "text": "当这三种不同的收入属于不同的人时，它们很容易区分；但是，当它们属于同一个人时，至少在日常语言中，有时会相互混淆。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c6.p20",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_338"
+      },
+      "contentHash": "bb6a384924398aaf2d2201f05962357d4f4a34100ebd14d75a589431a77d772e",
+      "text": "一位亲自经营自己部分地产的绅士，在支付耕作费用后，应当既取得地主的地租，又取得农场主的利润。然而，他往往把自己的全部收益都称为利润，从而至少在日常语言中把地租同利润混淆起来。我们北美和西印度群岛的大多数种植园主都处于这种情况。他们大多数亲自经营自己的地产，因此我们很少听人谈论种植园的地租，却经常听到种植园的利润。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c6.p21",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_339"
+      },
+      "contentHash": "30a95736f8ec14d3d61501d252d2f5f6772644ca8b35d0a55a7cfca3fedbf852",
+      "text": "普通农场主很少雇用任何监工来指导农场的总体作业。他们通常也亲自动手，作为扶犁者、耙地者等，从事大量劳动。因此，收成在支付地租后剩下的部分，不仅应当补偿他们用于耕作的资本及其普通利润，而且应当支付他们作为劳动者和监工应得的工资。然而，在支付地租和维持资本后剩下的一切，都称为利润。但工资显然构成其中一部分。农场主既然省下了这些工资，就必然获得了这些工资。因此，在这种情况下，工资同利润混淆起来了。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c6.p22",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_340"
+      },
+      "contentHash": "1529a85718a49a36b129a71e143faedd64d8684184988661a0afe89cc8696c2c",
+      "text": "一个独立的制造者，如果拥有足够的资本，既能购买原料，又能在把制成品运到市场以前维持自己的生活，那么他应当既取得一个在师傅手下做工的雇工的工资，又取得这位师傅通过出售雇工的制成品所获的利润。然而，他的全部所得通常都称为利润；在这种情况下，工资也同利润混淆起来了。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c6.p23",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_341"
+      },
+      "contentHash": "5bc88045f2f33de337061753bcc1bc7f721053942b73599402b5617f48021222",
+      "text": "一个亲手耕作自家园地的园丁，在自己一人身上兼具地主、农场主和劳动者三种不同身份。因此，他的产品应当向他支付第一种身份的地租、第二种身份的利润和第三种身份的工资。然而，这一切通常都被视为他的劳动所得。在这种情况下，地租和利润都同工资混淆起来了。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c6.p24",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_342"
+      },
+      "contentHash": "52c1f41336587848e4f05bc919ba6f9ce9d73d17bbfdaf65c259c36d45afa151",
+      "text": "在文明国家中，只有少数商品的交换价值仅由劳动产生，而地租和利润对绝大多数商品的交换价值都有很大贡献；因此，该国劳动的年产物，总是足以购买或支配比生产、加工和把这种产物运到市场所使用的劳动多得多的劳动量。如果社会每年都雇用它每年所能购买的全部劳动，那么由于劳动量每年都会大幅增加，以后每一年的产物价值也会远远大于前一年。然而，没有一个国家把全部年产物都用于维持勤勉者。游手好闲者到处都消费其中很大一部分；而根据年产物每年在这两类不同的人之间分配比例的不同，其普通价值或平均价值必定逐年增加、逐年减少，或者年复一年保持不变。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    }
+  ]
+}

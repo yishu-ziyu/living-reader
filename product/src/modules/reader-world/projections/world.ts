@@ -32,6 +32,15 @@ export function foldWorld(
         view.graph_revision = p.graph_revision;
         break;
       }
+      case "reader_world.world.seeded.v2": {
+        const p = e.payload;
+        view.seeded = true;
+        view.world_id = p.world_id;
+        view.seed = p.seed;
+        view.ruleset_id = p.ruleset_id;
+        view.graph_revision = p.graph_revision;
+        break;
+      }
       case "reader_world.world.event_recorded.v1": {
         const p = e.payload;
         worldEvents.push({

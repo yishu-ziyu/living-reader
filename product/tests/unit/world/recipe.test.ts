@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   compileReviewedRecipe,
   getReviewedRecipe,
+  listReviewedRecipeIdsForSource,
   listReviewedRecipes,
   parseWorldRecipe,
 } from "@/modules/world";
@@ -54,10 +55,21 @@ describe("T053 reviewed world recipes", () => {
     ]);
   });
 
+  it("scopes each reviewed recipe to its canonical and legacy source anchor", () => {
+    expect(listReviewedRecipeIdsForSource("smith.b1.c1.p1")).toEqual([
+      "smith.b1.division-deepening.v1",
+    ]);
+    expect(listReviewedRecipeIdsForSource("smith.b1.c3.market_extent")).toEqual([
+      "smith.b1.market-extent.v1",
+    ]);
+    expect(listReviewedRecipeIdsForSource("smith.b1.c1.p2")).toEqual([]);
+  });
+
   it("strictly rejects missing, unknown, and nested unknown fields", () => {
     const recipe = structuredClone(listReviewedRecipes()[0]!);
     const withUnknown = { ...recipe, unexpected: true };
-    const { source_quote: _omitted, ...missing } = recipe;
+    const missing = structuredClone(recipe);
+    Reflect.deleteProperty(missing, "source_quote");
     const nestedUnknown = {
       ...recipe,
       source_locator: { ...recipe.source_locator, page_number: 36 },

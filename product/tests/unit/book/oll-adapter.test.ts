@@ -1,4 +1,11 @@
-import { readFileSync } from "node:fs";
+import {
+  mkdirSync,
+  mkdtempSync,
+  readFileSync,
+  rmSync,
+  writeFileSync,
+} from "node:fs";
+import os from "node:os";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
 import {
@@ -11,6 +18,7 @@ import {
 } from "@/modules/book/domain";
 import {
   compileWealthOfNationsFromFragments,
+  loadBookManifest,
   loadWealthOfNationsBook,
   parseOllFootnoteFragment,
   parseOllParagraphFragment,
@@ -53,6 +61,17 @@ describe("OLL adapter · exact quotes & pages", () => {
     expect(quoteFromBody(parsed.value.body)).toBe(parsed.value.quote);
   });
 
+  it("excludes OLL page-break metadata from source text and hashes", () => {
+    const parsed = parseOllParagraphFragment(
+      '<p id="Smith_0206-01_236">Before <span class="pb"><span class="decoration">Edition: current; Page: </span><span class="bracket">[</span>6<span class="bracket">]</span></span>after.</p>',
+    );
+    expect(parsed.ok).toBe(true);
+    if (!parsed.ok) return;
+    expect(parsed.value.quote).toBe("Before after.");
+    expect(parsed.value.body).toEqual([{ type: "text", text: "Before after." }]);
+    expect(parsed.value.quote).not.toContain("Edition:");
+  });
+
   it("loads book with OLL print pages 5/19 and PDF 36/45", async () => {
     const book = await loadWealthOfNationsBook(root);
     expect(book.ok).toBe(true);
@@ -70,6 +89,32 @@ describe("OLL adapter · exact quotes & pages", () => {
     });
     expect(division.sourceLocator.fragment).toBe("Smith_0206-01_235");
     expect(market.sourceLocator.fragment).toBe("Smith_0206-01_251");
+  });
+
+  it("reconstructs both legacy Agent aliases from canonical manifest v2 blocks", async () => {
+    const manifest = await loadBookManifest("wealth-of-nations", root);
+    const book = await loadWealthOfNationsBook(root);
+    expect(manifest.ok).toBe(true);
+    expect(book.ok).toBe(true);
+    if (!manifest.ok || !book.ok) return;
+
+    const canonicalBlocks = manifest.value.books.flatMap((bookPart) =>
+      bookPart.chapters.flatMap((chapter) => chapter.sourceBlocks),
+    );
+    for (const sourceKey of ["division", "market"] as const) {
+      const alias = DOMAIN_SOURCE_IDS[sourceKey];
+      const canonicalId = manifest.value.aliases[alias];
+      const canonical = canonicalBlocks.find(
+        (block) => block.sourceId === canonicalId,
+      );
+      const reconstructed = getSourceBlockById(book.value.sourceBlocks, alias);
+      expect(canonical).toBeDefined();
+      expect(reconstructed.ok).toBe(true);
+      if (!canonical || !reconstructed.ok) continue;
+      expect(reconstructed.value.body).toEqual(canonical.body);
+      expect(reconstructed.value.quote).toBe(canonical.quote);
+      expect(reconstructed.value.contentHash).toBe(canonical.contentHash);
+    }
   });
 });
 
@@ -133,6 +178,78 @@ describe("footnote closure", () => {
     expect(result.error.code).toBe("source_unavailable");
   });
 });
+
+describe("runtime manifest v2 cutover", () => {
+  it("rejects a well-shaped legacy sources manifest instead of loading fragments", async () => {
+    const runtimeRoot = writeRuntimeManifest({
+      schemaVersion: 1,
+      bookId: "wealth-of-nations",
+      title: "Legacy title",
+      author: "Adam Smith",
+      edition: {
+        editionId: "legacy",
+        revision: "legacy",
+        language: "en",
+        label: "Legacy",
+        sourceUri: "https://example.invalid/legacy",
+        contentHash: "legacy",
+      },
+      sources: [
+        {
+          sourceKey: "division",
+          sourceId: DOMAIN_SOURCE_IDS.division,
+          readingOrder: 1,
+          title: "Division",
+          chapterLabel: "Book I",
+          fragment: "legacy-fragment",
+          pdfPage: 1,
+          printPage: 1,
+          glossZh: "旧版",
+          expectedQuote: "Legacy quote",
+          expectedContentHash: "legacy-hash",
+          fragmentPath: "fragments/legacy.html",
+        },
+      ],
+    });
+    try {
+      await expect(loadWealthOfNationsBook(runtimeRoot)).resolves.toMatchObject({
+        ok: false,
+        error: { code: "invalid_manifest" },
+      });
+    } finally {
+      rmSync(runtimeRoot, { recursive: true, force: true });
+    }
+  });
+
+  it.each([
+    ["unknown schema", { schemaVersion: 3 }],
+    ["malformed root", null],
+    ["malformed v2", { schemaVersion: 2, bookId: "wealth-of-nations" }],
+  ])("rejects %s fail-closed", async (_label, manifest) => {
+    const runtimeRoot = writeRuntimeManifest(manifest);
+    try {
+      await expect(loadWealthOfNationsBook(runtimeRoot)).resolves.toMatchObject({
+        ok: false,
+        error: { code: "invalid_manifest" },
+      });
+    } finally {
+      rmSync(runtimeRoot, { recursive: true, force: true });
+    }
+  });
+});
+
+function writeRuntimeManifest(manifest: unknown): string {
+  const runtimeRoot = mkdtempSync(
+    path.join(os.tmpdir(), "living-reader-manifest-v2-"),
+  );
+  const bookDir = path.join(
+    runtimeRoot,
+    "public/books/wealth-of-nations",
+  );
+  mkdirSync(bookDir, { recursive: true });
+  writeFileSync(path.join(bookDir, "manifest.json"), JSON.stringify(manifest));
+  return runtimeRoot;
+}
 
 describe("manifest fail-closed shape", () => {
   it("sources non-array → invalid_manifest without throw", () => {

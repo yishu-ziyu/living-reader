@@ -18,6 +18,7 @@ const bridgeHostsTarget = bridgesEnabled
   : "./src/components/bridge-hosts.prod.tsx";
 
 const nextConfig: NextConfig = {
+  allowedDevOrigins: ["127.0.0.1"],
   // Playwright uses an isolated directory so E2E can run while the user's
   // ordinary `.next` dev server remains open.
   distDir: process.env.NEXT_DIST_DIR ?? ".next",

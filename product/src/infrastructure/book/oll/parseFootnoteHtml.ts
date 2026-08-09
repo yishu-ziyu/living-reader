@@ -13,10 +13,10 @@ export function parseOllFootnoteFragment(
     return err("invalid_fragment", "Footnote fragment empty");
   }
 
-  const idMatch =
-    fragmentHtml.match(
-      /<div\b[^>]*\bid="([^"]+)"[^>]*class="[^"]*type-footnote[^"]*"/i,
-    ) || fragmentHtml.match(/id="(lf0206-01_footnote_nt\d+)"/i);
+  const rootTag = fragmentHtml.match(
+    /<div\b[^>]*class="[^"]*\btype-footnote\b[^"]*"[^>]*>/i,
+  );
+  const idMatch = rootTag?.[0].match(/\bid="([^"]+)"/i);
   if (!idMatch) {
     return err("invalid_fragment", "Footnote fragment missing id");
   }
@@ -47,15 +47,10 @@ export function parseOllFootnoteFragment(
   const back = fragmentHtml.match(
     /<a\b[^>]*\bhref="#([^"]+)"[^>]*>([\s\S]*?)<\/a>/i,
   );
-  const marker = back
-    ? decodeBasicEntities(stripTags(back[2])).trim()
-    : "";
+  const marker = back ? textFromHtml(back[2]) : "";
   const backRefId = back?.[1];
 
-  const pMatch = fragmentHtml.match(/<p\b[^>]*>([\s\S]*?)<\/p>/i);
-  let text = pMatch
-    ? decodeBasicEntities(stripTags(pMatch[1])).trim()
-    : decodeBasicEntities(stripTags(fragmentHtml)).trim();
+  let text = textFromHtml(fragmentHtml);
   if (marker && text.startsWith(marker)) {
     text = text.slice(marker.length).trim();
   }
@@ -81,16 +76,20 @@ function escapeRegExp(s: string): string {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-function stripTags(html: string): string {
-  return html.replace(/<[^>]+>/g, "");
+function textFromHtml(html: string): string {
+  return decodeBasicEntities(html.replace(/<[^>]+>/g, " "))
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function decodeBasicEntities(text: string): string {
   return text
-    .replace(/&#x2019;/gi, "\u2019")
-    .replace(/&#x2018;/gi, "\u2018")
-    .replace(/&#8217;/g, "\u2019")
-    .replace(/&#8216;/g, "\u2018")
+    .replace(/&#x([0-9a-f]+);/gi, (_, value: string) =>
+      String.fromCodePoint(Number.parseInt(value, 16)),
+    )
+    .replace(/&#([0-9]+);/g, (_, value: string) =>
+      String.fromCodePoint(Number.parseInt(value, 10)),
+    )
     .replace(/&apos;/g, "'")
     .replace(/&quot;/g, '"')
     .replace(/&lt;/g, "<")

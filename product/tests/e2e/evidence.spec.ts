@@ -91,7 +91,7 @@ async function bridgeCall<T>(
 }
 
 async function resetPlayableBaseline(page: Page) {
-  await page.goto("/");
+  await page.goto("/test-harness");
   await expect(page.getByTestId("reading-shell")).toBeVisible();
   await page.waitForFunction(
     () => (window as TestWindow).__T009_AGENT_TURN__?.ready === true,
@@ -150,14 +150,17 @@ async function expectNoWorldApprovalUi(page: Page) {
 
 async function expectEvidenceExactness(page: Page, committed: WorldSnapshot) {
   const source = page.getByTestId("source-block-market");
-  const sourceQuote = await page.getByTestId("source-block-market-quote").innerText();
+  const sourceQuote = await page
+    .getByTestId("source-block-market-quote")
+    .locator("span:not(.inline-margin-note)")
+    .evaluateAll((nodes) => nodes.map((node) => node.textContent ?? "").join(""));
   const sourceLocator = await source.getAttribute("data-source-locator");
   expect(sourceLocator).toBe("Smith_0206-01_251");
 
   const world = page.getByTestId("world-action-surface");
   const eventRow = world.locator('[data-testid^="world-event-row-"]').first();
   await expect(eventRow).toBeVisible();
-  const eventSummary = await eventRow.innerText();
+  const eventSummary = await eventRow.locator("p").innerText();
   const eventMeta = await eventRow.evaluate((node) => ({
     actor: node.getAttribute("data-actor-id"),
     sequence: node.getAttribute("data-event-sequence"),
@@ -168,22 +171,20 @@ async function expectEvidenceExactness(page: Page, committed: WorldSnapshot) {
   await expect(evidence).toBeVisible();
   await expect(evidence).toHaveAttribute("data-source-id", MARKET_SOURCE_ID);
   await expect(evidence).toHaveAttribute("data-source-locator", sourceLocator!);
-  const evidenceToggle = page.getByTestId("evidence-toggle");
-  await expect(evidenceToggle).toBeVisible();
   await expect(evidence).toHaveJSProperty("open", false);
   await expect(evidence.locator('[data-evidence-field="quote"]')).toBeHidden();
   await expect(evidence.locator('[data-evidence-field="event"]')).toBeHidden();
 
-  await evidenceToggle.click();
+  await page.getByTestId("evidence-toggle").click();
   await expect(evidence).toHaveJSProperty("open", true);
   await expect(evidence.locator('[data-evidence-field="quote"]')).toBeVisible();
-  expect(
-    await evidence.locator('[data-evidence-field="quote"]').innerText(),
-  ).toBe(sourceQuote);
+  await expect(evidence.locator('[data-evidence-field="quote"]')).toHaveText(
+    sourceQuote,
+  );
 
   const evidenceEvent = evidence.locator('[data-evidence-field="event"]');
   await expect(evidenceEvent).toBeVisible();
-  expect(await evidenceEvent.innerText()).toContain(eventSummary);
+  await expect(evidenceEvent.locator("p")).toHaveText(eventSummary);
   await expect(evidenceEvent).toHaveAttribute("data-actor-id", eventMeta.actor!);
   await expect(evidenceEvent).toHaveAttribute(
     "data-event-sequence",
@@ -193,6 +194,24 @@ async function expectEvidenceExactness(page: Page, committed: WorldSnapshot) {
     "data-world-revision",
     String(committed.world_revision),
   );
+  await expect(eventRow).toHaveAttribute("data-actor-id", eventMeta.actor!);
+  await expect(eventRow).toHaveAttribute(
+    "data-event-sequence",
+    eventMeta.sequence!,
+  );
+  await expect(eventRow).toHaveAttribute(
+    "data-world-revision",
+    String(committed.world_revision),
+  );
+
+  await expect(page.getByTestId("evidence-runtime")).toBeVisible();
+  await expect(page.getByTestId("evidence-world-revision")).toHaveText(
+    String(committed.world_revision),
+  );
+  await expect(page.getByTestId("evidence-ruleset-id")).toHaveText(
+    "wool-town-v1",
+  );
+  await expect(page.getByTestId("evidence-seed")).toHaveText("42");
 }
 
 test.beforeEach(async ({ page }) => {
@@ -209,7 +228,7 @@ test.describe("T010 / A009 EvidenceBlock and source return", () => {
     const committed = await submitTextAction(page);
     await expectEvidenceExactness(page, committed);
 
-    const returnToMarket = page.getByTestId("evidence-return-market");
+    const returnToMarket = page.getByTestId("evidence-return-source");
     await expect(returnToMarket).toBeVisible();
     await returnToMarket.click();
     await expect(page.getByTestId("source-block-market")).toBeFocused();

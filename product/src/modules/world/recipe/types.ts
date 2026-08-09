@@ -133,10 +133,15 @@ export type WorldDefinition = Readonly<{
   source_quote: string;
   claim_type: RecipeClaimType;
   mechanism_id: string;
+  mechanism_title: string;
+  mechanism_summary: string;
   ruleset: WoolTownRuleset;
   initial_state: WorldState;
   action_ids: readonly WorldActionId[];
   actors: readonly RecipeActor[];
+  stocks: readonly RecipeStock[];
+  flows: readonly RecipeFlow[];
+  actions: readonly RecipeAction[];
   metrics: readonly RecipeMetric[];
   visual_grammar: RecipeVisualGrammar;
 }>;

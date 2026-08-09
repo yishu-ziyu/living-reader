@@ -1,0 +1,840 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "locale": "zh-CN",
+  "chapterId": "smith.b4.c9",
+  "translations": [
+    {
+      "sourceId": "smith.b4.c9.p1",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_432"
+      },
+      "contentHash": "404170fb5bf5474d011d14d2a46a80100cd1ce0c10a9b3710b6caca6a9a25917",
+      "text": "政治经济学的农业体系，不需要像我认为有必要对重商主义或商业体系所作的那样，给予如此冗长的说明。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p2",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_433"
+      },
+      "contentHash": "3b6862798e5fbf37eb4fdfe4728b9e52520b26d5a0bcd553bb1f53251f6be5ee",
+      "text": "据我所知，那种把土地的产物说成每个国家收入和财富唯一源泉的体系，从未被任何国家采用过，目前也只存在于法国少数几位博学而富有才智之人的思辨之中。对于一种从未在世界任何地方造成过危害，而且很可能永远也不会造成任何危害的体系，当然不值得花很大篇幅考察它的错误。不过，我将尽力把这个极富才智的体系的主要轮廓解释得尽可能清楚。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p3",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_434"
+      },
+      "contentHash": "d4e823d0ae73e9867026537ad13b6f52183518adc7c14b49c7903351cf1e66f8",
+      "text": "路易十四的著名大臣科尔贝尔先生为人正直，极为勤勉，熟悉各种细节；在审查公共账目方面经验丰富、洞察敏锐；总之，他才干卓越，从各方面来说，都很适合在公共收入的征收和支出中建立章法和良好秩序。不幸的是，这位大臣接受了重商主义体系的一切偏见；这种体系就其本性和实质而言，是一种限制和管制的体系，几乎必然会合乎一个勤恳而埋头苦干的事务家的心意，因为他一向习惯于管理公共机关的各个部门，并建立必要的检查和控制，使每个部门都局限于自身适当的范围之内。他试图按照管理公共机关各部门的同一种模式，管理一个大国的产业和商业；他没有按照平等、自由和正义的宽宏原则，允许每个人以自己的方式追求自身利益，而是赋予某些产业部门非同寻常的特权，同时又对其他部门施加同样非同寻常的限制。他不仅像欧洲其他大臣一样，倾向于更多地鼓励城市产业而不是乡村产业；而且为了扶持城市产业，他甚至愿意压抑并抑制乡村产业。为了使城市居民能够得到廉价的食品，从而鼓励制造业和对外贸易，他完全禁止谷物出口，由此使乡村居民无法在任何国外市场上出售其劳动产物中远为最重要的部分。这项禁令，加上法国古老的省区法律对谷物从一省运往另一省所施加的限制，以及几乎所有省份对耕作者征收的专横而有辱人格的赋税，使这个国家的农业受到阻碍和压抑，远远低于它在如此肥沃的土壤和如此宜人的气候下本来自然会达到的状况。全国各地都或多或少地感受到了这种受阻和萧条的状态，人们也开始从许多不同方面探究其原因。其中一个原因，似乎就是科尔贝尔先生所建立的制度重视城市产业而轻视乡村产业。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p4",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_435"
+      },
+      "contentHash": "dc1ee9ca790b52b07e453f005c375abd038651a0b59afc9eac889ecf8f261725",
+      "text": "俗话说，如果一根棍子朝一个方向弯得太过，要把它弄直，就必须朝相反方向弯同样大的程度。那些提出把农业说成每个国家收入和财富唯一源泉这一体系的法国哲学家，似乎采用了这句俗谚所表达的准则；正如在科尔贝尔先生的方案中，城市产业相对于乡村产业而言无疑被估价过高一样，在他们的体系中，城市产业似乎也同样无疑被估价过低。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p5",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_436"
+      },
+      "contentHash": "26c3d30598a959e70e20fc53a4e417c5c6e7efc43ef096358a640efffbd17111",
+      "text": "凡是曾被认为以任何方式对一国土地和劳动的年产物有所贡献的各个阶层，他们都将其分为三类。第一类是土地所有者阶级。第二类是耕作者，即农场主和乡村劳动者阶级，他们特别尊称其为生产阶级。第三类是工匠、制造业者和商人阶级，他们试图用“不结果实阶级”或“非生产阶级”这种带有贬抑意味的名称来贬低他们。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p6",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_437"
+      },
+      "contentHash": "546d8287e84846ef589ef027741c413e8fffc962677fb3c9528905b87157e553",
+      "text": "所有者阶级通过他们有时可能用于改良土地的费用，即用于修建或维护土地上的建筑物、排水设施、围栏及其他改良设施的费用，对年产物作出贡献；这些设施使耕作者能够用同样的资本获得更多产物，从而支付更多地租。这一增加的地租，可以看作所有者因把这些费用或资本用于改良土地而应得的利息或利润。在这个体系中，这类费用称为土地费用（depenses foncieres）。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p7",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_438"
+      },
+      "contentHash": "af0be0f8a2c201879f7f1f42502021c9a4cd795fc7a50a2cca9e0f820cd6b073",
+      "text": "耕作者或农场主通过他们用于土地耕作的费用，对年产物作出贡献；这些费用在这个体系中称为原始费用和年度费用（depenses primitives et depenses annuelles）。原始费用包括农具、牲畜、种子，以及在农场主承租的第一年至少大部分时间内，或者说在他能够从土地取得一些回报以前，维持其家庭、仆役和牲畜的费用。年度费用包括种子、农具的磨损，以及每年维持农场主的仆役和牲畜的费用；他的家庭成员中凡可视为受雇从事耕作的部分，其维持费用也包括在内。他支付地租后留下的那部分土地所产之物，应当足以：第一，在合理期限内，至少在他的承租期内，补偿他的全部原始费用，连同资本的普通利润；第二，每年补偿他的全部年度费用，也连同资本的普通利润。这两类费用是农场主用于耕作的两项资本；除非这些资本连同合理利润定期得到补偿，否则他便无法在与其他行业相同的条件下经营自己的行业，而出于对自身利益的考虑，必定会尽快放弃这一行业，另谋他业。因此，为了使农场主能够继续经营而必不可少的那部分土地所产之物，应当视为专供耕作、不可侵犯的一项基金；如果地主侵占它，就必然会减少自己土地的产物，而且不出几年，他不仅会使农场主无力支付这种苛索的地租，就连本来可以从土地取得的合理地租也无力支付。真正属于地主的地租，仅仅是在最充分地偿付为取得总产物或全部产物而必须预先支出的全部必要费用之后所留下的纯产物。正是因为耕作者的劳动在完全偿付所有这些必要费用之外，还会提供这种纯产物，所以在这个体系中，这一阶级的人才特别以“生产阶级”这一光荣称号区别于其他阶级。出于同一原因，他们的原始费用和年度费用在这个体系中称为生产性费用，因为这些费用不仅补偿自身的价值，还促使这种纯产物每年再生产出来。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p8",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_439"
+      },
+      "contentHash": "276f5aefb78bca635451b0c58f31727f1083841e322cf99a9ef8356ee245ef39",
+      "text": "所谓土地费用，也就是地主用于改良土地的支出，在这个体系中也被冠以生产性费用这一美称。在这些费用连同资本的普通利润，尚未由地主从土地取得的增加地租完全偿还以前，这一增加的地租无论对教会还是对国王而言，都应被视为神圣不可侵犯；既不应缴纳什一税，也不应承担其他赋税。否则，教会因阻碍土地改良，也就阻碍了自身什一税在未来的增长；国王也同样阻碍了自身赋税在未来的增长。因此，在秩序良好的状态下，这些土地费用不仅最充分地再生产出自身的价值，而且经过一定时间后还会促成一种纯产物的再生产，所以在这个体系中，它们被视为生产性费用。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p9",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_440"
+      },
+      "contentHash": "9568dd44ecedcf57b57b18ffdec18e1bb145a809bf344df588913dc4a648d87d",
+      "text": "然而，在这个体系中，地主的土地费用，加上农场主的原始费用和年度费用，是仅有的三类被视为具有生产性的费用。所有其他费用和所有其他阶层的人，甚至那些在人们通常的观念中被视为生产性最强的人，在这种关于事物的说明中，都被说成完全不结果实、完全不具有生产性。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p10",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_441"
+      },
+      "contentHash": "37aa05b0aa13cc607e772ad6cad83bf1da1cdd5451d2ee928bf643e33390fda8",
+      "text": "尤其是工匠和制造业者；在人们通常的观念中，他们的产业大大增加了土地原生产物的价值，而在这个体系中，他们却被说成是一个完全不结果实、完全不具有生产性的阶级。据说，他们的劳动只是补偿雇用他们的资本及其普通利润。这项资本由雇主预付给他们的材料、工具和工资构成，是指定用于雇用和维持他们的基金。这项资本的利润，则是指定用于维持其雇主的基金。雇主既然向他们预付受雇工作所必需的材料、工具和工资的资本，也就向自己预付自身生活所必需的费用，而他通常按照自己预期从他们的产品售价中获得的利润来确定这笔生活费用。如果产品的价格除了偿还他预付给工人的材料、工具和工资之外，不能偿还他预付给自己的生活费用，那么显然就没有偿还他为产品支出的全部费用。因此，制造业资本的利润并不像土地的地租那样，是在完全偿还为取得它而必须支出的全部费用之后留下的纯产物。农场主的资本和制造业主的资本一样，会给他带来利润；此外，农场主的资本还会给另一个人带来地租，而制造业主的资本却不会。因此，用于雇用和维持工匠及制造业者的费用，可以说只不过延续了其自身价值的存在，并不生产任何新价值。所以，它完全是一种不结果实、非生产性的费用。相反，用于雇用和维持农场主及乡村劳动者的费用，除延续其自身价值的存在外，还生产出一种新价值，即地主的地租。所以，它是一种生产性费用。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p11",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_442"
+      },
+      "contentHash": "924d8f55522e7b0d4a8670e63841c642630ee706e8f9ae2ac28f44726c978599",
+      "text": "商业资本同制造业资本一样不结果实、不具有生产性。它只延续自身价值的存在，而不生产任何新价值。它的利润，只是在雇主运用这项资本期间，或者说直到他收到资本回报以前，对他预付给自己的生活费用的偿还。这些利润只是对运用这项资本所必须支出的一部分费用的偿还。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p12",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_443"
+      },
+      "contentHash": "cba8977cf0f45c3875493b9b89869119cd42eca077d9fdf44f45a99535d4f926",
+      "text": "工匠和制造业者的劳动，从不对土地原生产物的全年总价值增加任何东西。它的确大大增加了其中某些特定部分的价值。但是，它在此期间引起的对其他部分的消费，恰好等于它给那些部分增加的价值；所以在任何一个时刻，它丝毫没有增加总量的价值。例如，一个编制一对精致袖口花边的人，有时会把也许只值一便士的亚麻的价值提高到三十英镑。乍看之下，他似乎由此把一部分原生产物的价值提高了大约七千二百倍，但实际上，他对原生产物的全年总价值没有增加任何东西。编制那件花边也许要花费他两年的劳动。花边完成后他所得的三十英镑，只不过偿还了他在从事这项工作的两年间预付给自己的生活资料。他每天、每月或每年的劳动给亚麻增加的价值，只是补偿他在那一天、那一月或那一年消费的价值。因此，他在任何时刻都没有对土地原生产物的全年总价值增加任何东西；因为他不断消费的那部分产物，总是等于他不断生产的价值。从事这种耗费巨大却无足轻重的制造业的大多数人极端贫困，这足以使我们确信，在通常情况下，他们的产品价格并不超过其生活资料的价值。农场主和乡村劳动者的工作则不然。在通常情况下，地主的地租是他们不断生产出的一种价值，它不仅最充分地补偿了全部消费，即为雇用和维持劳动者及其雇主双方所支出的全部费用，而且还有剩余。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p13",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_444"
+      },
+      "contentHash": "99a1250a5188328fa55431772317b80be0f33def0423a2df83cfd07cfccbebc3",
+      "text": "工匠、制造业者和商人，只能依靠节俭来增加其社会的收入和财富；或者用这个体系的话说，只能依靠自我剥夺，也就是不把指定用于自身生活的一部分基金用于自己。他们每年再生产出来的，仅仅是这些基金。因此，除非他们每年节省其中一部分，除非他们每年放弃享用其中一部分，否则其社会的收入和财富便永远不可能通过他们的产业得到丝毫增加。相反，农场主和乡村劳动者可以完全享用指定用于自身生活的全部基金，同时仍可增加其社会的收入和财富。他们的产业每年除了提供指定用于自身生活的部分之外，还提供一种纯产物；这种纯产物的增加，必然会增加其社会的收入和财富。因此，像法国或英格兰那样，在很大程度上由所有者和耕作者构成的国家，可以通过勤劳和享受而富裕起来。相反，像荷兰和汉堡那样，主要由商人、工匠和制造业者构成的国家，只有依靠节俭和自我剥夺才能变得富裕。处境如此不同的国家，其利益既大不相同，人民的一般性格也同样不同。在前一类国家，宽宏、坦率和亲善自然构成这种一般性格的一部分。在后一类国家，则是狭隘、卑琐以及一种排斥一切社交乐趣和享受的自私性情。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p14",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_445"
+      },
+      "contentHash": "5efc3621a76622efa1f46c9d1ff8a66956bc09eb9749619cc15bd2e56a6dfef9",
+      "text": "非生产阶级，即商人、工匠和制造业者阶级，完全由另外两个阶级，即所有者阶级和耕作者阶级负担费用来维持和雇用。这两个阶级既为非生产阶级提供工作的材料，也为其提供生活基金，即它在从事这些工作期间所消费的谷物和牲畜。所有者和耕作者最终既支付非生产阶级全体劳动者的工资，也支付其全体雇主的利润。这些劳动者及其雇主，恰当地说，都是所有者和耕作者的仆役。他们只是在户外工作的仆役，正如家仆在室内工作一样。不过，这两类仆役同样由相同的主人负担费用来维持。两者的劳动同样都是非生产性劳动。它没有给土地原生产物的总价值增加任何东西。它非但不增加这一总价值，反而是必须从中支付的一项负担和费用。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p15",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_446"
+      },
+      "contentHash": "9fda4defed3255f072b6d10450caa2b40273e713ebeb10126fcfca77f5b4e54e",
+      "text": "然而，非生产阶级不仅有益，而且对另外两个阶级大有益处。借助商人、工匠和制造业者的产业，所有者和耕作者只需付出少得多的自身劳动产物，就能购买所需要的外国商品和本国制成品；如果他们笨拙而不熟练地企图自己进口前者或制造后者供自己使用，就不得不付出多得多的劳动。借助非生产阶级，耕作者摆脱了许多本来会使其注意力无法专注于土地耕作的操心事务。他们因这种不分散的专注而能够增加的产物，完全足以支付所有者或他们自己为维持和雇用非生产阶级所承担的全部费用。商人、工匠和制造业者的产业，就其自身性质而言虽然完全不具有生产性，却以这种方式间接促进了土地产物的增加。它使生产性劳动可以不受干扰地只限于从事其适当的工作，即土地耕作，从而提高了生产性劳动的生产能力；而且，所从事的工作与犁最为遥远之人的劳动，往往会使犁耕进行得更轻松、更出色。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p16",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_447"
+      },
+      "contentHash": "ca80d385bc7a834aadcd82ff66c6d463fd4baab650418dc35cbbca0de99cbdee",
+      "text": "限制或以任何方式阻碍商人、工匠和制造业者的产业，绝不可能符合所有者和耕作者的利益。这个非生产阶级享有的自由越多，构成这一阶级的各行各业中的竞争就越激烈，另外两个阶级也就能以越低廉的价格得到外国商品和本国制成品。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p17",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_448"
+      },
+      "contentHash": "d31d4f0b3b54dd0987c6e3678c2c26dc2942ef3c3354d2e217322387e3d202a5",
+      "text": "压迫另外两个阶级，绝不可能符合非生产阶级的利益。维持和雇用非生产阶级的，是土地的剩余产物，也就是先扣除耕作者的生活资料、再扣除所有者的生活资料后所剩余的部分。这一剩余越大，对该阶级的维持和雇用也必然越多。建立完全的正义、完全的自由和完全的平等，正是最有效地保障三个阶级全都达到最高繁荣程度的极其简单的秘诀。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p18",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_449"
+      },
+      "contentHash": "26a9d1074fc1001db61c896ed30df971b0bf08230286e421dd01c986a0a8e2ea",
+      "text": "像荷兰和汉堡那样主要由这个非生产阶级构成的商业国家，其商人、工匠和制造业者也同样完全由土地所有者和耕作者负担费用来维持和雇用。唯一的区别在于，这些所有者和耕作者大多位于极不方便的远方，远离由他们提供工作材料和生活基金的商人、工匠和制造业者；他们是其他国家的居民，是其他政府的臣民。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p19",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_450"
+      },
+      "contentHash": "80b1f5ece1f8fbc24ea8caf4665e6931c7517465a778700425a71ba1d5cad97f",
+      "text": "然而，这类商业国家不仅有益，而且对那些其他国家的居民大有益处。它们在某种程度上填补了一个极其重要的空缺，代替了那些国家的居民本应在国内找到、却因其政策存在某种缺陷而未能在国内找到的商人、工匠和制造业者。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p20",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_451"
+      },
+      "contentHash": "44014eede14f6a88be3a1b9b2cbe39f9a3379d333c8ef07cb8b286279b20b0e3",
+      "text": "那些以土地为本的国家——如果我可以这样称呼它们的话——绝不可能有利益通过对这些商业国家的贸易或它们供应的商品征收高额关税，来抑制或困扰其产业。这样的关税使那些商品更加昂贵，只会降低它们本国土地剩余产品的实际价值，因为正是用这些剩余产品，或者说同样一回事，用这些产品的价款，来购买那些商品。这样的关税只会阻碍这种剩余产品的增长，因而阻碍本国土地的改良和耕种。相反，提高这种剩余产品的价值、鼓励其增长并因而促进本国土地改良和耕种的最有效办法，是给予所有这类商业国家的贸易以最充分的自由。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p21",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_452"
+      },
+      "contentHash": "d8abe048d746b0132d788607a5ec2c5c8af722ffb66ef8463e6cf59a247df645",
+      "text": "这种完全的贸易自由，甚至会是最有效的办法，使它们在适当时候获得国内所需要的一切工匠、制造业者和商人，并以最适当、最有利的方式填补它们在那里感受到的那一极为重要的空缺。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p22",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_453"
+      },
+      "contentHash": "baa8190ae4832dc628101a696c5c6c9b133cf79386c569567478b5f6900a6aa7",
+      "text": "它们土地剩余产品的不断增加，到了适当时候，就会形成一笔超过按普通利润率可用于土地改良和耕种的资本；其中的剩余部分自然会转而用于雇用本国的工匠和制造业者。但是，这些工匠和制造业者在国内既能找到工作的原料，又能找到维持生活的资金，因此即使技艺和技能差得多，也可能立即做到像这类商业国家的同类工匠和制造业者一样低廉地生产，因为后者的原料和生活资料都必须从远方运来。即使由于缺乏技艺和技能，他们在一段时间内还不能做到同样低廉地生产，但由于在国内有市场，他们仍可能在那里以不高于这类商业国家工匠和制造业者产品的价格出售自己的产品，因为后者的产品必须从如此遥远的地方运到那个市场；而随着他们技艺和技能的提高，他们很快就能以更低的价格出售。因此，这类商业国家的工匠和制造业者会立即在那些以土地为本的国家的市场上遭遇竞争，不久便会被竞争者以更低的售价击败，最终完全被排挤出该市场。随着技艺和技能逐步提高，那些以土地为本的国家的制成品日益低廉，到了适当时候，其销路会越出国内市场，扩展到许多外国市场，并以同样的方式逐渐从这些市场中排挤掉这类商业国家的许多制成品。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p23",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_454"
+      },
+      "contentHash": "82c2ee030ea87f6a2326a594c097d0fcebbc6d564cec3ec76f3702341dd7a293",
+      "text": "那些以土地为本的国家的原生产物和制成品不断增加，到了适当时候，就会形成一笔超过按普通利润率可用于农业或制造业的资本。这笔资本的剩余部分自然会转而用于对外贸易，用来把本国原生产物和制成品中超过国内市场需求的部分输出到外国。在输出本国产物方面，以土地为本的国家的商人，相对于商业国家的商人，会拥有一种优势，正如该国工匠和制造业者相对于那些国家的工匠和制造业者所拥有的优势一样；这种优势就是，他们在国内即可找到货物、船用物资和给养，而其他国家的商人却不得不到远方去寻求。因此，即使航海技艺和技能较差，他们也能在外国市场上以不高于这类商业国家商人的价格出售这些货物；而在技艺和技能相同的情况下，他们便能以更低的价格出售。因此，他们很快就会在对外贸易的这个部门中与那些商业国家竞争，并在适当时候把它们完全排挤出去。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p24",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_455"
+      },
+      "contentHash": "cc43d8d85bf94a58238226afafa33e915ef3f2b239d97368f4bccc7642cf8798",
+      "text": "因此，按照这种自由而宽宏的制度，一个以土地为本的国家要培养本国工匠、制造业者和商人，最有利的方法就是给予其他所有国家的工匠、制造业者和商人以最充分的贸易自由。这样做提高了本国土地剩余产品的价值，而这种剩余产品的不断增加，会逐渐形成一笔资金，到了适当时候，必然培养出本国所需要的一切工匠、制造业者和商人。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p25",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_456"
+      },
+      "contentHash": "ca64360b9c51d71a08dc3597d06dc2493e4af6321246f95e637ff9034d5eff17",
+      "text": "相反，当一个以土地为本的国家用高额关税或禁令压制外国的贸易时，它必然以两种不同的方式损害自身利益。第一，通过提高一切外国货物和各种制成品的价格，它必然降低本国土地剩余产品的实际价值，因为正是用这些剩余产品，或者说同样一回事，用这些产品的价款，来购买那些外国货物和制成品。第二，通过给予本国商人、工匠和制造业者对国内市场的某种垄断，它使商业和制造业的利润率相对于农业利润率提高，因而或者把此前用于农业的一部分资本从农业中吸引出来，或者阻止原本会流向农业的一部分资本流入农业。因此，这种政策以两种不同的方式抑制农业：第一，降低农产品的实际价值，从而降低农业的利润率；第二，提高其他一切用途中的利润率。农业因此变得不如原本有利，而贸易和制造业则变得比原本更为有利；每个人都受自身利益驱使，尽可能地把自己的资本和劳动从农业转向贸易和制造业。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p26",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_457"
+      },
+      "contentHash": "88dc0f2cca8db765e7ab22a4b436f71791df15aac32bb68912bdf5552bed800f",
+      "text": "一个以土地为本的国家借助这种压制性政策，即使能够比实行贸易自由稍早一些培养出本国的工匠、制造业者和商人——不过，这一点颇为可疑——也会是所谓过早地、在本国尚未完全成熟到足以容纳他们之前，就把他们培养起来。过于仓促地扶植一种产业，会压抑另一种更有价值的产业。过于仓促地扶植一种只能补偿雇用它的资本及其普通利润的产业，会压抑这样一种产业：它除了补偿该资本及其利润之外，还会提供纯产品，即给予地主一笔不受负担的地租。它会由于过于仓促地鼓励那种完全贫瘠且非生产性的劳动，而压抑生产性劳动。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p27",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_458"
+      },
+      "contentHash": "a3cd4db0944152fdbcbf1236723aa87af9fdfb641be81b0f819468e0c9354f37",
+      "text": "按照这一体系，土地年产物的总额如何分配给上述三个阶级，非生产性阶级的劳动又如何仅仅补偿其自身消费的价值，而丝毫不增加这一总额的价值，这一体系的极富才智且思想深刻的创立者魁奈先生用一些算术公式作了说明。在这些公式中，第一个公式因其卓越而被他特别称为《经济表》；它说明了他所设想的这种分配在最充分自由、因而最繁荣的状态下如何进行；在这种状态下，年产物能够提供尽可能多的纯产品，而每个阶级都享有全部年产物中应得的份额。其后的一些公式说明了他所设想的这种分配在各种限制和管制状态下如何进行；在这些状态下，所有者阶级或贫瘠而非生产性的阶级，比耕作者阶级受到更多优待，其中前者或后者或多或少地侵占了本来应当归这个生产性阶级所有的份额。按照这一体系，每一次这样的侵占，每一次对最充分自由所能确立的那种自然分配的破坏，都必然使年产物的价值和总额逐年或多或少地降低，并必然使社会的实际财富和收入逐渐衰退；衰退进程的快慢，必然取决于这种侵占的程度，取决于最充分自由所能确立的那种自然分配受到破坏的程度。其后的那些公式说明了按照这一体系，与这种事物自然分配受到破坏的不同程度相对应的各种衰退程度。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p28",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_459"
+      },
+      "contentHash": "94dee053dc7d9fed5f2af30def778a87f2593c4af456072ba5df03c59bea3bce",
+      "text": "有些好作理论推究的医生似乎曾设想，人体健康只能靠某一种精确规定的饮食和运动方案来维持，对这种方案的任何违反，哪怕是最轻微的违反，也必然会造成程度与违反程度相称的某种疾病或失调。然而，经验似乎表明，在各式各样、差异极大的方案之下，人体往往至少从一切表象来看仍能保持最完善的健康状态；甚至在某些通常被认为远非完全有益健康的方案之下，也是如此。不过，人体的健康状态本身似乎包含着某种未知的自我保存原理，它在许多方面甚至能够预防或纠正一种很有缺陷的方案所造成的不良影响。魁奈先生本人是一位医生，而且是一位非常喜欢理论推究的医生；他对于政治机体似乎也抱有同类看法，认为政治机体只有在某一种精确规定的制度，即完全自由和完全正义的严格制度之下，才能蓬勃发展、繁荣昌盛。他似乎没有考虑到，在政治机体中，每个人为改善自身境况而不断作出的自然努力，正是一种自我保存原理，能够在许多方面预防和纠正某种带有一定偏私性和压迫性的政治经济制度所造成的不良影响。这样的政治经济制度无疑会或多或少地延缓一个国家走向富裕和繁荣的自然进程，但并不总能使这一进程完全停止，更不能使它倒退。如果一个国家非得享有完全自由和完全正义才能繁荣，那么世界上就没有任何一个国家曾经能够繁荣。然而，在政治机体中，大自然的智慧幸而为补救人类愚昧和不公造成的许多不良后果作了充分安排，正如在自然身体中，它也为补救人类懒惰和无节制造成的许多不良后果作了充分安排一样。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p29",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_460"
+      },
+      "contentHash": "e7bf3dc3284e388b248950d303c0360f04310c2ee7f00d7c3703ecdc65c37ce4",
+      "text": "不过，这一体系的根本错误，似乎在于它把工匠、制造业者和商人这个阶级说成完全贫瘠且非生产性的。以下论述或可表明这种说法并不恰当。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p30",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_461"
+      },
+      "contentHash": "b0086be2966d21d5a14c4282cdb1fee1f2a5c49f95e0c639e68097240d68c29c",
+      "text": "第一，公认的是，这个阶级每年都会再生产出相当于其自身年度消费的价值，并至少维持着供养和雇用它的资本的存在。仅凭这一点，把贫瘠或非生产性这一名称加在它身上，似乎就很不恰当。即使一桩婚姻只生下一子一女，用来替代父母，即使它没有增加人类的数量，而只是维持原有数量，我们也不会称这桩婚姻为贫瘠或非生产性的。诚然，农场主和乡村劳动者除了再生产出供养和雇用他们的资本之外，每年还会再生产出纯产品，即给予地主一笔不受负担的地租。正如生育三个孩子的婚姻肯定比只生育两个孩子的婚姻更有生产力一样，农场主和乡村劳动者的劳动肯定比商人、工匠和制造业者的劳动更有生产力。不过，一个阶级的产物较多，并不使另一个阶级成为贫瘠或非生产性的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p31",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_462"
+      },
+      "contentHash": "55f65b4eac8081deca4b413dbedc6ef6b1090594c429af2b9d514203ff04b7c0",
+      "text": "第二，由于这一点，把工匠、制造业者和商人与仆役等量齐观，似乎完全不恰当。仆役的劳动并不能维持供养和雇用他们的资金的存在。他们的供养和雇用完全以主人的开支为代价，而他们所做的工作在性质上不能偿还这项开支。这种工作由各种服务构成，通常在提供的那一瞬间便消逝，并不固定或实现在任何可出售、因而能够补偿其工资和生活费用之价值的商品中。相反，工匠、制造业者和商人的劳动，自然会固定并实现在某种这样的可出售商品中。正因为如此，在论述生产性劳动和非生产性劳动的那一章中，我把工匠、制造业者和商人列入生产性劳动者，而把仆役列入贫瘠或非生产性劳动者。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p32",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_463"
+      },
+      "contentHash": "7f7f75a3b6df073763a400dc667356b81da3897a033dbe1933b9d21fa34764c5",
+      "text": "第三，无论作何种假设，说工匠、制造业者和商人的劳动没有增加社会的实际收入，似乎都不恰当。例如，即使我们像这一体系似乎假设的那样，假设这个阶级每日、每月和每年的消费价值，恰好等于其每日、每月和每年的生产价值，也不能由此得出结论，说他们的劳动对社会的实际收入，即社会土地和劳动年产物的实际价值，毫无增加。例如，一个工匠在收获后的最初六个月内完成了价值十镑的工作，即使他在同一期间消费了价值十镑的谷物和其他生活必需品，他仍然确实给社会土地和劳动的年产物增加了十镑的价值。他在消费价值十镑的谷物和其他生活必需品、即半年收入的同时，生产了等值的产品，足以为他自己或其他某个人购买一笔等值的半年收入。因此，在这六个月中消费和生产的东西，其价值不是十镑，而是二十镑。诚然，在任何一个时刻，这些价值中可能从未有超过十镑的部分同时存在。但是，如果工匠消费的价值十镑的谷物和其他生活必需品，是由一个士兵或一个仆役消费的，那么在六个月结束时仍然存在的那部分年产物，其价值就会比工匠劳动使之实际达到的价值少十镑。因此，即使我们不应假设工匠所生产的价值在任何一个时刻大于他所消费的价值，市场上每一时刻实际存在的货物价值，仍因他所生产的东西而高于在没有这种生产的情况下本会达到的数额。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p33",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_464"
+      },
+      "contentHash": "9fe512f039e765ca48a81c3128b0ddf11053fe4844be4f3aa68d1eea63b850b9",
+      "text": "这一体系的拥护者断言，工匠、制造业者和商人的消费等于其生产物的价值，他们的意思大概不过是说，他们的收入，或指定供他们消费的资金，与该价值相等。但是，如果他们表述得更准确些，仅仅断言这个阶级的收入等于其生产物的价值，那么读者很容易想到，从这笔收入中自然会节省下来的部分，必然会或多或少地增加社会的实际财富。因此，为了构成某种看似成立的论证，他们有必要像现在这样表述；而这一论证，即使假定事实确如它似乎预设的那样，最终也仍然很不能说明问题。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p34",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_465"
+      },
+      "contentHash": "a51f913716217a80071fdead2e05704969d9c8aacab718c68b5036ec747d9c42",
+      "text": "第四，农场主和乡村劳动者如果不实行节俭，也和工匠、制造业者及商人一样，不能增加社会的实际收入，即社会土地和劳动的年产物。任何社会土地和劳动的年产物，只能用两种方式增加：第一，改进该社会中实际维持的有用劳动的生产能力；第二，增加这种劳动的数量。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p35",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_466"
+      },
+      "contentHash": "f4348fe7d20a16f9e6d1775334a3479531e1f7e6b467fab89b77d612081ad503",
+      "text": "有用劳动生产能力的提高，第一取决于工人能力的提高；第二取决于他所使用的机器的改进。但是，与农场主和乡村劳动者的劳动相比，工匠和制造业者的劳动可以作更细的划分，每个工人的劳动也可以简化为更为单纯的操作，因此，这种劳动也能够在远高得多的程度上得到上述两方面的改进。所以在这一点上，耕作者阶级不可能比工匠和制造业者阶级具有任何优势。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p36",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_467"
+      },
+      "contentHash": "a1effd7c9eef7f5e12e763175f50719c0ca9a356bcdaab7588a604d1faaf540d",
+      "text": "任何社会中实际使用的有用劳动数量的增加，必定完全取决于雇用这种劳动的资本的增加；而这种资本的增加，又必定恰好等于收入中节省下来的数额，这些节省或者来自管理和指导这笔资本运用的个人，或者来自把资本贷给他们的其他人。如果商人、工匠和制造业者像这一体系似乎假设的那样，天生比所有者和耕作者更倾向于节俭和储蓄，那么就这一点而言，他们更有可能增加本社会中使用的有用劳动的数量，从而增加社会的实际收入，即其土地和劳动的年产物。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p37",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_468"
+      },
+      "contentHash": "6b5d143979aad6c72689a8d9d66b29103e7e80fa3cffec6db2dd13a952713cf6",
+      "text": "第五，也是最后，即使像这一体系似乎所设想的那样，假定每个国家居民的收入完全由他们的勤劳所能为自己取得的生活资料数量构成；然而，即使在这一假定之下，在其他条件相同的情况下，一个从事贸易和制造业的国家，其收入也必定总是远远大于一个没有贸易和制造业的国家。借助贸易和制造业，每年可以输入某一国家的生活资料数量，能够超过该国土地在实际耕作状况下所能提供的数量。一座城市的居民虽然往往没有自己的土地，却凭借自己的勤劳，把别人的土地所出产的初级产品吸引来如此之多，以至于不仅为他们提供了工作的材料，而且提供了维持生活的资料。一座城市对于其邻近乡村一向所起的作用，一个独立的国家对于其他独立国家也常常能够起到。荷兰正是这样从其他国家取得其生活资料的一大部分：从荷尔斯泰因和日德兰输入活牲畜，从欧洲几乎所有不同的国家输入谷物。少量制成品可以买到大量初级产品。因此，一个从事贸易和制造业的国家，自然会用本国制成品的一小部分，购买其他国家初级产品的一大部分；相反，一个没有贸易和制造业的国家，一般却不得不耗费本国初级产品的一大部分，购买其他国家制成品的一小部分。前者输出只能维持极少数人生活并供其享用的东西，输入的则是供许多人维持生活和享用的东西。后者输出供许多人享用和维持生活的东西，输入的却只是供极少数人享用和维持生活的东西。前者的居民所享有的生活资料，必定总是远远多于他们自己的土地在实际耕作状况下所能提供的数量。后者的居民所享有的生活资料，必定总是少得多。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p38",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_469"
+      },
+      "contentHash": "fa6f113b8198000b2d4f7457c309cf70deeb205b3674c67f4de1302203bd1d9f",
+      "text": "不过，这一体系尽管有种种缺陷，或许仍是迄今就政治经济学这一主题发表的学说中最接近真理的；正因如此，它很值得每一个希望认真考察这门极其重要的科学之原理的人加以研究。它把用于土地的劳动说成唯一的生产性劳动，所倡导的观念或许过于狭隘和局限；然而，它认为国民财富不在于无法消费的货币财富，而在于由社会劳动每年再生产出来的可消费物品；又认为要使这种年度再生产达到尽可能大的程度，完全自由是唯一有效的办法；就这两点而言，它的学说似乎在各方面既公正，又宽宏而开明。它的信徒人数很多；而且，由于人们喜欢悖论，也喜欢显得自己能理解超出普通人理解能力的东西，它所坚持的关于制造业劳动具有非生产性质这一悖论，对于增加其仰慕者的人数，或许起了不小的作用。过去若干年来，他们已经形成一个颇具规模的学派，在法国学术界以“经济学派”之名著称。他们的著作无疑给本国带来了一些益处；这不仅因为他们把许多从前从未得到认真考察的问题引入了普遍讨论，而且因为他们在一定程度上影响了政府行政，使其有利于农业。正是由于他们的陈述，法国农业才摆脱了从前承受的若干压迫。那种可以对土地此后任何购买者或所有者保持效力的租约，其准许订立的期限已从九年延长到二十七年。王国内从一个行省向另一个行省运输谷物的古老限制，已被完全取消；在一切通常情况下，向所有外国出口谷物的自由也已确立为王国的普通法律。这个学派的著作数量很多，不仅论述严格意义上所说的政治经济学，即国民财富的性质和原因，而且论述国家治理体系的其他每一个分支；在这些著作中，他们全都毫无保留地遵循魁奈先生的学说，彼此没有任何明显的差异。因此，他们的大部分著作几乎没有什么变化。对这一学说最清楚、最有条理的阐述，见于曾任马提尼克行政长官的梅西埃·德·拉·里维耶先生所写的一本小书，题为《政治社会的自然与根本秩序》。整个学派对其宗师的崇敬，不亚于任何古代哲学家对各自学说体系创立者的崇敬，而他们的宗师本人却是一个极其谦逊质朴的人。一位十分勤勉而可敬的作者米拉波侯爵说：“自世界肇始以来，有三项伟大发明，主要使政治社会获得了稳定，此外还有许多使其富足并为其增光的发明。第一项是文字的发明，唯有它赋予人类把自己的法律、契约、编年史和发现原封不动地传诸后世的能力。第二项是货币的发明，它把文明社会之间的一切关系联结起来。第三项是《经济表》，它是前两项发明的成果，又通过使两者的目的臻于完善而使二者得以完备；这是我们这个时代的伟大发现，但从中获益的将是我们的后代。”",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p39",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_470"
+      },
+      "contentHash": "08aa90e0d92a22d2aa6a7bae11931764a31294891897e1a3fdcc15371287e0d8",
+      "text": "现代欧洲各国的政治经济政策，与农业这种乡村产业相比，更有利于制造业和对外贸易这类城市产业；其他国家的政治经济政策则采取了不同的方针，与制造业和对外贸易相比，更有利于农业。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p40",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_471"
+      },
+      "contentHash": "b6d2853ebe61189c9ee6bbec00c2bdc20a9d9aa1f5bdec5dcf0a9cb5fd0b2392",
+      "text": "中国的政策比起其他一切职业来更为扶持农业。据说，在中国，劳动者的地位高于工匠，正如在欧洲大部分地区，工匠的地位高于劳动者一样。每个中国人最大的愿望，都是取得一小块土地，或归自己所有，或租来耕种；据说那里的租约条件十分宽厚，承租人的权利也得到充分保障。中国人不大重视对外贸易。北京的官员过去同俄国使节德·朗格先生谈到对外贸易时，使用的说法是：“你们那乞丐般的贸易！”除与日本进行贸易外，中国人亲自用本国船只经营的对外贸易很少，甚至完全没有；而且，他们甚至只准外国船只进入本国一两个港口。因此，在中国，对外贸易在各方面都被限制在一个远比其自然扩展范围狭窄的领域之内；如果准许本国船只或外国船只享有更多自由，它自然会扩展到更广的范围。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p41",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_472"
+      },
+      "contentHash": "1f1e210052bae2093c262a35f588b219a6b4a992e5413dfdaebee3af51c96f2a",
+      "text": "制成品体积虽小，却往往含有很大的价值，因而从一国运往另一国所需的费用低于大部分初级产品，所以在几乎所有国家，制成品都是对外贸易的主要支柱。此外，在疆域不如中国辽阔、国内贸易条件也不如中国有利的国家，制造业通常需要对外贸易的支持。一个国家如果疆域仅属中等大小，只能提供一个狭小的国内市场；或者国内各行省之间的交通十分困难，使任何一个地方的货物都不可能享有该国所能提供的整个国内市场，那么，没有广大的国外市场，其制造业就无法顺利繁荣。必须记住，制造业的完善完全取决于劳动分工；而且，如前所示，任何制造业中能够实行劳动分工的程度，必然受市场范围的制约。不过，中国帝国疆域广大、人口众多，各行省气候不同，因而物产各异，加之其中大部分地区之间有便利的水路交通，使该国的国内市场极为广大，单靠这个市场就足以支持规模很大的制造业，并容许劳动作相当细密的分工。就范围而言，中国的国内市场或许并不比欧洲所有不同国家的市场合在一起小多少。不过，如果有更为广泛的对外贸易，在这个庞大的国内市场之外，再加上世界其余各地的国外市场，尤其是如果这种贸易有相当大的一部分由中国船只经营，那么，这几乎必然会大大扩展中国的制造业，并大大提高其制造业劳动的生产力。通过更广泛的航海，中国人自然会学会使用和自行制造其他国家所使用的各种机器，也会学到世界各地所采用的其他工艺和产业改进方法。按照他们现行的方针，除了日本人的榜样之外，他们几乎没有机会借鉴任何其他民族的榜样来改进自己。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p42",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_473"
+      },
+      "contentHash": "23c2ad8df99154229193a0e2f49b417bd60287c872207dff04c4fedb13489964",
+      "text": "古埃及的政策，以及印度斯坦异教徒政府的政策，似乎也比起其他一切职业来更为扶持农业。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p43",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_474"
+      },
+      "contentHash": "c243f1b975a81a56ae1dda8ffeb725843f73dfa0fa576bd9f1f5e5861feddd5d",
+      "text": "无论在古埃及还是在印度斯坦，全体人民都被划分为不同的种姓或部族，每一种姓或部族都世世代代局限于某一种特定职业或某一类职业。祭司的儿子必定是祭司；军人的儿子必定是军人；劳动者的儿子必定是劳动者；织工的儿子必定是织工；裁缝的儿子必定是裁缝；等等。在这两个国家，祭司种姓的地位最高，军人种姓次之；而且在这两个国家，农民和劳动者种姓的地位都高于商人和制造业者种姓。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p44",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_475"
+      },
+      "contentHash": "b9820ad21080ef4fafd0abfb57e3e8a4e6effa23cee9bc7a6cd96da37c6b654d",
+      "text": "这两个国家的政府都特别关注农业利益。古埃及君主为适当分配尼罗河水而修建的工程，在古代就已闻名；其中一些工程的残迹至今仍令旅行者赞叹。印度斯坦古代君主为适当分配恒河以及许多其他河流的河水而修建的同类工程，虽不那么著名，规模似乎同样宏大。因此，这两个国家虽然偶尔发生粮荒，却都以土地极其肥沃而著称。两国虽然人口都极其稠密，但在收成尚属丰足的年份，都能向邻国出口大量谷物。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p45",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_476"
+      },
+      "contentHash": "32e21c7c12376800bb5efe99c2415ce25ea7bddf8103329d4e9476c391590fa1",
+      "text": "古埃及人出于迷信而厌恶海洋；印度教又不准信徒在水上生火，因而也不准他们烹调任何食物，这实际上禁止他们进行一切远洋航行。埃及人和印度人要出口剩余产品，必定几乎完全依赖其他民族的航运；这种依赖既必然限制市场，也必然妨碍这种剩余产品的增加。它对制成品增加的妨碍，也必然大于对初级产品增加的妨碍。制造业所需要的市场，远比土地初级产品中最重要的那些产品所需要的市场广大。一个鞋匠一年能制作三百多双鞋，而他自己一家或许连六双都穿不坏。因此，除非至少有五十个像他自己家这样的家庭来照顾他的生意，否则他就无法售出自己劳动的全部产品。在一个大国，人数最多的一类工匠，在该国全部家庭中所占的比例，也很少超过五十分之一或百分之一。不过，在法国和英格兰这样的大国，从事农业的人数，有些作者估计为全国居民总数的一半，有些估计为三分之一，而据我所知，没有一位作者估计低于五分之一。但由于法国和英格兰农业产品的绝大部分都在国内消费，按照这些估计，每个从事农业的人要售出自己劳动的全部产品，只须略多于一个、两个、至多四个像他自己家这样的家庭来购买。因此，在狭小市场造成的不利条件下，农业远比制造业更能维持自身。诚然，在古埃及和印度斯坦，国外市场受到的限制，在一定程度上由许多内河航运的便利所补偿；这些内河航运以最有利的方式，使这些国家各个地区的每一种产品都能进入整个国内市场。印度斯坦疆域广大，也使该国的国内市场非常庞大，足以支持种类繁多的制造业。但古埃及疆域狭小，从未达到英格兰的大小，这必然使该国的国内市场始终过于狭窄，无法支持种类繁多的制造业。因此，孟加拉这个通常出口稻米最多的印度斯坦行省，历来更以出口种类繁多的制成品而非出口谷物著称。相反，古埃及虽然也出口一些制成品，尤其是细麻布，以及其他一些货物，但始终最以大量出口谷物著称。它长期是罗马帝国的粮仓。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p46",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_477"
+      },
+      "contentHash": "3628c5dbceb85f5945c4fbe77c3fece989d95e1396a8a2bbf3d9d214505afa5c",
+      "text": "中国、古埃及以及印度斯坦在不同时期分裂成的各个王国，其君主的收入，历来全部或绝大部分来自某种土地税或土地地租。这种土地税或土地地租，和欧洲的什一税一样，由土地产品的一定比例构成，据说是五分之一；这部分产品或者以实物交纳，或者依照一定的估价折合货币缴纳，因而会随着产品的一切变动而逐年变化。因此，这些国家的君主自然会特别关注农业利益，因为他们自己收入每年的增加或减少，直接取决于农业的繁荣或衰落。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p47",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_478"
+      },
+      "contentHash": "988d69b5fbeb176f25ab6f0f7971ed3bb6d23a682ba7badc8de7b51b8fb54b31",
+      "text": "古希腊各共和国和罗马的政策，虽然对农业的尊崇超过制造业或对外贸易，但与其说它们对农业给予了任何直接或有意的鼓励，不如说是抑制了制造业和对外贸易。在古希腊若干城邦，对外贸易被完全禁止；在另一些城邦，工匠和制造者的职业被认为有损人体的强健与敏捷，使身体无法养成其军事训练和体育锻炼力图塑造的那些习惯，从而或多或少使其不再适于承受战争的劳苦和面对战争的危险。这类职业被认为只适合奴隶，国家的自由公民则被禁止从事。即使在罗马和雅典等没有实行这种禁令的国家，绝大多数人民实际上也被排除在如今通常由城镇下层居民从事的一切行业之外。在雅典和罗马，这类行业全都由富人的奴隶经营；奴隶为主人谋利而从事这些行业，而主人的财富、权势和庇护，使一个贫穷的自由人在自己的产品同富人奴隶的产品竞争时，几乎不可能为其找到市场。不过，奴隶很少有发明创造；凡是在机器方面或在工作的安排与分配方面便利劳动、缩短劳动时间的最重要改进，都是自由人的发现。假如奴隶提出任何这类改进，他的主人很可能把这种建议看作出于懒惰，是想让主人付出代价来节省他自己的劳动。这个可怜的奴隶不但得不到奖赏，反而很可能遭到一顿痛骂，甚至受到某种惩罚。因此，在由奴隶经营的制造业中，完成同样数量的工作，通常必定要比在由自由人经营的制造业中使用更多的劳动。正因如此，前者的产品通常必定比后者的昂贵。孟德斯鸠先生指出，匈牙利的矿山虽然并不比邻近的土耳其矿山富饶，却始终以较少的费用开采，因而利润也较高。土耳其的矿山由奴隶开采，而这些奴隶的双臂就是土耳其人所想到要使用的唯一机器。匈牙利的矿山则由自由人开采，他们使用大量机器，以此便利并缩短自己的劳动时间。根据我们对希腊人和罗马人时代制造品价格所知的极少资料来看，其中较精细的制造品似乎贵得惊人。丝绸按同等重量的黄金计价出售。诚然，当时丝绸并非欧洲制造品；而且，由于丝绸全都来自东印度，运输路程遥远在一定程度上可以解释其价格之高。然而，据说一位贵妇有时愿意为一块极细的亚麻布支付的价钱，似乎也同样高得离谱；而亚麻布向来是欧洲制造品，最远也不过是埃及制造品，所以，这种高价只能用制作它必定耗费的巨额劳动费用来解释，而这种劳动费用之所以高，又只能是因为所用机器笨拙。精细毛织品的价格虽然没有高到同样离谱的程度，但似乎仍远远高于现代的价格。普林尼告诉我们，有些用某种特殊方法染色的呢绒，每磅重值一百第纳里，合三英镑六先令八便士。另一些用另一种方法染色的呢绒，每磅重值一千第纳里，合三十三英镑六先令八便士。必须记住，罗马的一磅只有我们的常衡十二盎司。诚然，这种高价似乎主要是由染色造成的。但是，如果这些呢绒本身不是远比现代制造的任何呢绒昂贵，人们大概就不会在上面施用如此昂贵的染色工艺。附属部分的价值与主体的价值之间会过于悬殊。同一位作者提到的某些特里克利纳里亚的价格，更是令人难以置信；这是一种毛织枕垫或靠垫，人们在餐桌旁斜倚于卧榻上时用来倚靠。据说其中有些价值三万多英镑，另一些则价值三十多万英镑。而且，也没有人说这种高价是由染色造成的。阿巴思诺特博士指出，古代男女时髦人士的服装样式，似乎远不如现代多样；我们在古代雕像的服装中所见的极少变化，也证实了他的看法。他由此推断，古人的服装总体上必定比我们的便宜；但这个结论似乎并不能由此推出。时髦服装的费用很高时，样式就必定很少。但是，当制造技艺和勤劳的生产能力得到改进，使任何一套服装的费用变得十分适中时，其样式自然会非常繁多。富人既然无法凭一套服装的昂贵来显示自己的与众不同，自然就会努力凭服装的数量和样式之多来达到这一目的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p48",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_479"
+      },
+      "contentHash": "361d76f224c28a27ebf646c13f30e860b9b213947bc59e2cfae2013830809534",
+      "text": "前面已经指出，每个国家最大而且最重要的商业部门，是城乡居民之间进行的商业。城镇居民从乡村取得原生产物，这些原生产物既构成他们工作的材料，又构成他们生活资料的来源；他们把其中一部分制成成品并加工到可以立即使用的程度，再送回乡村，以此偿付这些原生产物。发生在这两类不同居民之间的贸易，归根结底是以一定数量的原生产物交换一定数量的制造品。因此，后者越昂贵，前者就越便宜；在任何国家，凡是倾向于提高制造品价格的因素，都倾向于降低土地原生产物的价格，从而抑制农业。任何一定数量的原生产物，或者说同样一回事，任何一定数量原生产物的价格，所能购买的制造品数量越少，这一既定数量原生产物的交换价值就越小；地主通过改良土地来增加其数量，或农场主通过耕种土地来增加其数量，所受到的鼓励也就越小。此外，在任何国家，凡是倾向于减少工匠和制造者人数的因素，都倾向于缩小国内市场；国内市场是土地原生产物所有市场中最重要的市场，因而这会进一步抑制农业。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p49",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_480"
+      },
+      "contentHash": "af49ca75ac7861387aa8b7d9b7ed2ffe6c5055214f4f717c04ce3ecc7a8e9528",
+      "text": "因此，那些为了促进农业而把农业置于其他一切职业之上，并对制造业和对外贸易施加限制的制度，其作用恰好违背了自己所提出的目标，并间接抑制了它们本想促进的那一种产业。在这一点上，它们也许甚至比重商主义制度更加自相矛盾。重商主义制度对制造业和对外贸易的鼓励超过对农业的鼓励，从而把社会资本的一定部分从支持一种较为有利的产业转用于支持一种较为不利的产业。但它实际上而且最终仍然鼓励了自己意在促进的那一种产业。相反，那些重农制度实际上而且最终抑制了它们自己所偏爱的那一种产业。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p50",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_481"
+      },
+      "contentHash": "0591ac6969a5e63cca66a3e0c404ec512bdfd4facfed0e173d2feca6d277eb0c",
+      "text": "由此可见，任何一种制度，无论是以特别的鼓励，把社会资本中比自然流向某一特定产业更多的份额吸引过去；还是以特别的限制，迫使原本会用于某一特定产业的一部分资本撤出，实际上都会破坏它意在促进的重大目标。它不是加速、而是延缓社会走向真正财富与强盛的进程；不是增加、而是减少社会土地与劳动的年产物的真实价值。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p51",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_482"
+      },
+      "contentHash": "b6106d3736b4f23d0561f4d6b86a18f6c31b470ca32f0c58355eede0a8f750df",
+      "text": "因此，一切优待或限制的制度既然都被这样彻底废除，显而易见而简单的自然自由制度便自行确立起来。每个人只要不违反正义的法律，就可以完全自由地以自己的方式追求自己的利益，并使自己的劳动和资本同任何其他个人或阶层的劳动和资本竞争。君主因而完全免除了一项职责：他在试图履行这项职责时，必定总会受到无数错觉的蒙蔽，而任何人类的智慧或知识也永远不足以适当地履行它；这项职责就是监督私人的产业活动，并引导它投向最符合社会利益的用途。按照自然自由制度，君主只须履行三项职责；这三项职责确实非常重要，但也浅显明白，普通人的理解力足以领会：第一，保护社会免遭其他独立社会的暴力与侵略；第二，尽可能保护社会的每一个成员，使其免受其他任何成员的不义或压迫，亦即建立严正的司法制度；第三，兴建并维持某些公共工程和某些公共机构，因为任何个人或少数个人都绝不可能有兴趣兴建和维持它们；这是由于它们的利润决不可能补偿任何个人或少数个人所付的费用，尽管对一个大社会来说，这种利润往往不但能够补偿费用，而且绰绰有余。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c9.p52",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_483"
+      },
+      "contentHash": "317e80d221454632ba02e8868bac0648022ecf50d62e5648169dd69faad3ba7b",
+      "text": "妥善履行君主的上述各项职责，必然意味着一定的费用；而这项费用又必然需要一定的收入来维持。因此，在下一篇中，我将努力说明：第一，君主或国家的必要费用有哪些；其中哪些费用应由全社会共同捐输来支付，哪些只应由社会的某一特定部分或某些特定成员捐输来支付；第二，可以用哪些不同方法使全社会共同负担全社会应付的费用，以及每种方法的主要优点和不便是什么；第三，是什么理由和原因促使几乎所有现代政府抵押这项收入的一部分或举借债务，以及这些债务对社会的真正财富，即土地与劳动的年产物，产生了什么影响。因此，下一篇自然将分为三章。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    }
+  ]
+}

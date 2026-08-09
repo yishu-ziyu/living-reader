@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "locale": "zh-CN",
+  "chapterId": "smith.b4.c4",
+  "translations": [
+    {
+      "sourceId": "smith.b4.c4.p1",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_43"
+      },
+      "contentHash": "f641aa5d10ac6221f6e347d9df90f966827425484e403566dc531eb34cc63a77",
+      "text": "商人和制造商不满足于垄断国内市场，还希望自己的货物能在国外获得最广泛的销路。他们的国家对外国没有管辖权，因而很少能在那里为他们取得任何垄断。因此，他们通常不得不满足于请求给予某些出口鼓励。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c4.p2",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_44"
+      },
+      "contentHash": "c2688eb5de8a722b2f66146475ed9fe543741710ce62c52f77915c124c5059ae",
+      "text": "在这些鼓励措施中，所谓的退税似乎最为合理。准许商人在出口时退还对国内产业征收的全部或部分消费税或内地税，绝不会使货物出口量超过未曾征税时本会出口的数量。这类鼓励并不会使本国资本中流向某一特定用途的份额，大于其自行流向该用途的份额，而只是防止税收把这一份额的任何部分驱赶到其他用途。它们不是要打破社会各种用途之间自然形成的平衡，而是要防止这种平衡被税收打破。它们不是要破坏，而是要保存社会中劳动的自然分工和分配；在大多数情况下，保存这种分工和分配是有利的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c4.p3",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_45"
+      },
+      "contentHash": "2893d8818ae5223235fc840922a5dcdd1a37dcec6fb69b718eea977cbd5e2ba0",
+      "text": "对于进口外国货物再出口时的退税，也可以作同样的说明；在大不列颠，这种退税通常占进口税的绝大部分。根据开征现今所谓旧补助税的议会法令所附规则中的第二条，每个商人，无论是英国人还是外国人，都可在出口时退还该税的一半；英国商人的条件是出口须在十二个月内进行，外国商人的条件则是须在九个月内进行。葡萄酒、科林斯小葡萄干和加工丝织品是唯一不适用这条规则的货物，因为它们另有更为优厚的优惠。当时，这项议会法令所征的税，是对外国货物进口所征的唯一税种。后来，可申请这项退税及其他一切退税的期限（依据乔治一世第7年法令第21章第10条）延长到三年。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c4.p4",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_46"
+      },
+      "contentHash": "8e89207b9a05019fbeb823578a679637d06fd4f6781515096c67a3026e956571",
+      "text": "旧补助税以后开征的各项税收，其中大部分在出口时都全额退还。不过，这项一般规则有大量例外，退税制度也已远不如最初设立时那么简单。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c4.p5",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_47"
+      },
+      "contentHash": "236785afb0f481330f92c412054f001fe2657f7ff4ebb82ad1c80921dda1e9e9",
+      "text": "对于某些外国货物，由于预计其进口量会大大超过国内消费所需，出口时会退还全部税款，甚至连旧补助税的一半也不保留。在我国北美殖民地反叛以前，我们垄断了马里兰和弗吉尼亚的烟草。我们进口约九万六千大桶，而国内消费量据认为不超过一万四千大桶。为了便利必不可少的大量出口，以便把其余烟草处理掉，只要在三年内出口，全部税款都会退还。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c4.p6",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_48"
+      },
+      "contentHash": "ea654a777d03885c24f543c4bb29a91b46546034bc86d1b3cf393b9fd04c0f19",
+      "text": "对于我国西印度群岛的蔗糖，我们即使不再拥有完全的垄断，也仍近乎垄断。因此，蔗糖如在一年内出口，全部进口税都会退还；如在三年内出口，则除旧补助税的一半外，其他税款全部退还，而对大多数货物的出口，旧补助税的一半至今仍予保留。尽管蔗糖进口量远远超过国内消费所需，但与烟草过去的过剩程度相比，这一过剩并不大。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c4.p7",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_49"
+      },
+      "contentHash": "fd540d10ef42be7af7392e1aed8cf3549b8e7ea39e5335c951a8ccbb874c3f46",
+      "text": "有些货物是我国制造商特别忌惮的对象，因而禁止进口供国内消费。不过，缴纳一定税款后，这些货物可以进口并存入仓库，以供出口。但在这种出口中，这些税款一概不予退还。看来，我国制造商甚至不愿鼓励这种受限制的进口，并且担心其中一些货物会被人从仓库偷出，从而与他们自己的货物竞争。只有依照这些规章，我们才能进口加工丝织品、法国细棉布和细麻布、经彩绘、印花、着色或染色的印度棉布等。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c4.p8",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_50"
+      },
+      "contentHash": "8b853f95a3d7e2c3bc219e77c97ce04cc17cbfe0fb9e2ea10a3b3b874592f974",
+      "text": "我们甚至不愿充当法国货物的承运人，宁可放弃自己的利润，也不愿让那些被我们视为敌人的人借助我们赚取任何利润。所有法国货物出口时，不仅保留旧补助税的一半，还保留第二项百分之二十五的税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c4.p9",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_51"
+      },
+      "contentHash": "e71c3d3384fd1faf3babc6f49874f88a4f5c798f4efea632b3ef0248362b76e6",
+      "text": "根据旧补助税所附规则中的第四条，所有葡萄酒出口时准许退还的税款，远远超过当时进口时所缴税款的一半；看来，当时立法机关的意图，是对葡萄酒转运贸易给予比通常稍多一些的鼓励。与旧补助税同时或在其后征收的其他几项税，即所谓附加税、新补助税、三分之一补助税和三分之二补助税、1692年进口税以及葡萄酒铸币税，也都获准在出口时全额退还。不过，除附加税和1692年进口税以外，所有这些税款都须在进口时以现款缴清，如此巨额款项的利息构成一项费用，使人无法合理地期望这种商品的转运贸易能够获利。因此，所谓葡萄酒进口税只有一部分获准在出口时退还；法国葡萄酒每吨二十五英镑的税，以及1745年、1763年和1778年开征的各项税，则一概不准退还。1779年和1781年对先前所有关税加征的两项百分之五进口税，在其他一切货物出口时都获准全额退还，在葡萄酒出口时也同样获准退还。最近一项专门对葡萄酒开征的税，即1780年的税，获准全额退还；在如此多重税仍予保留的情况下，这种优待极可能连一吨葡萄酒的出口也促成不了。这些规则适用于所有合法出口地，但英国在美洲的殖民地除外。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c4.p10",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_52"
+      },
+      "contentHash": "c62e146edaf577cbe659ae39f0bef469946aaaa50f51b87b2a7bb874b22b36c6",
+      "text": "查理二世第15年法令第7章，即所谓贸易鼓励法，已使大不列颠取得向殖民地供应一切欧洲生长或制造的商品、因而也包括葡萄酒的垄断权。我国北美和西印度殖民地的海岸如此辽阔，我们在当地的权威始终如此薄弱，而当地居民又获准用自己的船只，把不在列举范围内的商品起初运往欧洲各地，后来运往菲尼斯特雷角以南的欧洲各地，因此，这项垄断不大可能曾受到多少尊重；而且，他们很可能始终都能设法从获准运去一船货物的国家带回一些货物。不过，他们要从欧洲葡萄酒的产地进口这些酒，似乎确实遇到了一些困难；他们也难以从大不列颠进口，因为葡萄酒在那里负担着许多重税，其中相当一部分在出口时不予退还。马德拉葡萄酒不是欧洲商品，因此可以直接进口到美洲和西印度群岛；这些地方对于其一切不在列举范围内的商品，都享有同马德拉岛的自由贸易。这些情况很可能促成了对马德拉葡萄酒的普遍爱好；1755年开始的战争爆发时，我国军官发现这种爱好已经遍及我国所有殖民地，并把它带回母国，而此前这种酒在那里并不十分流行。1763年那场战争结束时（依据乔治三世第4年法令第15章第12条），除法国葡萄酒外，所有葡萄酒在出口到殖民地时，除3英镑10先令外的一切税款都获准退还；至于法国葡萄酒的贸易和消费，民族偏见不允许给予任何鼓励。从给予这种优待到我国北美殖民地反叛，其间的时间很可能太短，不足以使那些地区的习惯发生任何重大变化。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c4.p11",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_53"
+      },
+      "contentHash": "80ec3d60bdcd0afed958b35cbd29a0998b75cbcecc9f3cd701d8b02c0a694a89",
+      "text": "同一项法令在除法国葡萄酒外所有葡萄酒的退税方面，给予殖民地远多于其他国家的优待；但在其他大多数商品的退税方面，给予殖民地的优待却少得多。大多数商品出口到其他国家时，旧补助税的一半会予以退还。但该法规定，凡欧洲或东印度生长或制造的商品，除葡萄酒、白色印度棉布和细棉布外，出口到殖民地时，这项税一概不得退还。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c4.p12",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_54"
+      },
+      "contentHash": "1d2a4e40d8bbd9468fb173a1029c586bcf79b8165109a983084bc9ed803be7a2",
+      "text": "退税最初也许是为了鼓励转运贸易而给予的，因为船舶运费常由外国人用货币支付，所以这种贸易被认为特别适合把金银带入国内。但是，尽管转运贸易肯定不值得特别鼓励，尽管设立这一制度的动机也许极其愚蠢，这项制度本身看来却相当合理。假如没有进口税，本国资本中自行流入这种贸易的份额是多少，这类退税就不可能迫使更大的份额流入其中。它们只是防止这种贸易被这些税收完全排除。转运贸易虽然不值得优待，却不应受到排斥，而应当像其他一切贸易一样任其自由发展。对于那些在本国农业或制造业中、在国内贸易或国外消费贸易中都找不到用途的资本来说，它是一条必要的出路。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c4.p13",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_55"
+      },
+      "contentHash": "e479889e391dc6e8456c713128a4c329d85f778cdc4135f5c880bbecfb9a1d56",
+      "text": "关税收入不但不会因这种退税而受损，反而会因保留下来的那部分税款而获益。如果全部税款都予以保留，缴纳这些税款的外国货物由于找不到市场，就很少能够出口，因而也很少能够进口。因此，那些现只保留一部分的税款，原本根本不会有人缴纳。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c4.p14",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_56"
+      },
+      "contentHash": "72fd4e23b599f82f978d10032bc13713e433739ac032cc174f4b3081963f0e43",
+      "text": "这些理由似乎足以证明退税是合理的；即使无论对国内产业产品还是对外国货物所征的全部税款，在出口时总是悉数退还，这些理由也同样足以证明其合理性。在这种情况下，消费税收入确实会略受损失，关税收入所受的损失则会大得多；但产业的自然平衡以及劳动的自然分工和分配，总会受到这类税收或多或少的扰乱，而这样的规定会使其得到更为接近原状的恢复。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c4.p15",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_57"
+      },
+      "contentHash": "240bc5ff89eb9972152ff90286a0ac6d5b0b712b9a44c65ba71d1348510a9e8c",
+      "text": "然而，这些理由只能证明向完全属于外国且独立的国家出口货物时给予退税是合理的，却不能证明向我国商人和制造商享有垄断的地方出口时给予退税是合理的。例如，欧洲货物出口到我国美洲殖民地时给予退税，并不总会使出口量超过没有退税时本会达到的数量。由于我国商人和制造商在那里享有垄断，即使保留全部税款，运往那里的货物数量或许也往往会相同。因此，退税可能往往只是使消费税和关税收入蒙受纯粹损失，而不会改变贸易状况，也不会在任何方面扩大贸易。至于这类退税作为对我国殖民地产业的一种适当鼓励，在多大程度上可以得到辩护，或者让殖民地免缴其余所有同属臣民者都缴纳的税，对母国在多大程度上有利，等我以后论述殖民地时便可看出。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c4.p16",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_58"
+      },
+      "contentHash": "bc35c7773eb1b20432e36f6d6c06f19a645de947d653e573b07ca556eb1a281f",
+      "text": "不过，必须始终明白，退税只有在享受退税的出口货物确实出口到某个外国，而不是秘密地重新进口到我国时才有益处。众所周知，有些退税，尤其是烟草退税，常常以这种方式被滥用，并由此导致许多欺诈行为，既损害财政收入，也损害正当经营的商人。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    }
+  ]
+}

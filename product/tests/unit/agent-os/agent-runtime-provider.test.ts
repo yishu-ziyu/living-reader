@@ -33,6 +33,7 @@ const turn: AgentTurnProviderInput = {
   },
   invitation_basis: null,
   recent_turns: [],
+  invited_question_keys: [],
   pending_intent: null,
 };
 

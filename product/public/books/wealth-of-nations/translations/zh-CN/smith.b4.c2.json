@@ -1,0 +1,728 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "locale": "zh-CN",
+  "chapterId": "smith.b4.c2",
+  "translations": [
+    {
+      "sourceId": "smith.b4.c2.p1",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1203"
+      },
+      "contentHash": "3afd07c7b1c601591c70902e2a957cb34c624cb58058b066610d5be993aed331",
+      "text": "通过征收高额关税或实行绝对禁令，限制从外国进口本国能够生产的货物，国内市场便或多或少地由从事这类生产的国内产业所垄断。例如，禁止从外国进口活畜或盐腌肉类，便保证了大不列颠的畜牧业者对国内食用肉类市场的垄断。对谷物进口征收的高额关税，在收成中等丰足的时期实际上等于禁止进口，也给这种商品的种植者带来了同样的好处。禁止进口外国毛织品，对毛织品制造商也同样有利。丝织业虽然完全使用外国原料，最近也获得了同样的好处。亚麻织造业尚未获得这种好处，但正在大步朝它迈进。大不列颠许多其他种类的制造业，也以同样方式取得了面对本国同胞的完全垄断或近乎完全的垄断。绝对禁止或在某些情况下禁止进口到大不列颠的货物种类之多，远远超出不十分熟悉海关法律的人所容易想象的程度。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p2",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1204"
+      },
+      "contentHash": "44582dd6fe2bedd78fba32dc4e499bc5c326b7538b44abdb6e99186692559062",
+      "text": "国内市场的这种垄断，往往会极大地鼓励享有它的那一特定产业，并且往往会把社会中比原本会投入其中更多的劳动和资本引向那种用途，这是不容置疑的。但它究竟是倾向于增加社会的全部产业，还是使其朝着最有利的方向发展，也许就不那么明显了。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p3",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1205"
+      },
+      "contentHash": "253d930d91f6086ac8d21177b96e26aa544f29767c861b592d0fd4789b9910ba",
+      "text": "社会的全部产业绝不可能超过社会资本所能雇用的限度。正如任何个人能够持续雇用的工人人数必定与他的资本保持一定比例，一个大社会的全体成员能够持续雇用的人数，也必定与该社会的全部资本保持一定比例，而且绝不可能超过这个比例。任何商业规章都不能把任何社会的产业规模增加到其资本所能维持的限度以上。它只能把其中一部分转向原本可能不会进入的方向；而且，这种人为规定的方向是否会比它自行选择的方向对社会更有利，根本无法确定。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p4",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1206"
+      },
+      "contentHash": "8ac0c4edb12d095719c753a8299e019329a5110e7a62d13f4bcd3002f05313b3",
+      "text": "每个人都在不断努力，为自己所能支配的任何资本寻找最有利的用途。诚然，他所考虑的是自己的利益，而不是社会的利益。但对自身利益的考量，自然地，或者毋宁说必然地，会使他偏好对社会最有利的那种用途。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p5",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1207"
+      },
+      "contentHash": "f3fbb5f14089bb95796159e9e1276c14e67a4d209a174970f72e8a967d833b3c",
+      "text": "第一，每个人都努力把自己的资本用在尽可能靠近本地的地方，因而尽可能用来支持国内产业；但条件始终是，他能够由此取得资本的普通利润，或不比普通利润少很多的利润。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p6",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1208"
+      },
+      "contentHash": "a672c0adf469a5620093eb49e3c5f5f2bd15a8482704f607ea4ffbd3fa0a2c37",
+      "text": "因此，在利润相等或几乎相等时，每个批发商自然都偏好国内贸易而非对外消费贸易，又偏好对外消费贸易而非转运贸易。在国内贸易中，他的资本绝不会像在对外消费贸易中那样，常常长时间脱离他的视线。他能够更好地了解自己所信任者的品格和处境；即使碰巧受骗，他也更熟悉必须据以寻求补救的本国法律。在转运贸易中，商人的资本仿佛被分置于两个外国，其中没有任何部分必然会被运回本国，或置于他本人的直接观察和支配之下。阿姆斯特丹商人用来把谷物从柯尼斯堡运往里斯本，并把水果和葡萄酒从里斯本运往柯尼斯堡的资本，通常必定有一半在柯尼斯堡，另一半在里斯本。其中任何部分都不必运到阿姆斯特丹。这种商人的自然居住地应当是柯尼斯堡或里斯本；只有某些极其特殊的情况，才会使他宁愿居住在阿姆斯特丹。然而，因自己与资本相隔如此遥远而产生的不安，通常会促使他把原定运往里斯本市场的柯尼斯堡货物和原定运往柯尼斯堡市场的里斯本货物，都各取一部分运到阿姆斯特丹。尽管这必然使他承担两次装卸的费用，并缴纳一些关税和其他税费，但为了让一部分资本始终处于自己的观察和支配之下，他甘愿承担这笔额外费用。正是通过这种方式，凡在转运贸易中占有相当份额的国家，总会成为它代为经营贸易的所有不同国家货物的集散地或总市场。为了省去第二次装卸，商人总会力图在国内市场尽可能多地出售所有这些不同国家的货物，从而尽其所能把自己的转运贸易转化为对外消费贸易。同样，从事对外消费贸易的商人在为外国市场收集货物时，只要利润相等或几乎相等，总会乐于在国内尽可能多地出售这些货物。这样，他便尽其所能把对外消费贸易转化为国内贸易，从而免除出口的风险和麻烦。可以说，本国就这样成为一个中心，每个国家居民的资本都不断围绕它流转，并始终趋向于它，尽管由于某些特殊原因，有时也可能被从这个中心驱赶、排斥到更遥远的用途上。但前面已经说明，投在国内贸易上的资本，与投在对外消费贸易上的等量资本相比，必然会推动更多的国内产业，并为本国更多居民提供收入和就业；投在对外消费贸易上的资本，与投在转运贸易上的等量资本相比，也具有同样的优势。因此，在利润相等或只是几乎相等时，每个人自然都倾向于以最有可能为国内产业提供最大支持，并为本国最多人口提供收入和就业的方式运用自己的资本。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p7",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1209"
+      },
+      "contentHash": "5a2b6da63696c5440f753ae78a2b774ff9fac299ffb554761d5d0af158a922a4",
+      "text": "第二，每个把资本用于支持国内产业的人，都必然力图引导这种产业，使其产品具有尽可能大的价值。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p8",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1210"
+      },
+      "contentHash": "9383ba3d71f82919573cf657a58a870649e3f64cd6f874282642baf60ee3072f",
+      "text": "产业的产品，就是产业加在其作用对象或原料之上的东西。这种产品的价值是大是小，雇主的利润也会相应地是大是小。然而，任何人把资本用于支持产业，都只是为了利润；因此，他总会努力把资本用于支持其产品可能具有最大价值，或者能够换得最大数量的货币或其他货物的那种产业。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p9",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1211"
+      },
+      "contentHash": "be9edbad428c90fc6abfb771f86ad9b0fa937c56e05bb6f92cb3409e3c5a79f7",
+      "text": "但每个社会的年收入，始终恰好等于其产业全部年产品的交换价值，毋宁说，两者恰好就是同一回事。因此，既然每个人都努力尽可能把自己的资本用于支持国内产业，并且引导这种产业，使其产品具有最大价值，那么每个人都必然在努力使社会的年收入尽可能增大。诚然，他通常既无意促进公共利益，也不知道自己在多大程度上促进了公共利益。他偏好支持国内产业而不是外国产业，只是为了自己的安全；他以使其产品具有最大价值的方式引导这种产业，也只是为了自己的收益。在这件事上，正如在许多其他事情上一样，他受一只看不见的手引导，促进了一个并非出自他本意的目的。而这一目的并非出自他的本意，对社会也并不总是更坏。他追求自己的利益，往往比真正有意促进社会利益时，能更有效地促进社会利益。我从未见过那些佯称为了公共利益而经商的人做出过多少好事。诚然，这种矫饰在商人中并不十分常见，也无须多费言辞劝阻他们这样做。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p10",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1212"
+      },
+      "contentHash": "949f551a2625e633f4cf13dff15b9b96f263f32af37b1c7cd61d17baf8aeb27b",
+      "text": "显而易见，自己的资本能够雇用哪一种国内产业，以及哪一种产业的产品可能具有最大价值，每个人凭借自己身处当地的情况，都能比任何替他作判断的政治家或立法者判断得好得多。企图指导私人应当如何运用其资本的政治家，不仅会让自己承担一种极无必要的操心，而且会僭取一种权力；这种权力无论托付给任何个人，还是任何委员会或议会，都不可能确保安全；而且，如果掌握在一个愚蠢而狂妄到自认为适合行使这种权力的人手中，其危险更是无与伦比。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p11",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1213"
+      },
+      "contentHash": "83ce0021ffaed117c73f03b73e0cb9a2c4121871cf14430cb36d6bcca3f7dc8a",
+      "text": "在任何特定技艺或制造业中，把国内市场的垄断权给予国内产业的产品，多少就是在指导私人应当如何运用自己的资本；而且在几乎所有情况下，这种规章必定不是无用，就是有害。如果国内产业的产品能够以与外国产业的产品同样低廉的价格供应国内市场，这种规章显然无用。如果不能，它通常必定有害。每个审慎的家长都以绝不企图在家制造成本高于购买价格的东西为准则。裁缝不企图自己做鞋，而向鞋匠购买。鞋匠不企图自己做衣服，而雇用裁缝。农民不企图制作这两种东西中的任何一种，而雇用这些不同的工匠。他们全都发现，把自己的全部产业用在自己比邻人略具优势的方面，再用其产品的一部分，或者同样说来，用其中一部分的价款，购买自己所需要的其他一切东西，符合自己的利益。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p12",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1214"
+      },
+      "contentHash": "3460bbbbcf0f83b90bc184eb7c6b087c934aef0e4f22e67fd8381bd07f76805f",
+      "text": "在每个私人家庭的管理中是审慎之举的事情，在一个大王国的管理中几乎不可能是愚蠢之举。如果外国能够以低于我们自己制造成本的价格向我们供应一种商品，最好就用我们自己的产业以我们略具优势的方式生产的一部分产品向他们购买。本国的全部产业始终与雇用它的资本成比例，因此不会由此减少，就像上述工匠的产业不会减少一样；它只会被允许自行寻找能够以最大优势得到运用的方式。当产业被这样引向一种购买成本低于制造成本的物品时，它肯定没有得到最有利的运用。当它以这种方式从生产价值显然更高的商品转向生产被指定生产的商品时，其年产品的价值肯定会有所减少。按照假设，那种商品从外国购买的价格低于在国内制造的成本。因此，如果由等量资本雇用的产业获准遵循其自然进程，那种商品本来只须用该产业在国内所能生产的商品的一部分，或者同样说来，只须用这些商品的一部分价款，就可以购得。因此，本国的产业就这样从一种较为有利的用途转向一种较不有利的用途；其年产品的交换价值不仅不会按照立法者的意图增加，反而必然会因每一项这样的规章而减少。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p13",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1215"
+      },
+      "contentHash": "657f9c9ab185595c9405b01db392b19b6602e05805680538d375d9119ac3bd34",
+      "text": "诚然，借助这种规章，一项特定的制造业有时可能比在其他情况下更早建立起来，并且在经过一段时间之后，可以在国内以与外国相同甚至更低的成本进行生产。但是，尽管社会的产业可以这样比在其他情况下更早地、有利地进入某一特定渠道，却绝不能由此推论说，任何这种规章能够增加其产业总量或收入总额。社会的产业只能随着其资本的增加而增加，而其资本只能随着从收入中逐渐节省下来的数额而增加。但每一项这种规章的直接效果，都是减少社会收入；凡是减少社会收入的事物，显然不大可能使社会资本比在资本和产业都获准自行寻找其自然用途时增长得更快。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p14",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1216"
+      },
+      "contentHash": "3462b531553c1bb069a1b170a87d6519310472b65946e9f3975ddb002ea19a12",
+      "text": "即使由于没有这种规章，社会永远不能获得拟议中的制造业，也不会因此必然在其存在的任何时期变得更贫穷。在其存在的每个时期，其全部资本和产业仍可投在虽不相同、却是当时最有利的对象上。在每个时期，其收入都可能达到其资本所能提供的最大数额，而资本和收入也都可能以尽可能快的速度增长。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p15",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1217"
+      },
+      "contentHash": "49227d15f412e1c2ce999bd0b1d50100a8f9f73cd8031bde0061e3a3aef48201",
+      "text": "一个国家在生产某些特定商品方面对另一个国家所具有的自然优势，有时极其巨大，以致世人公认，与这种优势抗争是徒劳的。借助玻璃温室、温床和暖墙，苏格兰可以种出很好的葡萄，也可以用这些葡萄酿出很好的葡萄酒，但费用约为从外国运来质量至少同样好的葡萄酒所需费用的三十倍。仅仅为了鼓励在苏格兰酿造波尔多红葡萄酒和勃艮第葡萄酒，就禁止进口一切外国葡萄酒，会是一项合理的法律吗？但是，如果把购买等量所需商品所必需的本国资本和产业的三十倍，转向任何一种用途，显然是荒谬的，那么，多投入三十分之一，甚至三百分之一的资本或产业，转向任何这样的用途，也必定是荒谬的；这种荒谬虽然不那么显眼，性质却完全相同。在这方面，一个国家对另一个国家所具有的优势究竟是自然形成的还是后天获得的，并不重要。只要一个国家具有这些优势，而另一个国家缺乏这些优势，后者向前者购买就总会比自己制造更为有利。一个从事某种行业的工匠对从事另一行业的邻人所具有的优势，不过是后天获得的优势；然而他们两人都发现，彼此购买比各自制造不属于自己特定行业的物品更为有利。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p16",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1218"
+      },
+      "contentHash": "f9fd7d0cd74f6f7b795223885278ea7fa716a182a42507673c773ad6ee5ed2c4",
+      "text": "商人和制造商是从这种国内市场垄断中获益最大的人。禁止进口外国牲畜和盐腌肉类，再加上对外国谷物征收高额关税——这种关税在收成中等丰足的时期实际上等于禁止进口——给大不列颠畜牧业者和农场主带来的利益，远不及其他同类规章给该国商人和制造商带来的利益。制成品，尤其是较精细的制成品，比谷物或牲畜更容易从一个国家运往另一个国家。因此，对外贸易主要经营的正是制成品的贩运。在制成品方面，外国人只须拥有很小的优势，即使在本国市场上，也能以低于本国工人的价格出售其产品。在土地的初级产品方面，他们则需要很大的优势才能做到这一点。如果准许自由进口外国制成品，国内若干制造业可能会受损，其中一些或许会彻底衰败，目前投入其中的相当一部分资本和劳动将被迫另寻用途。但是，即使最自由地进口土地的初级产品，也不会对本国农业产生这种影响。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p17",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1219"
+      },
+      "contentHash": "f60ea317cdf4e6d8ab3feef87e06ac390cf6590560f1cc4e6c720388979b3764",
+      "text": "例如，无论外国牲畜的进口多么自由，能够进口的数量都会很少，因此大不列颠的畜牧业几乎不会受到影响。活畜也许是唯一一种海运费用高于陆运费用的商品。走陆路时，它们可以自己走到市场。走海路时，不仅必须运送牲畜，还必须运送它们的饲料和饮水，费用不小，也很不方便。诚然，爱尔兰和大不列颠之间狭窄的海面，使爱尔兰牲畜更容易进口。但是，即使最近只获准实行有限时间的自由进口变成永久政策，也不会对大不列颠畜牧业者的利益产生重大影响。大不列颠濒临爱尔兰海的地区全都是放牧区。爱尔兰牲畜绝不可能进口供这些地区使用；它们必须耗费不小的成本、经历诸多不便，赶过这些幅员辽阔的地区，才能到达适合它们的市场。肥畜无法赶行这么远。因此，能够进口的只有瘦畜，而这种进口所妨碍的并不是育肥区的利益；由于它会降低瘦畜的价格，反而对这些地区有利。它只会妨碍繁殖区的利益。自准许进口以来，爱尔兰牲畜的进口数量很少，而瘦畜仍继续以好价钱出售；这两点似乎证明，即使大不列颠的繁殖区，也绝不大可能因爱尔兰牲畜的自由进口而受到很大影响。诚然，据说爱尔兰的普通民众有时曾暴力阻挠本国牲畜出口。但是，如果出口商发现继续这种贸易有很大利益，那么在法律站在他们一边时，他们本来可以轻易压服这种暴民式的阻挠。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p18",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1220"
+      },
+      "contentHash": "1cda0fcd58ce1756cda127ffdc4429f5b88893222e96fba25322e611fb28235c",
+      "text": "此外，育肥区必定总是得到高度改良，而繁殖区通常未经开垦。瘦畜的高价通过提高未开垦土地的价值，如同一种阻碍改良的奖金。对任何全境都得到高度改良的国家来说，进口瘦畜都比自行繁殖更为有利。因此，据说荷兰省目前就遵循这一准则。诚然，苏格兰、威尔士和诺森伯兰的山区不可能得到很大改良，似乎天生注定要成为大不列颠的牲畜繁殖区。最自由地进口外国牲畜，只会使这些繁殖区无法利用王国其他地区人口增长和改良的机会，把价格抬高到过分的程度，并向本国所有改良程度更高、耕作更充分的地区征收一种实际的税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p19",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1221"
+      },
+      "contentHash": "9eae8884abd2e717df80ae6c41c2fa3d69944b43b5240ae2e080dbc8aa1ba14d",
+      "text": "同样，即使完全自由地进口腌制食品，对大不列颠牧畜者利益的影响，也不会比自由进口活牲畜更大。腌制食品不仅是一种体积十分庞大的商品，而且与鲜肉相比，品质更差，又因耗费更多劳动和费用而价格更高。因此，它们绝不可能与鲜肉竞争，尽管可能与本国的腌制食品竞争。它们可以用来为远洋航行的船只供应食物，以及用于诸如此类的用途，但绝不可能成为人民食物中相当大的一部分。自从爱尔兰腌制食品获准自由进口以来，进口量一直很小；这一经验事实证明，我国牧畜者对此没有什么可担心的。没有迹象表明，屠宰用肉的价格曾因此受到明显影响。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p20",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1222"
+      },
+      "contentHash": "3708dfb94a37b4ab58eb34a27831458a2c80a0a16be8ffc58a65e3f65a697e44",
+      "text": "即使允许外国谷物自由进口，也只会极小地影响大不列颠农场主的利益。谷物是比屠宰用肉体积大得多的商品。每磅售价一便士的小麦，与每磅售价四便士的屠宰用肉一样昂贵。即便在最为匮乏的时期，外国谷物的进口量也很少，这足以使我国农场主相信，最自由的进口没有什么值得他们畏惧。根据那位见闻极为广博的谷物贸易论著作者所说，各年平均进口的各种谷物总量只有二万三千七百二十八夸特，不超过每年消费量的五百七十一分之一。但是，正如谷物奖励金会在丰年造成较多的出口一样，其结果必然是在荒年造成比现有耕作状况下原本会有的更多进口。由于这种奖励金，一年的丰收不能补偿另一年的歉收；而且，既然它必然增加平均出口量，那么在现有耕作状况下，也必然同样增加平均进口量。如果没有奖励金，由于出口的谷物会较少，各年平均进口的谷物很可能也会少于现在。谷物商人，即在大不列颠与外国之间采购和运输谷物的人，所能承揽的业务会少得多，因而可能蒙受相当大的损失；但乡绅和农场主所受的损失却会很小。因此，据我观察，对恢复和继续发放奖励金最为焦虑的，是谷物商人，而不是乡绅和农场主。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p21",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1223"
+      },
+      "contentHash": "542aa7f04ad97767df57b24f3108597e995fa2dda477aff24f3ce42fda54b6f7",
+      "text": "值得大大赞扬的是，在所有人当中，乡绅和农场主最少受卑劣的垄断精神支配。一家大制造厂的经营者，有时听说在距他二十英里以内开设了另一家同类工厂，便会惊慌起来。阿布维尔那位经营呢绒制造业的荷兰人曾约定，在距该城三十法里以内不得开设任何同类工厂。相反，农场主和乡绅一般更愿意促进而不是阻碍邻近农场和地产的耕作与改良。他们不像大多数制造业者那样藏有秘密，反而通常很乐意将自己发现的任何有利的新做法告诉邻人，并尽可能广泛地加以推广。老加图说：“这种营生最为正当、最为稳固，也最少招致嫉妒；从事这种事业的人，也最少心怀恶念。”乡绅和农场主分散在全国各地，不能像商人和制造业者那样轻易结成同盟；后两类人聚居在城镇里，又习惯了城镇中盛行的那种排他的行会精神，自然会设法取得排斥全体同胞的特权，正如他们通常拥有排斥各自城镇居民的特权一样。因此，限制外国货物进口、从而确保他们垄断国内市场的那些措施，看来最初就是由他们发明的。大不列颠的乡绅和农场主大概是仿效他们，也是为了使自己与那些据其所见意图压迫自己的人处于同等地位，才如此忘却了其身份所天然具有的宽宏气度，要求取得专向同胞供应谷物和屠宰用肉的排他特权。他们也许没有花时间考虑，贸易自由对他们利益的影响，远小于对他们所效法的那些人的利益的影响。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p22",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1224"
+      },
+      "contentHash": "94468c909bca256e6c2d608cef37f69c0aadec4e8563885a0751f4b945db7e75",
+      "text": "以一项永久性法律禁止进口外国谷物和牲畜，实际上就是规定：一国的人口与产业在任何时候都不得超过本国土地的天然产物所能维持的限度。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p23",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1225"
+      },
+      "contentHash": "f3171afb8b9a536032d7be4d1f47e688b4a449263c7b317f7dd14765f11cae79",
+      "text": "不过，看来一般有两种情形，为鼓励国内产业而对外国商品加以某种负担会是有利的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p24",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1226"
+      },
+      "contentHash": "b14cf7283fe8f6e1e3d90552023c06bdbbbd48593b76c1473d060b50536c10b9",
+      "text": "第一种情形是，某一特定产业为国防所必需。例如，大不列颠的国防在很大程度上取决于其海员和船舶的数量。因此，《航海法》十分恰当地试图让大不列颠的海员和船舶垄断本国贸易：在某些情形下实行绝对禁止，在另一些情形下则对外国船舶课以重税。以下是这项法令的主要规定。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p25",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1227"
+      },
+      "contentHash": "7f36d17aa90029d09e8248691f3317da30691cace8bcaddf1364bac92e7db6c7",
+      "text": "第一，凡船主、船长和四分之三的船员不是英国臣民的船只，均不得与英国的殖民地和种植园进行贸易，也不得用于大不列颠的沿海贸易，违者没收船只和货物。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p26",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1228"
+      },
+      "contentHash": "55d79d89890e719f1fef30dd6337df95450e5d8f9fac9a21996945aa77fa1bdb",
+      "text": "第二，多种体积最为庞大的进口货物，只能由上述船只，或由生产这些货物的国家的船只运入大不列颠；后一种船只的船主、船长和四分之三的船员必须属于该国，而且即使用这种船只进口，仍须缴纳双倍外国人税。若用任何其他国家的船只进口，则没收船只和货物。制定这项法令时，荷兰人正如他们现在仍然是的那样，是欧洲的大承运商；依照这项规定，他们被完全排除在运货至大不列颠的承运业务之外，也不得向我国进口任何其他欧洲国家的货物。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p27",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1229"
+      },
+      "contentHash": "25a927d221e1fc5b9a69721ee9df51a80e16b06f3e82769f0bae35f471f503eb",
+      "text": "第三，多种体积最为庞大的进口货物，即使用英国船只运输，也不得从生产国以外的任何国家进口，违者没收船只和货物。这项规定很可能也是针对荷兰人的。荷兰当时和现在一样，是所有欧洲货物的大集散地；依照这项规定，英国船只不得在荷兰装载任何其他欧洲国家的货物。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p28",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1230"
+      },
+      "contentHash": "88eeb6b4d8299550b5e1497248da1a97d8e9f830bc564bf8c710b04678a1ae23",
+      "text": "第四，凡不是由英国船只捕捞并在船上加工的各类咸鱼、鲸须、鲸骨、鲸油和鲸脂，进口到大不列颠时均须缴纳双倍外国人税。荷兰人现在仍是欧洲主要的渔民，当时则是欧洲唯一试图向外国供应鱼类的渔民。依照这项规定，他们向大不列颠供应鱼类受到了极为沉重的负担。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p29",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1231"
+      },
+      "contentHash": "1cf37083688f7b397fd6045f8a58cce503a5ef536b0241babe4b1f5cb1ab461a",
+      "text": "《航海法》制定时，英格兰与荷兰虽未实际交战，两国之间却存在着最强烈的敌意。这种敌意始于长期议会执政期间，而这项法令最初正是由长期议会拟定的；不久以后，在护国公和查理二世执政期间，这种敌意便在对荷战争中爆发出来。因此，这项著名法令的某些规定并非不可能出于民族敌意。不过，这些规定十分明智，仿佛全都出自最审慎的智慧。在那个特定时期，民族敌意所针对的目标，恰好就是最审慎的智慧本会建议的目标，即削弱荷兰的海军力量，因为它是唯一能够危及英格兰安全的海军力量。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p30",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1232"
+      },
+      "contentHash": "a3a5274c84a12d5b3928895300ed918e186a751c6b930989b93d848703f9c56b",
+      "text": "《航海法》不利于对外贸易，也不利于由此产生的财富增长。一个国家在与外国的商业关系中的利益，正如一个商人面对与他交易的不同对象时的利益一样，都在于尽可能廉价地买进、尽可能高价地卖出。但是，只有通过最充分的贸易自由，鼓励所有国家把它需要购买的货物运来，它才最有可能廉价买进；同理，只有其市场由此聚集了最大数量的买主，它才最有可能高价卖出。诚然，《航海法》并未对前来输出英国产业产品的外国船只课加负担。就连过去一切出口货物和进口货物都须缴纳的古老外国人税，也已由后来数项法令从大多数出口货物上取消了。但是，如果外国人因禁令或高额关税而无法前来出售，他们就不一定承担得起来此购买；因为他们空船而来，必定损失从本国到大不列颠这一航程的运费。因此，我们减少卖主的数量，也就必然减少买主的数量；这样一来，与实行更充分的贸易自由相比，我们不仅可能以更高的价格购买外国货物，还可能以更低的价格出售本国货物。不过，由于国防远比财富重要，《航海法》也许是英格兰所有商业法规中最明智的一项。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p31",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1233"
+      },
+      "contentHash": "ef307316902e089dab42640496582e71ad774cfa3340d88a192569b2b7b5bec4",
+      "text": "一般而言，为鼓励国内产业而对外国商品加以某种负担会有利的第二种情形是，国内对本国产业的产品征收某种税。在这种情况下，对外国的同类产品征收等额税款，看来是合理的。这样做不会使国内产业垄断国内市场，也不会使本国资本和劳动中超过自然流向某一用途的份额转向该用途。它只会防止税收将自然会流向该用途的任何一部分引向较不自然的方向，并会使外国与国内产业之间的竞争，在征税后尽可能保持与征税前相同的地位。在大不列颠，每当对国内产业的产品征收这种税时，通常还会同时对所有同类外国货物的进口征收高得多的关税，以平息我国商人和制造业者关于他们在国内会被人以更低价格击败的喧嚷抱怨。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p32",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1234"
+      },
+      "contentHash": "0e70ef76bc90fc7fb1c9454c0e3b03136df408957d55420bc8aeea073f4b9d3a",
+      "text": "有些人认为，在某些情况下，对贸易自由的第二种限制，适用范围不应只限于那些恰好能同国内已征税商品竞争的外国商品，而应扩大得多。他们声称，一国一旦对生活必需品征税，就应当不仅对从其他国家进口的同类生活必需品征税，而且还应对一切能够同国内产业的任何产品竞争的外国货物征税。他们说，这种税必然使生活资料更加昂贵；而劳动的价格必定随劳动者生活资料价格的上涨而上涨。因此，国内产业生产的每一种商品，即使本身并未被直接征税，也会因这种税而变得更加昂贵，因为生产它的劳动变得更加昂贵。所以，他们说，这种税实际上等同于对国内生产的每一种特定商品征税。因此，他们认为，为使国内产业与外国处于同等地位，有必要对每一种外国商品征收某种关税，其数额应等于与它竞争的国内商品价格的这种涨幅。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p33",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1235"
+      },
+      "contentHash": "e505b0babe90e4411eb8803f79eefa98b47d54021822b27011d4678436f773de",
+      "text": "对生活必需品征税，例如大不列颠对肥皂、盐、皮革、蜡烛等征收的税，是否必然提高劳动的价格，并由此提高其他一切商品的价格，等到以后论述赋税时，我会加以考察。不过，目前姑且假定它们具有这种影响——而它们无疑确有这种影响——那么，一切商品的价格因劳动价格上涨而普遍提高这种情形，与某一特定商品的价格因直接对它征收某一特定税款而提高的情形，在以下两个方面有所不同。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p34",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1236"
+      },
+      "contentHash": "2272a72bfe93dd1a800bf2cf86d7e2872f6461b6931a89c7c9eb7c1205c74084",
+      "text": "第一，人们总能十分精确地知道，这种商品的价格会因这种税提高到什么程度；但是，劳动价格的普遍上涨，会在多大程度上影响使用劳动的每一种不同商品的价格，人们绝不可能以任何尚称准确的程度知道。因此，要使每一种外国商品所缴纳的税，同每一种国内商品价格的这种涨幅以任何尚称准确的程度相称，是不可能的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p35",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1237"
+      },
+      "contentHash": "2aa4cfa2f32f50bb28adf298fc975408d5afa7ff67b7d3057a1484451355873f",
+      "text": "第二，对生活必需品征税，对人民处境产生的影响，与贫瘠的土壤和恶劣的气候几乎相同。这种税使食物变得更加昂贵，就如同生产食物需要付出非同寻常的劳动和费用一样。土壤和气候造成自然匮乏时，指示人民应当以何种方式运用自己的资本和勤劳，是荒谬的；这种税造成人为匮乏时，同样如此。在这两种情况下，对他们显然最有利的做法，都是任由他们尽可能使自己的产业适应自身处境，并找出那些即使处境不利、仍能使他们在国内市场或国外市场上享有某种优势的用途。他们已经承受了过重的赋税，已经为生活必需品付出了过高的价格，却因此再向他们征收一种新税，让他们也为其他大多数商品付出过高的价格，这无疑是一种最荒谬的补偿办法。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p36",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1238"
+      },
+      "contentHash": "8e925322a1b29c9e5721dd51d3ece143d2fb3d2f54daca62338d59b98656c995",
+      "text": "这种税一旦增加到一定高度，便成为一种灾祸，无异于土地贫瘠和气候恶劣；然而，最普遍征收这种税的，恰恰是最富有、最勤劳的国家。其他国家都无力承受如此严重的弊病。正如只有最强健的身体，才能在有害健康的生活制度下生存并保持健康；也只有那些在各种产业中具有最大天然优势和后天优势的国家，才能在这种赋税下生存并繁荣。荷兰是欧洲这种税最多的国家；由于特殊情形，它仍在继续繁荣，但并不像人们极其荒谬地设想的那样是凭借这种税，而是不顾这种税的阻碍。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p37",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1239"
+      },
+      "contentHash": "b24c9077b9b2d6a4dfb968aa1f3d6732d8ea6a3cb4e1bb86b96af2dc0ed1b521",
+      "text": "正如一般而言，有两种情形下，为鼓励国内产业而对外国商品加以某种负担会是有利的；另有两种情形有时可能需要斟酌：一种是应在多大程度上继续允许某些外国货物自由进口；另一种是在这种自由进口中断一段时间以后，应在多大程度上、或以何种方式恢复它。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p38",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1240"
+      },
+      "contentHash": "a8ce11061784104a738268070e402608db72965e3b987914b8b445949955ca2a",
+      "text": "有时可能需要斟酌应在多大程度上继续允许某些外国货物自由进口的情形是，某个外国以高额关税或禁令限制我国某些制成品输入该国。在这种情况下，报复自然会促使我们采取对等措施，对该国某些或全部制成品输入我国征收同样的关税或实行同样的禁令。各国因此很少不以这种方式进行报复。法国人格外热衷于限制那些可能与本国制成品竞争的外国货物进口，以扶持本国制造业。这构成了柯尔贝尔先生政策的一大部分；尽管他才干卓越，但在这件事上看来也受了商人和制造业者诡辩的蒙骗，而这些人总是要求取得排斥本国同胞的垄断权。目前法国最有见识的人认为，他采取的这类措施并未使本国受益。那位大臣通过一六六七年的税则，对大量外国制成品征收了很高的关税。他拒绝为荷兰人降低这些关税，于是荷兰人在一六七一年禁止进口法国的葡萄酒、白兰地和制成品。一六七二年的战争看来有一部分是由这场商业争端引起的。一六七八年的奈梅亨和约结束了这场争端：法国为荷兰人降低了部分关税，荷兰人因而撤销了禁令。大约就在同一时期，法国人和英国人开始用同样的关税和禁令相互压迫对方的产业，不过，首先作出这种示范的似乎是法国人。此后两国之间一直存在的敌对精神，迄今阻碍了任何一方降低这些关税或放宽这些禁令。一六九七年，英国禁止进口佛兰德制造的梭编花边。当时受西班牙统治的佛兰德政府作为报复，禁止进口英国呢绒。一七〇〇年，英国取消了梭编花边进口禁令，条件是佛兰德对英国呢绒进口恢复从前的待遇。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p39",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1241"
+      },
+      "contentHash": "ccaf4947f90f8a88a4dbadba347242acea0e5dedf5f6799dc2db1534b5558627",
+      "text": "如果这种报复有可能促使对方撤销遭到控诉的高额关税或禁令，它就可能是一项良策。收复一个巨大的国外市场，通常足以抵偿在短期内以较高价格购买某些货物所造成的暂时不便。判断这种报复是否可能产生这样的效果，也许与其说属于立法者的学问——立法者的审议应当受始终不变的一般原则支配——不如说属于那种阴险狡猾、俗称国务家或政治家的动物的技艺，因为他的谋划要随事务的短暂变动而转移。如果不可能促使对方作出任何这种撤销，那么，为了补偿我国某些阶层人民遭受的损害，却由我们自己再造成另一种损害，而且不仅损害那些阶层，还损害几乎所有其他阶层，看来是一种糟糕的办法。当邻国禁止我国某种制成品进口时，我们通常不只禁止其同一种制成品——因为单独禁止这种制成品很少会对他们产生相当大的影响——还会禁止他们的其他某种制成品。毫无疑问，这可能鼓励我国某一特定阶层的工人，并因排除其部分竞争者而使他们能够在国内市场提高价格。但是，那些因邻国禁令而受损的工人，不会从我国的禁令中获益。相反，他们和我国几乎所有其他阶层的公民，都将因此不得不以比以前更高的价格购买某些货物。因此，每一项这种法律，实际上都对全国征收了一种税；它所扶持的不是因邻国禁令而受到损害的那个特定工人阶层，而是另一个阶层。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p40",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1242"
+      },
+      "contentHash": "3f3c21d08b92bb90c1751d855ca3267ef657d52e39ad7943a39d05b162cf6df7",
+      "text": "在一种情形下，外国商品的自由进口中断一段时间之后，恢复到什么程度，或以何种方式恢复，才算适当，有时可能需要斟酌；这种情形就是：某些制造业由于对一切能够同它们竞争的外国商品征收高额关税或禁止其进口，已经扩张到雇用了极大数量的工人。在这种情况下，出于人道，或许应该只缓慢地、逐步地恢复贸易自由，并且要有相当大的保留，审慎从事。如果一下子取消这些高额关税和禁令，同类的廉价外国商品就可能如此迅速地涌入国内市场，以致使我国成千上万的人顿时失去他们通常的工作和生活来源。由此造成的紊乱，无疑可能非常严重。不过，由于以下两个原因，这种紊乱极有可能远没有人们通常想象的那么严重：",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p41",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1243"
+      },
+      "contentHash": "244d21308741fb9e74d94164d0f3265e4c9459648e68f0af77447e9e5fafef07",
+      "text": "第一，凡是通常无需补贴便有一部分产品出口到其他欧洲国家的制造业，即使外国商品完全自由进口，也几乎不会受到影响。这些制造品在国外的售价必须同任何其他质量和种类相同的外国商品一样便宜，因而在国内的售价必定更加便宜。因此，它们仍会占有国内市场；尽管一个反复无常、追逐时尚的人，有时可能仅仅因为外国货是外国货，就宁愿购买它们，而不买国内制造的同类中更便宜、更优良的商品，但从事物的性质来看，这种愚蠢行为所能波及的人必定极少，不可能对人民的总体就业产生任何明显影响。然而，我国毛纺制造业各个部门的很大一部分产品、我国的鞣制皮革和五金制品，每年都无需任何补贴而出口到其他欧洲国家，而这些正是雇用工人最多的制造业。丝织业或许会因这种贸易自由而遭受最大损失，其次是亚麻织造业，不过后者所受的损失会远小于前者。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p42",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1244"
+      },
+      "contentHash": "4ed312f5b388d121bc63be2f520201a33a3db8cc78c272712b11edf22247c247",
+      "text": "第二，即使由于这样恢复贸易自由，大量的人一下子失去他们通常的工作和惯常的生活来源，也绝不意味着他们会因此失去一切工作或生活来源。最近一次战争结束时，由于陆军和海军裁减，十多万名士兵和水手一下子失去了他们通常的工作，这个人数相当于规模最大的制造业所雇用的人数；但是，尽管他们无疑遭受了一些不便，却并未因此失去一切工作和生活来源。大部分水手很可能一有机会便逐渐转入商船队，而在此期间，他们和士兵都被吸收到人民大众之中，从事各种各样的职业。十多万人的处境发生如此巨大的变化，而他们全都习惯于使用武器，其中许多人还习惯于劫掠和抢夺，却不仅没有引起巨大动荡，甚至没有造成任何明显紊乱。据我所能了解到的情况，各地的流浪者人数几乎都没有因此明显增加，任何职业的劳动工资也没有因此下降，只有商船队水手的工资例外。但是，如果把士兵的习性同任何一种制造业工人的习性加以比较，我们就会发现，后者的习性并不像前者的习性那样容易使人不适合受雇于任何新行业。制造业工人一向习惯于仅靠自己的劳动维持生活，士兵则习惯于指望军饷维持生活。一个熟悉专心和勤勉，另一个熟悉懒散和放荡。然而，把勤勉努力的方向从一种劳动转向另一种劳动，无疑要比把懒散和放荡转变为任何一种勤勉努力容易得多。此外，前面已经指出，大多数制造业都有其他性质极为相近的相关制造业，工人可以很容易地把自己的劳动从一种转到另一种。这类工人大部分也会不时从事乡村劳动。原先在某一特定制造业中雇用他们的资本，仍会留在国内，以其他某种方式雇用同样数量的人。国家的资本既然保持不变，对劳动的需求也会保持不变，或几乎保持不变，尽管这种需求可能出现在不同地点和不同职业中。士兵和水手退出现役以后，确实可以在大不列颠或爱尔兰的任何城镇或地方自由从事任何行业。应当像对士兵和水手那样，把从事自己所愿从事的任何一种勤勉活动的同一天赋自由，还给国王陛下的所有臣民；也就是说，取消各同业公会的专有特权，废除《学徒法》——这两者都是对天赋自由的真正侵犯——并在此基础上废除《定居法》，使一个贫穷工人在某一行业或某一地方失业时，可以到另一行业或另一地方寻找工作，而不必害怕受到起诉或被遣返；这样，偶尔遣散某些特定类别的制造业工人给公众或个人造成的损害，就不会比遣散士兵造成的损害大多少。我国制造业工人无疑对国家有很大功劳，但他们的功劳不可能超过那些以鲜血保卫国家的人，也不应得到比后者更为优待的照顾。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p43",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1245"
+      },
+      "contentHash": "78128d512eb5f42382c2850501c12fc45fafc912cb8e94938ca10449ca4eb280",
+      "text": "事实上，期望大不列颠有朝一日完全恢复贸易自由，就像期望在那里有朝一日建立一个《大洋国》或《乌托邦》一样荒谬。不仅公众的偏见，而且更难克服得多的许多个人的私人利益，都不可抗拒地反对这样做。假如军官们也以制造业主反对每一项可能增加其国内市场竞争者人数的法律时所表现的那种热忱和齐心协力，来反对任何裁减军队人数的措施；假如前者也像后者煽动其工人那样，煽动其士兵以暴力和暴行攻击任何此类条例的提议者；那么，企图裁减军队就会如同现在企图在任何方面削弱我国制造业者针对我们取得的垄断一样危险。这种垄断使他们当中某些特定群体的人数增加得如此之多，以致他们像一支过度膨胀的常备军一样，已经成为政府的威胁，并在许多场合恫吓立法机关。支持每一项加强这种垄断之提案的议员，不仅必定会赢得精通贸易的声誉，而且会在一个因人数和财富而举足轻重的阶层中获得极高的声望和影响力。反之，如果他反对他们，尤其是如果他拥有足够的权力阻挠他们，那么，即使他具有最为公认的正直品格、最高的地位和最伟大的公共功绩，也无法保护他免受最无耻的辱骂和诽谤、人身侮辱，有时甚至无法保护他免遭狂暴而失望的垄断者蛮横施暴所带来的切实危险。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p44",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1246"
+      },
+      "contentHash": "29f80b0bcd044e404ac9d73655d9307ef1fa16ddfe0ac58d32f6ff2ab0795d4e",
+      "text": "一个大型制造业的经营者，如果由于国内市场突然向外国人的竞争开放而被迫放弃自己的行业，无疑会遭受相当重大的损失。他的资本中通常用于购买原料和支付工人工资的那一部分，或许不难找到其他用途。但是，其中固定在工场和生产工具上的那一部分，如果不遭受重大损失，几乎无法处置。因此，对他的利益给予公平考虑，就要求这种变化绝不可突然推行，而应缓慢地、逐步地推行，并且事先给予很长时间的预告。假如立法机关的审议总能不受局部利益吵闹不休的催逼所支配，而由对公共利益的广泛考量来引导，那么，正是由于这个缘故，它或许应当格外谨慎，既不要设立任何这类新的垄断，也不要进一步扩大已经设立的垄断。每一项这样的条例都会给国家体制带来某种程度的真正紊乱，而日后要消除这种紊乱，又不引起另一种紊乱，将是困难的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c2.p45",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_1247"
+      },
+      "contentHash": "ac5ebdcdd162e70cd1c6176f8c8593b480021effa0fd3ba1a2f30a1247d1c065",
+      "text": "为了给政府筹集收入，而不是为了阻止外国商品进口，对其进口征税到什么程度才算适当，我将在后文论述赋税时加以考察。为了阻止、甚至只是减少进口而征收的税，显然既会破坏贸易自由，也会破坏关税收入。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    }
+  ]
+}

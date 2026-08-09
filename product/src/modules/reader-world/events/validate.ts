@@ -1,3 +1,4 @@
+import { isCanonicalUlid } from "./clock";
 import {
   LEGACY_PROTOCOL_VERSION,
   PROTOCOL_VERSION,
@@ -98,6 +99,11 @@ function validateEnvelope(
   }
   if (!nonEmptyString(e.message_id)) {
     return fail("INVALID_ENVELOPE", "message_id required");
+  }
+  if (!legacy && !isCanonicalUlid(e.message_id)) {
+    return fail("INVALID_ENVELOPE", "message_id must be a canonical ULID", {
+      message_id: e.message_id,
+    });
   }
   if (!nonEmptyString(e.message_name) || !isDomainEventName(e.message_name)) {
     return fail("UNKNOWN_MESSAGE_NAME", "unknown or unfrozen message_name", {

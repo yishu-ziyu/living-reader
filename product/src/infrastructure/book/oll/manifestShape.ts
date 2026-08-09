@@ -47,8 +47,8 @@ function isFiniteNumber(v: unknown): v is number {
 }
 
 /**
- * Runtime shape guard before any .map / for-of / field access that can throw.
- * Always returns BookResult — never throws on bad input.
+ * Legacy compiler input guard retained for standalone fragment compilation.
+ * Always returns BookResult and never throws on bad input.
  */
 export function validateManifestFileShape(
   raw: unknown,

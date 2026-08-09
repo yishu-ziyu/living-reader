@@ -20,7 +20,20 @@ function chapter(bookNumber: number): BookChapter {
       {
         sourceId: `smith.b${bookNumber}.c1.p1`,
         order: 1,
-        body: [{ type: "text", text: `Source ${bookNumber}` }],
+        body:
+          bookNumber === 1
+            ? [
+                { type: "text", text: "Source " },
+                {
+                  type: "footnote_ref",
+                  marker: "1",
+                  href: "#lf0206-01_footnote_nt001",
+                  targetId: "lf0206-01_footnote_nt001",
+                  id: "lf0206-01_footnote_nt001_ref",
+                },
+                { type: "text", text: "1" },
+              ]
+            : [{ type: "text", text: `Source ${bookNumber}` }],
         quote: `Source ${bookNumber}`,
         contentHash: HASH,
         sourceLocator: {
@@ -59,6 +72,21 @@ function manifest(): BookManifestV2 {
       order: index + 1,
       chapters: [item],
     })),
+    footnotes: [
+      {
+        id: "lf0206-01_footnote_nt001",
+        marker: "1",
+        text: "Canonical footnote target.",
+        backRefId: "lf0206-01_footnote_nt001_ref",
+        sourceLocator: {
+          provider: "OLL",
+          volume: 1,
+          volumeId: "vol-1",
+          resource: "Smith_0206-01.html",
+          fragment: "lf0206-01_footnote_nt001",
+        },
+      },
+    ],
     aliases: {
       "smith.b1.c1.division": "smith.b1.c1.p1",
       "smith.b1.c3.market_extent": "smith.b1.c3.p1",
@@ -107,7 +135,20 @@ describe("buildChapterReadingModel", () => {
     expect(result).not.toBeNull();
     expect(result?.chapter.sourceBlocks[0]).toMatchObject({
       sourceId: "smith.b1.c1.p1",
-      originalText: "Source 1",
+      body: [
+        { type: "text", text: "Source " },
+        {
+          type: "footnote_ref",
+          targetId: "lf0206-01_footnote_nt001",
+        },
+        { type: "text", text: "1" },
+      ],
+      footnotes: [
+        {
+          id: "lf0206-01_footnote_nt001",
+          text: "Canonical footnote target.",
+        },
+      ],
     });
     expect(result?.translation.entries["smith.b1.c1.p1"]).toEqual({
       text: "劳动分工提高了劳动生产力。",
@@ -123,6 +164,19 @@ describe("buildChapterReadingModel", () => {
     expect(result?.toc.books[4]?.chapters[0]?.href).toBe(
       "/read/wealth-of-nations/smith.b5.c1",
     );
+  });
+
+  it("fails closed when a canonical footnote target is unavailable", () => {
+    const source = manifest();
+    source.footnotes = [];
+
+    expect(
+      buildChapterReadingModel(
+        source,
+        source.books[0]!.chapters[0]!,
+        translation(),
+      ),
+    ).toBeNull();
   });
 
   it("fails closed when translation contentHash drifts from the source", () => {

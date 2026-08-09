@@ -48,7 +48,7 @@ test.describe("T006 Source discussion", () => {
     page,
   }) => {
     await installAgentTurnMock(page);
-    await page.goto("/");
+    await page.goto("/test-harness");
     await expect(page.getByTestId("reading-shell")).toBeVisible();
     await expect(page.getByTestId("world-slot")).toHaveAttribute(
       "data-state",
@@ -144,7 +144,7 @@ test.describe("T006 Source discussion", () => {
     page,
   }) => {
     await installAgentTurnMock(page);
-    await page.goto("/");
+    await page.goto("/test-harness");
     await expect(page.getByTestId("reading-shell")).toBeVisible();
 
     // Candidate A
@@ -233,7 +233,7 @@ test.describe("T006 Source discussion", () => {
       });
     });
 
-    await page.goto("/");
+    await page.goto("/test-harness");
     await page
       .getByTestId("discussion-input-division")
       .fill("分工会让人更熟练吗？");

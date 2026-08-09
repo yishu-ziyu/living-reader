@@ -91,8 +91,14 @@ export function RealtimeVoiceDock({
               }
             }}
           >
-            PDF {source.pdfPages.join("/")} ·{` `}
-            {source.sourceId.includes("division") ? "分工" : "市场"}
+            {source.pdfPages.length > 0
+              ? `PDF ${source.pdfPages.join("/")} · `
+              : ""}
+            {source.sourceId.includes("division")
+              ? "分工"
+              : source.sourceId.includes("market_extent")
+                ? "市场"
+                : source.title}
           </button>
         ))}
       </div>

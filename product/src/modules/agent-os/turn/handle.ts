@@ -1,6 +1,9 @@
 import { classifyIntent } from "@/modules/agent-os/guardian/intent";
 import { getReviewedRecipe, type WorldCommand } from "@/modules/world";
-import { deriveInvitationQuestionKey } from "./invitation";
+import {
+  deriveInvitationQuestionKey,
+  hasInvitedQuestion,
+} from "./invitation";
 import type {
   AgentTurnActionId,
   AgentTurnCandidate,
@@ -113,6 +116,7 @@ function cloneRelationshipContext(
     current_chapter_id: context.current_chapter_id,
     memories: context.memories.map((memory) => ({ ...memory })),
     active_recipe_ids: [...context.active_recipe_ids],
+    invited_question_keys: [...context.invited_question_keys],
   };
 }
 
@@ -301,6 +305,7 @@ function providerInput(
       ? cloneInvitationBasis(input.invitation_basis)
       : null,
     recent_turns: input.recent_turns.slice(-4).map((turn) => ({ ...turn })),
+    invited_question_keys: [...input.invited_question_keys],
     pending_intent: pending_intent ? clonePending(pending_intent) : null,
     ...(input.relationship_context
       ? { relationship_context: cloneRelationshipContext(input.relationship_context) }
@@ -352,7 +357,11 @@ function invitationFor(
   const recipe = getReviewedRecipe(candidate.recipe_id);
   if (
     !recipe ||
-    !input.active_source_ids.includes(recipe.source_locator.source_id)
+    !input.active_source_ids.some(
+      (sourceId) =>
+        sourceId === recipe.source_locator.source_id ||
+        sourceId === recipe.source_locator.legacy_source_id,
+    )
   ) {
     return null;
   }
@@ -362,7 +371,7 @@ function invitationFor(
     reason: candidate.reason,
     question_key: deriveInvitationQuestionKey(
       basis.experience_id,
-      candidate.trigger_question,
+      input.final_text,
     ),
     basis: cloneInvitationBasis(basis),
   };
@@ -499,6 +508,20 @@ export async function handleAgentTurn(
       return decision(
         "clarify",
         "这座世界还没准备好，先留在原文。",
+        currentPending,
+        candidate,
+      );
+    }
+    if (
+      hasInvitedQuestion(
+        input.invited_question_keys ?? [],
+        invitation.basis.experience_id,
+        input.final_text,
+      )
+    ) {
+      return decision(
+        "discuss",
+        "这个问题已经邀请过一次，我们继续沿着原文往下想。",
         currentPending,
         candidate,
       );

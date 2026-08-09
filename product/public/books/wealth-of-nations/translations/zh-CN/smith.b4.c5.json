@@ -1,0 +1,1496 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "locale": "zh-CN",
+  "chapterId": "smith.b4.c5",
+  "translations": [
+    {
+      "sourceId": "smith.b4.c5.p1",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_59"
+      },
+      "contentHash": "389ee3e3923cfc7b476f9b874f6d50b01d41d3c4f57e1b98d97965c79a9a32ab",
+      "text": "在大不列颠，人们经常请求对国内某些特定产业部门的产品给予出口奖励，有时这种请求也会获准。据称，借助这些奖励，我国商人和制造商便能在国外市场上以与其竞争者同样低廉、甚至更低的价格出售商品。据说，这样一来，出口量就会增加，贸易差额因而会变得对我国更加有利。我们不能像在国内市场上那样，给予我国工人在国外市场上的垄断地位。我们不能像强迫本国同胞那样，强迫外国人购买他们的商品。因此，人们认为，次优的办法就是付钱让外国人购买。重商主义体系正是打算以这种方式，通过贸易差额使全国富裕起来，并把钱装进我们每个人的口袋。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p2",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_60"
+      },
+      "contentHash": "c0cf51a30e0a109b54da9b3b3056b6cfe32067b9370e664e608819b8793f4592",
+      "text": "人们承认，奖励只应给予那些没有奖励便无法经营的贸易部门。但是，在任何一个贸易部门中，只要商人出售商品所得的价格，能够连同资本的普通利润，一并补偿他为制备商品并将其运往市场所使用的全部资本，这种贸易就能在没有奖励的情况下经营。每一个这样的部门显然都与其他一切不靠奖励经营的贸易部门处于同等地位，因而并不比它们更需要奖励。只有这样的贸易才需要奖励：商人不得不以某种价格出售商品，而这个价格不能连同普通利润一起补偿他的资本；换言之，他不得不以低于将商品运往市场所实际耗费的成本出售商品。给予奖励，是为了弥补这种损失，并鼓励他继续经营，或者也许开始经营一种被认为费用大于收入的贸易；这种贸易的每一次经营都会耗掉投入其中的一部分资本，并且其性质是，如果其他一切贸易都与之相似，这个国家很快就不会剩下任何资本。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p3",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_61"
+      },
+      "contentHash": "4b0198ccf7a7570e29e831cb3ce210df7b4cfb7693cf05a9dfae62d905ebffab",
+      "text": "应当指出，靠奖励经营的贸易，是两个国家之间唯一能够以如下方式持续相当长时间的贸易：其中一国总是而且经常蒙受损失，或者以低于将其商品运往市场所实际耗费的成本出售商品。但是，如果奖励不能偿还商人原本会因商品售价而遭受的损失，他自身的利益很快就会迫使他以另一种方式运用资本，或者另寻一种贸易，使商品的价格能够连同普通利润，一并补偿为将商品运往市场所使用的资本。同重商主义体系的其他一切手段一样，奖励的作用只能是强迫一个国家的贸易流入一条远不如其自然运行时所走的道路有利的渠道。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p4",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_62"
+      },
+      "contentHash": "98ee7bf179f30f2fb7bc6b566022e517c32d238190ad921c4c57c23e67547c12",
+      "text": "那位才智出众、见闻广博的谷物贸易论著作者十分清楚地表明，自谷物出口奖励初次设立以来，以颇为适中的价格估算的谷物出口价值，超过以很高价格估算的谷物进口价值的数额，远远大于这段时期所支付的全部奖励金额。他认为，按照重商主义体系的真正原则，这清楚地证明了这种受强制推动的谷物贸易有利于国家；出口价值超过进口价值的数额，远远大于公众为促成谷物出口而承担的全部额外费用。他没有考虑到，这种额外费用，即奖励，只是谷物出口给社会造成的实际费用中最小的一部分。农场主用来种植谷物的资本也必须计算在内。谷物在国外市场出售的价格，除非不仅能补偿奖励，还能补偿这笔资本及其普通利润，否则社会就会损失其间的差额，或者说国家资本就会相应减少。但人们认为有必要给予奖励的真正理由，正是他们认为价格不足以补偿这些项目。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p5",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_63"
+      },
+      "contentHash": "0f50240da1058d26da714444fe3d711180c1ae913daf194114f09d99ffe665e2",
+      "text": "有人说，自奖励设立以来，谷物的平均价格已经大幅下降。我已经试图说明，谷物的平均价格在上世纪末前后开始有所下降，并在本世纪最初六十四年间持续下降。但是，即使这件事像我所相信的那样确实发生了，它也必定是不顾奖励的影响而发生的，绝不可能是奖励造成的。法国和英格兰都发生了这种情况，尽管法国不仅没有奖励，而且直到1764年，谷物出口一直受到普遍禁止。因此，谷物平均价格的这种逐渐下降，最终很可能既不是由这一项规章造成的，也不是由另一项规章造成的，而是由于白银实际价值逐渐而不易察觉的上升；我在本论第一篇中曾试图说明，本世纪期间，欧洲的一般市场上出现了这种上升。奖励似乎根本不可能对降低谷物价格有所助益。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p6",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_64"
+      },
+      "contentHash": "677a1ce150a1a213a177cbf91b4df0d15cda935c59383b661920b2894fb627c8",
+      "text": "前面已经指出，在丰年，奖励通过促成额外出口，必然使国内市场上的谷物价格维持在高于其自然会跌至的水平。这样做正是设立这项制度的公开目的。在歉收之年，尽管奖励常常暂停，但它在丰年促成的大量出口，必定常常或多或少地妨碍一年的丰收缓解另一年的歉收。因此，无论在丰年还是在歉收之年，奖励都必然倾向于使国内市场上的谷物货币价格略高于没有奖励时的水平。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p7",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_65"
+      },
+      "contentHash": "ff2d7c99da06ff3ed77d2efc5b2084b60e52b486a34746753dba90cbdc2734c8",
+      "text": "我想，任何通情达理的人都不会否认，在耕作的现状下，奖励必然具有这种倾向。但是，许多人认为，奖励倾向于鼓励耕作，而且是通过两种不同的方式：第一，他们设想，通过为农场主的谷物开辟一个更广阔的国外市场，奖励倾向于增加对这种商品的需求，从而增加其产量；第二，他们认为，通过保证农场主在耕作的现状下获得比原本所能预期的更好价格，奖励倾向于鼓励耕作。他们设想，这种双重鼓励经过很长一段岁月，必定会使谷物产量增加到这样的程度：在这段时期结束时耕作可能达到的状态下，谷物在国内市场上的价格降低的幅度，会远远超过奖励所能使它上涨的幅度。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p8",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_66"
+      },
+      "contentHash": "31254c06622453f553a75cea01fe7d388bb4efca0f466f676caddf346f563ecb",
+      "text": "我的回答是，奖励无论能使国外市场扩大多少，在每一个特定年份，都必定完全以牺牲国内市场为代价；因为每一蒲式耳借助奖励才出口、没有奖励便不会出口的谷物，本来都会留在国内市场上，增加这种商品的消费量，并降低其价格。应当指出，谷物奖励同其他一切出口奖励一样，给人民课以两种不同的税：第一，为支付奖励而不得不缴纳的税；第二，由这种商品在国内市场上价格上涨而产生的税；由于全体人民都是谷物的购买者，因此就这种特定商品而言，这种税必须由全体人民缴纳。因此，就这种特定商品而言，第二种税远比第一种沉重。让我们假定，逐年平均计算，每出口一夸特小麦给予五先令的奖励，在收成既定的实际状况下，只使这种商品在国内市场上的价格比原本的价格每蒲式耳高六便士，即每夸特高四先令。即使按照这个十分保守的假设，广大人民除了为每夸特出口小麦缴纳用来支付五先令奖励的税以外，还必须为他们自己消费的每一夸特小麦另缴四先令的税。但是，据那位见闻极为广博的谷物贸易论著作者说，谷物出口量与国内消费量的平均比例不超过一比三十一。因此，他们每为缴纳第一种税贡献五先令，就必定要为缴纳第二种税贡献六镑四先令。对生活第一必需品课以如此沉重的税，或者必定会削减劳动贫民的生活资料，或者必定会使他们的货币工资有所增加，其增幅与其生活资料的货币价格增幅相称。只要它以第一种方式发生作用，就必定会削弱劳动贫民教育和抚养子女的能力，并在这个范围内倾向于抑制国家人口的增长。只要它以第二种方式发生作用，就必定会削弱贫民雇主雇用与原本所能雇用人数同样多的人的能力，并在这个范围内倾向于抑制国家的产业。因此，奖励所促成的额外谷物出口，在每一个特定年份，不仅会在多大程度上扩大国外市场和消费，就恰好在多大程度上缩小国内市场和消费；而且还会通过抑制国家的人口和产业，最终倾向于阻碍和限制国内市场的逐渐扩大，从而长远看来，会使谷物的整个市场和消费量减少，而不是增加。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p9",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_67"
+      },
+      "contentHash": "e427d4328334d244bd5f4485d7f28de1bbfb8c31e107e14f8278045e01b2e411",
+      "text": "不过，人们认为，谷物货币价格的这种上涨使这种商品对农场主更为有利，因而必然会鼓励其生产。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p10",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_68"
+      },
+      "contentHash": "dbe55d499a9e2e75d5ee32e3b67e97d1b9afdc3ef0dfc8b950b63d7897db5a3b",
+      "text": "我的回答是，如果奖励的作用是提高谷物的实际价格，或者使农场主能够用等量谷物，以他的邻近地区通常供养其他劳动者的同样方式——无论是丰裕、适中还是菲薄——供养更多劳动者，那么情况或许确实如此。但是，显而易见，无论奖励还是其他任何人为制度，都不可能产生这种作用。奖励能够在相当大程度上影响的，不是谷物的实际价格，而是其名义价格。而且，这项制度向全体人民课征的税，对缴税者来说虽然可能十分沉重，对领取者却几乎没有什么好处。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p11",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_69"
+      },
+      "contentHash": "73ecf3b196781f738bbe34eebb7bf964fd95e97f545f34e19a31e9dd2d141418",
+      "text": "奖励的真正作用，与其说是提高谷物的实际价值，不如说是降低白银的实际价值；也就是使等量白银不仅能交换到的谷物数量减少，而且能交换到的其他一切国产商品的数量也减少：因为谷物的货币价格支配着其他一切国产商品的货币价格。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p12",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_70"
+      },
+      "contentHash": "5fd1fcc6252a395e7435fed8a5f5e8a1a58e7def61960f074170964f2b7feed3",
+      "text": "它支配劳动的货币价格；这种价格始终必须使劳动者能够购买足够数量的谷物，以便按照社会处于进步、停滞或衰退状态时迫使其雇主供养他的方式——无论是丰裕、适中还是菲薄——供养自己和家人。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p13",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_71"
+      },
+      "contentHash": "439be1b646452fb473d63a8789bb6fb399876ffa059a0076eeafe6370bafb221",
+      "text": "它支配土地原产品其他各部分的货币价格；在每一个改良阶段，这些产品的价格都必定与谷物价格保持一定比例，尽管这一比例在不同阶段有所不同。例如，它支配青草和干草、屠宰牲畜的肉、马匹和饲养马匹的货币价格，因而也支配陆路运输的货币价格，或者说，支配这个国家大部分内陆商业的货币价格。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p14",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_72"
+      },
+      "contentHash": "dced4349ae6aceff5d8f85f8285a66c8098eb58c95e4a58fd5da9b94972c7c27",
+      "text": "它通过支配土地原产品其他各部分的货币价格，支配几乎一切制造业原料的货币价格。它通过支配劳动的货币价格，支配制造技艺和制造业劳动的货币价格。它又通过支配这两者，支配制成品的货币价格。劳动以及一切由土地或劳动生产之物的货币价格，都必然与谷物的货币价格成比例地上涨或下跌。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p15",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_73"
+      },
+      "contentHash": "82419d28cf5227a49ff39826a2ac87b6bd21044780cd3085fba5820f2f8e1da4",
+      "text": "因此，即使由于奖励，农场主能够以每蒲式耳四先令、而不是三先令六便士的价格出售谷物，并按照其产品货币价格的这一涨幅，向地主支付相应增加的货币地租；然而，如果由于谷物价格的这种上涨，四先令所能购买的任何种类国产商品，都不比以前三先令六便士所能购买的更多，那么无论农场主还是地主，他们的境况都不会因这种变化而得到多少改善。农场主不会有能力把土地耕种得好多少；地主也不会有能力把生活过得好多少。在购买外国商品时，谷物价格的这种上涨或许能给他们带来一点好处；在购买国产商品时，则根本不能给他们任何好处。而农场主几乎全部的费用，甚至地主费用中远为主要的部分，都花在国产商品上。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p16",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_74"
+      },
+      "contentHash": "c2c53e5f6515fcf460e3286525144e5b5e499e2f96f92e061be528e20f73de88",
+      "text": "矿山富饶所造成的白银价值下降，在商业世界的大部分地区同等地、或近乎同等地发挥作用，对任何特定国家都无关紧要。由此引起的一切货币价格上涨，虽然不会使取得这些价格的人实际变得更富，却也不会使他们实际变得更穷。一套银器的实际价格降低了，其他一切东西的实际价值则与以前完全相同。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p17",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_75"
+      },
+      "contentHash": "2e3d24e60faa838beb1a77131f2023a8100354eb664c33c6c489d4dd70ad1e95",
+      "text": "但是，由某一特定国家的特殊处境或政治制度造成、并且只发生在这个国家的白银价值下降，则是一件极其重要的事；它非但不会倾向于使任何人实际变得更富，反而倾向于使所有人实际变得更穷。在这种情况下，一切商品的货币价格上涨是这个国家所特有的，这种上涨倾向于或多或少地抑制在该国境内经营的各种产业，并使外国能够用比本国工人所能承受的更少量白银供应几乎各种商品，从而不仅在国外市场上，甚至在其国内市场上，也以低于本国工人的价格出售商品。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p18",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_76"
+      },
+      "contentHash": "7a96a3db9b1f0fb9f618b6d948d7add34cdd2e668a9389ce6d7b6213072ec776",
+      "text": "西班牙和葡萄牙作为矿山所有者，其特殊处境使它们成为向欧洲其他所有国家分配金银的国家。因此，这些金属在西班牙和葡萄牙自然应当比在欧洲其他任何地方稍微便宜一些。不过，这种差额不应超过运费和保险费的总额；由于这些金属价值很高而体积很小，其运费并不高，保险费也与价值相等的其他任何货物相同。因此，如果西班牙和葡萄牙不以其政治制度加重这种特殊处境的不利影响，它们本来不会因此蒙受多少损失。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p19",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_77"
+      },
+      "contentHash": "c1f6f38e9fad5231b9e2cd65222026c50fc9a26a5aa3349202a203caa4dd16c2",
+      "text": "西班牙对金银出口征税，葡萄牙则禁止金银出口，这就使这种出口负担走私费用，并使这些金属在其他国家的价值高于在本国的价值，其差额恰好等于这笔费用的全部数额。当你筑坝拦住一股水流时，水坝一满，越过坝顶流出的水就必定与根本没有水坝时一样多。出口禁令不可能使西班牙和葡萄牙留存超过其所能使用数量的金银，也就是超过其土地和劳动的年产物所容许它们以铸币、器皿、镀金以及其他金银饰物等形式使用的数量。当它们已经取得这一数量时，水坝就满了，此后流入的全部水流都必定越坝而出。因此，据一切记载，尽管有这些限制，西班牙和葡萄牙每年出口的金银仍然几乎等于每年进口的全部数量。不过，正如坝顶后面的水总要比前面的深，这些限制留在西班牙和葡萄牙的金银数量，相对于其土地和劳动的年产物而言，也必定多于其他国家所有的数量。坝顶越高、越坚固，坝前坝后的水深差别就必定越大。税收越高，维护禁令的处罚越重，监督法律执行的警察越警觉、越严厉，西班牙和葡萄牙的金银对其土地和劳动年产物的比例，同其他国家的这一比例之间的差别就必定越大。因此，据说这种差别相当可观；在那里，经常可以看到有些人家拥有大量银器，而除此之外，家中再没有任何东西会在其他国家被认为与这种豪华相称或相配。金银的低廉，或者说同一回事，即一切商品的昂贵，是这种贵金属过剩的必然后果；它既妨碍西班牙和葡萄牙的农业，也妨碍其制造业，并使外国能够用比它们自己在国内生产或制造这些产品所需更少的金银，向它们供应许多种原生产物和几乎所有种类的制成品。税收和禁令以两种不同的方式发挥作用。它们不仅大大降低贵金属在西班牙和葡萄牙的价值，而且由于在那里留住了一定数量、本来会流入其他国家的贵金属，还使这些金属在其他国家的价值维持在略高于原本水平的程度，从而使那些国家在同西班牙和葡萄牙的贸易中获得双重优势。打开水闸，坝顶以上的水很快就会减少，以下的水则会增多，不久两处的水面就会齐平。取消税收和禁令，金银数量在西班牙和葡萄牙会大为减少，在其他国家则会略有增加；这些金属的价值，即它们对土地和劳动年产物的比例，很快就会在各国达到或非常接近同一水平。西班牙和葡萄牙因这种金银出口而可能遭受的损失，完全是名义上和想象中的。它们的货物以及土地和劳动年产物的名义价值会下降，会用比以前更少的白银来表示或代表；但其实际价值仍会与以前相同，仍足以维持、支配和雇用同样数量的劳动。随着其货物的名义价值下降，余下金银的实际价值便会上升；数量较少的这些金属，将足以完成以前需要较大数量才能完成的一切商业和流通用途。流到国外的金银不会白白流出，而会换回某一种或另一种等值货物。这些货物也不会全都是纯属奢侈和消费之物，供那些对自己的消费不作任何回报的闲人耗用。既然闲人的实际财富和收入不会因这种异常的金银出口而增加，他们的消费也不会因此增加多少。这些货物中，大部分很可能，并且必定有一部分，是用来雇用和维持勤劳者的材料、工具和生活资料；这些勤劳者将把其消费的全部价值连同利润一并再生产出来。这样，社会的一部分闲置资本就会转化为活跃资本，并推动比以前更多的产业活动。它们的土地和劳动年产物会立即略有增加，并很可能在几年内大为增加，因为它们的产业由此摆脱了目前承受的最沉重负担之一。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p20",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_78"
+      },
+      "contentHash": "cbcae6264eb0fccf062e477efd4f0e4f1ae2ede28d8856e4c666062b472c9d06",
+      "text": "谷物出口奖励金必然以与西班牙和葡萄牙这种荒谬政策完全相同的方式发挥作用。无论耕作的实际状况如何，它都使我国谷物在国内市场上的价格比在该状况下原本会有的价格略高，而在国外市场上则略低；由于谷物的平均货币价格或多或少地调节其他一切商品的价格，它便大大降低白银在国内的价值，并有在国外略微提高其价值的趋势。它不仅使外国人，尤其是荷兰人，能够以比原本更低的价格吃到我国谷物，有时还使他们能够在同样的情况下，以甚至低于我国人民的价格吃到我国谷物；马修·德克尔爵士这一卓越的权威向我们证实了这一点。它使我国工人不能像原本可以做到的那样，用如此少量的白银供应其货物，却使荷兰人能够用更少的白银供应他们的货物。它有使我国制成品在每个市场上都比原本略贵，而使荷兰制成品比原本略便宜的趋势，因而使他们的产业相对于我国的产业获得双重优势。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p21",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_79"
+      },
+      "contentHash": "94d69662fe592b64bbe6bc752d36f723dfe72e3d762cb45419185cc770b84dc7",
+      "text": "奖励金在国内市场上提高的与其说是我国谷物的实际价格，不如说是其名义价格；它增加的并不是一定数量的谷物所能维持和雇用的劳动数量，而只是这种谷物所能换取的白银数量。因此，它妨碍我国的制造业，却没有给我国的农场主或乡绅带来任何可观的益处。它的确使双方口袋里都多了一点钱，而且，要使他们中的大多数人相信这并非给他们带来了非常可观的益处，或许会颇为困难。但是，如果这种货币在价值上，即在它所能购买的劳动、生活资料以及各种国产商品的数量上，下降的幅度与其数量增加的幅度相同，那么这种益处就不过是名义上和想象中的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p22",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_80"
+      },
+      "contentHash": "37cdd7708d83050ad49c8e7c17cfd14234db2b642196049956bb4b138c6a746b",
+      "text": "在整个国家中，奖励金或许只曾经或可能对一类人有实质性益处。这些人就是谷物商，即谷物出口商和进口商。在丰收年份，奖励金必然造成比原本更多的出口；而由于它阻碍某一年的丰收缓解另一年的歉收，便在歉收年份造成比原本所必需的更多的进口。它在这两种年份都增加了谷物商的业务；在歉收年份，它不仅使谷物商能够进口更多谷物，而且还能以更高的价格出售，因而获得比另一种情形下更大的利润——如果某一年的丰收没有或多或少地受到阻碍，本来能够缓解另一年的歉收，谷物商的利润就不会这么高。因此，据我观察，对继续或恢复奖励金表现出最大热忱的，正是这类人。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p23",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_81"
+      },
+      "contentHash": "c44b3aca61a7ed508b4eb2593afde8a8c96905c0b875f0c136817820c74c35a4",
+      "text": "我国乡绅对外国谷物进口征收高额关税——这种关税在中等丰收时期等同于禁令——并设立奖励金时，似乎是在仿效我国制造商的做法。通过前一项制度，他们确保自己垄断国内市场；通过后一项制度，他们试图防止这个市场在任何时候因其商品过多而饱和。他们试图通过这两项制度提高谷物的实际价值，正如我国制造商通过类似制度提高许多不同种类制成品的实际价值一样。他们或许没有注意到，自然在谷物与几乎所有其他种类货物之间确立的巨大而根本的区别。当你通过垄断国内市场或给予出口奖励金，使我国毛织品或亚麻织品制造商能够以比原本稍高的价格出售其货物时，你提高的不仅是这些货物的名义价格，而且是其实际价格。你使它们等同于更多的劳动和生活资料；你不仅增加这些制造商的名义利润，而且增加其实际利润、实际财富和收入，使他们能够改善自己的生活，或者在那些特定制造业中雇用更多劳动。你确实鼓励了那些制造业，并把比原本很可能自行流向那里的更多本国产业引向它们。但是，当你通过类似制度提高谷物的名义价格或货币价格时，你并没有提高它的实际价值。你没有增加我国农场主或乡绅的实际财富和实际收入。你没有鼓励谷物种植，因为你没有使他们能够维持和雇用更多劳动者来种植谷物。事物的本性已赋予谷物一种实际价值，这种价值不能仅靠改变其货币价格来改变。任何出口奖励金、任何国内市场垄断都不能提高这种价值。最自由的竞争也不能降低它。就全世界一般情况而言，这种价值等于谷物所能维持的劳动数量；在每个特定地方，它等于谷物按当地通常维持劳动的方式——无论丰厚、适中还是微薄——所能维持的劳动数量。毛织品或亚麻布并不是最终衡量和决定其他一切商品实际价值的调节性商品；谷物才是。其他每一种商品的实际价值，最终都由其平均货币价格对谷物平均货币价格的比例来衡量和决定。谷物的实际价值并不随其平均货币价格有时从一个世纪到另一个世纪发生的变动而变动。随之变动的是白银的实际价值。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p24",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_82"
+      },
+      "contentHash": "0e134a01f8b95fdae259795cce4d2c0375531d070c297cc26fa00a7794a79131",
+      "text": "对任何国产商品出口给予奖励金，首先会受到一项可针对重商主义体系各种不同办法提出的一般异议，即它迫使本国产业的一部分流入一个不如其自行流入的渠道有利的渠道；其次还会受到一项特别异议，即它迫使这部分产业不仅流入一个较为不利的渠道，而且流入一个实际上有害的渠道；因为只有借助奖励金才能经营的贸易必然是亏损的贸易。谷物出口奖励金还会受到一项进一步的异议，即它在任何方面都不能促进本来意在鼓励其生产的这种特定商品的种植。因此，我国乡绅要求设立奖励金时，虽然仿效了我国商人和制造商，却没有像这另外两个阶层通常指导自身行为时那样，对自己的利益具有充分认识。他们使公共收入承受了一笔非常可观的费用；他们对全体人民征收了一项非常沉重的税；但他们并未在任何明显程度上提高自己商品的实际价值；而且，由于略微降低了白银的实际价值，他们在一定程度上妨碍了本国的一般产业，并且没有促进、反而或多或少地延缓了自身土地的改良，而这种改良必然取决于本国的一般产业。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p25",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_83"
+      },
+      "contentHash": "4d329f463d52b3b3dee3fbd64b598eb010dc85e459635d5e2f6abfc70195d0ad",
+      "text": "为了鼓励任何商品的生产，人们或许会以为，生产奖励金会比出口奖励金产生更直接的作用。此外，它只会对人民课征一种税，即人民为支付奖励金而必须缴纳的税。它不会提高，反而有降低该商品在国内市场上价格的趋势；因此，它不但不会对人民课征第二种税，反而至少可以部分补偿他们为第一种税所缴纳的钱。不过，生产奖励金很少得到批准。商业体系所确立的偏见使我们相信，国民财富与生产相比更直接地来自出口。因此，出口作为使货币进入国内的更直接手段，得到了更多鼓励。还有人说，根据经验，生产奖励金比出口奖励金更容易引起欺诈。这种说法究竟在多大程度上属实，我不知道。出口奖励金曾被滥用于许多欺诈目的，这是众所周知的。然而，让国内市场因其货物过多而饱和，并不符合商人和制造商——所有这些办法的主要发明者——的利益，而生产奖励金有时可能造成这种情况。出口奖励金使他们能够把过剩部分运往国外，并维持国内市场上剩余部分的价格，从而有效防止这种情况。因此，在重商主义体系的所有办法中，这是他们最喜爱的一种。我曾经知道，某些特定工场的不同经营者相互私下约定，自掏腰包为他们所经营货物中的一定比例提供出口奖励金。这一办法成效极佳，尽管产量大幅增加，他们货物在国内市场上的价格仍上涨到两倍以上。如果谷物奖励金曾降低这种商品的货币价格，那么它的作用一定异乎寻常。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p26",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_84"
+      },
+      "contentHash": "c35ecea7e55f264b1afbae2d21a64059fd1b16377337a2a1b4cf12f254c1e92a",
+      "text": "不过，在某些特定场合，也曾给予过某种类似生产奖励金的奖励。给予白鲱渔业和捕鲸业的吨位奖励金，或许可以被认为多少具有这种性质。可以认为，它们有直接使货物在国内市场上比原本更便宜的趋势。必须承认，在其他方面，它们的效果与出口奖励金相同。借助这些奖励金，本国的一部分资本被用于把某些货物运到市场上，而这些货物的价格不足以补偿成本及资本的普通利润。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p27",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_85"
+      },
+      "contentHash": "d52619fbfaf9b2f3c83c7bd344302fc92ba2c814ac44a0c28a95427bd38697e1",
+      "text": "不过，虽然给予这些渔业的吨位奖励金无助于国家富裕，或许有人会认为，它们通过增加本国水手和船舶的数量而有助于国防。有人可能主张，借助这种奖励金有时能以比维持一支庞大的常备海军——如果我可以仿照“常备陆军”使用这一说法的话——低得多的费用达到这个目的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p28",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_86"
+      },
+      "contentHash": "c6cdc9fdea4967dcec4a08e04b6ec966c70be25a9b133036f32f214376b14369",
+      "text": "不过，尽管有这些有利的说法，以下考虑仍使我倾向于相信，立法机关在批准这些奖励金中的至少一种时，受到了极其严重的蒙骗。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p29",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_87"
+      },
+      "contentHash": "deb45d2474a2d739e7ed2d64d19a14f58f3e3535e6bd2c4ff9482caad915f62e",
+      "text": "第一，捕鲱船奖励金似乎过高。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p30",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_88"
+      },
+      "contentHash": "7360fc0791f6445b2d2e0148f5fb2a165c623ae6b56fba9181853dbaa75a7b12",
+      "text": "从1771年冬季捕捞开始至1781年冬季捕捞结束，对捕鲱船渔业的吨位奖励金一直为每吨三十先令。在这十一年中，苏格兰捕鲱船渔业捕获的总桶数为378,347桶。在海上捕获并腌制的鲱鱼称为“海腌鲱鱼”。要使它们成为所谓“适销鲱鱼”，必须加入更多盐重新装桶；据估计，在这种情况下，三桶海腌鲱鱼通常会重新装成两桶适销鲱鱼。因此，按照这一算法，这十一年间捕获的适销鲱鱼只有252,231⅓桶。这十一年支付的吨位奖励金共计155,463镑11先令，即每桶海腌鲱鱼8先令2¼便士，每桶适销鲱鱼12先令3¾便士。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p31",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_89"
+      },
+      "contentHash": "7b8967249d0ed150493e8c55485f0d7f34d2581867d5e8b2fcdb481af39e8297",
+      "text": "用于腌制这些鲱鱼的盐有时是苏格兰盐，有时是外国盐；这两种盐交付给鱼类腌制商时均免除一切消费税。目前，苏格兰盐的消费税为每蒲式耳1先令6便士，外国盐为每蒲式耳10先令。据认为，每桶鲱鱼约需一又四分之一蒲式耳外国盐。苏格兰盐的平均用量则据认为是两蒲式耳。如果鲱鱼登记出口，就无须缴纳这项税的任何部分；如果登记在国内消费，那么无论鲱鱼是用外国盐还是苏格兰盐腌制，每桶都只须缴纳一先令。这是苏格兰过去对每蒲式耳盐征收的税额，而据最低估计，一蒲式耳盐被认为是腌制一桶鲱鱼所必需的数量。在苏格兰，外国盐除腌鱼外很少用于任何其他用途。但是，从1771年4月5日至1782年4月5日，进口的外国盐数量达到936,974蒲式耳，每蒲式耳八十四磅；制盐场交付给鱼类腌制商的苏格兰盐却不超过168,226蒲式耳，而且每蒲式耳仅五十六磅。因此，渔业中使用的似乎主要是外国盐。此外，每出口一桶鲱鱼还有2先令8便士的奖励金，而捕鲱船捕获的鲱鱼有三分之二以上用于出口。把这一切合在一起，你就会发现，在这十一年中，每桶由捕鲱船捕获并用苏格兰盐腌制的鲱鱼，出口时使政府支出17先令11¾便士；登记在国内消费时，使政府支出14先令3¾便士；而每桶用外国盐腌制的鲱鱼，出口时使政府支出1镑7先令5¾便士；登记在国内消费时，使政府支出1镑3先令9¾便士。一桶优质适销鲱鱼的价格，从十七、十八先令到二十四、二十五先令不等；平均约为一基尼。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p32",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_90"
+      },
+      "contentHash": "0e8b3bf98d5061fc84d32bb8785125a483ba06d84155211effac3eac8c8874c7",
+      "text": "第二，白鲱渔业奖励金是一种吨位奖励金；它按船舶的载重量计算，而不是按其捕捞的勤勉程度或成果计算；恐怕船只出海的唯一目的并不是捕捞鱼，而是捞取奖励金，这种情况一向太过常见。1759年，奖励金为每吨五十先令时，苏格兰整个捕鲱船渔业只带回四桶海腌鲱鱼。那一年，仅就奖励金而言，每桶海腌鲱鱼使政府支出113镑15先令；每桶适销鲱鱼使政府支出159镑7先令6便士。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p33",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_91"
+      },
+      "contentHash": "8bc4945a5b5346d58d3634617a70f191fc5a7dc250c8ab505e575c53ca968acb",
+      "text": "第三，白鲱渔业中获得这种吨位奖励金的捕鱼方式（使用载重二十至八十吨的鲱鱼渔船或有甲板船），似乎不如适合荷兰的情形那样适合苏格兰的情形；这种方式看来是从荷兰的做法借鉴来的。荷兰距离人们所知鲱鱼主要群集的海域很远；因此只能用有甲板船从事这种渔业，因为这种船能够携带足够的饮水和食物，航行到遥远的海域。但赫布里底群岛或西部群岛、设得兰群岛，以及苏格兰北部和西北部海岸，也就是鲱鱼渔业主要在其邻近地区开展的地方，到处都被深入陆地相当远的海湾分割；按照当地的说法，这些海湾称为海湾湖。鲱鱼在造访那些海域的季节，主要群集在这些海湾湖中；因为这种鱼的来访，以及据我所知许多其他种类鱼的来访，并不完全有规律，也不恒定。因此，小船捕鱼似乎是最适合苏格兰特殊地理条件的捕鱼方式：渔民一捕到鲱鱼，就尽快运上岸，或腌制，或趁鲜食用。但每吨三十先令的奖励金给予鲱鱼渔船捕鱼的巨大鼓励，必然会抑制小船捕鱼；小船捕鱼没有这种奖励金，因而无法按照与鲱鱼渔船捕鱼相同的条件，把腌制的鱼运到市场。因此，在鲱鱼渔船奖励金设立以前规模很大、据说所雇用的海员人数不亚于鲱鱼渔船捕鱼目前所雇用人数的小船渔业，如今几乎已经完全衰败。不过，对于这种现已毁灭并被放弃的渔业从前的规模，我必须承认，自己不能佯称可以说得十分精确。由于小船渔业的出航装备没有奖励金，海关或盐税官员也就没有对它作过统计。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p34",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_92"
+      },
+      "contentHash": "df84b4e82193d20b9503615a66077f558c6282aaa62bf91789d9ff817cbde3c8",
+      "text": "第四，在苏格兰许多地方，每年的某些季节，鲱鱼在普通民众的食物中占有不小的比重。一项有助于降低鲱鱼在国内市场价格的奖励金，或许能够大大减轻我国许多生活绝不富裕的臣民的负担。但鲱鱼渔船奖励金并没有促成任何这样的好处。它毁掉了最适合供应国内市场的小船渔业，而出口时每桶另加二先令八便士的奖励金，又把鲱鱼渔船渔业产量的大部分，即三分之二以上，运往国外。据人告诉我，三四十年前，在设立鲱鱼渔船奖励金以前，白鲱鱼的通常价格是每桶十六先令。据说，十至十五年前，在小船渔业尚未完全毁灭以前，价格在每桶十七至二十先令之间。最近五年，平均价格一直是每桶二十五先令。不过，这种高价也许是由苏格兰沿海鲱鱼确实稀少造成的。我还必须指出，通常与鲱鱼一起出售、其价格已包含在上述各项价格之内的木桶，自美洲战争开始以来，价格已经上涨到原来的大约两倍，即从约三先令涨到约六先令。我还必须指出，我所获知的以往价格资料，绝非完全一致、彼此相符；一位极为严谨而经验丰富的老人告诉我，五十多年以前，一桶品质优良、适于销售的鲱鱼，通常价格是一个几尼；我想，这个价格也许仍可视为平均价格。不过，我认为所有资料都一致表明，鲱鱼渔船奖励金并没有使国内市场的价格下降。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p35",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_93"
+      },
+      "contentHash": "29907f4a7832b7c4be926bc987a74b934cd96faeaceacf2469a25174ac8e80fa",
+      "text": "渔业经营者在获得如此优厚的奖励金以后，如果仍继续按照与从前相同、甚至更高的价格出售其商品，人们或许会以为他们的利润必定很大；某些个人的利润也可能确实如此。然而，总体而言，我有充分理由相信，实际情形恰恰相反。这类奖励金通常产生的效果，是鼓励冒失的经营者投身于自己并不了解的行业，而他们由于自身疏忽和无知所遭受的损失，远远超过他们凭政府最大限度的慷慨所能获得的一切收益。1750年，依据首次为鼓励白鲱渔业而规定每吨三十先令奖励金的同一法令（乔治二世在位第23年法令第24章），成立了一家资本为五十万英镑的股份公司。除其他一切鼓励，即刚刚提到的吨位奖励金、每桶二先令八便士的出口奖励金，以及免税供应英国盐和外国盐以外，在十四年期间，认购人每认购一百英镑并缴入公司资本，每年有权获得三英镑，由海关总收税官分两次、每半年等额支付。除这家总裁和董事应驻伦敦的大公司以外，法令还宣布，可在王国各个外港合法设立不同的渔业分会，但每个分会认缴的资本不得少于一万英镑，并由各分会自行承担风险、自负盈亏。这些较小分会的业务，获得了与大公司业务相同的年金和各类鼓励。大公司的认购额很快就满了，王国各个外港也设立了若干不同的渔业分会。尽管有这一切鼓励，所有这些大小公司几乎无一例外，不是损失全部资本，就是损失大部分资本；如今几乎没有一家留下丝毫踪迹，而白鲱渔业现在完全或几乎完全由私人冒险经营者经营。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p36",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_94"
+      },
+      "contentHash": "18f09d49b7a57e8419ae88978c99b848598d856581d682861983fc5ce27735f3",
+      "text": "的确，如果某种特定制造业是保卫社会所必需的，那么依靠邻国供应或许并非始终审慎；如果这种制造业在国内没有其他办法维持，那么向其他一切产业部门征税以维持它，也未必不合理。对于英国制造的帆布和英国制造的火药所给予的出口奖励金，或许都可以根据这一原则加以辩护。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p37",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_95"
+      },
+      "contentHash": "4f422d7a52bd4f13bfd830e7e042c2ebe5856b2b12fa1ad6ec518b484fa74336",
+      "text": "不过，尽管为了扶持某一特定制造者阶层的产业而向广大人民的产业征税，极少可能是合理的；但在极度繁荣而恣意挥霍的时候，当国家享有一笔多得不知如何妥善使用的收入时，向受偏爱的制造业发放这种奖励金，也许就像承担任何其他无谓开支一样自然。无论公共开支还是私人开支，巨额财富或许往往都可用来为巨大的愚蠢开脱。但在普遍困难和困苦时期继续如此挥霍，其中必定有某种超乎寻常的荒谬。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p38",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_96"
+      },
+      "contentHash": "a4c1c0ab16009073bf577d65b290f7b854179c0dd71a39df2d1de2202140c4c3",
+      "text": "所谓奖励金，有时不过是退税，因而不会受到真正的奖励金所招致的同样非议。例如，对出口精制糖给予的奖励金，可以视为退还制造这种糖所用的粗糖和马斯科瓦多糖已经缴纳的税。对出口丝织品给予的奖励金，可以视为退还进口生丝和捻丝所缴纳的税。对出口火药给予的奖励金，可以视为退还进口硫磺和硝石所缴纳的税。按照海关用语，只有对以进口时的相同形态出口的货物给予的返还，才称为退税。当这种形态经过任何一种制造加工而发生很大改变，以致归入一个新名称时，这种返还就称为奖励金。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p39",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_97"
+      },
+      "contentHash": "c5a347d2d196da808d4c6b0d944a3b7054d46ceec477899210512da2395c019a",
+      "text": "国家对在各自行业中表现卓越的艺术家和制造者颁发的奖金，不会受到与奖励金相同的非议。奖金鼓励非凡的技巧与才智，从而使实际受雇于各个相应行业的工人保持竞相上进；而且奖金数额不足以使国家资本流向其中任何一个行业的份额，超过其自行流入的份额。它们的倾向并不是打破各行业之间的自然平衡，而是使每个行业中完成的工作都尽可能完善周全。此外，奖金的开支非常微小；奖励金的开支则极其庞大。仅谷物奖励金一项，有时一年就使国家耗费三十多万英镑。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p40",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_98"
+      },
+      "contentHash": "c573167b4aedd0a756897fb2f84d741f8f5b675c03c6dca0655d363f055a2553",
+      "text": "奖励金有时称为奖金，正如退税有时称为奖励金一样。但在所有情况下，我们都必须考察事物的性质，而丝毫不要在意所用的词语。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p41",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_99"
+      },
+      "contentHash": "1547cf29c192a8085b9f0a92ae8d2935328efbe77a37568cce69c8c28ee5167b",
+      "text": "在结束本章对奖励金的论述以前，我不能不指出，人们对确立谷物出口奖励金的法律以及与之相关的规章制度所给予的赞扬，是完全没有根据的。对谷物贸易的性质以及与之有关的英国主要法律作一番专门考察，足以证明这一论断的真实性。这个问题极其重要，足以说明这篇离题论述如此之长是合理的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p42",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_100"
+      },
+      "contentHash": "78255e69500ac429fe048c16614eba22ac32fcbc12eacca359734bfeb483d4d7",
+      "text": "谷物商人的贸易由四个不同部门组成；虽然这些部门有时可以全部由同一个人经营，但按其本身性质来说，却是四种各自分离而不同的行业。它们是：第一，内地经销商的贸易；第二，为国内消费而进口的进口商贸易；第三，把本国产品出口供国外消费的出口商贸易；第四，转口商的贸易，也就是进口谷物以便再次出口的贸易。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p43",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_101"
+      },
+      "contentHash": "433db1f5d2533808dd3325f87f07b0f39b50638db9947953cb833a2baf16f0aa",
+      "text": "一、内地经销商的利益与广大人民的利益，无论乍看起来多么对立，即使在最严重的歉收年份，也完全相同。把谷物价格提高到当季实际短缺所要求的程度，符合他的利益，而把价格提高到这一程度以上，则绝不可能符合他的利益。他提高价格，就会抑制消费，并促使所有人或多或少地节俭并善加筹划，尤其促使下层民众如此行事。如果价格提得过高，以致消费受到过度抑制，当季的供应量很可能超过当季的消费量，并持续到下一季收成开始上市以后，那么他不仅要冒谷物因自然原因而损失相当一部分的风险，而且不得不以远低于几个月前本可获得的价格出售剩余谷物。如果价格提得不够高，以致消费受到的抑制过小，当季的供应量很可能不足以满足当季的消费量，那么他不仅会损失原本可以赚取的一部分利润，而且会使人民在当季结束以前遭受的不是粮荒的艰难，而是饥荒的可怕惨状。使人民每天、每周和每月的消费量都尽可能准确地与当季供应量相称，符合人民的利益。内地谷物经销商的利益也是如此。他按照自己所能判断的、尽可能接近这一比例向人民供应谷物，就很可能以最高价格和最大利润售完他的全部谷物；而他对收成状况以及自己每天、每周和每月销售量的了解，使他能够或多或少准确地判断，人民是否确实按这种方式得到了供应。他并非有意为人民谋利，却必然会在自身利益的引导下，即使在歉收年份，也以审慎的船主有时不得不对待船员的那种方式来对待人民。当船主预见食物可能不足时，便对船员实行定量减供。即使他由于过分谨慎，有时在并无实际必要时也这样做，他的船员由此可能遭受的一切不便，与不够深谋远虑的做法有时可能使他们面临的危险、苦难和毁灭相比，也是微不足道的。同样，即使内地谷物商人由于过分贪婪，有时把谷物价格提得略高于当季短缺所要求的程度，人民因这种做法所可能遭受的一切不便，与当季初期更为宽松的经营方式可能使他们遭受的灾难相比，也是微不足道的；而这种做法会切实保障人民在当季末期免遭饥荒。最可能因这种过分贪婪而遭受最大损失的，是谷物商人本人；这不仅是因为这种行为通常会激起人们对他的愤怒，而且即使他逃过了这种愤怒的影响，也会因为这种行为必然使他在当季末期仍有一批谷物积压在手；如果下一季碰巧丰收，他就必定只能以远低于原本可以得到的价格出售这些谷物。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p44",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_102"
+      },
+      "contentHash": "02d4fe5a326233f3232f8426abf607a207a9117d4a20817d44fac10bedb88bb8",
+      "text": "的确，如果一家大商人公司有可能把一个幅员辽阔国家的全部收成都据为己有，那么为了维持剩余部分的价格，毁掉或丢弃其中相当一部分，或许符合他们的利益，正如据说荷兰人处理摩鹿加群岛香料的方式一样。但是，即使凭借法律强制，也几乎不可能对谷物建立这样广泛的垄断；而且在法律允许自由贸易的任何地方，谷物都是所有商品中最不容易被少数几笔大资本凭借买下其大部分而囤积或垄断的商品。谷物的价值不仅远远超过少数私人资本所能购买的数额，而且即使假定这些资本买得起，谷物的生产方式也会使这种收购完全无法实行。在每个文明国家，谷物既是每年消费量最大的商品，每年用于生产谷物的产业活动也多于用于生产任何其他商品的产业活动。谷物刚从土地中收获时，也必然比任何其他商品分散在更多所有者手中；这些所有者无法像许多独立制造者那样聚集在一个地方，而必然散布于全国各个角落。这些最初的所有者，或者直接供应邻近地区的消费者，或者供应那些再向消费者供货的其他内地经销商。因此，内地谷物经销商，包括农场主和面包师在内，必然比任何其他商品的经销商人数都多，而他们分散各地的处境，使他们完全不可能结成任何全面联盟。因此，在歉收之年，如果他们当中任何一个人发现自己手头的谷物大大多于按现行价格有望在当季结束前售出的数量，他绝不会想到维持这个价格，让自己蒙受损失而只使自己的对手和竞争者受益；相反，他会立即降价，以便在新收成开始上市以前脱手自己的谷物。以这种方式支配任何一个经销商行为的同样动机和同样利益，也会支配其他每个经销商的行为，并迫使他们全体按照自己最佳判断，以最适合当季歉收或丰收程度的价格出售谷物。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p45",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_103"
+      },
+      "contentHash": "f2574a5599fcbe580330392dd004ee1ea7dca4d3c50ef8100798ed19d1110aa5",
+      "text": "无论谁认真考察本世纪或此前两个世纪中折磨过欧洲任何地区的粮荒和饥荒的历史——其中若干次我们拥有相当精确的记载——我相信都会发现，粮荒从来不是由内地谷物经销商之间的任何联合造成的，也不是由实际短缺以外的任何原因造成的；这种实际短缺有时或许在某些特定地方是战争破坏所致，但在绝大多数情况下是季候不佳所致；他还会发现，饥荒从来不是由政府企图以不当手段补救粮荒造成的不便而采取的强制措施以外的任何原因造成的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p46",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_104"
+      },
+      "contentHash": "3f222aed2744f8d2af4109d22faf560940a9661c6cabdc6e8d180951b2e17826",
+      "text": "在一个幅员辽阔的谷物生产国，如果其所有不同地区之间都有自由的贸易和交通，那么最不利的季候所造成的短缺，也绝不可能严重到引发饥荒；即使收成最少，只要以节俭而有计划的方式加以管理，也足以在全年供养与中等丰收年份通常以较为宽裕的方式养活的人数相同的人口。对收成最不利的季候，是过度干旱或降雨过多。但由于谷物在高地和低地、容易过湿的土地和容易过干的土地上都同样生长，对一部分国土有害的干旱或雨水，对另一部分国土却是有利的；无论在多雨还是干旱的季候，收成都比气候较为适中的季候少得多，但在这两种情况下，一部分国土的损失都会在某种程度上由另一部分国土的增益所补偿。在稻米生产国，稻米不仅需要非常湿润的土壤，而且在生长的某一时期必须被水淹没，因而干旱的后果要凄惨得多。不过，即使在这种国家，只要政府允许自由贸易，干旱或许也几乎从来不会普遍到必然造成饥荒。几年前孟加拉的干旱，很可能会造成一次非常严重的粮荒。东印度公司雇员对稻米贸易施加的某些不当规章和某些欠缺判断的限制，或许促使那场粮荒转变成了饥荒。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p47",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_105"
+      },
+      "contentHash": "d0ed3a74fd5d5dc015612e81506fae1807209e134b2d06bca2857c65291fc3ff",
+      "text": "当政府为了补救粮荒造成的不便，命令所有经销商按照它认为合理的价格出售谷物时，它要么阻止他们把谷物运到市场，而这有时甚至会在当季初期造成饥荒；要么，如果他们把谷物运到市场，这种价格就使人民有能力、并从而鼓励他们以极快的速度消费谷物，以致必然会在当季结束以前造成饥荒。谷物贸易不受任何限制和约束的自由，既是唯一能有效防止饥荒苦难的办法，也是减轻粮荒不便的最佳办法；因为实际短缺造成的不便无法消除，只能减轻。没有任何贸易比谷物贸易更值得法律的充分保护，也没有任何贸易像它这样迫切需要这种保护；因为没有任何贸易像它这样容易遭受民众的憎恶。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p48",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_106"
+      },
+      "contentHash": "6655719b2b9a5512731bc502c7ad2a9e47dc24a50594e0b478bf65ce7704ff1d",
+      "text": "在歉收年份，下层民众把自己的困苦归咎于谷物商人的贪婪，因而把他当作仇恨和愤怒的对象。因此，在这种时候，他非但没有获利，反而常有彻底破产的危险，他的仓库也可能遭到这些人的暴力抢掠和毁坏。然而，谷物商人正是指望在歉收、价格高昂的年份赚取主要利润。他通常同一些农场主订有合同，约定后者在若干年内以一定价格向他供应一定数量的谷物。合同价格是按照人们所认为的适中而合理的价格，也就是通常或平均价格来确定的；在近来这些歉收年份以前，一夸特小麦的这种价格通常约为二十八先令，其他谷物则按比例计算。因此，在歉收年份，谷物商人按通常价格买进很大一部分谷物，再以高得多的价格卖出。不过，这种额外利润不过足以使他的行业与其他行业处于公平的同等地位，并补偿他在其他时候因商品本身容易腐坏以及其价格频繁而无法预见的波动所遭受的许多损失；仅从一个事实来看，这一点似乎已相当明显，那就是：在这一行业中积累巨额财富，同在其他任何行业中一样罕见。然而，歉收年份伴随这一行业而来的民众憎恶——而它只有在这些年份才可能十分有利可图——使有身份、有财富的人不愿涉足其中。于是，这一行业落入一批较低等的商人手中；在国内市场上，介于种植者与消费者之间的中间人，几乎只有磨坊主、面包师、面粉商、面粉经纪人，以及一些可怜的小贩。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p49",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_107"
+      },
+      "contentHash": "7f57117a959829f566ba35f2bd799371aff40e2457eec279efaaa9f4a2f5412c",
+      "text": "欧洲的古代政策非但没有抑制民众对这一有益于公众的行业的憎恶，反而似乎认可并助长了这种憎恶。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p50",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_108"
+      },
+      "contentHash": "9e33d8528bb918a1bf26fff37782dbf4c2ce4f1e172a84fe22def644cbd72e87",
+      "text": "爱德华六世第五及第六年法令第十四章规定：凡购买任何谷物意图转售者，均应视为非法囤积商；初犯者监禁两个月，并没收相当于所购谷物价值的财产；再犯者监禁六个月，并没收其价值两倍的财产；三犯者戴枷示众，监禁至国王认为适宜为止，并没收其全部动产。欧洲其他大部分地区的古代政策并不比英格兰的政策高明。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p51",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_109"
+      },
+      "contentHash": "d29cbd036752a5b20380e0d8413d4348d83785d3a85464c4de5f9f899fb20452",
+      "text": "我们的祖先似乎认为，民众从农场主那里购买谷物，会比从谷物商人那里购买便宜；他们担心，谷物商人在付给农场主的价格之外，还会为自己索取过高的利润。因此，他们力图彻底消灭谷物商人的行业。他们甚至力图尽可能阻止任何一种中间人介入种植者与消费者之间；这就是他们对所谓谷物贩运商或承运商的行业施加许多限制的用意。任何人若无许可证，都不得从事这一行业，而许可证要证明其品行诚实、交易公道。按照爱德华六世的法令，签发这种许可证须经三名治安法官批准。但后来连这一限制也被认为不够严格；根据伊丽莎白时期的一项法令，签发许可证的权限被限定归于季度治安会议。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p52",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_110"
+      },
+      "contentHash": "e1a7768c37a1bcbdb22c94ffd4309085c10e31b939e7c7e5a49bf8c9a07897f6",
+      "text": "欧洲的古代政策用这种方式来规制作为乡村主要行业的农业，所依据的准则与它为作为城镇主要行业的制造业所确立的准则截然不同。它使农场主除了消费者或消费者的直接代理人，即谷物贩运商和承运商之外，再无其他顾客，从而力图迫使他不仅从事农场主的行业，还要从事谷物商人或谷物零售商的行业。相反，它在许多情况下却禁止制造者从事店主的行业，或零售自己的货物。制定前一项法律，是为了促进全国的一般利益，或者使谷物便宜，尽管当时或许并不十分明白如何才能做到这一点。制定后一项法律，则是为了促进某一特定阶层，即店主的利益；当时认为，如果允许制造者从事任何零售业务，他就会以低得多的价格出售货物，以致店主的行业被毁掉。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p53",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_111"
+      },
+      "contentHash": "7bbc4fde0dc28521c9aa68f612fce34f10c48f5d3f31c6bb89030c5b606f229f",
+      "text": "然而，即使允许制造者开设店铺并零售自己的货物，他也不可能以低于普通店主的价格出售。无论他把资本的哪一部分投入店铺，都必定是从制造业中抽出的。为了使自己的经营与别人的经营处于同等地位，他既须从制造业这一部分取得制造者的利润，也须从店铺经营那一部分取得店主的利润。例如，假定在他居住的那个城镇，制造业资本和店铺经营资本的通常利润都是百分之十，那么在这种情况下，他对店中出售的每一件自制货物，都必须计收百分之二十的利润。当他把货物从工场运到店铺时，必须按照他本可以卖给商人或店主的价格来估价，而商人或店主本会按批发方式买进这些货物。如果估价更低，他就损失了制造业资本的一部分利润。随后他从店中把货物卖出时，除非能取得店主出售这些货物时本会取得的同样价格，否则他就损失了店铺经营资本的一部分利润。因此，尽管他看似从同一件货物上赚取了双重利润，但由于这些货物先后成为两笔不同资本的一部分，他在用于这些货物的全部资本上只赚取了一份利润；如果他赚得少于这份利润，他就是亏损者，或者说，他运用全部资本时并未取得同大多数邻人一样的收益。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p54",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_112"
+      },
+      "contentHash": "9f90e4c54ae745a159b6e6cc338c9e1dc4f4f14b0e883304db40547d68b7a60e",
+      "text": "制造者被禁止做的事，农场主却在某种程度上奉命去做：把资本分配在两种不同用途上；一部分留在谷仓和麦垛场中，以满足市场不时出现的需求；另一部分用于耕种土地。但是，正如后一部分资本若得不到农业资本的通常利润，他就无力投入一样，前一部分资本若得不到商业资本的通常利润，他也同样无力投入。实际经营谷物商人业务的资本，无论属于被称为农场主的人，还是属于被称为谷物商人的人，在两种情况下都必须取得同等利润，才能补偿资本所有者以这种方式运用资本，才能使其经营与其他行业处于同等地位，也才能使他不致有利可图地尽快转投其他行业。因此，被迫兼营谷物商人行业的农场主，不可能以低于自由竞争情况下任何其他谷物商人所不得不采用的价格出售谷物。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p55",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_113"
+      },
+      "contentHash": "d55cff85c5db7859e16217ad6adb312ab8bfcee15a9d53b9cf082de4f859923e",
+      "text": "能把全部资本用于单一营业部门的商人，具有与能把全部劳动用于单一操作的工人同类的优势。后者获得一种熟练技巧，使他能用同样的两只手完成多得多的工作；前者同样也获得一种如此简便而娴熟的经营方法来买进和处置货物，使他能以同样的资本经营多得多的业务。正如工人通常能以便宜得多的价格提供其工作，商人通常也能以稍低的价格提供货物，比他的资本和注意力都用于更多种类的对象时更便宜。大多数制造者若自行零售货物，不可能卖得像一个警觉而勤勉的店主那样便宜；后者唯一的业务就是批量买进货物，再将其零售出去。大多数农场主若自行零售谷物，供应一个距离他们大多数人也许有四五英里的城镇居民，就更不可能卖得像一个警觉而勤勉的谷物商人那样便宜；后者唯一的业务就是批量收购谷物，把谷物汇集到一个大仓库中，再将其零售出去。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p56",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_114"
+      },
+      "contentHash": "d5014ef6532f8def2cc94d0812c38a35e07bb2519ce304321ec0fa1c000333c2",
+      "text": "禁止制造者从事店主行业的法律，力图强迫资本用途的这种分工比原本可能的发展得更快。强迫农场主从事谷物商人行业的法律，则力图阻止这种分工发展得那么快。两项法律都明显侵犯了自然自由，因而是不公正的；而且两者既不公正，也同样不明智。任何社会的利益都要求，这类事情既不应受到强迫，也不应受到阻碍。一个把自己的劳动或资本用于比其处境所必需的更多种用途的人，绝不可能通过以低价压过邻人而损害邻人。他可能损害自己，而且通常确实如此。谚语说，样样都干的人永远不会富有。不过，法律始终应当相信人们会照料自己的利益，因为在各自的具体处境中，他们通常必定比立法者更能判断自己的利益。然而，在这两项法律中，强迫农场主从事谷物商人行业的法律危害大得多。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p57",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_115"
+      },
+      "contentHash": "55d33459ddcf9515213b613a32ac68786c2dbd392c21fa720b305e8befb62dfd",
+      "text": "这项法律不仅妨碍了对每个社会都极为有利的资本用途分工，也妨碍了土地的改良和耕种。它迫使农场主经营两种行业而不是一种，从而迫使他把资本分成两部分，其中只有一部分能够用于耕种。但是，如果他可以在谷物脱粒后随即尽快把全部收成陆续卖给谷物商人，他的全部资本就可以立即回到土地上，用来购买更多牲畜、雇用更多仆工，以便更好地改良和耕种土地。可是，由于被迫零售谷物，他不得不常年把很大一部分资本留在谷仓和麦垛场中，因此不能像原本可以用同样资本做到的那样把土地耕种好。所以，这项法律必然妨碍土地的改良，而且非但不会使谷物更便宜，反而必定使谷物比原本更为稀缺，因而也更昂贵。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p58",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_116"
+      },
+      "contentHash": "ed95b6c964da117ddd8e751ca3f43d0c629df4989b142ac88ef7455766662a55",
+      "text": "在农场主的行业之后，谷物商人的行业实际上是这样一种行业：如果得到适当的保护和鼓励，它对增加谷物产量的贡献会最大。它会支持农场主的行业，正如批发商的行业支持制造者的行业一样。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p59",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_117"
+      },
+      "contentHash": "28e4c8233f1f22b25c4d9b68863bf7c87ac40e651a3d4abd65c1b7a3bfbbab49",
+      "text": "批发商为制造者提供现成的市场，制造者一生产出货物，他就立即将其买走，有时甚至在货物尚未制成以前就向制造者预付货价，从而使制造者能够把全部资本，有时甚至超过全部资本的数额，不断用于制造，因此能比他必须自行把货物卖给直接消费者、甚至卖给零售商时制造多得多的货物。此外，由于批发商的资本通常足以补充许多制造者的资本，他与制造者之间的这种交往，使一个大资本的所有者有切身利益去支持许多小资本的所有者，并在他们遭受原本可能使其破产的损失和不幸时给予帮助。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p60",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_118"
+      },
+      "contentHash": "8ac3f0c1c15f7818dfb0b20f5c7a6e7d0b61c02c135722eb2458245484eabe18",
+      "text": "如果农场主与谷物商人之间普遍建立同类的交往，也会给农场主带来同样有利的效果。他们将能够把全部资本，甚至超过全部资本的数额，不断用于耕种。遇到他们这一行业比任何行业都更容易遭遇的那些意外时，他们会在自己的经常性顾客，即富有的谷物商人那里，找到一个既有利益支持他们、又有能力这样做的人，而不会像目前这样完全依赖地主的宽容或其管事的怜悯。假如有可能——也许并不可能——普遍而且立即建立这种交往；假如有可能立即把王国的全部农业资本转用于其适当的事业，即土地耕种，使目前可能有任何一部分资本被转用于其中的其他一切用途都不再占用这些资本；又假如有可能为了在必要时支持和协助这笔巨额资本的运作，立即提供另一笔几乎同样巨大的资本，那么，仅仅这种情势的变化会在全国各地造成多么巨大、多么广泛、又多么迅速的改良，恐怕很难想象。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p61",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_119"
+      },
+      "contentHash": "858d1c02452df704734c507282fc8f8f8b6524d3767faeff2ad57c3e435de7a6",
+      "text": "因此，爱德华六世的法令力图尽可能阻止任何中间人介入种植者与消费者之间，也就是力图消灭这样一种行业：让它自由经营，不仅是减轻粮食匮乏所造成不便的最佳缓解办法，也是预防这种灾难的最佳手段；因为除农场主的行业外，没有任何行业对谷物种植的贡献能像谷物商人的行业那么大。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p62",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_120"
+      },
+      "contentHash": "fd22b98775bc2e856883b6be1ad97d429db685b73537099bc5954df8fea95506",
+      "text": "后来，若干后续法令缓和了这项法律的严厉程度，先后允许在每夸特小麦价格不超过二十、二十四、三十二和四十先令时囤购谷物。最后，查理二世第十五年法令第七章宣布，只要每夸特小麦的价格不超过四十八先令，其他谷物的价格也不超过相应比例，凡不是抢先购销者的人，即不是在三个月内于同一市场转售的人，都可合法囤购谷物，或买进谷物以便转售。内地谷物商人的行业迄今所曾享有的一切自由，都是由这项法令赋予的。现任国王第十二年法令废除了几乎所有其他反对囤积商和抢先购销者的古代法律，却没有废除这项特定法令的限制，因而这些限制至今仍然有效。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p63",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_121"
+      },
+      "contentHash": "d1df6be5ff798266c9073d191a9a2986ebbe94cb2eae370d916b179149adf30e",
+      "text": "然而，这项法令在某种程度上认可了两种极其荒谬的民众偏见。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p64",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_122"
+      },
+      "contentHash": "2d7b992a7ce3026cfca6432ec4f11da30772cafee808799057b886865effd676",
+      "text": "第一，它假定，当每夸特小麦的价格上涨到四十八先令，其他谷物的价格也相应上涨时，谷物很可能被囤积到损害民众的程度。但根据前文所述，似乎已经相当明显，无论价格多高，内地商人都不可能把谷物囤积到损害民众的程度；此外，每夸特四十八先令虽然可以视为很高的价格，但在歉收年份，这种价格常常在收获后立即出现，当时新收成几乎还没有任何部分能够出售，甚至再无知的人也不可能认为其中任何一部分能够被囤积到损害民众的程度。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p65",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_123"
+      },
+      "contentHash": "52ab7b546de444479ab43dc6cf4b52e9f415d3bcacb8dd02c678ced8e12d6df2",
+      "text": "第二，它假定，谷物在某一价格下很可能被抢先购销，也就是被买尽以便不久后在同一市场转售，从而损害民众。但是，如果一个商人买尽运往某一特定市场或已经进入某一特定市场的谷物，以便不久后在同一市场转售，那必定是因为他判断，在整个季节里，该市场不可能一直得到像这一次这样充足的供应，所以价格必定很快上涨。如果他对此判断错误，而价格没有上涨，他不仅会损失以这种方式使用的资本的全部利润，而且还会因为储存和保管谷物必然产生的费用和损耗而损失一部分资本本身。因此，他对自己的实质性损害，远大于他甚至可能对那些因他的行为而无法在这个特定集市日备足谷物的人造成的损害，因为这些人日后可在其他任何集市日以同样便宜的价格备足谷物。如果他的判断正确，他非但没有损害广大民众，反而为他们提供了一项极其重要的服务。他使民众比原本略早感受到粮食匮乏造成的不便，从而防止他们以后像必然会有的那样更严重地感受到这些不便；如果低廉的价格鼓励他们以超过这个季节实际稀缺状况所适宜的速度消费，后者就必然发生。当稀缺确实时，能为民众做的最好的事，就是尽可能平均地把由此造成的不便分摊到一年中不同的每个月、每一周和每一天。谷物商人的利益促使他研究如何尽其所能精确地做到这一点；既然其他任何人都不可能拥有与他相同的利益、相同的知识或相同的能力，像他一样精确地完成这件事，这项极其重要的商业运作就应当完全交给他；换言之，谷物贸易至少就国内市场的供应而言，应当完全自由。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p66",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_124"
+      },
+      "contentHash": "03cca4b601f1925e5c6117cbd683948b19e7fca7f3440bf41590133e19b1ee96",
+      "text": "民众对囤积和抢先购销的恐惧，可以同民众对巫术的恐惧和怀疑相比。那些被控犯有后一种罪行的不幸可怜人，对于归咎于他们的灾祸，并不比那些被控犯有前一种罪行的人负有更多责任。废止一切针对巫术的起诉、使任何人都无法再以控告邻人犯有那种虚构罪行来满足自己恶意的法律，通过消除鼓励和支撑那些恐惧与怀疑的主要原因，似乎已有效地终结了它们。完全恢复内地谷物贸易自由的法律，很可能同样会有效地终结民众对囤积和抢先购销的恐惧。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p67",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_125"
+      },
+      "contentHash": "d742ef8404ec47696012d1cfd6e9e8e5bf10117ead40594a86f879793fbc229a",
+      "text": "然而，查理二世第十五年法令第七章尽管存在种种缺陷，但它对国内市场的充足供应以及耕作的增加，或许比法令汇编中的任何其他法律贡献都大。内地谷物贸易迄今所曾享有的一切自由和保护，都来自这项法律；而内地贸易对国内市场供应和耕作利益的促进，都远比进口贸易或出口贸易更为有效。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p68",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_126"
+      },
+      "contentHash": "84f28f78327d044c97c25846765d82401851d2a108c9169868234a0550852af5",
+      "text": "据论述谷物贸易的那些小册子的作者计算，输入大不列颠的各类谷物平均数量与所消费的各类谷物平均数量之比，不超过一比五百七十。因此，就供应国内市场而言，内地贸易与进口贸易的重要性之比必定为五百七十比一。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p69",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_127"
+      },
+      "contentHash": "48805a2d0830c97b3a154afe21256dbe653bb87da7088517b0be8361a7968691",
+      "text": "据同一位作者计算，从大不列颠输出的各类谷物平均数量，不超过年产量的三十一分之一。因此，就通过为国内产品提供市场来鼓励耕作而言，内地贸易与出口贸易的重要性之比必定为三十比一。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p70",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_128"
+      },
+      "contentHash": "27b781909cbbb6fe0c4542f0ab848412576dd181c1eb8ac01f6e6a4ea3157b8d",
+      "text": "我对政治算术没有多大信心，也无意保证这两种计算中任何一种的精确性。我提到它们，只是为了说明：在最明智、最有经验的人看来，谷物对外贸易远不如国内贸易重要。奖励金设立前紧接着的那些年份里，谷物价格非常低廉，也许可以合理地在一定程度上归因于查理二世这项法令的作用；该法令是在大约二十五年前颁布的，因而有充分时间产生效果。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p71",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_129"
+      },
+      "contentHash": "b6a603b6d9daf001a7000632a70458da8c2126526216abc2a9c737d3a47e0259",
+      "text": "关于谷物贸易的另外三个部门，我要说的一切，只需寥寥数语就足以说明。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p72",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_130"
+      },
+      "contentHash": "8b1056b263d78983d0f3971040aa9b90eb83db709699239a35ccf6ad2b64d29d",
+      "text": "二、进口外国谷物供国内消费的商人的贸易，显然有助于国内市场的即时供应，因而在这一点上必定直接有利于广大人民。诚然，它往往会使谷物的平均货币价格略有下降，却不会降低谷物的真实价值，也不会减少它所能维持的劳动量。如果进口始终自由，我们的农场主和乡绅逐年平均从谷物中所得的钱，或许会少于目前进口实际上在大多数时候都遭禁止时所得的钱；但他们所得的钱会更有价值，能购买更多各种其他货物，并能雇用更多劳动。因此，他们的真实财富、真实收入会与目前相同，尽管可能以较少的白银数量来表示；他们既不会无力，也不会不愿像目前一样多种植谷物。相反，由于谷物货币价格下降所引起的白银真实价值上升，会使一切其他商品的货币价格略有下降，这就使发生这种情况的国家的产业在一切外国市场上取得某种优势，从而往往会鼓励并扩大该国的产业。但是，谷物国内市场的范围，必定与谷物产地所在国家的一般产业成比例，或者说，与那些生产其他东西、因而拥有其他东西——或同样说来，拥有其他东西的价款——可拿来交换谷物的人数成比例。而且在每个国家，国内市场既是最近、最便利的市场，也是最大、最重要的谷物市场。因此，由谷物平均货币价格下降所引起的白银真实价值上升，往往会扩大谷物最大、最重要的市场，从而不是阻碍、而是鼓励谷物的种植。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p73",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_131"
+      },
+      "contentHash": "f91b0329682d7cf97a199db457c5c8ed890dc588583a256899e787f8bf91e7fb",
+      "text": "依查理二世二十二年第十三章法令，凡国内市场的小麦价格不超过每夸特五十三先令四便士时，进口小麦每夸特须缴纳十六先令的关税；凡价格不超过四英镑时，则须缴纳八先令的关税。在过去一百多年里，前一个价格只在极度匮乏时期才出现；据我所知，后一个价格则根本不曾出现。然而，依据这项法令，在小麦价格上涨到超过后一个价格以前，须缴纳很高的关税；在上涨到超过前一个价格以前，所缴关税实际上等于禁止进口。其他种类谷物的进口，也按与其价值相称、几乎同样高的价格界限和关税受到限制。后来的法律又进一步提高了这些关税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p74",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_132"
+      },
+      "contentHash": "09957d9e369ad73bd47611e4fccf1618152fd479118286d5b8c5a81f58cc5a2a",
+      "text": "在匮乏年份，严格执行这些法律可能给人民造成的困苦，或许会非常严重。但在这种场合，通常会以临时法令暂停执行，准许在有限期间内进口外国谷物。这些临时法令之所以必要，充分表明这项一般法令并不妥当。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p75",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_133"
+      },
+      "contentHash": "c877f49abc06640c427a67c99d5f1590476db6ca22228182c52a3c230740d822",
+      "text": "这些进口限制虽然早于奖励金的设立，却是由后来制定那项规章的同一种精神、同一些原则所支配的。这些限制本身无论多么有害，由于那项规章的存在，它们或某些其他进口限制却变得必不可少。如果在小麦价格低于每夸特四十八先令或略高于这一价格时，外国谷物可以免税进口，或只须缴纳少量关税，那么这些谷物就可能凭借奖励金的好处再行出口，使公共收入蒙受巨大损失，并使这项制度的宗旨完全遭到歪曲；这项制度的目的原是扩大本国谷物的市场，而不是扩大外国谷物的市场。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p76",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_134"
+      },
+      "contentHash": "e2b8dac540c01072135233fc9d8da8233d21cdcb1163d55bd1af25fd819b9330",
+      "text": "三、出口谷物供外国消费的商人的贸易，当然不会直接有助于国内市场的充足供应。不过，它确实会间接地发挥这种作用。无论这种供应通常来自哪里，无论来自国内生产还是外国进口，除非一个国家通常种植或进口的谷物，多于其国内通常消费的数量，否则国内市场的供应绝不可能十分充足。但是，除非在一切通常情况下剩余谷物都能出口，种植者就会谨慎地绝不多种植，进口商也绝不多进口，超过国内市场最低消费需要的数量。那个市场很少会供应过剩，通常反而会供应不足，因为以供应该市场为业的人，一般都害怕自己的货物滞留手中。禁止出口，会把一国土地的改良和耕种限制在供应本国居民所需的程度。出口自由则使该国能够扩大耕种，以供应外国。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p77",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_135"
+      },
+      "contentHash": "cb7b832835afccc67822314059720840d2e69584ae527d1035d1cb6cc18067bd",
+      "text": "依查理二世十二年第四章法令，凡小麦价格不超过每夸特四十先令时，准许谷物出口；其他谷物的价格界限按比例确定。依同一君主十五年法令，这项自由扩大到小麦价格超过每夸特四十八先令以前；依其二十二年法令，则扩大到一切更高的价格。诚然，这种出口须向国王缴纳从价税。但在税率簿中，一切谷物的估价都很低，所以这种从价税对小麦每夸特仅为一先令，对燕麦每夸特仅为四便士，对其他一切谷物每夸特仅为六便士。威廉和玛丽元年设立奖励金的法令，在小麦价格不超过每夸特四十八先令时，实际上取消了这项小额关税；威廉三世十一年及十二年第二十章法令，则明文规定在一切更高价格时也取消这项关税。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p78",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_136"
+      },
+      "contentHash": "ba2c88f6626a2ea5a51ddd9a9d4be170d31e9416cada83c6a3fc6aa21b66c20d",
+      "text": "这样一来，出口商人的贸易不仅受到奖励金的鼓励，而且比内地粮商的贸易自由得多。依上述最后一项法令，可以不论价格高低囤积谷物供出口；但为内地销售而囤积谷物，只有在价格不超过每夸特四十八先令时才被允许。然而，前面已经说明，内地粮商的利益绝不可能与广大人民的利益相反。出口商人的利益却可能与之相反，而且事实上有时确实如此。如果在本国遭受粮食短缺时，某个邻国又遭遇饥荒，把谷物大量运往后一个国家，从而可能大大加重本国粮食短缺的灾难，也许会符合出口商人的利益。这些法令的直接目的，并不是使国内市场供应充足，而是在鼓励农业的名义下，尽可能抬高谷物的货币价格，从而尽可能造成国内市场长期的粮食短缺。由于抑制进口，国内市场的供应即使在极度匮乏时期，也只能依靠本国生产；又由于在价格高达每夸特四十八先令时仍鼓励出口，即使在相当匮乏的时期，国内市场也不能享有本国产量的全部。英国曾不得不如此频繁地采用一些权宜办法，即颁布临时法律，在有限期间内禁止谷物出口，并在有限期间内取消谷物进口关税；这充分表明其一般制度并不妥当。如果那项制度是好的，英国就不会如此频繁地陷入不得不背离它的境地。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p79",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_137"
+      },
+      "contentHash": "9f62bf9434866ebbe54d89fb77b49fa7827333f63a8216790e20e00dce38a961",
+      "text": "如果所有国家都遵循自由出口和自由进口的宽大制度，一个大洲所划分成的各个国家，在这一点上就会像一个大帝国的各个行省一样。就一个大帝国的各个行省而言，无论根据道理还是经验，内地贸易自由显然不仅是缓和粮食短缺的最佳办法，也是预防饥荒最有效的办法；同样，对于一个大洲所划分成的各个国家来说，进出口贸易自由也会如此。大洲越辽阔，其各地之间的陆路和水路交通越便利，其中任何一个特定地区遭受这两种灾难中任何一种的可能性就越小，因为一个国家的匮乏更有可能由另一个国家的丰足来缓解。但是，很少有国家完全采用这种宽大制度。谷物贸易自由几乎到处都或多或少地受到限制；在许多国家，它又受到十分荒谬的规章束缚，以致常常把粮食短缺这一不可避免的不幸，加剧为饥荒这一可怕的灾难。这些国家对谷物的需求常常会变得如此巨大、如此迫切，以致邻近一个碰巧同时也在遭受某种程度粮食短缺的小国，不敢供应它们，否则自己也会面临同样可怕的灾难。这样，一个国家极坏的政策，可能在一定程度上使另一个国家采用原本最好的政策变得危险而不审慎。不过，无限制的出口自由在大国会远没有那么危险，因为大国的产量大得多，其供应很少会因任何可能出口的谷物数量而受到很大影响。在瑞士的一个州，或意大利的某些小邦，也许有时有必要限制谷物出口。在法国或英格兰这样的大国，几乎从来不可能有这种必要。此外，阻止农场主随时把货物运往最有利的市场，显然是为了某种公共效用的观念、为了某种国家理由，而牺牲通常的正义法则；这种立法权力只有在最迫切必要的情况下才应行使，也只有在这种情况下才可原谅。如果谷物出口确实需要禁止，那么禁止出口时的价格始终应当是很高的价格。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p80",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_138"
+      },
+      "contentHash": "125d587881e386322c76f1017a07d0ba875c048d8551364b3858ca16f0887afb",
+      "text": "各地有关谷物的法律，都可与有关宗教的法律相比。人民觉得，与自己今生的生计或来世的幸福有关的事情，对自身利益极为重要，以致政府必须迁就他们的偏见，并为了维护公共安宁而建立他们所赞同的制度。也许正因为如此，我们才极少看到在这两个重大对象中的任何一个方面建立起合理的制度。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p81",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_139"
+      },
+      "contentHash": "2ea3ba44661fa986bd8ba23f667d32206414f887012c81a6d0e69f04e67ba688",
+      "text": "四、转运商人的贸易，也就是进口外国谷物以便再行出口的贸易，有助于国内市场的充足供应。诚然，他从事这种贸易的直接目的并不是在那里出售谷物。但是，他通常愿意这样做，而且甚至愿意接受远低于他在外国市场上可能期望得到的价款；因为这样一来，他就省去了装卸、运费和保险的费用。一个国家若通过转运贸易成为供应其他国家的集散地和仓库，其居民自己很少会缺乏谷物。虽然转运贸易可能由此降低国内市场上谷物的平均货币价格，却不会因此降低谷物的真实价值。它只会略微提高白银的真实价值。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p82",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_140"
+      },
+      "contentHash": "6c67e9471ed7eb34ca53a36b5356a6d35e207f9d4a541668b7d97fdd659dc525",
+      "text": "在英国，由于外国谷物的进口关税很高，而且其中大部分没有退税，转运贸易在一切通常场合实际上都遭到禁止；在非常场合，当匮乏使得必须用临时法令暂停征收这些关税时，出口又总是遭到禁止。因此，在这种法律制度下，转运贸易实际上在一切场合都遭到禁止。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p83",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_141"
+      },
+      "contentHash": "613aa9a2d9e6a64e30c49845069293918ce8f8a1aa173f4c10fa4a149afd6d51",
+      "text": "因此，与奖励金的设立相联系的那套法律制度，似乎不值得享有任何已经给予它的赞誉。英国的改良和繁荣如此经常被归因于那些法律，其实很容易用其他原因来解释。英国的法律保障每个人都能享有自己劳动的果实；单是这种保障，就足以使任何国家繁荣起来，尽管存在这些以及另外二十种荒谬的商业规章；而这种保障在革命时得到完善，与奖励金的设立大约同时。每个人改善自身境况的自然努力，一旦获准在自由和安全的条件下发挥作用，就是一种如此强大的力量，以致它单凭自身而无须任何帮助，不仅能够把社会推进到富裕和繁荣的境地，而且能够克服人类法律的愚蠢经常给它的运行造成的一百种无谓障碍；尽管这些障碍的作用总是或多或少地侵害它的自由或削弱它的安全。在英国，产业享有完全的安全；尽管它远非完全自由，却与欧洲任何其他地方一样自由，甚至更加自由。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p84",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_142"
+      },
+      "contentHash": "51643bd26338790ab07dc5b802b55a89ba05e2a684b5c670a45d77aebbf6eb24",
+      "text": "尽管英国最繁荣、改良最大的时期，晚于与奖励金相联系的那套法律制度，我们却不能因此把这种繁荣和改良归因于那些法律。这个时期也晚于国债的产生。但国债毫无疑问并不是这种繁荣和改良的原因。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p85",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_143"
+      },
+      "contentHash": "0226a58c7b9ae7a06b93063a6d5a40523594b454fce42a7f3a883910726fba04",
+      "text": "尽管与奖励金相联系的那套法律制度，与西班牙和葡萄牙的政策有完全相同的倾向，即略微降低实行这种制度的国家中贵金属的价值；然而，英国无疑是欧洲最富裕的国家之一，而西班牙和葡萄牙也许属于最贫困的国家之列。不过，这种境况上的差异很容易由两个不同的原因来解释。第一，西班牙的税收、葡萄牙禁止金银出口的规定，以及监督这些法律执行的严密管制，施行于两个十分贫穷、每年合计输入价值六百多万英镑金银的国家；因此，在降低这些国家贵金属价值方面，其作用必定不仅比谷物法在英国的作用更直接，而且强烈得多。第二，在这些国家，这种恶劣政策并未被人民普遍享有的自由和安全所抵消。那里的产业既不自由，也无保障；西班牙和葡萄牙两国的世俗政府与教会政府，仅凭自身就足以使它们目前的贫困状态永久延续下去，即使它们的商业规章明智的程度，能与其中大部分规章实际的荒谬愚蠢程度相当，也是如此。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p86",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_144"
+      },
+      "contentHash": "a713c724c6df31c23d143837abc9b3b95d0e1cc94c0dec16881a0c324d1e1ecd",
+      "text": "现任国王十三年第四十三章法令，似乎就谷物法建立了一套新制度；这套制度在许多方面优于旧制度，但在一两个方面也许不及旧制度。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p87",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_145"
+      },
+      "contentHash": "dd2092cbf35e0c9519acec27dc9d21146bd0e13fa13ade0e4b1db7ca7319724a",
+      "text": "依这项法令，一旦中等小麦的价格上涨到每夸特四十八先令，中等黑麦、豌豆或蚕豆的价格上涨到三十二先令，大麦的价格上涨到二十四先令，燕麦的价格上涨到十六先令，为国内消费而进口所缴纳的高额关税便予以取消，代之以小额关税：小麦每夸特仅征六便士，其他谷物按比例征收。这样，对于所有这些不同种类的谷物，尤其是小麦，国内市场在远低于从前的价格水平上便向外国供应开放了。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p88",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_146"
+      },
+      "contentHash": "36b38e99973dfc0e408c2807b72d7c3588ec1d38e41a1e3a3fd669aaf4354584",
+      "text": "依同一项法令，小麦出口每夸特五先令的旧奖励金，一旦价格上涨到四十四先令便停止发放，而不是像从前那样在价格上涨到四十八先令时才停止；大麦出口每夸特二先令六便士的奖励金，一旦价格上涨到二十二先令便停止发放，而不是像从前那样在价格上涨到二十四先令时才停止；燕麦粉出口每夸特二先令六便士的奖励金，一旦价格上涨到十四先令便停止发放，而不是像从前那样在价格上涨到十五先令时才停止。黑麦奖励金从三先令六便士减为三先令，并且一旦价格上涨到二十八先令便停止发放，而不是像从前那样在价格上涨到三十二先令时才停止。如果奖励金确如我竭力证明的那样不当，那么它们越早停止、数额越低，就越好。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p89",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_147"
+      },
+      "contentHash": "ea27c124cd200c6c01e4c52e508e539168a8dda263c5e1a3e098b3afcb9d594c",
+      "text": "同一项法令还准许在最低价格时免税进口谷物以便再行出口，条件是在此期间把谷物存放在由国王和进口商共同加锁的仓库中。诚然，这项自由只适用于英国不同港口中的二十五个。不过，这些都是主要港口，而其他大部分港口也许没有适合这一用途的仓库。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p90",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_148"
+      },
+      "contentHash": "be6a119f86341df8fbe8c9148b6b825d16f24e3d58ca4095c7ce399673aa2828",
+      "text": "就此而言，这项法律显然是对旧制度的改进。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p91",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_149"
+      },
+      "contentHash": "f5130a5051a0ddb97a71fa476e370dad5876de0905015db141567fd7735328c9",
+      "text": "但是，依同一项法律，凡燕麦价格不超过每夸特十四先令时，出口燕麦可获得每夸特二先令的奖励金。此前出口这种谷物从未获得过奖励金，正如出口豌豆或蚕豆从未获得过奖励金一样。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p92",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_150"
+      },
+      "contentHash": "c422eb9406db0de4d08a812672f146f44e9d964956a7d2aaf143146a21829c88",
+      "text": "依同一项法律，小麦价格一上涨到每夸特四十四先令，便禁止出口；黑麦价格一上涨到二十八先令，大麦价格一上涨到二十二先令，燕麦价格一上涨到十四先令，也都禁止出口。这几个价格似乎全都未免太低；此外，在原为强行促进出口而发放的奖励金恰好撤销的价格上，完全禁止出口，似乎也不妥当。奖励金当然要么应在低得多的价格上撤销，要么应允许出口到高得多的价格。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b4.c5.p93",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 2,
+        "volumeId": "oll-cannan-vol2-1904",
+        "resource": "Smith_0206-02.html",
+        "fragment": "Smith_0206-02_151"
+      },
+      "contentHash": "1f5e1d608b3375d56f72f980e31e044d48c85018169614bdf161552fe5552524",
+      "text": "因此，就此而言，这项法律似乎不如旧制度。不过，尽管它有种种缺陷，我们也许可以像评价梭伦的法律那样评价它：它本身虽不是最好的，却是当时的利益、偏见和民情所能允许的最好法律。到适当时候，它也许能为更好的法律铺平道路。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    }
+  ]
+}

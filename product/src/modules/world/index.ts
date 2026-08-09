@@ -92,14 +92,19 @@ export {
   type CommittedWorldSourceBinding,
   compilePresentation,
   type CompilePresentationInput,
+  type PresentationAction,
   type PresentationEntity,
+  type PresentationFlow,
   type PresentationPlan,
+  type PresentationSource,
+  type PresentationStock,
   type PresentationTimelineStep,
 } from "./presentation";
 
 export {
   compileReviewedRecipe,
   getReviewedRecipe,
+  listReviewedRecipeIdsForSource,
   listReviewedRecipes,
   parseWorldRecipe,
   recipeFingerprint,

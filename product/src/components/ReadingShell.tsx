@@ -10,7 +10,6 @@ import {
   AGENT_OS_STATUS,
   discussionSnapshotFromEvidence,
 } from "@/modules/agent-os";
-import { CLOSED_WORLD_SLOT } from "@/modules/world";
 import { snapshotVoiceSource } from "@/modules/voice";
 import { FootnoteList, SourceBody } from "./SourceBody";
 import {
@@ -257,7 +256,7 @@ export async function ReadingShell() {
                   <span>关系确认后，世界在这两段原文之间展开</span>
                 </div>
 
-                <WorldSlotFromSession label={CLOSED_WORLD_SLOT.label} />
+                <WorldSlotFromSession />
 
                 <SourceSection
                   block={market.value}
@@ -359,6 +358,7 @@ function SourceSection({
       data-source-key={block.sourceKey}
       data-source-id={block.sourceId}
       data-source-locator={block.sourceLocator.fragment}
+      tabIndex={-1}
       data-pdf-page={pdf}
       data-print-page={print}
     >

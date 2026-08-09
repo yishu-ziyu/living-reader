@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "locale": "zh-CN",
+  "chapterId": "smith.b2.c0",
+  "translations": [
+    {
+      "sourceId": "smith.b2.c0.p1",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_843"
+      },
+      "contentHash": "59a6d464145f84f7b9b707adc1e00f514d5ae6fb62557e3836e140233ca977e5",
+      "text": "在那种没有劳动分工、很少进行交换、每个人都为自己置办一切的原始社会状态中，为了维持社会事务的运行，并不需要预先积累或储存任何资财。每个人都竭力以自己的勤劳，随时满足自己不时出现的需要。饿了，他就到森林里去打猎；外衣穿破了，他就用自己猎杀的第一头大型动物的皮给自己做衣服；茅屋开始破败时，他就用离茅屋最近的树木和草皮，尽其所能加以修缮。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c0.p2",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_844"
+      },
+      "contentHash": "f48771caa29b6449abd74e2a5595af10b7786cb5f231fbaef553daf73064092f",
+      "text": "但是，一旦彻底实行了劳动分工，一个人自己的劳动产品便只能满足他不时出现的需要中极小的一部分。其需要中远为广大的一部分，是由他人的劳动产品来满足的；他用自己的产品，或者说同样的意思，用自己产品的价款来购买这些产品。但在他自己的劳动产品不仅已经制成，而且已经售出以前，这种购买是无法进行的。因此，必须在某处预先储存足以维持他的生活，并为他提供工作所需材料和工具的各种物品，至少要足以维持到这两件事都能办成为止。一个织工若要专心从事自己特有的职业，就必须由他本人或他人在某处预先储存一笔资财，足以维持他的生活，并为他提供工作所需的材料和工具，直至他的织物不仅织成而且售出。显然，这种积累必须先于他在如此长的时间内把自己的劳动用于这样一种特有的职业。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c0.p3",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_845"
+      },
+      "contentHash": "55f0784528863f86d91b2b175e389d36f70b575bd01f31a9e63660e3509542ef",
+      "text": "正如从事物的本性来看，资本积累必须先于劳动分工一样，劳动也只有随着资本预先积累得越来越多，才能越来越细地划分。随着劳动分工越来越细，同样人数所能加工的材料数量会大幅增加；而且，随着每个工人的操作逐渐变得更为简单，各种新机器也会被发明出来，以便利并缩短这些操作。因此，随着劳动分工的发展，为了不断雇用同样数目的工人，必须预先积累与较原始状态下所需数量相同的生活资料，以及数量更多的材料和工具。但每个行业的工人人数，通常会随着该行业劳动分工的发展而增加；或者不如说，正是他们人数的增加，使他们能够以这种方式分类并细分。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c0.p4",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_846"
+      },
+      "contentHash": "ef3e6f95f5f1d2826cf2184a9273adec21af11c1d3aa94c51d6dadadf15a31ee",
+      "text": "正如资本积累是实现劳动生产力这一巨大改进所预先必需的条件一样，这种积累也会自然而然地促成这种改进。以自己的资本维持劳动的人，必然希望以能生产出尽可能多产品的方式来使用资本。因此，他既力求在自己的工人中最适当地分配工作，又力求为他们配备自己所能发明或有能力购买的最好机器。他在这两方面的能力，通常与其资本的规模，或者与这项资本所能雇用的人数成比例。因此，在每个国家，劳动量不仅随着雇用劳动的资本增加而增加，而且由于这种增加，同样数量的劳动会生产出数量大得多的产品。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c0.p5",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_847"
+      },
+      "contentHash": "b7a7785d0c43ea04d2e20875e91180b999a0e39f7c5fc0e32e016aee73180fd0",
+      "text": "以上大体就是资本增加对劳动及其生产力所产生的影响。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b2.c0.p6",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_848"
+      },
+      "contentHash": "f02e30468701558bfb692f667130c4c9a2b14fbfb0fcaba5a0273a82a4be45a7",
+      "text": "在以下这一篇中，我试图说明资财的性质、资财积累成各种资本所产生的影响，以及这些资本用于不同用途所产生的影响。本篇分为五章。在第一章中，我试图说明个人或一个大社会的资财会自然分成哪些不同的部分或门类。在第二章中，我试图说明货币作为社会总资财的一个特定门类时的性质和作用。积累成为资本的资财，可以由其所有者本人运用，也可以贷给他人。在第三章和第四章中，我试图考察它在这两种情形下发挥作用的方式。第五章，也是最后一章，论述资本的各种不同用途对一国劳动量以及土地和劳动的年产物数量直接产生的不同影响。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    }
+  ]
+}

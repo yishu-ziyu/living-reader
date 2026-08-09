@@ -67,7 +67,8 @@ Next /api/agent-turn
           | HTTP: { source, turn }
           v
 Bun Reading Agent Runtime (127.0.0.1:4317)
-  每个 experience_id 一个 @oh-my-pi/pi-agent-core Agent
+  每个请求创建并丢弃一个 @oh-my-pi/pi-agent-core Agent
+  连续性只来自本轮密封的 recent_turns 与 relationship_context
   当前 SourceBlock 只在本轮 transformContext 注入
   唯一工具 propose_candidate 只捕获 AgentTurnCandidate
           |
@@ -81,12 +82,12 @@ handleAgentTurn -> PendingIntent / WorldKernel / EventStore
 
 Next 继续拥有浏览器同源校验、书籍加载和密封来源版本校验。
 Bun runtime 只监听 loopback，并只接受 `{ source, turn }`，不接受客户端自报工具、prompt、模型、basis 衍生值或世界写入参数。
-每个 active `experience_id` 复用一个 OMP `Agent` 作为对话工作集；同一 experience 的重叠 turn 返回 typed busy error，不交错执行。
-当前原文通过 `transformContext` 临时加入单次模型调用，不写进 OMP 历史，防止来源污染下一段或下一本书。
+每个请求创建独立的 OMP `Agent`，请求结束即丢弃内部消息；客户端复用的 `experience_id` 不能形成服务端共享工作集。
+当前原文通过 `transformContext` 临时加入单次模型调用，不写入跨请求历史。
 OMP 的 Coding Agent 工具、MCP、Skills、自治 memory backend 和产品写权限均未启用。
 唯一工具 `propose_candidate` 只接收 strict-schema Candidate，并再次检查 `target_source_ids` 与空 `evidence_refs`；它不调用 `WorldKernel`、EventStore 或任何产品写接口。
-请求取消会传播到 OMP provider stream；失败或取消的 turn 会回滚本轮 OMP 消息，保留上一个成功工作集并允许重试。
-进程重启后不把 OMP 内存当成事实源；恢复依赖产品传入的 `recent_turns`、`pending_intent`、world basis，以及 EventStore 和 SourceBlock 的当前权威状态。
+请求取消会传播到本轮 OMP provider stream，并只丢弃本轮实例，不影响同一客户端标识下的其他请求。
+每轮连续性只依赖产品传入的 `recent_turns`、`relationship_context`、`pending_intent`、world basis，以及 EventStore 和 SourceBlock 的当前权威状态。
 
 ## 2. 最小领域对象
 

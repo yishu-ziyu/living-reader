@@ -101,7 +101,7 @@ async function bridgeCall<T>(
 }
 
 async function resetPlayableBaseline(page: Page) {
-  await page.goto("/");
+  await page.goto("/test-harness");
   await expect(page.getByTestId("reading-shell")).toBeVisible();
   await page.waitForFunction(
     () => (window as TestWindow).__T009_AGENT_TURN__?.ready === true,
@@ -311,12 +311,12 @@ test.describe("A005 / T010 committed-world visual continuation", () => {
     const layout = await page.evaluate(
       () => (window as TestWindow).__T010_WORLD_LAYOUT__ ?? [],
     );
-    const loadingIndex = layout.findIndex((sample) => sample.state === "loading");
-    const openIndex = layout.findIndex((sample) => sample.state === "open");
-    expect(loadingIndex).toBeGreaterThanOrEqual(0);
-    expect(openIndex).toBeGreaterThan(loadingIndex);
-    expect(layout[loadingIndex]?.height).toBe(layout[openIndex]?.height);
-    expect(layout[loadingIndex]?.width).toBe(layout[openIndex]?.width);
+    const openSamples = layout.filter((sample) => sample.state === "open");
+    expect(openSamples.length).toBeGreaterThan(0);
+    expect(layout.every((sample) => sample.state === "open")).toBe(true);
+    expect(openSamples.every((sample) => sample.height === 600)).toBe(true);
+    expect(new Set(openSamples.map((sample) => sample.width)).size).toBe(1);
+    expect(openSamples[0]?.width).toBeGreaterThan(0);
 
     await expectNoActionApprovalUi(page);
     const committedBeforeCollapse = await bridgeCall<WorldSnapshot>(

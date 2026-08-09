@@ -20,6 +20,10 @@ const security = {
   integrity: "local" as const,
 };
 
+function canonicalMessageId(streamVersion: number): string {
+  return `01K25V2J${String(streamVersion).padStart(18, "0")}`;
+}
+
 function noted(
   stream_version: number,
   input: {
@@ -34,7 +38,7 @@ function noted(
   const kind = input.kind ?? "discussion_theme";
   const draft = createDomainEventDraft({
     message_name: "reader_world.memory.noted.v1",
-    message_id: `memory_event_${stream_version}`,
+    message_id: canonicalMessageId(stream_version),
     recorded_at: `2026-08-09T00:00:${String(stream_version).padStart(2, "0")}.000Z`,
     experience_id: experienceId,
     correlation_id: "corr_memory",
@@ -60,7 +64,7 @@ function noted(
 function retired(stream_version: number, memory_id: string): DomainEvent {
   const draft = createDomainEventDraft({
     message_name: "reader_world.memory.retired.v1",
-    message_id: `memory_event_${stream_version}`,
+    message_id: canonicalMessageId(stream_version),
     recorded_at: `2026-08-09T00:00:${String(stream_version).padStart(2, "0")}.000Z`,
     experience_id: experienceId,
     correlation_id: "corr_memory",
@@ -155,17 +159,52 @@ describe("memory projection and relationship context", () => {
       );
     }
     events.push(retired(16, "other_15"));
+    events.push(
+      noted(17, {
+        memory_id: "invitation_1",
+        kind: "invitation_question",
+        text: "agent-invitation:market",
+        source_locator: "smith.b1.c3.p1",
+      }),
+      noted(18, {
+        memory_id: "invitation_2",
+        kind: "invitation_question",
+        text: "agent-invitation:market",
+        source_locator: "smith.b1.c3.p1",
+      }),
+    );
 
     const projection = projectMemory(experienceId, events);
     const context = buildRelationshipContext(projection, {
       current_chapter_id: "smith.b1.c3",
-      active_recipe_ids: ["smith.b1.division-deepening.v1"],
+      active_recipe_ids: [
+        "smith.b1.division-deepening.v1",
+        "smith.b1.exchange.v1",
+        "smith.b1.market-extent.v1",
+        "smith.b1.transport.v1",
+        "smith.b1.full-book-history-forbidden.v1",
+      ],
     });
 
     expect(context.current_chapter_id).toBe("smith.b1.c3");
     expect(context.active_recipe_ids).toEqual([
       "smith.b1.division-deepening.v1",
+      "smith.b1.exchange.v1",
+      "smith.b1.market-extent.v1",
+      "smith.b1.transport.v1",
     ]);
+    expect(Object.keys(context).sort()).toEqual([
+      "active_recipe_ids",
+      "current_chapter_id",
+      "invited_question_keys",
+      "memories",
+    ]);
+    expect(context.invited_question_keys).toEqual([
+      "agent-invitation:market",
+    ]);
+    expect(context.memories.map((entry) => entry.memory_id)).not.toContain(
+      "invitation_1",
+    );
     expect(context.memories).toHaveLength(12);
     expect(context.memories.slice(0, 2).map((entry) => entry.memory_id)).toEqual([
       "agent_exact",

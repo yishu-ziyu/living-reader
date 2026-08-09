@@ -2,6 +2,7 @@ export {
   acceptReaderTranscriptItem,
   cloneVoiceSourceSnapshot,
   snapshotVoiceSource,
+  snapshotManifestVoiceSource,
   voiceSourceSnapshotsEqual,
   type VoiceActiveStopper,
   type VoiceFinalTurn,

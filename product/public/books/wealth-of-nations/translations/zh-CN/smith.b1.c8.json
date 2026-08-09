@@ -1,0 +1,920 @@
+{
+  "schemaVersion": 1,
+  "bookId": "wealth-of-nations",
+  "locale": "zh-CN",
+  "chapterId": "smith.b1.c8",
+  "translations": [
+    {
+      "sourceId": "smith.b1.c8.p1",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_380"
+      },
+      "contentHash": "9fee5ae81d51e677e76b132d5d7ce99f4dae9efe175bf7b89a9eea2539decabc",
+      "text": "劳动的产物构成劳动的自然报酬或工资。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p2",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_381"
+      },
+      "contentHash": "fedf2e71350d452b2a9f3399bc41326db75c45fc32a2c34080c46bb17fe82d51",
+      "text": "在土地尚未被占有、资本尚未积累的原始状态下，劳动的全部产物都属于劳动者。他既没有地主，也没有雇主来与他分享。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p3",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_382"
+      },
+      "contentHash": "07096f7729492dc4de353157ff47a6696c5e43df04eac8e304c1c1c632d25d65",
+      "text": "如果这种状态延续下去，劳动工资就会随着劳动分工所促成的生产力的一切改进而增加。一切东西都会逐渐变得便宜。生产它们所需的劳动量会减少；而且，由于在这种状态下，由等量劳动生产的商品自然会彼此交换，所以购买它们同样只需较少劳动量的产物。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p4",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_383"
+      },
+      "contentHash": "0dd41396157ad15630934532b7fe72e8eb091d3905f9988783fcd88ddb1769ac",
+      "text": "但是，尽管一切东西实际上都会变得便宜，许多东西表面上却可能比以前更贵，或者要用更多数量的其他货物来交换。例如，假定在大多数行业中，劳动生产力提高到了原来的十倍，也就是说，一天的劳动所能完成的工作量是原来的十倍；但在某一特定行业中，劳动生产力只提高到了原来的两倍，也就是说，一天的劳动所能完成的工作量只是以前的两倍。当以大多数行业中一天劳动的产物交换这个特定行业中一天劳动的产物时，前者相当于原来十倍的工作量，却只能购买后者相当于原来两倍的工作量。因此，后者的任何特定数量，例如一磅重，表面上都会比以前贵五倍。然而实际上，它却便宜了一半。尽管购买它需要五倍数量的其他货物，但无论是购买它还是生产它，都只需要原来一半的劳动量。因此，取得它会比以前容易一倍。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p5",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_384"
+      },
+      "contentHash": "3261cff17a013083aea776a738b50c3eda1abd78349980a5e0ca01a2cee13f99",
+      "text": "但是，劳动者享有自己劳动的全部产物这种原始状态，不可能延续到土地占有和资本积累最初出现之后。因此，远在劳动生产力取得最重大改进以前，这种状态就已经结束了；再进一步追究它本来可能对劳动报酬或工资产生什么影响，也没有任何意义。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p6",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_385"
+      },
+      "contentHash": "d2b3859ee279fb60c9fa5145c55434d3a7a60ccfb45cdcf665c176686a812784",
+      "text": "土地一旦成为私有财产，地主就会要求分享劳动者能够从土地上生产或采集的几乎全部产物。他的地租构成从用于土地的劳动产物中作出的第一次扣除。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p7",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_386"
+      },
+      "contentHash": "fd7e3050403efdf9a7d0e936ec364653e8dff6c6420b4098e6afe3f877489080",
+      "text": "耕种土地的人很少拥有足以维持自己生活直到收获庄稼的资财。他的生活资料通常由雇用他的雇主，即农场主，从自己的资本中预付；除非农场主能够分享他的劳动产物，或者除非自己的资本能够连同利润一并收回，否则就没有理由雇用他。这项利润构成从用于土地的劳动产物中作出的第二次扣除。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p8",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_387"
+      },
+      "contentHash": "c0464cee9a115ad30e15e96c8029f59127af9eba1789ef714377a49e39208f17",
+      "text": "几乎所有其他劳动的产物也要作出类似的利润扣除。在一切工艺和制造业中，大多数工人都需要雇主为他们预付工作材料，以及工作完成以前的工资和生活资料。雇主分享他们的劳动产物，或者分享他们的劳动给所加工材料增加的价值；他的利润就在这一份额之中。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p9",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_388"
+      },
+      "contentHash": "a1a84b9f04162c1f378e65b9d18b8cf98e3775208ae5bf5f080ea0ae8676a4fd",
+      "text": "诚然，有时一个独立劳动的工人拥有足够的资本，既可购买工作材料，又可维持自己的生活直到工作完成。他既是雇主，又是工人，享有自己劳动的全部产物，或者享有自己的劳动给所加工材料增加的全部价值。这种收入包括通常属于两个不同的人、彼此有别的两种收入，即资本利润和劳动工资。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p10",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_389"
+      },
+      "contentHash": "b6cad29e3f30af591ab64a7dfcb1b26fb7b0acfea165ba55fe65b08d2f28c62f",
+      "text": "不过，这种情形并不常见；在欧洲各地，每有一个独立劳动的工人，就有二十个工人在一位雇主手下做工；各地所谓劳动工资，通常都是指劳动者与使用他的资本的所有者分属两人时的工资，而这也正是其通常情形。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p11",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_390"
+      },
+      "contentHash": "d07a14e614376cf7bd19f65e292665fd29edd0bce15b9348700b7879545e6c79",
+      "text": "劳动的一般工资是多少，各地都取决于这双方通常订立的契约，而双方的利益绝不相同。工人希望得到尽可能多的工资，雇主希望支付尽可能少的工资。前者倾向于联合起来提高劳动工资，后者则倾向于联合起来降低劳动工资。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p12",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_391"
+      },
+      "contentHash": "2f1650b2b072310dcc9dcd4123b82b82458f284ce0553ef6ae62465b88034d07",
+      "text": "不过，不难预见，在一切通常情况下，这双方中的哪一方必定会在争执中占有优势，并迫使另一方接受自己的条件。雇主人数较少，能够容易得多地联合起来；而且法律准许，或至少不禁止他们联合，却禁止工人联合。我们没有任何议会法案反对联合起来降低劳动价格，却有许多法案反对联合起来提高劳动价格。在所有这类争执中，雇主都能坚持得更久。地主、农场主、制造业主或商人，即使一个工人也不雇用，通常也能依靠已经取得的资本生活一两年。许多工人失业后一星期都无法维持生活，能够维持一个月的很少，几乎没有人能维持一年。长远来看，工人对雇主可能就像雇主对工人一样不可或缺；但前一种需要并不那么迫切。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p13",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_392"
+      },
+      "contentHash": "851d5a3253f8ca6492370c803cddd3903879f2f90d8a072b6cc4387ab72e5e2e",
+      "text": "有人说，我们很少听到雇主的联合，却经常听到工人的联合。但是，谁要因此以为雇主很少联合，谁对世情和这个问题就同样无知。雇主无论何时何地都处在一种默契而又持续、统一的联合之中，决不把劳动工资提高到现行水平以上。违反这种联合，在任何地方都是一种极不得人心的行为，也会使一位雇主在邻人和同等身份者当中受到某种非难。诚然，我们很少听说这种联合，因为它是通常的，甚至可以说是自然的状态，而这种状态从来不会有人谈起。雇主有时也会结成特别的联合，把劳动工资压到甚至低于这一水平。这类联合在付诸实行以前，总是极其安静而秘密地进行；当工人像有时那样毫不反抗地屈服时，尽管他们深感其苦，其他人却永远不会听说此事。不过，这种联合往往会受到工人所结成的相反的防御性联合的抵抗；工人有时也会在没有受到这类挑衅的情况下，自行联合起来提高其劳动价格。他们通常提出的理由，有时是生活资料价格高昂，有时是雇主从他们的工作中赚取巨额利润。但是，无论他们的联合是进攻性的还是防御性的，总会闹得人尽皆知。为了使争端迅速得到裁决，他们总是诉诸最高声的叫嚷，有时还诉诸最骇人的暴力和暴行。他们陷于绝望，以绝望者那种愚蠢而狂暴的方式行事，因为他们不是非得挨饿，就是非得吓得雇主立即答应他们的要求。雇主在这种场合也同样在另一方大声叫嚷，不断高声要求民事长官出面协助，并严格执行那些极其严厉地制定来反对仆役、劳动者和熟练工人联合的法律。因此，工人很少能从这类骚乱性联合的暴力行动中得到任何好处；这类联合，一部分由于民事长官的干预，一部分由于雇主更能坚持，一部分由于大多数工人为了眼前生计不得不屈服，通常除了使带头者受到惩罚或陷于毁灭之外，毫无结果。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p14",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_393"
+      },
+      "contentHash": "c5029bd8a2e2a7a88ea255d5aca117983d9141491e854d79d8030aa41b0b3281",
+      "text": "但是，尽管雇主在同工人的争执中通常必定占有优势，似乎仍有一个限度，即使最低等劳动的普通工资，也不可能长期被压低到这一限度以下。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p15",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_394"
+      },
+      "contentHash": "02597886530719aa624063e1a128e72155bfd8ce47af2f223322dce6828df1d7",
+      "text": "一个人总得靠自己的工作生活，他的工资至少必须足以维持他本人。在大多数情况下，工资甚至必须略多一些；否则他就不可能养育家庭，这种工人的种族也延续不过第一代。因此，坎蒂隆先生似乎认为，最低等的普通劳动者在各地至少都必须赚到本人生活费用的两倍，以便平均而言能够养育两个孩子；这里假定妻子的劳动由于她必须照料孩子，只够维持她本人。然而据估计，出生的孩子有一半会在成年以前死亡。因此，按照这一计算，最贫穷的劳动者平均至少必须设法抚养四个孩子，才能使其中两个有同等机会活到成年。不过，据认为，四个孩子的必要生活费用可能差不多等于一个成年男子的生活费用。同一位作者还说，据估计，一个强壮奴隶的劳动价值相当于其生活费用的两倍；他认为，最卑微劳动者的劳动价值不可能低于一个强壮奴隶的劳动价值。至少有一点似乎是确定的：为了养育家庭，即使从事最低等的普通劳动，丈夫和妻子的劳动合在一起也必须能够赚到略多于恰好维持他们本人生活所必需的收入；但究竟应多到什么比例，是上面所说的比例还是其他任何比例，我不敢断定。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p16",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_395"
+      },
+      "contentHash": "765f2479005b1780cb18931a722a3e08dc6d4cc9cdd6372d0d3dd6ca7de18a2f",
+      "text": "不过，有些情况有时会使劳动者占有优势，使他们能够把工资大幅提高到这个水平以上；显然，这个水平是符合一般人道所能容许的最低限度。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p17",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_396"
+      },
+      "contentHash": "e31c6c88d4fb981971f206fa6e217d5dae5e102dda69645c3b064e0520ef4c4e",
+      "text": "在任何国家，如果对靠工资生活的人，即劳动者、熟练工人和各种仆役的需求不断增加；如果每年得到工作的人数都多于前一年，工人就无须为了提高工资而联合起来。人手短缺导致雇主之间展开竞争；为了得到工人，他们相互抬价，从而自愿打破雇主不提高工资的自然联合。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p18",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_397"
+      },
+      "contentHash": "8fd46b39ab0ea9ad300de7b150c163611af914ff712b0bcb20c8cab354634102",
+      "text": "显然，对靠工资生活的人的需求，只能随着用于支付工资的资金增加而增加。这些资金分为两类：第一，超过维持其所有者生活所必需数额的收入；第二，超过其所有者自身经营所必需数额的资本。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p19",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_398"
+      },
+      "contentHash": "cee016179521aa239ffee073af8119ada5573108ccf73e7211db107705ea18dc",
+      "text": "当地主、领取年金者或有钱人的收入超过他认为足以维持自己家庭的数额时，他就会用全部或一部分余额来供养一个或多个家仆。增加这项余额，他自然就会增加这类仆役的人数。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p20",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_399"
+      },
+      "contentHash": "3cba544254c1100b431e40d3e4de0088fb9f76cec17b0574357cf7f5303b1783",
+      "text": "当一个独立劳动的工人，例如织工或鞋匠，所拥有的资本超过购买自己的工作材料并维持自己生活直到产品能够出售所需的数额时，他自然会用余额雇用一个或多个熟练工人，以便从他们的工作中获取利润。增加这项余额，他自然就会增加自己所雇熟练工人的人数。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p21",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_400"
+      },
+      "contentHash": "f50894d014a15daf4624d8bd2270ab53970f7e87be5e6c2a846e4b7e8f52735e",
+      "text": "因此，对靠工资生活的人的需求必然随着每个国家的收入和资本增加而增加，没有这种增加就绝不可能增长。收入和资本的增加，就是国民财富的增加。因此，对靠工资生活的人的需求自然随着国民财富的增加而增加，没有这种增加就绝不可能增长。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p22",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_401"
+      },
+      "contentHash": "15444f8b89814e8a75911a338bf90e851f1d6e42f948b1f9c29671e66a1251f5",
+      "text": "使劳动工资上涨的不是国民财富现有的巨大程度，而是它的持续增长。因此，劳动工资最高的并不是最富有的国家，而是最繁荣的国家，或者说是致富最快的国家。在现今这个时代，英格兰无疑比北美任何地区都富裕得多。然而，北美的劳动工资却远高于英格兰任何地区。在纽约省，普通劳动者每天赚三先令六便士当地货币，折合两先令英镑；造船木匠赚十先令六便士当地货币，外加一品脱价值六便士英镑的朗姆酒，合计折合六先令六便士英镑；房屋木匠和泥瓦匠赚八先令当地货币，折合四先令六便士英镑；裁缝熟练工人赚五先令当地货币，折合约两先令十便士英镑。这些工资全都高于伦敦的工资；据说其他殖民地的工资也和纽约一样高。北美各地生活资料的价格都远低于英格兰。那里从未听说过歉收造成的匮乏。即使在收成最坏的年份，他们也总有足够的物资供自己消费，只是可供出口的较少而已。因此，如果劳动的货币价格高于母国任何地方，那么它的实际价格，即它使劳动者实际能够支配的生活必需品和便利品，就必定会以更大的比例高于母国。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p23",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_402"
+      },
+      "contentHash": "e289d620631e41c687cfded998254bdfb3c992899968f182f1b7322b3ae61438",
+      "text": "但是，尽管北美尚不如英格兰富裕，它却繁荣得多，并且正以快得多的速度继续积累财富。任何国家繁荣的最确凿标志，都是其居民人数的增加。在大不列颠和欧洲大多数其他国家，据认为人口要不少于五百年才会增加一倍。在北美的英国殖民地，人们发现人口每二十年或二十五年就增加一倍。而且在现今这个时代，这种增长主要并非源于新居民的不断迁入，而是源于人口的大量繁衍。据说，活到老年的人在那里常常能看到自己的直系后代有五十至一百人，有时还要多得多。那里的劳动报酬如此优厚，以致为数众多的子女非但不是父母的负担，反而是他们富裕和兴旺的源泉。据估计，每个孩子在离开父母家以前所付出的劳动，能给父母带来一百英镑的纯收益。在欧洲中等或较低阶层中，一个带着四五个年幼子女的年轻寡妇几乎没有再嫁的机会，而在那里却经常被人当作一份财产来追求。子女的价值是对结婚的最大鼓励。因此，北美人通常很年轻就结婚，我们对此不必感到惊讶。尽管这种早婚带来巨大的人口增长，北美却仍不断有人抱怨人手短缺。对劳动者的需求以及用于维持他们的资金，看来增长得如此之快，以致雇主找到劳动者来雇用的速度仍然赶不上。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p24",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_403"
+      },
+      "contentHash": "ce576368b28e3db3ab2548e6a4cd84bd4fad93ba3ef7b67e331e4af74be0fd49",
+      "text": "一个国家的财富即使十分巨大，但如果长期处于停滞状态，我们也不应指望在那里看到很高的劳动工资。用于支付工资的资金，即其居民的收入和资本，可能极其庞大；但是，如果几百年来它们一直保持同样或几乎同样的规模，那么每年雇用的劳动者人数就很容易满足，甚至超过下一年所需的人数。那里很少会出现人手短缺，雇主也不会被迫为得到工人而相互抬价。相反，在这种情况下，人手自然会增长到超过就业机会的程度。工作机会会持续短缺，劳动者将被迫为得到工作而相互压价。如果在这样的国家，劳动工资一度超过维持劳动者本人生活并使他能够养育家庭所需的数额，劳动者之间的竞争和雇主的利益很快就会把工资压低到符合一般人道所能容许的最低水平。中国长期以来一直是世界上最富有的国家之一，也就是说，是土地最肥沃、耕作最完善、人民最勤劳、人口最众多的国家之一。然而，它似乎长期处于停滞状态。五百多年前到访中国的马可·波罗，对中国的耕作、勤劳和人口众多所作的描述，与现今旅行者的描述几乎如出一辙。也许早在他的时代以前，中国就已经积累了其法律和制度的性质所容许它积累的全部财富。所有旅行者的记述尽管在许多其他方面彼此不一致，却都一致认为中国的劳动工资低廉，劳动者很难养育家庭。如果一个劳动者挖一整天地，晚上所得能够买到少量稻米，他就心满意足。工匠的处境如果可能的话还要更糟。他们不像欧洲的工匠那样懒散地待在作坊里等候顾客召唤，而是不断带着各自行当的工具奔走于街头，兜揽生意，仿佛在乞求工作。中国下层人民的贫困远远超过欧洲最穷困的民族。通常说，在广州附近，有数百个乃至数千个家庭在陆地上没有住所，而是一直住在江河与运河的小渔船上。他们在那里找到的食物如此微薄，以致急切地捞取从任何欧洲船只上扔下来的最肮脏的垃圾。任何腐肉，例如死狗或死猫的尸体，即使已经半腐烂并散发恶臭，对他们来说也像最有益健康的食物之于其他国家的人民一样受欢迎。在中国，鼓励结婚的不是子女能够带来收益，而是可以任意杀死他们。在所有大城市，每晚都有几个婴儿被遗弃在街上，或者像小狗一样被溺死在水中。据说，执行这种骇人差事甚至是某些人公开赖以谋生的职业。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p25",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_404"
+      },
+      "contentHash": "1ba89e851141283b92e10edec9d3df3c5b35f8cedf67400a55e51d7ee05eecbd",
+      "text": "不过，中国虽然可能停滞不前，却似乎并未倒退。它的城市没有一处被居民遗弃。曾经耕种的土地没有一处遭到荒废。因此，每年必定继续投入同样或几乎同样数量的劳动；相应地，用于维持这些劳动的资金也必定没有明显减少。因此，最低阶层的劳动者尽管生活资料微薄，却必定以某种方式勉强延续其种族，足以维持通常的人数。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p26",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_405"
+      },
+      "contentHash": "01644460fb0a7488e76761c2a5a641a67d3673bada23a3fedeb9e644c7c71c50",
+      "text": "但在一个用于维持劳动的资金明显日趋减少的国家，情形就会不同。每一年，各种不同职业门类对仆役和劳动者的需求都会比前一年更少。许多在较高等职业门类中培养出来的人，由于无法在本行找到工作，也会乐于到最低等的门类中谋职。最低等的门类不仅充斥着本门类的工人，而且还涌入了其他所有门类的过剩人员，其中求职的竞争会如此激烈，以致把劳动工资压低到仅够劳动者过最悲惨、最匮乏的生活。许多人即使接受这种苛刻条件也找不到工作，只好饿死，或者被迫靠乞讨，或许甚至靠犯下最严重的罪行来谋生。贫困、饥荒和死亡会立即在这一阶层盛行起来，并从这里蔓延到所有较高阶层，直到该国人口减少到能由其所剩的收入和资本轻易维持的数目；这些收入和资本侥幸逃过了摧毁其余部分的暴政或灾难。孟加拉以及东印度的其他一些英国殖民地，目前的状况或许与此十分接近。在一个土地肥沃、先前人口已经大为减少的国家，生活资料本来不应很难获得，然而一年之内竟有三四十万人饿死，我们可以确信，用于维持劳动贫民的资金正在迅速减少。保护并治理北美的英国政体之精神，与在东印度实行压迫和专横统治的商业公司之精神，两者之间的差异，或许再没有比这些地区的不同状况更能说明的了。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p27",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_406"
+      },
+      "contentHash": "6972807a05faeef146502651f6f344a598a18542a34334b52bd38fa9a0645a4e",
+      "text": "因此，丰厚的劳动报酬既是国民财富增长的必然结果，也是其自然征兆。反之，劳动贫民生活资料匮乏，是事物停滞不前的自然征兆；而他们挨饿的境况，则是事物正在迅速倒退的自然征兆。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p28",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_407"
+      },
+      "contentHash": "fc46b082faa3c2c3d2b6274304f6ef5fb9dd7e8d4e4365b9ca067ba00f28df76",
+      "text": "在大不列颠，就目前而言，劳动工资显然高于使劳动者能够养育一家人所恰好必需的数额。要使我们确信这一点，并不需要对能够做到这件事的最低数额进行任何冗长或未必可靠的计算。有许多明显的迹象表明，在这个国家，没有任何地方的劳动工资是按照符合一般人道要求的这种最低标准来调节的。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p29",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_408"
+      },
+      "contentHash": "acbe0549bc100203516c59a55ee714c312ffb4a6a2c142ead69db12793f4013c",
+      "text": "第一，几乎在大不列颠各地，即使最低等的劳动，夏季工资和冬季工资也有所区别。夏季工资总是最高。然而，由于燃料方面的额外开支，冬季维持一个家庭的费用最高。因此，工资在这项开支最低时反而最高，这显然表明，工资并不是按照支付这项开支的必需数额来调节的，而是按照工作量和人们所估计的工作价值来调节的。诚然，也许有人会说，劳动者应当把夏季工资的一部分储蓄下来，以支付冬季的开支；而且就全年而言，工资并不超过全年维持其家庭所必需的数额。然而，对待一个奴隶，或一个完全依赖我们获得眼前生活资料的人，并不会采用这种方式。他每天的生活资料会按照他每天的需要来配给。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p30",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_409"
+      },
+      "contentHash": "03337e38b22a9896450eb7c66ea53230ff6e9f8a2b59d77f28225ad7814835e8",
+      "text": "第二，在大不列颠，劳动工资并不随食品价格而波动。食品价格各地逐年变化，而且常常逐月变化。但在许多地方，劳动的货币价格有时会连续半个世纪始终保持不变。因此，如果这些地方的劳动贫民在物价昂贵的年份能够养活家人，那么在供应较为充足的时候，他们的生活必定宽裕，而在物价格外低廉的时候，他们必定富足。过去十年间食品价格高昂，但在王国许多地区，劳动的货币价格并未随之出现任何明显上涨。诚然，在某些地区确实上涨了；这大概更多是由于劳动需求增加，而不是由于食品价格上涨。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p31",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_410"
+      },
+      "contentHash": "366b12216b69631d1bbf38344d066ecf9146440863e5c66c01160590689aec6f",
+      "text": "第三，正如食品价格逐年的变动大于劳动工资逐年的变动一样，反过来，劳动工资因地而异的程度也大于食品价格因地而异的程度。在联合王国的大部分地区，面包和鲜肉的价格通常相同或极为接近。这些商品以及多数其他零售商品——劳动贫民购买一切物品都采用零售方式——在大城市通常与偏远乡村同样便宜，甚至更加便宜，原因我以后将有机会说明。但是，大城市及其邻近地区的劳动工资，往往比几英里外高四分之一或五分之一，也就是高百分之二十或二十五。在伦敦及其邻近地区，劳动的通常价格可以算作每天十八便士。几英里以外，就降到十四或十五便士。在爱丁堡及其邻近地区，劳动价格可以算作十便士。几英里以外，就降到八便士，这是苏格兰低地大部分地区普通劳动的通常价格；那里的工资变动远小于英格兰。这样的价格差异，看来甚至不足以使一个人从一个教区迁往另一个教区；但若是体积最庞大的商品出现这样的价格差异，则必然会导致极大规模的运输，不仅从一个教区运往另一个教区，而且从王国的一端运往另一端，几乎从世界的一端运往另一端，从而很快使各地价格更趋一致。尽管人们已对人性的轻浮和反复无常说了那么多，经验却清楚表明，在各种行李中，人是最难搬运的。因此，如果劳动贫民能在王国中劳动价格最低的地区养活家人，那么在劳动价格最高的地区，他们必定生活富足。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p32",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_411"
+      },
+      "contentHash": "58028bc417a34480b77a2cc82824228b9467912d043db0991aeb0ab61a7426c2",
+      "text": "第四，劳动价格的变动不仅在地点和时间上都与食品价格的变动不相对应，而且二者往往完全相反。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p33",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_412"
+      },
+      "contentHash": "59bcc3053c4016c53237774709dca68f9842a7f1619788379ce053027b6b2372",
+      "text": "谷物是普通民众的食物，在苏格兰比在英格兰昂贵，而苏格兰几乎每年都从英格兰获得大量供应。但英格兰谷物在运入地苏格兰的售价，必定高于在输出地英格兰的售价；而就品质而言，它在苏格兰的售价不可能高于在同一市场上与之竞争的苏格兰谷物。谷物的品质主要取决于它在磨坊能产出多少面粉或粗粉；在这方面，英格兰谷物远胜于苏格兰谷物，因此，尽管按外观来说，或者按体积计量来说，英格兰谷物往往较贵，但实际上，或者按品质来说，甚至按重量计量来说，它通常更便宜。相反，英格兰的劳动价格却高于苏格兰。因此，如果劳动贫民能在联合王国的一部分养活家人，那么在另一部分，他们必定生活富足。诚然，燕麦粉为苏格兰普通民众提供了最大且最主要的一部分食物，而这种食物总体上远不如英格兰同等阶层邻人的食物。不过，他们生活方式上的这种差异并不是工资差异的原因，而是其结果；尽管由于一种奇怪的误解，我常常听到有人把它说成原因。并不是因为一个人乘马车而他的邻人步行，所以前者富有而后者贫穷；而是因为前者富有，所以他乘马车，因为后者贫穷，所以他步行。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p34",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_413"
+      },
+      "contentHash": "95bf0b5eefa52965b7a6ffba5b7a2c7efd46470ddabb837a7ee3a21d61ab407e",
+      "text": "在上一个世纪，就平均年份而言，联合王国两个部分的谷物都比本世纪昂贵。这是一个如今不容任何合理怀疑的事实；而且，如果可能的话，对苏格兰来说，证明这一点的证据甚至比对英格兰来说更加确凿。在苏格兰，这一点有公共法定谷价作为证据；这是根据市场实际状况，对苏格兰每个郡各种不同谷物每年宣誓作出的估价。如果这种直接证据还需要任何旁证来加以证实，我要指出，法国的情况也是如此，而且欧洲其他大部分地区很可能也是如此。关于法国，有最清楚的证据。但是，尽管联合王国两个部分的谷物在上个世纪确实都比本世纪略贵，劳动却同样确实便宜得多。因此，如果劳动贫民当时能够养育家人，他们现在的生活必定宽裕得多。在上个世纪，苏格兰大部分地区普通劳动最常见的日工资，夏季为六便士，冬季为五便士。在高地和西部群岛的某些地区，如今仍支付每周三先令，差不多是同样的价格。在低地大部分地区，普通劳动目前最常见的工资是每天八便士；爱丁堡附近、与英格兰接壤的各郡——大概是由于邻近英格兰——以及其他少数近来劳动需求显著增加的地方，如格拉斯哥、卡伦、艾尔郡等地，是十便士，有时是一先令。在英格兰，农业、制造业和商业的改进开始得比苏格兰早得多。随着这些改进，劳动需求以及由此而来的劳动价格必然有所增加。因此，在上个世纪和本世纪，英格兰的劳动工资都高于苏格兰。自那时以来，工资也已大幅上涨，不过，由于英格兰不同地方所付工资更加多样，要确定上涨了多少更为困难。1614年，步兵的军饷与现在相同，每天八便士。这项军饷最初制定时，自然会以普通劳动者的通常工资为标准，因为步兵通常就是从这一阶层的人中招募的。首席大法官黑尔斯在查理二世时期著述，他估算一个六口劳动者家庭——包括父母、两个能做些事的孩子和两个不能做事的孩子——的必要开支为每周十先令，即每年二十六英镑。他认为，如果他们不能靠自己的劳动挣得这笔钱，就必须靠乞讨或偷窃来补足。他看来曾非常仔细地调查过这个问题。1688年，格雷戈里·金先生——达文南特博士对他在政治算术方面的才能推崇备至——估算劳动者和外雇仆役每户的通常收入为每年十五英镑，他假定每户平均有三人半。因此，他的计算虽然表面上不同，实质上却与黑尔斯法官的计算极为接近。两人都假定这类家庭的每周开支约为每人二十便士。自那时以来，在王国大部分地区，这类家庭的货币收入和货币开支均已显著增加；有些地方增加得多，有些地方增加得少；不过，近来向公众公布的某些关于当前劳动工资的夸大说法所称的增幅，恐怕几乎没有任何地方真正达到。必须指出，劳动价格在任何地方都无法十分准确地确定，因为即使在同一地点、对同一种劳动，所付价格也往往不同；这不仅取决于工人能力的差别，也取决于雇主宽厚还是苛刻。在工资不受法律规定的地方，我们所能断定的无非是最常见的工资是多少；经验似乎表明，法律从来不能适当地规定工资，尽管它常常声称要这样做。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p35",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_414"
+      },
+      "contentHash": "9d4db8165bbf172c19d9595d1ba15396694ef511d68e67445360ee38abd269c5",
+      "text": "在本世纪，劳动的实际报酬，即劳动能为劳动者换取的生活必需品和便利品的实际数量，其增长比例或许比劳动货币价格的增长比例还要大。不仅谷物变得略为便宜，许多其他能使勤劳贫民的食物更加可口、健康且富于变化的东西，也便宜了许多。例如，目前在王国大部分地区，马铃薯的价格还不到三四十年前的一半。萝卜、胡萝卜和卷心菜也是如此；这些东西从前只能用锹种植，如今通常用犁种植。各种园圃作物也都变得便宜了。在上个世纪，大不列颠所消费的大部分苹果，甚至大部分洋葱，都是从佛兰德斯进口的。粗等亚麻布和呢绒制造业的巨大改进，为劳动者提供了更便宜、更好的衣服；粗等金属制品制造业的改进，则为他们提供了更便宜、更好的生产工具，以及许多称心而便利的家具。诚然，肥皂、盐、蜡烛、皮革和发酵酒类已经贵了不少；这主要是由于对它们征收了税。不过，劳动贫民必须消费的这些物品数量非常少，所以这些物品价格的上涨，抵消不了那么多其他物品价格的下降。人们通常抱怨奢侈甚至已经扩展到最低阶层，劳动贫民如今已不肯满足于从前足以令他们满意的同样食物、衣着和住所；这种抱怨足以使我们确信，增加的不仅是劳动的货币价格，而且是它的实际报酬。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p36",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_415"
+      },
+      "contentHash": "42a4b1602f0538be7b844c029bbd5203bf97e4d4259fb8bf149f454c74aa9630",
+      "text": "人民下层境况的这种改善，究竟应当被视为社会的益处，还是社会的不便？答案乍看起来十分明白。各种仆役、劳动者和工人，构成每一个大规模政治社会的绝大部分。但是，凡能改善绝大部分成员境况的事情，绝不能被视为对整体的不便。如果一个社会的绝大部分成员贫穷而悲惨，这个社会当然不可能繁荣幸福。此外，让那些为全体人民提供食物、衣着和住所的人，从自己劳动的产物中获得足够的份额，使他们自己也能有尚称良好的饮食、衣着和住所，这不过是公平而已。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p37",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_416"
+      },
+      "contentHash": "a263d0203eed770d5ee5613afc6676c3aca6d8c4296b525440dacc77707f3a56",
+      "text": "贫困虽然无疑会妨碍婚姻，却并不总能阻止结婚。它甚至似乎有利于生育。一个半饥半饱的高地妇女常常生育二十多个孩子，而一个娇生惯养的贵妇却往往一个也不能生，并且通常生过两三个便耗尽了生育能力。上流社会妇女中如此常见的不孕，在地位较低的妇女中却很少见。女性的奢侈生活，或许会激发享乐的欲望，却似乎总会削弱生育能力，而且常常会把这种能力完全摧毁。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p38",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_417"
+      },
+      "contentHash": "ca214c33822ba5472ba2f202bfd1ebbab332d261c691b1fc2b28e13036290de3",
+      "text": "但是，贫困虽然不妨碍生育，却极不利于养育儿童。幼嫩的植株虽然长了出来，却在如此寒冷的土壤和如此严酷的气候中，很快便枯萎死亡。我经常听人说，在苏格兰高地，一个生过二十个孩子的母亲，连两个孩子都未必能保住。几位经验丰富的军官向我保证，他们所在的团里出生的全部士兵子女，非但不足以补充本团兵员，甚至从中连本团所需的鼓手和横笛手都从未能凑齐。然而，在任何地方，都很少见到比兵营周围更多的漂亮孩子。看来，他们当中极少有人能活到十三四岁。在有些地方，出生的孩子有一半在四岁以前死亡；在许多地方，是在七岁以前；几乎在所有地方，是在九岁或十岁以前。不过，这种严重的死亡现象在各地主要都见于普通民众的子女，因为他们无力像境况较好的人那样悉心照料孩子。尽管他们的婚姻通常比上流社会人士的婚姻生育更多，但他们的孩子中长大成人的比例却较小。在弃婴院里，以及由教区慈善机构抚养的儿童中，死亡率甚至高于普通民众的子女。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p39",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_418"
+      },
+      "contentHash": "83e5187a107d7b51308b66ae071809fdf4180030bb6b2e8a0d8c348bce85fa6b",
+      "text": "每一种动物都会自然而然地按照其生活资料的多少来繁殖，任何物种的繁殖都绝不可能超过其生活资料所能维持的限度。但是，在文明社会中，只有在下层人民中，生活资料的匮乏才能限制人类的进一步繁衍；而且它只能通过使他们多产的婚姻所生的大部分孩子死亡来做到这一点。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p40",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_419"
+      },
+      "contentHash": "d199f09a8b5cc6b04a432f2a4bf371176f59a8b0f82c56ae3a4df95f1be3e7b7",
+      "text": "丰厚的劳动报酬使他们能够更好地供养子女，从而养育更多子女，自然会使这些界限放宽和扩展。还值得指出的是，它必然会尽可能严格地按照劳动需求所要求的比例来做到这一点。如果这种需求持续增加，劳动报酬就必然会以这样的方式鼓励劳动者结婚和繁衍，使他们能够用持续增长的人口来满足这种持续增长的需求。如果报酬在任何时候低于达到这一目的所必需的水平，人手短缺很快就会把它提高；如果在任何时候高于这一水平，劳动者过度繁衍又很快会把它降至这一必要水平。在前一种情况下，市场上的劳动供应会严重不足；在后一种情况下，则会严重过剩；从而很快迫使劳动价格回到社会状况所要求的适当水平。正是通过这种方式，对人的需求如同对任何其他商品的需求一样，必然调节人的生产；在人口增长过慢时加速它，在增长过快时阻止它。正是这种需求调节并决定世界各个不同国家的繁衍状况，即北美、欧洲和中国的繁衍状况；它使人口在第一个地区迅速增长，在第二个地区缓慢而逐步增长，在最后一个地区则完全停滞。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p41",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_420"
+      },
+      "contentHash": "3809cc5d689b440a19a5e5fc57f6dfef6deabf100fdf75349c68226dbd29a03b",
+      "text": "有人说，奴隶的损耗由其主人负担，而自由雇工的损耗则由他自己负担。然而，实际上，后者的损耗和前者一样，也是由其雇主负担的。付给各种受雇工匠和雇工的工资，平均而言，必须足以使他们能够按照社会需求增长、减少或停滞的情况所提出的要求，把受雇工匠和雇工这一群体延续下去。不过，自由雇工的损耗虽同样由其雇主负担，雇主为此付出的费用通常远少于奴隶的损耗。可以说，用于补偿或修复奴隶损耗的资金，通常由疏忽的主人或粗心的监工管理；用于对自由人发挥同一作用的资金，则由自由人自己管理。富人的经济管理中通常盛行的紊乱，自然而然地进入前一种资金的管理；穷人严格的节俭和精打细算，也同样自然而然地确立于后一种资金的管理中。在如此不同的管理之下，要达到同一目的，所需费用必然大不相同。因此，我相信，古往今来各国的经验都表明，自由人所做的工作最终要比奴隶所做的工作便宜。即使在普通劳动工资极高的波士顿、纽约和费城，事实也是如此。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p42",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_421"
+      },
+      "contentHash": "476b2c575d494e1e623164fbb0d11d08e208d8d4c9130cb720b6fc84ba2b31af",
+      "text": "因此，优厚的劳动报酬，既是财富增长的结果，也是人口增长的原因。抱怨这种报酬，就是哀叹最大的公共繁荣所必然产生的结果和原因。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p43",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_422"
+      },
+      "contentHash": "f95eaa97141ad62c88ad0090b661a25f71dba7b92214d75dc3b5f87698e8878a",
+      "text": "也许值得注意的是，社会处于进步状态、正朝着进一步获取财富迈进时，而不是已经获得全部财富时，劳动贫民，也就是人民大众的境况，似乎最为幸福、最为舒适。在停滞状态下，他们的生活艰苦；在衰退状态下，则悲惨不堪。进步状态实际上是社会各阶层欣欣向荣、充满活力的状态。停滞状态沉闷；衰退状态令人忧郁。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p44",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_423"
+      },
+      "contentHash": "a0f5929ec971d43dab5520a8e420777e688da59974f3b710cea520c0ed880f79",
+      "text": "优厚的劳动报酬，既鼓励人口繁衍，也提高普通民众的勤勉程度。劳动工资是对勤勉的鼓励，而勤勉如同人的其他一切品质一样，会随着所受鼓励的增加而提高。充足的生活资料增强劳动者的体力，而改善自身境况、或许能在安逸富足中终老的美好希望，则激励他最大限度地发挥这种力量。因此，在工资高的地方，我们总会发现工人比工资低的地方更加积极、勤勉而敏捷；例如，英格兰的工人胜过苏格兰的工人，大城市附近的工人胜过偏远乡村的工人。的确，有些工人在四天内就能挣到足以维持整周生活的钱时，会在其余三天闲着。然而，大多数工人绝非如此。相反，工人按件获得优厚报酬时，很容易劳作过度，并在几年内毁掉自己的健康和体质。人们认为，伦敦以及其他一些地方的木匠，保持最旺盛精力的时间不会超过八年。许多其他行业也会发生类似的情况；这些行业的工人按件计酬，制造业通常如此，甚至在乡村劳动中，只要工资高于通常水平，也是如此。几乎每一类工匠都会因过度专注于自己特有的工作而患上某种特有的疾病。意大利名医拉穆齐尼专门写过一本论述这类疾病的书。我们不把士兵看作我们当中最勤勉的一类人。然而，当士兵受雇从事某些特定工作，并按件获得优厚报酬时，他们的军官往往不得不与承包人约定，按照计酬标准，不得允许他们每天挣得超过某一数额。在订立这项约定以前，相互竞争和多挣钱的愿望，常常促使他们劳作过度，并因过度劳动而损害健康。人们如此强烈而频繁地抱怨一周中有三天懒散，其真正原因往往是在其余四天过度劳作。大多数人在连续数日从事繁重的脑力或体力劳动之后，自然会产生强烈的休息愿望；如果不用强力或某种迫切需要加以约束，这种愿望几乎不可抗拒。这是自然的召唤，必须以某种放纵来满足，有时只需安逸，有时还需纵情娱乐。如果不予满足，后果往往很危险，有时甚至致命，而且几乎总会或早或晚地引发该行业特有的疾病。如果主人总肯听从理性和人道的指引，那么对许多工人的勤奋，他们往往需要加以节制，而不是予以激励。我相信，在每一种行业中都会发现，一个劳作适度、因而能够持续工作的人，不仅能最持久地保持健康，而且一年之中所完成的工作量也最大。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p45",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_424"
+      },
+      "contentHash": "8aded7fea8dffd4e1d039571e537532b8e9f7e81be09253bc51292eaa7b2058f",
+      "text": "有人声称，在物价低廉的年份，工人通常比较懒散，而在物价昂贵的年份则比平常更加勤勉。因此有人断定，充足的生活资料会使他们懈怠，匮乏的生活资料则会激发他们的勤勉。比平常略为富足可能使某些工人懒散，这一点很难否认；但是，它会对大多数工人产生这种影响，或者一般而言，人在吃不饱时会比吃得饱时干得更好，在意气消沉时会比精神振奋时干得更好，在经常生病时会比通常健康时干得更好，似乎不大可能。应当注意，歉收年份通常也是普通民众疾病流行、死亡增多的年份，这必然会减少他们勤勉劳动的产出。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p46",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_425"
+      },
+      "contentHash": "507cdccafea28562c15379e477679e55ddc1898c2777366c7007db2d679f3093",
+      "text": "在丰年，雇工往往离开主人，依靠自己勤勉劳动所得维持生活。但是，食品同样的低廉，由于增加了用于维持雇工生活的资金，便鼓励主人，尤其是农场主，雇用更多的人。在这种情况下，农场主预期用自己的谷物多养几个劳动雇工所获得的利润，会高于在市场上以低价出售谷物所得的利润。对雇工的需求增加，而愿意满足这种需求的人数却减少。因此，劳动的价格在物价低廉的年份往往会上涨。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p47",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_426"
+      },
+      "contentHash": "85e8423d22152dcaad251e24269cfd6b8a8a07d981de05ba4d08d7bab3a63180",
+      "text": "在歉收年份，维持生活的困难和不确定性，使所有这类人都急于重新受雇。但是，食品的高价由于减少了用于维持雇工生活的资金，便使雇主倾向于减少而不是增加现有雇工的人数。在物价昂贵的年份，贫穷的独立劳动者也常常耗尽他们原来用来为自己购置工作材料的微薄资本，不得不为了维持生活而成为受雇工人。想找工作的人多于能够轻易找到工作的人；许多人愿意接受低于通常水平的条件，雇工和受雇工人的工资在物价昂贵的年份往往都会下降。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p48",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_427"
+      },
+      "contentHash": "6de93db43198270ec6c3deba09fcde6fbc3e48ffeed75a2545e0187ccd896f50",
+      "text": "因此，各类雇主在物价昂贵的年份，往往比在物价低廉的年份能同雇工订立对自己更有利的条件，而且发现雇工在前一种年份比在后一种年份更加顺从、更加依赖自己。因此，他们自然称赞物价昂贵的年份更有利于勤勉。此外，地主和农场主这两个最大的雇主阶层，还有另一个喜欢物价昂贵年份的理由：前者的地租和后者的利润，在很大程度上取决于食品价格。然而，以为人们为自己工作时通常会比替别人工作时干得少，再没有比这更荒谬的了。贫穷的独立劳动者通常甚至比按件计酬的受雇工人更勤勉。前者享有自己劳动的全部产出；后者则与雇主分享。前者处于独立而分散的状态，不太容易受到坏伙伴的诱惑，而在大型工场中，这种诱惑常常败坏后者的品行。与那些按月或按年雇用、无论干多干少工资和生活供给都相同的雇工相比，独立劳动者的优势很可能还要大得多。物价低廉的年份往往会提高独立劳动者相对于受雇工人和各种雇工的比例，而物价昂贵的年份则往往会降低这一比例。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p49",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_428"
+      },
+      "contentHash": "afb6af798397bf7512d145a687fd3f13f8a24df7c2e65d81093fbdef21ba14a3",
+      "text": "法国有一位学识渊博而才思敏捷的作家梅桑斯先生，是圣艾蒂安税区的军役税征收官。他把三种不同制造业在上述不同年份制造的货物数量和价值加以比较，试图说明穷人在物价低廉的年份比在物价昂贵的年份做的工作更多。这三种制造业，一种是在埃尔伯夫经营的粗呢制造业，另两种是遍及整个鲁昂财政区的亚麻布制造业和丝织品制造业。据他根据政府机关登记簿抄录的记述，在这三种制造业中，物价低廉年份所制造货物的数量和价值通常都大于物价昂贵年份；而且在物价最低的年份始终最大，在物价最高的年份始终最小。这三种制造业似乎都是停滞的制造业，也就是说，尽管其产出可能逐年有所变化，但总体上既没有倒退，也没有前进。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p50",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_429"
+      },
+      "contentHash": "6abeedb303bdbf32c4b13613c783e5cc559c2b374e086de7fbf9af8537203b6a",
+      "text": "苏格兰的亚麻布制造业和约克郡西区的粗呢制造业，都是发展中的制造业，其产出的数量和价值尽管有所波动，通常都在增长。然而，我查阅了已经公布的这两种制造业年度产出账目，却未能发现其产出的变动与各年物价的昂贵或低廉有任何明显联系。1740年是一个严重歉收的年份，这两种制造业的确似乎都大幅衰退了。但在另一个严重歉收的年份1756年，苏格兰制造业的进展却超过了通常水平。约克郡制造业的确衰退了，其产出直到1766年，即美洲印花税法废除以后，才恢复到1755年的水平。在该年和次年，其产出大大超过了以往的最高水平，并从那时起持续增长。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p51",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_430"
+      },
+      "contentHash": "4bc898ac478fae9a6c9f5610e7deb4b9a933a3fae4e4833f73f0ce7cf349c7af",
+      "text": "一切以销往远方为目的的大型制造业，其产出必然不太取决于经营这些制造业的国家各年物价的昂贵或低廉，而更多地取决于影响消费这些产品的国家需求的各种情况；取决于和平或战争，其他竞争性制造业的繁荣或衰退，以及主要顾客心情的好坏。此外，很可能在物价低廉的年份完成的大量额外工作，从未进入制造业的官方登记簿。离开主人的男雇工成为独立劳动者。女雇工回到父母身边，通常纺纱，为自己和家人制作衣服。甚至独立工人也不总是为公开出售而工作，而是受一些邻居雇用，制造家庭自用的物品。因此，他们的劳动产出往往不会在那些官方登记簿中显现出来；这些登记簿的记录有时以极其张扬的方式公布，而我们的商人和制造商往往妄图根据这些记录来宣告最大帝国的繁荣或衰退。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p52",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_431"
+      },
+      "contentHash": "3e6b497a3a0251fe6a730b60d718d92cf7bdd15dad1f4ebd5181a074c04659e3",
+      "text": "劳动价格的变动不仅并非总与食品价格的变动一致，而且往往完全相反，但我们不能因此认为食品价格对劳动价格没有影响。劳动的货币价格必然由两种情况调节：对劳动的需求，以及生活必需品和便利品的价格。对劳动的需求，视其处于增长、停滞或衰退状态，或者需要增长、停滞或减少的人口而定，决定了必须给予劳动者的生活必需品和便利品的数量；而劳动的货币价格，则由购买这一数量所必需的货币额决定。因此，尽管食品价格低廉的地方，劳动的货币价格有时很高，但如果食品价格高昂而需求维持不变，劳动的货币价格还会更高。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p53",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_432"
+      },
+      "contentHash": "7c5f10c5c8ec2bdfe09f4577e6f09b5f21adf9cc0c559db035e42e1ad98965c2",
+      "text": "正是由于对劳动的需求在突然出现异常丰年的年份增加，在突然出现异常歉收的年份减少，劳动的货币价格才有时在前一种年份上涨，而在后一种年份下降。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p54",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_433"
+      },
+      "contentHash": "237a5d1e37347eecba29c5508a98726e56cbeef0be1fb06145732913a44972a1",
+      "text": "在突然出现异常丰年的年份，许多雇主手中的资金足以维持和雇用比前一年更多的勤勉劳动者，而如此额外增加的人数不一定总能招到。因此，需要更多工人的主人为了招到他们，便相互竞价，这有时会同时提高他们劳动的实际价格和货币价格。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p55",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_434"
+      },
+      "contentHash": "709581aff985da7339f54f445cc0ee0f3500b90177c4eb77f17252ac4e2a4f2f",
+      "text": "在突然出现异常歉收的年份，情况恰好相反。用于雇用劳动者的资金少于前一年。相当多的人失去工作，为了得到工作而相互压价，这有时会同时降低劳动的实际价格和货币价格。1740年是一个异常歉收的年份，许多人愿意只为维持最低限度的生活而工作。在随后几个丰年，劳动者和雇工就比较难以招到。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p56",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_435"
+      },
+      "contentHash": "5e0c787af3c48b3fe4ee5b438510d3284b5030470595721e35a6befc6bbd6be6",
+      "text": "物价昂贵年份的匮乏，由于减少对劳动的需求，往往会降低劳动价格，正如食品的高价往往会提高劳动价格一样。相反，物价低廉年份的丰裕，由于增加需求，往往会提高劳动价格，正如食品的低价往往会降低劳动价格一样。在食品价格的通常变动中，这两种相反的原因似乎彼此抵消；这很可能部分解释了为什么各地的劳动工资都比食品价格稳定和持久得多。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    },
+    {
+      "sourceId": "smith.b1.c8.p57",
+      "sourceLocator": {
+        "provider": "OLL",
+        "volume": 1,
+        "volumeId": "oll-cannan-vol1-1904",
+        "resource": "Smith_0206-01.html",
+        "fragment": "Smith_0206-01_436"
+      },
+      "contentHash": "899b62cc31e8013e25d99f0a960c223abbc5144fd746ff753e2e56dfaac20796",
+      "text": "劳动工资的增加，由于提高许多商品价格中归结为工资的那一部分，必然会提高这些商品的价格，并在这一范围内往往会减少它们在国内外的消费。然而，提高劳动工资的同一原因，即资本的增加，也往往会增强劳动的生产能力，使较少量的劳动能够产出较大量的成果。雇用大量劳动者的资本所有者，为了自身利益，必然会设法适当地划分和分配工作，使他们能够产出尽可能多的成果。出于同一原因，他会设法为他们配备他或他们所能想到的最佳机器。一个特定作坊的劳动者中发生的情形，出于同一原因，也会发生在一个大社会的劳动者中。他们人数越多，就越会自然而然地分成不同的工种及其细分。会有更多人致力于发明最适合完成每一种工作的机器，因而这种机器也就更有可能被发明出来。因此，有许多商品由于这些改进，生产它们所需的劳动比以前少了很多，以至于劳动数量的减少足以抵偿其价格的上涨而有余。",
+      "model": "openai-codex/gpt-5.6-sol",
+      "promptRevision": "cannan-zh-cn-v3+sol-bilingual-review-v1",
+      "reviewStatus": "machine",
+      "translatedAt": "2026-08-09T17:40:31.869Z"
+    }
+  ]
+}

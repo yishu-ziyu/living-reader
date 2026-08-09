@@ -129,7 +129,7 @@ describe("F23 · InMemoryEventStore immutability + duplicate message_id", () => 
 
   it("second commit reusing message_id fails; version and count unchanged", async () => {
     const store = new InMemoryEventStore();
-    const fixedId = "msg_f23_reuse";
+    const fixedId = "01K25V2J000000000000000030";
     const first = sessionDraft({ message_id: fixedId, book_id: "book_a" });
 
     const ok = await store.append({
@@ -173,7 +173,7 @@ describe("F23 · InMemoryEventStore immutability + duplicate message_id", () => 
       events: [open],
     });
 
-    const sharedId = "msg_f23_batch_dup";
+    const sharedId = "01K25V2J000000000000000031";
     const a = ideaDraft({ message_id: sharedId, idea_id: "a" });
     const b = ideaDraft({ message_id: sharedId, idea_id: "b" });
     a.payload_hash = payloadHash(a.payload);
