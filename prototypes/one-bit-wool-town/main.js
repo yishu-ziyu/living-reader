@@ -1,6 +1,7 @@
 /* PROTOTYPE ONLY — DOM/CSS + Web Animations renderer for the wool-town sim.
    The sim (sim.js) owns state; this file only projects state into the DOM,
-   mirroring the product's presentation-plan separation. */
+   mirroring the product's presentation-plan separation.
+   T070: place topology focus. Switching places does not mutate economy. */
 
 import {
   act,
@@ -29,10 +30,10 @@ const TOKEN_SPRITE = {
 
 // token flight paths, in % of scene box
 const TOKEN_PATH = {
-  wool: { from: [16, 66], to: [33, 60] },
-  yarn: { from: [38, 62], to: [58, 60] },
-  cloth: { from: [63, 62], to: [84, 58] },
-  coin: { from: [88, 52], to: [96, 6] },
+  wool: { from: [12, 62], to: [34, 58] },
+  yarn: { from: [38, 58], to: [58, 58] },
+  cloth: { from: [62, 58], to: [84, 60] },
+  coin: { from: [84, 52], to: [70, 30] },
 };
 
 const PILE_SPRITE = { pileWool: "wool", pileYarn: "yarn", pileCloth: "cloth" };
@@ -40,6 +41,44 @@ const BAR_MAX = { output: 30, stock: 30, orders: 8, cash: 60 };
 
 let world = createWorld(42);
 let ready = false;
+let focusPlaceId = "workshop";
+
+const PLACES = {
+  market: {
+    id: "market",
+    label: "村落市集",
+    status: "open",
+    occupants: ["商人"],
+    connections: ["工坊", "通往邻镇的路（未开通）"],
+    note: "订单在这里形成。路通之前，只能服务附近村子。",
+  },
+  workshop: {
+    id: "workshop",
+    label: "工坊",
+    status: "open",
+    occupants: ["纺纱工", "织工"],
+    connections: ["村落市集", "仓房"],
+    note: "纺与织在同一工坊里分岗。焦点在这里时，你主要看生产压力。",
+  },
+  storehouse: {
+    id: "storehouse",
+    label: "仓房",
+    status: "open",
+    occupants: ["牧羊人", "羊群"],
+    connections: ["工坊"],
+    note: "原毛与成品在这里积压或出货。库存高时压力最大。",
+  },
+  road: {
+    id: "road",
+    label: "通往邻镇的路",
+    status: "locked",
+    occupants: ["无人"],
+    connections: ["村落市集"],
+    note: "这条路还没开通。本刀只证明它可见且不可进入，不在这里做扩展补丁。",
+  },
+};
+
+const OPEN_PLACE_IDS = ["market", "workshop", "storehouse"];
 
 /* ------------------------------------------------------------ rendering */
 function renderMetrics() {
@@ -97,10 +136,101 @@ function renderClock() {
   $("revReadout").textContent = `REV ${world.revision}`;
 }
 
+function placePressure(placeId) {
+  const m = metricsOf(world);
+  if (placeId === "market") {
+    if (m.reachable_orders <= 2) return "订单偏少，市场偏窄";
+    if (m.reachable_orders >= world.orderCap) return "订单已顶到上限";
+    return `可触达订单 ${m.reachable_orders}/${world.orderCap}`;
+  }
+  if (placeId === "workshop") {
+    const rush = rushState(world);
+    if (rush === "rushing") return "织机全速赶单";
+    if (rush === "resting") return "织机停工休整";
+    if (world.inv.yarn === 0) return "纱线不足，织部等待";
+    return "常态运转";
+  }
+  if (placeId === "storehouse") {
+    if (m.stock >= 18) return "库存偏高，有积压";
+    if (m.stock <= 4) return "库存偏低，供给吃紧";
+    return `库存 ${m.stock}（毛${world.inv.wool}/纱${world.inv.yarn}/呢${world.inv.cloth}）`;
+  }
+  return "未开通，不可进入";
+}
+
+function placeStocks(placeId) {
+  if (placeId === "market") return `在售粗呢关注 · 现金 ${world.cash}`;
+  if (placeId === "workshop") return `纱线 ${world.inv.yarn} · 产出 ${world.output}`;
+  if (placeId === "storehouse") {
+    return `原毛 ${world.inv.wool} · 纱线 ${world.inv.yarn} · 粗呢 ${world.inv.cloth}`;
+  }
+  return "无本地库存";
+}
+
+function renderPlaceFocus() {
+  const place = PLACES[focusPlaceId] ?? PLACES.workshop;
+  scene.dataset.focus = place.id;
+  $("focusTitle").textContent = place.label;
+  $("focusStatus").textContent = place.status === "open" ? "开放" : "锁定 / 未开通";
+  $("focusOccupants").textContent = place.occupants.join(" · ");
+  $("focusStocks").textContent = placeStocks(place.id);
+  $("placePressure").textContent = placePressure(place.id);
+  $("focusConnections").textContent = place.connections.join(" · ");
+  $("focusNote").textContent = place.note;
+
+  for (const node of document.querySelectorAll(".place-node")) {
+    const id = node.dataset.place;
+    const active = id === place.id;
+    node.dataset.active = active ? "true" : "false";
+    node.setAttribute("aria-current", active ? "true" : "false");
+  }
+
+  for (const id of OPEN_PLACE_IDS) {
+    const el = document.querySelector(`[data-node-pressure="${id}"]`);
+    if (el) el.textContent = placePressure(id);
+  }
+}
+
+function setFocusPlace(placeId, { announce = false } = {}) {
+  const place = PLACES[placeId];
+  if (!place) return;
+  if (place.status === "locked") {
+    if (announce) {
+      appendLog([
+        {
+          clock: clockOf(world),
+          text: "通往邻镇的路仍锁定：本刀只展示地点拓扑，不在这里开通扩展。",
+          kind: "ghost",
+        },
+      ]);
+    }
+    return;
+  }
+  if (focusPlaceId === placeId) {
+    renderPlaceFocus();
+    return;
+  }
+  focusPlaceId = placeId;
+  renderPlaceFocus();
+  if (announce && ready) {
+    appendLog([
+      {
+        clock: clockOf(world),
+        text: `焦点移到${place.label}。切换地点不改写经济事实。`,
+        kind: "action",
+      },
+    ]);
+  }
+}
+
 function renderSummary() {
   const m = metricsOf(world);
+  const place = PLACES[focusPlaceId] ?? PLACES.workshop;
   $("domSummary").textContent = [
     `${clockOf(world)} · REV ${world.revision}`,
+    `当前焦点：${place.label}（${place.status === "open" ? "开放" : "锁定"}）`,
+    `在场：${place.occupants.join("、")} · 压力：${placePressure(place.id)}`,
+    `地点：村落市集 / 工坊 / 仓房 可切换；通往邻镇的路锁定`,
     `供给 ${m.output} / 库存 ${m.stock}（原毛 ${world.inv.wool} · 纱线 ${world.inv.yarn} · 粗呢 ${world.inv.cloth}）`,
     `可触达订单 ${m.reachable_orders}（上限 ${world.orderCap}） · 现金 ${m.cash} 银币 · 粗呢售价 ${world.price}`,
     `织机状态：${rushState(world) === "rushing" ? "赶单全速" : rushState(world) === "resting" ? "停工休整" : "常态运转"}`,
@@ -177,6 +307,7 @@ function renderAll() {
   renderPiles();
   renderStatus();
   renderClock();
+  renderPlaceFocus();
   renderSummary();
   refreshButtons();
 }
@@ -201,10 +332,15 @@ function runConstruction() {
     scene.dataset.stage = "3";
     overlay.classList.add("done");
     ready = true;
-    $("worldCaption").textContent = "牧羊人 → 纺纱工 → 织工 → 商人 · 材料流已接通";
+    $("worldCaption").textContent = "地点拓扑已展开 · 点左侧地点切换焦点";
     $("worldPhase").textContent = "LIVE";
     appendLog([
       { clock: clockOf(world), text: "镇志开启：羊毛镇 rev 0 进入可操作状态。", kind: "action" },
+      {
+        clock: clockOf(world),
+        text: "地点：村落市集 / 工坊 / 仓房可切换；通往邻镇的路锁定。",
+        kind: "ghost",
+      },
     ]);
     renderAll();
   };
@@ -242,12 +378,28 @@ $("btnRush").addEventListener("click", () => {
 $("btnReset").addEventListener("click", () => {
   world = createWorld(42);
   eventLog.textContent = "";
+  focusPlaceId = "workshop";
   appendLog([
     { clock: clockOf(world), text: "世界已按 SEED 42 重置：同一操作序列将精确重演。", kind: "ghost" },
   ]);
   renderAll();
 });
 
+for (const node of document.querySelectorAll(".place-node")) {
+  node.addEventListener("click", () => {
+    setFocusPlace(node.dataset.place, { announce: true });
+  });
+}
+
+window.addEventListener("keydown", (event) => {
+  if (event.metaKey || event.ctrlKey || event.altKey) return;
+  if (event.key === "1") setFocusPlace("market", { announce: true });
+  if (event.key === "2") setFocusPlace("workshop", { announce: true });
+  if (event.key === "3") setFocusPlace("storehouse", { announce: true });
+  if (event.key === "4") setFocusPlace("road", { announce: true });
+});
+
+setFocusPlace("workshop");
 renderAll();
 runConstruction();
 window.setInterval(tick, TICK_MS);

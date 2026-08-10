@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="prototype-flag">PROTOTYPE // PLAYABLE STUDY 02</div>
+    <div class="prototype-flag">PROTOTYPE // PLACE TOPOLOGY 03</div>
 
     <main class="machine-shell" aria-label="羊毛镇可玩样张">
       <header class="machine-header">
@@ -57,77 +57,137 @@
         <div class="window-bar">
           <span class="bar-label"
             ><img class="bar-art" src="./assets/sheep.png" alt="" />WOOL_TOWN.01
-            // LIVE WORLD</span
+            // PLACE TOPOLOGY</span
           >
           <div class="window-tools" aria-hidden="true"><i></i><i></i><i></i></div>
         </div>
-        <div class="world-screen" id="scene" data-stage="0" data-rush="steady">
-          <div class="sky" aria-hidden="true">
-            <img class="sun sprite" src="./assets/sun.png" alt="" />
-            <img class="cloud c1 sprite" src="./assets/cloud.png" alt="" />
-            <img class="cloud c2 sprite" src="./assets/cloud.png" alt="" />
-          </div>
-          <div class="ground" aria-hidden="true"></div>
 
-          <div class="station actors" id="stPasture" aria-hidden="true">
-            <img class="fence f1 sprite" src="./assets/fence.png" alt="" />
-            <img class="fence f2 sprite" src="./assets/fence.png" alt="" />
-            <span class="mover sheep-mover"><img class="sheep sprite" src="./assets/sheep.png" alt="" /></span>
-            <span class="mover shepherd-mover"><img class="shepherd sprite" src="./assets/shepherd.png" alt="" /></span>
-            <span class="station-label">牧场</span>
-          </div>
+        <div class="topology-shell">
+          <nav class="place-map" id="placeMap" aria-label="地点拓扑">
+            <p class="place-map-title">地点</p>
+            <button type="button" class="place-node" data-place="market" id="nodeMarket">
+              <strong>村落市集</strong>
+              <small data-node-pressure="market">订单压力</small>
+            </button>
+            <span class="place-edge" data-edge="market-workshop" aria-hidden="true"></span>
+            <button type="button" class="place-node" data-place="workshop" id="nodeWorkshop">
+              <strong>工坊</strong>
+              <small data-node-pressure="workshop">生产压力</small>
+            </button>
+            <span class="place-edge" data-edge="workshop-storehouse" aria-hidden="true"></span>
+            <button type="button" class="place-node" data-place="storehouse" id="nodeStorehouse">
+              <strong>仓房</strong>
+              <small data-node-pressure="storehouse">库存压力</small>
+            </button>
+            <span class="place-edge locked" data-edge="market-road" aria-hidden="true"></span>
+            <button
+              type="button"
+              class="place-node locked"
+              data-place="road"
+              id="nodeRoad"
+            >
+              <strong>通往邻镇的路</strong>
+              <small>未开通 · 可查看</small>
+            </button>
+            <p class="place-map-hint">点击地点切换焦点 · 键盘 1/2/3 也可</p>
+          </nav>
 
-          <div class="station actors" id="stSpin" aria-hidden="true">
-            <img class="workshop sprite" src="./assets/workshop.png" alt="" />
-            <span class="chimney"><i class="puff p1"></i><i class="puff p2"></i><i class="puff p3"></i></span>
-            <img class="wheel sprite" src="./assets/wheel.png" alt="" />
-            <span class="mover spinner-mover"><img class="spinner sprite" src="./assets/spinner.png" alt="" /></span>
-            <span class="station-label">纺坊</span>
-          </div>
+          <div class="focus-stage">
+            <div class="world-screen" id="scene" data-stage="0" data-rush="steady" data-focus="workshop">
+              <div class="sky" aria-hidden="true">
+                <img class="sun sprite" src="./assets/sun.png" alt="" />
+                <img class="cloud c1 sprite" src="./assets/cloud.png" alt="" />
+                <img class="cloud c2 sprite" src="./assets/cloud.png" alt="" />
+              </div>
+              <div class="ground" aria-hidden="true"></div>
 
-          <div class="station actors" id="stWeave" aria-hidden="true">
-            <img class="workshop sprite" src="./assets/workshop.png" alt="" />
-            <span class="chimney"><i class="puff p1"></i><i class="puff p2"></i><i class="puff p3"></i></span>
-            <span class="loom-box">
-              <img class="loom sprite" src="./assets/loom.png" alt="" />
-              <span class="shuttle"></span>
-            </span>
-            <span class="mover weaver-mover"><img class="weaver sprite" src="./assets/weaver.png" alt="" /></span>
-            <span class="station-label">织坊</span>
-          </div>
+              <div class="station actors" id="stPasture" data-place-host="storehouse" aria-hidden="true">
+                <img class="fence f1 sprite" src="./assets/fence.png" alt="" />
+                <img class="fence f2 sprite" src="./assets/fence.png" alt="" />
+                <span class="mover sheep-mover"><img class="sheep sprite" src="./assets/sheep.png" alt="" /></span>
+                <span class="mover shepherd-mover"><img class="shepherd sprite" src="./assets/shepherd.png" alt="" /></span>
+                <span class="station-label">牧场侧</span>
+              </div>
 
-          <div class="station actors" id="stMarket" aria-hidden="true">
-            <img class="stall sprite" src="./assets/stall.png" alt="" />
-            <span class="mover merchant-mover"><img class="merchant sprite" src="./assets/merchant.png" alt="" /></span>
-            <span class="station-label">市集</span>
-          </div>
+              <div class="station actors" id="stSpin" data-place-host="workshop" aria-hidden="true">
+                <img class="workshop sprite" src="./assets/workshop.png" alt="" />
+                <span class="chimney"><i class="puff p1"></i><i class="puff p2"></i><i class="puff p3"></i></span>
+                <img class="wheel sprite" src="./assets/wheel.png" alt="" />
+                <span class="mover spinner-mover"><img class="spinner sprite" src="./assets/spinner.png" alt="" /></span>
+                <span class="station-label">纺部</span>
+              </div>
 
-          <div class="flows" aria-hidden="true">
-            <span class="flow-lane" data-lane="wool"></span>
-            <span class="flow-lane" data-lane="yarn"></span>
-            <span class="flow-lane" data-lane="cloth"></span>
-          </div>
+              <div class="station actors" id="stWeave" data-place-host="workshop" aria-hidden="true">
+                <img class="workshop sprite" src="./assets/workshop.png" alt="" />
+                <span class="chimney"><i class="puff p1"></i><i class="puff p2"></i><i class="puff p3"></i></span>
+                <span class="loom-box">
+                  <img class="loom sprite" src="./assets/loom.png" alt="" />
+                  <span class="shuttle"></span>
+                </span>
+                <span class="mover weaver-mover"><img class="weaver sprite" src="./assets/weaver.png" alt="" /></span>
+                <span class="station-label">织部</span>
+              </div>
 
-          <div class="piles" aria-hidden="true">
-            <span class="pile" id="pileWool"></span>
-            <span class="pile" id="pileYarn"></span>
-            <span class="pile" id="pileCloth"></span>
-          </div>
+              <div class="station actors" id="stMarket" data-place-host="market" aria-hidden="true">
+                <img class="stall sprite" src="./assets/stall.png" alt="" />
+                <span class="mover merchant-mover"><img class="merchant sprite" src="./assets/merchant.png" alt="" /></span>
+                <span class="station-label">摊位</span>
+              </div>
 
-          <img class="tree t1 sprite" src="./assets/tree.png" alt="" aria-hidden="true" />
-          <img class="tree t2 sprite" src="./assets/tree.png" alt="" aria-hidden="true" />
-          <img class="grass g1 sprite" src="./assets/grass.png" alt="" aria-hidden="true" />
-          <img class="grass g2 sprite" src="./assets/grass.png" alt="" aria-hidden="true" />
-          <img class="grass g3 sprite" src="./assets/grass.png" alt="" aria-hidden="true" />
+              <div class="flows" aria-hidden="true">
+                <span class="flow-lane" data-lane="wool"></span>
+                <span class="flow-lane" data-lane="yarn"></span>
+                <span class="flow-lane" data-lane="cloth"></span>
+              </div>
 
-          <div class="token-layer" id="tokenLayer" aria-hidden="true"></div>
-          <div class="scanlines" aria-hidden="true"></div>
+              <div class="piles" aria-hidden="true">
+                <span class="pile" id="pileWool"></span>
+                <span class="pile" id="pileYarn"></span>
+                <span class="pile" id="pileCloth"></span>
+              </div>
 
-          <div class="construction" id="construction" role="status">
-            <p class="construction-title">正在把已确认的关系编译成世界</p>
-            <p class="construction-stage" id="constructionStage">正在固定规则与初始数值</p>
+              <img class="tree t1 sprite" src="./assets/tree.png" alt="" aria-hidden="true" />
+              <img class="tree t2 sprite" src="./assets/tree.png" alt="" aria-hidden="true" />
+              <img class="grass g1 sprite" src="./assets/grass.png" alt="" aria-hidden="true" />
+              <img class="grass g2 sprite" src="./assets/grass.png" alt="" aria-hidden="true" />
+              <img class="grass g3 sprite" src="./assets/grass.png" alt="" aria-hidden="true" />
+
+              <div class="token-layer" id="tokenLayer" aria-hidden="true"></div>
+              <div class="scanlines" aria-hidden="true"></div>
+
+              <div class="construction" id="construction" role="status">
+                <p class="construction-title">正在把已确认的关系编译成世界</p>
+                <p class="construction-stage" id="constructionStage">正在固定规则与初始数值</p>
+              </div>
+            </div>
+
+            <aside class="place-focus" id="placeFocus" aria-live="polite">
+              <p class="place-focus-kicker">当前焦点</p>
+              <h2 id="focusTitle">工坊</h2>
+              <p id="focusStatus">开放</p>
+              <dl class="place-focus-grid">
+                <div>
+                  <dt>在场</dt>
+                  <dd id="focusOccupants">纺纱工 · 织工</dd>
+                </div>
+                <div>
+                  <dt>货物</dt>
+                  <dd id="focusStocks">纱线与粗呢在制</dd>
+                </div>
+                <div>
+                  <dt>压力</dt>
+                  <dd id="placePressure">待世界启动</dd>
+                </div>
+                <div>
+                  <dt>连接</dt>
+                  <dd id="focusConnections">市集 · 仓房</dd>
+                </div>
+              </dl>
+              <p class="place-focus-note" id="focusNote">切换地点只改变你看哪里，不改经济事实。</p>
+            </aside>
           </div>
         </div>
+
         <div class="world-caption">
           <span id="worldCaption">世界建造中……</span>
           <b id="worldPhase">CONSTRUCTING</b>

@@ -238,11 +238,225 @@ img {
   border: 2px solid var(--bright);
 }
 
+.topology-shell {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: 0;
+  border-top: 2px solid var(--ink);
+}
+
+.place-map {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 10px;
+  border-right: 2px solid var(--ink);
+  background: var(--paper);
+}
+
+.place-map-title,
+.place-focus-kicker {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  color: var(--ink-soft);
+}
+
+.place-node {
+  appearance: none;
+  width: 100%;
+  text-align: left;
+  border: 2px solid var(--ink);
+  background: var(--bright);
+  color: var(--ink);
+  padding: 8px 10px;
+  font: inherit;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 var(--ink-soft);
+}
+
+.place-node strong {
+  display: block;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+}
+
+.place-node small {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+.place-node[data-active="true"] {
+  background: var(--ink);
+  color: var(--bright);
+  box-shadow: none;
+}
+
+.place-node[data-active="true"] small {
+  color: rgba(237, 241, 231, 0.78);
+}
+
+.place-node.locked {
+  opacity: 0.72;
+  cursor: not-allowed;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 4px,
+    rgba(16, 21, 17, 0.08) 4px,
+    rgba(16, 21, 17, 0.08) 8px
+  );
+}
+
+.place-edge {
+  display: block;
+  width: 2px;
+  height: 14px;
+  margin: 0 auto;
+  background: var(--ink);
+}
+
+.place-edge.locked {
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--ink) 0 4px,
+    transparent 4px 8px
+  );
+}
+
+.place-map-hint {
+  margin: 4px 0 0;
+  font-size: 11px;
+  line-height: 1.35;
+  color: var(--ink-soft);
+}
+
+.focus-stage {
+  display: grid;
+  grid-template-rows: minmax(280px, 1fr) auto;
+  min-width: 0;
+}
+
 .world-screen {
   position: relative;
-  height: 340px;
+  height: 300px;
   overflow: hidden;
   background: var(--bright);
+}
+
+.world-screen[data-focus="market"] .station[data-place-host="market"],
+.world-screen[data-focus="workshop"] .station[data-place-host="workshop"],
+.world-screen[data-focus="storehouse"] .station[data-place-host="storehouse"] {
+  filter: none;
+  opacity: 1;
+}
+
+.world-screen[data-focus="market"] .station:not([data-place-host="market"]),
+.world-screen[data-focus="workshop"] .station:not([data-place-host="workshop"]),
+.world-screen[data-focus="storehouse"] .station:not([data-place-host="storehouse"]) {
+  opacity: 0.28;
+  filter: grayscale(0.2);
+}
+
+.world-screen[data-focus="market"] #stMarket {
+  left: 34%;
+  width: 32%;
+  bottom: 14%;
+  height: 68%;
+  z-index: 3;
+}
+
+.world-screen[data-focus="workshop"] #stSpin {
+  left: 18%;
+  width: 28%;
+  z-index: 3;
+}
+
+.world-screen[data-focus="workshop"] #stWeave {
+  left: 52%;
+  width: 28%;
+  z-index: 3;
+}
+
+.world-screen[data-focus="storehouse"] #stPasture {
+  left: 28%;
+  width: 40%;
+  z-index: 3;
+}
+
+.place-focus {
+  border-top: 2px solid var(--ink);
+  padding: 12px 14px 14px;
+  background: var(--paper);
+}
+
+.place-focus h2 {
+  margin: 2px 0 4px;
+  font-size: 22px;
+  letter-spacing: 0.06em;
+}
+
+.place-focus #focusStatus {
+  margin: 0 0 10px;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+}
+
+.place-focus-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 16px;
+  margin: 0;
+}
+
+.place-focus-grid div {
+  margin: 0;
+}
+
+.place-focus-grid dt {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: var(--ink-soft);
+}
+
+.place-focus-grid dd {
+  margin: 2px 0 0;
+  font-size: 14px;
+}
+
+.place-focus-note {
+  margin: 10px 0 0;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 720px) {
+  .topology-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .place-map {
+    border-right: 0;
+    border-bottom: 2px solid var(--ink);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .place-map-title,
+  .place-map-hint {
+    grid-column: 1 / -1;
+  }
+
+  .place-edge {
+    display: none;
+  }
+
+  .world-screen {
+    height: 260px;
+  }
 }
 
 .sky .sun {
