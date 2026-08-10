@@ -111,6 +111,7 @@ function parseProviderMessage(data: unknown): unknown {
 
 export async function startVoiceSession(
   sourceSnapshot: VoiceSourceSnapshot,
+  voice?: string,
 ): Promise<{ id: string; sourceSnapshot: VoiceSourceSnapshot }> {
   pruneExpiredSessions();
   const activeCount = [...registry.sessions.values()].filter(
@@ -185,7 +186,9 @@ export async function startVoiceSession(
     const timeout = setTimeout(fail, READY_TIMEOUT_MS);
 
     socket.addEventListener("open", () => {
-      socket.send(JSON.stringify(buildStepFunSessionUpdate(sourceSnapshot)));
+      socket.send(
+        JSON.stringify(buildStepFunSessionUpdate(sourceSnapshot, voice)),
+      );
     });
     socket.addEventListener("error", fail, { once: true });
     socket.addEventListener("message", (message) => {

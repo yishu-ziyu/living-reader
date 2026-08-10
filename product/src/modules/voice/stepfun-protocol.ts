@@ -148,7 +148,10 @@ export function parseVoiceSourceSnapshot(
   });
 }
 
-export function buildStepFunSessionUpdate(snapshot: VoiceSourceSnapshot) {
+export function buildStepFunSessionUpdate(
+  snapshot: VoiceSourceSnapshot,
+  voice = "linjiajiejie",
+) {
   const sourceContext = [
     "你只负责实时语音采集期间的非语义反馈，不担任原文陪读或世界行动判断。",
     "等待时最多用极短确认，例如“嗯”或“我在听”。",
@@ -168,7 +171,7 @@ export function buildStepFunSessionUpdate(snapshot: VoiceSourceSnapshot) {
     session: {
       modalities: ["text", "audio"],
       instructions: sourceContext,
-      voice: "linjiajiejie",
+      voice,
       input_audio_format: "pcm16",
       output_audio_format: "pcm16",
       turn_detection: {

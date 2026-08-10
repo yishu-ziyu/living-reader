@@ -22,7 +22,7 @@ Agent OS 不是“把用户的话改写成命令的 clarifier”。每一轮输�
 |---|---|---|---|
 | **阅读陪伴者** | 在当前 `SourceBlock` 上回答、复述读者理解、提出可修订的 `BookThought`，保持原文与读者的话同时在场 | `answer.ready`、`BookThought` 候选、澄清问题 | 不替读者发明 `ReaderIdea`；不把推断说成作者原话；不因一次回答改变 `WorldState` |
 | **原文守护者** | 检查来源、版本、锚点和相关性；识别真正无关或注入噪声，同时允许有产出的联想 | `evidence`/`open_question`、`needs_review`、温和回引 | 不以“偏题”为理由压制隐喻、个人经验或跨段联想；不说教式地命令“回到书上” |
-| **世界机制导演** | 从已确认的来源关系中选择/编译机制，解释可执行动作的前置条件，依据局部状态编排角色观察与行动 | allowlist 内的 `world.action` 候选、`CharacterObservation`、世界叙事顺序 | 不直接改钱、库存、订单或角色状态；不让 LLM 决定经济结果；不把角色写成脱离状态的聊天 NPC |
+| **世界机制导演** | 从已确认来源关系与受审原语中实时组成 `WorldIntent`/`WorldPlan`，解释动作前置条件，提出 `ExecutableWorldPatch`，并依据局部状态编排角色观察 | `WorldIntent`/`WorldPlan`/`ExecutableWorldPatch` 候选、allowlist 内 `ActionCandidate`、`CharacterObservation`、世界叙事顺序 | 不直接改钱、库存、订单或角色状态；不把完整关卡当唯一世界；不让 LLM 决定经济结果或生成可执行代码；不把角色写成脱离状态的聊天 NPC |
 
 三个身份是**同一个 Agent turn 内的权限视角**，不是三个互相转述的模型 Agent。
 MVP 默认只调用一次语义模型；来源校验、状态维护、动作授权、幂等与世界演进由
@@ -34,9 +34,10 @@ Harness/确定性代码完成。只有外部观测或独立专业能力确实带
 1. 任何事实性回答必须带当前书籍版本和可回到同一段的 `SourceBlock`/`evidence`；
    没有来源就显示“未能从当前原文确认”。
 2. 任何世界改变必须来自当前读者 turn，经语义判断得到 allowlist 内的
-   `DomainCommand`，再由 `WorldKernel.decide/evolve` 生成 `DomainEvent`。清晰、低风险、
-   可逆的 MVP 动作可以在同一轮直接执行；探索、假设、愿望、低置信或歧义表达必须
-   零修改。动作不以审批卡、预览卡或“是否执行”作为安全边界。
+   `DomainCommand` 或已确认的 `ExecutableWorldPatch`，再由确定性编译与
+   `WorldKernel.decide/evolve` 生成 `DomainEvent`。首次进入世界与改变世界边界的补丁
+   必须可见确认；清晰、低风险、可逆且已在当前 plan allowlist 内的动作可以在同一轮
+   直接执行；探索、假设、愿望、低置信或歧义表达必须零修改。
 3. Agent 的“自己的想法”使用 `BookThought` 保存，不冒充用户的 `ReaderIdea`，不保存
    隐藏思维链；修订通过追加版本完成，不覆盖历史。
 4. 角色说话只解释它们已经发生的局部事实；一句漂亮的台词没有证据或事件就不是
@@ -52,6 +53,11 @@ smith.b1.c3.market_extent   -- display: PDF 45, Book I Ch. III
 PDF 页码只用于显示和回看，不能作为稳定 ID。该纵切的机制是：市场范围限制能够
 维持的专业化深度；市场太小导致织工拒绝继续细分；读者明确说“扩大市场”后，
 市场订单/交换路径增加，角色按各自局部状态重新行动，结果再回到 PDF 36 ↔ PDF 45。
+
+
+实时世界生成、开放交互与增量扩展的完整合同见
+[`realtime-agent-world-interaction.md`](./realtime-agent-world-interaction.md)。
+`WorldRecipe` 只作为受审机制种子/原语打包，不得再被解释成完整预制小游戏。
 
 ### 1.1 T030 运行时边界
 

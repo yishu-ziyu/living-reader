@@ -5,6 +5,7 @@ import {
   voiceErrorResponse,
 } from "@/modules/voice/server-registry";
 import {
+  parseVoiceId,
   parseVoiceSourceSnapshot,
   snapshotVoiceSource,
   voiceSourceSnapshotsEqual,
@@ -38,6 +39,20 @@ export async function POST(request: Request) {
           error: {
             code: "invalid_source_snapshot",
             message: "开始通话前必须固定有效的 SourceBlock 快照。",
+          },
+        },
+        { status: 400 },
+      );
+    }
+    const requestedVoice =
+      "voice" in body ? parseVoiceId((body as { voice?: unknown }).voice) : null;
+    if ("voice" in body && !requestedVoice) {
+      return Response.json(
+        {
+          ok: false,
+          error: {
+            code: "invalid_voice",
+            message: "所选音色不可用，请在设置中重新选择。",
           },
         },
         { status: 400 },
@@ -77,7 +92,10 @@ export async function POST(request: Request) {
       );
     }
 
-    const session = await startVoiceSession(sourceSnapshot);
+    const session = await startVoiceSession(
+      sourceSnapshot,
+      requestedVoice ?? undefined,
+    );
     if (request.signal.aborted) {
       stopVoiceSession(session.id);
       return new Response(null, { status: 499 });

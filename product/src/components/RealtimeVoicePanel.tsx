@@ -6,12 +6,14 @@ import {
   acceptReaderTranscriptItem,
   base64ToPcm16,
   cloneVoiceSourceSnapshot,
+  DEFAULT_VOICE_PREFERENCES,
   downsampleToPcm16,
   pcm16ToBase64,
   parseVoiceBrowserEvent,
   STEPFUN_PCM_SAMPLE_RATE,
   type VoiceBrowserEvent,
   type VoiceFinalTurn,
+  type VoicePreferences,
   type VoiceSourceSnapshot,
   type VoiceStopReason,
   type VoiceTranscript,
@@ -41,6 +43,7 @@ type RealtimeVoicePanelProps = {
   onFinalTurn?: (turn: VoiceFinalTurn) => void;
   onStop?: () => void | Promise<void>;
   textFallbackId?: string;
+  voicePreferences?: VoicePreferences;
 };
 
 type SessionResponse = {
@@ -114,6 +117,7 @@ export function RealtimeVoicePanel({
   onFinalTurn,
   onStop,
   textFallbackId,
+  voicePreferences = DEFAULT_VOICE_PREFERENCES,
 }: RealtimeVoicePanelProps) {
   const voiceInput = useVoiceInputPort();
   const [state, setState] = useState<VoiceUiState>("idle");
@@ -143,6 +147,8 @@ export function RealtimeVoicePanel({
   const processedReaderItemIdsRef = useRef<Set<string>>(new Set());
   const startAttemptRef = useRef(0);
   const requestAbortRef = useRef<AbortController | null>(null);
+  const voicePrefsRef = useRef<VoicePreferences>(voicePreferences);
+  const playbackGainRef = useRef<GainNode | null>(null);
   const coordinatedStopRef = useRef<
     (reason: VoiceStopReason) => Promise<void>
   >(async () => {});
@@ -150,6 +156,14 @@ export function RealtimeVoicePanel({
   useEffect(() => {
     finalTurnHandlerRef.current = onFinalTurn;
   }, [onFinalTurn]);
+
+  // Rate/volume apply client-side, so preference changes reach a live call.
+  useEffect(() => {
+    voicePrefsRef.current = voicePreferences;
+    if (playbackGainRef.current) {
+      playbackGainRef.current.gain.value = voicePreferences.volume;
+    }
+  }, [voicePreferences]);
 
   const transition = (next: VoiceUiState) => {
     stateRef.current = next;
@@ -181,6 +195,8 @@ export function RealtimeVoicePanel({
     mediaStreamRef.current?.getTracks().forEach((track) => track.stop());
     mediaStreamRef.current = null;
     stopPlayback();
+    playbackGainRef.current?.disconnect();
+    playbackGainRef.current = null;
     const context = audioContextRef.current;
     audioContextRef.current = null;
     if (context && context.state !== "closed") await context.close();
@@ -267,7 +283,8 @@ export function RealtimeVoicePanel({
     }
     const source = context.createBufferSource();
     source.buffer = buffer;
-    source.connect(context.destination);
+    source.playbackRate.value = voicePrefsRef.current.rate;
+    source.connect(playbackGainRef.current ?? context.destination);
     const startAt = Math.max(context.currentTime, playbackTimeRef.current);
     source.start(startAt);
     playbackTimeRef.current = startAt + buffer.duration;
@@ -436,12 +453,19 @@ export function RealtimeVoicePanel({
     try {
       const context = new AudioContext();
       audioContextRef.current = context;
+      const playbackGain = context.createGain();
+      playbackGain.gain.value = voicePrefsRef.current.volume;
+      playbackGain.connect(context.destination);
+      playbackGainRef.current = playbackGain;
       await context.resume();
       transition("connecting");
       const response = await fetch("/api/voice/session", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ sourceSnapshot: sourceAtStartRef.current }),
+        body: JSON.stringify({
+          sourceSnapshot: sourceAtStartRef.current,
+          voice: voicePrefsRef.current.voice,
+        }),
         signal: requestAbort.signal,
       });
       const body = (await response.json()) as SessionResponse;

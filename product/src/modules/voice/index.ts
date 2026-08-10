@@ -30,3 +30,14 @@ export {
   type VoiceClientCommand,
   type VoiceResponseStatus,
 } from "./stepfun-protocol";
+export {
+  DEFAULT_VOICE_PREFERENCES,
+  loadVoicePreferences,
+  parseVoiceId,
+  parseVoicePreferences,
+  saveVoicePreferences,
+  VOICE_OPTIONS,
+  VOICE_PREFERENCES_STORAGE_KEY,
+  type VoiceOptionId,
+  type VoicePreferences,
+} from "./preferences";

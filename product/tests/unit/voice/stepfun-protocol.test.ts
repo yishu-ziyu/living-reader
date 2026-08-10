@@ -42,6 +42,15 @@ describe("StepFun realtime protocol", () => {
     expect(event.session.instructions).toContain("AgentTurn");
   });
 
+  it("defaults to the companion voice and accepts a reader-chosen voice", () => {
+    expect(buildStepFunSessionUpdate(sourceSnapshot).session.voice).toBe(
+      "linjiajiejie",
+    );
+    expect(
+      buildStepFunSessionUpdate(sourceSnapshot, "ruyananshi").session.voice,
+    ).toBe("ruyananshi");
+  });
+
   it("normalizes official reader final, companion partial/final and audio events", () => {
     expect(
       normalizeStepFunServerEvent({
