@@ -19,5 +19,5 @@ Run:
 npm run dev   # 默认 http://127.0.0.1:7100/
 ```
 
-素材：`assets/*.png` 由 `tools/make_sprites.py` 以 Pillow 逐像素生成（项目自有）；
+素材：`assets/*.png` 由 `tools/make_sprites.py` 从项目自有的手绘式 1-bit 像素矩阵生成；
 字体为缝合像素字体（SIL OFL，许可证见 `assets/fonts/FUSION_PIXEL_OFL.txt`）。
