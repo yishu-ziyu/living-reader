@@ -1,6 +1,6 @@
 import { defineConfig, devices } from "@playwright/test";
 
-const port = 3000;
+const port = Number(process.env.PW_PORT ?? 3000);
 const baseURL = `http://127.0.0.1:${port}`;
 
 /**
@@ -10,7 +10,7 @@ const baseURL = `http://127.0.0.1:${port}`;
  * Production start remains `pnpm build && pnpm start` with the default `.next`.
  */
 const webServerCommand =
-  "NEXT_DIST_DIR=.next-playwright NEXT_PUBLIC_T003_BRIDGE=1 NEXT_PUBLIC_T004_SESSION_BRIDGE=1 NEXT_PUBLIC_T009_AGENT_TURN_BRIDGE=1 pnpm dev --hostname 127.0.0.1 --port 3000";
+  `NEXT_DIST_DIR=.next-playwright NEXT_PUBLIC_T003_BRIDGE=1 NEXT_PUBLIC_T004_SESSION_BRIDGE=1 NEXT_PUBLIC_T009_AGENT_TURN_BRIDGE=1 pnpm dev --hostname 127.0.0.1 --port ${port}`;
 
 export default defineConfig({
   testDir: "tests/e2e",

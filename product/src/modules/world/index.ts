@@ -82,6 +82,7 @@ export {
 } from "./fixtures/wool-town";
 
 export {
+  assertWalkOccupancy,
   buildCommittedWorldPresentation,
   type CommittedWorldEvent,
   type CommittedWorldPresentation,
@@ -90,7 +91,11 @@ export {
   type CommittedWorldRole,
   type CommittedWorldSession,
   type CommittedWorldSourceBinding,
+  chebyshevDistance,
   compilePresentation,
+  compileWoolTownWalkPresentation,
+  isWalkableCell,
+  lockedPlacesHaveReasons,
   type CompilePresentationInput,
   type PresentationAction,
   type PresentationEntity,
@@ -99,6 +104,18 @@ export {
   type PresentationSource,
   type PresentationStock,
   type PresentationTimelineStep,
+  resolveCurrentPlaceId,
+  resolveWalkSprite,
+  sortDrawablesByDepth,
+  WALK_SPRITE,
+  WALK_SPRITE_DIR,
+  type WalkCell,
+  type WalkDrawable,
+  type WalkDrawableKind,
+  type WalkPlace,
+  type WalkPlaceStatus,
+  type WalkPresentation,
+  walkDomSummaryLines,
 } from "./presentation";
 
 export {

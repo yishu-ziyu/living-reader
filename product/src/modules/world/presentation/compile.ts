@@ -11,6 +11,10 @@ import type {
   PresentationPlan,
   PresentationTimelineStep,
 } from "./types";
+import {
+  compileWoolTownWalkPresentation,
+  walkDomSummaryLines,
+} from "./walk";
 
 function sameMetrics(
   left: ReturnType<typeof compileWorldMetricsToEventMetrics>,
@@ -105,10 +109,16 @@ export function compilePresentation(
     input.definition.visual_grammar.seed_caption,
     ...events.map((event) => event.summary),
   ];
+  const walk =
+    input.definition.visual_grammar.scene_template === "wool-workshop"
+      ? compileWoolTownWalkPresentation()
+      : null;
+  const latestEvent = events.at(-1)?.summary ?? null;
   const domSummary = [
     input.definition.visual_grammar.seed_caption,
     `当前状态：产出 ${metrics.supply}，库存 ${metrics.inventory}，可触达订单 ${metrics.demand}，现金 ${metrics.cash}。`,
     ...events.map((event) => event.summary),
+    ...(walk ? walkDomSummaryLines(walk, latestEvent) : []),
   ];
 
   return deepFreeze({
@@ -148,5 +158,6 @@ export function compilePresentation(
     audio_refs: [...input.definition.visual_grammar.audio_refs],
     captions,
     dom_summary: domSummary,
+    walk,
   });
 }

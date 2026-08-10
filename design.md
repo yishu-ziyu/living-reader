@@ -1,11 +1,11 @@
 # 设计基线：针厂的边界
 
-> Status：Draft 0.6（整书阅读范围已确认，最终视觉样例仍待裁决）
+> Status：Draft 0.9（D015 已接受；T070 点击切地点被驳回；可走世界嵌入合同待裁决）
 > Owner：Codex
 > Visual & interaction approver：用户
-> Last reviewed：2026-08-09
+> Last reviewed：2026-08-10
 > Applies to：正式应用 `product/`；`prototypes/` 只承担隔离验证
-> Supersedes：Draft 0.4
+> Supersedes：Draft 0.6
 
 本文是 Living Reader 的**产品设计宪法与决策索引**。它规定长期体验目标、用户边界、已接受决策和验收方式；不复制 Teable 的任务状态、架构文档的内部协议、某轮浏览器问题清单或完整视觉 token。
 
@@ -24,7 +24,7 @@
 
 主体验链：
 
-`SourceBlock → ReaderIdea → RelationProposal → Review/Commit → WorldInvitation → Reader Accepts → RecipeCompiler → Inline World → DomainEvent → Evidence → SourceBlock`
+`SourceBlock → ReaderIdea → RelationProposal → Review/Commit → WorldIntent → WorldPlan → Reader Accepts → Compile/Seed → Inline World → DomainEvent → Evidence → SourceBlock`（同一世界可由后续 `ExecutableWorldPatch` 增量扩展）
 
 ## 2. 问题、用户与证据
 
@@ -72,9 +72,9 @@
 
 ### Non-goals
 
-- 不把整书阅读扩张成通用知识库、通用 PDF 聊天器，也不为未受审章节自动发明世界。
-- 不做宏观经济预测、开放世界编辑器或自由叙事游戏。
-- 不让 LLM 直接写钱、库存、订单、角色状态或最终关系。
+- 不做宏观经济预测、通用开放世界编辑器或与原文脱钩的自由叙事游戏。
+- 不把完整游戏关卡提前写进 recipe，再假装成实时生成。
+- 不让 LLM 直接写钱、库存、订单、角色状态、最终关系或可执行代码。
 - 不用 NPC 聊天、排行榜、KPI dashboard 或固定视频代替机制体验。
 - 不要求用户授权麦克风才能完成核心路径。
 - 不把 Apple 感简化为毛玻璃、大圆角、SF 字体或仿制 macOS 设置页。
@@ -101,10 +101,11 @@
 | 表达理解 | 输入文字或主动开启语音 | 显示系统听到/理解了什么；只有 final turn 可形成 `ReaderIdea` | partial、取消和低置信不写入；可修改、重说、停止 |
 | 核对理解 | 查看引文与推断 | quote、inference、experiment 类型和不确定性可见 | 可拒绝、修订或保留为未决候选 |
 | 连接关系 | 审阅 `RelationProposal` | 用人话解释方向、依据、影响和不确定性 | 接受、拒绝、修改或暂缓；候选不参与编译 |
-| 邀请与预览 | 查看 Agent 提议的受审配方 | 触发问题、来源、规则边界、模型扩展和可返回路径可见；邀请本身零世界写入 | 读者可拒绝或暂缓；配方未受审、basis 过期或来源不匹配时世界不出现 |
-| 世界展开 | 明确接受邀请 | 配方经确定性编译后，世界在相关原文之间真实展开，来源连接仍可理解 | 可收起并回到原位置；加载与展开不造成跳页 |
-| 行动反馈 | 执行 allowlist 内行动 | 状态变化、约束、失败原因和二阶后果可见 | 可停止、重试或换方案；未知输入不改世界状态 |
-| 返回证据 | 结束或收起世界 | 按想法→关系→规则→事件→原文回放 | 可打开详细依据；模型简化不冒充来源结论 |
+| 邀请与预览 | 查看 Agent 实时提出的 WorldIntent/WorldPlan | 触发问题、来源、将出现的地点/角色/动作、规则边界、模型扩展和可返回路径可见；邀请本身零世界写入 | 读者可拒绝或暂缓；来源不匹配、Gate 失败或 basis 过期时世界不出现 |
+| 世界展开 | 明确接受邀请 | 计划经确定性编译后，世界在相关原文之间真实展开；空间节点与当前可行动作可见，来源连接仍可理解 | 可收起并回到原位置；加载与展开不造成跳页 |
+| 行动反馈 | 执行当前 allowlist / ActionCandidate 内行动 | 状态变化、约束、失败原因和二阶后果可见；角色观察按因果顺序解释已发生事实 | 可停止、重试或换方案；未知输入不改世界状态 |
+| 世界扩展 | 追问并确认 ExecutableWorldPatch | 同一 world_id 上增量解锁地点、角色、动作或约束，不另开无关小游戏 | 拒绝补丁则世界保持原边界；补丁必须可回放 |
+| 返回证据 | 结束或收起世界 | 按想法→关系→计划/补丁→事件→原文回放 | 可打开详细依据；模型简化不冒充来源结论 |
 
 ## 6. 内容身份与世界边界
 
@@ -116,21 +117,24 @@
 | 读者 | `ReaderIdea` | 读者自己的观察、问题、假设或类比 | Agent 替读者发言或改写成事实 |
 | Agent | `BookThought` | 类型、证据、置信度和修订记录 | 保存隐藏思维链；把推断写成原话 |
 | 关系 | `RelationProposal` / `RelationEdge` | 候选/确认状态、方向、类型和证据 | 未经确认参与世界编译 |
-| 模型 | `WorldPatch` / `ModelExtension` | 来源规则与运行假设的边界 | 把模型扩展伪装成 Smith 的主张 |
-| 世界 | `WorldState` / `DomainEvent` | 确定性规则、版本、种子和事件因果 | 让 LLM 直接写核心状态 |
+| 模型 | `ModelExtension` / 阅读图 `WorldPatch` / 可执行 `ExecutableWorldPatch` | 来源规则与运行假设的边界；两类补丁不可混用 | 把模型扩展伪装成 Smith 的主张；把阅读关系补丁当成世界改关 |
+| 世界 | `WorldIntent` / `WorldPlan` / `WorldState` / `DomainEvent` | 意图与计划可审阅；状态与事件确定性可回放 | 让 LLM 直接写核心状态；用完整预制关卡冒充实时生成 |
 | 回放 | `EvidenceBlock` / `ReadingTrace` | 用户行动、事件、来源和边界 | 只给总结，不给可核对因果链 |
 
 PDF 页码只负责显示位置，不能作为永久身份。
 
 ### 首版世界
 
-首版世界是一间小工坊/针厂：
+首版可执行世界仍围绕羊毛贸易/工坊机制，但**不是**固定四站流水线罐头：
 
-`牧羊人 / 原毛 → 纺纱工 / 纱线 → 织工 / 粗呢 → 商人 / 更大的市场`
+- 预制：经济原语、规则能力、资产语法、安全预算，以及可选的受审机制种子。
+- 实时：Agent 根据当前 `SourceBlock`、已确认关系和读者问题生成 `WorldIntent` 与可审阅 `WorldPlan`；随后可用 `ExecutableWorldPatch` 扩展同一世界。
+- 最小状态仍包括市场可触达订单、交换是否开放、运输/路径条件、库存、订单、现金、专业化深度和角色局部状态。
+- 读者必须看见：专业化可能提高产出，但市场过小时会造成等待、积压、现金压力或拒绝深化；追问可以把封闭工坊扩到道路与更大市场。
 
-最小状态包括市场可触达订单、交换是否开放、运输成本、库存、订单、现金、专业化深度和角色局部状态。它必须让读者看见：专业化可能提高产出，但市场过小时也可能造成等待、积压、现金压力或断供。
+世界是有明确简化条件的思想实验，不是现代经济预测。同一 plan/patch revision、seed、ruleset 和行动序列必须 exact replay。
 
-世界是有明确简化条件的思想实验，不是现代经济预测。同一 graph revision、seed、ruleset 和行动序列必须 exact replay。
+详细交互合同见 [`docs/architecture/realtime-agent-world-interaction.md`](docs/architecture/realtime-agent-world-interaction.md)。
 
 ## 7. 信息架构与关键交互合同
 
@@ -165,8 +169,9 @@ PDF 页码只负责显示位置，不能作为永久身份。
 #### 世界展开与证据回归
 
 - 关系未确认或 Gate 未通过时，世界不进入开放态。
-- 展开前先预览规则；展开时保留两端原文和因果连接。
+- 展开前先预览 WorldIntent/WorldPlan；展开时呈现可区分的地点节点与当前行动，而不是一条不可游走的工序条。
 - 世界收起后回到触发位置；Evidence 能从事件逐层返回原文。
+- 改变世界边界的补丁需要再次可见确认；低风险 allowlist 动作可直接执行。
 
 #### 语音、权限与停止
 
@@ -226,7 +231,7 @@ PDF 页码只负责显示位置，不能作为永久身份。
 - 真实 PDF/文本层是主画面，不用不可选择的截图伪造书页。
 - 世界必须让目标段落后的内容真实下移，不能只覆盖在 PDF 上。
 - 主世界不使用现代 dashboard KPI 卡、玻璃拟态、渐变按钮或 Emoji/SVG 人物作为最终视觉。
-- **Proposed**：世界采用插入书页的原创版画图版，以冷白纸、石墨线和低饱和墨蓝形成与正文同源的视觉；角色与场景使用高质量 PNG/WebP，结构、交互和动效使用 DOM/CSS + Web Animations，绝不以 SVG 作为世界视觉；必须经过高质量关键帧、短动效样例和用户判断后才能 Accepted。
+- **Proposed**：世界采用插入书页的可走图版；角色在空间中移动到达地点，而不是点列表切换“我在哪”；结构层必须处理占用与深度排序，禁止人物/建筑/标签互相遮死；资产可用 PNG/WebP；最终渲染适配器待 D016 裁决（薄 WalkView 为主，引擎仅原型验证）；绝不以 SVG 作为世界视觉。
 - 角色靠外轮廓、工具和动作识别，不能只靠职业标签、颜色或 tooltip。
 
 ### 可访问性底线
@@ -243,7 +248,7 @@ PDF 页码只负责显示位置，不能作为永久身份。
 | D004 | Accepted | 桌面 Agent 形态 | 当前段落页边小 Orb 负责安静召回；进入对话后展开完整 Thinking Orbs | 密集常驻轨道、普通书签抽屉 | 用户要求保留已验收的 Thinking Orbs，同时排除参考图左侧的信息拥挤 |
 | D005 | Open | 移动端 Agent 容器 | 正文单栏，Agent 可召回 | 底部层 vs 侧向抽屉 | 先比较可读面积、返回位置与键盘行为 |
 | D006 | Accepted | 关系与回应出现在哪里 | 靠近触发原文；页边 Orb 只保留召回和当前对话状态 | 全部挤在固定窄轨道 | 内容邻近原则与真实审计 |
-| D007 | Proposed | 世界最终美术 | 与书页同源的原创版画 PNG/WebP；DOM/CSS + Web Animations 承载结构与交互 | 二值像素、SVG/纸雕海报、dashboard、固定视频 | 用户确认参考图中部的书页融合语言；ADR 10 已接受无 SVG 的渲染路径；最终画质仍需样例验证 |
+| D007 | Proposed | 世界最终美术与空间形态 | 书页内可走、无遮挡的 1-bit/版画图版；移动到达地点；PNG/WebP 资产 | 四站流水线、点击切地点面板、重叠遮挡场景、SVG 主视觉、dashboard | 用户 2026-08-10 驳回 T070 遮挡与点击切换；详见 walkable-world-embedding.md |
 | D008 | Proposed | 原文表达入口 | 一个主入口，提交后确认意图 | 两个同权大输入框 | 减少选择成本，但必须保持领域身份 |
 | D009 | Rejected | 如何获得 Apple 感 | 以清晰、邻近、触达、反馈和取舍验收 | 毛玻璃、大圆角、仿 macOS 皮肤 | Apple 官方设计指导与用户反馈 |
 | D010 | Accepted | 设计工作从哪里开始 | UI Skills 为设计前必查入口；Motion 与 Apple Design 优先 | 只看现有 UI、通用灵感图或凭记忆设计 | 用户明确指定；该站提供可执行的设计工程技能 |
@@ -251,6 +256,8 @@ PDF 页码只负责显示位置，不能作为永久身份。
 | D012 | Accepted | 页面基础色温 | 冷白纸、石墨正文、低饱和墨蓝强调 | 深绿控制台、泛黄复古滤镜 | 用户明确不采用参考图配色，并选择“冷白墨蓝” |
 | D013 | Accepted | 整书与首批世界的范围如何区分 | Cannan 两卷 Books I–V 全部可读；只有两份受审 Book I 配方可邀请进入世界 | 只保留两段、或对全书自动生成世界 | 整书阅读与受审机制库是两个不同的授权边界 |
 | D014 | Accepted | 译文如何与原文共存 | 中文机译为主阅读层，逐段诚实标注，原文一键对照；引文/Evidence 始终指向英文原文 | 把机译写回原文、以 gloss 冒充译文 | 读者优先可读与来源可核对必须同时成立 |
+| D015 | Accepted | 世界如何实时生成且保持开放 | 预制原语 + 实时意图/计划/补丁；语音只作入口；Kernel 独写事实；空间主交互改为可走到达（见 D016） | 预制整关；LLM 直写状态；有语音=已生成 | 用户 ok 机制；空间执行被 T070 纠正 |
+| D016 | Proposed | 可走世界如何嵌入产品 | 薄 WalkView 消费 PresentationPlan；移动/碰撞/深度排序在呈现层；引擎可在 prototypes 验证；EventStore/Kernel 权限不变；侧栏地点列表不得当主空间交互 | 完整 RPG 框架进主包；点击切地点冒充开放；无 DOM 摘要的裸 canvas | T070 驳回 + 开源调研；见 docs/architecture/walkable-world-embedding.md |
 
 ## 10. 验收与反证
 
@@ -258,8 +265,9 @@ PDF 页码只负责显示位置，不能作为永久身份。
 
 - 读者从真实 `SourceBlock` 开始，并留下归属于自己的 `ReaderIdea`。
 - 关系在用户确认前始终是候选态，确认后有版本和证据。
-- 世界由本次已确认关系与读者明确接受的受审配方编译，不是固定演示。
+- 世界由本次已确认关系与读者明确接受的实时 WorldPlan 编译，不是固定演示关卡。
 - 至少一个非装饰性行动改变 `WorldState`，并产生可解释、可回放事件。
+- 同一世界支持至少一次可见的增量扩展（新地点/动作/约束），且不丢失既有状态。
 - 失败、停止、权限拒绝、重试和未知分支都有可见结果。
 - 世界结束后回到原文，并显示完整 Evidence 链与模型扩展。
 
@@ -293,8 +301,9 @@ PDF 页码只负责显示位置，不能作为永久身份。
 | 问题 | Owner / approver | 所需证据 | 裁决门槛 | 阻塞范围 |
 |---|---|---|---|---|
 | D005 移动端容器 | Codex / 用户 | 360×800 底部层与侧抽屉样例；键盘和返回位置 | 正文先出现、无横向滚动、Agent 可恢复 | T018 |
-| D007 世界画风 | Codex / 用户 | 高质量关键帧与短动效，不用静态占位代替 | 角色、状态和因果不靠标签也能辨认 | T010、T015 视觉冻结 |
+| D007 世界画风与可走空间 | Codex / 用户 | 可走无遮挡关键帧；化身移动到地点 | 1 秒内分清人/房；不是点列表 | T071 后 T072 |
 | D008 单一表达入口 | Codex / 用户 | 问题、观察、假设、取消、修改和低置信语音样例 | 降低选择成本且不混淆领域身份 | T021 |
+| D016 可走嵌入方案 | Codex / 用户 | 开源比较 + 嵌入合同 + 最小可走定义 | 用户确认主路径与原型技术 | T071 |
 | PDF 段间展开 | Codex / 用户 | 保持逻辑不变的 compositor A/B；滚动锚定与返回测试 | 世界真实推开内容且关闭后回到同一段 | 生产 PDF compositor |
 | 最终对外名称 | 用户 | `针厂的边界`、`Living Reader` 与层级方案 | 名称与首版体验一致，不制造错误品类预期 | 对外演示与发布文案 |
 
@@ -317,11 +326,12 @@ PDF 页码只负责显示位置，不能作为永久身份。
 2. [`CONTEXT.md`](CONTEXT.md)：术语、身份和核心不变量。
 3. [`docs/product-brief.md`](docs/product-brief.md)：首版产品范围与体验合同。
 4. [`docs/architecture/agent-os-behavior-protocol.md`](docs/architecture/agent-os-behavior-protocol.md)：Agent OS 语义权限。
-5. [`docs/architecture/event-protocol.md`](docs/architecture/event-protocol.md)：事件、写入、投影、幂等和回放。
-6. [`docs/architecture/voice-native-executable-book.md`](docs/architecture/voice-native-executable-book.md)：语音、Inline World 与 PlayabilityGate。
-7. [`docs/acceptance.md`](docs/acceptance.md)：工程完成门槛。
-8. Teable：任务范围、状态、负责人、依赖和验收证据。
-9. [`product/README.md`](product/README.md)：当前实现切片与运行方式。
+5. [`docs/architecture/realtime-agent-world-interaction.md`](docs/architecture/realtime-agent-world-interaction.md)：实时世界生成、开放交互与增量扩展。
+6. [`docs/architecture/event-protocol.md`](docs/architecture/event-protocol.md)：事件、写入、投影、幂等和回放。
+7. [`docs/architecture/voice-native-executable-book.md`](docs/architecture/voice-native-executable-book.md)：语音、Inline World 与 PlayabilityGate。
+8. [`docs/acceptance.md`](docs/acceptance.md)：工程完成门槛。
+9. Teable：任务范围、状态、负责人、依赖和验收证据。
+10. [`product/README.md`](product/README.md)：当前实现切片与运行方式。
 
 ### 变更记录
 
@@ -333,6 +343,9 @@ PDF 页码只负责显示位置，不能作为永久身份。
 | Draft 0.4 | 2026-08-09 | 将 UI Skills、Motion Skills 与 Apple Design 设为设计前必查入口 | 用户明确指定；把 Motion 偏好与 Apple 设计方法落成长期工作约束 |
 | Draft 0.5 | 2026-08-09 | 确认“活页批注”书页交互、冷白墨蓝配色、段间版画世界与 Thinking Orbs 聚焦对话态 | 用户以参考图中部为样式目标，排除深绿配色和密集左栏，并要求保留已验收的 Agent 对话体验 |
 | Draft 0.6 | 2026-08-09 | 锁定整书中文阅读与两份受审配方的分层范围；加入邀请和读者接受边界 | T053 已批准“全书 + 2 配方闭环”，需消除 Draft 0.5 将整书列为非目标的冲突 |
+| Draft 0.7 | 2026-08-10 | 将世界从“选受审配方”升级为“实时 WorldIntent/WorldPlan + 增量 Patch”；定义开放四维；回退四站罐头作为 D007 代表 | 用户指出中间世界不够开放，且预制完整游戏不符合实时 Agent 交互 |
+| Draft 0.8 | 2026-08-10 | 接受 D015；明确实时语音定位与中文术语；下一刀从地点拓扑开始指哪打哪 | 用户确认机制（ok） |
+| Draft 0.9 | 2026-08-10 | 驳回点击切地点；改为可走世界；补充开源调研与产品嵌入合同 D016 | 用户指出严重遮挡，并要求可移动世界与先调研开源 |
 
 ## 相关资料
 

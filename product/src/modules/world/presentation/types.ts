@@ -50,6 +50,45 @@ export type PresentationTimelineStep = Readonly<{
   caption: string;
 }>;
 
+export type WalkCell = Readonly<{
+  x: number;
+  y: number;
+}>;
+
+export type WalkPlaceStatus = "open" | "locked";
+
+export type WalkPlace = Readonly<{
+  id: string;
+  label: string;
+  entrance: WalkCell;
+  status: WalkPlaceStatus;
+  locked_reason: string | null;
+}>;
+
+export type WalkDrawableKind = "avatar" | "actor" | "building";
+
+export type WalkDrawable = Readonly<{
+  id: string;
+  kind: WalkDrawableKind;
+  anchor: WalkCell;
+  sprite_ref: string;
+}>;
+
+/** Presentation-only walkable grid. Session avatar moves never write EventStore. */
+export type WalkPresentation = Readonly<{
+  map: Readonly<{
+    cols: number;
+    rows: number;
+    /** 0 = walkable, 1 = blocked. length === cols * rows */
+    blockers: readonly (0 | 1)[];
+  }>;
+  avatar: Readonly<{
+    cell: WalkCell;
+  }>;
+  places: readonly WalkPlace[];
+  drawables: readonly WalkDrawable[];
+}>;
+
 export type PresentationPlan = Readonly<{
   plan_version: 1;
   motion_mode: "standard" | "reduced";
@@ -78,6 +117,8 @@ export type PresentationPlan = Readonly<{
   captions: readonly string[];
   /** Renderer-independent text surface for DOM, keyboard, and screen readers. */
   dom_summary: readonly string[];
+  /** Optional until every scene template ships a walk layout. */
+  walk: WalkPresentation | null;
 }>;
 
 export type CompilePresentationInput = Readonly<{

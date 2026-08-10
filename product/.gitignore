@@ -12,10 +12,17 @@
 
 # testing
 /coverage
+/test-results/
+/playwright-report/
+
+# generated screenshots (regenerate with tools/walk-step1-shots.mjs)
+/tools/walk-step1/
 
 # next.js
 /.next/
 /.next-playwright/
+/.next-walk-gate/
+/.next-walk-step1/
 /out/
 
 # production

@@ -6,8 +6,10 @@ import {
   useMemo,
   useRef,
   useState,
+  useSyncExternalStore,
 } from "react";
 import { useRouter } from "next/navigation";
+import { ThinkingOrb, type OrbState } from "thinking-orbs";
 import type {
   RelationshipContext,
   SourceDiscussionSnapshot,
@@ -15,7 +17,15 @@ import type {
 import type {
   SourceEvidenceMap,
 } from "@/modules/reader-thinking";
-import type { VoiceSourceSnapshot } from "@/modules/voice";
+import {
+  DEFAULT_VOICE_PREFERENCES,
+  loadVoicePreferences,
+  saveVoicePreferences,
+  VOICE_OPTIONS,
+  type VoiceFinalTurn,
+  type VoicePreferences,
+  type VoiceSourceSnapshot,
+} from "@/modules/voice";
 import {
   ReaderSessionProvider,
   SessionShellBindings,
@@ -25,8 +35,12 @@ import {
   ReaderThinkingProvider,
   useReaderThinking,
 } from "@/components/ReaderThinkingProvider";
-import { VoiceInputProvider } from "@/components/VoiceInputProvider";
-import { SourceDiscussionComposer } from "@/components/SourceDiscussionComposer";
+import { VoiceInputProvider, useVoiceInputPort } from "@/components/VoiceInputProvider";
+import { RealtimeVoicePanel } from "@/components/RealtimeVoicePanel";
+import {
+  SourceDiscussionComposer,
+  sourceTestSuffix,
+} from "@/components/SourceDiscussionComposer";
 import { FootnoteList, SourceBody } from "@/components/SourceBody";
 import type { BodyNode, Footnote } from "@/modules/book";
 import { ReaderIdeaComposer } from "@/components/ReaderIdeaComposer";
@@ -234,6 +248,7 @@ function ChapterReader({
   chapter,
   toc,
   translation,
+  providerVoiceSnapshots,
   memories = [],
   resumeSourceId = null,
   onRetire,
@@ -246,6 +261,9 @@ function ChapterReader({
   const [showOriginal, setShowOriginal] = useState(false);
   const [openPanel, setOpenPanel] = useState<OpenPanel>(null);
   const [memoryStatus, setMemoryStatus] = useState("");
+  const [anchorSourceId, setAnchorSourceId] = useState(
+    chapter.sourceBlocks[0]?.sourceId ?? null,
+  );
   const readerRef = useRef<HTMLDivElement>(null);
   const tocButtonRef = useRef<HTMLButtonElement>(null);
   const memoryButtonRef = useRef<HTMLButtonElement>(null);
@@ -311,15 +329,18 @@ function ChapterReader({
   }, [openPanel]);
 
   useEffect(() => {
-    if (!onReadPosition) return;
     const reader = readerRef.current;
     if (!reader) return;
     let timer: number | null = null;
     const recordVisiblePosition = () => {
       const sourceId = sourceAtReadingAnchor(reader);
       if (!sourceId) return;
-      void onReadPosition(sourceId).catch(() => undefined);
+      setAnchorSourceId(sourceId);
+      if (onReadPosition) {
+        void onReadPosition(sourceId).catch(() => undefined);
+      }
     };
+    timer = window.setTimeout(recordVisiblePosition, 0);
     const scheduleRecord = () => {
       if (timer !== null) window.clearTimeout(timer);
       timer = window.setTimeout(recordVisiblePosition, 180);
@@ -550,6 +571,14 @@ function ChapterReader({
           {memoryStatus}
         </p>
       </aside>
+
+      {anchorSourceId ? (
+        <AgentOrbDock
+          chapterLabel={chapter.chapterLabel}
+          sourceId={agentSourceIdFor(anchorSourceId)}
+          voiceSnapshots={providerVoiceSnapshots}
+        />
+      ) : null}
     </div>
   );
 }
@@ -587,19 +616,12 @@ function SourceAgentExperience({
 
   return (
     <section
-      aria-labelledby={`agent-source-title-${sourceId}`}
+      aria-label={`陪读 Agent · ${label}`}
       className={styles.agentZone}
       data-agent-source-id={sourceId}
       data-agent-active={isActive ? "true" : "false"}
       data-testid="chapter-agent-zone"
     >
-      <header className={styles.agentZoneHeader}>
-        <div>
-          <span>陪读 Agent</span>
-          <h2 id={`agent-source-title-${sourceId}`}>从这段原文继续想</h2>
-        </div>
-        <p>先谈原文。只有你明确接受邀请，世界才会在这里展开。</p>
-      </header>
 
       <SourceDiscussionComposer
         label={label}
@@ -697,6 +719,230 @@ function SourceAgentExperience({
       ) : null}
     </section>
   );
+}
+
+function AgentOrbDock({
+  chapterLabel,
+  sourceId,
+  voiceSnapshots,
+}: {
+  chapterLabel: string;
+  sourceId: string;
+  voiceSnapshots: Readonly<Record<string, VoiceSourceSnapshot>>;
+}) {
+  const thinking = useReaderThinking();
+  const voiceInput = useVoiceInputPort();
+  const reducedMotion = usePrefersReducedMotion();
+  const [voicePreferences, updateVoicePreferences] = useVoicePreferences();
+  const [open, setOpen] = useState(false);
+  const [settingsOpen, setSettingsOpen] = useState(false);
+  const [sessionSourceId, setSessionSourceId] = useState<string | null>(null);
+  const busy = thinking.status.kind === "busy";
+  const orbState: OrbState = busy ? "solving" : "breathing";
+  const statusText =
+    thinking.status.message || (busy ? "陪读正在理解…" : "陪读待命");
+  // While the panel is open the voice anchor stays frozen, so scrolling
+  // mid-call cannot switch the source out from under the live session.
+  const activeSourceId = open && sessionSourceId ? sessionSourceId : sourceId;
+  const voiceSnapshot = voiceSnapshots[activeSourceId];
+
+  const handleOrbClick = async () => {
+    if (busy) {
+      // Same explicit-stop path as the composer's 停止 button: invalidate the
+      // in-flight turn first, then release the microphone.
+      const stopTurn = thinking.submitAgentTurn({
+        sourceId: activeSourceId,
+        channel: "text",
+        final_text: "停止",
+        turn_id: crypto.randomUUID(),
+      });
+      await voiceInput.stopActive("user");
+      await stopTurn;
+      return;
+    }
+    if (!open) setSessionSourceId(sourceId);
+    setOpen(!open);
+  };
+
+  const submitFinalTurn = (turn: VoiceFinalTurn) => {
+    void thinking.submitAgentTurn({
+      sourceId: turn.sourceSnapshot.sourceId,
+      channel: "voice",
+      final_text: turn.transcript,
+      turn_id: turn.turn_id,
+      ...(turn.asr_confidence === undefined
+        ? {}
+        : { asr_confidence: turn.asr_confidence }),
+    });
+  };
+
+  const stopSemanticTurn = () =>
+    thinking
+      .submitAgentTurn({
+        sourceId: activeSourceId,
+        channel: "voice",
+        final_text: "停止",
+        turn_id: `voice-control:${crypto.randomUUID()}`,
+      })
+      .then(() => undefined);
+
+  return (
+    <div
+      className={styles.orbDock}
+      data-agent-busy={busy ? "true" : "false"}
+      data-testid="agent-orb-dock"
+    >
+      {open ? (
+        <div className={styles.orbDockPanel}>
+          {voiceSnapshot ? (
+            <RealtimeVoicePanel
+              key={voiceSnapshot.sourceId}
+              sourceSnapshot={voiceSnapshot}
+              voicePreferences={voicePreferences}
+              onFinalTurn={submitFinalTurn}
+              onStop={stopSemanticTurn}
+              textFallbackId={`discussion-input-${sourceTestSuffix(activeSourceId)}`}
+            />
+          ) : (
+            <>
+              <p className={styles.orbDockStatus} aria-live="polite">
+                {statusText}
+              </p>
+              <SourceDiscussionComposer
+                label={chapterLabel}
+                showStatus={false}
+                sourceId={activeSourceId}
+              />
+            </>
+          )}
+        </div>
+      ) : null}
+      {settingsOpen ? (
+        <div className={styles.orbDockSettings} data-testid="voice-settings">
+          <label className={styles.voiceSettingsField}>
+            <span>音色</span>
+            <select
+              value={voicePreferences.voice}
+              data-testid="voice-settings-voice"
+              onChange={(event) =>
+                updateVoicePreferences({
+                  ...voicePreferences,
+                  voice: event.target.value as VoicePreferences["voice"],
+                })
+              }
+            >
+              {VOICE_OPTIONS.map((option) => (
+                <option key={option.id} value={option.id}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label className={styles.voiceSettingsField}>
+            <span>
+              语速 <output>{voicePreferences.rate}×</output>
+            </span>
+            <input
+              type="range"
+              min="0.5"
+              max="2"
+              step="0.25"
+              value={voicePreferences.rate}
+              data-testid="voice-settings-rate"
+              onChange={(event) =>
+                updateVoicePreferences({
+                  ...voicePreferences,
+                  rate: Number(event.target.value),
+                })
+              }
+            />
+          </label>
+          <label className={styles.voiceSettingsField}>
+            <span>
+              音量 <output>{voicePreferences.volume.toFixed(1)}</output>
+            </span>
+            <input
+              type="range"
+              min="0"
+              max="2"
+              step="0.1"
+              value={voicePreferences.volume}
+              data-testid="voice-settings-volume"
+              onChange={(event) =>
+                updateVoicePreferences({
+                  ...voicePreferences,
+                  volume: Number(event.target.value),
+                })
+              }
+            />
+          </label>
+          <p className={styles.voiceSettingsHint}>
+            音色在下次开始通话时生效；语速和音量即时生效。
+          </p>
+        </div>
+      ) : null}
+      <button
+        aria-label={
+          busy
+            ? "停止这次回答"
+            : open
+              ? "收起陪读（右键调整音色、语速、音量）"
+              : "打开陪读（右键调整音色、语速、音量）"
+        }
+        aria-haspopup="dialog"
+        className={styles.orbDockButton}
+        data-testid="agent-orb-dock-button"
+        onClick={() => void handleOrbClick()}
+        onContextMenu={(event) => {
+          event.preventDefault();
+          setSettingsOpen((value) => !value);
+        }}
+        type="button"
+      >
+        <ThinkingOrb
+          aria-hidden="true"
+          paused={reducedMotion}
+          size={64}
+          state={orbState}
+          theme="light"
+        />
+      </button>
+    </div>
+  );
+}
+
+function usePrefersReducedMotion(): boolean {
+  return useSyncExternalStore(
+    (onStoreChange) => {
+      const query = window.matchMedia("(prefers-reduced-motion: reduce)");
+      query.addEventListener("change", onStoreChange);
+      return () => query.removeEventListener("change", onStoreChange);
+    },
+    () => window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+    () => false,
+  );
+}
+
+function useVoicePreferences(): [
+  VoicePreferences,
+  (next: VoicePreferences) => void,
+] {
+  // SSR and first client render share the defaults; stored preferences load
+  // after mount so hydration never mismatches.
+  const [preferences, setPreferences] = useState<VoicePreferences>(
+    DEFAULT_VOICE_PREFERENCES,
+  );
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      setPreferences(loadVoicePreferences());
+    }, 0);
+    return () => window.clearTimeout(timer);
+  }, []);
+  const update = (next: VoicePreferences) => {
+    setPreferences(next);
+    saveVoicePreferences(next);
+  };
+  return [preferences, update];
 }
 
 function PassageLabel({ label }: { label: string }) {

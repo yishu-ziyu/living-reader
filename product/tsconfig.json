@@ -47,7 +47,11 @@
     ".next-t053/types/**/*.ts",
     ".next-t053/dev/types/**/*.ts",
     ".next-t053-visual/types/**/*.ts",
-    ".next-t053-visual/dev/types/**/*.ts"
+    ".next-t053-visual/dev/types/**/*.ts",
+    ".next-walk-step1/types/**/*.ts",
+    ".next-walk-step1/dev/types/**/*.ts",
+    ".next-walk-gate/types/**/*.ts",
+    ".next-walk-gate/dev/types/**/*.ts"
   ],
   "exclude": [
     "agent-runtime",

@@ -13,6 +13,7 @@ import type {
   WorldMetrics,
 } from "@/modules/world";
 import styles from "./inline-world-block.module.css";
+import { WalkView } from "./WalkView";
 
 const FRAME_HEIGHT_PX = 600;
 
@@ -252,6 +253,7 @@ function PlanWorld({
             className={styles.worldScene}
             data-testid="world-scene"
           >
+            {plan.walk ? <WalkView walk={plan.walk} /> : null}
             <div className={styles.actorLine}>
               {plan.entities.map((entity) => {
                 const observation = observations.get(entity.actor_id);

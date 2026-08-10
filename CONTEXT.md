@@ -12,7 +12,7 @@ Agent OS has three identities in one user-visible turn:
 |---|---|---|
 | **阅读陪伴者** | On the active `SourceBlock`, answer, restate the reader's understanding, and propose a source-grounded, revisable `BookThought`. | May emit an answer or thought candidate; never invents a `ReaderIdea`, turns inference into a quote, or changes `WorldState`. |
 | **原文守护者** | Check source/version/anchor/evidence and relevance while protecting productive detours. Truly unrelated input receives one honest, gentle soft-return. | May mark uncertainty, evidence gaps, and an open question; must not suppress a useful analogy or shame the reader into returning. |
-| **世界机制导演** | Select/compile a reviewed mechanism, explain action preconditions, and arrange evidence-backed local `CharacterObservation`s in causal order. | May propose allowlisted actions and presentation order; never writes money, inventory, orders, or role state. `WorldKernel.decide/evolve` alone produces numeric consequences. |
+| **世界机制导演** | Select/compile reviewed primitives into a source-grounded `WorldIntent`/`WorldPlan`, explain action preconditions, propose `ExecutableWorldPatch`es, and arrange evidence-backed local `CharacterObservation`s in causal order. | May propose allowlisted actions, plans, and presentation order; never writes money, inventory, orders, or role state. `WorldKernel.decide/evolve` alone produces numeric consequences. |
 
 Shared invariants:
 
@@ -74,18 +74,38 @@ An accepted, typed relationship between two parts of the ActiveReadingGraph, att
 _Avoid_: RelationProposal, similarity hint, unreviewed inference
 
 **WorldPatch**:
-A coherent proposed change to the reader's world, such as adding an idea, accepting a relation, revising an interpretation, or retiring an obsolete connection. It describes what would change, not the complete state of the world.
-_Avoid_: WorldRevision, isolated event, Memory update
+A coherent proposed change to the reader's ActiveReadingGraph, such as adding an idea, accepting a relation, revising an interpretation, or retiring an obsolete connection. It describes what would change in the reading graph, not the complete executable world.
+_Avoid_: WorldRevision, ExecutableWorldPatch, isolated event, Memory update
 
 **WorldRevision**:
-A recognizable state of the reader's world after one or more WorldPatches have been accepted. It can be revisited or compared with another revision to understand how the reader's interpretation changed.
-_Avoid_: WorldPatch, draft, autosave
+A recognizable state of the reader's ActiveReadingGraph after one or more WorldPatches have been accepted. It can be revisited or compared with another revision to understand how the reader's interpretation changed.
+_Avoid_: WorldPatch, ExecutableWorldPatch, draft, autosave
+
+**WorldIntent**:
+A source-grounded, reader-question-bound reason to open or continue an ExecutableWorld. It names the active SourceBlocks, the question under test, the mechanism hypothesis, expected observations, and ModelExtensions. It is a candidate until the reader accepts an invitation derived from it.
+_Avoid_: finished level, free story premise, committed WorldState
+
+**WorldPlan**:
+A reviewable first composition of places, actors, stocks, current ActionCandidates, failure modes, and presentation grammar for one ExecutableWorld. It is assembled in real time from reviewed primitives plus the current WorldIntent; it is not a preauthored complete mini-game.
+_Avoid_: WorldRecipe-as-full-game, PresentationPlan, WorldState
+
+**ExecutableWorldPatch**:
+A coherent incremental change to an already seeded ExecutableWorld, such as unlocking a place, adding an actor, enabling an action, or tightening a constraint. It keeps the same world_id and prior facts unless an explicit reset is accepted.
+_Avoid_: WorldPatch, new unrelated mini-game, direct WorldState edit
+
+**ActionCandidate**:
+A currently offered move inside an ExecutableWorld, with visible preconditions, expected local observations, source grounding, and risk level. It may be projected from rules or proposed by the Agent, but only allowlisted capabilities can execute.
+_Avoid_: free-text cheat code, unvalidated LLM command, cinematic button with no state effect
+
+**EconomicPrimitive**:
+A reviewed building block of executable economics or presentation grammar, such as a role type, stock kind, rule capability, motion verb, or safety budget. Primitives may be prebuilt; complete levels may not pretend to be live generation.
+_Avoid_: full prefab campaign, unreviewed free asset pack
 
 ## Executable Worlds and Evidence
 
 **ExecutableWorld**:
-A bounded, interactive thought experiment in which a reader can act under explicit economic rules and observe consequences connected to the book. It is neither the source text itself nor a universal forecast of the real world.
-_Avoid_: Chatbot, animated illustration, reality predictor
+A bounded, interactive thought experiment in which a reader can explore places, act under explicit economic rules, observe cascading consequences, and continue the same world across later questions. It is neither the source text itself, a prefabricated one-shot mini-game, nor a universal forecast of the real world.
+_Avoid_: Chatbot, canned four-station demo, animated illustration, reality predictor, unbounded sandbox editor
 
 **PlayabilityReport**:
 An assessment of whether a proposed ExecutableWorld offers understandable choices, visible consequences, traceable evidence, and honest limits. It judges whether an idea supports meaningful play, not whether a visual prototype merely runs.
@@ -106,8 +126,8 @@ _Avoid_: Source claim, quotation, evidence
 ## Participants
 
 **ReadingAgent**:
-The user-visible Agent OS expressed through three coordinated authority lenses inside one semantic turn: a **阅读陪伴者** that answers from the active source and proposes revisable `BookThought`s; an **原文守护者** that checks evidence while allowing productive detours and offering one gentle soft-return for true noise; and a **世界机制导演** that selects/compiles reviewed mechanisms and arranges local role observations. It does not author the reader's `ReaderIdea`, multiply the turn into three model agents, bypass relation review, or decide economic consequences; deterministic `WorldKernel` does that.
-_Avoid_: 过窄的命令解析器, substitute reader, economic engine, free-form NPC narrator
+The user-visible Agent OS expressed through three coordinated authority lenses inside one semantic turn: a **阅读陪伴者** that answers from the active source and proposes revisable `BookThought`s; an **原文守护者** that checks evidence while allowing productive detours and offering one gentle soft-return for true noise; and a **世界机制导演** that composes reviewed primitives into `WorldIntent`/`WorldPlan`/`ExecutableWorldPatch` candidates and arranges local role observations. It does not author the reader's `ReaderIdea`, multiply the turn into three model agents, bypass relation review, or decide economic consequences; deterministic `WorldKernel` does that.
+_Avoid_: 过窄的命令解析器, substitute reader, economic engine, free-form NPC narrator, prefab level selector only
 
 **EconomicActor**:
 A person, organization, household, firm, or role represented inside an ExecutableWorld with resources, aims, constraints, and possible actions. Being an Actor does not imply autonomy: its choices may be set by the reader, by a rule, or by an Agent.

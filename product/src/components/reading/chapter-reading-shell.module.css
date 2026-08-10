@@ -384,13 +384,8 @@
 
 .agentZone {
   display: grid;
-  gap: 1rem;
+  gap: 0.9rem;
   margin-block: 1.25rem 4.5rem;
-  padding: clamp(1rem, 3vw, 1.5rem);
-  border: 1px solid #c9bea9;
-  border-radius: 1.15rem;
-  background: #f7f2e8;
-  box-shadow: 0 18px 48px rgb(67 56 38 / 0.08);
   color: #28241e;
   font-family: Inter, system-ui, sans-serif;
 }
@@ -398,57 +393,128 @@
 .agentZone[data-agent-active="false"] {
   gap: 0.6rem;
   margin-block: 0.75rem 2.5rem;
-  padding: 0.75rem 0.9rem;
-  box-shadow: none;
 }
 
-.agentZone[data-agent-active="false"] .agentZoneHeader {
-  grid-template-columns: minmax(0, 1fr);
-  padding-block-end: 0.45rem;
-}
-
-.agentZone[data-agent-active="false"] .agentZoneHeader h2 {
-  font-size: 1rem;
-}
-
-.agentZone[data-agent-active="false"] .agentZoneHeader p {
-  display: none;
-}
-
-.agentZoneHeader {
+.orbDock {
+  position: fixed;
+  inset: auto 1.5rem 1.5rem auto;
+  z-index: 20;
   display: grid;
-  grid-template-columns: minmax(12rem, 0.8fr) minmax(16rem, 1.2fr);
-  gap: 1rem;
-  align-items: end;
-  padding-block-end: 0.85rem;
-  border-block-end: 1px solid #d8cebd;
+  justify-items: end;
+  gap: 0.75rem;
 }
 
-.agentZoneHeader span,
+.orbDockButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 4.5rem;
+  block-size: 4.5rem;
+  padding: 0;
+  border: 1px solid #d4dce2;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 14px 36px rgb(21 43 64 / 0.14);
+  cursor: pointer;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 120ms ease;
+}
+
+.orbDockButton:hover,
+.orbDockButton:focus-visible {
+  border-color: #315c7e;
+  outline: none;
+}
+
+.orbDockButton:active {
+  transform: scale(0.96);
+}
+
+.orbDock[data-agent-busy="true"] .orbDockButton {
+  border-color: #315c7e;
+  box-shadow: 0 14px 40px rgb(49 92 126 / 0.22);
+}
+
+.orbDockPanel {
+  width: min(22rem, calc(100vw - 3rem));
+  padding: 1rem;
+  border: 1px solid #d4dce2;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 18px 48px rgb(21 43 64 / 0.16);
+}
+
+.orbDockStatus {
+  margin: 0 0 0.65rem;
+  color: #315c7e;
+  font: 0.8rem/1.45 Inter, system-ui, sans-serif;
+}
+
+.orbDockSettings {
+  width: min(22rem, calc(100vw - 3rem));
+  display: grid;
+  gap: 0.85rem;
+  padding: 1rem;
+  border: 1px solid #d4dce2;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 18px 48px rgb(21 43 64 / 0.16);
+}
+
+.voiceSettingsField {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0;
+  color: #315c7e;
+  font: 700 0.75rem/1.4 Inter, system-ui, sans-serif;
+}
+
+.voiceSettingsField span {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.voiceSettingsField output {
+  color: #647789;
+  font-weight: 400;
+}
+
+.voiceSettingsField select {
+  inline-size: 100%;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid #d4dce2;
+  border-radius: 0.55rem;
+  outline: none;
+  background: #fff;
+  color: #28241e;
+  font: 0.85rem/1.4 Inter, system-ui, sans-serif;
+}
+
+.voiceSettingsField select:focus-visible {
+  border-color: #315c7e;
+  box-shadow: 0 0 0 3px rgb(49 92 126 / 0.12);
+}
+
+.voiceSettingsField input[type="range"] {
+  inline-size: 100%;
+  accent-color: #315c7e;
+}
+
+.voiceSettingsHint {
+  margin: 0;
+  color: #647789;
+  font: 0.68rem/1.5 Inter, system-ui, sans-serif;
+}
+
 .worldInvitation > div > span {
   color: #a5482f;
   font-size: 0.67rem;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-}
-
-.agentZoneHeader h2 {
-  margin: 0.25rem 0 0;
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
-    "Songti SC", STSong, serif;
-  font-size: 1.35rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-}
-
-.agentZoneHeader p {
-  margin: 0;
-  color: #6e675c;
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
-    "Songti SC", STSong, serif;
-  font-size: 0.88rem;
-  line-height: 1.65;
 }
 
 .agentZone :global(.source-discussion) {
@@ -466,7 +532,7 @@
 }
 
 .agentZone :global(.idea-composer-label span) {
-  color: #615a50;
+  color: #647789;
   font-size: 0.75rem;
   font-weight: 700;
 }
@@ -475,18 +541,18 @@
   box-sizing: border-box;
   inline-size: 100%;
   padding: 0.75rem 0.85rem;
-  border: 1px solid #c9bea9;
+  border: 1px solid #d4dce2;
   border-radius: 0.65rem;
   outline: none;
-  background: #fffdf7;
+  background: #fff;
   color: #28241e;
   font: 0.9rem/1.55 Inter, system-ui, sans-serif;
   resize: vertical;
 }
 
 .agentZone :global(textarea:focus-visible) {
-  border-color: #a5482f;
-  box-shadow: 0 0 0 3px rgb(165 72 47 / 0.12);
+  border-color: #315c7e;
+  box-shadow: 0 0 0 3px rgb(49 92 126 / 0.12);
 }
 
 .agentZone :global(.discussion-actions) {
@@ -499,13 +565,26 @@
   align-self: center;
   justify-self: end;
   margin: 0;
-  color: #877e71;
+  color: #647789;
   font-size: 0.66rem;
 }
 
 .agentZone :global(.discussion-actions button),
 .agentZone :global(.idea-composer button),
-.agentZone :global(.relation-proposal button),
+.agentZone :global(.relation-proposal button) {
+  min-block-size: 2.5rem;
+  padding-inline: 0.8rem;
+  border: 1px solid #d4dce2;
+  border-radius: 999px;
+  background: #fff;
+  color: #342f28;
+  cursor: pointer;
+  font: 700 0.75rem/1 Inter, system-ui, sans-serif;
+  transition:
+    border-color 160ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 120ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
 .invitationActions button {
   min-block-size: 2.5rem;
   padding-inline: 0.8rem;
@@ -531,9 +610,9 @@
 
 .agentZone :global(.agent-turn-surface) {
   padding: 0.8rem 0.95rem;
-  border-inline-start: 3px solid #a5482f;
-  background: #fffdf7;
-  color: #3c362e;
+  border-inline-start: 3px solid #315c7e;
+  background: #fff;
+  color: #28241e;
   font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
     "Songti SC", STSong, serif;
   line-height: 1.65;
@@ -585,8 +664,8 @@
 
 .relationSetup {
   padding-block-start: 0.5rem;
-  border-block-start: 1px solid #d8cebd;
-  color: #6e675c;
+  border-block-start: 1px solid #d4dce2;
+  color: #647789;
   font-size: 0.75rem;
 }
 
@@ -704,11 +783,8 @@
 
   .agentZone {
     margin-block: 0.75rem 3rem;
-    padding: 0.85rem;
-    border-radius: 0.85rem;
   }
 
-  .agentZoneHeader,
   .worldInvitation,
   .agentZone :global(.source-discussion) {
     grid-template-columns: minmax(0, 1fr);

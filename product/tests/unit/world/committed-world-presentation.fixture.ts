@@ -2,6 +2,7 @@ import type {
   CommittedWorldPresentation,
   PresentationPlan,
 } from "@/modules/world";
+import { compileWoolTownWalkPresentation } from "@/modules/world";
 
 function canonicalMessageId(streamVersion: number): string {
   return `01K25V2J${String(streamVersion).padStart(18, "0")}`;
@@ -213,5 +214,6 @@ export function presentationPlanFixture(): PresentationPlan {
       "市场范围改变订单、库存与分工。",
       "供给 17，库存 11，可触达订单 4，现金 28。",
     ],
+    walk: compileWoolTownWalkPresentation(),
   };
 }
