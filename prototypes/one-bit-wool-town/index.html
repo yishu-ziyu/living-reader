@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>羊毛镇 // 1BIT WOOL TOWN（Prototype）</title>
+    <meta
+      name="description"
+      content="PROTOTYPE ONLY — 1-bit playable wool-town study for D007 裁决."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="prototype-flag">PROTOTYPE // PLAYABLE STUDY 02</div>
+
+    <main class="machine-shell" aria-label="羊毛镇可玩样张">
+      <header class="machine-header">
+        <div class="brand-lockup">
+          <div class="brand-mark" aria-hidden="true">羊</div>
+          <div>
+            <p class="eyebrow">ADAM SMITH · BOOK I · 分工与市集</p>
+            <h1>羊毛镇 <span>WOOL TOWN .01</span></h1>
+          </div>
+        </div>
+        <div class="system-readout" aria-label="世界状态">
+          <span>SEED 42</span>
+          <span id="clockReadout">DAY 01 · 08:00</span>
+          <span id="revReadout">REV 0</span>
+          <span class="status-lamp"><i></i><b id="systemStatus">MARKET OPEN</b></span>
+        </div>
+      </header>
+
+      <section class="metrics-bars" aria-label="世界指标">
+        <div class="metric-bar" data-metric="output">
+          <span class="metric-name">供给</span>
+          <div class="bar-track"><div class="bar-fill" id="barSupply"></div></div>
+          <b id="numSupply">12</b>
+        </div>
+        <div class="metric-bar" data-metric="stock">
+          <span class="metric-name">库存</span>
+          <div class="bar-track"><div class="bar-fill" id="barStock"></div></div>
+          <b id="numStock">8</b>
+        </div>
+        <div class="metric-bar" data-metric="orders">
+          <span class="metric-name">订单</span>
+          <div class="bar-track"><div class="bar-fill" id="barOrders"></div></div>
+          <b id="numOrders">2</b>
+        </div>
+        <div class="metric-bar" data-metric="cash">
+          <span class="metric-name">现金</span>
+          <div class="bar-track"><div class="bar-fill" id="barCash"></div></div>
+          <b id="numCash">24</b>
+        </div>
+      </section>
+
+      <section class="world-frame" aria-label="正在运行的羊毛镇">
+        <div class="window-bar">
+          <span class="bar-label"
+            ><img class="bar-art" src="./assets/sheep.png" alt="" />WOOL_TOWN.01
+            // LIVE WORLD</span
+          >
+          <div class="window-tools" aria-hidden="true"><i></i><i></i><i></i></div>
+        </div>
+        <div class="world-screen" id="scene" data-stage="0" data-rush="steady">
+          <div class="sky" aria-hidden="true">
+            <img class="sun sprite" src="./assets/sun.png" alt="" />
+            <img class="cloud c1 sprite" src="./assets/cloud.png" alt="" />
+            <img class="cloud c2 sprite" src="./assets/cloud.png" alt="" />
+          </div>
+          <div class="ground" aria-hidden="true"></div>
+
+          <div class="station actors" id="stPasture" aria-hidden="true">
+            <img class="fence f1 sprite" src="./assets/fence.png" alt="" />
+            <img class="fence f2 sprite" src="./assets/fence.png" alt="" />
+            <span class="mover sheep-mover"><img class="sheep sprite" src="./assets/sheep.png" alt="" /></span>
+            <span class="mover shepherd-mover"><img class="shepherd sprite" src="./assets/shepherd.png" alt="" /></span>
+            <span class="station-label">牧场</span>
+          </div>
+
+          <div class="station actors" id="stSpin" aria-hidden="true">
+            <img class="workshop sprite" src="./assets/workshop.png" alt="" />
+            <span class="chimney"><i class="puff p1"></i><i class="puff p2"></i><i class="puff p3"></i></span>
+            <img class="wheel sprite" src="./assets/wheel.png" alt="" />
+            <span class="mover spinner-mover"><img class="spinner sprite" src="./assets/spinner.png" alt="" /></span>
+            <span class="station-label">纺坊</span>
+          </div>
+
+          <div class="station actors" id="stWeave" aria-hidden="true">
+            <img class="workshop sprite" src="./assets/workshop.png" alt="" />
+            <span class="chimney"><i class="puff p1"></i><i class="puff p2"></i><i class="puff p3"></i></span>
+            <span class="loom-box">
+              <img class="loom sprite" src="./assets/loom.png" alt="" />
+              <span class="shuttle"></span>
+            </span>
+            <span class="mover weaver-mover"><img class="weaver sprite" src="./assets/weaver.png" alt="" /></span>
+            <span class="station-label">织坊</span>
+          </div>
+
+          <div class="station actors" id="stMarket" aria-hidden="true">
+            <img class="stall sprite" src="./assets/stall.png" alt="" />
+            <span class="mover merchant-mover"><img class="merchant sprite" src="./assets/merchant.png" alt="" /></span>
+            <span class="station-label">市集</span>
+          </div>
+
+          <div class="flows" aria-hidden="true">
+            <span class="flow-lane" data-lane="wool"></span>
+            <span class="flow-lane" data-lane="yarn"></span>
+            <span class="flow-lane" data-lane="cloth"></span>
+          </div>
+
+          <div class="piles" aria-hidden="true">
+            <span class="pile" id="pileWool"></span>
+            <span class="pile" id="pileYarn"></span>
+            <span class="pile" id="pileCloth"></span>
+          </div>
+
+          <img class="tree t1 sprite" src="./assets/tree.png" alt="" aria-hidden="true" />
+          <img class="tree t2 sprite" src="./assets/tree.png" alt="" aria-hidden="true" />
+          <img class="grass g1 sprite" src="./assets/grass.png" alt="" aria-hidden="true" />
+          <img class="grass g2 sprite" src="./assets/grass.png" alt="" aria-hidden="true" />
+          <img class="grass g3 sprite" src="./assets/grass.png" alt="" aria-hidden="true" />
+
+          <div class="token-layer" id="tokenLayer" aria-hidden="true"></div>
+          <div class="scanlines" aria-hidden="true"></div>
+
+          <div class="construction" id="construction" role="status">
+            <p class="construction-title">正在把已确认的关系编译成世界</p>
+            <p class="construction-stage" id="constructionStage">正在固定规则与初始数值</p>
+          </div>
+        </div>
+        <div class="world-caption">
+          <span id="worldCaption">世界建造中……</span>
+          <b id="worldPhase">CONSTRUCTING</b>
+        </div>
+      </section>
+
+      <section class="control-row">
+        <article class="pixel-window action-window" aria-labelledby="actionTitle">
+          <div class="window-bar">
+            <span class="bar-label"><img class="bar-art" src="./assets/coin.png" alt="" />DECREE.EXE</span>
+            <div class="window-tools" aria-hidden="true"><i></i><i></i></div>
+          </div>
+          <div class="window-body">
+            <h2 id="actionTitle">你要改变什么？</h2>
+            <p class="action-hint">动作先进入规则引擎，后果确定、可回放。</p>
+            <button class="pixel-button primary" id="btnExpand" disabled>
+              <strong>开拓市集 <kbd>-8 银币</kbd></strong>
+              <small>可触达订单上限 +2 · 粗呢售价 +1 · 供给预期 +5</small>
+            </button>
+            <button class="pixel-button" id="btnRush" disabled>
+              <strong>织工赶单</strong>
+              <small>织机全速 15 拍 · 之后疲惫停工 10 拍</small>
+            </button>
+            <button class="pixel-button ghost" id="btnReset">重置世界 <kbd>SEED 42</kbd></button>
+          </div>
+        </article>
+
+        <article class="pixel-window ledger-window" aria-labelledby="ledgerTitle">
+          <div class="window-bar">
+            <span class="bar-label"><img class="bar-art" src="./assets/cloth.png" alt="" />TOWN_LEDGER.LOG</span>
+            <div class="window-tools" aria-hidden="true"><i></i><i></i></div>
+          </div>
+          <div class="window-body">
+            <h2 id="ledgerTitle" class="visually-hidden">镇志：刚刚发生</h2>
+            <ol class="event-log" id="eventLog" aria-live="polite">
+              <li class="event ghost"><time>--:--</time><span>等待世界建造完成……</span></li>
+            </ol>
+          </div>
+        </article>
+      </section>
+
+      <details class="dom-summary">
+        <summary>查看无动画文字摘要</summary>
+        <pre id="domSummary">世界建造中……</pre>
+      </details>
+
+      <footer class="machine-footer">
+        <span>DETERMINISTIC · SEED 42 · EXACT REPLAY</span>
+        <span>DOM/CSS + WEB ANIMATIONS · PNG SPRITES</span>
+        <span>NO SVG · NO CANVAS · NO GAME ENGINE</span>
+      </footer>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
